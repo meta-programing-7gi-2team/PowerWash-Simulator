@@ -6,11 +6,13 @@ public class Crosshair : MonoBehaviour
 {
     private RectTransform rect;
     private FirstPersonCamera camera;
+    private Vector3 center;
 
     void Start()
     {
         rect = GetComponent<RectTransform>();
-        camera = FindObjectOfType<FirstPersonCamera>();
+      
+        center = new Vector3(Screen.width / 2, Screen.height / 2, 0);
     }
 
     void Update()
@@ -22,7 +24,7 @@ public class Crosshair : MonoBehaviour
         }
         else
         {
-            rect.position = new Vector3(Screen.width / 2, Screen.height / 2, 0);
+            rect.position = center;
         }
     }
 }
