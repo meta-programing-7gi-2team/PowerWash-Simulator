@@ -1,14 +1,9 @@
 fileFormatVersion: 2
-guid: ff80a7fa7407c204791b6ef057607268
+guid: d46314d9a173ffb47868422bb1676bee
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Fish_0Mat
-    second: {fileID: 2100000, guid: 1602099324ab43748b92ec3845b0f17c, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0

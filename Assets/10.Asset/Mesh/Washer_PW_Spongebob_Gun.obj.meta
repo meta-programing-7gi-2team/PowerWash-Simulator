@@ -3,7 +3,17 @@ guid: 37a29a10f08767c48a454a90bd196a49
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Washer_PW_Spongebob_Gun_0Mat
+    second: {fileID: 2100000, guid: 01da07b912cf5084287c293a12b09081, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Washer_PW_Spongebob_Gun_1Mat
+    second: {fileID: 2100000, guid: 06e34c5fef50f3e4598ccc2495466f3d, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

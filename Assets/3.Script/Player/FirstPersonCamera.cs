@@ -6,6 +6,8 @@ public class FirstPersonCamera : MonoBehaviour
 {
     public float mouseSensitivity = 100.0f;
     public Transform playerBody;
+    public Transform gunPivot;
+    public Transform firePoint;
 
     private float xRotation = 0.0f;
 
@@ -60,12 +62,14 @@ public class FirstPersonCamera : MonoBehaviour
             }
         }  
     }
+    
     private void ModeChange()
     {
         if (isFree)
         {
             isFree = false;
             Cursor.lockState = CursorLockMode.Locked;
+            gunPivot.localRotation = Quaternion.Euler(Vector3.zero);
         }
         else
         {
