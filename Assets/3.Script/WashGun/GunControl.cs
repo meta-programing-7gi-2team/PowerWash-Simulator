@@ -5,8 +5,9 @@ using UnityEngine;
 public class GunControl : MonoBehaviour
 {
     [SerializeField] private Transform firePoint;
-    [SerializeField] private float shotRange = 4f;
     [SerializeField] private LineRenderer stream;
+    [SerializeField] private ParticleSystem waterEffect;
+    [SerializeField] private float shotRange = 4f;
 
     private bool isAuto = false;
     private RaycastHit hit;
@@ -18,7 +19,6 @@ public class GunControl : MonoBehaviour
         {
             ToggleAuto();
         }
-
         if (Input.GetMouseButton(0) || isAuto)
         {
             ShotWater();
@@ -31,6 +31,8 @@ public class GunControl : MonoBehaviour
     
     private void ShotWater()
     {
+        waterEffect.gameObject.SetActive(true);
+
         stream.enabled = true;
         stream.SetPosition(0, firePoint.position);
 
@@ -47,11 +49,12 @@ public class GunControl : MonoBehaviour
     }
     private void StopWater()
     {
+        waterEffect.gameObject.SetActive(false);
         stream.enabled = false;
     }
     private void ToggleAuto()
     {
         isAuto = !isAuto;
-        stream.enabled = isAuto ? true : false;
+        if (!isAuto) StopWater();
     }
 }
