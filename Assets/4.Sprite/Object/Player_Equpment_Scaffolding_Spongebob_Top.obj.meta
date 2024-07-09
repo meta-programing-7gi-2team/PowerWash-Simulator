@@ -3,7 +3,12 @@ guid: 846130fb3516b5246b45a9c11a26c211
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Player_Equpment_Scaffolding_Spongebob_Top_0Mat
+    second: {fileID: 2100000, guid: 70d31c4281baf3345abeea17b7ca57a4, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
