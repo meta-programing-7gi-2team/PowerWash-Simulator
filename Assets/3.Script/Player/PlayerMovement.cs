@@ -8,28 +8,27 @@ enum Posture
     Crouch,
     Lie
 }
-
 public class PlayerMovement : MonoBehaviour
 {
-    Posture posture;
-    float value_V, value_H;
+    private Posture posture;
+    private float value_V, value_H;
     
-    [SerializeField] float moveSpeed = 3;
-    [SerializeField] float runSpeed = 6;
-    [SerializeField] float crouchSpeed = 1f;
+    [SerializeField] private float moveSpeed = 3;
+    [SerializeField] private float runSpeed = 6;
+    [SerializeField] private float crouchSpeed = 1f;
+                    
+    [SerializeField] private float standHeight = 0.5f;
+    [SerializeField] private float crouchHeight = 0f;
+    [SerializeField] private float lieHeight = -0.5f;
+             
+    [SerializeField] private float jumpSpeed = 6;
 
-    [SerializeField] float standHeight = 0.5f;
-    [SerializeField] float crouchHeight = 0f;
-    [SerializeField] float lieHeight = -0.5f;
+    private bool isGround = true;
+    private float checkRadius = 0.2f;
+    [SerializeField] private Transform groundCheck;
 
-    [SerializeField] float jumpSpeed = 6;
-
-    bool isGround = true;
-    float checkRadius = 0.2f;
-    [SerializeField] Transform groundCheck;
-
-    Rigidbody player_rid;
-    Transform cameraTransform;
+    private Rigidbody player_rid;
+    private Transform cameraTransform;
 
     private void Start()
     {

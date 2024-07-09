@@ -8,16 +8,16 @@ public class Crosshair : MonoBehaviour
     private FirstPersonCamera fpc;
     private Vector3 center;
 
-    void Start()
+    private void Start()
     {
         rect = GetComponent<RectTransform>();
         fpc = FindObjectOfType<FirstPersonCamera>();
         center = new Vector3(Screen.width / 2, Screen.height / 2, 0);
     }
 
-    void Update()
+    private void Update()
     {
-        if (fpc.GetIsFree())
+        if (fpc.Get_IsFree())
         {
             Vector3 mousePosition = Input.mousePosition;
             rect.position = mousePosition;

@@ -4,23 +4,23 @@ using UnityEngine;
 
 public class FirstPersonCamera : MonoBehaviour
 {
-    public float mouseSensitivity = 100.0f;
-    public Transform playerBody;
-    public Transform gunPivot;
-    public Transform firePoint;
+    [SerializeField] private float mouseSensitivity = 100.0f;
+
+    [SerializeField] private Transform playerBody;
+    [SerializeField] private Transform gunPivot;
+    [SerializeField] private Transform firePoint;
 
     private float xRotation = 0.0f;
-
     private bool isFree = false;
     private float offsetX = 20f;
     private float offsetY = 100f;
 
-    void Start()
+    private void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
-
-    void Update()
+    private void Update()
     {
         CameraMove();
 
@@ -47,9 +47,9 @@ public class FirstPersonCamera : MonoBehaviour
             Vector3 mousePosition = Input.mousePosition;
 
             if(mousePosition.x <= 0 + offsetX ||
-                mousePosition.x >= Screen.width - offsetX ||
-                mousePosition.y <= 0 + offsetY ||
-                mousePosition.y >= Screen.height - offsetY)
+               mousePosition.x >= Screen.width - offsetX ||
+               mousePosition.y <= 0 + offsetY ||
+               mousePosition.y >= Screen.height - offsetY)
             {
                 float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
                 float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
@@ -62,23 +62,12 @@ public class FirstPersonCamera : MonoBehaviour
             }
         }  
     }
-    
     private void ModeChange()
     {
-        if (isFree)
-        {
-            isFree = false;
-            Cursor.lockState = CursorLockMode.Locked;
-            gunPivot.localRotation = Quaternion.Euler(Vector3.zero);
-        }
-        else
-        {
-            isFree = true;
-            Cursor.lockState = CursorLockMode.Confined;
-            Cursor.visible = false;
-        }
+        isFree = !isFree;
+        Cursor.lockState = isFree ? CursorLockMode.Confined : CursorLockMode.Locked;
     }
-    public bool GetIsFree()
+    public bool Get_IsFree()
     {
         return isFree;
     }
