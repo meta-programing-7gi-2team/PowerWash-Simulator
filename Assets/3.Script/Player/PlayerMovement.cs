@@ -26,7 +26,6 @@ public class PlayerMovement : MonoBehaviour
 
     bool isGround = true;
     float checkRadius = 0.2f;
-    [SerializeField] LayerMask groundLayer;
     [SerializeField] Transform groundCheck;
 
     Rigidbody player_rid;
@@ -41,7 +40,7 @@ public class PlayerMovement : MonoBehaviour
     {
         Move();
 
-        isGround = Physics.CheckSphere(groundCheck.position, checkRadius, groundLayer);
+        isGround = Physics.CheckSphere(groundCheck.position, checkRadius);
 
         if (isGround && Input.GetKeyDown(KeyCode.Space))
         {
@@ -94,21 +93,21 @@ public class PlayerMovement : MonoBehaviour
         {
             case Posture.Stand:
                 posture = Posture.Crouch;
-                cameraTransform.localPosition = new Vector3(0, crouchHeight, 0);
+                cameraTransform.localPosition = new Vector3(0, crouchHeight, cameraTransform.localPosition.z);
                 break;
             case Posture.Crouch:
                 posture = Posture.Lie;
-                cameraTransform.localPosition = new Vector3(0, lieHeight, 0);
+                cameraTransform.localPosition = new Vector3(0, lieHeight, cameraTransform.localPosition.z);
                 break;
             case Posture.Lie:
                 posture = Posture.Stand;
-                cameraTransform.localPosition = new Vector3(0, standHeight, 0);             
+                cameraTransform.localPosition = new Vector3(0, standHeight, cameraTransform.localPosition.z);             
                 break;
         }
     }
     private void StandUp()
     {
         posture = Posture.Stand;
-        cameraTransform.localPosition = new Vector3(0, standHeight, 0);
+        cameraTransform.localPosition = new Vector3(0, standHeight, cameraTransform.localPosition.z);
     }
 }
