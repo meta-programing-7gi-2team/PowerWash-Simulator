@@ -8,7 +8,6 @@ public class FirstPersonCamera : MonoBehaviour
 
     [SerializeField] private Transform playerBody;
     [SerializeField] private Transform gunPivot;
-    [SerializeField] private Transform firePoint;
 
     private float xRotation = 0.0f;
     private bool isFree = false;
@@ -20,7 +19,7 @@ public class FirstPersonCamera : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
-    private void Update()
+    private void FixedUpdate()
     {
         CameraMove();
 
