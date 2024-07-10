@@ -23,6 +23,15 @@
         },
         {
             "m_Id": "f6c1e49a309441ae8233214c90cd5b1e"
+        },
+        {
+            "m_Id": "1146dba1c4d5436fa50870306afaf1c9"
+        },
+        {
+            "m_Id": "4bbde0c2533547af8032b5e6eec0a7b7"
+        },
+        {
+            "m_Id": "ab2ea5a24bba466382ea9fd17db15937"
         }
     ],
     "m_Keywords": [],
@@ -110,6 +119,21 @@
         },
         {
             "m_Id": "782b6c0ee17347059897bd36d81c78c0"
+        },
+        {
+            "m_Id": "33894a0fc63a4b80aff1287abc84a9bd"
+        },
+        {
+            "m_Id": "d5e051e067a642b09204f85cb1f53d44"
+        },
+        {
+            "m_Id": "b5f6a42e54dd4ea7b80f3349f6bb7d2e"
+        },
+        {
+            "m_Id": "bd317ca4b8124e83bf9f484740bb49b8"
+        },
+        {
+            "m_Id": "8ef5c39068e948e2ba2ad6692fb4b588"
         }
     ],
     "m_GroupDatas": [],
@@ -155,6 +179,20 @@
                     "m_Id": "35253be64e9340e4b74736a2f72da955"
                 },
                 "m_SlotId": 1
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "33894a0fc63a4b80aff1287abc84a9bd"
+                },
+                "m_SlotId": 3
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "81c62f12238f4053bce4b79321c80743"
+                },
+                "m_SlotId": 2
             }
         },
         {
@@ -314,6 +352,34 @@
         {
             "m_OutputSlot": {
                 "m_Node": {
+                    "m_Id": "8ef5c39068e948e2ba2ad6692fb4b588"
+                },
+                "m_SlotId": 0
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "bd317ca4b8124e83bf9f484740bb49b8"
+                },
+                "m_SlotId": 2
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "b5f6a42e54dd4ea7b80f3349f6bb7d2e"
+                },
+                "m_SlotId": 0
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "33894a0fc63a4b80aff1287abc84a9bd"
+                },
+                "m_SlotId": 1
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
                     "m_Id": "c07b58e732744f938aa15ff2bef34c4a"
                 },
                 "m_SlotId": 3
@@ -365,6 +431,20 @@
                     "m_Id": "c07b58e732744f938aa15ff2bef34c4a"
                 },
                 "m_SlotId": 0
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
+                    "m_Id": "d5e051e067a642b09204f85cb1f53d44"
+                },
+                "m_SlotId": 0
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "33894a0fc63a4b80aff1287abc84a9bd"
+                },
+                "m_SlotId": 2
             }
         },
         {
@@ -662,6 +742,29 @@
 }
 
 {
+    "m_SGVersion": 1,
+    "m_Type": "UnityEditor.ShaderGraph.Internal.Vector2ShaderProperty",
+    "m_ObjectId": "1146dba1c4d5436fa50870306afaf1c9",
+    "m_Guid": {
+        "m_GuidSerialized": "e72b83f7-b541-42c5-892d-b320de85d203"
+    },
+    "m_Name": "Mask Tileling",
+    "m_DefaultReferenceName": "Vector2_1146dba1c4d5436fa50870306afaf1c9",
+    "m_OverrideReferenceName": "_MaskTileling",
+    "m_GeneratePropertyBlock": true,
+    "m_Precision": 0,
+    "overrideHLSLDeclaration": false,
+    "hlslDeclarationOverride": 0,
+    "m_Hidden": false,
+    "m_Value": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 0.0,
+        "w": 0.0
+    }
+}
+
+{
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.UVNode",
     "m_ObjectId": "1275982f3f5945d39eb1a585e4644b06",
@@ -673,9 +776,9 @@
         "m_Expanded": false,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1079.0001220703125,
-            "y": 158.00003051757813,
-            "width": 145.0,
+            "x": -1088.0,
+            "y": 133.0,
+            "width": 145.00001525878907,
             "height": 130.0
         }
     },
@@ -756,7 +859,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector2MaterialSlot",
     "m_ObjectId": "1607d919ff5f46fe901a4ab7067c7214",
     "m_Id": 0,
-    "m_DisplayName": "TIle",
+    "m_DisplayName": "Dust Tileling",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -959,7 +1062,7 @@
     },
     "m_Name": "DustTex(G)",
     "m_DefaultReferenceName": "Texture2D_2cde313494d743999ef5e139e67436f4",
-    "m_OverrideReferenceName": "",
+    "m_OverrideReferenceName": "_DustTex_G",
     "m_GeneratePropertyBlock": true,
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
@@ -975,6 +1078,27 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector2MaterialSlot",
+    "m_ObjectId": "2f12da6232d9466b814e0d9965797c18",
+    "m_Id": 3,
+    "m_DisplayName": "Out",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Out",
+    "m_StageCapability": 3,
+    "m_Value": {
+        "x": 0.0,
+        "y": 0.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0
+    },
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
     "m_ObjectId": "3268b33e6e14489eb607aa2256cf2de1",
     "m_Group": {
@@ -985,10 +1109,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -804.0000610351563,
-            "y": 124.00000762939453,
+            "x": -820.9999389648438,
+            "y": 123.9999771118164,
             "width": 143.0,
-            "height": 34.000003814697269
+            "height": 34.0
         }
     },
     "m_Slots": [
@@ -1034,6 +1158,47 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.TilingAndOffsetNode",
+    "m_ObjectId": "33894a0fc63a4b80aff1287abc84a9bd",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Tiling And Offset",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": -1259.0,
+            "y": 677.0,
+            "width": 208.0,
+            "height": 326.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "437d7c45bd674ffbaf473fa16c4d0cca"
+        },
+        {
+            "m_Id": "4cc1ab2c547a48d6a0b335b493978633"
+        },
+        {
+            "m_Id": "4a6d753875da4dc6bdd28f64caa08e19"
+        },
+        {
+            "m_Id": "2f12da6232d9466b814e0d9965797c18"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.SamplerStateMaterialSlot",
     "m_ObjectId": "33f63458ac3b4ffc93f867578f643caa",
     "m_Id": 3,
@@ -1054,7 +1219,7 @@
     },
     "m_Name": "Sample Texture 2D",
     "m_DrawState": {
-        "m_Expanded": false,
+        "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
             "x": -573.0000610351563,
@@ -1109,7 +1274,7 @@
     },
     "m_Name": "Dust Tileling",
     "m_DefaultReferenceName": "Vector2_37114cb99da649d8b9bbd39bc13374e1",
-    "m_OverrideReferenceName": "",
+    "m_OverrideReferenceName": "_DustTileling",
     "m_GeneratePropertyBlock": true,
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
@@ -1121,6 +1286,27 @@
         "z": 0.0,
         "w": 0.0
     }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector2MaterialSlot",
+    "m_ObjectId": "3913b07db3b442249698a1a3eede24a2",
+    "m_Id": 1,
+    "m_DisplayName": "Center",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Center",
+    "m_StageCapability": 3,
+    "m_Value": {
+        "x": 0.5,
+        "y": 0.5
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0
+    },
+    "m_Labels": []
 }
 
 {
@@ -1256,6 +1442,28 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.UVMaterialSlot",
+    "m_ObjectId": "437d7c45bd674ffbaf473fa16c4d0cca",
+    "m_Id": 0,
+    "m_DisplayName": "UV",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "UV",
+    "m_StageCapability": 3,
+    "m_Value": {
+        "x": 0.0,
+        "y": 0.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0
+    },
+    "m_Labels": [],
+    "m_Channel": 0
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "43e53b88d2ae4802b0897dcd8c0c3527",
     "m_Id": 0,
@@ -1384,6 +1592,92 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector2MaterialSlot",
+    "m_ObjectId": "4a6d753875da4dc6bdd28f64caa08e19",
+    "m_Id": 2,
+    "m_DisplayName": "Offset",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Offset",
+    "m_StageCapability": 3,
+    "m_Value": {
+        "x": 0.0,
+        "y": 0.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0
+    },
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector2MaterialSlot",
+    "m_ObjectId": "4a9ef5e0144f45b6bf892f07842dd9c9",
+    "m_Id": 3,
+    "m_DisplayName": "Out",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Out",
+    "m_StageCapability": 3,
+    "m_Value": {
+        "x": 0.0,
+        "y": 0.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0
+    },
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 1,
+    "m_Type": "UnityEditor.ShaderGraph.Internal.Vector2ShaderProperty",
+    "m_ObjectId": "4bbde0c2533547af8032b5e6eec0a7b7",
+    "m_Guid": {
+        "m_GuidSerialized": "cfc81574-0b05-4877-a727-2447dda69950"
+    },
+    "m_Name": "Mask Offset",
+    "m_DefaultReferenceName": "Vector2_4bbde0c2533547af8032b5e6eec0a7b7",
+    "m_OverrideReferenceName": "_MaskOffset",
+    "m_GeneratePropertyBlock": true,
+    "m_Precision": 0,
+    "overrideHLSLDeclaration": false,
+    "hlslDeclarationOverride": 0,
+    "m_Hidden": false,
+    "m_Value": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector2MaterialSlot",
+    "m_ObjectId": "4cc1ab2c547a48d6a0b335b493978633",
+    "m_Id": 1,
+    "m_DisplayName": "Tiling",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Tiling",
+    "m_StageCapability": 3,
+    "m_Value": {
+        "x": 1.0,
+        "y": 1.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0
+    },
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.DynamicVectorMaterialSlot",
     "m_ObjectId": "4e3e7ce3631647ef88ff159ad6484dfa",
     "m_Id": 1,
@@ -1500,7 +1794,7 @@
     },
     "m_Name": "Sample Texture 2D",
     "m_DrawState": {
-        "m_Expanded": false,
+        "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
             "x": -572.9999389648438,
@@ -1709,9 +2003,9 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1026.0,
-            "y": -249.00001525878907,
-            "width": 145.0,
+            "x": -1033.0001220703125,
+            "y": -266.0,
+            "width": 145.00001525878907,
             "height": 130.0
         }
     },
@@ -1971,6 +2265,27 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector2MaterialSlot",
+    "m_ObjectId": "7d6a3e1c35954e91aa0f300d44fc1308",
+    "m_Id": 0,
+    "m_DisplayName": "Mask Tileling",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Out",
+    "m_StageCapability": 3,
+    "m_Value": {
+        "x": 0.0,
+        "y": 0.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0
+    },
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Texture2DMaterialSlot",
     "m_ObjectId": "7f0fcffaa1ea4357b299f6f931c01747",
     "m_Id": 0,
@@ -2009,13 +2324,13 @@
     },
     "m_Name": "Sample Texture 2D",
     "m_DrawState": {
-        "m_Expanded": false,
+        "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -855.0,
-            "y": 582.0,
-            "width": 156.99998474121095,
-            "height": 205.0
+            "x": -845.0,
+            "y": 587.0,
+            "width": 184.0,
+            "height": 253.0
         }
     },
     "m_Slots": [
@@ -2046,7 +2361,7 @@
     ],
     "synonyms": [],
     "m_Precision": 0,
-    "m_PreviewExpanded": false,
+    "m_PreviewExpanded": true,
     "m_PreviewMode": 0,
     "m_CustomColors": {
         "m_SerializableColors": []
@@ -2093,7 +2408,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector2MaterialSlot",
     "m_ObjectId": "851a870b1e9049dbb0032f5519b73b2a",
     "m_Id": 0,
-    "m_DisplayName": "MainTexTileling",
+    "m_DisplayName": "Main Tileling",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -2233,6 +2548,21 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "8a8186738a18479fa885ba9a2c9a357b",
+    "m_Id": 2,
+    "m_DisplayName": "Rotation",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Rotation",
+    "m_StageCapability": 3,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.NormalMaterialSlot",
     "m_ObjectId": "8db7da0ada054607a62e38bfb80ecf4f",
     "m_Id": 0,
@@ -2253,6 +2583,41 @@
     },
     "m_Labels": [],
     "m_Space": 0
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
+    "m_ObjectId": "8ef5c39068e948e2ba2ad6692fb4b588",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Property",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": -1899.0001220703125,
+            "y": 789.0000610351563,
+            "width": 136.0,
+            "height": 34.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "aac15adccb3146119e7db8468d8e64e2"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_Property": {
+        "m_Id": "ab2ea5a24bba466382ea9fd17db15937"
+    }
 }
 
 {
@@ -2402,6 +2767,44 @@
 {
     "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
+    "m_ObjectId": "aac15adccb3146119e7db8468d8e64e2",
+    "m_Id": 0,
+    "m_DisplayName": "Mask Angle",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Out",
+    "m_StageCapability": 3,
+    "m_Value": 0.0,
+    "m_DefaultValue": 0.0,
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 1,
+    "m_Type": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty",
+    "m_ObjectId": "ab2ea5a24bba466382ea9fd17db15937",
+    "m_Guid": {
+        "m_GuidSerialized": "88991ac9-8372-419a-9d8f-79f31a4e2e74"
+    },
+    "m_Name": "Mask Angle",
+    "m_DefaultReferenceName": "Vector1_ab2ea5a24bba466382ea9fd17db15937",
+    "m_OverrideReferenceName": "_MaskAngle",
+    "m_GeneratePropertyBlock": true,
+    "m_Precision": 0,
+    "overrideHLSLDeclaration": false,
+    "hlslDeclarationOverride": 0,
+    "m_Hidden": false,
+    "m_Value": 0.0,
+    "m_FloatType": 0,
+    "m_RangeValues": {
+        "x": 0.0,
+        "y": 1.0
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "ac453ad801b74778bcdbb2db36a8be6b",
     "m_Id": 5,
     "m_DisplayName": "G",
@@ -2436,6 +2839,28 @@
         "z": 0.0,
         "w": 0.0
     }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.UVMaterialSlot",
+    "m_ObjectId": "b0ac0a18318d4efdadcd0e472d5557a2",
+    "m_Id": 0,
+    "m_DisplayName": "UV",
+    "m_SlotType": 0,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "UV",
+    "m_StageCapability": 3,
+    "m_Value": {
+        "x": 0.0,
+        "y": 0.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0
+    },
+    "m_Labels": [],
+    "m_Channel": 0
 }
 
 {
@@ -2519,6 +2944,41 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
+    "m_ObjectId": "b5f6a42e54dd4ea7b80f3349f6bb7d2e",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Property",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": -1455.0001220703125,
+            "y": 747.0,
+            "width": 119.00000762939453,
+            "height": 34.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "7d6a3e1c35954e91aa0f300d44fc1308"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_Property": {
+        "m_Id": "1146dba1c4d5436fa50870306afaf1c9"
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.BlockNode",
     "m_ObjectId": "b63a4f8c48844d1d9e02a83cb27227a2",
     "m_Group": {
@@ -2587,7 +3047,7 @@
     },
     "m_Name": "MainTex",
     "m_DefaultReferenceName": "Texture2D_bc8a71bd1d7f4345b8256dd0eaca5179",
-    "m_OverrideReferenceName": "",
+    "m_OverrideReferenceName": "_MainTex",
     "m_GeneratePropertyBlock": true,
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
@@ -2599,6 +3059,48 @@
     },
     "m_Modifiable": true,
     "m_DefaultType": 0
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.RotateNode",
+    "m_ObjectId": "bd317ca4b8124e83bf9f484740bb49b8",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Rotate",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": -1697.0,
+            "y": 684.0,
+            "width": 208.0,
+            "height": 362.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "b0ac0a18318d4efdadcd0e472d5557a2"
+        },
+        {
+            "m_Id": "3913b07db3b442249698a1a3eede24a2"
+        },
+        {
+            "m_Id": "8a8186738a18479fa885ba9a2c9a357b"
+        },
+        {
+            "m_Id": "4a9ef5e0144f45b6bf892f07842dd9c9"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_Unit": 0
 }
 
 {
@@ -2666,7 +3168,7 @@
     },
     "m_Name": "Sample Texture 2D",
     "m_DrawState": {
-        "m_Expanded": false,
+        "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
             "x": -572.9999389648438,
@@ -2855,7 +3357,7 @@
     ],
     "synonyms": [],
     "m_Precision": 0,
-    "m_PreviewExpanded": false,
+    "m_PreviewExpanded": true,
     "m_PreviewMode": 0,
     "m_CustomColors": {
         "m_SerializableColors": []
@@ -2873,7 +3375,7 @@
     },
     "m_Name": "DustTex(R)",
     "m_DefaultReferenceName": "Texture2D_d34ba6bea264439781fabb8f0507ac50",
-    "m_OverrideReferenceName": "",
+    "m_OverrideReferenceName": "_DustTex_R",
     "m_GeneratePropertyBlock": true,
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
@@ -2953,6 +3455,41 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
+    "m_ObjectId": "d5e051e067a642b09204f85cb1f53d44",
+    "m_Group": {
+        "m_Id": ""
+    },
+    "m_Name": "Property",
+    "m_DrawState": {
+        "m_Expanded": true,
+        "m_Position": {
+            "serializedVersion": "2",
+            "x": -1455.0001220703125,
+            "y": 806.0,
+            "width": 141.0,
+            "height": 34.0
+        }
+    },
+    "m_Slots": [
+        {
+            "m_Id": "f18b50f53f3541a38e2458c667a2fcd6"
+        }
+    ],
+    "synonyms": [],
+    "m_Precision": 0,
+    "m_PreviewExpanded": true,
+    "m_PreviewMode": 0,
+    "m_CustomColors": {
+        "m_SerializableColors": []
+    },
+    "m_Property": {
+        "m_Id": "4bbde0c2533547af8032b5e6eec0a7b7"
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.ColorRGBMaterialSlot",
     "m_ObjectId": "d7064301fb454475ad05195dbc847b18",
     "m_Id": 0,
@@ -3015,10 +3552,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1051.0001220703125,
-            "y": 288.0000305175781,
-            "width": 97.00000762939453,
-            "height": 34.000003814697269
+            "x": -1231.0,
+            "y": 311.0,
+            "width": 143.0,
+            "height": 34.0
         }
     },
     "m_Slots": [
@@ -3089,7 +3626,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Texture2DMaterialSlot",
     "m_ObjectId": "e168e6f014264a948dfc4f7921ecd852",
     "m_Id": 0,
-    "m_DisplayName": "OverlayTex",
+    "m_DisplayName": "DustTex(R)",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -3286,6 +3823,27 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.Vector2MaterialSlot",
+    "m_ObjectId": "f18b50f53f3541a38e2458c667a2fcd6",
+    "m_Id": 0,
+    "m_DisplayName": "Mask Offset",
+    "m_SlotType": 1,
+    "m_Hidden": false,
+    "m_ShaderOutputName": "Out",
+    "m_StageCapability": 3,
+    "m_Value": {
+        "x": 0.0,
+        "y": 0.0
+    },
+    "m_DefaultValue": {
+        "x": 0.0,
+        "y": 0.0
+    },
+    "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "f4c6e3a845474c72860b9ccb1ce40cc1",
     "m_Id": 6,
@@ -3308,7 +3866,7 @@
     },
     "m_Name": "MaskTex",
     "m_DefaultReferenceName": "Texture2D_f6c1e49a309441ae8233214c90cd5b1e",
-    "m_OverrideReferenceName": "",
+    "m_OverrideReferenceName": "_MaskTex",
     "m_GeneratePropertyBlock": true,
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
@@ -3353,7 +3911,7 @@
     },
     "m_Name": "DustTex(B)",
     "m_DefaultReferenceName": "Texture2D_fd72014ea29240b9b9ca9b546705d486",
-    "m_OverrideReferenceName": "",
+    "m_OverrideReferenceName": "_DustTex_B",
     "m_GeneratePropertyBlock": true,
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
@@ -3376,7 +3934,7 @@
     },
     "m_Name": "Main Tileling",
     "m_DefaultReferenceName": "Vector2_fdefc4b4458d4494b1523c3414e2f3ea",
-    "m_OverrideReferenceName": "",
+    "m_OverrideReferenceName": "_MainTileling",
     "m_GeneratePropertyBlock": true,
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
