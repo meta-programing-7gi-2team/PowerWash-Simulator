@@ -9796,7 +9796,7 @@ MonoBehaviour:
   cameraTransform: {fileID: 963194228}
   waterEfx: {fileID: 1437480376}
   stream: {fileID: 1985171101}
-  shotRange: 4
+  shotRange: 6
   objectLayer:
     serializedVersion: 2
     m_Bits: 64

@@ -17,6 +17,7 @@ public class GunControl : MonoBehaviour
     private RaycastHit hit;
 
     private Vector3 blockRotation = new Vector3(15f, -45f, 20f);
+    private Vector3 dir;
 
     private void Update()
     {
@@ -44,13 +45,16 @@ public class GunControl : MonoBehaviour
 
         if(Physics.Raycast(cameraTransform.position, cameraTransform.forward, out hit, shotRange, objectLayer))
         {
-            stream.SetPosition(1, hit.point);   
+            dir = hit.point;
+            stream.SetPosition(1, dir);   
         }
         else
         {
-            stream.SetPosition(1, cameraTransform.position + cameraTransform.forward * shotRange);
+            dir = cameraTransform.position + cameraTransform.forward * shotRange;
+            stream.SetPosition(1, dir);
         }
 
+        waterEfx.transform.LookAt(dir);
         waterEfx.SetActive(true);
     }
     private void StopWater()
