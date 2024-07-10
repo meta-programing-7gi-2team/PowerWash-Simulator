@@ -26,6 +26,7 @@ public class PlayerMovement : MonoBehaviour
     private bool isGround = true;
     private float checkRadius = 0.2f;
     [SerializeField] private Transform groundCheck;
+    [SerializeField] private LayerMask playerLayer;
 
     private Rigidbody player_rid;
     private Transform cameraTransform;
@@ -39,7 +40,7 @@ public class PlayerMovement : MonoBehaviour
     {
         Move();
 
-        isGround = Physics.CheckSphere(groundCheck.position, checkRadius);
+        isGround = Physics.CheckSphere(groundCheck.position, checkRadius, ~playerLayer);
 
         if (isGround && Input.GetKeyDown(KeyCode.Space))
         {
