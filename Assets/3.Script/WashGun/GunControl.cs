@@ -8,6 +8,7 @@ public class GunControl : MonoBehaviour
     [SerializeField] private LineRenderer stream;
     [SerializeField] private ParticleSystem waterEffect;
     [SerializeField] private float shotRange = 4f;
+    [SerializeField] private LayerMask objectLayer;
 
     private bool isAuto = false;
     private RaycastHit hit;
@@ -36,7 +37,7 @@ public class GunControl : MonoBehaviour
         stream.enabled = true;
         stream.SetPosition(0, firePoint.position);
 
-        if (Physics.Raycast(firePoint.position, firePoint.forward, out hit, shotRange))
+        if (Physics.Raycast(firePoint.position, firePoint.forward, out hit, shotRange, objectLayer))
         {
             Debug.DrawRay(firePoint.position, firePoint.forward * shotRange, Color.red);
             stream.SetPosition(1, hit.point);
