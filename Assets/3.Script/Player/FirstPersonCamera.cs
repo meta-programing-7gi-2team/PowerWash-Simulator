@@ -7,7 +7,6 @@ public class FirstPersonCamera : MonoBehaviour
     [SerializeField] private float mouseSensitivity = 100.0f;
 
     [SerializeField] private Transform playerBody;
-    [SerializeField] private Transform gunPivot;
 
     private float xRotation = 0.0f;
     private bool isFree = false;
@@ -19,14 +18,16 @@ public class FirstPersonCamera : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
-    private void FixedUpdate()
+    private void Update()
     {
-        CameraMove();
-
         if (Input.GetKeyDown(KeyCode.C))
         {
             ModeChange();
         }
+    }
+    private void FixedUpdate()
+    {
+        CameraMove();
     }
     private void CameraMove()
     {
@@ -36,7 +37,7 @@ public class FirstPersonCamera : MonoBehaviour
             float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
 
             xRotation -= mouseY;
-            xRotation = Mathf.Clamp(xRotation, -90.0f, 90.0f);
+            xRotation = Mathf.Clamp(xRotation, -85.0f, 85.0f);
 
             transform.localRotation = Quaternion.Euler(xRotation, 0.0f, 0.0f);
             playerBody.Rotate(Vector3.up * mouseX);
