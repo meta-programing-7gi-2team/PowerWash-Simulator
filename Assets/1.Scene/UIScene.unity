@@ -443,7 +443,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 268736574}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1344362986}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: ButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &268736574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2718,7 +2730,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 100
+  m_MaxValue: 1
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
@@ -2916,6 +2928,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8151b7b8617c0943a6f393ecf8d722c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LoadAll: {fileID: 479623361}
+  loadingSlider: {fileID: 1245351722}
+  text1: {fileID: 1383255130}
+  text2: {fileID: 1633152584}
+  text3: {fileID: 558344530}
+  Button: {fileID: 268736571}
 --- !u!1 &1383255128
 GameObject:
   m_ObjectHideFlags: 0
