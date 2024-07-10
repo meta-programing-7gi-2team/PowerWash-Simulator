@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: asdasd
+  m_Name: SB-PineapplePanel_23
   m_Shader: {fileID: -6465566751694194690, guid: c9966c82fea43ee4ab8fc9c934b8e120, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -31,6 +31,26 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _DustTex_B:
+        m_Texture: {fileID: 2800000, guid: ae4f43c01074c7f45b7192f5c0758cd3, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DustTex_G:
+        m_Texture: {fileID: 2800000, guid: 57abf28a5721a0f459a79f37cf4e37ce, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DustTex_R:
+        m_Texture: {fileID: 2800000, guid: 2d7228ef1e838e440bc342871a9cd96b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: b0197ff562a35e94b814c78257b1e04c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskTex:
+        m_Texture: {fileID: 2800000, guid: f73bf4a00a5daef4e8a0d36a5692ad9c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -43,7 +63,13 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    m_Floats: []
+    m_Floats:
+    - _MaskAngle: 0.71
     m_Colors:
     - Vector2_37114cb99da649d8b9bbd39bc13374e1: {r: 10, g: 10, b: 0, a: 0}
+    - Vector3_bbc0a5acb4b74413a3328c75d8299449: {r: 6, g: 3, b: 10, a: 0}
+    - _DustTileling: {r: 10, g: 10, b: 0, a: 0}
+    - _MainTileling: {r: 1, g: 1, b: 0, a: 0}
+    - _MaskOffset: {r: -7.87, g: 0.1, b: 0, a: 0}
+    - _MaskTileling: {r: 8.88, g: 4.7, b: 0, a: 0}
   m_BuildTextureStacks: []
