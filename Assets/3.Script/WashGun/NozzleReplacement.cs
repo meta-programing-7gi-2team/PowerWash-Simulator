@@ -40,13 +40,10 @@ public class NozzleReplacement : MonoBehaviour
 
         nozzle[index].SetActive(true);
     }
-    public Transform GetCurrentActiveNozzle()
-    {
-        return nozzle[index].transform.GetChild(1);
-    }
+   
     public GameObject GetCurrentActiveWaterParticle()
     {
-        return nozzle[index].transform.GetChild(2).gameObject;
+        return nozzle[index].transform.GetChild(1).gameObject;
     }
     
 }
