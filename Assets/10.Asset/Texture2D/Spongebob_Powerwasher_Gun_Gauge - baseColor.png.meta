@@ -1,7 +1,55 @@
 fileFormatVersion: 2
 guid: 2be72f2b7488d6447b8c108a32089416
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 4106315371995935024
+    second: Spongebob_Powerwasher_Gun_Gauge - baseColor_0
+  - first:
+      213: 7800738602304661675
+    second: Spongebob_Powerwasher_Gun_Gauge - baseColor_1
+  - first:
+      213: -4016530483944512417
+    second: Spongebob_Powerwasher_Gun_Gauge - baseColor_2
+  - first:
+      213: 359245181211821698
+    second: Spongebob_Powerwasher_Gun_Gauge - baseColor_3
+  - first:
+      213: 130294493538539873
+    second: Spongebob_Powerwasher_Gun_Gauge - baseColor_4
+  - first:
+      213: 1913926872521309899
+    second: Spongebob_Powerwasher_Gun_Gauge - baseColor_5
+  - first:
+      213: 2727105760644667403
+    second: Spongebob_Powerwasher_Gun_Gauge - baseColor_6
+  - first:
+      213: 1714305057647799942
+    second: Spongebob_Powerwasher_Gun_Gauge - baseColor_7
+  - first:
+      213: -650153020490468050
+    second: Spongebob_Powerwasher_Gun_Gauge - baseColor_8
+  - first:
+      213: 8455341522612461318
+    second: Spongebob_Powerwasher_Gun_Gauge - baseColor_9
+  - first:
+      213: -1675766227592469822
+    second: Spongebob_Powerwasher_Gun_Gauge - baseColor_10
+  - first:
+      213: -8647082497815432373
+    second: Spongebob_Powerwasher_Gun_Gauge - baseColor_11
+  - first:
+      213: 7174004713530298489
+    second: Spongebob_Powerwasher_Gun_Gauge - baseColor_12
+  - first:
+      213: -162686607493210747
+    second: Spongebob_Powerwasher_Gun_Gauge - baseColor_13
+  - first:
+      213: -321807160937052971
+    second: Spongebob_Powerwasher_Gun_Gauge - baseColor_14
+  - first:
+      213: -1513026849634416663
+    second: Spongebob_Powerwasher_Gun_Gauge - baseColor_15
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -113,11 +161,347 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Spongebob_Powerwasher_Gun_Gauge - baseColor_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0313b8b13109cf830800000000000000
+      internalID: 4106315371995935024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spongebob_Powerwasher_Gun_Gauge - baseColor_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba8eb00cd6ac14c60800000000000000
+      internalID: 7800738602304661675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spongebob_Powerwasher_Gun_Gauge - baseColor_2
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f54a5fa2eca6248c0800000000000000
+      internalID: -4016530483944512417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spongebob_Powerwasher_Gun_Gauge - baseColor_3
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 768
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 286c665c69b4cf400800000000000000
+      internalID: 359245181211821698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spongebob_Powerwasher_Gun_Gauge - baseColor_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 169dd8bc626eec100800000000000000
+      internalID: 130294493538539873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spongebob_Powerwasher_Gun_Gauge - baseColor_5
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcef4b2a952af8a10800000000000000
+      internalID: 1913926872521309899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spongebob_Powerwasher_Gun_Gauge - baseColor_6
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0895209d30a8d520800000000000000
+      internalID: 2727105760644667403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spongebob_Powerwasher_Gun_Gauge - baseColor_7
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68ea0cdfd5f6ac710800000000000000
+      internalID: 1714305057647799942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spongebob_Powerwasher_Gun_Gauge - baseColor_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e25b404c5413af6f0800000000000000
+      internalID: -650153020490468050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spongebob_Powerwasher_Gun_Gauge - baseColor_9
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60f1de50158675570800000000000000
+      internalID: 8455341522612461318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spongebob_Powerwasher_Gun_Gauge - baseColor_10
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c221cd9e7b7eb8e0800000000000000
+      internalID: -1675766227592469822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spongebob_Powerwasher_Gun_Gauge - baseColor_11
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b43b63e48446ff780800000000000000
+      internalID: -8647082497815432373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spongebob_Powerwasher_Gun_Gauge - baseColor_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97093f6074f2f8360800000000000000
+      internalID: 7174004713530298489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spongebob_Powerwasher_Gun_Gauge - baseColor_13
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58d57a674650ebdf0800000000000000
+      internalID: -162686607493210747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spongebob_Powerwasher_Gun_Gauge - baseColor_14
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d48b269716b88bf0800000000000000
+      internalID: -321807160937052971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spongebob_Powerwasher_Gun_Gauge - baseColor_15
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e789ebb816a00be0800000000000000
+      internalID: -1513026849634416663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a4c296e78e5f6804aba443b77931a16b
     internalID: 0
     vertices: []
     indices: 

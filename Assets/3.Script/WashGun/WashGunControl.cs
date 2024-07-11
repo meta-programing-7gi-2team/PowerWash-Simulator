@@ -11,18 +11,23 @@ public class WashGunControl : MonoBehaviour
     private LineRenderer stream;
 
     [SerializeField] private float shotRange = 4f;
+    [SerializeField] private float blockCheckRange;
     [SerializeField] private LayerMask objectLayer;
 
     private bool isAuto = false;
     private RaycastHit hit;
     private Vector3 dir;
-    private Vector3 blockRotation = new Vector3(15f, -45f, 20f);
+    private Vector3 blockRotation;
 
     private void Start()
     {
         playerCamera = Camera.main.transform;
         nozzle = GetComponent<NozzleReplacement>();
         stream = GetComponent<LineRenderer>();
+        blockRotation = new Vector3(15f, -45f, 20f);
+
+        SetCurrentNozzle();
+        SetBlockCheckRange(1.1f);
     }
     private void SetCurrentNozzle()
     {
@@ -79,16 +84,22 @@ public class WashGunControl : MonoBehaviour
     }
     private bool BlockCheck()
     {
-        if(Physics.Raycast(transform.position, playerCamera.forward,out RaycastHit hit, 1f, objectLayer))
+        if (Physics.Raycast(playerCamera.position, playerCamera.forward, blockCheckRange))
         {
-            transform.localRotation = Quaternion.Euler(blockRotation);
+            Debug.DrawRay(playerCamera.position, playerCamera.forward * blockCheckRange, Color.red);
             Stop();
+            transform.localRotation = Quaternion.Euler(blockRotation);
             return true;
         }
         else
         {
+            Debug.DrawRay(playerCamera.position, playerCamera.forward * blockCheckRange, Color.blue);
             transform.localRotation = Quaternion.Euler(Vector3.zero);
             return false;
         }
+    }
+    public void SetBlockCheckRange(float range)
+    {
+        blockCheckRange = range;
     }
 }

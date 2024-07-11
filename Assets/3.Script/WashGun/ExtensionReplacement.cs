@@ -7,8 +7,13 @@ public class ExtensionReplacement : MonoBehaviour
     [SerializeField] private GameObject[] Extension;
     [SerializeField] Transform nozzlePivot;
 
+    private WashGunControl washGun;
     private int currentIndex = 0;
 
+    private void Start()
+    {
+        washGun = GetComponent<WashGunControl>();
+    }
     private void Update()
     {
         SetNozzlePivot();
@@ -18,24 +23,28 @@ public class ExtensionReplacement : MonoBehaviour
             Extension[currentIndex].SetActive(false);
             currentIndex = 0;
             Extension[currentIndex].SetActive(true);
+            washGun.SetBlockCheckRange(1.1f);
         }
         else if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             Extension[currentIndex].SetActive(false);
             currentIndex = 1;
             Extension[currentIndex].SetActive(true);
+            washGun.SetBlockCheckRange(1.5f);
         }
         else if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             Extension[currentIndex].SetActive(false);
             currentIndex = 2;
             Extension[currentIndex].SetActive(true);
+            washGun.SetBlockCheckRange(2.05f);
         }
         else if (Input.GetKeyDown(KeyCode.Alpha4))
         {
             Extension[currentIndex].SetActive(false);
             currentIndex = 3;
             Extension[currentIndex].SetActive(true);
+            washGun.SetBlockCheckRange(2.8f);
         }
     }
     public void SetNozzlePivot()
@@ -56,4 +65,5 @@ public class ExtensionReplacement : MonoBehaviour
                 break;
         }
     }
+    
 }
