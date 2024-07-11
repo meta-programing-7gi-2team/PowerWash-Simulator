@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using System.IO;
 public class WaterEffect : MonoBehaviour
 {
     public float brushSize = 0.1f; // 브러쉬 크기
@@ -11,6 +11,7 @@ public class WaterEffect : MonoBehaviour
 
     public Color targetColor = Color.black; // 타겟 색상
     public float colorTolerance = 0.1f; // 색상 허용 오차
+    bool s = false;
 
     void Start()
     {
@@ -52,7 +53,7 @@ public class WaterEffect : MonoBehaviour
                                 Texture2D readableTexture = GetReadableTexture(maskTexture);
 
                                 // 텍스처의 특정 부분을 검은색으로 변경
-                                ModifyTexture(readableTexture, x, y, brushSize);
+                                //ModifyTexture(readableTexture, x, y, brushSize);
 
                                 // 수정된 텍스처를 원래 텍스처에 다시 적용
                                 ApplyModifiedTexture(readableTexture, maskTexture);
@@ -91,22 +92,26 @@ public class WaterEffect : MonoBehaviour
             source.width,
             source.height,
             0,
-            RenderTextureFormat.ARGB32, // 변경 가능
+            RenderTextureFormat.Default, // 변경 가능
             RenderTextureReadWrite.Linear);
 
+        // RenderTexture 활성화 및 원본 텍스처 복사
         Graphics.Blit(source, renderTex);
         RenderTexture previous = RenderTexture.active;
         RenderTexture.active = renderTex;
 
-        Texture2D readableTexture = new Texture2D(source.width, source.height, TextureFormat.ARGB32, false);
+        // 읽기 가능한 새로운 Texture2D 생성
+        Texture2D readableTexture = new Texture2D(source.width, source.height, TextureFormat.RGBAFloat, false);
         readableTexture.ReadPixels(new Rect(0, 0, renderTex.width, renderTex.height), 0, 0);
         readableTexture.Apply();
 
+        // 이전 RenderTexture 복원 및 임시 RenderTexture 해제
         RenderTexture.active = previous;
         RenderTexture.ReleaseTemporary(renderTex);
 
         return readableTexture;
     }
+
 
     private void ModifyTexture(Texture2D texture, int x, int y, float brushSize)
     {
@@ -120,6 +125,7 @@ public class WaterEffect : MonoBehaviour
         int endY = Mathf.Clamp(y + halfSize, 0, texture.height);
 
         Color[] pixels = texture.GetPixels(startX, startY, endX - startX, endY - startY);
+        //Color[] pixels = texture.GetPixels(0, 0, texture.width, texture.height);
 
         for (int i = 0; i < pixels.Length; i++)
         {
@@ -127,6 +133,7 @@ public class WaterEffect : MonoBehaviour
         }
 
         texture.SetPixels(startX, startY, endX - startX, endY - startY, pixels);
+        //texture.SetPixels(0, 0, texture.width, texture.height, pixels);
         texture.Apply();
     }
 
