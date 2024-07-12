@@ -75,10 +75,10 @@ public class WashGunControl : MonoBehaviour
     }
     private bool BlockCheck()
     {
-        if (Physics.Raycast(playerCamera.position, playerCamera.forward, blockCheckRange))
+        if (Physics.Raycast(playerCamera.position, playerCamera.forward, blockCheckRange, objectLayer))
         {
-            Debug.DrawRay(playerCamera.position, playerCamera.forward * blockCheckRange, Color.red);
             Stop();
+            Debug.DrawRay(playerCamera.position, playerCamera.forward * blockCheckRange, Color.red);
             transform.localRotation = Quaternion.Euler(blockRotation);
             return true;
         }

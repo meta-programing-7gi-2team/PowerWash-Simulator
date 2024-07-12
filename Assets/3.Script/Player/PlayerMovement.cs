@@ -2,112 +2,112 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-enum Posture
+public enum State
 {
-    Stand,
+    Walk,
     Crouch,
     Lie
 }
 public class PlayerMovement : MonoBehaviour
 {
-    private Posture posture;
-    private float value_V, value_H;
-    
-    [SerializeField] private float moveSpeed = 3;
-    [SerializeField] private float runSpeed = 6;
-    [SerializeField] private float crouchSpeed = 1f;
-                    
-    [SerializeField] private float standHeight = 0.5f;
-    [SerializeField] private float crouchHeight = 0f;
-    [SerializeField] private float lieHeight = -0.5f;
-             
-    [SerializeField] private float jumpSpeed = 6;
+    private State state;
+    private Vector3 moveDir;
 
-    private bool isGround = true;
+    private CharacterController cc;
+
+    [SerializeField]
+    private Transform groundCheck;
+    private bool isGround;
     private float checkRadius = 0.2f;
-    [SerializeField] private Transform groundCheck;
-    [SerializeField] private LayerMask playerLayer;
+    [SerializeField]
+    private LayerMask playerLayer;
 
-    private Rigidbody player_rid;
-    private Transform cameraTransform;
+    public float speed = 3f;
+    private float speedWeight = 1f;
+    public float jumpForce = 6f;
+    private float gravity = 20f;
 
     private void Start()
     {
-        TryGetComponent(out player_rid);
-        cameraTransform = Camera.main.transform;
+        cc = GetComponent<CharacterController>();
+        state = State.Walk;
     }
     private void Update()
     {
         Move();
-
-        isGround = Physics.CheckSphere(groundCheck.position, checkRadius, ~playerLayer);
-
-        if (isGround && Input.GetKeyDown(KeyCode.Space))
-        {
-            Jump();
-        }
-
         if (Input.GetKeyDown(KeyCode.LeftControl))
         {
-            ChangePosture();
+            ReplaceState();
         }
     }
     private void Move()
     {
-        value_V = Input.GetAxis("Vertical");
-        value_H = Input.GetAxis("Horizontal");
-
-        Vector3 forward = cameraTransform.forward;
-        Vector3 right = cameraTransform.right;
-
-        forward.y = 0f;
-        right.y = 0f;
-
-        forward.Normalize();
-        right.Normalize();
-
-        Vector3 dir = forward * value_V + right * value_H;
-
         if (Input.GetKey(KeyCode.LeftShift))
         {
-            StandUp();
-            player_rid.velocity = new Vector3(dir.x * runSpeed, player_rid.velocity.y, dir.z * runSpeed);
+            Stand();
+            speedWeight = 2f;
         }
         else
         {
-            if(posture.Equals(Posture.Stand))
-                player_rid.velocity = new Vector3(dir.x * moveSpeed, player_rid.velocity.y, dir.z * moveSpeed);
+            if (!state.Equals(State.Walk))
+                speedWeight = 0.5f;
             else
-                player_rid.velocity = new Vector3(dir.x * crouchSpeed, player_rid.velocity.y, dir.z * crouchSpeed);
+                speedWeight = 1f;
+        }
 
-        }
-    }
-    private void Jump()
-    {
-        player_rid.AddForce(Vector3.up * jumpSpeed, ForceMode.Impulse);
-        StandUp();
-    }
-    private void ChangePosture()
-    {
-        switch (posture)
+        if (cc.isGrounded)
         {
-            case Posture.Stand:
-                posture = Posture.Crouch;
-                cameraTransform.localPosition = new Vector3(0, crouchHeight, cameraTransform.localPosition.z);
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                Stand();
+                moveDir.y = jumpForce;
+            }
+            else
+            {
+                moveDir.y = 0f;
+            }
+        }
+
+        Vector3 dir = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+        dir *= (speed * speedWeight);
+        dir = transform.TransformDirection(dir);
+
+        moveDir.x = dir.x;
+        moveDir.z = dir.z;
+        moveDir.y -= gravity * Time.deltaTime;
+
+        cc.Move(moveDir * Time.deltaTime);
+    }
+    private void ReplaceState()
+    {
+        switch (state)
+        {
+            case State.Walk:
+                state = State.Crouch;
+                cc.height = 1.5f;
                 break;
-            case Posture.Crouch:
-                posture = Posture.Lie;
-                cameraTransform.localPosition = new Vector3(0, lieHeight, cameraTransform.localPosition.z);
+            case State.Crouch:
+                state = State.Lie;
+                cc.height = 1f;
                 break;
-            case Posture.Lie:
-                posture = Posture.Stand;
-                cameraTransform.localPosition = new Vector3(0, standHeight, cameraTransform.localPosition.z);             
+            case State.Lie:
+                state = State.Walk;
+                cc.height = 2f;
                 break;
         }
     }
-    private void StandUp()
+    private void Stand()
     {
-        posture = Posture.Stand;
-        cameraTransform.localPosition = new Vector3(0, standHeight, cameraTransform.localPosition.z);
+        state = State.Walk;
+        cc.height = 2.0f;
+    }
+    private bool GroundCheck()
+    {
+        if (state.Equals(State.Lie))
+            checkRadius = 0.5f;
+        else
+            checkRadius = 0.2f;
+
+        return isGround =  Physics.CheckSphere(groundCheck.position, checkRadius, ~playerLayer);
     }
 }
