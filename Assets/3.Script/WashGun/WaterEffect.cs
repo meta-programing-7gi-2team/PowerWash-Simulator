@@ -4,168 +4,135 @@ using UnityEngine;
 using System.IO;
 public class WaterEffect : MonoBehaviour
 {
-    public float brushSize = 0.1f; // 브러쉬 크기
-    //파티클
-    private ParticleSystem ps; 
+    private ParticleSystem ps;
     private List<ParticleCollisionEvent> collisionEvents;
-
-    public Color targetColor = Color.black; // 타겟 색상
-    public float colorTolerance = 0.1f; // 색상 허용 오차
-    bool s = false;
+    
+    private CleanDraw cleanDraw;
+    private GameObject cachedTarget;
 
     void Start()
     {
         ps = GetComponent<ParticleSystem>();
         collisionEvents = new List<ParticleCollisionEvent>();
     }
-    private void OnParticleCollision(GameObject other)
+
+    void OnParticleCollision(GameObject other)
     {
-        // 충돌한 오브젝트의 Renderer 가져오기
-        Renderer renderer = other.GetComponent<Renderer>();
-        if (renderer != null)
+        if (other != cachedTarget)
         {
-            Material material = renderer.material;
+            cachedTarget = other;
+            cleanDraw = other.GetComponent<CleanDraw>();
+        }
 
-            // 마스크 텍스처 가져오기
-            if (material.HasProperty("_MaskTex"))
+        if (cleanDraw == null || cleanDraw.isActiveAndEnabled == false)
+            return;
+
+        int numCollisionEvents = ps.GetCollisionEvents(other, collisionEvents);
+
+        for (int i = 0; i < numCollisionEvents; i++)
+        {
+            ParticleCollisionEvent collisionEvent = collisionEvents[i];
+
+            // 충돌 지점에서 UV 좌표를 계산
+            Renderer renderer = other.GetComponent<Renderer>();
+            MeshCollider meshCollider = other.GetComponent<MeshCollider>();
+
+            if (renderer != null && meshCollider != null)
             {
-                Texture2D maskTexture = material.GetTexture("_MaskTex") as Texture2D;
-                if (maskTexture != null && maskTexture.isReadable)
-                {
-                    // 충돌 지점 계산
-                    int numCollisionEvents = ps.GetCollisionEvents(other, collisionEvents);
-
-                    for (int i = 0; i < numCollisionEvents; i++)
-                    {
-                        Vector3 collisionPoint = collisionEvents[i].intersection;
-                        Vector2 uv;
-                        if (GetUVFromCollisionPoint(renderer, collisionPoint, out uv))
-                        {
-                            // UV 좌표를 텍스처 좌표로 변환
-                            int x = (int)(uv.x * maskTexture.width);
-                            int y = (int)(uv.y * maskTexture.height);
-                            Debug.Log($"{x}, {y}");
-
-                            // 유효 범위 내에 있는지 확인
-                            if (x >= 0 && x < maskTexture.width && y >= 0 && y < maskTexture.height)
-                            {
-                                // 읽기 가능한 텍스처로 변환
-                                Texture2D readableTexture = GetReadableTexture(maskTexture);
-
-                                // 텍스처의 특정 부분을 검은색으로 변경
-                                //ModifyTexture(readableTexture, x, y, brushSize);
-
-                                // 수정된 텍스처를 원래 텍스처에 다시 적용
-                                ApplyModifiedTexture(readableTexture, maskTexture);
-
-                                // 텍스처에서 검은색 비율 계산
-                                float blackPixelRatio = CalculateColorRatio(readableTexture, targetColor, colorTolerance);
-                                Debug.Log("Black pixel ratio: " + blackPixelRatio * 100 + "%");
-
-                            }
-                        }
-                    }
-                }
+                // 충돌 지점의 정보를 사용하여 UV 좌표를 가져옴
+                Vector2 uv = GetUVFromMeshCollider(meshCollider, collisionEvent.intersection);
+                cleanDraw.Wash(uv);
             }
         }
     }
-    private bool GetUVFromCollisionPoint(Renderer renderer, Vector3 collisionPoint, out Vector2 uv)
+
+    Vector2 GetUVFromMeshCollider(MeshCollider meshCollider, Vector3 hitPoint)
     {
-        RaycastHit hit;
-        // 충돌 지점에서 앞으로 이동한 후 뒤로 레이캐스트 발사
-        if (Physics.Raycast(collisionPoint + Vector3.forward * 0.1f, Vector3.back, out hit))
+        Mesh mesh = meshCollider.sharedMesh;
+        Vector3[] vertices = mesh.vertices;
+        Vector2[] uvs = mesh.uv;
+        int[] triangles = mesh.triangles;
+
+        for (int i = 0; i < triangles.Length; i += 3)
         {
-            Collider a = renderer.GetComponent<Collider>();
-            if (hit.collider == renderer.GetComponent<Collider>())
+            Vector3 v0 = meshCollider.transform.TransformPoint(vertices[triangles[i]]);
+            Vector3 v1 = meshCollider.transform.TransformPoint(vertices[triangles[i + 1]]);
+            Vector3 v2 = meshCollider.transform.TransformPoint(vertices[triangles[i + 2]]);
+
+            if (PointInTriangle(hitPoint, v0, v1, v2))
             {
-                uv = hit.textureCoord;
-                return true;
-            }
-        }
-        uv = Vector2.zero;
-        return false;
-    }
-    private Texture2D GetReadableTexture(Texture2D source)
-    {
-        // 새로운 읽기 가능 텍스처 생성
-        RenderTexture renderTex = RenderTexture.GetTemporary(
-            source.width,
-            source.height,
-            0,
-            RenderTextureFormat.Default, // 변경 가능
-            RenderTextureReadWrite.Linear);
+                Vector2 uv0 = uvs[triangles[i]];
+                Vector2 uv1 = uvs[triangles[i + 1]];
+                Vector2 uv2 = uvs[triangles[i + 2]];
 
-        // RenderTexture 활성화 및 원본 텍스처 복사
-        Graphics.Blit(source, renderTex);
-        RenderTexture previous = RenderTexture.active;
-        RenderTexture.active = renderTex;
-
-        // 읽기 가능한 새로운 Texture2D 생성
-        Texture2D readableTexture = new Texture2D(source.width, source.height, TextureFormat.RGBAFloat, false);
-        readableTexture.ReadPixels(new Rect(0, 0, renderTex.width, renderTex.height), 0, 0);
-        readableTexture.Apply();
-
-        // 이전 RenderTexture 복원 및 임시 RenderTexture 해제
-        RenderTexture.active = previous;
-        RenderTexture.ReleaseTemporary(renderTex);
-
-        return readableTexture;
-    }
-
-
-    private void ModifyTexture(Texture2D texture, int x, int y, float brushSize)
-    {
-        int size = (int)brushSize;
-        int halfSize = size / 2;
-
-        // 유효 범위 내에서 픽셀을 수정
-        int startX = Mathf.Clamp(x - halfSize, 0, texture.width);
-        int startY = Mathf.Clamp(y - halfSize, 0, texture.height);
-        int endX = Mathf.Clamp(x + halfSize, 0, texture.width);
-        int endY = Mathf.Clamp(y + halfSize, 0, texture.height);
-
-        Color[] pixels = texture.GetPixels(startX, startY, endX - startX, endY - startY);
-        //Color[] pixels = texture.GetPixels(0, 0, texture.width, texture.height);
-
-        for (int i = 0; i < pixels.Length; i++)
-        {
-            pixels[i] = targetColor;
-        }
-
-        texture.SetPixels(startX, startY, endX - startX, endY - startY, pixels);
-        //texture.SetPixels(0, 0, texture.width, texture.height, pixels);
-        texture.Apply();
-    }
-
-    private void ApplyModifiedTexture(Texture2D modifiedTexture, Texture2D originalTexture)
-    {
-        // 원래 텍스처에 수정된 텍스처를 다시 적용
-        // 수정된 텍스처를 원래 텍스처로 바꿔서 머티리얼에 설정
-        originalTexture.LoadRawTextureData(modifiedTexture.GetRawTextureData());
-        originalTexture.Apply();
-    }
-
-    private float CalculateColorRatio(Texture2D texture, Color targetColor, float tolerance)
-    {
-        Color[] pixels = texture.GetPixels();
-        int totalPixels = pixels.Length;
-        int matchingPixels = 0;
-
-        foreach (Color pixel in pixels)
-        {
-            if (ColorsAreSimilar(pixel, targetColor, tolerance))
-            {
-                matchingPixels++;
+                Vector3 barycentric = GetBarycentricCoordinates(hitPoint, v0, v1, v2);
+                Vector2 uv = uv0 * barycentric.x + uv1 * barycentric.y + uv2 * barycentric.z;
+                return uv;
             }
         }
 
-        return (float)matchingPixels / totalPixels;
+        return Vector2.zero;
     }
 
-    private bool ColorsAreSimilar(Color a, Color b, float tolerance)
+    bool PointInTriangle(Vector3 p, Vector3 p0, Vector3 p1, Vector3 p2)
     {
-        return Mathf.Abs(a.r - b.r) < tolerance &&
-               Mathf.Abs(a.g - b.g) < tolerance &&
-               Mathf.Abs(a.b - b.b) < tolerance;
+        Vector3 v0 = p2 - p0;
+        Vector3 v1 = p1 - p0;
+        Vector3 v2 = p - p0;
+
+        float dot00 = Vector3.Dot(v0, v0);
+        float dot01 = Vector3.Dot(v0, v1);
+        float dot02 = Vector3.Dot(v0, v2);
+        float dot11 = Vector3.Dot(v1, v1);
+        float dot12 = Vector3.Dot(v1, v2);
+
+        float invDenom = 1 / (dot00 * dot11 - dot01 * dot01);
+        float u = (dot11 * dot02 - dot01 * dot12) * invDenom;
+        float v = (dot00 * dot12 - dot01 * dot02) * invDenom;
+
+        return (u >= 0) && (v >= 0) && (u + v < 1);
     }
+
+    Vector2 GetBarycentricCoordinates(Vector3 p, Vector3 a, Vector3 b, Vector3 c)
+    {
+        Vector3 v0 = b - a, v1 = c - a, v2 = p - a;
+        float d00 = Vector3.Dot(v0, v0);
+        float d01 = Vector3.Dot(v0, v1);
+        float d11 = Vector3.Dot(v1, v1);
+        float d20 = Vector3.Dot(v2, v0);
+        float d21 = Vector3.Dot(v2, v1);
+        float denom = d00 * d11 - d01 * d01;
+        float v = (d11 * d20 - d01 * d21) / denom;
+        float w = (d00 * d21 - d01 * d20) / denom;
+        float u = 1.0f - v - w;
+        return new Vector2(u, v);
+    }
+    //private ParticleSystem ps;
+    //private List<ParticleCollisionEvent> colEventList;
+
+    //private CleanDraw cleanDraw;
+    //private GameObject cachedTarget;
+    //private void Awake()
+    //{
+    //    ps = GetComponent<ParticleSystem>();
+    //    colEventList = new List<ParticleCollisionEvent>(100);
+    //}
+    //private void OnParticleCollision(GameObject other)
+    //{
+    //    if (other != cachedTarget)
+    //    {
+    //        cachedTarget = other;
+    //        cleanDraw = other.GetComponent<CleanDraw>();
+    //    }
+
+    //    if (cleanDraw == null || cleanDraw.isActiveAndEnabled == false)
+    //        return;
+
+    //    int numColEvents = ps.GetCollisionEvents(other, colEventList);
+
+    //    for (int i = 0; i < numColEvents; i++)
+    //    {
+    //        cleanDraw.Wash(colEventList[i].intersection);
+    //    }
+    //}
 }
