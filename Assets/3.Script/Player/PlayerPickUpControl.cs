@@ -17,7 +17,7 @@ public class PlayerPickUpControl : MonoBehaviour
 
     private void Update()
     {
-        Physics.Raycast(playerCamera.position, playerCamera.forward, out hit, ~layer);
+        Physics.Raycast(playerCamera.position, playerCamera.forward, out hit,Mathf.Infinity, ~layer);
 
         if (Input.GetKeyDown(KeyCode.F))
         {
