@@ -6,15 +6,18 @@ public class PlayerPickUpControl : MonoBehaviour
 {
     [SerializeField]
     private Transform playerCamera;
+    [SerializeField] 
+    private LayerMask layer;
+
     private GameObject target;
+    private Transform targetParent;
     private RaycastHit hit;
     private Vector3 pos;
     private bool isHand = false;
-    private Transform targetParent;
 
     private void Update()
     {
-        Physics.Raycast(playerCamera.position, playerCamera.forward, out hit, Mathf.Infinity);
+        Physics.Raycast(playerCamera.position, playerCamera.forward, out hit, ~layer);
 
         if (Input.GetKeyDown(KeyCode.F))
         {
@@ -25,12 +28,14 @@ public class PlayerPickUpControl : MonoBehaviour
                 targetParent = target.transform.parent;
                 target.transform.parent = playerCamera;
                 target.transform.GetComponent<Collider>().isTrigger = true;
+                target.gameObject.layer = LayerMask.NameToLayer("Hand");
             }
             else if(isHand && target.GetComponent<MovableObject>().GetIsArrange())
             {
                 isHand = false;
                 target.transform.parent = targetParent;
                 target.transform.GetComponent<Collider>().isTrigger = false;
+                target.gameObject.layer = LayerMask.NameToLayer("Movable");
             }
         }
         if(Input.GetMouseButtonDown(0) && isHand && target.GetComponent<MovableObject>().GetIsArrange())
@@ -38,16 +43,15 @@ public class PlayerPickUpControl : MonoBehaviour
             isHand = false;
             target.transform.parent = targetParent;
             target.transform.GetComponent<Collider>().isTrigger = false;
+            target.gameObject.layer = LayerMask.NameToLayer("Movable");
         }
         if (isHand)
         {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            Plane Ground = new Plane(Vector3.up, Vector3.zero);
-            Ground.Raycast(ray, out float Length);
-            pos = ray.GetPoint(Length);
-            pos.y = 0 + target.transform.GetComponent<BoxCollider>().size.y / 2;
+            pos = hit.point;
+            pos.y = pos.y + target.transform.GetComponent<BoxCollider>().size.y / 2;
             target.transform.position = pos;
             target.transform.rotation = Quaternion.Euler(Vector3.zero);
+
         }       
     }
 }
