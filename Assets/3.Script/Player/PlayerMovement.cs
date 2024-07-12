@@ -15,13 +15,6 @@ public class PlayerMovement : MonoBehaviour
 
     private CharacterController cc;
 
-    [SerializeField]
-    private Transform groundCheck;
-    private bool isGround;
-    private float checkRadius = 0.2f;
-    [SerializeField]
-    private LayerMask playerLayer;
-
     public float speed = 3f;
     private float speedWeight = 1f;
     public float jumpForce = 6f;
@@ -100,14 +93,5 @@ public class PlayerMovement : MonoBehaviour
     {
         state = State.Walk;
         cc.height = 2.0f;
-    }
-    private bool GroundCheck()
-    {
-        if (state.Equals(State.Lie))
-            checkRadius = 0.5f;
-        else
-            checkRadius = 0.2f;
-
-        return isGround =  Physics.CheckSphere(groundCheck.position, checkRadius, ~playerLayer);
     }
 }
