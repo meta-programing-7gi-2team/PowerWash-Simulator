@@ -4,18 +4,15 @@ using UnityEngine;
 
 public class MovableObject : MonoBehaviour
 {
-    private Material material;
     [SerializeField]
+    private Material material;
     private bool isArrange;
-
-    private void Start()
-    {
-        material = GetComponent<MeshRenderer>().material;
-    }
 
     private void OnTriggerStay(Collider col)
     {
-        if (col.gameObject.layer.Equals(LayerMask.NameToLayer("Ground"))) return;
+        if (col.gameObject.layer.Equals(LayerMask.NameToLayer("Ground")) ||
+            col.gameObject.layer.Equals(LayerMask.NameToLayer("Player"))) 
+            return;
         material.color = Color.red;
         isArrange = false;
     }

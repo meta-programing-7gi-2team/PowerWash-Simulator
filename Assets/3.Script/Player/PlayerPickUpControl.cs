@@ -45,20 +45,17 @@ public class PlayerPickUpControl : MonoBehaviour
         target = hit.transform.gameObject;
         targetParent = target.transform.parent;
         target.transform.parent = playerCamera;
-        target.transform.GetComponent<Collider>().isTrigger = true;
         target.gameObject.layer = LayerMask.NameToLayer("Hand");
     }
     private void TargetDrop()
     {
         isHand = false;
         target.transform.parent = targetParent;
-        target.transform.GetComponent<Collider>().isTrigger = false;
         target.gameObject.layer = LayerMask.NameToLayer("Movable");
     }
     private void TargetMove()
     {
         targetPos = hit.point;
-        //targetPos.y = targetPos.y + target.transform.GetComponent<BoxCollider>().size.y / 2;
         target.transform.position = targetPos;
         target.transform.rotation = Quaternion.Euler(Vector3.zero);
     }
