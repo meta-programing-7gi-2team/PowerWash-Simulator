@@ -7,11 +7,11 @@ public class MovableObject : MonoBehaviour
     [SerializeField]
     private Material material;
     private bool isArrange;
+    private bool isHanded = false;
 
     private void OnTriggerStay(Collider col)
     {
-        if (col.gameObject.layer.Equals(LayerMask.NameToLayer("Ground")) ||
-            col.gameObject.layer.Equals(LayerMask.NameToLayer("Player"))) 
+        if (col.gameObject.layer.Equals(LayerMask.NameToLayer("Ground")) || !isHanded) 
             return;
         material.color = Color.red;
         isArrange = false;
