@@ -5,6 +5,7 @@ using UnityEngine;
 public class MovableObject : MonoBehaviour
 {
     private Material material;
+    [SerializeField]
     private bool isArrange;
 
     private void Start()
@@ -12,13 +13,13 @@ public class MovableObject : MonoBehaviour
         material = GetComponent<MeshRenderer>().material;
     }
 
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerStay(Collider col)
     {
-        if (other.gameObject.layer.Equals(LayerMask.NameToLayer("Ground"))) return;
+        if (col.gameObject.layer.Equals(LayerMask.NameToLayer("Ground"))) return;
         material.color = Color.red;
         isArrange = false;
     }
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerExit(Collider col)
     {
         material.color = Color.white;
         isArrange = true;
