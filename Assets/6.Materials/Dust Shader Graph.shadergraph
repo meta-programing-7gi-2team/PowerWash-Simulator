@@ -23,15 +23,6 @@
         },
         {
             "m_Id": "f6c1e49a309441ae8233214c90cd5b1e"
-        },
-        {
-            "m_Id": "1146dba1c4d5436fa50870306afaf1c9"
-        },
-        {
-            "m_Id": "4bbde0c2533547af8032b5e6eec0a7b7"
-        },
-        {
-            "m_Id": "ab2ea5a24bba466382ea9fd17db15937"
         }
     ],
     "m_Keywords": [],
@@ -668,29 +659,6 @@
     "m_Value": 0.0,
     "m_DefaultValue": 0.0,
     "m_Labels": []
-}
-
-{
-    "m_SGVersion": 1,
-    "m_Type": "UnityEditor.ShaderGraph.Internal.Vector2ShaderProperty",
-    "m_ObjectId": "1146dba1c4d5436fa50870306afaf1c9",
-    "m_Guid": {
-        "m_GuidSerialized": "e72b83f7-b541-42c5-892d-b320de85d203"
-    },
-    "m_Name": "Mask Tileling",
-    "m_DefaultReferenceName": "Vector2_1146dba1c4d5436fa50870306afaf1c9",
-    "m_OverrideReferenceName": "_MaskTileling",
-    "m_GeneratePropertyBlock": true,
-    "m_Precision": 0,
-    "overrideHLSLDeclaration": false,
-    "hlslDeclarationOverride": 0,
-    "m_Hidden": false,
-    "m_Value": {
-        "x": 1.0,
-        "y": 1.0,
-        "z": 0.0,
-        "w": 0.0
-    }
 }
 
 {
@@ -1387,29 +1355,6 @@
     "m_PreviewMode": 0,
     "m_CustomColors": {
         "m_SerializableColors": []
-    }
-}
-
-{
-    "m_SGVersion": 1,
-    "m_Type": "UnityEditor.ShaderGraph.Internal.Vector2ShaderProperty",
-    "m_ObjectId": "4bbde0c2533547af8032b5e6eec0a7b7",
-    "m_Guid": {
-        "m_GuidSerialized": "cfc81574-0b05-4877-a727-2447dda69950"
-    },
-    "m_Name": "Mask Offset",
-    "m_DefaultReferenceName": "Vector2_4bbde0c2533547af8032b5e6eec0a7b7",
-    "m_OverrideReferenceName": "_MaskOffset",
-    "m_GeneratePropertyBlock": true,
-    "m_Precision": 0,
-    "overrideHLSLDeclaration": false,
-    "hlslDeclarationOverride": 0,
-    "m_Hidden": false,
-    "m_Value": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0,
-        "w": 0.0
     }
 }
 
@@ -2427,29 +2372,6 @@
         "g": 0.5,
         "b": 0.5,
         "a": 1.0
-    }
-}
-
-{
-    "m_SGVersion": 1,
-    "m_Type": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty",
-    "m_ObjectId": "ab2ea5a24bba466382ea9fd17db15937",
-    "m_Guid": {
-        "m_GuidSerialized": "88991ac9-8372-419a-9d8f-79f31a4e2e74"
-    },
-    "m_Name": "Mask Angle",
-    "m_DefaultReferenceName": "Vector1_ab2ea5a24bba466382ea9fd17db15937",
-    "m_OverrideReferenceName": "_MaskAngle",
-    "m_GeneratePropertyBlock": true,
-    "m_Precision": 0,
-    "overrideHLSLDeclaration": false,
-    "hlslDeclarationOverride": 0,
-    "m_Hidden": false,
-    "m_Value": 0.0,
-    "m_FloatType": 0,
-    "m_RangeValues": {
-        "x": 0.0,
-        "y": 1.0
     }
 }
 
