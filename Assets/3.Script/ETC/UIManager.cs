@@ -11,10 +11,10 @@ public class UIManager : MonoBehaviour
 
     [SerializeField] private GameObject LoadAll;
     [SerializeField] private Slider loadingSlider; // 로딩바
-    [SerializeField] private Text text1; // 처음 텍스트
-    [SerializeField] private Text text2; // 30% 텍스트
-    [SerializeField] private Text text3; // 70% 텍스트
+    [SerializeField] private Text text; // 처음 텍스트
     [SerializeField] private GameObject Button; // 버튼
+
+    private float targetProgress = 0f;
 
     private void Awake()
     {
@@ -32,9 +32,7 @@ public class UIManager : MonoBehaviour
     private void Start()
     {
         LoadAll.SetActive(false);
-        text1.gameObject.SetActive(false); // 텍스트 비활성화
-        text2.gameObject.SetActive(false); // 텍스트 비활성화
-        text3.gameObject.SetActive(false); // 텍스트 비활성화
+        text.gameObject.SetActive(false); // 텍스트 비활성화
     }
 
     public void LoadStart(int Index)
@@ -43,46 +41,73 @@ public class UIManager : MonoBehaviour
         StartCoroutine(LoadSceneAsync(Index));
     }
 
+    public void ButtonClick()
+    {
+        LoadAll.SetActive(false);
+        text.gameObject.SetActive(false);
+    }
+
     private IEnumerator LoadSceneAsync(int sceneIndex)
     {
+        loadingSlider.maxValue = 1f; // 명시적으로 최대값 설정
+        loadingSlider.value = 0f; // 초기값 설정
+
+        // 텍스트 초기화
+        text.gameObject.SetActive(true);
+        text.text = "로딩 중... 0%";
+
+        // 씬 로드 시작
         operation = SceneManager.LoadSceneAsync(sceneIndex);
         operation.allowSceneActivation = false; // 씬 전환을 수동으로 조절
 
         while (!operation.isDone)
         {
-            float progress = Mathf.Clamp01(operation.progress / 0.9f);
-            loadingSlider.value = progress;
-
-            // 로딩 진행 상황에 따라 텍스트 오브젝트 활성화
-            if (progress >= 0.1f && !text1.gameObject.activeSelf)
+            // 씬 로드 진행률 업데이트
+            if (operation.progress < 0.9f)
             {
-                text1.gameObject.SetActive(true);
+                targetProgress = Mathf.Clamp01(operation.progress / 0.9f) * 0.9f; // 90%까지 증가
             }
-            if (progress >= 0.3f && !text2.gameObject.activeSelf)
+            else if (!operation.allowSceneActivation)
             {
-                text1.gameObject.SetActive(false);
-                text2.gameObject.SetActive(true);
-            }
-            if (progress >= 0.7f && !text3.gameObject.activeSelf)
-            {
-                text2.gameObject.SetActive(false);
-                text3.gameObject.SetActive(true);
+                operation.allowSceneActivation = true;
             }
 
-            if (progress >= 1f)
-            {
-                text3.gameObject.SetActive(false);
-                loadingSlider.gameObject.SetActive(false);
-                Button.gameObject.SetActive(true); // 로딩이 완료되면 버튼을 활성화
-            }
+            // 로딩 바 부드럽게 업데이트
+            loadingSlider.value = Mathf.MoveTowards(loadingSlider.value, targetProgress, Time.deltaTime * 0.5f);
+            text.text = $"로딩 중... {(loadingSlider.value * 100f):0}%";
+            yield return null; // 프레임마다 반복
+        }
 
+        // 씬 로드 완료 후 오브젝트 로드 시작
+        yield return StartCoroutine(LoadObjectsAsync());
+
+        // 로딩 완료
+        targetProgress = 1f; // 100% 진행
+        while (loadingSlider.value < 1f)
+        {
+            loadingSlider.value = Mathf.MoveTowards(loadingSlider.value, targetProgress, Time.deltaTime * 0.5f);
+            text.text = $"로딩 중... {(loadingSlider.value * 100f):0}%";
             yield return null;
         }
+
+        text.gameObject.SetActive(false);
+        loadingSlider.gameObject.SetActive(false);
+        Button.gameObject.SetActive(true); // 로딩이 완료되면 버튼을 활성화
     }
 
-    public void ButtonClick()
+    private IEnumerator LoadObjectsAsync()
     {
-        operation.allowSceneActivation = true; // 씬 전환 활성화
-    }
+        string[] objectsToLoad = { "Pineapple" };
 
+        for (int i = 0; i < objectsToLoad.Length; i++)
+        {
+            ResourceRequest resourceRequest = Resources.LoadAsync<GameObject>(objectsToLoad[i]);
+            while (!resourceRequest.isDone)
+            {
+                yield return null; // 프레임마다 반복
+            }
+            Instantiate(resourceRequest.asset);
+            Debug.Log($"{objectsToLoad[i]} Loaded");
+        }
+    }
 }
