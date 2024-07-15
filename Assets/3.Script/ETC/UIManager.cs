@@ -97,6 +97,7 @@ public class UIManager : MonoBehaviour
 
     private IEnumerator LoadObjectsAsync()
     {
+        //string[] objectsToLoad = { "Pineapple", "Patrick", "Squidward", "Stand" };
         string[] objectsToLoad = { "Pineapple" };
 
         for (int i = 0; i < objectsToLoad.Length; i++)
@@ -106,8 +107,6 @@ public class UIManager : MonoBehaviour
             {
                 yield return null; // 프레임마다 반복
             }
-            Instantiate(resourceRequest.asset);
-            Debug.Log($"{objectsToLoad[i]} Loaded");
-        }
+            Instantiate(resourceRequest.asset);        }
     }
 }
