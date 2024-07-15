@@ -16,20 +16,6 @@ public class WaterEffect : MonoBehaviour
     }
     private void OnParticleCollision(GameObject other)
     {
-        if (other != cachedTarget)
-        {
-            cachedTarget = other;
-            cleanDraw = other.GetComponent<CleanDraw>();
-        }
 
-        if (cleanDraw == null || cleanDraw.isActiveAndEnabled == false)
-            return;
-
-        int numColEvents = ps.GetCollisionEvents(other, colEventList);
-
-        for (int i = 0; i < numColEvents; i++)
-        {
-            cleanDraw.Wash(colEventList[i].intersection);
-        }
     }
 }
