@@ -4,16 +4,19 @@ using UnityEngine;
 
 public class PlayerPickUpControl : MonoBehaviour
 {
-    private Transform playerCamera;
-    private RaycastHit hit;
-    [SerializeField] 
+    [SerializeField]
     private LayerMask hand;
+
+    private Transform playerCamera;
+    private Animator anim;
+    private RaycastHit hit;
     private bool isHand = false;
     private MovableObject target;
-
+ 
     private void Start()
     {
         playerCamera = Camera.main.transform;
+        anim = GetComponent<Animator>();
     }
     private void Update()
     {
@@ -44,13 +47,13 @@ public class PlayerPickUpControl : MonoBehaviour
     {
         isHand = true;
         target = hit.transform.GetComponent<MovableObject>();
-
+        anim.SetBool("HandUp", true);
         target.PickUped();
     }
     private void TargetDrop()
     {
         isHand = false;
-
+        anim.SetBool("HandUp", false);
         target.Droped();
     }
     private void TargetMove()

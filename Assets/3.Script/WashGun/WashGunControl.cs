@@ -4,42 +4,42 @@ using UnityEngine;
 
 public class WashGunControl : MonoBehaviour
 {
-    private GameObject waterParticle;
+    private GameObject water;
     private Transform playerCamera;
     private NozzleReplacement nozzle;
+    private Animator anim;
 
     [SerializeField] private float shotRange = 4f;
-    [SerializeField] private float blockCheckRange;
+    [SerializeField] private float blockRange;
     [SerializeField] private LayerMask player;
 
     private bool isAuto = false;
     private RaycastHit hit;
     private Vector3 dir;
-    private Vector3 blockRotation;
 
     private void Start()
     {
         playerCamera = Camera.main.transform;
         nozzle = GetComponent<NozzleReplacement>();
-        blockRotation = new Vector3(15f, -45f, 20f);
+        anim = GetComponent<Animator>();
 
-        SetCurrentNozzle();
-        SetBlockCheckRange(1.1f);
+        NozzleChange();
+        SetBlockRange(1.1f);
     }
-    private void SetCurrentNozzle()
+    private void NozzleChange()
     {
-        waterParticle = nozzle.GetCurrentActiveWaterParticle();
+        water = nozzle.GetCurrentActiveWaterParticle();
     }
     private void Update()
     {
-        SetCurrentNozzle();
+        NozzleChange();
 
         if (!BlockCheck())
         {
             if (Input.GetMouseButtonDown(1) ||
             (isAuto && Input.GetMouseButtonDown(0)))
             {
-                Toggle();
+                isAuto = !isAuto;
             }
             if (Input.GetMouseButton(0) || isAuto)
             {
@@ -47,7 +47,7 @@ public class WashGunControl : MonoBehaviour
             }
             else if (Input.GetMouseButtonUp(0) || !isAuto)
             {
-                Stop();
+                water.SetActive(false);
             }
         }
     }
@@ -62,35 +62,25 @@ public class WashGunControl : MonoBehaviour
             dir = playerCamera.position + playerCamera.forward * shotRange;
         }
 
-        waterParticle.transform.LookAt(dir);
-        waterParticle.SetActive(true);
-    }
-    private void Stop()
-    {
-        waterParticle.SetActive(false);
-    }
-    private void Toggle()
-    {
-        isAuto = !isAuto;
+        water.transform.LookAt(dir);
+        water.SetActive(true);
     }
     private bool BlockCheck()
     {
-        if (Physics.Raycast(playerCamera.position, playerCamera.forward, blockCheckRange, ~player))
+        if (Physics.Raycast(playerCamera.position, playerCamera.forward, blockRange, ~player))
         {
-            Debug.DrawRay(playerCamera.position, playerCamera.forward * blockCheckRange, Color.red);
-            Stop();
-            transform.localRotation = Quaternion.Euler(blockRotation);
+            anim.SetBool("Await", true);
+            water.SetActive(false);
             return true;
         }
         else
         {
-            Debug.DrawRay(playerCamera.position, playerCamera.forward * blockCheckRange, Color.blue);
-            transform.localRotation = Quaternion.Euler(Vector3.zero);
+            anim.SetBool("Await", false);
             return false;
         }
     }
-    public void SetBlockCheckRange(float range)
+    public void SetBlockRange(float range)
     {
-        blockCheckRange = range;
+        blockRange = range;
     }
 }
