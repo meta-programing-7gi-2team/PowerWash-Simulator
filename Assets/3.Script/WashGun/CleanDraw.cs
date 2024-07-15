@@ -50,7 +50,7 @@ public class CleanDraw : MonoBehaviour
     private MeshCollider prevCollider;
     //private Texture2D CopiedBrushTexture; // 실시간으로 색상 칠하는데 사용되는 브러시 텍스쳐 카피본
     private Vector2 sameUvPoint; // 직전 프레임에 마우스가 위치한 대상 UV 지점 (동일 위치에 중첩해서 그리는 현상 방지)
-    private void Awake()
+    private void OnEnable()
     {
         Init();
         InitRenderTexture();
@@ -60,14 +60,12 @@ public class CleanDraw : MonoBehaviour
     private void Init()
     {
         // MeshRenderer 가져오기
-        TryGetComponent(out _mr); 
+        TryGetComponent(out _mr);
     }
     //렌더 텍스처 초기화
     private void InitRenderTexture()
     {
-        //ConveretTexture2dIntoRenderTexture(out renderTexture, maskTexture, resolution);
-        renderTexture = new RenderTexture(resolution, resolution, 32);
-        //Graphics.Blit(ClearTex, renderTexture);
+        //renderTexture = new RenderTexture(resolution, resolution, 32);
         Graphics.Blit(maskTexture, renderTexture);
 
         // 마테리얼 프로퍼티 블록 이용하여 배칭 유지하고
