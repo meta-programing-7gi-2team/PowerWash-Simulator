@@ -61,7 +61,6 @@ public class WashGunControl : MonoBehaviour
         {
             dir = playerCamera.position + playerCamera.forward * shotRange;
         }
-
         water.transform.LookAt(dir);
         water.SetActive(true);
     }
