@@ -97,8 +97,7 @@ public class UIManager : MonoBehaviour
 
     private IEnumerator LoadObjectsAsync()
     {
-        //string[] objectsToLoad = { "Pineapple", "Patrick", "Squidward", "Stand" };
-        string[] objectsToLoad = { "Pineapple" };
+        string[] objectsToLoad = { "Pineapple", "Patrick", "Squidward", "Stand" };
 
         for (int i = 0; i < objectsToLoad.Length; i++)
         {
