@@ -35,17 +35,16 @@ public class CleanDraw : MonoBehaviour
 
     private MeshRenderer _mr;
 
-    public int resolution = 2048;
+    public int resolution = 128;
 
     [SerializeField] private RenderTexture renderTexture; // 브러시로 그려질 대상 렌더 텍스쳐
-    [SerializeField] private Texture2D maskTexture; // 브러시로 그려질 대상 렌더 텍스쳐
+    [SerializeField] private Texture2D maskTexture; // 렌더 텍스쳐의 원본 텍스처
 
-    [SerializeField, Range(0.01f, 1f)] private float brushSize = 0.2f; // 브러쉬 크기 기준
-    [SerializeField, Range(0.01f, 1f)] private float waterBrushIntensity = 0.1f;
-    [SerializeField, Range(0.01f, 1f)] private float eraserBrushIntensity = 0.1f;
-
+    private BrushController brushController;
     private Texture2D whiteBrushTexture; // Painter
     private Texture2D blackBrushTexture; // Eraser
+    private float brushSize; // 브러쉬 크기 기준
+    private Material curMaterial;
 
     private MeshCollider prevCollider;
     //private Texture2D CopiedBrushTexture; // 실시간으로 색상 칠하는데 사용되는 브러시 텍스쳐 카피본
@@ -61,11 +60,17 @@ public class CleanDraw : MonoBehaviour
     {
         // MeshRenderer 가져오기
         TryGetComponent(out _mr);
+        Renderer renderer = GetComponent<Renderer>();
+        if (renderer != null)
+        {
+            // 단일 마테리얼 가져오기
+            curMaterial = renderer.material;
+        }
     }
     //렌더 텍스처 초기화
     private void InitRenderTexture()
     {
-        //renderTexture = new RenderTexture(resolution, resolution, 32);
+        renderTexture = new RenderTexture(resolution, resolution, 32);
         Graphics.Blit(maskTexture, renderTexture);
 
         // 마테리얼 프로퍼티 블록 이용하여 배칭 유지하고
@@ -73,75 +78,47 @@ public class CleanDraw : MonoBehaviour
         TextureBlock.SetTexture(PaintTexPropertyName, renderTexture);
         _mr.SetPropertyBlock(TextureBlock);
     }
-    //브러쉬 텍스처 초기화
+    
     private void InitBrushTexture()
     {
-        whiteBrushTexture = CreateBrushTexture(Color.white, waterBrushIntensity);
-        blackBrushTexture = CreateBrushTexture(Color.black, eraserBrushIntensity);
-    }
-    #region CreateBrushTexture
-    private Texture2D CreateBrushTexture(Color color, float intensity)
-    {
-        int res = resolution / 2;
-        float hRes = res * 0.5f;
-        float sqrSize = hRes * hRes;
-
-        Texture2D texture = new Texture2D(res, res);
-        texture.filterMode = FilterMode.Bilinear;
-
-        for (int y = 0; y < res; y++)
+        brushController = FindObjectOfType<BrushController>();
+        if(brushController == null)
         {
-            for (int x = 0; x < res; x++)
-            {
-                // Sqaure Length From Center
-                float sqrLen = (hRes - x) * (hRes - x) + (hRes - y) * (hRes - y);
-                float alpha = Mathf.Max(sqrSize - sqrLen, 0f) / sqrSize;
-
-                // Soft
-                alpha = Mathf.Pow(alpha, 2f);
-
-                color.a = alpha * intensity;
-                texture.SetPixel(x, y, color);
-            }
+            Debug.Log("brushController가 없습니다.");
+            return;
         }
-
-        texture.Apply();
-        return texture;
+        whiteBrushTexture = brushController.WhiteBrushTexture;
+        blackBrushTexture = brushController.BlackBrushTexture;
+        brushSize = brushController.BrushSize;
     }
-    #endregion
-    public void Wash(Vector3 contactPoint)
+    public void Wash(RaycastHit raycastHit)
     {
-        float snowSize = UnityEngine.Random.Range(0.5f, 2.0f);
-        Paint(contactPoint, snowSize, true);
+        Paint(raycastHit);
     }
-    private void Paint(in Vector3 contactPoint, float size = 1f, bool pileOrClear = true)
+    //private void Paint(in Vector3 contactPoint)
+    private void Paint(in RaycastHit hit)
     {
 
-        if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out var hit))
+        MeshCollider currentCollider = hit.collider as MeshCollider;
+        if (currentCollider != null)
         {
-            Debug.Log($"Raycast hit at: {hit.point}");
-
-            MeshCollider currentCollider = hit.collider as MeshCollider;
-            if (currentCollider != null)
+            // 대상 참조 갱신
+            if (prevCollider == null || prevCollider != currentCollider)
             {
-                // 대상 참조 갱신
-                if (prevCollider == null || prevCollider != currentCollider)
-                {
-                    prevCollider = currentCollider;
-                    currentCollider.TryGetComponent(out prevCollider);
-                }
+                prevCollider = currentCollider;
+                currentCollider.TryGetComponent(out prevCollider);
+            }
 
-                // 동일한 지점에는 중첩하여 다시 그리지 않음
-                Vector2 hitTextureCoord = hit.textureCoord;
+            // 동일한 지점에는 중첩하여 다시 그리지 않음
+            Vector2 hitTextureCoord = hit.textureCoord;
+
+            if (sameUvPoint != hitTextureCoord)
+            {
                 Debug.Log($"Hit texture coord: {hitTextureCoord}");
-
-                if (sameUvPoint != hitTextureCoord)
-                {
-                    sameUvPoint = hitTextureCoord;
-                    Vector2 pixelUV = hitTextureCoord;
-                    //DrawTexture(pixelUV.x, pixelUV.y, brushSize, CopiedBrushTexture);
-                    PaintBrush(blackBrushTexture, pixelUV, brushSize);
-                }
+                sameUvPoint = hitTextureCoord;
+                Vector2 pixelUV = hitTextureCoord;
+                //DrawTexture(pixelUV.x, pixelUV.y, brushSize, CopiedBrushTexture);
+                PaintBrush(blackBrushTexture, pixelUV, brushSize);
             }
         }
         //// 눈이 부딪힌 3D 좌표로부터 2D UV 좌표 계산
