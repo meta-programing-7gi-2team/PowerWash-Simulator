@@ -5,8 +5,9 @@ using UnityEngine;
 public class WashGunControl : MonoBehaviour
 {
     private GameObject water;
+    private GameObject stream;
     private Transform playerCamera;
-    private NozzleReplacement nozzle;
+    private NozzleControl nozzle;
     private Animator anim;
 
     [SerializeField] private float shotRange = 4f;
@@ -20,7 +21,7 @@ public class WashGunControl : MonoBehaviour
     private void Start()
     {
         playerCamera = Camera.main.transform;
-        nozzle = GetComponent<NozzleReplacement>();
+        nozzle = GetComponent<NozzleControl>();
         anim = GetComponent<Animator>();
 
         NozzleChange();
@@ -28,7 +29,8 @@ public class WashGunControl : MonoBehaviour
     }
     private void NozzleChange()
     {
-        water = nozzle.GetCurrentActiveWaterParticle();
+        water = nozzle.GetCurrentWater();
+        stream = nozzle.GetCurrentStream();
     }
     private void Update()
     {
@@ -48,6 +50,7 @@ public class WashGunControl : MonoBehaviour
             else if (Input.GetMouseButtonUp(0) || !isAuto)
             {
                 water.SetActive(false);
+                stream.SetActive(false);
             }
         }
     }
@@ -63,6 +66,7 @@ public class WashGunControl : MonoBehaviour
         }
         water.transform.LookAt(dir);
         water.SetActive(true);
+        stream.SetActive(true);
     }
     private bool BlockCheck()
     {
@@ -70,6 +74,7 @@ public class WashGunControl : MonoBehaviour
         {
             anim.SetBool("Await", true);
             water.SetActive(false);
+            stream.SetActive(false);
             return true;
         }
         else
