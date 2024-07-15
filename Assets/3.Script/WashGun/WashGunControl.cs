@@ -10,7 +10,7 @@ public class WashGunControl : MonoBehaviour
 
     [SerializeField] private float shotRange = 4f;
     [SerializeField] private float blockCheckRange;
-    [SerializeField] private LayerMask movable;
+    [SerializeField] private LayerMask player;
 
     private bool isAuto = false;
     private RaycastHit hit;
@@ -75,14 +75,16 @@ public class WashGunControl : MonoBehaviour
     }
     private bool BlockCheck()
     {
-        if (Physics.Raycast(playerCamera.position, playerCamera.forward, blockCheckRange, ~movable))
+        if (Physics.Raycast(playerCamera.position, playerCamera.forward, blockCheckRange, ~player))
         {
+            Debug.DrawRay(playerCamera.position, playerCamera.forward * blockCheckRange, Color.red);
             Stop();
             transform.localRotation = Quaternion.Euler(blockRotation);
             return true;
         }
         else
         {
+            Debug.DrawRay(playerCamera.position, playerCamera.forward * blockCheckRange, Color.blue);
             transform.localRotation = Quaternion.Euler(Vector3.zero);
             return false;
         }

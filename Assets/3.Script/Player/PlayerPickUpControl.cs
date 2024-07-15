@@ -25,18 +25,19 @@ public class PlayerPickUpControl : MonoBehaviour
             {
                 TargetPickUp();
             }
-            else if(isHand && target.GetComponent<MovableObject>().GetIsArrange())
+            else if(target.isArrange && isHand)
             {
                 TargetDrop();
             }
         }
-        if(Input.GetMouseButtonDown(0) && isHand && target.GetComponent<MovableObject>().GetIsArrange())
-        {
-            TargetDrop();
-        }
         if (isHand)
         {
             TargetMove();
+
+            if (Input.GetMouseButtonDown(0) && target.isArrange)
+            {
+                TargetDrop();
+            }
         }
     }
     private void TargetPickUp()
