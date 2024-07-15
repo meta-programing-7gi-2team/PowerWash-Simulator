@@ -2,15 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum State
-{
-    Walk,
-    Crouch,
-    Lie
-}
+
 public class PlayerMovement : MonoBehaviour
 {
-    private State state;
+
     private Vector3 moveDir;
 
     private CharacterController cc;
@@ -23,36 +18,25 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         cc = GetComponent<CharacterController>();
-        state = State.Walk;
     }
     private void Update()
     {
         Move();
-        if (Input.GetKeyDown(KeyCode.LeftControl))
-        {
-            ReplaceState();
-        }
     }
     private void Move()
     {
         if (Input.GetKey(KeyCode.LeftShift))
         {
-            Stand();
             speedWeight = 2f;
         }
         else
         {
-            if (!state.Equals(State.Walk))
-                speedWeight = 0.5f;
-            else
-                speedWeight = 1f;
+            speedWeight = 1f;
         }
-
         if (cc.isGrounded)
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                Stand();
                 moveDir.y = jumpForce;
             }
             else
@@ -60,38 +44,12 @@ public class PlayerMovement : MonoBehaviour
                 moveDir.y = 0f;
             }
         }
-
         Vector3 dir = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         dir *= (speed * speedWeight);
         dir = transform.TransformDirection(dir);
-
         moveDir.x = dir.x;
         moveDir.z = dir.z;
         moveDir.y -= gravity * Time.deltaTime;
-
         cc.Move(moveDir * Time.deltaTime);
-    }
-    private void ReplaceState()
-    {
-        switch (state)
-        {
-            case State.Walk:
-                state = State.Crouch;
-                cc.height = 1.5f;
-                break;
-            case State.Crouch:
-                state = State.Lie;
-                cc.height = 1f;
-                break;
-            case State.Lie:
-                state = State.Walk;
-                cc.height = 2f;
-                break;
-        }
-    }
-    private void Stand()
-    {
-        state = State.Walk;
-        cc.height = 2.0f;
     }
 }

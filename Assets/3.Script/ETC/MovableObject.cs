@@ -6,10 +6,10 @@ public class MovableObject : MonoBehaviour
 {
     [SerializeField]
     private Material material;
-    private bool isArrange;
     private bool isHanded = false;
     private Transform parent;
     private Transform playerCamera;
+    public bool isArrange { get; private set; }
 
     private void Start()
     {
@@ -20,6 +20,7 @@ public class MovableObject : MonoBehaviour
     {
         if (col.gameObject.layer.Equals(LayerMask.NameToLayer("Ground")) || !isHanded) 
             return;
+
         material.color = Color.red;
         isArrange = false;
     }
@@ -44,9 +45,5 @@ public class MovableObject : MonoBehaviour
     {
         transform.position = pos;
         transform.rotation = Quaternion.Euler(Vector3.zero);
-    }
-    public bool GetIsArrange()
-    {
-        return isArrange;
     }
 }
