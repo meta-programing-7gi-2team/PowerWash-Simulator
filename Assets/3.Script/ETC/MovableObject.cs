@@ -8,7 +8,14 @@ public class MovableObject : MonoBehaviour
     private Material material;
     private bool isArrange;
     private bool isHanded = false;
+    private Transform parent;
+    private Transform playerCamera;
 
+    private void Start()
+    {
+        playerCamera = Camera.main.transform;
+        parent = transform.parent;
+    }
     private void OnTriggerStay(Collider col)
     {
         if (col.gameObject.layer.Equals(LayerMask.NameToLayer("Ground")) || !isHanded) 
@@ -21,7 +28,23 @@ public class MovableObject : MonoBehaviour
         material.color = Color.white;
         isArrange = true;
     }
-
+    public void PickUped()
+    {
+        isHanded = true;
+        transform.parent = playerCamera;
+        gameObject.layer = LayerMask.NameToLayer("Hand");
+    }
+    public void Droped()
+    {
+        isHanded = false;
+        transform.parent = parent;
+        gameObject.layer = LayerMask.NameToLayer("Movable");
+    }
+    public void Move(Vector3 pos)
+    {
+        transform.position = pos;
+        transform.rotation = Quaternion.Euler(Vector3.zero);
+    }
     public bool GetIsArrange()
     {
         return isArrange;

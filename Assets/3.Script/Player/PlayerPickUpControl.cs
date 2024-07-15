@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class PlayerPickUpControl : MonoBehaviour
 {
-    [SerializeField]
     private Transform playerCamera;
     private RaycastHit hit;
     [SerializeField] 
     private LayerMask hand;
     private bool isHand = false;
+    private MovableObject target;
 
-    private GameObject target;
-    private Transform targetParent;
-    private Vector3 targetPos;
-
+    private void Start()
+    {
+        playerCamera = Camera.main.transform;
+    }
     private void Update()
     {
         Physics.Raycast(playerCamera.position, playerCamera.forward, out hit, Mathf.Infinity, ~hand);
@@ -42,21 +42,18 @@ public class PlayerPickUpControl : MonoBehaviour
     private void TargetPickUp()
     {
         isHand = true;
-        target = hit.transform.gameObject;
-        targetParent = target.transform.parent;
-        target.transform.parent = playerCamera;
-        target.gameObject.layer = LayerMask.NameToLayer("Hand");
+        target = hit.transform.GetComponent<MovableObject>();
+
+        target.PickUped();
     }
     private void TargetDrop()
     {
         isHand = false;
-        target.transform.parent = targetParent;
-        target.gameObject.layer = LayerMask.NameToLayer("Movable");
+
+        target.Droped();
     }
     private void TargetMove()
     {
-        targetPos = hit.point;
-        target.transform.position = targetPos;
-        target.transform.rotation = Quaternion.Euler(Vector3.zero);
+        target.Move(hit.point);
     }
 }
