@@ -48,7 +48,8 @@ public class BrushController : MonoBehaviour
     //브러쉬 텍스처 초기화
     private void InitBrushTexture()
     {
-        whiteBrushTexture = CreateBrushTexture(Color.white, waterBrushIntensity);
+        Color clearColor = new Color(0.5f, 0.5f, 0.5f, 1);
+        whiteBrushTexture = CreateBrushTexture(clearColor, waterBrushIntensity);
         blackBrushTexture = CreateBrushTexture(Color.black, eraserBrushIntensity);
     }
     #region CreateBrushTexture
