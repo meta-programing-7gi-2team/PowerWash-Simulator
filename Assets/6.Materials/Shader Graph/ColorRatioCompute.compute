@@ -19,5 +19,5 @@ void CalculateColorRatio(uint3 id : SV_DispatchThreadID)
         match = 0;
     }
 
-    ResultBuffer[id.x + id.y * 16] = match;
+    ResultBuffer[id.x + id.y * 128] = match;
 }
