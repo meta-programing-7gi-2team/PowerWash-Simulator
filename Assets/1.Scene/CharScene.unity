@@ -203,7 +203,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotRange: 5
-  offset: {x: 0, y: 0, z: 0}
 --- !u!1 &33396983
 GameObject:
   m_ObjectHideFlags: 0
@@ -248,7 +247,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotRange: 5
-  offset: {x: 0, y: 0, z: 0}
 --- !u!1 &54746033
 GameObject:
   m_ObjectHideFlags: 0
@@ -401,7 +399,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotRange: 5
-  offset: {x: 0, y: 0, z: 0}
 --- !u!4 &146805896 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3173998441358580321, guid: eb7623a8aa68f41428ef3d2774ebe313, type: 3}
@@ -654,7 +651,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotRange: 5
-  offset: {x: 0, y: 0, z: 0}
 --- !u!1 &367816048
 GameObject:
   m_ObjectHideFlags: 0
@@ -700,6 +696,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8519ec0121baf674abaf5515f3adf7cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ps: {fileID: 0}
+  cleanDraw: {fileID: 0}
+  cachedTarget: {fileID: 0}
 --- !u!199 &367816051
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -5729,7 +5728,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotRange: 5
-  offset: {x: 0, y: 0, z: 0}
 --- !u!1 &632538329
 GameObject:
   m_ObjectHideFlags: 0
@@ -6320,7 +6318,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotRange: 5
-  offset: {x: 0, y: 0, z: 0}
 --- !u!1 &1150743144
 GameObject:
   m_ObjectHideFlags: 0
@@ -6461,7 +6458,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotRange: 5
-  offset: {x: 0, y: 0, z: 0}
 --- !u!1 &1268723610
 GameObject:
   m_ObjectHideFlags: 0
@@ -6585,6 +6581,8 @@ GameObject:
   - component: {fileID: 1287291031}
   - component: {fileID: 1287291025}
   - component: {fileID: 1287291030}
+  - component: {fileID: 1287291033}
+  - component: {fileID: 1287291032}
   m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
@@ -6722,6 +6720,30 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1287291032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287291024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a7a4bfb81d7766448e6352109792575, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1287291033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287291024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d83e0100bca5c5d488a0b6c068129173, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1303955864
 GameObject:
   m_ObjectHideFlags: 0
@@ -6834,6 +6856,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8519ec0121baf674abaf5515f3adf7cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ps: {fileID: 0}
+  cleanDraw: {fileID: 0}
+  cachedTarget: {fileID: 0}
 --- !u!199 &1384694191
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -11745,7 +11770,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotRange: 5
-  offset: {x: 0, y: 0, z: 0}
 --- !u!1 &1506458448
 GameObject:
   m_ObjectHideFlags: 0
@@ -11790,7 +11814,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotRange: 5
-  offset: {x: 0, y: 0, z: 0}
 --- !u!1 &1576506728
 GameObject:
   m_ObjectHideFlags: 0
@@ -11835,7 +11858,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotRange: 5
-  offset: {x: 0, y: 0, z: 0}
 --- !u!1 &1599195544
 GameObject:
   m_ObjectHideFlags: 0
@@ -11881,6 +11903,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8519ec0121baf674abaf5515f3adf7cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ps: {fileID: 0}
+  cleanDraw: {fileID: 0}
+  cachedTarget: {fileID: 0}
 --- !u!199 &1599195547
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -16893,6 +16918,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8519ec0121baf674abaf5515f3adf7cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ps: {fileID: 0}
+  cleanDraw: {fileID: 0}
+  cachedTarget: {fileID: 0}
 --- !u!199 &1691095994
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -21709,7 +21737,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotRange: 5
-  offset: {x: 0, y: 0, z: 0}
 --- !u!1 &1818769877
 GameObject:
   m_ObjectHideFlags: 0
@@ -21787,7 +21814,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotRange: 5
-  offset: {x: 0, y: 0, z: 0}
 --- !u!1 &1881479123
 GameObject:
   m_ObjectHideFlags: 0
@@ -21869,7 +21895,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotRange: 5
-  offset: {x: 0, y: 0, z: 0}
 --- !u!1 &1901658057
 GameObject:
   m_ObjectHideFlags: 0
@@ -21915,6 +21940,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8519ec0121baf674abaf5515f3adf7cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ps: {fileID: 0}
+  cleanDraw: {fileID: 0}
+  cachedTarget: {fileID: 0}
 --- !u!199 &1901658060
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -26731,7 +26759,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotRange: 5
-  offset: {x: 0, y: 0, z: 0}
 --- !u!1 &1975369090
 GameObject:
   m_ObjectHideFlags: 0
@@ -26776,7 +26803,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotRange: 5
-  offset: {x: 0, y: 0, z: 0}
 --- !u!1 &1975756252
 GameObject:
   m_ObjectHideFlags: 0
@@ -26949,7 +26975,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotRange: 5
-  offset: {x: 0, y: 0, z: 0}
 --- !u!4 &121422247656864346
 Transform:
   m_ObjectHideFlags: 0
@@ -27719,7 +27744,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shotRange: 6
   blockRange: 0
-  player:
+  playerLayer:
     serializedVersion: 2
     m_Bits: 128
 --- !u!114 &4653138803262383591
@@ -28046,6 +28071,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8519ec0121baf674abaf5515f3adf7cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ps: {fileID: 0}
+  cleanDraw: {fileID: 0}
+  cachedTarget: {fileID: 0}
 --- !u!4 &5659292228182702350
 Transform:
   m_ObjectHideFlags: 0

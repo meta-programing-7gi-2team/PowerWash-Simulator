@@ -8,15 +8,16 @@ public class PlayerPickUpControl : MonoBehaviour
     private LayerMask hand;
 
     private Transform playerCamera;
-    private Animator anim;
+    private MovableObject target;
+    private PlayerState playerState;
+
     private RaycastHit hit;
     private bool isHand = false;
-    private MovableObject target;
  
     private void Start()
     {
         playerCamera = Camera.main.transform;
-        anim = GetComponent<Animator>();
+        playerState = FindObjectOfType<PlayerState>();
     }
     private void Update()
     {
@@ -45,15 +46,15 @@ public class PlayerPickUpControl : MonoBehaviour
     }
     private void TargetPickUp()
     {
+        playerState.SetState(State.Hand);
         isHand = true;
         target = hit.transform.GetComponent<MovableObject>();
-        anim.SetBool("HandUp", true);
         target.PickUped();
     }
     private void TargetDrop()
     {
+        playerState.SetState(State.Idle);
         isHand = false;
-        anim.SetBool("HandUp", false);
         target.Droped();
     }
     private void TargetMove()

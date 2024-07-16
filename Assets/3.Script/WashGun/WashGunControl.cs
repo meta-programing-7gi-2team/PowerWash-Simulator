@@ -9,10 +9,11 @@ public class WashGunControl : MonoBehaviour
     private Transform playerCamera;
     private NozzleControl nozzle;
     private Animator anim;
+    private PlayerState playerState;
 
     [SerializeField] private float shotRange = 4f;
     [SerializeField] private float blockRange;
-    [SerializeField] private LayerMask player;
+    [SerializeField] private LayerMask playerLayer;
 
     private bool isAuto = false;
     private RaycastHit hit;
@@ -23,6 +24,7 @@ public class WashGunControl : MonoBehaviour
         playerCamera = Camera.main.transform;
         nozzle = GetComponent<NozzleControl>();
         anim = GetComponent<Animator>();
+        playerState = FindObjectOfType<PlayerState>();
 
         NozzleChange();
         SetBlockRange(1.1f);
@@ -34,8 +36,10 @@ public class WashGunControl : MonoBehaviour
     }
     private void Update()
     {
+        if (playerState.state.Equals(State.Hand) ||
+            playerState.state.Equals(State.Run))
+            return;
         NozzleChange();
-
         if (!BlockCheck())
         {
             if (Input.GetMouseButtonDown(1) ||
@@ -70,7 +74,7 @@ public class WashGunControl : MonoBehaviour
     }
     private bool BlockCheck()
     {
-        if (Physics.Raycast(playerCamera.position, playerCamera.forward, blockRange, ~player))
+        if (Physics.Raycast(playerCamera.position, playerCamera.forward, blockRange, ~playerLayer))
         {
             anim.SetBool("Await", true);
             water.SetActive(false);

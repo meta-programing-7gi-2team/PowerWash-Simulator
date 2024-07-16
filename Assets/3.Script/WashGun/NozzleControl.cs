@@ -8,17 +8,27 @@ public class NozzleControl : MonoBehaviour
 
     [SerializeField] private GameObject[] nozzle;
     [SerializeField] private GameObject[] crosshair;
-
     [SerializeField] private int cur = 0;
+
+    private PlayerState playerState;
+
+    private void Start()
+    {
+        playerState = FindObjectOfType<PlayerState>();
+    }
 
     private void Update()
     {
+        if (playerState.state.Equals(State.Hand) ||
+            playerState.state.Equals(State.Run))
+            return;
+
         float scroll = Input.GetAxis("Mouse ScrollWheel");
-        if(scroll > 0)
+        if (scroll > 0)
         {
             ScrollUp();
         }
-        else if(scroll < 0)
+        else if (scroll < 0)
         {
             ScrollDown();
         }
@@ -27,7 +37,6 @@ public class NozzleControl : MonoBehaviour
             Rotate();
         }
     }
-
     private void ScrollUp()
     {
         nozzle[cur].SetActive(false);
