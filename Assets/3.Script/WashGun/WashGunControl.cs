@@ -38,7 +38,11 @@ public class WashGunControl : MonoBehaviour
     {
         if (playerState.state.Equals(State.Hand) ||
             playerState.state.Equals(State.Run))
+        {
+            water.SetActive(false);
+            stream.SetActive(false);
             return;
+        }
         NozzleChange();
         if (!BlockCheck())
         {

@@ -21,6 +21,8 @@ public class PlayerPickUpControl : MonoBehaviour
     }
     private void Update()
     {
+        if (playerState.state.Equals(State.Run)) return;
+
         Physics.Raycast(playerCamera.position, playerCamera.forward, out hit, Mathf.Infinity, ~hand);
 
         if (Input.GetKeyDown(KeyCode.F))

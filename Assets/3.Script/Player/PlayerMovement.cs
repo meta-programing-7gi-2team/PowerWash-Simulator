@@ -23,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
     }
     private void Update()
     {
+        SetHeight();
         if(!playerState.state.Equals(State.Hand))
             IsRun();
 
@@ -79,21 +80,39 @@ public class PlayerMovement : MonoBehaviour
                 break;
         }
     }
+    private void SetHeight()
+    {
+        switch (playerState.state)
+        {
+            case State.Idle:
+                cc.height = 2.0f;
+                break;
+            case State.Crouch:
+                cc.height = 1.4f;
+                break;
+            case State.Lie:
+                cc.height = 1.0f;
+                break;
+            case State.Run:
+                cc.height = 2.0f;
+                break;
+            case State.Hand:
+                cc.height = 2.0f;
+                break;
+        }
+    }
     private void ChangeState()
     {
         switch (playerState.state)
         {
             case State.Idle:
                 playerState.SetState(State.Crouch);
-                cc.height = 1.4f;
                 break;
             case State.Crouch:
                 playerState.SetState(State.Lie);
-                cc.height = 0.8f;
                 break;
             case State.Lie:
                 playerState.SetState(State.Idle);
-                cc.height = 2f;
                 break;
             case State.Run:
             case State.Hand:
@@ -105,7 +124,6 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftShift))
         {
             playerState.SetState(State.Run);
-            cc.height = 2f;
         }
         else if (Input.GetKeyUp(KeyCode.LeftShift))
         {
