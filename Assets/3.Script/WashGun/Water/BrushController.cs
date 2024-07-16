@@ -7,22 +7,24 @@ public class BrushController : MonoBehaviour
     [SerializeField, Range(0.01f, 1f)] private float brushSize = 0.2f; // 브러쉬 크기 기준
     [SerializeField, Range(0.01f, 1f)] private float waterBrushIntensity = 0.1f;
     [SerializeField, Range(0.01f, 1f)] private float eraserBrushIntensity = 0.1f;
+    [SerializeField] private ComputeShader colorRatioComputeShader;
+    [SerializeField] private ComputeShader fadeTextureComputeShader;
 
-    private Texture2D whiteBrushTexture; // Painter
-    private Texture2D blackBrushTexture; // Eraser
+    private Texture2D waterBrushTexture; // Painter
+    private Texture2D eraserBrushTexture; // Eraser
 
-    public Texture2D WhiteBrushTexture
+    public Texture2D WaterBrushTexture
     {
         get
         {
-            return whiteBrushTexture;
+            return waterBrushTexture;
         }
     }
-    public Texture2D BlackBrushTexture
+    public Texture2D EraserBrushTexture
     {
         get
         {
-            return blackBrushTexture;
+            return eraserBrushTexture;
         }
     }
     public float BrushSize
@@ -30,6 +32,20 @@ public class BrushController : MonoBehaviour
         get
         {
             return brushSize;
+        }
+    }
+    public ComputeShader ColorRatioComputeShader
+    {
+        get
+        {
+            return colorRatioComputeShader;
+        }
+    }
+    public ComputeShader FadeTextureComputeShader
+    {
+        get
+        {
+            return fadeTextureComputeShader;
         }
     }
 
@@ -48,8 +64,9 @@ public class BrushController : MonoBehaviour
     //브러쉬 텍스처 초기화
     private void InitBrushTexture()
     {
-        whiteBrushTexture = CreateBrushTexture(Color.white, waterBrushIntensity);
-        blackBrushTexture = CreateBrushTexture(Color.black, eraserBrushIntensity);
+        Color waterColor = new Color(0.5f, 0.5f, 0.5f, 1);
+        waterBrushTexture = CreateBrushTexture(waterColor, waterBrushIntensity);
+        eraserBrushTexture = CreateBrushTexture(Color.black, eraserBrushIntensity);
     }
     #region CreateBrushTexture
     private Texture2D CreateBrushTexture(Color color, float intensity)
