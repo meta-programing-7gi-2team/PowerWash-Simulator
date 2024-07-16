@@ -17,8 +17,7 @@ public class WashGunControl : MonoBehaviour
     [SerializeField] private LayerMask playerLayer;
 
     private bool isAuto = false;
-    private RaycastHit hit;
-    private Vector3 dir;
+
 
     private void Start()
     {
@@ -66,14 +65,6 @@ public class WashGunControl : MonoBehaviour
     }
     private void Shot()
     {
-        if(Physics.Raycast(playerCamera.position, playerCamera.forward, out hit))
-        {
-            dir = hit.point;
-        }
-        else
-        {
-            dir = playerCamera.position + playerCamera.forward * shotRange;
-        }
         water.SetActive(true);
         stream.SetActive(true);
         crosshair.SetIsFade(false);
