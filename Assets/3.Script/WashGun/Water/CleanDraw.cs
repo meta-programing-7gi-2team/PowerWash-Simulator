@@ -34,16 +34,36 @@ public class CleanDraw : MonoBehaviour
     private float brushSize; // 브러쉬 크기 기준
     private Material curMaterial;
 
-    private float fadeAmount = 0.01f; // 흐려지는 정도
+    private float fadeAmount = 0.1f; // 흐려지는 정도
 
     private MeshCollider prevCollider;
     private Vector2 sameUvPoint; // 직전 프레임에 마우스가 위치한 대상 UV 지점 (동일 위치에 중첩해서 그리는 현상 방지)
+    
+    private float timer;
+    int waitingTime;
+    private ComputeShader colorRatioComputeShader; // ColorRatioCompute Shader
+    private ComputeShader fadeTextureComputeShader; // FadeTextureCompute Shader
+    private ComputeBuffer resultBuffer;
+
     //private void OnEnable()
     private void Start() //임시 수정
     {
         Init();
         InitRenderTexture();
         InitBrushTexture();
+
+        timer = 0.0f;
+        waitingTime = 5;
+    }
+    void Update()
+    {
+        timer += Time.deltaTime;
+
+        if (timer > waitingTime)
+        {
+            timer = 0;
+            WaterMark();
+        }
     }
 
     private void Init()
@@ -62,6 +82,9 @@ public class CleanDraw : MonoBehaviour
     {
         renderMaskTexture = new RenderTexture(resolution, resolution, 32);
         renderWaterTexture = new RenderTexture(resolution, resolution, 32);
+        renderWaterTexture.enableRandomWrite = true; // UAV 사용 플래그 설정
+        renderWaterTexture.Create();
+
         Graphics.Blit(maskTexture, renderMaskTexture);
 
         // 마테리얼 프로퍼티 블록 이용하여 배칭 유지하고
@@ -69,6 +92,8 @@ public class CleanDraw : MonoBehaviour
         TextureBlock.SetTexture(MaskPaintTexPropertyName, renderMaskTexture);
         TextureBlock.SetTexture(WaterPaintTexPropertyName, renderWaterTexture);
         _mr.SetPropertyBlock(TextureBlock);
+
+        resultBuffer = new ComputeBuffer(resolution * resolution, sizeof(int));
     }
     
     private void InitBrushTexture()
@@ -79,9 +104,11 @@ public class CleanDraw : MonoBehaviour
             Debug.Log("brushController가 없습니다.");
             return;
         }
-        whiteBrushTexture = brushController.WhiteBrushTexture;
-        blackBrushTexture = brushController.BlackBrushTexture;
+        whiteBrushTexture = brushController.WaterBrushTexture;
+        blackBrushTexture = brushController.EraserBrushTexture;
         brushSize = brushController.BrushSize;
+        colorRatioComputeShader = brushController.ColorRatioComputeShader;
+        fadeTextureComputeShader = brushController.FadeTextureComputeShader;
     }
     public void Wash(RaycastHit raycastHit)
     {
@@ -104,14 +131,14 @@ public class CleanDraw : MonoBehaviour
 
             if (sameUvPoint != hitTextureCoord)
             {
-                Debug.Log($"Hit texture coord: {hitTextureCoord}");
+                //Debug.Log($"Hit texture coord: {hitTextureCoord}");
                 sameUvPoint = hitTextureCoord;
                 Vector2 pixelUV = hitTextureCoord;
                 //DrawTexture(pixelUV.x, pixelUV.y, brushSize, CopiedBrushTexture);
                 PaintBrush(blackBrushTexture, renderMaskTexture, pixelUV, brushSize);
                 PaintBrush(whiteBrushTexture, renderWaterTexture, pixelUV, brushSize);
-                StopCoroutine(WaterMark_Co());
-                StartCoroutine(WaterMark_Co());
+                //StopCoroutine(WaterMark_Co());
+                //StartCoroutine(WaterMark_Co());
             }
         }
     }
@@ -139,81 +166,58 @@ public class CleanDraw : MonoBehaviour
         GL.PopMatrix();              // 매트릭스 복구
         RenderTexture.active = null; // 활성 렌더 텍스쳐 해제
     }
-    IEnumerator WaterMark_Co()
-    {
-        while (true)
-        {
-            Color targetColor = Color.clear;
-            float colorTolerance = 0.01f;
-            Texture2D texture2D = ConvertRenderTextureToTexture2D(renderWaterTexture);
-            float colorRatio = CalculateColorRatio(texture2D, targetColor, colorTolerance);
-            //Debug.Log("Color match ratio: " + (colorRatio * 100) + "%");
-            if(colorRatio >= 1f)
-            {
-                yield break;
-            }
 
-            // 텍스처의 색상을 점점 흐리게 만듦
-            Texture2D fadedTexture = FadeTexture(texture2D, fadeAmount);
-            ApplyTextureToRenderTexture(fadedTexture, renderWaterTexture);
+    void WaterMark()
+    {
+        Color targetColor = Color.black;
+        float colorTolerance = 0.1f;
+        float colorRatio = CalculateColorRatio(renderMaskTexture, targetColor, colorTolerance);
+        Debug.Log("Color match ratio: " + (colorRatio * 100) + "%");
 
-            yield return new WaitForSeconds(3f);
-        }
+        // 텍스처의 색상을 점점 흐리게 만듦
+        //FadeRenderTexture(renderWaterTexture, fadeAmount);
     }
+    private float CalculateColorRatio(RenderTexture renderTexture, Color targetColor, float tolerance)
+    {
+        int kernelHandle = colorRatioComputeShader.FindKernel("CalculateColorRatio");
 
-    private void ApplyTextureToRenderTexture(Texture2D texture, RenderTexture rt)
-    {
-        RenderTexture.active = rt;
-        Graphics.Blit(texture, rt);
-        RenderTexture.active = null;
-    }
+        colorRatioComputeShader.SetTexture(kernelHandle, "InputTexture", renderTexture);
+        colorRatioComputeShader.SetBuffer(kernelHandle, "ResultBuffer", resultBuffer);
+        colorRatioComputeShader.SetVector("TargetColor", targetColor);
+        colorRatioComputeShader.SetFloat("Tolerance", tolerance);
 
-    private Texture2D FadeTexture(Texture2D texture, float amount)
-    {
-        Color[] pixels = texture.GetPixels();
-        for (int i = 0; i < pixels.Length; i++)
-        {
-            pixels[i] = new Color(
-                Mathf.Max(0, pixels[i].r - amount),
-                Mathf.Max(0, pixels[i].g - amount),
-                Mathf.Max(0, pixels[i].b - amount),
-                Mathf.Max(0, pixels[i].a - amount)
-            );
-        }
-        texture.SetPixels(pixels);
-        texture.Apply();
-        return texture;
-    }
-    private Texture2D ConvertRenderTextureToTexture2D(RenderTexture rt)
-    {
-        Texture2D texture2D = new Texture2D(rt.width, rt.height, TextureFormat.RGBA32, false);
-        RenderTexture.active = rt;
-        texture2D.ReadPixels(new Rect(0, 0, rt.width, rt.height), 0, 0);
-        texture2D.Apply();
-        RenderTexture.active = null;
-        return texture2D;
-    }
-    private float CalculateColorRatio(Texture2D texture, Color targetColor, float tolerance)
-    {
-        Color[] pixels = texture.GetPixels();
-        int totalPixels = pixels.Length;
+        int threadGroupsX = Mathf.CeilToInt(renderTexture.width);
+        int threadGroupsY = Mathf.CeilToInt(renderTexture.height);
+        colorRatioComputeShader.Dispatch(kernelHandle, threadGroupsX, threadGroupsY, 1);
+
+        int[] resultData = new int[resolution * resolution];
+        resultBuffer.GetData(resultData);
+
         int matchingPixels = 0;
-
-        foreach (Color pixel in pixels)
+        foreach (int match in resultData)
         {
-            if (ColorsAreSimilar(pixel, targetColor, tolerance))
-            {
-                matchingPixels++;
-            }
+            matchingPixels += match;
         }
 
-        return (float)matchingPixels / totalPixels;
+        return (float)matchingPixels / (resolution * resolution);
     }
-    private bool ColorsAreSimilar(Color a, Color b, float tolerance)
+    private void FadeRenderTexture(RenderTexture renderTexture, float amount)
     {
-        return Mathf.Abs(a.r - b.r) < tolerance &&
-               Mathf.Abs(a.g - b.g) < tolerance &&
-               Mathf.Abs(a.b - b.b) < tolerance &&
-               Mathf.Abs(a.a - b.a) < tolerance;
+        int kernelHandle = fadeTextureComputeShader.FindKernel("FadeTexture");
+
+        fadeTextureComputeShader.SetTexture(kernelHandle, "InputTexture", renderTexture);
+        fadeTextureComputeShader.SetTexture(kernelHandle, "Result", renderTexture);
+        fadeTextureComputeShader.SetFloat("FadeAmount", amount);
+
+        int threadGroupsX = Mathf.CeilToInt(renderTexture.width / 16.0f);
+        int threadGroupsY = Mathf.CeilToInt(renderTexture.height / 16.0f);
+        fadeTextureComputeShader.Dispatch(kernelHandle, threadGroupsX, threadGroupsY, 1);
+    }
+    private void OnDestroy()
+    {
+        if (resultBuffer != null)
+        {
+            resultBuffer.Release();
+        }
     }
 }

@@ -1,0 +1,17 @@
+#pragma kernel FadeTexture
+
+Texture2D<float4> InputTexture;
+RWTexture2D<float4> Result;
+float FadeAmount;
+
+[numthreads(16, 16, 1)]
+void FadeTexture(uint3 id : SV_DispatchThreadID)
+{
+    float4 color = InputTexture[id.xy];
+    color.r = max(0, color.r - FadeAmount);
+    color.g = max(0, color.g - FadeAmount);
+    color.b = max(0, color.b - FadeAmount);
+    color.a = max(0, color.a - FadeAmount);
+
+    Result[id.xy] = color;
+}
