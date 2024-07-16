@@ -33,7 +33,7 @@ public class NozzleControl : MonoBehaviour
         {
             ScrollDown();
         }
-        if (Input.GetKeyDown(KeyCode.R) && cur < 4)
+        if (Input.GetKeyDown(KeyCode.R))
         {
             Rotate();
         }
