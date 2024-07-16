@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     private CharacterController cc;
     private PlayerState playerState;
 
+
     public float speed = 3f;
     private float speedWeight = 1f;
     public float jumpForce = 6f;
@@ -20,12 +21,13 @@ public class PlayerMovement : MonoBehaviour
     {
         cc = GetComponent<CharacterController>();
         playerState = FindObjectOfType<PlayerState>();
+
     }
     private void Update()
     {
         SetHeight();
         if(!playerState.state.Equals(State.Hand))
-            IsRun();
+            Run();
 
         SetSpeedWeight();
         Move();
@@ -119,14 +121,14 @@ public class PlayerMovement : MonoBehaviour
                 break;       
         }
     }
-    private void IsRun()
+    private void Run()
     {
         if (Input.GetKey(KeyCode.LeftShift))
         {
             playerState.SetState(State.Run);
         }
         else if (Input.GetKeyUp(KeyCode.LeftShift))
-        {
+        {  
             playerState.SetState(State.Idle);
         }
     }

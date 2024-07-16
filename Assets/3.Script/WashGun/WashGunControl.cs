@@ -10,10 +10,12 @@ public class WashGunControl : MonoBehaviour
     private NozzleControl nozzle;
     private Animator anim;
     private PlayerState playerState;
+    private Crosshair crosshair;
 
     [SerializeField] private float shotRange = 4f;
     [SerializeField] private float blockRange;
     [SerializeField] private LayerMask playerLayer;
+    [SerializeField] private LayerMask movableObjectLayer;
 
     private bool isAuto = false;
     private RaycastHit hit;
@@ -25,7 +27,7 @@ public class WashGunControl : MonoBehaviour
         nozzle = GetComponent<NozzleControl>();
         anim = GetComponent<Animator>();
         playerState = FindObjectOfType<PlayerState>();
-
+        crosshair = FindObjectOfType<Crosshair>();
         NozzleChange();
         SetBlockRange(1.1f);
     }
@@ -59,12 +61,13 @@ public class WashGunControl : MonoBehaviour
             {
                 water.SetActive(false);
                 stream.SetActive(false);
+                crosshair.SetIsFade(true);
             }
         }
     }
     private void Shot()
-    { 
-        if(Physics.Raycast(playerCamera.position, playerCamera.forward, out hit))
+    {
+        if(Physics.Raycast(playerCamera.position, playerCamera.forward, out hit, ~movableObjectLayer))
         {
             dir = hit.point;
         }
@@ -75,6 +78,7 @@ public class WashGunControl : MonoBehaviour
         water.transform.LookAt(dir);
         water.SetActive(true);
         stream.SetActive(true);
+        crosshair.SetIsFade(false);
     }
     private bool BlockCheck()
     {
