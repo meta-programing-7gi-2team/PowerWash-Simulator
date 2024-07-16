@@ -7,17 +7,22 @@ public class ExtensionReplacement : MonoBehaviour
     [SerializeField] private GameObject[] Extension;
     [SerializeField] Transform nozzlePivot;
 
+    private PlayerState playerState;
     private WashGunControl washGun;
     private int currentIndex = 0;
 
     private void Start()
     {
         washGun = GetComponent<WashGunControl>();
+        playerState = FindObjectOfType<PlayerState>();
     }
     private void Update()
     {
-        SetNozzlePivot();
+        if (playerState.state.Equals(State.Hand) ||
+            playerState.state.Equals(State.Run))
+            return;
 
+        SetNozzlePivot();
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             Extension[currentIndex].SetActive(false);

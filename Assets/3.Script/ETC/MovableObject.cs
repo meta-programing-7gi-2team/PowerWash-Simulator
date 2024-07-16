@@ -9,12 +9,29 @@ public class MovableObject : MonoBehaviour
     private bool isHanded = false;
     private Transform parent;
     private Transform playerCamera;
+    private float yRotation = 0f;
     public bool isArrange { get; private set; }
 
     private void Start()
     {
         playerCamera = Camera.main.transform;
         parent = transform.parent;
+    }
+    private void Update()
+    {
+        if (isHanded)
+        {
+            float scroll = Input.GetAxis("Mouse ScrollWheel");
+            if (scroll > 0)
+            {
+                yRotation += 30f;
+            }
+            else if (scroll < 0)
+            {
+                yRotation -= 30f;
+            }
+        }
+      
     }
     private void OnTriggerStay(Collider col)
     {
@@ -44,6 +61,6 @@ public class MovableObject : MonoBehaviour
     public void Move(Vector3 pos)
     {
         transform.position = pos;
-        transform.rotation = Quaternion.Euler(Vector3.zero);
+        transform.rotation = Quaternion.Euler(0, yRotation, 0);
     }
 }
