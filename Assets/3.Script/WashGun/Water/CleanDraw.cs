@@ -34,35 +34,38 @@ public class CleanDraw : MonoBehaviour
     private float brushSize; // 브러쉬 크기 기준
     private Material curMaterial;
 
-    private float fadeAmount = 0.1f; // 흐려지는 정도
+    private float fadeAmount = 0.05f; // 흐려지는 정도
 
     private MeshCollider prevCollider;
     private Vector2 sameUvPoint; // 직전 프레임에 마우스가 위치한 대상 UV 지점 (동일 위치에 중첩해서 그리는 현상 방지)
     
-    private float timer;
-    int waitingTime;
     private ComputeShader colorRatioComputeShader; // ColorRatioCompute Shader
     private ComputeShader fadeTextureComputeShader; // FadeTextureCompute Shader
     private ComputeBuffer resultBuffer;
+    private int initCount;
+    private int curCount;
+    private float initColorRatio;
+    public float ColorRatio { get; private set; }
 
     //private void OnEnable()
     private void Start() //임시 수정
     {
         Init();
-        InitRenderTexture();
         InitBrushTexture();
+        InitRenderTexture();
 
-        timer = 0.0f;
-        waitingTime = 5;
+        initColorRatio = CalculateColorRatio(renderMaskTexture);
+        Debug.Log("Color match ratio: " + initColorRatio + "%");
     }
     void Update()
     {
-        timer += Time.deltaTime;
-
-        if (timer > waitingTime)
+        if (Time.frameCount % 60 == 0) // 60 프레임(1초)마다 페이드 적용
         {
-            timer = 0;
-            WaterMark();
+            if (curCount > 0)
+            {
+                WaterMark();
+                curCount--;
+            }
         }
     }
 
@@ -95,7 +98,6 @@ public class CleanDraw : MonoBehaviour
 
         resultBuffer = new ComputeBuffer(resolution * resolution, sizeof(int));
     }
-    
     private void InitBrushTexture()
     {
         brushController = FindObjectOfType<BrushController>();
@@ -109,6 +111,8 @@ public class CleanDraw : MonoBehaviour
         brushSize = brushController.BrushSize;
         colorRatioComputeShader = brushController.ColorRatioComputeShader;
         fadeTextureComputeShader = brushController.FadeTextureComputeShader;
+        initCount = Mathf.CeilToInt(brushController.ColorNum / fadeAmount);
+        curCount = 0;
     }
     public void Wash(RaycastHit raycastHit)
     {
@@ -134,11 +138,9 @@ public class CleanDraw : MonoBehaviour
                 //Debug.Log($"Hit texture coord: {hitTextureCoord}");
                 sameUvPoint = hitTextureCoord;
                 Vector2 pixelUV = hitTextureCoord;
-                //DrawTexture(pixelUV.x, pixelUV.y, brushSize, CopiedBrushTexture);
                 PaintBrush(blackBrushTexture, renderMaskTexture, pixelUV, brushSize);
                 PaintBrush(whiteBrushTexture, renderWaterTexture, pixelUV, brushSize);
-                //StopCoroutine(WaterMark_Co());
-                //StartCoroutine(WaterMark_Co());
+                curCount = initCount;
             }
         }
     }
@@ -169,16 +171,20 @@ public class CleanDraw : MonoBehaviour
 
     void WaterMark()
     {
-        Color targetColor = Color.black;
-        float colorTolerance = 0.1f;
-        float colorRatio = CalculateColorRatio(renderMaskTexture, targetColor, colorTolerance);
-        Debug.Log("Color match ratio: " + (colorRatio * 100) + "%");
+        //TODO: 오염도
+        if(ColorRatio < 100)
+        {
+            float colorRatio = CalculateColorRatio(renderMaskTexture) - initColorRatio;
+            ColorRatio = (colorRatio * 100.0f) / (1.0f - initColorRatio);
+        }
 
-        // 텍스처의 색상을 점점 흐리게 만듦
-        //FadeRenderTexture(renderWaterTexture, fadeAmount);
+        // 물 텍스처 흐리게
+        ApplyFadeEffect(renderWaterTexture, fadeAmount);
     }
-    private float CalculateColorRatio(RenderTexture renderTexture, Color targetColor, float tolerance)
+    private float CalculateColorRatio(RenderTexture renderTexture)
     {
+        Color targetColor = Color.black;
+        float tolerance = 0.1f;
         int kernelHandle = colorRatioComputeShader.FindKernel("CalculateColorRatio");
 
         colorRatioComputeShader.SetTexture(kernelHandle, "InputTexture", renderTexture);
@@ -186,8 +192,11 @@ public class CleanDraw : MonoBehaviour
         colorRatioComputeShader.SetVector("TargetColor", targetColor);
         colorRatioComputeShader.SetFloat("Tolerance", tolerance);
 
-        int threadGroupsX = Mathf.CeilToInt(renderTexture.width);
-        int threadGroupsY = Mathf.CeilToInt(renderTexture.height);
+        int threadGroupsX = Mathf.CeilToInt(renderTexture.width / 16);
+
+
+
+        int threadGroupsY = Mathf.CeilToInt(renderTexture.height / 16);
         colorRatioComputeShader.Dispatch(kernelHandle, threadGroupsX, threadGroupsY, 1);
 
         int[] resultData = new int[resolution * resolution];
@@ -201,16 +210,15 @@ public class CleanDraw : MonoBehaviour
 
         return (float)matchingPixels / (resolution * resolution);
     }
-    private void FadeRenderTexture(RenderTexture renderTexture, float amount)
+    private void ApplyFadeEffect(RenderTexture renderTexture, float amount)
     {
         int kernelHandle = fadeTextureComputeShader.FindKernel("FadeTexture");
 
-        fadeTextureComputeShader.SetTexture(kernelHandle, "InputTexture", renderTexture);
         fadeTextureComputeShader.SetTexture(kernelHandle, "Result", renderTexture);
         fadeTextureComputeShader.SetFloat("FadeAmount", amount);
 
-        int threadGroupsX = Mathf.CeilToInt(renderTexture.width / 16.0f);
-        int threadGroupsY = Mathf.CeilToInt(renderTexture.height / 16.0f);
+        int threadGroupsX = Mathf.CeilToInt(renderTexture.width / 16);
+        int threadGroupsY = Mathf.CeilToInt(renderTexture.height / 16);
         fadeTextureComputeShader.Dispatch(kernelHandle, threadGroupsX, threadGroupsY, 1);
     }
     private void OnDestroy()
