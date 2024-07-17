@@ -50,13 +50,13 @@ public class MovableObject : MonoBehaviour
     {
         isHanded = true;
         transform.parent = playerCamera;
-        gameObject.layer = LayerMask.NameToLayer("Hand");
+        gameObject.layer = LayerMask.NameToLayer("Movable");
     }
     public void Droped()
     {
         isHanded = false;
         transform.parent = parent;
-        gameObject.layer = LayerMask.NameToLayer("Movable");
+        gameObject.layer = LayerMask.NameToLayer("Default");
     }
     public void Move(Vector3 pos)
     {

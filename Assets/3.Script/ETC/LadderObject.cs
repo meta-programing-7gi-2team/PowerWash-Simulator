@@ -4,32 +4,58 @@ using UnityEngine;
 
 public class LadderObject : MonoBehaviour
 {
-    [SerializeField]
-    private Material material;
-    private Transform parent;
     private Transform playerCamera;
-    private bool isHanded = false;
-    public bool isArrange { get; private set; }
+    private Transform parent;
+    private Transform extension;
+    private float extensionHeght;
+
+    private Vector3 defaultPos;
+    private Quaternion defaultRot;
+    public bool isArranged { get; private set; }
 
     private void Start()
     {
         playerCamera = Camera.main.transform;
         parent = transform.parent;
+        extension = transform.GetChild(1);
+        extensionHeght = 0f;
+        defaultPos = transform.position;
+        defaultRot = transform.rotation;
+        isArranged = false;
     }
     
-   
-   
     public void PickUped()
     {
-        isHanded = true;
+        isArranged = false;
         transform.parent = playerCamera;
-        gameObject.layer = LayerMask.NameToLayer("Hand");
+        transform.localPosition = new Vector3(0, -0.5f, 1f);
+        transform.localRotation = Quaternion.Euler(0f, 90f, 20f);
+        extension.localPosition = Vector3.zero;
+    
     }
     public void Droped()
     {
-        isHanded = false;
+        isArranged = false;
         transform.parent = parent;
-        gameObject.layer = LayerMask.NameToLayer("Movable");
+        transform.position = defaultPos;
+        transform.rotation = defaultRot;
+        extension.localPosition = new Vector3(0, extensionHeght, 0);
+   
     }
-
+    public void Arranged(Vector3 pos, Quaternion rot, float valueY)
+    {
+        isArranged = true;
+        transform.parent = parent;
+        transform.position = pos;
+        transform.rotation = rot;
+        extension.localPosition = new Vector3(0, valueY, 0);
+    }
+    public void Placed()
+    {
+        isArranged = false;
+        transform.parent = parent;
+        defaultPos = transform.position;
+        defaultRot = transform.rotation;
+        extensionHeght = extension.localPosition.y;
+    }
 }

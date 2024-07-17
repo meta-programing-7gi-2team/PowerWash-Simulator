@@ -16,8 +16,8 @@ TagManager:
   - Player
   - Movable
   - Ground
-  - Hand
   - 
+  - Shape
   - 
   - 
   - 

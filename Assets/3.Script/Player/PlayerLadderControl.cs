@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class PlayerLadderControl : MonoBehaviour
 {
-    [SerializeField]
-    private LayerMask hand;
-
     private Transform playerCamera;
-    private MovableObject target;
     private PlayerState playerState;
+    private LadderObject ladder;
+    private LadderShape shape;
+
+    [SerializeField]
+    private GameObject ladderShapes;
+    [SerializeField]
+    private LayerMask shapeLayer;
 
     private RaycastHit hit;
-    private bool isHand = false;
 
     private void Start()
     {
@@ -23,44 +25,80 @@ public class PlayerLadderControl : MonoBehaviour
     {
         if (playerState.state.Equals(State.Run)) return;
 
-        Physics.Raycast(playerCamera.position, playerCamera.forward, out hit, Mathf.Infinity, ~hand);
+        if (ladder)
+        {
+            if(Physics.Raycast(playerCamera.position, playerCamera.forward, out hit, Mathf.Infinity, shapeLayer))
+            {
+                hit.transform.TryGetComponent<LadderShape>(out shape);
+                shape.ChangeMaterial(0);
+                ladder.Arranged(shape.pos, shape.rot, shape.valueY);
+            }
+            else
+            {
+                if(shape)
+                    shape.ChangeMaterial(1);
+                ladder.PickUped();
+            }
+        }
+        else
+        {
+            Physics.Raycast(playerCamera.position, playerCamera.forward, out hit, Mathf.Infinity);
+        }
 
         if (Input.GetKeyDown(KeyCode.F))
         {
-            if (hit.transform.gameObject.layer.Equals(LayerMask.NameToLayer("Movable")) && !isHand)
+            if (!ladder)
             {
-                TargetPickUp();
+                if(hit.transform.TryGetComponent<LadderObject>(out ladder))
+                {
+                    PickUp();
+                }
             }
-            else if (target.isArrange && isHand)
+            else
             {
-                TargetDrop();
+                if (ladder.isArranged)
+                {
+                    Place();
+                }
+                else
+                {
+                    Drop();
+                }
             }
         }
-        if (isHand)
+        if (Input.GetMouseButton(0))
         {
-            TargetMove();
-
-            if (Input.GetMouseButtonDown(0) && target.isArrange)
+            if (ladder)
             {
-                TargetDrop();
+                if (ladder.isArranged)
+                {
+                    Place();
+                }
+                else
+                {
+                    Drop();
+                }
             }
         }
     }
-    private void TargetPickUp()
+    private void PickUp()
     {
         playerState.SetState(State.Hand);
-        isHand = true;
-        target = hit.transform.GetComponent<MovableObject>();
-        target.PickUped();
+        ladderShapes.SetActive(true);
+        ladder.PickUped();
     }
-    private void TargetDrop()
+    private void Drop()
     {
         playerState.SetState(State.Idle);
-        isHand = false;
-        target.Droped();
+        ladderShapes.SetActive(false);
+        ladder.Droped();
+        ladder = null;
     }
-    private void TargetMove()
+    private void Place()
     {
-        target.Move(hit.point);
+        playerState.SetState(State.Idle);
+        ladderShapes.SetActive(false);
+        ladder.Placed();
+        ladder = null;
     }
 }

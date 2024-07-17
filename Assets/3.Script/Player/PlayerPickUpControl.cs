@@ -5,14 +5,13 @@ using UnityEngine;
 public class PlayerPickUpControl : MonoBehaviour
 {
     [SerializeField]
-    private LayerMask hand;
+    private LayerMask movable;
 
     private Transform playerCamera;
     private MovableObject target;
     private PlayerState playerState;
 
     private RaycastHit hit;
-    private bool isHand = false;
  
     private void Start()
     {
@@ -23,20 +22,27 @@ public class PlayerPickUpControl : MonoBehaviour
     {
         if (playerState.state.Equals(State.Run)) return;
 
-        Physics.Raycast(playerCamera.position, playerCamera.forward, out hit, Mathf.Infinity, ~hand);
+        Physics.Raycast(playerCamera.position, playerCamera.forward, out hit, Mathf.Infinity, ~movable);
 
         if (Input.GetKeyDown(KeyCode.F))
         {
-            if (hit.transform.gameObject.layer.Equals(LayerMask.NameToLayer("Movable")) && !isHand)
+            if (!target)
             {
-                TargetPickUp();
+                if (hit.transform.TryGetComponent<MovableObject>(out target))
+                {
+                    TargetPickUp();
+                }
             }
-            else if(target.isArrange && isHand)
+            else
             {
-                TargetDrop();
+                if (target.isArrange)
+                {
+                    TargetDrop();
+                }
             }
         }
-        if (isHand)
+
+        if (target)
         {
             TargetMove();
 
@@ -49,15 +55,13 @@ public class PlayerPickUpControl : MonoBehaviour
     private void TargetPickUp()
     {
         playerState.SetState(State.Hand);
-        isHand = true;
-        target = hit.transform.GetComponent<MovableObject>();
         target.PickUped();
     }
     private void TargetDrop()
     {
         playerState.SetState(State.Idle);
-        isHand = false;
         target.Droped();
+        target = null;
     }
     private void TargetMove()
     {
