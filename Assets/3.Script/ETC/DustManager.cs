@@ -5,7 +5,8 @@ using UnityEngine;
 public class DustManager : MonoBehaviour, ISubject
 {
     private List<IObserver> observers = new List<IObserver>();
-    [SerializeField] private Material material;
+    [SerializeField] private Material dustMaterial;
+    [SerializeField] private Material cleanMaterial;
     private bool isChange;
 
     public void RegisterObserver(IObserver observer)
@@ -38,9 +39,13 @@ public class DustManager : MonoBehaviour, ISubject
             TabNotifyObservers();
         }
     }
-    public Material GetMaterial()
+    public Material GetDustMaterial()
     {
-        return new Material(material);
+        return new Material(dustMaterial);
+    }
+    public Material GetCleanMrial()
+    {
+        return new Material(cleanMaterial);
     }
 
     public bool IsChange()

@@ -35,10 +35,12 @@ public class CleanDraw : MonoBehaviour, IObserver
     private float brushSize; // 브러쉬 크기 기준
 
     private Material initMaterial;
-    private Material whiteMaterial;
+    private Material cleanMaterial;
     private Material dustMaterial;
     private DustManager dustManager;
     private bool isCleanCheck = false;
+    private bool isCleanCheckComplete = false;
+    private int cleanCount = 100;
 
     private float fadeAmount = 0.05f; // 흐려지는 정도
 
@@ -73,11 +75,22 @@ public class CleanDraw : MonoBehaviour, IObserver
                 curCount--;
             }
         }
+        if (isCleanCheckComplete)
+        {
+            cleanCount--;
+            float colorSize = 0.01f * cleanCount;
+            _mr.material.SetColor("_Color", new Color(1, 1, 1, colorSize));
+            if (cleanCount < 1)
+            {
+                isCleanCheckComplete = false;
+                _mr.material = initMaterial;
+            }
+        }
     }
 
     public void DustSparkle()
     {
-        // todo: 이거 그거 주황색 반짝이
+        // 먼지 반짝이
         if (dustManager.IsChange())
         {
             _mr.material = initMaterial;
@@ -89,8 +102,8 @@ public class CleanDraw : MonoBehaviour, IObserver
     }
     private void CleanSparkle()
     {
-        // todo: 흰색 반짝이
-        Debug.Log("힝거");
+        // 완료 반짝이
+        _mr.material = cleanMaterial;
     }
     private void Init()
     {
@@ -145,10 +158,14 @@ public class CleanDraw : MonoBehaviour, IObserver
         {
             dustManager.RegisterObserver(this);
         }
+        Texture mainTex = initMaterial.GetTexture(MainPaintTexPropertyName);
 
-        dustMaterial = dustManager.GetMaterial();
+        cleanMaterial = dustManager.GetCleanMrial();
+        cleanMaterial.SetTexture(MainPaintTexPropertyName, mainTex);
+
+        dustMaterial = dustManager.GetDustMaterial();
         dustMaterial.SetTexture(MaskPaintTexPropertyName, renderMaskTexture);
-        dustMaterial.SetTexture(MainPaintTexPropertyName, initMaterial.GetTexture(MainPaintTexPropertyName));
+        dustMaterial.SetTexture(MainPaintTexPropertyName, mainTex);
     }
     public void Wash(RaycastHit raycastHit)
     {
@@ -223,8 +240,9 @@ public class CleanDraw : MonoBehaviour, IObserver
         }
         else if(!isCleanCheck)
         {
-            isCleanCheck = !isCleanCheck;
+            isCleanCheck = true;
             CleanSparkle();
+            isCleanCheckComplete = true;
         }
     }
     private float CalculateColorRatio(RenderTexture renderTexture)
