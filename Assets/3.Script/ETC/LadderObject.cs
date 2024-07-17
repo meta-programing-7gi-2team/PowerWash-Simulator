@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class LadderObject : MonoBehaviour
 {
+    [SerializeField]
+    private MeshCollider[] part;
     private Transform playerCamera;
     private Transform parent;
     private Transform extension;
@@ -31,7 +33,8 @@ public class LadderObject : MonoBehaviour
         transform.localPosition = new Vector3(0, -0.5f, 1f);
         transform.localRotation = Quaternion.Euler(0f, 90f, 20f);
         extension.localPosition = Vector3.zero;
-    
+        part[0].enabled = false;
+        part[1].enabled = false;
     }
     public void Droped()
     {
@@ -40,7 +43,8 @@ public class LadderObject : MonoBehaviour
         transform.position = defaultPos;
         transform.rotation = defaultRot;
         extension.localPosition = new Vector3(0, extensionHeght, 0);
-   
+        part[0].enabled = true;
+        part[1].enabled = true;
     }
     public void Arranged(Vector3 pos, Quaternion rot, float valueY)
     {
@@ -57,5 +61,7 @@ public class LadderObject : MonoBehaviour
         defaultPos = transform.position;
         defaultRot = transform.rotation;
         extensionHeght = extension.localPosition.y;
+        part[0].enabled = true;
+        part[1].enabled = true;
     }
 }

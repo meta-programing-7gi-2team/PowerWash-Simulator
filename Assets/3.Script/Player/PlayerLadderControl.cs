@@ -13,7 +13,6 @@ public class PlayerLadderControl : MonoBehaviour
     private GameObject ladderShapes;
     [SerializeField]
     private LayerMask shapeLayer;
-
     private RaycastHit hit;
 
     private void Start()
@@ -30,13 +29,19 @@ public class PlayerLadderControl : MonoBehaviour
             if(Physics.Raycast(playerCamera.position, playerCamera.forward, out hit, Mathf.Infinity, shapeLayer))
             {
                 hit.transform.TryGetComponent<LadderShape>(out shape);
-                shape.ChangeMaterial(0);
-                ladder.Arranged(shape.pos, shape.rot, shape.valueY);
+                if (!shape.state.Equals(Shape.Block))
+                {
+                    shape.SetShape(Shape.Arrange);
+                    ladder.Arranged(shape.pos, shape.rot, shape.valueY);
+                }
+                else
+                {
+                    ladder.PickUped();
+                }
             }
             else
             {
-                if(shape)
-                    shape.ChangeMaterial(1);
+                if (shape && !shape.state.Equals(Shape.Block)) shape.SetShape(Shape.NotArrange);
                 ladder.PickUped();
             }
         }
