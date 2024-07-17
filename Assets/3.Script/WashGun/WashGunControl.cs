@@ -71,7 +71,6 @@ public class WashGunControl : MonoBehaviour
     }
     private bool BlockCheck()
     {
-
         if (Physics.Raycast(playerCamera.position, playerCamera.forward, blockRange, ~playerLayer))
         {
             anim.SetBool("Await", true);
