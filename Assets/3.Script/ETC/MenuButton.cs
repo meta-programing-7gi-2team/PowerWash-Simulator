@@ -5,6 +5,7 @@ using UnityEngine;
 public class MenuButton : MonoBehaviour
 {
     [SerializeField] private GameObject MainMenu;
+    [SerializeField] private Animator FastManu;
     [SerializeField] private GameObject MenuShadow;
     [SerializeField] private GameObject Career_Btn;
     [SerializeField] private GameObject Special_Btn;
@@ -12,6 +13,8 @@ public class MenuButton : MonoBehaviour
     [SerializeField] private GameObject Continue_Btn;
     [SerializeField] private GameObject Freedom_Btn;
     [SerializeField] private GameObject Back_Btn;
+    [SerializeField] private GameObject Fast_Btn;
+    [SerializeField] private GameObject FastClose_Btn;
 
     public void StageButton()
     {
@@ -37,4 +40,19 @@ public class MenuButton : MonoBehaviour
         Option_Btn.SetActive(true);
     }
 
+    public void FastButton()
+    {
+        Fast_Btn.SetActive(false);
+        Option_Btn.SetActive(false);
+        FastClose_Btn.SetActive(true);
+        FastManu.SetTrigger("FastOpen");
+    }
+
+    public void FastButtonClose()
+    {
+        FastClose_Btn.SetActive(false);
+        Option_Btn.SetActive(true);
+        Fast_Btn.SetActive(true);
+        FastManu.SetTrigger("FastClose");
+    }
 }
