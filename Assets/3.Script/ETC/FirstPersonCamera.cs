@@ -27,7 +27,6 @@ public class FirstPersonCamera : MonoBehaviour
         {
             isFreeMode = false;
             Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
             return;
         }
 
@@ -77,5 +76,6 @@ public class FirstPersonCamera : MonoBehaviour
     {
         isFreeMode = !isFreeMode;
         Cursor.lockState = isFreeMode ? CursorLockMode.Confined : CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 }
