@@ -45,6 +45,8 @@ public class UIManager : MonoBehaviour
     {
         LoadAll.SetActive(false);
         text.gameObject.SetActive(false);
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     private IEnumerator LoadSceneAsync(int sceneIndex)
@@ -79,7 +81,7 @@ public class UIManager : MonoBehaviour
         }
 
         // 씬 로드 완료 후 오브젝트 로드 시작
-        yield return StartCoroutine(LoadObjectsAsync());
+        yield return StartCoroutine(LoadObjectsAsync(sceneIndex));
 
         // 로딩 완료
         targetProgress = 1f; // 100% 진행
@@ -93,19 +95,39 @@ public class UIManager : MonoBehaviour
         text.gameObject.SetActive(false);
         loadingSlider.gameObject.SetActive(false);
         Button.gameObject.SetActive(true); // 로딩이 완료되면 버튼을 활성화
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
     }
 
-    private IEnumerator LoadObjectsAsync()
+    private IEnumerator LoadObjectsAsync(int Index)
     {
-        string[] objectsToLoad = { "Pineapple", "Patrick", "Squidward", "Stand" };
-
-        for (int i = 0; i < objectsToLoad.Length; i++)
+        if (Index == 1)
         {
-            ResourceRequest resourceRequest = Resources.LoadAsync<GameObject>(objectsToLoad[i]);
-            while (!resourceRequest.isDone)
+            string[] objectsToLoad = { "Pineapple", "Patrick", "Squidward", "Stand" };
+
+            for (int i = 0; i < objectsToLoad.Length; i++)
             {
-                yield return null; // 프레임마다 반복
+                ResourceRequest resourceRequest = Resources.LoadAsync<GameObject>(objectsToLoad[i]);
+                while (!resourceRequest.isDone)
+                {
+                    yield return null; // 프레임마다 반복
+                }
+                Instantiate(resourceRequest.asset);
             }
-            Instantiate(resourceRequest.asset);        }
+        }
+        else
+        {
+            string[] objectsToLoad = { "KrustyKrab" };
+
+            for (int i = 0; i < objectsToLoad.Length; i++)
+            {
+                ResourceRequest resourceRequest = Resources.LoadAsync<GameObject>(objectsToLoad[i]);
+                while (!resourceRequest.isDone)
+                {
+                    yield return null; // 프레임마다 반복
+                }
+                Instantiate(resourceRequest.asset);
+            }
+        }
     }
 }
