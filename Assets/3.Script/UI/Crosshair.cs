@@ -11,9 +11,9 @@ public class Crosshair : MonoBehaviour
     private Vector3 center;
     private Color color;
 
-    private bool isFadeIn;
     [SerializeField]
     private float fadeSpeed;
+    private bool isFadeIn;
     
     private void Start()
     {
@@ -26,7 +26,7 @@ public class Crosshair : MonoBehaviour
 
     private void Update()
     {
-        if (fpc.Get_IsFree())
+        if (fpc.isFreeMode)
         {
             Vector3 mousePosition = Input.mousePosition;
             rect.position = mousePosition;
@@ -35,6 +35,7 @@ public class Crosshair : MonoBehaviour
         {
             rect.position = center;
         }
+
         if (isFadeIn)
         {
             FadeIn();

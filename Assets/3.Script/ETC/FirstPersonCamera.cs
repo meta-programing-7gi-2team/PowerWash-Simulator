@@ -4,22 +4,33 @@ using UnityEngine;
 
 public class FirstPersonCamera : MonoBehaviour
 {
-    [SerializeField] private float mouseSensitivity = 100.0f;
-
-    [SerializeField] private Transform playerBody;
+    [SerializeField] 
+    private float mouseSensitivity = 100.0f;
+    [SerializeField] 
+    private Transform playerBody;
+    private PlayerState playerState;
 
     private float xRotation = 0.0f;
-    private bool isFree = false;
     private float offsetX = 20f;
     private float offsetY = 100f;
-
+    public bool isFreeMode { get; private set; }
     private void Start()
     {
+        playerState = FindObjectOfType<PlayerState>();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
     private void Update()
     {
+        if (playerState.state.Equals(State.Run) ||
+            playerState.state.Equals(State.Hand))
+        {
+            isFreeMode = false;
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+            return;
+        }
+
         if (Input.GetKeyDown(KeyCode.C))
         {
             ModeChange();
@@ -31,13 +42,13 @@ public class FirstPersonCamera : MonoBehaviour
     }
     private void CameraMove()
     {
-        if (!isFree)
+        if (!isFreeMode)
         {
             float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
             float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
 
             xRotation -= mouseY;
-            xRotation = Mathf.Clamp(xRotation, -85.0f, 85.0f);
+            xRotation = Mathf.Clamp(xRotation, -80.0f, 80.0f);
 
             transform.localRotation = Quaternion.Euler(xRotation, 0.0f, 0.0f);
             playerBody.Rotate(Vector3.up * mouseX);
@@ -55,7 +66,7 @@ public class FirstPersonCamera : MonoBehaviour
                 float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
 
                 xRotation -= mouseY;
-                xRotation = Mathf.Clamp(xRotation, -90.0f, 90.0f);
+                xRotation = Mathf.Clamp(xRotation, -80.0f, 80.0f);
 
                 transform.localRotation = Quaternion.Euler(xRotation, 0.0f, 0.0f);
                 playerBody.Rotate(Vector3.up * mouseX);
@@ -64,11 +75,7 @@ public class FirstPersonCamera : MonoBehaviour
     }
     private void ModeChange()
     {
-        isFree = !isFree;
-        Cursor.lockState = isFree ? CursorLockMode.Confined : CursorLockMode.Locked;
-    }
-    public bool Get_IsFree()
-    {
-        return isFree;
+        isFreeMode = !isFreeMode;
+        Cursor.lockState = isFreeMode ? CursorLockMode.Confined : CursorLockMode.Locked;
     }
 }
