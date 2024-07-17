@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-public class CleanDraw : MonoBehaviour
+public class CleanDraw : MonoBehaviour, IObserver
 {
     private MaterialPropertyBlock TextureBlock
     {
@@ -18,7 +18,8 @@ public class CleanDraw : MonoBehaviour
     private MaterialPropertyBlock _textureBlock;
 
     private static readonly string MaskPaintTexPropertyName = "_MaskTex"; // 쉐이더에서 가져올 texture의 이름
-    private static readonly string WaterPaintTexPropertyName = "_WaterTex"; // 쉐이더에서 가져올 texture의 이름
+    private static readonly string WaterPaintTexPropertyName = "_WaterTex";
+    private static readonly string MainPaintTexPropertyName = "_MainTex";
 
     private MeshRenderer _mr;
 
@@ -32,7 +33,12 @@ public class CleanDraw : MonoBehaviour
     private Texture2D whiteBrushTexture; // Painter
     private Texture2D blackBrushTexture; // Eraser
     private float brushSize; // 브러쉬 크기 기준
-    private Material curMaterial;
+
+    private Material initMaterial;
+    private Material whiteMaterial;
+    private Material dustMaterial;
+    private DustManager dustManager;
+    private bool isCleanCheck = false;
 
     private float fadeAmount = 0.05f; // 흐려지는 정도
 
@@ -48,16 +54,16 @@ public class CleanDraw : MonoBehaviour
     public float ColorRatio { get; private set; }
 
     //private void OnEnable()
-    private void Start() //임시 수정
+    private void Start()
     {
         Init();
         InitBrushTexture();
         InitRenderTexture();
+        InitMaterial();
 
         initColorRatio = CalculateColorRatio(renderMaskTexture);
-        Debug.Log("Color match ratio: " + initColorRatio + "%");
     }
-    void Update()
+    private void Update()
     {
         if (Time.frameCount % 60 == 0) // 60 프레임(1초)마다 페이드 적용
         {
@@ -69,16 +75,27 @@ public class CleanDraw : MonoBehaviour
         }
     }
 
+    public void DustSparkle()
+    {
+        // todo: 이거 그거 주황색 반짝이
+        if (dustManager.IsChange())
+        {
+            _mr.material = initMaterial;
+        }
+        else
+        {
+            _mr.material = dustMaterial;
+        }
+    }
+    private void CleanSparkle()
+    {
+        // todo: 흰색 반짝이
+        Debug.Log("힝거");
+    }
     private void Init()
     {
         // MeshRenderer 가져오기
         TryGetComponent(out _mr);
-        Renderer renderer = GetComponent<Renderer>();
-        if (renderer != null)
-        {
-            // 단일 마테리얼 가져오기
-            curMaterial = renderer.material;
-        }
     }
     //렌더 텍스처 초기화
     private void InitRenderTexture()
@@ -113,6 +130,25 @@ public class CleanDraw : MonoBehaviour
         fadeTextureComputeShader = brushController.FadeTextureComputeShader;
         initCount = Mathf.CeilToInt(brushController.ColorNum / fadeAmount);
         curCount = 0;
+    }
+    private void InitMaterial()
+    {
+        Renderer renderer = GetComponent<Renderer>();
+        if (renderer != null)
+        {
+            // 단일 마테리얼 가져오기
+            initMaterial = renderer.material;
+        }
+
+        dustManager = FindObjectOfType<DustManager>();
+        if (dustManager != null)
+        {
+            dustManager.RegisterObserver(this);
+        }
+
+        dustMaterial = dustManager.GetMaterial();
+        dustMaterial.SetTexture(MaskPaintTexPropertyName, renderMaskTexture);
+        dustMaterial.SetTexture(MainPaintTexPropertyName, initMaterial.GetTexture(MainPaintTexPropertyName));
     }
     public void Wash(RaycastHit raycastHit)
     {
@@ -171,15 +207,25 @@ public class CleanDraw : MonoBehaviour
 
     void WaterMark()
     {
-        //TODO: 오염도
-        if(ColorRatio < 100)
-        {
-            float colorRatio = CalculateColorRatio(renderMaskTexture) - initColorRatio;
-            ColorRatio = (colorRatio * 100.0f) / (1.0f - initColorRatio);
-        }
+        // 오염 청소 완료도
+        ApplyCalculateRatio();
 
         // 물 텍스처 흐리게
         ApplyFadeEffect(renderWaterTexture, fadeAmount);
+    }
+    private void ApplyCalculateRatio()
+    {
+        if (ColorRatio < 100)
+        {
+            float colorRatio = CalculateColorRatio(renderMaskTexture) - initColorRatio;
+            ColorRatio = (colorRatio * 100.0f) / (1.0f - initColorRatio);
+            //Todo: UI텍스트 표시 필요
+        }
+        else if(!isCleanCheck)
+        {
+            isCleanCheck = !isCleanCheck;
+            CleanSparkle();
+        }
     }
     private float CalculateColorRatio(RenderTexture renderTexture)
     {
@@ -226,6 +272,10 @@ public class CleanDraw : MonoBehaviour
         if (resultBuffer != null)
         {
             resultBuffer.Release();
+        }
+        if (dustManager != null)
+        {
+            dustManager.RemoveObserver(this);
         }
     }
 }
