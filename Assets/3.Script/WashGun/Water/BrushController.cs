@@ -41,13 +41,6 @@ public class BrushController : MonoBehaviour
         ColorNum = 0.3f;
         InitBrushTexture();
     }
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Tab))
-        {
-            Debug.Log("나 탭이다 짱이지");
-        }
-    }
     //브러쉬 텍스처 초기화
     private void InitBrushTexture()
     {
