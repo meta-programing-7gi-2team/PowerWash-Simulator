@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3401621821099371962}
   - component: {fileID: 6762576455702833172}
   - component: {fileID: 6762576455702833169}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SH-Bicycle_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -110,11 +110,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 0}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 781f5dfd3334e45459ce72c088017963, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &618717057957896043
 GameObject:
   m_ObjectHideFlags: 0
@@ -128,7 +126,7 @@ GameObject:
   - component: {fileID: 2459422747974060581}
   - component: {fileID: 6762576455474226964}
   - component: {fileID: 6762576455474226961}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SH-Ear_0_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -225,11 +223,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 0}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: c609188d35df1f0458e3c6ce86366b99, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &810112000955291828
 GameObject:
   m_ObjectHideFlags: 0
@@ -243,7 +239,7 @@ GameObject:
   - component: {fileID: 3481121170130776458}
   - component: {fileID: 6762576454518836551}
   - component: {fileID: 6762576454518836548}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SH-PortholeWindow_1_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -340,11 +336,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 0}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 3ac9a79ae911fdf478b1194fed9c05a2, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &914661544049778202
 GameObject:
   m_ObjectHideFlags: 0
@@ -358,7 +352,7 @@ GameObject:
   - component: {fileID: 697243531747755919}
   - component: {fileID: 6762576455336725670}
   - component: {fileID: 6762576455336725667}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SH-RoofChair_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -455,11 +449,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 0}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 1fdf45dc3bbc10942af23af92843f94c, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &1728891972575711938
 GameObject:
   m_ObjectHideFlags: 0
@@ -473,7 +465,7 @@ GameObject:
   - component: {fileID: 4439499005072935555}
   - component: {fileID: 6762576454669553515}
   - component: {fileID: 6762576454669553512}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SH-Bicycle_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -570,11 +562,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 0}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 781f5dfd3334e45459ce72c088017963, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &2635607001620687969
 GameObject:
   m_ObjectHideFlags: 0
@@ -588,7 +578,7 @@ GameObject:
   - component: {fileID: 939422834848735202}
   - component: {fileID: 6762576454802200307}
   - component: {fileID: 6762576454802200304}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SH-PortholeWindow_0_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -685,11 +675,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 0}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 5110a3defffaeef4ebb443c135bbae2b, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &2790452472178796644
 GameObject:
   m_ObjectHideFlags: 0
@@ -703,7 +691,7 @@ GameObject:
   - component: {fileID: 2816921780188047138}
   - component: {fileID: 6762576455255517670}
   - component: {fileID: 6762576455255517667}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SH-PortholeFrame_0_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -800,11 +788,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 0}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 131857f309564ec4f8c6d0057f5b7b20, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &3391204019168053658
 GameObject:
   m_ObjectHideFlags: 0
@@ -818,7 +804,7 @@ GameObject:
   - component: {fileID: 2545805412703887901}
   - component: {fileID: 6762576454183590327}
   - component: {fileID: 6762576454183590324}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SH-RearWindowFrame_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -915,11 +901,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 0}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 1f38578f6c8299546a1f56cef1a8af21, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &3731761446384368473
 GameObject:
   m_ObjectHideFlags: 0
@@ -933,7 +917,7 @@ GameObject:
   - component: {fileID: 5601424932370161898}
   - component: {fileID: 6762576454231791205}
   - component: {fileID: 6762576454231791202}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SH-Nose_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1030,11 +1014,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 0}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 24448e15df4aba8469693e36ba120604, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &4884508018167562485
 GameObject:
   m_ObjectHideFlags: 0
@@ -1048,7 +1030,7 @@ GameObject:
   - component: {fileID: 7798669783492389008}
   - component: {fileID: 6762576455618235853}
   - component: {fileID: 6762576455618235850}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SH-RoofChair_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1145,11 +1127,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 0}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 1fdf45dc3bbc10942af23af92843f94c, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &5041774049914645992
 GameObject:
   m_ObjectHideFlags: 0
@@ -1163,7 +1143,7 @@ GameObject:
   - component: {fileID: 9054875363057559299}
   - component: {fileID: 6762576454808411576}
   - component: {fileID: 6762576454808411573}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SH-Brow_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1260,11 +1240,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 0}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 29931811c3a36904085a04cdbd8af134, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &5051328981405561287
 GameObject:
   m_ObjectHideFlags: 0
@@ -1278,7 +1256,7 @@ GameObject:
   - component: {fileID: 7612572819566760129}
   - component: {fileID: 6762576454907417326}
   - component: {fileID: 6762576454907417323}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SH-DoorKnob_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1375,11 +1353,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 0}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: eab94b16ff79bc34ba08d8550a6e6647, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &5100873878195614090
 GameObject:
   m_ObjectHideFlags: 0
@@ -1393,7 +1369,7 @@ GameObject:
   - component: {fileID: 2570900159103525173}
   - component: {fileID: 6762576454459139300}
   - component: {fileID: 6762576454459139297}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SH-Step_1_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1490,11 +1466,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 0}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: ea5fc6dc715a52e4ab0a805be69b8697, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &5232928814058927858
 GameObject:
   m_ObjectHideFlags: 0
@@ -1508,7 +1482,7 @@ GameObject:
   - component: {fileID: 177682120872045351}
   - component: {fileID: 6762576454732307408}
   - component: {fileID: 6762576454732307405}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SH-RearWindow_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1605,11 +1579,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 0}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 149e608db67314f4b8d5c08471b48f5b, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &5613241411562017177
 GameObject:
   m_ObjectHideFlags: 0
@@ -1623,7 +1595,7 @@ GameObject:
   - component: {fileID: 2787579506732060016}
   - component: {fileID: 6762576455434155857}
   - component: {fileID: 6762576455434155854}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SH-Step_3_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1720,11 +1692,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 0}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: d575c195e3d4cb84fb33c62d4efe4e6f, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &5786978842211419734
 GameObject:
   m_ObjectHideFlags: 0
@@ -1738,7 +1708,7 @@ GameObject:
   - component: {fileID: 2303520511913853190}
   - component: {fileID: 6762576454203026571}
   - component: {fileID: 6762576454203026568}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SH-Roof_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1835,11 +1805,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 0}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: b125c9b40d5f051409bc247127553fdf, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &6573683330660322235
 GameObject:
   m_ObjectHideFlags: 0
@@ -1853,7 +1821,7 @@ GameObject:
   - component: {fileID: 6077114542593677893}
   - component: {fileID: 6762576455536971021}
   - component: {fileID: 6762576455536971018}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SH-Door_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1950,11 +1918,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 0}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 8a469d52af3a4e1488ef2061df92055f, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &6762576455338149311
 GameObject:
   m_ObjectHideFlags: 0
@@ -1964,7 +1930,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6762576455338149248}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Squidward
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2021,7 +1987,7 @@ GameObject:
   - component: {fileID: 9098727405757191308}
   - component: {fileID: 6762576454782217253}
   - component: {fileID: 6762576454782217250}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SH-Head_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2118,11 +2084,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 0}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: c7f88a51ad6eb2c4ab5885f8a6cb5234, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &7722282374908531594
 GameObject:
   m_ObjectHideFlags: 0
@@ -2136,7 +2100,7 @@ GameObject:
   - component: {fileID: 208770197911406550}
   - component: {fileID: 6762576455946787985}
   - component: {fileID: 6762576455946787982}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SH-PortholeFrame_1_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2233,11 +2197,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 0}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: a240a4bc6fc587f428205a620c825618, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &7978178993357634815
 GameObject:
   m_ObjectHideFlags: 0
@@ -2251,7 +2213,7 @@ GameObject:
   - component: {fileID: 6794790489871976572}
   - component: {fileID: 6762576454028172532}
   - component: {fileID: 6762576454028172529}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SH-DoorAlcove_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2348,11 +2310,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 0}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 9570bd02b4417904f93c8eadf13431f4, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &8459835893821448340
 GameObject:
   m_ObjectHideFlags: 0
@@ -2366,7 +2326,7 @@ GameObject:
   - component: {fileID: 3646537201302657433}
   - component: {fileID: 6762576453890750644}
   - component: {fileID: 6762576453890750641}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SH-Step_2_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2463,11 +2423,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 0}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: cf089ea8c4c22db42be01dfbb1266509, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &8475703479604097723
 GameObject:
   m_ObjectHideFlags: 0
@@ -2481,7 +2439,7 @@ GameObject:
   - component: {fileID: 9197961013271082940}
   - component: {fileID: 6762576454481647347}
   - component: {fileID: 6762576454481647344}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SH-Ear_1_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2578,11 +2536,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 0}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 61b424948a832b5489594bad9c002fb8, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &8526297005851808124
 GameObject:
   m_ObjectHideFlags: 0
@@ -2596,7 +2552,7 @@ GameObject:
   - component: {fileID: 5314610354214892685}
   - component: {fileID: 6762576455792713702}
   - component: {fileID: 6762576455792713699}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SH-Step_0_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2693,8 +2649,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 0}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: e59846fd1e0aa534895c0ce3b60eb668, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1

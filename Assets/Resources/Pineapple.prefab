@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 77304773494142735}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Pineapple
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -143,7 +143,7 @@ GameObject:
   - component: {fileID: 1131577865204087125}
   - component: {fileID: 77304774889396797}
   - component: {fileID: 77304774889396798}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineapplePanel_2_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -240,11 +240,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 17e46fe1e4246a543b53cb1ebaae0dd8, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: ef3467a102714fe4da577cad4a946539, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &410895855748727922
 GameObject:
   m_ObjectHideFlags: 0
@@ -258,7 +256,7 @@ GameObject:
   - component: {fileID: 8946910634378096525}
   - component: {fileID: 77304773526802566}
   - component: {fileID: 77304773526802587}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineapplePanel_10_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -355,11 +353,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 4a1336ccd5440f846bca22fc9b59b411, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 2187258fff4325946b49a09026ba0a6c, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &571098133288540877
 GameObject:
   m_ObjectHideFlags: 0
@@ -373,7 +369,7 @@ GameObject:
   - component: {fileID: 7243272112965504199}
   - component: {fileID: 77304774247817478}
   - component: {fileID: 77304774247817499}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PathSteppingStone_7_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -470,11 +466,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 7cf004468dab59a4186f8338c433fbef, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 14e1d492525bcc04d859e06d0773e4ad, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &669967445346419015
 GameObject:
   m_ObjectHideFlags: 0
@@ -488,7 +482,7 @@ GameObject:
   - component: {fileID: 3325542775850206950}
   - component: {fileID: 77304773442321961}
   - component: {fileID: 77304773442321962}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-Path_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -585,11 +579,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: c8262d9cf0ac3a74ea11014b7788d7f4, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: b61cb78dd0376494ab9818800adfd1f3, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &867795242156161688
 GameObject:
   m_ObjectHideFlags: 0
@@ -603,7 +595,7 @@ GameObject:
   - component: {fileID: 994423164243827414}
   - component: {fileID: 77304773500708495}
   - component: {fileID: 77304773500708480}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineapplePanel_38_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -700,11 +692,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 7463ff217639c1243b16058fee55a440, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 0b2c0336fb35e6b459b9be6bf4d6999f, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &874186676500995368
 GameObject:
   m_ObjectHideFlags: 0
@@ -718,7 +708,7 @@ GameObject:
   - component: {fileID: 8688310699672770348}
   - component: {fileID: 77304774775740603}
   - component: {fileID: 77304774775740604}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineapplePanelTop_6_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -815,11 +805,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 155b7c6e0f0b7dd49a6c07735b552565, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: da44fe56b0e568342aa6dbefb7c2ac25, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &941163118729531402
 GameObject:
   m_ObjectHideFlags: 0
@@ -833,7 +821,7 @@ GameObject:
   - component: {fileID: 8674187841025094004}
   - component: {fileID: 77304773559499746}
   - component: {fileID: 77304773559499751}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineapplePanel_22_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -930,11 +918,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 158d693d07b1d02458723ccac8332f94, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 1f53416b83e08504b897235312f35707, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &964219170256704842
 GameObject:
   m_ObjectHideFlags: 0
@@ -948,7 +934,7 @@ GameObject:
   - component: {fileID: 7092585465419623177}
   - component: {fileID: 77304772787682214}
   - component: {fileID: 77304772787682235}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineapplePanel_15_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1045,11 +1031,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 3563893dee97a944386ad353897f215f, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: aa79806db58783746ab26c522fbcf849, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &1072088348399532915
 GameObject:
   m_ObjectHideFlags: 0
@@ -1063,7 +1047,7 @@ GameObject:
   - component: {fileID: 7975694870600160833}
   - component: {fileID: 77304773398321575}
   - component: {fileID: 77304773398321574}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineappleLeaf_8_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1160,11 +1144,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 46181bd7b8bbc8d43ac29d252a37cc97, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: c4bb45b4e8e945f4385a669bf99a508c, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &1104603633742696219
 GameObject:
   m_ObjectHideFlags: 0
@@ -1178,7 +1160,7 @@ GameObject:
   - component: {fileID: 383986410203117091}
   - component: {fileID: 77304773895107608}
   - component: {fileID: 77304773895107613}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineapplePanel_27_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1275,11 +1257,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 33457671734db3441a6868a93ca998d6, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 8c834bd4c0045f548a5f081dae8a733d, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &1113830748229237073
 GameObject:
   m_ObjectHideFlags: 0
@@ -1293,7 +1273,7 @@ GameObject:
   - component: {fileID: 4061374949572666281}
   - component: {fileID: 77304772897308234}
   - component: {fileID: 77304772897308235}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineappleLeaf_9_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1390,11 +1370,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 5b70ece40376d7e429b18d38fe80db0b, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: f87d03eb2c98cc641b04fdcb6be81c36, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &1180356248518219918
 GameObject:
   m_ObjectHideFlags: 0
@@ -1408,7 +1386,7 @@ GameObject:
   - component: {fileID: 7028274929083923243}
   - component: {fileID: 77304773696045172}
   - component: {fileID: 77304773696045193}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-Chimney_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1505,11 +1483,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 1f310bf130e3d6144ba4e6f74de7c3fc, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 6e96c3087572a004ca53004acdebd315, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &1199641518426859994
 GameObject:
   m_ObjectHideFlags: 0
@@ -1523,7 +1499,7 @@ GameObject:
   - component: {fileID: 8607137900237156925}
   - component: {fileID: 77304774296477720}
   - component: {fileID: 77304774296477725}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineapplePanelTop_2_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1620,11 +1596,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 4e5c470b6a2c9f3458cc837f3e51ae95, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 22544c543a0b79d429464a48e22f940f, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &1256783502407529174
 GameObject:
   m_ObjectHideFlags: 0
@@ -1638,7 +1612,7 @@ GameObject:
   - component: {fileID: 75208476081667163}
   - component: {fileID: 77304773756352540}
   - component: {fileID: 77304773756352529}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineapplePanel_17_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1735,11 +1709,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 4086dc3f25d1e554fae4f7d909edd32a, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 67701ae966e483842a0f6efdcf6bd797, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &1305667264441308915
 GameObject:
   m_ObjectHideFlags: 0
@@ -1753,7 +1725,7 @@ GameObject:
   - component: {fileID: 8460925732046747078}
   - component: {fileID: 77304773458025718}
   - component: {fileID: 77304773458025739}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PathSteppingStone_2_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1850,11 +1822,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 90855791a7b07f14191eeb8da8302d80, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 5696408afcf31a74ca90efd446b940b7, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &1316361978986643095
 GameObject:
   m_ObjectHideFlags: 0
@@ -1868,7 +1838,7 @@ GameObject:
   - component: {fileID: 7942039435668664385}
   - component: {fileID: 77304773789822899}
   - component: {fileID: 77304773789822900}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineapplePanel_3_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1965,11 +1935,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 3ebd2e9e17ac0694299c23060a93d9f8, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: e7fdd49dc67b1104db83e8ea27a77ba2, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &1334041404918037338
 GameObject:
   m_ObjectHideFlags: 0
@@ -1983,7 +1951,7 @@ GameObject:
   - component: {fileID: 7112984479528398096}
   - component: {fileID: 77304774892475992}
   - component: {fileID: 77304774892475997}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineapplePanel_20_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2080,11 +2048,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 70401d774a5ffe84d842f9172aed2f32, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 3b95b607e2f550e428cbf6d346908bfa, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &1401361784535708289
 GameObject:
   m_ObjectHideFlags: 0
@@ -2098,7 +2064,7 @@ GameObject:
   - component: {fileID: 1725783843611477524}
   - component: {fileID: 77304773954972592}
   - component: {fileID: 77304773954972597}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PortholeFrame_1_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2195,11 +2161,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: bb2cac0d97c512849a1890933c6ec007, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: c3aee34e7bb144b4198d175595d40cd8, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &1493918908932823884
 GameObject:
   m_ObjectHideFlags: 0
@@ -2213,7 +2177,7 @@ GameObject:
   - component: {fileID: 960955906657173509}
   - component: {fileID: 77304773489816566}
   - component: {fileID: 77304773489818635}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineapplePanel_37_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2310,11 +2274,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 931eca47855cc0941b0876a634f750b5, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 6bfb04bebf759fd499cabb3a67047eb5, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &1509780510151922937
 GameObject:
   m_ObjectHideFlags: 0
@@ -2328,7 +2290,7 @@ GameObject:
   - component: {fileID: 2786843177885767518}
   - component: {fileID: 77304773422841192}
   - component: {fileID: 77304773422841197}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineapplePanel_4_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2425,11 +2387,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 641a67d5c6b0cb2429aeb87f1b875620, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 7c594799cede1e346a9a8ff365a719e0, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &1607760543311791525
 GameObject:
   m_ObjectHideFlags: 0
@@ -2443,7 +2403,7 @@ GameObject:
   - component: {fileID: 5707073329314592477}
   - component: {fileID: 77304774495385494}
   - component: {fileID: 77304774495385515}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PathSteppingStone_4_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2540,11 +2500,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: eae189448508fc847aa5d5729b98d97a, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 11890128cd43ce146a0b2d796c1216ac, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &1727958735020298908
 GameObject:
   m_ObjectHideFlags: 0
@@ -2558,7 +2516,7 @@ GameObject:
   - component: {fileID: 4976588023068302192}
   - component: {fileID: 77304773844775616}
   - component: {fileID: 77304773844775621}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineapplePanel_7_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2655,11 +2613,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 2785977100f295b41941a3b37307e45d, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: b9e9459bc2aa03646af091104a4d23f6, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &1807836211472341425
 GameObject:
   m_ObjectHideFlags: 0
@@ -2673,7 +2629,7 @@ GameObject:
   - component: {fileID: 5182951778594553484}
   - component: {fileID: 77304774214975582}
   - component: {fileID: 77304774214975571}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-GarageDoorAlcove_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2770,11 +2726,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: fb9c1e9c48912564e97c984c5049f6f4, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: a799a02ed17a3e7428c159a82f1b132b, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &1824349422075942369
 GameObject:
   m_ObjectHideFlags: 0
@@ -2788,7 +2742,7 @@ GameObject:
   - component: {fileID: 4795960532111140396}
   - component: {fileID: 77304773845514176}
   - component: {fileID: 77304773845514181}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineapplePanelBottom_4_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2885,11 +2839,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 4fd0fda69266ae24497599089a5deaa7, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 41bd099522188be4b8fd2109ae918f05, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &1853204166187590979
 GameObject:
   m_ObjectHideFlags: 0
@@ -2903,7 +2855,7 @@ GameObject:
   - component: {fileID: 9063716092620545125}
   - component: {fileID: 77304773933864899}
   - component: {fileID: 77304773933864900}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PathSteppingStone_5_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3000,11 +2952,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: bf583002f084e124e9bcca1d85731e01, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: f2dac905c602742499e0b6bed1fe12a1, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &1892005148224426585
 GameObject:
   m_ObjectHideFlags: 0
@@ -3018,7 +2968,7 @@ GameObject:
   - component: {fileID: 6195172326129467823}
   - component: {fileID: 77304774720082727}
   - component: {fileID: 77304774720082744}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineapplePanel_30_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3115,11 +3065,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: c1d1abdd6b76c6e4b8a774cbf4fdb4a1, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 33b0c85d9f27add47ab1f0fc264fc628, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &1902926123171331768
 GameObject:
   m_ObjectHideFlags: 0
@@ -3133,7 +3081,7 @@ GameObject:
   - component: {fileID: 6591758508517417749}
   - component: {fileID: 77304772936672805}
   - component: {fileID: 77304772936672806}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineapplePanelTop_4_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3230,11 +3178,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 9166b5ebead20f642a95cfa031cfad63, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 9bb29edb60fdb18418200081edf76a8f, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &1958193143793083980
 GameObject:
   m_ObjectHideFlags: 0
@@ -3248,7 +3194,7 @@ GameObject:
   - component: {fileID: 6531978739163064948}
   - component: {fileID: 77304774576777256}
   - component: {fileID: 77304774576777261}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineapplePanelBottom_3_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3345,11 +3291,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 46bfb9ab7f86bd14f9f7d274464492ca, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: dc0cf957b1205fd4f8af1f83c5a3f164, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &2004668783114559347
 GameObject:
   m_ObjectHideFlags: 0
@@ -3363,7 +3307,7 @@ GameObject:
   - component: {fileID: 8338868197872824407}
   - component: {fileID: 77304773203636615}
   - component: {fileID: 77304773203636614}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineappleLeaf_3_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3460,11 +3404,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 7e6e1d684f9526444b103dfac5528144, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 62f2b14dd2b633e4fbd825e934a55d48, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &2100705888761535247
 GameObject:
   m_ObjectHideFlags: 0
@@ -3478,7 +3420,7 @@ GameObject:
   - component: {fileID: 3761605341127481398}
   - component: {fileID: 77304772805694587}
   - component: {fileID: 77304772805694588}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PathSteppingStone_6_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3575,11 +3517,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: d5a55dd7ac846344891f5412c99f6363, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: d140c129d7d251d49bc633653331aa33, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &2393376790601697981
 GameObject:
   m_ObjectHideFlags: 0
@@ -3593,7 +3533,7 @@ GameObject:
   - component: {fileID: 2482712016161708273}
   - component: {fileID: 77304773978663431}
   - component: {fileID: 77304773978663448}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineapplePanel_31_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3690,11 +3630,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 4bd9913e0adcb2b4ba17b33dbcd6f385, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 8ab539df34b024349a4decbcfc25645d, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &2480409705680043636
 GameObject:
   m_ObjectHideFlags: 0
@@ -3708,7 +3646,7 @@ GameObject:
   - component: {fileID: 6415663582410812112}
   - component: {fileID: 77304773970797208}
   - component: {fileID: 77304773970797213}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PathSteppingStone_8_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3805,11 +3743,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 5cef264b411975643879e7159ce3a756, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 3d7e3eed536412b40958268cfa357fff, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &2610415971381622981
 GameObject:
   m_ObjectHideFlags: 0
@@ -3823,7 +3759,7 @@ GameObject:
   - component: {fileID: 6496262823356196327}
   - component: {fileID: 77304774488835787}
   - component: {fileID: 77304774488835788}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineapplePanelBottom_2_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3920,11 +3856,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 79e8128fb5acbfd428d53deb467950a0, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 48b82455ed034df429188d4b5e8cee17, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &2654952511653008170
 GameObject:
   m_ObjectHideFlags: 0
@@ -3938,7 +3872,7 @@ GameObject:
   - component: {fileID: 1108510104110935505}
   - component: {fileID: 77304773875309314}
   - component: {fileID: 77304773875309319}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PathSteppingStone_11_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4035,11 +3969,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 8b3d73055ad4958428915c3e0840ba47, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 302e6e5ecaee5b94e899d25ee7ab5a4c, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &2805010698175894316
 GameObject:
   m_ObjectHideFlags: 0
@@ -4053,7 +3985,7 @@ GameObject:
   - component: {fileID: 2422780043998574170}
   - component: {fileID: 77304773863195560}
   - component: {fileID: 77304773863195561}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineappleLeaf_7_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4150,11 +4082,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 73831a5a89653c742904f8324ed133b3, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 3ff8fdb14f575b24c8a112617a6e208d, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &2891407562619484749
 GameObject:
   m_ObjectHideFlags: 0
@@ -4168,7 +4098,7 @@ GameObject:
   - component: {fileID: 7418960374129352653}
   - component: {fileID: 77304773067561761}
   - component: {fileID: 77304773067561762}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineapplePanelTop_0_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4265,11 +4195,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: f2a4db65ed69fb64d800bff96271a5de, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 792e945afe64a5847864e496917a71c2, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &2961255630924307024
 GameObject:
   m_ObjectHideFlags: 0
@@ -4283,7 +4211,7 @@ GameObject:
   - component: {fileID: 2577737352405857180}
   - component: {fileID: 77304774190243240}
   - component: {fileID: 77304774190243245}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineapplePanelBottom_5_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4380,11 +4308,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 386b5585f56b22e44ade34ef202c1e77, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 09c1bc2222e9ae649817df46728c7f24, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &3142352642416478880
 GameObject:
   m_ObjectHideFlags: 0
@@ -4398,7 +4324,7 @@ GameObject:
   - component: {fileID: 5065642964543816630}
   - component: {fileID: 77304774481179578}
   - component: {fileID: 77304774481179579}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineappleLeaf_2_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4495,11 +4421,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: df5d8835164b25d4a9dfdb86cdc370ab, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: efa38f19f36091a4db70512f32b29fbc, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &3148377884378888046
 GameObject:
   m_ObjectHideFlags: 0
@@ -4513,7 +4437,7 @@ GameObject:
   - component: {fileID: 5158260762961560058}
   - component: {fileID: 77304774059426505}
   - component: {fileID: 77304774059426509}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineapplePanel_23_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4610,11 +4534,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 07f01c52b5eb67045af1546d3cddf45f, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: e536e9a8cd6abd94aa5f133435079400, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &3297384318527614981
 GameObject:
   m_ObjectHideFlags: 0
@@ -4628,7 +4550,7 @@ GameObject:
   - component: {fileID: 5859321163049546806}
   - component: {fileID: 77304774053136684}
   - component: {fileID: 77304774053136673}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PortholeWindow_0_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4725,11 +4647,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: fb221b7d80b62e54db6883cdab6fb542, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 0db2837fee8d5f44b80ceb2f07fb994f, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &3315282728616577553
 GameObject:
   m_ObjectHideFlags: 0
@@ -4743,7 +4663,7 @@ GameObject:
   - component: {fileID: 1585226741584336642}
   - component: {fileID: 77304774741543373}
   - component: {fileID: 77304774741543374}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PathSteppingStone_3_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4840,11 +4760,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: cec0095acff231e49824714eabeb3a51, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 71b9546e887ec63409a855a01be6a33d, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &3418347880689434059
 GameObject:
   m_ObjectHideFlags: 0
@@ -4858,7 +4776,7 @@ GameObject:
   - component: {fileID: 2250774825450962312}
   - component: {fileID: 77304774454435175}
   - component: {fileID: 77304774454435192}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineapplePanel_16_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4955,11 +4873,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 98de738f48988c24cac61e3004458bee, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: a26c0b99337e62f4893af429a5de017e, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &3579596808787862035
 GameObject:
   m_ObjectHideFlags: 0
@@ -4973,7 +4889,7 @@ GameObject:
   - component: {fileID: 5670010178697485909}
   - component: {fileID: 77304773399062083}
   - component: {fileID: 77304773399062084}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-GarageDoor_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5070,11 +4986,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 3e3edba2052e5ae4fa3d4171bffdacd3, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 7a3f3df1b1334f24a9e91d02db750194, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &3652629356087024524
 GameObject:
   m_ObjectHideFlags: 0
@@ -5088,7 +5002,7 @@ GameObject:
   - component: {fileID: 7776335330487024051}
   - component: {fileID: 77304773961593084}
   - component: {fileID: 77304773961593073}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineapplePanelBottom_7_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5185,11 +5099,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 4e6aa7d54b6819941960d070c40beaa6, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 9dc1e81a3f2ef4a41935e180ee61cbf7, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &3736148357011450787
 GameObject:
   m_ObjectHideFlags: 0
@@ -5203,7 +5115,7 @@ GameObject:
   - component: {fileID: 1928710361810631805}
   - component: {fileID: 77304773786610190}
   - component: {fileID: 77304773786610177}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineappleLeaf_1_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5300,11 +5212,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 0280affcc5850e14ea3354ab5a43eb6e, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 6ac865decadbfd34c9a84ab0e06d8ecf, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &3783557163341381767
 GameObject:
   m_ObjectHideFlags: 0
@@ -5318,7 +5228,7 @@ GameObject:
   - component: {fileID: 7617565917269437635}
   - component: {fileID: 77304773907648356}
   - component: {fileID: 77304773907648377}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-ReefBlower_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5415,11 +5325,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: b6e2a3a64c3546e499499e918c0abef9, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 0fd3cabc2d35b0748979b10618eaadc5, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &3828317842816283689
 GameObject:
   m_ObjectHideFlags: 0
@@ -5433,7 +5341,7 @@ GameObject:
   - component: {fileID: 706288963733397906}
   - component: {fileID: 77304774772994694}
   - component: {fileID: 77304774772994715}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PathSteppingStone_14_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5530,11 +5438,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 50a7fa24a8f99924bb4dedd40326ec3c, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 15f549d173e5ec34482048a68f4c602b, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &3960208268415486116
 GameObject:
   m_ObjectHideFlags: 0
@@ -5548,7 +5454,7 @@ GameObject:
   - component: {fileID: 7981908278203548150}
   - component: {fileID: 77304774906367850}
   - component: {fileID: 77304774906367855}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineapplePanel_28_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5645,11 +5551,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 23c169d86b195704993f955566d64b5c, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: fca2954bab3ed7f4fa8866d736d46198, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &4166412760870327307
 GameObject:
   m_ObjectHideFlags: 0
@@ -5663,7 +5567,7 @@ GameObject:
   - component: {fileID: 5778743607275769526}
   - component: {fileID: 77304774813028857}
   - component: {fileID: 77304774813028858}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineapplePanelBottom_0_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5760,11 +5664,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: ad98655cad1348d449da1e9f8012e5cd, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: cd5131e69547e6645a8e71410368e9c9, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &4291478669303766940
 GameObject:
   m_ObjectHideFlags: 0
@@ -5778,7 +5680,7 @@ GameObject:
   - component: {fileID: 1851107420754650367}
   - component: {fileID: 77304773008414875}
   - component: {fileID: 77304773008414876}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PortholeFrame_0_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5875,11 +5777,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 955ffb92afc1f6249b16a1822618e4a8, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 7912c3efec384b44ba36e004e8feacb4, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &4398865002801098379
 GameObject:
   m_ObjectHideFlags: 0
@@ -5893,7 +5793,7 @@ GameObject:
   - component: {fileID: 5537700366167836306}
   - component: {fileID: 77304773100475014}
   - component: {fileID: 77304773100475033}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineappleLeaf_4_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5990,11 +5890,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: ca11b2b463763f84fabaee6c5aba8511, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: a73f400adba891840b636d3f4aa8c76e, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &4406728257357693360
 GameObject:
   m_ObjectHideFlags: 0
@@ -6008,7 +5906,7 @@ GameObject:
   - component: {fileID: 4903791291730297321}
   - component: {fileID: 77304773496296526}
   - component: {fileID: 77304773496296515}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineapplePanelBottom_1_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6105,11 +6003,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 8915302afc2f4b4488d9f0c41a22e4fb, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: ed33bd8621f821249b69848615aa055b, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &4472369748923214205
 GameObject:
   m_ObjectHideFlags: 0
@@ -6123,7 +6019,7 @@ GameObject:
   - component: {fileID: 6413202839792931927}
   - component: {fileID: 77304774167104306}
   - component: {fileID: 77304774167104311}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PathSteppingStone_15_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6220,11 +6116,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 43cf74a3f9deca247bb0cf2b5656b7b0, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 43f9f1c5d68674d48b5c4dc0fda0f578, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &4608755308390054403
 GameObject:
   m_ObjectHideFlags: 0
@@ -6238,7 +6132,7 @@ GameObject:
   - component: {fileID: 7483935630117155740}
   - component: {fileID: 77304774518494324}
   - component: {fileID: 77304774518494345}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineapplePanel_9_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6335,11 +6229,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 5200db298c3512945a92bb5698c66a01, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: d857a605bd953664db3a07b5f5a93edb, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &4670270758182260371
 GameObject:
   m_ObjectHideFlags: 0
@@ -6353,7 +6245,7 @@ GameObject:
   - component: {fileID: 5033109972674990383}
   - component: {fileID: 77304774563929708}
   - component: {fileID: 77304774563929697}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineapplePanel_39_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6450,11 +6342,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 0640851fdff1f1543b6c79e5aa13e9ea, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: e2dbc465bb704774b8734017f95d85b2, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &4771370727987392092
 GameObject:
   m_ObjectHideFlags: 0
@@ -6468,7 +6358,7 @@ GameObject:
   - component: {fileID: 1211200800995798864}
   - component: {fileID: 77304774801490084}
   - component: {fileID: 77304774801490105}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PortholeWindow_1_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6565,11 +6455,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: c13d366babfed184fb9fec40329c5160, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 110bfbcb46c700c4187e3ea439f823ba, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &4871071705673727783
 GameObject:
   m_ObjectHideFlags: 0
@@ -6583,7 +6471,7 @@ GameObject:
   - component: {fileID: 7521165161471464848}
   - component: {fileID: 77304774257760186}
   - component: {fileID: 77304774257760191}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineapplePanel_13_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6680,11 +6568,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 8701609e8a2ac74468e888c418fea7d6, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: f223e3cc6635dfe4da525cc53445295b, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &5079844521599928965
 GameObject:
   m_ObjectHideFlags: 0
@@ -6698,7 +6584,7 @@ GameObject:
   - component: {fileID: 7621682816407296627}
   - component: {fileID: 77304773402844670}
   - component: {fileID: 77304773402844659}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineapplePanel_25_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6795,11 +6681,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 242ec5276fa045a4d8775bb014a99d61, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 542570f45af15fe4b99195a2c524ea14, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &5292933561734117836
 GameObject:
   m_ObjectHideFlags: 0
@@ -6813,7 +6697,7 @@ GameObject:
   - component: {fileID: 1342780514671071445}
   - component: {fileID: 77304773335976602}
   - component: {fileID: 77304773335976607}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineapplePanel_24_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6910,11 +6794,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 10358a8acdd0e0e479a2db7f24e2bd4d, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: f619bf19f08589743acc3fa49e991a7f, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &5457439279312054931
 GameObject:
   m_ObjectHideFlags: 0
@@ -6928,7 +6810,7 @@ GameObject:
   - component: {fileID: 465321602595590035}
   - component: {fileID: 77304774851128677}
   - component: {fileID: 77304774851128678}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PathSteppingStone_0_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7025,11 +6907,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 23c522f4eb29d4a4caa82471eaddfb37, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 26d92e46d0abf9048b19c900bd758783, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &5570061827187359639
 GameObject:
   m_ObjectHideFlags: 0
@@ -7043,7 +6923,7 @@ GameObject:
   - component: {fileID: 5940259979415679070}
   - component: {fileID: 77304773614540558}
   - component: {fileID: 77304773614540545}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineappleLeaf_5_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7140,11 +7020,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: fcd6eee54be680546837819c43dfb44c, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: af28a4cb78cb0c3489260da46e542d17, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &5752139922989707239
 GameObject:
   m_ObjectHideFlags: 0
@@ -7158,7 +7036,7 @@ GameObject:
   - component: {fileID: 3816746849660969092}
   - component: {fileID: 77304773682536536}
   - component: {fileID: 77304773682536541}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-ImaginationBox_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7255,11 +7133,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: dc3c8c9cab3b90544abbed64556e5b61, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 7c60b9b60ce2800418a89d3e84548f06, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &5819585223923287895
 GameObject:
   m_ObjectHideFlags: 0
@@ -7273,7 +7149,7 @@ GameObject:
   - component: {fileID: 247692402400298973}
   - component: {fileID: 77304773833989866}
   - component: {fileID: 77304773833989871}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-FrontDoorHandle_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7370,11 +7246,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: a50188a3e6837c9408fb0d9d78d27bdc, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: abc8c9c5cc694074784d204a85269882, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &5851648900916388328
 GameObject:
   m_ObjectHideFlags: 0
@@ -7388,7 +7262,7 @@ GameObject:
   - component: {fileID: 639239187534224616}
   - component: {fileID: 77304773035088240}
   - component: {fileID: 77304773035088243}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineappleLeaf_6_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7485,11 +7359,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 6670056a2fc4bdb4f97adf9465e0a2c3, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 4d7ea7351cd9fdf4b9d22d65d588288e, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &5927891670707299437
 GameObject:
   m_ObjectHideFlags: 0
@@ -7503,7 +7375,7 @@ GameObject:
   - component: {fileID: 8627969378251288011}
   - component: {fileID: 77304773854775186}
   - component: {fileID: 77304773854775191}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-FrontDoorFrame_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7600,11 +7472,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 92711cae94309db418a7f1099ec832ba, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 34aee5dc97b9b4a4ca083314bfd612b0, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &5934185722572748389
 GameObject:
   m_ObjectHideFlags: 0
@@ -7618,7 +7488,7 @@ GameObject:
   - component: {fileID: 3043495147250122705}
   - component: {fileID: 77304772877786265}
   - component: {fileID: 77304772877786266}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineapplePanel_26_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7715,11 +7585,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 60f45985d4a967e47b73664e80dc6732, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: d1a538b4b53de6c46ae5f4b1647b286b, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &6035205611008977164
 GameObject:
   m_ObjectHideFlags: 0
@@ -7733,7 +7601,7 @@ GameObject:
   - component: {fileID: 5263930386396921062}
   - component: {fileID: 77304774253217116}
   - component: {fileID: 77304774253217105}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PathSteppingStone_10_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7830,11 +7698,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 5448212581be08a4483d3f8346fe90de, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 8f3f931936a7e264eb4527329cf93858, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &6294209673492831288
 GameObject:
   m_ObjectHideFlags: 0
@@ -7848,7 +7714,7 @@ GameObject:
   - component: {fileID: 2677070598267112671}
   - component: {fileID: 77304774107717282}
   - component: {fileID: 77304774107717287}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PortholeFrame_2_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7945,11 +7811,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 7f8e9acfd8318c64b93632efe345faae, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: d4ae2629383f5bb48b3052080da10a2c, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &6395778008433495713
 GameObject:
   m_ObjectHideFlags: 0
@@ -7963,7 +7827,7 @@ GameObject:
   - component: {fileID: 985855192000999938}
   - component: {fileID: 77304773330208596}
   - component: {fileID: 77304773330208617}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PathSteppingStone_12_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8060,11 +7924,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 21104602f17f0244d9c8bac2090ab831, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 82af9ba8d341bf74cb65a510e4470441, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &6454051678012713995
 GameObject:
   m_ObjectHideFlags: 0
@@ -8078,7 +7940,7 @@ GameObject:
   - component: {fileID: 3273872688011927105}
   - component: {fileID: 77304773363171578}
   - component: {fileID: 77304773363171583}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineapplePanel_0_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8175,11 +8037,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 4e4c841e2abe08442964a7e1ea559aa7, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 0fead2d09195c954c85d301bc39c9413, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &6562427206099769655
 GameObject:
   m_ObjectHideFlags: 0
@@ -8193,7 +8053,7 @@ GameObject:
   - component: {fileID: 6450204688699372422}
   - component: {fileID: 77304773213169735}
   - component: {fileID: 77304773213169752}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineapplePanel_19_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8290,11 +8150,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: d9193e9720251f74886b30aa8b8224c0, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 7c1c2436e9f7b454d9e106ce2f35420a, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &6639849693421934979
 GameObject:
   m_ObjectHideFlags: 0
@@ -8308,7 +8166,7 @@ GameObject:
   - component: {fileID: 8300660158961376266}
   - component: {fileID: 77304774785080911}
   - component: {fileID: 77304774785080908}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineappleLeaf_0_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8405,11 +8263,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 27c680411963e164a93ccd24824146c8, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 54cc2fb70ddc18c439afb92e962f179e, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &6801914193572254202
 GameObject:
   m_ObjectHideFlags: 0
@@ -8423,7 +8279,7 @@ GameObject:
   - component: {fileID: 4881340019537960618}
   - component: {fileID: 77304772974321581}
   - component: {fileID: 77304772974321582}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineapplePanel_11_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8520,11 +8376,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: f35c0de8a8e142946b4b4490a9be021f, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: b8dcc1d9892602448ad45a39d4dfdbe1, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &6812959799827732981
 GameObject:
   m_ObjectHideFlags: 0
@@ -8538,7 +8392,7 @@ GameObject:
   - component: {fileID: 425606670764911375}
   - component: {fileID: 77304773970617246}
   - component: {fileID: 77304773970617235}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineapplePanel_6_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8635,11 +8489,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 5ee73fced1b74ed448c73f5e8ed12a3a, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 870e4548e67e22641a5d30915f7b4278, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &6838624515605542574
 GameObject:
   m_ObjectHideFlags: 0
@@ -8653,7 +8505,7 @@ GameObject:
   - component: {fileID: 566175012125706456}
   - component: {fileID: 77304773084816772}
   - component: {fileID: 77304773084816793}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineapplePanel_14_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8750,11 +8602,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: c829c50382462364a827add7e98fb4ff, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 6dfe686582b50534f9deda48a3bc8414, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &6838871572295043988
 GameObject:
   m_ObjectHideFlags: 0
@@ -8768,7 +8618,7 @@ GameObject:
   - component: {fileID: 6148564143721740302}
   - component: {fileID: 77304773191410665}
   - component: {fileID: 77304773191410666}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineapplePanel_18_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8865,11 +8715,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 749755ffd9f7ac044926ca9d3c06e20c, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 7b3c9ff3c35598a41881e6a3d6056e02, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &6876416424613413810
 GameObject:
   m_ObjectHideFlags: 0
@@ -8883,7 +8731,7 @@ GameObject:
   - component: {fileID: 3478722155339573781}
   - component: {fileID: 77304773515064509}
   - component: {fileID: 77304773515064510}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineapplePanelTop_1_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8980,11 +8828,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 576632011ad1b3149882381adad9ac70, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 40dc9ed9ddef21946ba0c5e1604d0f44, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &7047098338221350955
 GameObject:
   m_ObjectHideFlags: 0
@@ -8998,7 +8844,7 @@ GameObject:
   - component: {fileID: 2336080109854264477}
   - component: {fileID: 77304774195421368}
   - component: {fileID: 77304774195421373}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-FrontDoor_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9095,11 +8941,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: a5f4d857c707cd546aab91afc3528fa2, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 76c6b7f5eb340c24f845b8184248133e, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &7066636996523223441
 GameObject:
   m_ObjectHideFlags: 0
@@ -9113,7 +8957,7 @@ GameObject:
   - component: {fileID: 7826882798984692693}
   - component: {fileID: 77304773759049888}
   - component: {fileID: 77304773759049893}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineapplePanelBottom_6_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9210,11 +9054,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 62a2920a8a8d9e046b377528f84fde08, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 6071b64998083c0499e6e36dceaf49ca, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &7173469436961857833
 GameObject:
   m_ObjectHideFlags: 0
@@ -9228,7 +9070,7 @@ GameObject:
   - component: {fileID: 524604153581693566}
   - component: {fileID: 77304774097782573}
   - component: {fileID: 77304774097782574}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PathSteppingStone_1_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9325,11 +9167,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 846cd7b4108e2c740b5a803ec0d72775, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: aba912d24e7495c4d869463a76a78de6, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &7434965233093364800
 GameObject:
   m_ObjectHideFlags: 0
@@ -9343,7 +9183,7 @@ GameObject:
   - component: {fileID: 5353100025993550782}
   - component: {fileID: 77304773323669314}
   - component: {fileID: 77304773323669319}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineappleCrown_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9440,11 +9280,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 9020a5bad4d69f648859c4cabe866bb9, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 134e2fcd36dd02d489ed69ed1ff0c024, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &7507861747644503243
 GameObject:
   m_ObjectHideFlags: 0
@@ -9458,7 +9296,7 @@ GameObject:
   - component: {fileID: 1098981461806537048}
   - component: {fileID: 77304772810344784}
   - component: {fileID: 77304772810344789}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineapplePanel_33_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9555,11 +9393,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 9a8d377421d0213439157772b81ec2f8, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: dd520f27cd052834cb7a68b6ed7049be, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &7583183429837841410
 GameObject:
   m_ObjectHideFlags: 0
@@ -9573,7 +9409,7 @@ GameObject:
   - component: {fileID: 5968904632913575126}
   - component: {fileID: 77304773780693423}
   - component: {fileID: 77304773780693408}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineapplePanelTop_7_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9670,11 +9506,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 56e8ae42853685842a8bd4a052fcad60, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 84ccca1cae1df6149b3987fa095188a3, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &7627385699808313475
 GameObject:
   m_ObjectHideFlags: 0
@@ -9688,7 +9522,7 @@ GameObject:
   - component: {fileID: 6785414237558347676}
   - component: {fileID: 77304774777002749}
   - component: {fileID: 77304774777002750}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-ReefBlowerNozzle_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9785,11 +9619,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 315a33f43086a3e42af64c09f7b8b9d8, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: d65af32c7df0d5841b5d8e8d2cdb1244, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &7857108736961425686
 GameObject:
   m_ObjectHideFlags: 0
@@ -9803,7 +9635,7 @@ GameObject:
   - component: {fileID: 416181316488517671}
   - component: {fileID: 77304774714183111}
   - component: {fileID: 77304774714183128}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineapplePanel_1_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9900,11 +9732,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 47b68a5f56ed36e4796d8b4a7488c077, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 26590941b77a29641ab6404407f5dbb9, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &8000136739101481497
 GameObject:
   m_ObjectHideFlags: 0
@@ -9918,7 +9748,7 @@ GameObject:
   - component: {fileID: 3302409940040765721}
   - component: {fileID: 77304773927384697}
   - component: {fileID: 77304773927384698}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineapplePanel_32_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10015,11 +9845,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: fd938fff79464674890f2558d1aabbd7, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: fd56ab1bd5a7b554d8704834743f7bcb, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &8452260084739161621
 GameObject:
   m_ObjectHideFlags: 0
@@ -10033,7 +9861,7 @@ GameObject:
   - component: {fileID: 2291572066326963908}
   - component: {fileID: 77304773492362943}
   - component: {fileID: 77304773492362928}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineapplePanel_5_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10130,11 +9958,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: b779aa578e81c0045afea713e8421d95, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 73be50ed60e43a74682ccfda23d8cbe2, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &8480133928265594809
 GameObject:
   m_ObjectHideFlags: 0
@@ -10148,7 +9974,7 @@ GameObject:
   - component: {fileID: 385677027549275670}
   - component: {fileID: 77304773582566468}
   - component: {fileID: 77304773582566489}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineapplePanel_12_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10245,11 +10071,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: a81fc9b89d9bcf74587f256b65f3ed9f, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 66384e715fcbd9946af447aff4f51818, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &8493306771573729337
 GameObject:
   m_ObjectHideFlags: 0
@@ -10263,7 +10087,7 @@ GameObject:
   - component: {fileID: 3315173571215135687}
   - component: {fileID: 77304774827004016}
   - component: {fileID: 77304774827004021}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineapplePanel_21_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10360,11 +10184,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 7f0d0577909b6a948983f18568314708, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 9b46d8d8d3f96374bbf3ccbbbec6c382, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &8525795038170334935
 GameObject:
   m_ObjectHideFlags: 0
@@ -10378,7 +10200,7 @@ GameObject:
   - component: {fileID: 1245872896142459625}
   - component: {fileID: 77304773048714971}
   - component: {fileID: 77304773048714972}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineapplePanel_29_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10475,11 +10297,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 6987d6be3fb24904ab9d7088cef77f02, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: ab8e96647550d694c9b5dd5760e65560, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &8648990249744097840
 GameObject:
   m_ObjectHideFlags: 0
@@ -10493,7 +10313,7 @@ GameObject:
   - component: {fileID: 1998155344310056038}
   - component: {fileID: 77304774088770461}
   - component: {fileID: 77304774088770462}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineapplePanel_34_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10590,11 +10410,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 3bf91f4451d9b554ab711e04c37e07e3, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: a35cd9700d007c045939b2fba1d0d4fe, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &8695250875101441344
 GameObject:
   m_ObjectHideFlags: 0
@@ -10608,7 +10426,7 @@ GameObject:
   - component: {fileID: 5413435294174124922}
   - component: {fileID: 77304773289725759}
   - component: {fileID: 77304773289725744}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PathSteppingStone_9_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10705,11 +10523,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 15904c8c3a43ad949bacda3aa8ef1e41, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 255d4bea185d683409fc630505da150c, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &8695481819264223544
 GameObject:
   m_ObjectHideFlags: 0
@@ -10723,7 +10539,7 @@ GameObject:
   - component: {fileID: 583123712320145628}
   - component: {fileID: 77304773625302097}
   - component: {fileID: 77304773625302098}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PortholeWindow_2_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10820,11 +10636,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 282798a3e366a9c4b90bb3c2b399d657, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 46954dad64d74c34f8f6b9df8a586a19, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &8697188293332108219
 GameObject:
   m_ObjectHideFlags: 0
@@ -10838,7 +10652,7 @@ GameObject:
   - component: {fileID: 2621530398546118096}
   - component: {fileID: 77304774044026299}
   - component: {fileID: 77304774044026300}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PathSteppingStone_13_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10935,11 +10749,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 5d3280a7156768044ad89f8006d03938, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 56e3e9e2ba1edc94aaee65797364c37e, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &8777187729127608053
 GameObject:
   m_ObjectHideFlags: 0
@@ -10953,7 +10765,7 @@ GameObject:
   - component: {fileID: 5157997492569404428}
   - component: {fileID: 77304774828378802}
   - component: {fileID: 77304774828378807}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineapplePanelTop_3_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11050,11 +10862,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 4b938da489490b34b804ad61914dd5ca, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 85bacbd77e795ab4ca8eb42da8c5747b, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &8815724675221973121
 GameObject:
   m_ObjectHideFlags: 0
@@ -11068,7 +10878,7 @@ GameObject:
   - component: {fileID: 2391570104124684171}
   - component: {fileID: 77304773096736795}
   - component: {fileID: 77304773096736796}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineapplePanelTop_5_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11165,11 +10975,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 225e141ca811c7b4fa48f165829f83be, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 526bb7251cd2df9448720def477fc6e2, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &9052736582863100957
 GameObject:
   m_ObjectHideFlags: 0
@@ -11183,7 +10991,7 @@ GameObject:
   - component: {fileID: 7982403699628970962}
   - component: {fileID: 77304773679709542}
   - component: {fileID: 77304773679709563}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PathSteppingStone_16_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11280,11 +11088,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 15d189cdbaadd5b45a275bdbdebbaf60, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 5a1c5b78eddd052488a59417c97cf76d, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &9091798004134880089
 GameObject:
   m_ObjectHideFlags: 0
@@ -11298,7 +11104,7 @@ GameObject:
   - component: {fileID: 4644207128019188143}
   - component: {fileID: 77304774772260468}
   - component: {fileID: 77304774772260489}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineapplePanel_35_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11395,11 +11201,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 6b8d3b20b531f7248917ff8b8b2f1087, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 690ac800c37061540bd20997dbeb468c, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &9101885134905353861
 GameObject:
   m_ObjectHideFlags: 0
@@ -11413,7 +11217,7 @@ GameObject:
   - component: {fileID: 8609757532297412888}
   - component: {fileID: 77304773137360119}
   - component: {fileID: 77304773137360136}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineapplePanel_8_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11510,11 +11314,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: e3218c20297d32f4cb1c092a38d3f57d, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 3f9d3d964a47c0c45b3532cecb891529, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &9204539981771381591
 GameObject:
   m_ObjectHideFlags: 0
@@ -11528,7 +11330,7 @@ GameObject:
   - component: {fileID: 5840031922881190904}
   - component: {fileID: 77304773405409332}
   - component: {fileID: 77304773405409353}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-PineapplePanel_36_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11625,8 +11427,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 4ff49562d4668e949a30682fd7ec3223, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 2ebcd397ebf8de649a102cdf44f5cca0, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1

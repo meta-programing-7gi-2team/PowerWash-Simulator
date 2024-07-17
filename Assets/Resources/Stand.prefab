@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6527139917901037240}
   - component: {fileID: 2108180618528035365}
   - component: {fileID: 2108180618528035386}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-BubbleStandPlaque_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -110,11 +110,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: f5bd6256b543cfc47b649a96bd50ec2b, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 66766cf2bb5d6d641a61cf0b0d476bf0, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &2108180617290238484
 GameObject:
   m_ObjectHideFlags: 0
@@ -124,7 +122,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2108180617290238485}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Stand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -163,7 +161,7 @@ GameObject:
   - component: {fileID: 7620812739208664619}
   - component: {fileID: 2108180618999959392}
   - component: {fileID: 2108180618999959397}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-BubbleStand_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -260,11 +258,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: d27497934b8b79349a4723b18939ebb2, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 48d25ed39cfad94489f5083310cfe5cc, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &6309839621671828908
 GameObject:
   m_ObjectHideFlags: 0
@@ -278,7 +274,7 @@ GameObject:
   - component: {fileID: 682330375782392914}
   - component: {fileID: 2108180618036957768}
   - component: {fileID: 2108180618036957773}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-BubbleStandSign_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -375,11 +371,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 918e6a307ab5d414483d0d145b087ee1, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 9b0df1693f514964f83d8ab1800b2fae, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &7501482501529657753
 GameObject:
   m_ObjectHideFlags: 0
@@ -393,7 +387,7 @@ GameObject:
   - component: {fileID: 5735923275835588560}
   - component: {fileID: 2108180617026761726}
   - component: {fileID: 2108180617026761715}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-BubbleStandContainer_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -490,11 +484,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: 040d0752856aabf499507b2cd88e2dbb, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 56960448a4c7b4843bfd0406310a4b6a, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
 --- !u!1 &8338599275618595844
 GameObject:
   m_ObjectHideFlags: 0
@@ -508,7 +500,7 @@ GameObject:
   - component: {fileID: 4704538884155655486}
   - component: {fileID: 2108180617029716810}
   - component: {fileID: 2108180617029716815}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SB-BubbleStand_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -605,8 +597,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resolution: 128
-  renderTexture: {fileID: 8400000, guid: d27497934b8b79349a4723b18939ebb2, type: 2}
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 48d25ed39cfad94489f5083310cfe5cc, type: 3}
-  brushSize: 0.2
-  waterBrushIntensity: 0.1
-  eraserBrushIntensity: 0.1
