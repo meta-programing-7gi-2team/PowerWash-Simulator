@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2730036145680846728}
   - component: {fileID: 2395468057948275214}
   - component: {fileID: 5367971452078735196}
+  - component: {fileID: 2293176174006137796}
   m_Layer: 0
   m_Name: KK-SideWallPlank_1_0
   m_TagString: Untagged
@@ -96,6 +97,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 7199539522889471300, guid: c48e1ff7982e90949acac49cd53fb324, type: 3}
+--- !u!114 &2293176174006137796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 24597160149866962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 1bdc728e9e7a1bf49a61ff0901b4b03f, type: 3}
 --- !u!1 &110912151261564587
 GameObject:
   m_ObjectHideFlags: 0
@@ -108,6 +125,7 @@ GameObject:
   - component: {fileID: 4359718841485993547}
   - component: {fileID: 4470063971257543834}
   - component: {fileID: 8271649027434547818}
+  - component: {fileID: 5647665525353039781}
   m_Layer: 0
   m_Name: KK-DumpsterOuter_0
   m_TagString: Untagged
@@ -192,6 +210,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 2908438261812240093, guid: 67060028a73d9ff4f91d352b33951d69, type: 3}
+--- !u!114 &5647665525353039781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110912151261564587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 1c5fc1362c7f60d42a8e1df79633c00e, type: 3}
 --- !u!1 &112185853030803034
 GameObject:
   m_ObjectHideFlags: 0
@@ -204,6 +238,7 @@ GameObject:
   - component: {fileID: 4063543342187383854}
   - component: {fileID: 7829772424258703832}
   - component: {fileID: 3133584411706523117}
+  - component: {fileID: 5095248228462061436}
   m_Layer: 0
   m_Name: KK-Nail_4_0
   m_TagString: Untagged
@@ -288,6 +323,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -138087086628697216, guid: 0e47328b144dd17469abf488ae3d53da, type: 3}
+--- !u!114 &5095248228462061436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112185853030803034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 6c918d5f4cc9a1646b7b42f2c01f2b46, type: 3}
 --- !u!1 &230119515925078218
 GameObject:
   m_ObjectHideFlags: 0
@@ -300,6 +351,7 @@ GameObject:
   - component: {fileID: 3189104040487504123}
   - component: {fileID: 89784956117874875}
   - component: {fileID: 8468104633696690529}
+  - component: {fileID: 5997408159188445935}
   m_Layer: 0
   m_Name: KK-RoofPlank_2_0
   m_TagString: Untagged
@@ -384,6 +436,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -782465327274999646, guid: bccb607e9ed6bf54fa2e9b7309173465, type: 3}
+--- !u!114 &5997408159188445935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230119515925078218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 505fe29060b5524448e6e6400c4453e2, type: 3}
 --- !u!1 &237177683384685769
 GameObject:
   m_ObjectHideFlags: 0
@@ -396,6 +464,7 @@ GameObject:
   - component: {fileID: 8852474974180671317}
   - component: {fileID: 8482647800585870177}
   - component: {fileID: 6525428873564471332}
+  - component: {fileID: 5623942569296020421}
   m_Layer: 0
   m_Name: KK-Window_3_0
   m_TagString: Untagged
@@ -480,6 +549,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 848820849742674815, guid: c2c6d02ab1b72364bb5f523ebc9a7ee8, type: 3}
+--- !u!114 &5623942569296020421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 237177683384685769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 02f0f4322a1507c46849a8c954f1f6bf, type: 3}
 --- !u!1 &290091756186508971
 GameObject:
   m_ObjectHideFlags: 0
@@ -492,6 +577,7 @@ GameObject:
   - component: {fileID: 1214691314481978129}
   - component: {fileID: 4171521019714873241}
   - component: {fileID: 1300998488455724332}
+  - component: {fileID: 7588142807343079477}
   m_Layer: 0
   m_Name: KK-MaritimeFlag_2_0
   m_TagString: Untagged
@@ -576,6 +662,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -1262214698442274791, guid: 8af2d56d118f75143bbda876853d62e2, type: 3}
+--- !u!114 &7588142807343079477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290091756186508971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 633a07e5b22208840be95f45b1ed1ed2, type: 3}
 --- !u!1 &468604757065823978
 GameObject:
   m_ObjectHideFlags: 0
@@ -588,6 +690,7 @@ GameObject:
   - component: {fileID: 2467865440878628529}
   - component: {fileID: 7279489150454311014}
   - component: {fileID: 1423731906578742679}
+  - component: {fileID: 1859090274775952570}
   m_Layer: 0
   m_Name: KK-SignLetter_6_0
   m_TagString: Untagged
@@ -672,6 +775,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -7101278199970741627, guid: ae858830739ebc349b81e9e788590b38, type: 3}
+--- !u!114 &1859090274775952570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468604757065823978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 12787d1f3c56d514a974e01ede9c9633, type: 3}
 --- !u!1 &715229454510243576
 GameObject:
   m_ObjectHideFlags: 0
@@ -684,6 +803,7 @@ GameObject:
   - component: {fileID: 1042528411243513664}
   - component: {fileID: 7680077506968484623}
   - component: {fileID: 3969576923421655965}
+  - component: {fileID: 575148595303993618}
   m_Layer: 0
   m_Name: KK-SignLetter_1_0
   m_TagString: Untagged
@@ -768,6 +888,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 7714215702564491973, guid: af846d8375d7c8944a1c1d97a64e48fd, type: 3}
+--- !u!114 &575148595303993618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 715229454510243576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 8f506c582c4ac0d4688435328794d70e, type: 3}
 --- !u!1 &731495332372899184
 GameObject:
   m_ObjectHideFlags: 0
@@ -780,6 +916,7 @@ GameObject:
   - component: {fileID: 2046152328756239524}
   - component: {fileID: 1037206658442058250}
   - component: {fileID: 3459731561796109830}
+  - component: {fileID: 2354852680922157223}
   m_Layer: 0
   m_Name: KK-SignLetter_7_0
   m_TagString: Untagged
@@ -864,6 +1001,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -7231429413837977823, guid: 9f84746536c55b841994c423e1dd3db3, type: 3}
+--- !u!114 &2354852680922157223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731495332372899184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: d50445926e6097c46afd6a4d0ab186b3, type: 3}
 --- !u!1 &809323185997088097
 GameObject:
   m_ObjectHideFlags: 0
@@ -876,6 +1029,7 @@ GameObject:
   - component: {fileID: 6615286604950595382}
   - component: {fileID: 6815861743849133243}
   - component: {fileID: 4927311571022001715}
+  - component: {fileID: 3959696172808281074}
   m_Layer: 0
   m_Name: KK-RoofPlank_0_0
   m_TagString: Untagged
@@ -960,6 +1114,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4466079819576263235, guid: f3ca91f85bbb732499d989dc1be17d0f, type: 3}
+--- !u!114 &3959696172808281074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 809323185997088097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: a5388af5e6a0ead48af2fa6ea47f2c4e, type: 3}
 --- !u!1 &1013170718709978324
 GameObject:
   m_ObjectHideFlags: 0
@@ -972,6 +1142,7 @@ GameObject:
   - component: {fileID: 3754632608980635697}
   - component: {fileID: 1016285310666387391}
   - component: {fileID: 8107752535127643019}
+  - component: {fileID: 1556016625398149087}
   m_Layer: 0
   m_Name: KK-Door_1_1
   m_TagString: Untagged
@@ -1056,6 +1227,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 8451027372090957866, guid: 1a32bec466e32414e9ea9489cc87e2f2, type: 3}
+--- !u!114 &1556016625398149087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1013170718709978324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 167f5bc78e69e294cbd6a23f2fc1a2a5, type: 3}
 --- !u!1 &1056545404083935039
 GameObject:
   m_ObjectHideFlags: 0
@@ -1068,6 +1255,7 @@ GameObject:
   - component: {fileID: 8630624033832719568}
   - component: {fileID: 2709382179428773437}
   - component: {fileID: 7222619204174186937}
+  - component: {fileID: 3996561120721237788}
   m_Layer: 0
   m_Name: KK-RearWall_0
   m_TagString: Untagged
@@ -1152,6 +1340,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 7893587999992255675, guid: 0221dda9f8a0d4646a87521c52d43584, type: 3}
+--- !u!114 &3996561120721237788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1056545404083935039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 40552f3eeb79f744a87f0f01b235da6d, type: 3}
 --- !u!1 &1231400696203462245
 GameObject:
   m_ObjectHideFlags: 0
@@ -1164,6 +1368,7 @@ GameObject:
   - component: {fileID: 7495944476885619563}
   - component: {fileID: 8507765804052243759}
   - component: {fileID: 8240093756964231454}
+  - component: {fileID: 8799635786790021150}
   m_Layer: 0
   m_Name: KK-RoofPlank_4_0
   m_TagString: Untagged
@@ -1248,6 +1453,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -6970183135101945499, guid: e574240b7af4f2c4aafe53aecf1d7478, type: 3}
+--- !u!114 &8799635786790021150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1231400696203462245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: d2bdee03610416248bb861255944bfa9, type: 3}
 --- !u!1 &1310834013434886206
 GameObject:
   m_ObjectHideFlags: 0
@@ -1260,6 +1481,7 @@ GameObject:
   - component: {fileID: 3231884757208488408}
   - component: {fileID: 2352640629995977258}
   - component: {fileID: 6899363329622926824}
+  - component: {fileID: 1052062561333898741}
   m_Layer: 0
   m_Name: KK-SignLetter_0_0
   m_TagString: Untagged
@@ -1344,6 +1566,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 9153237404947094064, guid: 228ef640fa13ff54da1329b13d11b3ba, type: 3}
+--- !u!114 &1052062561333898741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1310834013434886206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: f1a839fbe4141a043b4caded622c5080, type: 3}
 --- !u!1 &1435221226790511085
 GameObject:
   m_ObjectHideFlags: 0
@@ -1356,6 +1594,7 @@ GameObject:
   - component: {fileID: 232417886533424926}
   - component: {fileID: 5792742314996635660}
   - component: {fileID: 4777768608663773411}
+  - component: {fileID: 5826395667888072192}
   m_Layer: 0
   m_Name: KK-RearDoor_0
   m_TagString: Untagged
@@ -1440,6 +1679,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4326515818964039050, guid: c3f87d3e405c97a46a405daae024891d, type: 3}
+--- !u!114 &5826395667888072192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1435221226790511085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: f2992f3ccb9ed2040982f5af75a30bda, type: 3}
 --- !u!1 &1528765854006670914
 GameObject:
   m_ObjectHideFlags: 0
@@ -1452,6 +1707,7 @@ GameObject:
   - component: {fileID: 7210936027398857527}
   - component: {fileID: 1656238222384967376}
   - component: {fileID: 5615818036295833537}
+  - component: {fileID: 6131538461627948848}
   m_Layer: 0
   m_Name: KK-Nail_13_0
   m_TagString: Untagged
@@ -1536,6 +1792,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2267494905711436230, guid: 35cecd6c1f98da3458d294d1ae9735d5, type: 3}
+--- !u!114 &6131538461627948848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1528765854006670914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 6c91212b38926f944975c983f78bff65, type: 3}
 --- !u!1 &1541225882785425190
 GameObject:
   m_ObjectHideFlags: 0
@@ -1548,6 +1820,7 @@ GameObject:
   - component: {fileID: 3950557650270576626}
   - component: {fileID: 8853466692032106074}
   - component: {fileID: 8300968766758411920}
+  - component: {fileID: 6635478784747294271}
   m_Layer: 0
   m_Name: KK-Window_0_0
   m_TagString: Untagged
@@ -1632,6 +1905,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -8842903908260132640, guid: 9a2dc5a7a5168084481cb65a37dd3cc7, type: 3}
+--- !u!114 &6635478784747294271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1541225882785425190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: e284fc73156478147a02369e7e89f376, type: 3}
 --- !u!1 &1701710353185218819
 GameObject:
   m_ObjectHideFlags: 0
@@ -1644,6 +1933,7 @@ GameObject:
   - component: {fileID: 4704639671244312546}
   - component: {fileID: 5663335378429880839}
   - component: {fileID: 1171800813593550215}
+  - component: {fileID: 4875169585171725552}
   m_Layer: 0
   m_Name: KK-Door_0_1
   m_TagString: Untagged
@@ -1728,6 +2018,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -8893294530545418187, guid: 8fe91968db7ed1442811663dd664e473, type: 3}
+--- !u!114 &4875169585171725552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1701710353185218819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 0e55ca0e55741ed4aa3dfc5cf9cb405a, type: 3}
 --- !u!1 &1762552566133508986
 GameObject:
   m_ObjectHideFlags: 0
@@ -1740,6 +2046,7 @@ GameObject:
   - component: {fileID: 7454609506071227274}
   - component: {fileID: 7849633571550998757}
   - component: {fileID: 5408804374041000921}
+  - component: {fileID: 5107500499264991214}
   m_Layer: 0
   m_Name: KK-SignLetter_11_0
   m_TagString: Untagged
@@ -1824,6 +2131,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -1390293753321816533, guid: b51e637c1ea8630499ab077f739b6489, type: 3}
+--- !u!114 &5107500499264991214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1762552566133508986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 6484bef4fbea71840867de78cd19f2bc, type: 3}
 --- !u!1 &1781468284167609349
 GameObject:
   m_ObjectHideFlags: 0
@@ -1836,6 +2159,7 @@ GameObject:
   - component: {fileID: 4742008600682945492}
   - component: {fileID: 18304496700922837}
   - component: {fileID: 8675044621420998440}
+  - component: {fileID: 6336705685776763280}
   m_Layer: 0
   m_Name: KK-DumpsterLidRim_0
   m_TagString: Untagged
@@ -1920,6 +2244,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -7029750383169924916, guid: 0007d062068cbd24ab7a11575a71831d, type: 3}
+--- !u!114 &6336705685776763280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781468284167609349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 0476ac781676c954989ade7562334546, type: 3}
 --- !u!1 &1839353956859246637
 GameObject:
   m_ObjectHideFlags: 0
@@ -1932,6 +2272,7 @@ GameObject:
   - component: {fileID: 8880615722439272041}
   - component: {fileID: 8999175193666936822}
   - component: {fileID: 1605582708107057001}
+  - component: {fileID: 8341492490826740955}
   m_Layer: 0
   m_Name: KK-EntranceSignPost_0
   m_TagString: Untagged
@@ -2016,6 +2357,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 2813860612003495752, guid: 645ec892766551d41aaa8b0691018e6c, type: 3}
+--- !u!114 &8341492490826740955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1839353956859246637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: d4a26ae8745664049b4092b9d6d36e97, type: 3}
 --- !u!1 &1869965170802471375
 GameObject:
   m_ObjectHideFlags: 0
@@ -2124,6 +2481,7 @@ GameObject:
   - component: {fileID: 5152110696508178629}
   - component: {fileID: 1732893586611893410}
   - component: {fileID: 2326805055510166335}
+  - component: {fileID: 1030111430565354864}
   m_Layer: 0
   m_Name: KK-Nail_1_0
   m_TagString: Untagged
@@ -2208,6 +2566,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 2757244535544087748, guid: 3fd683cbbbc881a45a9dbaf40cefa7fa, type: 3}
+--- !u!114 &1030111430565354864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1932341375236201884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: b7ff721b05555f448872a6fb5ef3c061, type: 3}
 --- !u!1 &1952267839088401634
 GameObject:
   m_ObjectHideFlags: 0
@@ -2220,6 +2594,7 @@ GameObject:
   - component: {fileID: 789533428729913815}
   - component: {fileID: 6450622562405667419}
   - component: {fileID: 3512392854599655856}
+  - component: {fileID: 1374566099286257852}
   m_Layer: 0
   m_Name: KK-RoofPlank_10_0
   m_TagString: Untagged
@@ -2304,6 +2679,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 8364560942995916512, guid: cbd9029f44316ec4aae95d98c06adce2, type: 3}
+--- !u!114 &1374566099286257852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1952267839088401634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 4763bb0a6c623694388ae0e99478d933, type: 3}
 --- !u!1 &1980374445154647650
 GameObject:
   m_ObjectHideFlags: 0
@@ -2316,6 +2707,7 @@ GameObject:
   - component: {fileID: 4384158831641344772}
   - component: {fileID: 1747178107006163482}
   - component: {fileID: 4832258340806831274}
+  - component: {fileID: 7076912222980314034}
   m_Layer: 0
   m_Name: KK-MaritimeFlag_0_0
   m_TagString: Untagged
@@ -2400,6 +2792,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -6872750571718819197, guid: d110040fcfe0027468994dd1a9b13923, type: 3}
+--- !u!114 &7076912222980314034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1980374445154647650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 793b462ee0710be4198854df1a36aa39, type: 3}
 --- !u!1 &2044837152658333179
 GameObject:
   m_ObjectHideFlags: 0
@@ -2412,6 +2820,7 @@ GameObject:
   - component: {fileID: 1975735270974763410}
   - component: {fileID: 1193204563521757973}
   - component: {fileID: 3211099393339949162}
+  - component: {fileID: 7225314994794976895}
   m_Layer: 0
   m_Name: KK-DumpsterLidFace_0_0
   m_TagString: Untagged
@@ -2496,6 +2905,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 8191123324136946643, guid: 50df4694351aaef459c5f399a89cea7f, type: 3}
+--- !u!114 &7225314994794976895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2044837152658333179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 128176227a9f87e499138101156a7989, type: 3}
 --- !u!1 &2135753934716711413
 GameObject:
   m_ObjectHideFlags: 0
@@ -2508,6 +2933,7 @@ GameObject:
   - component: {fileID: 3635947217114891781}
   - component: {fileID: 2191996123209767317}
   - component: {fileID: 4146295780338794615}
+  - component: {fileID: 7464720719968370226}
   m_Layer: 0
   m_Name: KK-SignLetter_2_0
   m_TagString: Untagged
@@ -2592,6 +3018,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -1402823990609806366, guid: 61d58b79b0d2a494d8d2dfb36ed215ce, type: 3}
+--- !u!114 &7464720719968370226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2135753934716711413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: ee2dabebfa129594f9d090fd8812ac6e, type: 3}
 --- !u!1 &2170775679119114906
 GameObject:
   m_ObjectHideFlags: 0
@@ -2700,6 +3142,7 @@ GameObject:
   - component: {fileID: 8222632519992372881}
   - component: {fileID: 196583599377289214}
   - component: {fileID: 9218667702522788012}
+  - component: {fileID: 6644266463225388424}
   m_Layer: 0
   m_Name: KK-RoofPlank_7_0
   m_TagString: Untagged
@@ -2784,6 +3227,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -8376012609811668804, guid: e85fe3608204a6540b61ce98ea66cb7a, type: 3}
+--- !u!114 &6644266463225388424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2270229830161143786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 2dfcc1eaae86a5b4195678d36adbdf5e, type: 3}
 --- !u!1 &2501124454134333899
 GameObject:
   m_ObjectHideFlags: 0
@@ -2796,6 +3255,7 @@ GameObject:
   - component: {fileID: 8420349825655010326}
   - component: {fileID: 7516663371297067139}
   - component: {fileID: 4728633554905357154}
+  - component: {fileID: 7379224443155425432}
   m_Layer: 0
   m_Name: KK-SignLetter_10_0
   m_TagString: Untagged
@@ -2880,6 +3340,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -1573791576129191474, guid: 870ac81aa2987d04fac906c2c014d821, type: 3}
+--- !u!114 &7379224443155425432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2501124454134333899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 6929bd0df092c7b499a14d4a0300001c, type: 3}
 --- !u!1 &2530905735736819770
 GameObject:
   m_ObjectHideFlags: 0
@@ -2892,6 +3368,7 @@ GameObject:
   - component: {fileID: 6399480851395086070}
   - component: {fileID: 7453378723460623942}
   - component: {fileID: 5333601075773746750}
+  - component: {fileID: 4326535742355733031}
   m_Layer: 0
   m_Name: KK-Window_2_0
   m_TagString: Untagged
@@ -2976,6 +3453,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 2046523920848929173, guid: d6424f5fbd972364e8870c857c4c4cd2, type: 3}
+--- !u!114 &4326535742355733031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2530905735736819770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 2de6314852e7e414d949c1f68df3f171, type: 3}
 --- !u!1 &2682928977965423168
 GameObject:
   m_ObjectHideFlags: 0
@@ -2988,6 +3481,7 @@ GameObject:
   - component: {fileID: 6189601625045119390}
   - component: {fileID: 3728579684750321693}
   - component: {fileID: 7734806918274059771}
+  - component: {fileID: 4567956755206956128}
   m_Layer: 0
   m_Name: KK-Nail_6_0
   m_TagString: Untagged
@@ -3072,6 +3566,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 8116955634558050904, guid: 613f489eeb41ce4438487a0f05637e59, type: 3}
+--- !u!114 &4567956755206956128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2682928977965423168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: d1e7d52b008c4694896fb4e5240bb374, type: 3}
 --- !u!1 &2715644322961916985
 GameObject:
   m_ObjectHideFlags: 0
@@ -3084,6 +3594,7 @@ GameObject:
   - component: {fileID: 6420420394749262081}
   - component: {fileID: 5087400561292665576}
   - component: {fileID: 2873067718043327986}
+  - component: {fileID: 7394544669055711810}
   m_Layer: 0
   m_Name: KK-DoorFrame_0
   m_TagString: Untagged
@@ -3168,6 +3679,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 3602176470930294223, guid: 1feef077a44d9a84c813fd6f19f5ea79, type: 3}
+--- !u!114 &7394544669055711810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2715644322961916985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 7ab74026ac1966a4689c3587e0de7eaf, type: 3}
 --- !u!1 &2738181634578446599
 GameObject:
   m_ObjectHideFlags: 0
@@ -3180,6 +3707,7 @@ GameObject:
   - component: {fileID: 4134226641717391889}
   - component: {fileID: 6228438468547134558}
   - component: {fileID: 2960737216599464807}
+  - component: {fileID: 1722057482659418692}
   m_Layer: 0
   m_Name: KK-DumpsterLidFace_1_0
   m_TagString: Untagged
@@ -3264,6 +3792,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 5891169136211700880, guid: d164e469e49c44f42aa08206124a84c5, type: 3}
+--- !u!114 &1722057482659418692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2738181634578446599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 4dd73fc0e985e094e9e15232c49460f8, type: 3}
 --- !u!1 &2809964818190629435
 GameObject:
   m_ObjectHideFlags: 0
@@ -3276,6 +3820,7 @@ GameObject:
   - component: {fileID: 526382822857046462}
   - component: {fileID: 6532113663021547797}
   - component: {fileID: 2116365441677412480}
+  - component: {fileID: 1085781859672227179}
   m_Layer: 0
   m_Name: KK-Arch_1_0
   m_TagString: Untagged
@@ -3360,6 +3905,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -7532732337206289674, guid: d1facb623f1cc1042a73bd5d3f5f5cab, type: 3}
+--- !u!114 &1085781859672227179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2809964818190629435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: ba98f83176aef52419f3cd3959496ea8, type: 3}
 --- !u!1 &2901987206583060915
 GameObject:
   m_ObjectHideFlags: 0
@@ -3372,6 +3933,7 @@ GameObject:
   - component: {fileID: 3985926407751105427}
   - component: {fileID: 6026142343897161194}
   - component: {fileID: 4355919055421389792}
+  - component: {fileID: 3895047813400560075}
   m_Layer: 0
   m_Name: KK-Nail_14_0
   m_TagString: Untagged
@@ -3456,6 +4018,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -4641425361589980851, guid: 60c27e2773547754e87dab5a2343a938, type: 3}
+--- !u!114 &3895047813400560075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2901987206583060915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 173e51d7b1526bf43bb6c6e3d19d8c71, type: 3}
 --- !u!1 &2911014508102847648
 GameObject:
   m_ObjectHideFlags: 0
@@ -3468,6 +4046,7 @@ GameObject:
   - component: {fileID: 2287801359655311137}
   - component: {fileID: 5642593364962976558}
   - component: {fileID: 6476944779775391817}
+  - component: {fileID: 556418769551181651}
   m_Layer: 0
   m_Name: KK-DoorHandle_0_0
   m_TagString: Untagged
@@ -3552,6 +4131,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -7654897399507142696, guid: baf56e0fa0e19a040947fdb28c971f25, type: 3}
+--- !u!114 &556418769551181651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2911014508102847648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 5aac550dd07bd6e488eec601b6ca00c9, type: 3}
 --- !u!1 &2958792763982627955
 GameObject:
   m_ObjectHideFlags: 0
@@ -3564,6 +4159,7 @@ GameObject:
   - component: {fileID: 2903290033519398053}
   - component: {fileID: 8140638149121571014}
   - component: {fileID: 8046640855678593498}
+  - component: {fileID: 3694010788289731073}
   m_Layer: 0
   m_Name: KK-Nail_12_0
   m_TagString: Untagged
@@ -3648,6 +4244,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -7268293396926148626, guid: 82d09ff071190d24baba39637dbbfa76, type: 3}
+--- !u!114 &3694010788289731073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2958792763982627955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 83fa1622c96d43e4ebeeefd4435fc400, type: 3}
 --- !u!1 &3089815350192780913
 GameObject:
   m_ObjectHideFlags: 0
@@ -3660,6 +4272,7 @@ GameObject:
   - component: {fileID: 5919272874862071864}
   - component: {fileID: 3082828070633433923}
   - component: {fileID: 7330062495385867500}
+  - component: {fileID: 3062612568612864337}
   m_Layer: 0
   m_Name: KK-RearDoorPorthole_0
   m_TagString: Untagged
@@ -3744,6 +4357,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -13195455646916969, guid: dd64d540cd3f6b245966353c51eb57df, type: 3}
+--- !u!114 &3062612568612864337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3089815350192780913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 0237c9145637b0d41aafd0491c85af71, type: 3}
 --- !u!1 &3113975867826799175
 GameObject:
   m_ObjectHideFlags: 0
@@ -3757,6 +4386,7 @@ GameObject:
   - component: {fileID: 6229202314977038809}
   - component: {fileID: 7879979006161804822}
   - component: {fileID: 9059502983070614074}
+  - component: {fileID: 2367242243793042016}
   m_Layer: 0
   m_Name: KK-Mayo_0
   m_TagString: Untagged
@@ -3855,6 +4485,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -6369524236297792516, guid: bea0fa7a0148f3547ac5307f3173fc19, type: 3}
+--- !u!114 &2367242243793042016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3113975867826799175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: bae5ac2f598811c4390fec72dcf59b81, type: 3}
 --- !u!1 &3192687509950955281
 GameObject:
   m_ObjectHideFlags: 0
@@ -3867,6 +4513,7 @@ GameObject:
   - component: {fileID: 4890011856274774510}
   - component: {fileID: 7769327169143975679}
   - component: {fileID: 5811379497461118687}
+  - component: {fileID: 61580907760910099}
   m_Layer: 0
   m_Name: KK-SignShell_1_0
   m_TagString: Untagged
@@ -3951,6 +4598,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -4735793919365818618, guid: 0ff91cb8d7d9d3f409c4ad16fd00f241, type: 3}
+--- !u!114 &61580907760910099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3192687509950955281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 00e2f74e40fe36e41bf74e38ba2d8dd9, type: 3}
 --- !u!1 &3320896630643762248
 GameObject:
   m_ObjectHideFlags: 0
@@ -3963,6 +4626,7 @@ GameObject:
   - component: {fileID: 5290586484188147405}
   - component: {fileID: 410006458680885442}
   - component: {fileID: 1289893762836845387}
+  - component: {fileID: 7751771025526588402}
   m_Layer: 0
   m_Name: KK-Nail_3_0
   m_TagString: Untagged
@@ -4047,6 +4711,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2848398135312345508, guid: ac97522fee0f7044d940e22cc7fe0716, type: 3}
+--- !u!114 &7751771025526588402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3320896630643762248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 33e29e5a8ed0f3749a4bfafe82172f51, type: 3}
 --- !u!1 &3352139426943303819
 GameObject:
   m_ObjectHideFlags: 0
@@ -4059,6 +4739,7 @@ GameObject:
   - component: {fileID: 6330994992863915433}
   - component: {fileID: 817500541274587869}
   - component: {fileID: 4165821227146218601}
+  - component: {fileID: 3195259919990422679}
   m_Layer: 0
   m_Name: KK-RoofPlank_11_0
   m_TagString: Untagged
@@ -4143,6 +4824,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6309946306098983161, guid: 77235780ff519314db4a7a70d5401e3d, type: 3}
+--- !u!114 &3195259919990422679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3352139426943303819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 8eb2a6f4e067b954a90dee1382184165, type: 3}
 --- !u!1 &3461243076959568329
 GameObject:
   m_ObjectHideFlags: 0
@@ -4251,6 +4948,7 @@ GameObject:
   - component: {fileID: 721733385107692477}
   - component: {fileID: 602961325576175534}
   - component: {fileID: 704494383923473385}
+  - component: {fileID: 6233761625881862007}
   m_Layer: 0
   m_Name: KK-DumpsterInner_0
   m_TagString: Untagged
@@ -4335,6 +5033,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4896296221279577565, guid: c22bd986c3855294e931dd0292796f37, type: 3}
+--- !u!114 &6233761625881862007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3624516330697769877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 1066a94b22247fc4ebce59cb92a12edb, type: 3}
 --- !u!1 &3676604559627215576
 GameObject:
   m_ObjectHideFlags: 0
@@ -4347,6 +5061,7 @@ GameObject:
   - component: {fileID: 7607582696438347444}
   - component: {fileID: 3789628803624435908}
   - component: {fileID: 6729270075599973201}
+  - component: {fileID: 2416822675575418908}
   m_Layer: 0
   m_Name: KK-Nail_9_0
   m_TagString: Untagged
@@ -4431,6 +5146,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -7628793447234531303, guid: f1601e45af415994d9ee64a3369da4d5, type: 3}
+--- !u!114 &2416822675575418908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3676604559627215576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: c81191b3a750c26498afcc868aea4597, type: 3}
 --- !u!1 &3694503628429689503
 GameObject:
   m_ObjectHideFlags: 0
@@ -4443,6 +5174,7 @@ GameObject:
   - component: {fileID: 5237626779470602443}
   - component: {fileID: 6486645714832725898}
   - component: {fileID: 7143622475553747999}
+  - component: {fileID: 3852538927546642783}
   m_Layer: 0
   m_Name: KK-SignLetter_9_0
   m_TagString: Untagged
@@ -4527,6 +5259,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 2147878266836380488, guid: f9c9fd58d57d2da479da6083e732af07, type: 3}
+--- !u!114 &3852538927546642783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3694503628429689503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: fc72ac3b79e957146b01e248e7c18f06, type: 3}
 --- !u!1 &3871818645214152928
 GameObject:
   m_ObjectHideFlags: 0
@@ -4539,6 +5287,7 @@ GameObject:
   - component: {fileID: 2136095088784838034}
   - component: {fileID: 7432328297550388833}
   - component: {fileID: 3874806736689174082}
+  - component: {fileID: 3931665409500155719}
   m_Layer: 0
   m_Name: KK-Base_1_0
   m_TagString: Untagged
@@ -4623,6 +5372,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -1149889685905996094, guid: 3f04ff90122c5954abdba7e2f6126762, type: 3}
+--- !u!114 &3931665409500155719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3871818645214152928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: a72915be902bf35428197f2668ff10dc, type: 3}
 --- !u!1 &3896014324927365297
 GameObject:
   m_ObjectHideFlags: 0
@@ -4635,6 +5400,7 @@ GameObject:
   - component: {fileID: 7651040966833877054}
   - component: {fileID: 1573177159338500024}
   - component: {fileID: 8461080553591326470}
+  - component: {fileID: 1189425483527331276}
   m_Layer: 0
   m_Name: KK-Door_0_0
   m_TagString: Untagged
@@ -4719,6 +5485,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2563057019412927226, guid: 8fe91968db7ed1442811663dd664e473, type: 3}
+--- !u!114 &1189425483527331276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3896014324927365297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 0e55ca0e55741ed4aa3dfc5cf9cb405a, type: 3}
 --- !u!1 &3956658671542278485
 GameObject:
   m_ObjectHideFlags: 0
@@ -4731,6 +5513,7 @@ GameObject:
   - component: {fileID: 5411165931980123934}
   - component: {fileID: 831322278488813222}
   - component: {fileID: 5589099399903474796}
+  - component: {fileID: 2807619657522780983}
   m_Layer: 0
   m_Name: KK-DumpsterWheel_3_0
   m_TagString: Untagged
@@ -4815,6 +5598,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6953347417537962041, guid: 3bf19b09e034c534caa54c9c882bb19f, type: 3}
+--- !u!114 &2807619657522780983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3956658671542278485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 009d46cc1d3d9204eaf84a43de0a3b07, type: 3}
 --- !u!1 &4033035000164601196
 GameObject:
   m_ObjectHideFlags: 0
@@ -4827,6 +5626,7 @@ GameObject:
   - component: {fileID: 1793385917730389668}
   - component: {fileID: 1486672958900276146}
   - component: {fileID: 2036057398988637862}
+  - component: {fileID: 517693337526686739}
   m_Layer: 0
   m_Name: KK-SideWallRope_0_0
   m_TagString: Untagged
@@ -4911,6 +5711,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -6379899087179904159, guid: d3397c87025ff8e42a8de50f868060fa, type: 3}
+--- !u!114 &517693337526686739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4033035000164601196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 62f834bcfc7c01e418dd265a91a92c8d, type: 3}
 --- !u!1 &4094794041761844931
 GameObject:
   m_ObjectHideFlags: 0
@@ -4923,6 +5739,7 @@ GameObject:
   - component: {fileID: 4912235457645913534}
   - component: {fileID: 5117745194357446690}
   - component: {fileID: 3125468515704064925}
+  - component: {fileID: 1466931021671203197}
   m_Layer: 0
   m_Name: KK-RoofPlank_1_0
   m_TagString: Untagged
@@ -5007,6 +5824,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -1449523883008358607, guid: 94d3cfe440e5c0d438c8c6d96aa122e5, type: 3}
+--- !u!114 &1466931021671203197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4094794041761844931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 9eb657792c29b3946982b5ef0155f7e6, type: 3}
 --- !u!1 &4146426468112357025
 GameObject:
   m_ObjectHideFlags: 0
@@ -5019,6 +5852,7 @@ GameObject:
   - component: {fileID: 3765696794438335411}
   - component: {fileID: 213227860600218392}
   - component: {fileID: 1676514037002385746}
+  - component: {fileID: 5355912336868381737}
   m_Layer: 0
   m_Name: KK-SignShell_0_0
   m_TagString: Untagged
@@ -5103,6 +5937,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5337208024141992557, guid: 0bc0d452229f8314687a3667696cd6a7, type: 3}
+--- !u!114 &5355912336868381737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4146426468112357025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 307e43b2571683a40aaf5d502cad2bbe, type: 3}
 --- !u!1 &4199809574622046609
 GameObject:
   m_ObjectHideFlags: 0
@@ -5115,6 +5965,7 @@ GameObject:
   - component: {fileID: 6442634295638359823}
   - component: {fileID: 4914346234130842095}
   - component: {fileID: 6817121906571661686}
+  - component: {fileID: 281358167857081860}
   m_Layer: 0
   m_Name: KK-SignPole_1
   m_TagString: Untagged
@@ -5199,6 +6050,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 148639589267380509, guid: 2ee10c0dfb2629549b67b3a9ec82e795, type: 3}
+--- !u!114 &281358167857081860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4199809574622046609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 37787bdb396f0a446903424f2cf35ad2, type: 3}
 --- !u!1 &4298880058083154709
 GameObject:
   m_ObjectHideFlags: 0
@@ -5211,6 +6078,7 @@ GameObject:
   - component: {fileID: 6366477442829457802}
   - component: {fileID: 1455097023083182560}
   - component: {fileID: 8374037863674552766}
+  - component: {fileID: 1166917160499199503}
   m_Layer: 0
   m_Name: KK-SignLetter_12_0
   m_TagString: Untagged
@@ -5295,6 +6163,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -7041952232732131551, guid: 374279702ea713149a94cca52bbb472b, type: 3}
+--- !u!114 &1166917160499199503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4298880058083154709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 3dc66347237eb814e806a3eeae0b2c52, type: 3}
 --- !u!1 &4358695760925887472
 GameObject:
   m_ObjectHideFlags: 0
@@ -5307,6 +6191,7 @@ GameObject:
   - component: {fileID: 8465596107060965650}
   - component: {fileID: 6028203069770866886}
   - component: {fileID: 6230160313904100544}
+  - component: {fileID: 6462074801806022359}
   m_Layer: 0
   m_Name: KK-SideWallPlank_2_0
   m_TagString: Untagged
@@ -5391,6 +6276,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 7768431423261345335, guid: b4ef2a58dcdf9c74bbc0869e310b60ab, type: 3}
+--- !u!114 &6462074801806022359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4358695760925887472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 01ce165d4080550439906ebf9483dda9, type: 3}
 --- !u!1 &4412251531813519843
 GameObject:
   m_ObjectHideFlags: 0
@@ -5403,6 +6304,7 @@ GameObject:
   - component: {fileID: 4569385898941787122}
   - component: {fileID: 1570748329850927577}
   - component: {fileID: 747932835027902266}
+  - component: {fileID: 6701149668546696795}
   m_Layer: 0
   m_Name: KK-SideWallPlank_5_0
   m_TagString: Untagged
@@ -5487,6 +6389,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 7293101218134633837, guid: 32e64ef359b280743b39e3699b1156bb, type: 3}
+--- !u!114 &6701149668546696795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4412251531813519843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 9454d584f3967bb4e8de409f97fb7e07, type: 3}
 --- !u!1 &4464919570307239883
 GameObject:
   m_ObjectHideFlags: 0
@@ -5499,6 +6417,7 @@ GameObject:
   - component: {fileID: 2084390058130399770}
   - component: {fileID: 6320177775676905123}
   - component: {fileID: 5716164390337269331}
+  - component: {fileID: 8755254037134192015}
   m_Layer: 0
   m_Name: KK-SideWallPlank_3_0
   m_TagString: Untagged
@@ -5583,6 +6502,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2972850265377218646, guid: 67c4ed400ab540e48ab39923624cd035, type: 3}
+--- !u!114 &8755254037134192015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4464919570307239883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 94e97640555ba6b4e95d13d8b0d23d66, type: 3}
 --- !u!1 &4474654528847644724
 GameObject:
   m_ObjectHideFlags: 0
@@ -5595,6 +6530,7 @@ GameObject:
   - component: {fileID: 6526811488764499200}
   - component: {fileID: 8382930939061333692}
   - component: {fileID: 3932397678595512700}
+  - component: {fileID: 7979486214799683437}
   m_Layer: 0
   m_Name: KK-RoofPlank_9_0
   m_TagString: Untagged
@@ -5679,6 +6615,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -4810770549484211468, guid: 6cd5e2c7e31a8b24e85d6a7b31f9bd3a, type: 3}
+--- !u!114 &7979486214799683437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4474654528847644724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: bcfdb550d1f16e643b9be87a8502a5f7, type: 3}
 --- !u!1 &4481910223033212791
 GameObject:
   m_ObjectHideFlags: 0
@@ -5691,6 +6643,7 @@ GameObject:
   - component: {fileID: 5516671952017529960}
   - component: {fileID: 3234792259330161583}
   - component: {fileID: 1200040856017853344}
+  - component: {fileID: 4570165511473761448}
   m_Layer: 0
   m_Name: KK-FlagRope_0
   m_TagString: Untagged
@@ -5775,6 +6728,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 3430771283910128636, guid: 9045bad6d12ba1b449a307bd2dccda8c, type: 3}
+--- !u!114 &4570165511473761448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4481910223033212791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 1baba0112a9723f4aa16aebed8bf0eaa, type: 3}
 --- !u!1 &4716666954179740647
 GameObject:
   m_ObjectHideFlags: 0
@@ -5787,6 +6756,7 @@ GameObject:
   - component: {fileID: 6116363226412087159}
   - component: {fileID: 8090491762706984351}
   - component: {fileID: 4758144542174835893}
+  - component: {fileID: 7430115630336454870}
   m_Layer: 0
   m_Name: KK-SideWallPlank_4_0
   m_TagString: Untagged
@@ -5871,6 +6841,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -3108259408416627856, guid: 9ebed864d9b3d0244b90321253a7d6d6, type: 3}
+--- !u!114 &7430115630336454870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4716666954179740647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: a174fc3f519249d45ba6915f86578772, type: 3}
 --- !u!1 &4744570336227379770
 GameObject:
   m_ObjectHideFlags: 0
@@ -5883,6 +6869,7 @@ GameObject:
   - component: {fileID: 948290522790979986}
   - component: {fileID: 7046150485936831615}
   - component: {fileID: 3520838003861710139}
+  - component: {fileID: 6306389541476542176}
   m_Layer: 0
   m_Name: KK-Nail_7_0
   m_TagString: Untagged
@@ -5967,6 +6954,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 45156989334019544, guid: 84649cacfd6199846995de1acb80f84a, type: 3}
+--- !u!114 &6306389541476542176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4744570336227379770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 356f56ef97c2ee4468a75c6aefb0a10e, type: 3}
 --- !u!1 &4776146892733198719
 GameObject:
   m_ObjectHideFlags: 0
@@ -5979,6 +6982,7 @@ GameObject:
   - component: {fileID: 6580875679212787427}
   - component: {fileID: 2033634922055398261}
   - component: {fileID: 8733097099643793619}
+  - component: {fileID: 9128073368043991646}
   m_Layer: 0
   m_Name: KK-RearDoorPorthole_1
   m_TagString: Untagged
@@ -6063,6 +7067,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -6892233550370794631, guid: dd64d540cd3f6b245966353c51eb57df, type: 3}
+--- !u!114 &9128073368043991646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4776146892733198719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 0237c9145637b0d41aafd0491c85af71, type: 3}
 --- !u!1 &4968474919139217826
 GameObject:
   m_ObjectHideFlags: 0
@@ -6075,6 +7095,7 @@ GameObject:
   - component: {fileID: 7407286397232207089}
   - component: {fileID: 7583480074621980996}
   - component: {fileID: 2362190846171202774}
+  - component: {fileID: 7933310741880398900}
   m_Layer: 0
   m_Name: KK-Nail_5_0
   m_TagString: Untagged
@@ -6159,6 +7180,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -3718313751022945280, guid: 0c8d19700b546494bbf33521e4729cda, type: 3}
+--- !u!114 &7933310741880398900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4968474919139217826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 586e4f09c42456c4199dfb4f4dfa2a64, type: 3}
 --- !u!1 &4993295113852278481
 GameObject:
   m_ObjectHideFlags: 0
@@ -6171,6 +7208,7 @@ GameObject:
   - component: {fileID: 2110641845363121885}
   - component: {fileID: 8737103541809555892}
   - component: {fileID: 6277850343211887263}
+  - component: {fileID: 5479124357128833467}
   m_Layer: 0
   m_Name: KK-MaritimeFlag_1_0
   m_TagString: Untagged
@@ -6255,6 +7293,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -89252221888810444, guid: f6f1223a11979274aa7292da0039163f, type: 3}
+--- !u!114 &5479124357128833467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4993295113852278481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 26fdbdcb1e48f6b4793eab1ce7603a8b, type: 3}
 --- !u!1 &5017049878816710349
 GameObject:
   m_ObjectHideFlags: 0
@@ -6267,6 +7321,7 @@ GameObject:
   - component: {fileID: 4540124073342788541}
   - component: {fileID: 1212520655185731297}
   - component: {fileID: 6018152338990420666}
+  - component: {fileID: 2557362664225419329}
   m_Layer: 0
   m_Name: KK-WeatherVane_0
   m_TagString: Untagged
@@ -6351,6 +7406,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4744994186564150379, guid: adcabe0f74b87f344bc3e43f711b36a7, type: 3}
+--- !u!114 &2557362664225419329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5017049878816710349}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 0781affe3c00dad48a6a4517ce341797, type: 3}
 --- !u!1 &5105624040519803538
 GameObject:
   m_ObjectHideFlags: 0
@@ -6363,6 +7434,7 @@ GameObject:
   - component: {fileID: 8644643689241597218}
   - component: {fileID: 7710747042405914706}
   - component: {fileID: 9148031002336634440}
+  - component: {fileID: 1100152420354313979}
   m_Layer: 0
   m_Name: KK-Chimney_0
   m_TagString: Untagged
@@ -6447,6 +7519,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -8809804272485532429, guid: bd8686271c432064081761ecf82afe25, type: 3}
+--- !u!114 &1100152420354313979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5105624040519803538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: e152d3274f6818749b04dbec831bcb85, type: 3}
 --- !u!1 &5668538661995277684
 GameObject:
   m_ObjectHideFlags: 0
@@ -6459,6 +7547,7 @@ GameObject:
   - component: {fileID: 3631826552535385160}
   - component: {fileID: 5451518038057853973}
   - component: {fileID: 111802931799088295}
+  - component: {fileID: 1035517786838475044}
   m_Layer: 0
   m_Name: KK-Arch_0_0
   m_TagString: Untagged
@@ -6543,6 +7632,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -8965010375570353750, guid: b094a28c03b583c4e942b795173d78e3, type: 3}
+--- !u!114 &1035517786838475044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5668538661995277684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 62a31338bce26004797907d733f30a75, type: 3}
 --- !u!1 &5825145841196739180
 GameObject:
   m_ObjectHideFlags: 0
@@ -6555,6 +7660,7 @@ GameObject:
   - component: {fileID: 7008764683291254608}
   - component: {fileID: 161506339346606734}
   - component: {fileID: 8372346105070308676}
+  - component: {fileID: 589971367854628180}
   m_Layer: 0
   m_Name: KK-Nail_8_0
   m_TagString: Untagged
@@ -6639,6 +7745,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -7650545895278641717, guid: 5bfa4de271291fa46b9628ac52522e96, type: 3}
+--- !u!114 &589971367854628180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5825145841196739180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: ad91e87b045ec2c4483041a96b786a81, type: 3}
 --- !u!1 &5857862436109713853
 GameObject:
   m_ObjectHideFlags: 0
@@ -6651,6 +7773,7 @@ GameObject:
   - component: {fileID: 7314312578226369960}
   - component: {fileID: 7653095615045863399}
   - component: {fileID: 1647243495750637347}
+  - component: {fileID: 4096975852183709162}
   m_Layer: 0
   m_Name: KK-Base_0_0
   m_TagString: Untagged
@@ -6735,6 +7858,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 8164136041952178163, guid: 955c23a31845d7147bbde79deb19ee9a, type: 3}
+--- !u!114 &4096975852183709162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5857862436109713853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: b72ae03f19c1a794e90c3357ff9e2ed8, type: 3}
 --- !u!1 &5890683523289617403
 GameObject:
   m_ObjectHideFlags: 0
@@ -6747,6 +7886,7 @@ GameObject:
   - component: {fileID: 349307637635612397}
   - component: {fileID: 2927849252109252402}
   - component: {fileID: 8690455782166210848}
+  - component: {fileID: 9075746503764692971}
   m_Layer: 0
   m_Name: KK-Window_1_0
   m_TagString: Untagged
@@ -6831,6 +7971,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 8941652518422905231, guid: 353d29e97086a6b4787707239d22eeb7, type: 3}
+--- !u!114 &9075746503764692971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5890683523289617403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 011e6785b27efd64aa919760fd45e037, type: 3}
 --- !u!1 &5997142087687834498
 GameObject:
   m_ObjectHideFlags: 0
@@ -6843,6 +7999,7 @@ GameObject:
   - component: {fileID: 566045027356183263}
   - component: {fileID: 7184568942601386836}
   - component: {fileID: 5905627540155801469}
+  - component: {fileID: 3469093958794495428}
   m_Layer: 0
   m_Name: KK-SignLetter_3_0
   m_TagString: Untagged
@@ -6927,6 +8084,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5284327320813005665, guid: 11fb165c22386864ca58e2fd00f3e6eb, type: 3}
+--- !u!114 &3469093958794495428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5997142087687834498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 1f178043b2b041440a9b23c15c499d8e, type: 3}
 --- !u!1 &6391163563055432439
 GameObject:
   m_ObjectHideFlags: 0
@@ -6939,6 +8112,7 @@ GameObject:
   - component: {fileID: 8259598701051144980}
   - component: {fileID: 1904253372785927697}
   - component: {fileID: 5501760168777811594}
+  - component: {fileID: 3634795950102105887}
   m_Layer: 0
   m_Name: KK-SideWallRope_1_0
   m_TagString: Untagged
@@ -7023,6 +8197,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -6877435153713470504, guid: 83f6a4a87e6f4724d99feda722f1494f, type: 3}
+--- !u!114 &3634795950102105887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6391163563055432439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 521b9c51348abbf418d622e78727e0e2, type: 3}
 --- !u!1 &6430922159571285235
 GameObject:
   m_ObjectHideFlags: 0
@@ -7035,6 +8225,7 @@ GameObject:
   - component: {fileID: 8738670349743604672}
   - component: {fileID: 4691053070405489170}
   - component: {fileID: 170661674290398809}
+  - component: {fileID: 8245846768530775438}
   m_Layer: 0
   m_Name: KK-Door_1_0
   m_TagString: Untagged
@@ -7119,6 +8310,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -1536763940188977171, guid: 1a32bec466e32414e9ea9489cc87e2f2, type: 3}
+--- !u!114 &8245846768530775438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6430922159571285235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 167f5bc78e69e294cbd6a23f2fc1a2a5, type: 3}
 --- !u!1 &6555199950146946409
 GameObject:
   m_ObjectHideFlags: 0
@@ -7131,6 +8338,7 @@ GameObject:
   - component: {fileID: 5973713217611803737}
   - component: {fileID: 2977482746846559417}
   - component: {fileID: 7001107650268112064}
+  - component: {fileID: 5053891944228372579}
   m_Layer: 0
   m_Name: KK-SideWallPlank_7_0
   m_TagString: Untagged
@@ -7215,6 +8423,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 2995336258442564564, guid: 0f44aa92c2c9ab3478a33edd41c7901a, type: 3}
+--- !u!114 &5053891944228372579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6555199950146946409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: a482025e08b93c7479bf3f95be0574df, type: 3}
 --- !u!1 &6871524779472742529
 GameObject:
   m_ObjectHideFlags: 0
@@ -7227,6 +8451,7 @@ GameObject:
   - component: {fileID: 2816394551683895278}
   - component: {fileID: 3262140333311033906}
   - component: {fileID: 4807635921675084731}
+  - component: {fileID: 4502187050716545322}
   m_Layer: 0
   m_Name: KK-SignLetter_5_0
   m_TagString: Untagged
@@ -7311,6 +8536,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -3073906793027104767, guid: cfa126679d3ccd5478a19186f1489e18, type: 3}
+--- !u!114 &4502187050716545322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6871524779472742529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: df38f60cc472b054c8d3b43bb362caf7, type: 3}
 --- !u!1 &6909220386739160740
 GameObject:
   m_ObjectHideFlags: 0
@@ -7323,6 +8564,7 @@ GameObject:
   - component: {fileID: 7163587911607460088}
   - component: {fileID: 6439080051245809045}
   - component: {fileID: 152077477301529945}
+  - component: {fileID: 8121293981831870211}
   m_Layer: 0
   m_Name: KK-Nail_11_0
   m_TagString: Untagged
@@ -7407,6 +8649,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 8546603222438996309, guid: f0c203f681affeb46b893730032579a1, type: 3}
+--- !u!114 &8121293981831870211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6909220386739160740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: b601e5895c89bb640a28df94efd5fea2, type: 3}
 --- !u!1 &6915786822181850782
 GameObject:
   m_ObjectHideFlags: 0
@@ -7419,6 +8677,7 @@ GameObject:
   - component: {fileID: 190668046995022041}
   - component: {fileID: 6383730630089220039}
   - component: {fileID: 4518311125510306785}
+  - component: {fileID: 7427482106504092343}
   m_Layer: 0
   m_Name: KK-DumpsterWheel_0_0
   m_TagString: Untagged
@@ -7503,6 +8762,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -509930148348771824, guid: 1b392bb7a304c3145826176c1327c7da, type: 3}
+--- !u!114 &7427482106504092343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6915786822181850782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 3986f74cfd7e2d34daac8440742295b3, type: 3}
 --- !u!1 &7024847548440105440
 GameObject:
   m_ObjectHideFlags: 0
@@ -7515,6 +8790,7 @@ GameObject:
   - component: {fileID: 5887793985955595855}
   - component: {fileID: 871660009958904388}
   - component: {fileID: 3996818142703872589}
+  - component: {fileID: 8486545255215096982}
   m_Layer: 0
   m_Name: KK-SignLetter_4_0
   m_TagString: Untagged
@@ -7599,6 +8875,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -8811597313068868938, guid: 53052944975d01e488342ae32e869a1f, type: 3}
+--- !u!114 &8486545255215096982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7024847548440105440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 12888a4326ac408409d9c387ecfb03c6, type: 3}
 --- !u!1 &7066503445418198362
 GameObject:
   m_ObjectHideFlags: 0
@@ -7611,6 +8903,7 @@ GameObject:
   - component: {fileID: 3987910279002491659}
   - component: {fileID: 3431271826873566271}
   - component: {fileID: 5002925417472827075}
+  - component: {fileID: 4269909418184273295}
   m_Layer: 0
   m_Name: KK-DumpsterRim_0
   m_TagString: Untagged
@@ -7695,6 +8988,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -82644971649354321, guid: b234aceaa54f6f040b04da2aaec8880f, type: 3}
+--- !u!114 &4269909418184273295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7066503445418198362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 400ae10ee3ed840419259a7a2114f82c, type: 3}
 --- !u!1 &7178547041409783328
 GameObject:
   m_ObjectHideFlags: 0
@@ -7707,6 +9016,7 @@ GameObject:
   - component: {fileID: 3165748559066286584}
   - component: {fileID: 7550487233383764188}
   - component: {fileID: 5801901835547389745}
+  - component: {fileID: 803465007198362332}
   m_Layer: 0
   m_Name: KK-PortholeFrame_0
   m_TagString: Untagged
@@ -7791,6 +9101,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1875912964187112448, guid: 2ae519d523f4b4f4ba5c4dccab306836, type: 3}
+--- !u!114 &803465007198362332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7178547041409783328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 93eb4a4307a70564889a96755cee1f57, type: 3}
 --- !u!1 &7191981139015643369
 GameObject:
   m_ObjectHideFlags: 0
@@ -7803,6 +9129,7 @@ GameObject:
   - component: {fileID: 1384964300121102748}
   - component: {fileID: 318503061325592212}
   - component: {fileID: 3040223050130013672}
+  - component: {fileID: 8857248161986752978}
   m_Layer: 0
   m_Name: KK-Window_0_1
   m_TagString: Untagged
@@ -7887,6 +9214,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -1391811956777485870, guid: 9a2dc5a7a5168084481cb65a37dd3cc7, type: 3}
+--- !u!114 &8857248161986752978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7191981139015643369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 10b8ab26237376b4a93aa666132ae46e, type: 3}
 --- !u!1 &7192192272989961498
 GameObject:
   m_ObjectHideFlags: 0
@@ -7899,6 +9242,7 @@ GameObject:
   - component: {fileID: 6203044364371321798}
   - component: {fileID: 6469115845054504877}
   - component: {fileID: 7143432897340222546}
+  - component: {fileID: 285765732268662851}
   m_Layer: 0
   m_Name: KK-SideWallPlank_6_0
   m_TagString: Untagged
@@ -7983,6 +9327,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -8777387724993329867, guid: 7881729e9b5e8544594184a7888d17bb, type: 3}
+--- !u!114 &285765732268662851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7192192272989961498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 76ac9d6ccc2079c498cfe75ecb98edd8, type: 3}
 --- !u!1 &7264340906212389734
 GameObject:
   m_ObjectHideFlags: 0
@@ -7995,6 +9355,7 @@ GameObject:
   - component: {fileID: 917993521970717218}
   - component: {fileID: 476442836005408922}
   - component: {fileID: 6088708472385157829}
+  - component: {fileID: 5190567097093019730}
   m_Layer: 0
   m_Name: KK-DumpsterWheel_2_0
   m_TagString: Untagged
@@ -8079,6 +9440,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -1398515003491732522, guid: 284604ad97b48ee41be768d7bf39a86d, type: 3}
+--- !u!114 &5190567097093019730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7264340906212389734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 75b866f1ef695b145a2fcf5855de679c, type: 3}
 --- !u!1 &7375718395163636700
 GameObject:
   m_ObjectHideFlags: 0
@@ -8091,6 +9468,7 @@ GameObject:
   - component: {fileID: 2237759992715929624}
   - component: {fileID: 7838803547656821340}
   - component: {fileID: 4488624147071996269}
+  - component: {fileID: 2365627636272431053}
   m_Layer: 0
   m_Name: KK-DumpsterWheel_1_0
   m_TagString: Untagged
@@ -8175,6 +9553,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1590856609290796474, guid: b216f03058faad5499407832359a498c, type: 3}
+--- !u!114 &2365627636272431053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7375718395163636700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: ca58c736700274b4297883777b6abe23, type: 3}
 --- !u!1 &7442215170921103266
 GameObject:
   m_ObjectHideFlags: 0
@@ -8187,6 +9581,7 @@ GameObject:
   - component: {fileID: 7609666073738478220}
   - component: {fileID: 891367855355203979}
   - component: {fileID: 4126032666125049138}
+  - component: {fileID: 6248743005151391811}
   m_Layer: 0
   m_Name: KK-RoofPlank_5_0
   m_TagString: Untagged
@@ -8271,6 +9666,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6198763941447667030, guid: 48fe5e0e32bc8714181b8782a3d325ed, type: 3}
+--- !u!114 &6248743005151391811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7442215170921103266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 50b91a28232f7c74b90405f9e5cf7be3, type: 3}
 --- !u!1 &7478713546098140319
 GameObject:
   m_ObjectHideFlags: 0
@@ -8283,6 +9694,7 @@ GameObject:
   - component: {fileID: 7308559031423239380}
   - component: {fileID: 8210689909601441778}
   - component: {fileID: 8140391899594702128}
+  - component: {fileID: 3378378918065241408}
   m_Layer: 0
   m_Name: KK-Nail_0_0
   m_TagString: Untagged
@@ -8367,6 +9779,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 2177347579678807521, guid: 6c41463e6b8de0c4db85251617baf2c8, type: 3}
+--- !u!114 &3378378918065241408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7478713546098140319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: e032cd3d8a28a9c4ea619f4ec222c100, type: 3}
 --- !u!1 &7582279239071542711
 GameObject:
   m_ObjectHideFlags: 0
@@ -8379,6 +9807,7 @@ GameObject:
   - component: {fileID: 1855052809875511099}
   - component: {fileID: 4196280233464721011}
   - component: {fileID: 4898542517536338879}
+  - component: {fileID: 7268902901481648119}
   m_Layer: 0
   m_Name: KK-RoofPlank_6_0
   m_TagString: Untagged
@@ -8463,6 +9892,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -922728292161648005, guid: eecf18e12d564c944bc1356ba83872ee, type: 3}
+--- !u!114 &7268902901481648119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7582279239071542711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 9e2cafc17ab193d4b9fae49cdb6e5c74, type: 3}
 --- !u!1 &7631292706386186149
 GameObject:
   m_ObjectHideFlags: 0
@@ -8475,6 +9920,7 @@ GameObject:
   - component: {fileID: 5948395751496713879}
   - component: {fileID: 6963180020810780529}
   - component: {fileID: 7220591095321138956}
+  - component: {fileID: 1659664053804000078}
   m_Layer: 0
   m_Name: KK-SignLetter_8_0
   m_TagString: Untagged
@@ -8559,6 +10005,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 5894320777251644542, guid: 1ee45ac76bb05ac40940669400182f90, type: 3}
+--- !u!114 &1659664053804000078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7631292706386186149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: a63eea8793722ce448d92a19b187abf9, type: 3}
 --- !u!1 &7635013353652226008
 GameObject:
   m_ObjectHideFlags: 0
@@ -8571,6 +10033,7 @@ GameObject:
   - component: {fileID: 1577840604493463079}
   - component: {fileID: 565877918457733628}
   - component: {fileID: 6251165968206890069}
+  - component: {fileID: 2149550183637627669}
   m_Layer: 0
   m_Name: KK-Nail_15_0
   m_TagString: Untagged
@@ -8655,6 +10118,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -8915633063388476765, guid: 8b02d8dcc57072146a077a53f610f6ee, type: 3}
+--- !u!114 &2149550183637627669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7635013353652226008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 1dd4d68e0b0e0824781e459a023e3d0e, type: 3}
 --- !u!1 &7652327774978390452
 GameObject:
   m_ObjectHideFlags: 0
@@ -8667,6 +10146,7 @@ GameObject:
   - component: {fileID: 8609083451310678845}
   - component: {fileID: 3958624273772948639}
   - component: {fileID: 636446850628028318}
+  - component: {fileID: 6122888153159999991}
   m_Layer: 0
   m_Name: KK-Nail_2_0
   m_TagString: Untagged
@@ -8751,6 +10231,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -4736538070789161199, guid: ed5c1ca9f036a16409ffd50f7b41d244, type: 3}
+--- !u!114 &6122888153159999991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7652327774978390452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: b138aeb214fbf784e99fbd9fef2b3f6e, type: 3}
 --- !u!1 &7696909509414131604
 GameObject:
   m_ObjectHideFlags: 0
@@ -8763,6 +10259,7 @@ GameObject:
   - component: {fileID: 1890368597084764098}
   - component: {fileID: 937270144164020329}
   - component: {fileID: 8461934296345647852}
+  - component: {fileID: 5903852181755666387}
   m_Layer: 0
   m_Name: KK-Nail_10_0
   m_TagString: Untagged
@@ -8847,6 +10344,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -330472420542559135, guid: b6d3632851f143a44ac029c5ca3d1969, type: 3}
+--- !u!114 &5903852181755666387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7696909509414131604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 0b9d6915840b676409d548ee07366709, type: 3}
 --- !u!1 &7879979005043047621
 GameObject:
   m_ObjectHideFlags: 0
@@ -8991,6 +10504,7 @@ GameObject:
   - component: {fileID: 1254214845515628189}
   - component: {fileID: 7375159297565107461}
   - component: {fileID: 8595101085350716259}
+  - component: {fileID: 7984504941838664978}
   m_Layer: 0
   m_Name: KK-SignPole_0
   m_TagString: Untagged
@@ -9075,6 +10589,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2524792027210727221, guid: 2ee10c0dfb2629549b67b3a9ec82e795, type: 3}
+--- !u!114 &7984504941838664978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7947404720644305953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 37787bdb396f0a446903424f2cf35ad2, type: 3}
 --- !u!1 &8072643887574691698
 GameObject:
   m_ObjectHideFlags: 0
@@ -9087,6 +10617,7 @@ GameObject:
   - component: {fileID: 1826285957787463431}
   - component: {fileID: 723052153520458984}
   - component: {fileID: 6428737132194537079}
+  - component: {fileID: 8791572818622576908}
   m_Layer: 0
   m_Name: KK-MaritimeFlag_3_0
   m_TagString: Untagged
@@ -9171,6 +10702,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -7510688626141064797, guid: 6ef40276face61a4b946ff1079036ee8, type: 3}
+--- !u!114 &8791572818622576908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8072643887574691698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 1a217aaf5676c354ebb96dec84cb7519, type: 3}
 --- !u!1 &8323019415382396147
 GameObject:
   m_ObjectHideFlags: 0
@@ -9183,6 +10730,7 @@ GameObject:
   - component: {fileID: 7360126988894752548}
   - component: {fileID: 3279264500618717164}
   - component: {fileID: 8218276108005196543}
+  - component: {fileID: 7860452058462212209}
   m_Layer: 0
   m_Name: KK-SideWallPlank_0_0
   m_TagString: Untagged
@@ -9267,6 +10815,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -4269864758383813794, guid: bb46d9cda15b81d4384ec19a6add45fc, type: 3}
+--- !u!114 &7860452058462212209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8323019415382396147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: d5d5b92790cb03547a329b9d0c873fbc, type: 3}
 --- !u!1 &8332125909050236705
 GameObject:
   m_ObjectHideFlags: 0
@@ -9279,6 +10843,7 @@ GameObject:
   - component: {fileID: 3977760271618333120}
   - component: {fileID: 3307746819520031589}
   - component: {fileID: 7861768639979349278}
+  - component: {fileID: 6380802256889931749}
   m_Layer: 0
   m_Name: KK-RoofPlank_12_0
   m_TagString: Untagged
@@ -9363,6 +10928,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -1953495767337738759, guid: 1c809b26c87d97d4f909b900844681ff, type: 3}
+--- !u!114 &6380802256889931749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8332125909050236705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 2728b3ee902151242ae1036a5e7839d8, type: 3}
 --- !u!1 &8384974551557697718
 GameObject:
   m_ObjectHideFlags: 0
@@ -9375,6 +10956,7 @@ GameObject:
   - component: {fileID: 7901280086150809405}
   - component: {fileID: 4738753036943637844}
   - component: {fileID: 6102113175077074427}
+  - component: {fileID: 6608016141960191549}
   m_Layer: 0
   m_Name: KK-RoofPlank_8_0
   m_TagString: Untagged
@@ -9459,6 +11041,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -8166175726084081415, guid: cde41f204ba72af4aa47331ffab83b89, type: 3}
+--- !u!114 &6608016141960191549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8384974551557697718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 3130fed02c1339b43b8d5c8ddb81738f, type: 3}
 --- !u!1 &8516490431694755881
 GameObject:
   m_ObjectHideFlags: 0
@@ -9471,6 +11069,7 @@ GameObject:
   - component: {fileID: 7828822251461680417}
   - component: {fileID: 8272681673925836498}
   - component: {fileID: 1159533691980774180}
+  - component: {fileID: 3173281766337691304}
   m_Layer: 0
   m_Name: KK-RearDoorFrame_0
   m_TagString: Untagged
@@ -9555,6 +11154,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 3533945134003839915, guid: 26e578f2949ddb442890309ff1967c6a, type: 3}
+--- !u!114 &3173281766337691304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8516490431694755881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 70bd45372d258614894dd460da27a423, type: 3}
 --- !u!1 &8928512956777014628
 GameObject:
   m_ObjectHideFlags: 0
@@ -9567,6 +11182,7 @@ GameObject:
   - component: {fileID: 2637675518245743611}
   - component: {fileID: 7641327531610020627}
   - component: {fileID: 4333810144867042216}
+  - component: {fileID: 924327992774187470}
   m_Layer: 0
   m_Name: KK-MaritimeFlag_4_0
   m_TagString: Untagged
@@ -9651,6 +11267,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5803589996768437789, guid: a814a5fe260a33f44adfcf390c53f3cf, type: 3}
+--- !u!114 &924327992774187470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8928512956777014628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 3cb700ac4a976594891090f31e35bbe8, type: 3}
 --- !u!1 &8940299752864461802
 GameObject:
   m_ObjectHideFlags: 0
@@ -9663,6 +11295,7 @@ GameObject:
   - component: {fileID: 7996577050256886028}
   - component: {fileID: 1212071027605376088}
   - component: {fileID: 3492347381214577472}
+  - component: {fileID: 4415917704426925692}
   m_Layer: 0
   m_Name: KK-RoofPlank_3_0
   m_TagString: Untagged
@@ -9747,6 +11380,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2446628289948499378, guid: 0bb7652583f10d44d8943954d6f624bf, type: 3}
+--- !u!114 &4415917704426925692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8940299752864461802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 7aae4814e26b5f24ab6e522775ce5639, type: 3}
 --- !u!1 &9093902018342604769
 GameObject:
   m_ObjectHideFlags: 0
@@ -9759,6 +11408,7 @@ GameObject:
   - component: {fileID: 3742729806722408572}
   - component: {fileID: 7640085223496916219}
   - component: {fileID: 1998795931193888833}
+  - component: {fileID: 9190525299108629231}
   m_Layer: 0
   m_Name: KK-PortholeWindow_0
   m_TagString: Untagged
@@ -9843,6 +11493,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4877577368205192794, guid: 07ffb34e7ee9de6439a4ce03ba98019f, type: 3}
+--- !u!114 &9190525299108629231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9093902018342604769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 486a52465cc47224291ad85c10a2a22a, type: 3}
 --- !u!1 &9188302364704319162
 GameObject:
   m_ObjectHideFlags: 0
@@ -9855,6 +11521,7 @@ GameObject:
   - component: {fileID: 161593420846037904}
   - component: {fileID: 3389361306295122946}
   - component: {fileID: 2497907634250707624}
+  - component: {fileID: 5936143895839935368}
   m_Layer: 0
   m_Name: KK-DoorHandle_1_0
   m_TagString: Untagged
@@ -9939,3 +11606,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 7235779202357630475, guid: 7dc9ff70ba1dfb749b89fbc9ee94dc6a, type: 3}
+--- !u!114 &5936143895839935368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9188302364704319162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resolution: 128
+  renderMaskTexture: {fileID: 0}
+  renderWaterTexture: {fileID: 0}
+  maskTexture: {fileID: 2800000, guid: 9a947b7ac8ca2064d9286e11bec56a87, type: 3}
