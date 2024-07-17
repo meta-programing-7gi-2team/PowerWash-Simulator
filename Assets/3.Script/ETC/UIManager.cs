@@ -45,6 +45,8 @@ public class UIManager : MonoBehaviour
     {
         LoadAll.SetActive(false);
         text.gameObject.SetActive(false);
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     private IEnumerator LoadSceneAsync(int sceneIndex)
@@ -93,6 +95,8 @@ public class UIManager : MonoBehaviour
         text.gameObject.SetActive(false);
         loadingSlider.gameObject.SetActive(false);
         Button.gameObject.SetActive(true); // 로딩이 완료되면 버튼을 활성화
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
     }
 
     private IEnumerator LoadObjectsAsync()

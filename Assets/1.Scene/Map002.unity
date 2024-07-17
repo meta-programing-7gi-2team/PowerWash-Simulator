@@ -531,6 +531,55 @@ Transform:
   m_Father: {fileID: 1284989926}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &345812858
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 345812860}
+  - component: {fileID: 345812859}
+  m_Layer: 0
+  m_Name: Brush
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &345812859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 345812858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1982f2ab4393ccd45a05e5a4691b3397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  brushSize: 0.3
+  waterBrushIntensity: 0.1
+  eraserBrushIntensity: 0.1
+  colorRatioComputeShader: {fileID: 7200000, guid: 814305ab60ec2834b86ac66c5bacf94a, type: 3}
+  fadeTextureComputeShader: {fileID: 7200000, guid: f1eaa50bd07e6fa4aab9c28024619157, type: 3}
+  resolution: 128
+--- !u!4 &345812860
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 345812858}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &352124552
 GameObject:
   m_ObjectHideFlags: 0
@@ -25792,8 +25841,8 @@ MonoBehaviour:
   - {fileID: 1851369555}
   - {fileID: 1114959429}
   - {fileID: 533989231}
-  crosshair: []
-  cur: 0
+  crosshairImage: []
+  crosshair: {fileID: 0}
 --- !u!114 &1284989930
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25808,9 +25857,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shotRange: 6
   blockRange: 0
-  player:
+  playerLayer:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 0
 --- !u!1 &1447489480
 GameObject:
   m_ObjectHideFlags: 0
