@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ButtonColor : MonoBehaviour
+public class ToggleController : MonoBehaviour
 {
     public Toggle toggle;
     public Text text;
