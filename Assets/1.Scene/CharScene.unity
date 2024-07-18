@@ -4892,6 +4892,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotRange: 5
+  offsetY: 0
 --- !u!1001 &240866645
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4946,6 +4947,10 @@ PrefabInstance:
     - target: {fileID: 3173998441358580335, guid: eb7623a8aa68f41428ef3d2774ebe313, type: 3}
       propertyPath: m_Name
       value: Stool
+      objectReference: {fileID: 0}
+    - target: {fileID: 3173998441358580335, guid: eb7623a8aa68f41428ef3d2774ebe313, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb7623a8aa68f41428ef3d2774ebe313, type: 3}
@@ -5005,7 +5010,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1e991049f467e654f8112a8d6db9a5a3, type: 2}
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5103,6 +5108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotRange: 5
+  offsetY: 0
 --- !u!1 &403944469
 GameObject:
   m_ObjectHideFlags: 0
@@ -10336,6 +10342,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotRange: 5
+  offsetY: 0
 --- !u!1 &1150743144
 GameObject:
   m_ObjectHideFlags: 0
@@ -10388,7 +10395,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5d84797d9d8a1eb45803b8e63b8ea2b5, type: 2}
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10456,13 +10463,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1199898952}
-  m_LocalRotation: {x: 0, y: 0.13052616, z: 0, w: 0.9914449}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 632538330}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 15, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1199898954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10476,6 +10483,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotRange: 5
+  offsetY: 10
 --- !u!1 &1211779923
 GameObject:
   m_ObjectHideFlags: 0
@@ -15480,7 +15488,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1e991049f467e654f8112a8d6db9a5a3, type: 2}
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -15548,13 +15556,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1506458448}
-  m_LocalRotation: {x: 0, y: -0.13052624, z: 0, w: 0.9914449}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 632538330}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: -15, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1506458450
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15568,6 +15576,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotRange: 5
+  offsetY: -10
 --- !u!1 &1576506728
 GameObject:
   m_ObjectHideFlags: 0
@@ -15612,6 +15621,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotRange: 5
+  offsetY: 0
 --- !u!1001 &1600026446
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15622,6 +15632,10 @@ PrefabInstance:
     - target: {fileID: 5429230715010719026, guid: 2a8ab63c5ced41046bab0f8c68721aeb, type: 3}
       propertyPath: m_Name
       value: Stair
+      objectReference: {fileID: 0}
+    - target: {fileID: 5429230715010719026, guid: 2a8ab63c5ced41046bab0f8c68721aeb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5429230715010719027, guid: 2a8ab63c5ced41046bab0f8c68721aeb, type: 3}
       propertyPath: m_RootOrder
@@ -15725,7 +15739,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1e991049f467e654f8112a8d6db9a5a3, type: 2}
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -15913,6 +15927,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotRange: 5
+  offsetY: 0
 --- !u!1 &1881479123
 GameObject:
   m_ObjectHideFlags: 0
@@ -15996,6 +16011,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotRange: 5
+  offsetY: 0
 --- !u!1 &1970567427
 GameObject:
   m_ObjectHideFlags: 0
@@ -16040,6 +16056,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotRange: 5
+  offsetY: 0
 --- !u!1 &2024033532
 GameObject:
   m_ObjectHideFlags: 0
@@ -16091,7 +16108,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1e991049f467e654f8112a8d6db9a5a3, type: 2}
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -16179,6 +16196,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotRange: 5
+  offsetY: 0
 --- !u!1 &160478174782197809
 GameObject:
   m_ObjectHideFlags: 0
@@ -21989,6 +22007,10 @@ PrefabInstance:
     - target: {fileID: 7327854069795176784, guid: aeaccce6a4ac6e04fa01ab0972fa1f03, type: 3}
       propertyPath: m_Name
       value: Ladder
+      objectReference: {fileID: 0}
+    - target: {fileID: 7327854069795176784, guid: aeaccce6a4ac6e04fa01ab0972fa1f03, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7996727037278198762, guid: aeaccce6a4ac6e04fa01ab0972fa1f03, type: 3}
       propertyPath: m_RootOrder
