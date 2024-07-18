@@ -4,15 +4,25 @@ using UnityEngine;
 
 public class ObjectAnimationTrigger : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private Transform playerCamera;
+    private RaycastHit hit;
+    private ActableObject target;
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        playerCamera = Camera.main.transform;
+    }
+    private void Update()
+    {
+        if(Physics.Raycast(playerCamera.position, playerCamera.forward, out hit))
+        {
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                if (hit.transform.TryGetComponent<ActableObject>(out target))
+                {
+                    target.Act();
+                }
+            }
+        }
     }
 }

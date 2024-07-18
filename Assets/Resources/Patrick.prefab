@@ -1252,6 +1252,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8588043831873884626}
+  - component: {fileID: 1948238155417342344}
   m_Layer: 10
   m_Name: Patrick
   m_TagString: Untagged
@@ -1278,6 +1279,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!95 &1948238155417342344
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8588043831873884627}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a558a5b047b489c49bfc7e7da3280ba9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8588043831917556841
 GameObject:
   m_ObjectHideFlags: 0
@@ -1287,7 +1307,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8588043831917556840}
-  - component: {fileID: 8588043831917556843}
   m_Layer: 10
   m_Name: Rock_Object
   m_TagString: Untagged
@@ -1302,8 +1321,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8588043831917556841}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.55, y: -1.45, z: -0.95}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.54999924, y: -1.4500005, z: -0.9500005}
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children:
   - {fileID: 7341825662724493841}
@@ -1314,25 +1333,6 @@ Transform:
   m_Father: {fileID: 8588043831873884626}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &8588043831917556843
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8588043831917556841}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6c7582aadd9c8be4a81ec39fd50ef897, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8588043832735977379
 GameObject:
   m_ObjectHideFlags: 0
@@ -1342,9 +1342,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8588043832735977378}
-  - component: {fileID: 8588043832735977405}
+  - component: {fileID: 7532965041757615773}
+  - component: {fileID: 2228170577760431821}
   m_Layer: 10
-  m_Name: Rock_Open
+  m_Name: Rock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1368,25 +1369,32 @@ Transform:
   m_Father: {fileID: 8588043831873884626}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &8588043832735977405
-Animator:
-  serializedVersion: 3
+--- !u!114 &7532965041757615773
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8588043832735977379}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 870c4c0da45f96c4c8419231c929390d, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 072fe8ceb2c8677449c290853b23ba1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 1948238155417342344}
+--- !u!65 &2228170577760431821
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8588043832735977379}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.5, y: 6.5, z: 3.5}
+  m_Center: {x: -3.5, y: 0.2, z: 1.7}
 --- !u!1 &8649368106088475557
 GameObject:
   m_ObjectHideFlags: 0
