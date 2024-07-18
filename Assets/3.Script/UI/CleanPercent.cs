@@ -279,7 +279,7 @@ public class CleanPercent : MonoBehaviour
                         break;
                 }
                 ObjectName.text = name;
-                ObjectSlider.value = Clean.ColorRatio;
+                ObjectSlider.value = 100 - Clean.ColorRatio;
             }
         }
 
