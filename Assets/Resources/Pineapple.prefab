@@ -243,6 +243,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: ef3467a102714fe4da577cad4a946539, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uD310"
+  Spongebob: 0
+  Pineapple: 2
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &410895855748727922
 GameObject:
   m_ObjectHideFlags: 0
@@ -356,6 +363,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 2187258fff4325946b49a09026ba0a6c, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uD310"
+  Spongebob: 0
+  Pineapple: 2
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &571098133288540877
 GameObject:
   m_ObjectHideFlags: 0
@@ -469,6 +483,12 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 14e1d492525bcc04d859e06d0773e4ad, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uAE38 \uB514\uB524\uB3CC"
+  Spongebob: 0
+  Pineapple: 16
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &669967445346419015
 GameObject:
   m_ObjectHideFlags: 0
@@ -582,6 +602,12 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: b61cb78dd0376494ab9818800adfd1f3, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uAE38"
+  Spongebob: 0
+  Pineapple: 15
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &867795242156161688
 GameObject:
   m_ObjectHideFlags: 0
@@ -695,6 +721,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 0b2c0336fb35e6b459b9be6bf4d6999f, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uD310"
+  Spongebob: 0
+  Pineapple: 2
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &874186676500995368
 GameObject:
   m_ObjectHideFlags: 0
@@ -808,6 +841,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: da44fe56b0e568342aa6dbefb7c2ac25, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uC704\uCABD \uD310"
+  Spongebob: 0
+  Pineapple: 4
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &941163118729531402
 GameObject:
   m_ObjectHideFlags: 0
@@ -921,6 +961,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 1f53416b83e08504b897235312f35707, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uD310"
+  Spongebob: 0
+  Pineapple: 2
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &964219170256704842
 GameObject:
   m_ObjectHideFlags: 0
@@ -1034,6 +1081,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: aa79806db58783746ab26c522fbcf849, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uD310"
+  Spongebob: 0
+  Pineapple: 2
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &1072088348399532915
 GameObject:
   m_ObjectHideFlags: 0
@@ -1147,6 +1201,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: c4bb45b4e8e945f4385a669bf99a508c, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uC78E "
+  Spongebob: 0
+  Pineapple: 1
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &1104603633742696219
 GameObject:
   m_ObjectHideFlags: 0
@@ -1260,6 +1321,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 8c834bd4c0045f548a5f081dae8a733d, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uD310"
+  Spongebob: 0
+  Pineapple: 2
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &1113830748229237073
 GameObject:
   m_ObjectHideFlags: 0
@@ -1373,6 +1441,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: f87d03eb2c98cc641b04fdcb6be81c36, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uC78E "
+  Spongebob: 0
+  Pineapple: 1
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &1180356248518219918
 GameObject:
   m_ObjectHideFlags: 0
@@ -1486,6 +1561,12 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 6e96c3087572a004ca53004acdebd315, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uAD74\uB69D"
+  Spongebob: 0
+  Pineapple: 13
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &1199641518426859994
 GameObject:
   m_ObjectHideFlags: 0
@@ -1599,6 +1680,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 22544c543a0b79d429464a48e22f940f, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uC704\uCABD \uD310"
+  Spongebob: 0
+  Pineapple: 4
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &1256783502407529174
 GameObject:
   m_ObjectHideFlags: 0
@@ -1712,6 +1800,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 67701ae966e483842a0f6efdcf6bd797, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uD310"
+  Spongebob: 0
+  Pineapple: 2
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &1305667264441308915
 GameObject:
   m_ObjectHideFlags: 0
@@ -1825,6 +1920,12 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 5696408afcf31a74ca90efd446b940b7, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uAE38 \uB514\uB524\uB3CC"
+  Spongebob: 0
+  Pineapple: 16
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &1316361978986643095
 GameObject:
   m_ObjectHideFlags: 0
@@ -1938,6 +2039,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: e7fdd49dc67b1104db83e8ea27a77ba2, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uD310"
+  Spongebob: 0
+  Pineapple: 2
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &1334041404918037338
 GameObject:
   m_ObjectHideFlags: 0
@@ -2051,6 +2159,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 3b95b607e2f550e428cbf6d346908bfa, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uD310"
+  Spongebob: 0
+  Pineapple: 2
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &1401361784535708289
 GameObject:
   m_ObjectHideFlags: 0
@@ -2164,6 +2279,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: c3aee34e7bb144b4198d175595d40cd8, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uB465\uADFC \uCC3D\uBB38
+    \uD2C0"
+  Spongebob: 0
+  Pineapple: 6
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &1493918908932823884
 GameObject:
   m_ObjectHideFlags: 0
@@ -2277,6 +2399,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 6bfb04bebf759fd499cabb3a67047eb5, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uD310"
+  Spongebob: 0
+  Pineapple: 2
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &1509780510151922937
 GameObject:
   m_ObjectHideFlags: 0
@@ -2390,6 +2519,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 7c594799cede1e346a9a8ff365a719e0, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uD310"
+  Spongebob: 0
+  Pineapple: 2
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &1607760543311791525
 GameObject:
   m_ObjectHideFlags: 0
@@ -2503,6 +2639,12 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 11890128cd43ce146a0b2d796c1216ac, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uAE38 \uB514\uB524\uB3CC"
+  Spongebob: 0
+  Pineapple: 16
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &1727958735020298908
 GameObject:
   m_ObjectHideFlags: 0
@@ -2616,6 +2758,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: b9e9459bc2aa03646af091104a4d23f6, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uD310"
+  Spongebob: 0
+  Pineapple: 2
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &1807836211472341425
 GameObject:
   m_ObjectHideFlags: 0
@@ -2729,6 +2878,12 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: a799a02ed17a3e7428c159a82f1b132b, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uCC28\uACE0 \uBB38 \uBCBD\uAC10"
+  Spongebob: 0
+  Pineapple: 11
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &1824349422075942369
 GameObject:
   m_ObjectHideFlags: 0
@@ -2842,6 +2997,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 41bd099522188be4b8fd2109ae918f05, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uC544\uB798\uCABD \uD310"
+  Spongebob: 0
+  Pineapple: 3
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &1853204166187590979
 GameObject:
   m_ObjectHideFlags: 0
@@ -2955,6 +3117,12 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: f2dac905c602742499e0b6bed1fe12a1, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uAE38 \uB514\uB524\uB3CC"
+  Spongebob: 0
+  Pineapple: 16
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &1892005148224426585
 GameObject:
   m_ObjectHideFlags: 0
@@ -3068,6 +3236,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 33b0c85d9f27add47ab1f0fc264fc628, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uD310"
+  Spongebob: 0
+  Pineapple: 2
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &1902926123171331768
 GameObject:
   m_ObjectHideFlags: 0
@@ -3181,6 +3356,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 9bb29edb60fdb18418200081edf76a8f, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uC704\uCABD \uD310"
+  Spongebob: 0
+  Pineapple: 4
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &1958193143793083980
 GameObject:
   m_ObjectHideFlags: 0
@@ -3294,6 +3476,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: dc0cf957b1205fd4f8af1f83c5a3f164, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uC544\uB798\uCABD \uD310"
+  Spongebob: 0
+  Pineapple: 3
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &2004668783114559347
 GameObject:
   m_ObjectHideFlags: 0
@@ -3407,6 +3596,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 62f2b14dd2b633e4fbd825e934a55d48, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uC78E "
+  Spongebob: 0
+  Pineapple: 1
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &2100705888761535247
 GameObject:
   m_ObjectHideFlags: 0
@@ -3520,6 +3716,12 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: d140c129d7d251d49bc633653331aa33, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uAE38 \uB514\uB524\uB3CC"
+  Spongebob: 0
+  Pineapple: 16
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &2393376790601697981
 GameObject:
   m_ObjectHideFlags: 0
@@ -3633,6 +3835,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 8ab539df34b024349a4decbcfc25645d, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uD310"
+  Spongebob: 0
+  Pineapple: 2
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &2480409705680043636
 GameObject:
   m_ObjectHideFlags: 0
@@ -3746,6 +3955,12 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 3d7e3eed536412b40958268cfa357fff, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uAE38 \uB514\uB524\uB3CC"
+  Spongebob: 0
+  Pineapple: 16
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &2610415971381622981
 GameObject:
   m_ObjectHideFlags: 0
@@ -3859,6 +4074,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 48b82455ed034df429188d4b5e8cee17, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uC544\uB798\uCABD \uD310"
+  Spongebob: 0
+  Pineapple: 3
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &2654952511653008170
 GameObject:
   m_ObjectHideFlags: 0
@@ -3972,6 +4194,12 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 302e6e5ecaee5b94e899d25ee7ab5a4c, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uAE38 \uB514\uB524\uB3CC"
+  Spongebob: 0
+  Pineapple: 16
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &2805010698175894316
 GameObject:
   m_ObjectHideFlags: 0
@@ -4085,6 +4313,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 3ff8fdb14f575b24c8a112617a6e208d, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uC78E "
+  Spongebob: 0
+  Pineapple: 1
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &2891407562619484749
 GameObject:
   m_ObjectHideFlags: 0
@@ -4198,6 +4433,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 792e945afe64a5847864e496917a71c2, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uC704\uCABD \uD310"
+  Spongebob: 0
+  Pineapple: 4
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &2961255630924307024
 GameObject:
   m_ObjectHideFlags: 0
@@ -4311,6 +4553,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 09c1bc2222e9ae649817df46728c7f24, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uC544\uB798\uCABD \uD310"
+  Spongebob: 0
+  Pineapple: 3
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &3142352642416478880
 GameObject:
   m_ObjectHideFlags: 0
@@ -4424,6 +4673,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: efa38f19f36091a4db70512f32b29fbc, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uC78E "
+  Spongebob: 0
+  Pineapple: 1
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &3148377884378888046
 GameObject:
   m_ObjectHideFlags: 0
@@ -4537,6 +4793,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: e536e9a8cd6abd94aa5f133435079400, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uD310"
+  Spongebob: 0
+  Pineapple: 2
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &3297384318527614981
 GameObject:
   m_ObjectHideFlags: 0
@@ -4650,6 +4913,12 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 0db2837fee8d5f44b80ceb2f07fb994f, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uB465\uADFC \uCC3D\uBB38"
+  Spongebob: 0
+  Pineapple: 12
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &3315282728616577553
 GameObject:
   m_ObjectHideFlags: 0
@@ -4763,6 +5032,12 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 71b9546e887ec63409a855a01be6a33d, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uAE38 \uB514\uB524\uB3CC"
+  Spongebob: 0
+  Pineapple: 16
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &3418347880689434059
 GameObject:
   m_ObjectHideFlags: 0
@@ -4876,6 +5151,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: a26c0b99337e62f4893af429a5de017e, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uD310"
+  Spongebob: 0
+  Pineapple: 2
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &3579596808787862035
 GameObject:
   m_ObjectHideFlags: 0
@@ -4989,6 +5271,12 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 7a3f3df1b1334f24a9e91d02db750194, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uCC28\uACE0 \uBB38"
+  Spongebob: 0
+  Pineapple: 10
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &3652629356087024524
 GameObject:
   m_ObjectHideFlags: 0
@@ -5102,6 +5390,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 9dc1e81a3f2ef4a41935e180ee61cbf7, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uC544\uB798\uCABD \uD310"
+  Spongebob: 0
+  Pineapple: 3
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &3736148357011450787
 GameObject:
   m_ObjectHideFlags: 0
@@ -5215,6 +5510,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 6ac865decadbfd34c9a84ab0e06d8ecf, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uC78E "
+  Spongebob: 0
+  Pineapple: 1
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &3783557163341381767
 GameObject:
   m_ObjectHideFlags: 0
@@ -5328,6 +5630,12 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 0fd3cabc2d35b0748979b10618eaadc5, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uC554\uCD08 \uC1A1\uD48D\uAE30"
+  Spongebob: 0
+  Pineapple: 17
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &3828317842816283689
 GameObject:
   m_ObjectHideFlags: 0
@@ -5441,6 +5749,12 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 15f549d173e5ec34482048a68f4c602b, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uAE38 \uB514\uB524\uB3CC"
+  Spongebob: 0
+  Pineapple: 16
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &3960208268415486116
 GameObject:
   m_ObjectHideFlags: 0
@@ -5554,6 +5868,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: fca2954bab3ed7f4fa8866d736d46198, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uD310"
+  Spongebob: 0
+  Pineapple: 2
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &4166412760870327307
 GameObject:
   m_ObjectHideFlags: 0
@@ -5667,6 +5988,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: cd5131e69547e6645a8e71410368e9c9, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uC544\uB798\uCABD \uD310"
+  Spongebob: 0
+  Pineapple: 3
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &4291478669303766940
 GameObject:
   m_ObjectHideFlags: 0
@@ -5780,6 +6108,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 7912c3efec384b44ba36e004e8feacb4, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uB465\uADFC \uCC3D\uBB38
+    \uD2C0"
+  Spongebob: 0
+  Pineapple: 6
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &4398865002801098379
 GameObject:
   m_ObjectHideFlags: 0
@@ -5893,6 +6228,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: a73f400adba891840b636d3f4aa8c76e, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uC78E "
+  Spongebob: 0
+  Pineapple: 1
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &4406728257357693360
 GameObject:
   m_ObjectHideFlags: 0
@@ -6006,6 +6348,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: ed33bd8621f821249b69848615aa055b, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uC544\uB798\uCABD \uD310"
+  Spongebob: 0
+  Pineapple: 3
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &4472369748923214205
 GameObject:
   m_ObjectHideFlags: 0
@@ -6119,6 +6468,12 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 43f9f1c5d68674d48b5c4dc0fda0f578, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uAE38 \uB514\uB524\uB3CC"
+  Spongebob: 0
+  Pineapple: 16
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &4608755308390054403
 GameObject:
   m_ObjectHideFlags: 0
@@ -6232,6 +6587,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: d857a605bd953664db3a07b5f5a93edb, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uD310"
+  Spongebob: 0
+  Pineapple: 2
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &4670270758182260371
 GameObject:
   m_ObjectHideFlags: 0
@@ -6345,6 +6707,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: e2dbc465bb704774b8734017f95d85b2, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uD310"
+  Spongebob: 0
+  Pineapple: 2
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &4771370727987392092
 GameObject:
   m_ObjectHideFlags: 0
@@ -6458,6 +6827,12 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 110bfbcb46c700c4187e3ea439f823ba, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uB465\uADFC \uCC3D\uBB38"
+  Spongebob: 0
+  Pineapple: 12
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &4871071705673727783
 GameObject:
   m_ObjectHideFlags: 0
@@ -6571,6 +6946,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: f223e3cc6635dfe4da525cc53445295b, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uD310"
+  Spongebob: 0
+  Pineapple: 2
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &5079844521599928965
 GameObject:
   m_ObjectHideFlags: 0
@@ -6684,6 +7066,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 542570f45af15fe4b99195a2c524ea14, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uD310"
+  Spongebob: 0
+  Pineapple: 2
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &5292933561734117836
 GameObject:
   m_ObjectHideFlags: 0
@@ -6797,6 +7186,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: f619bf19f08589743acc3fa49e991a7f, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uD310"
+  Spongebob: 0
+  Pineapple: 2
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &5457439279312054931
 GameObject:
   m_ObjectHideFlags: 0
@@ -6910,6 +7306,12 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 26d92e46d0abf9048b19c900bd758783, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uAE38 \uB514\uB524\uB3CC"
+  Spongebob: 0
+  Pineapple: 16
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &5570061827187359639
 GameObject:
   m_ObjectHideFlags: 0
@@ -7023,6 +7425,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: af28a4cb78cb0c3489260da46e542d17, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uC78E "
+  Spongebob: 0
+  Pineapple: 1
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &5752139922989707239
 GameObject:
   m_ObjectHideFlags: 0
@@ -7136,6 +7545,12 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 7c60b9b60ce2800418a89d3e84548f06, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uC0C1\uC0C1\uB825 \uC0C1\uC790"
+  Spongebob: 0
+  Pineapple: 14
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &5819585223923287895
 GameObject:
   m_ObjectHideFlags: 0
@@ -7249,6 +7664,12 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: abc8c9c5cc694074784d204a85269882, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uC815\uBB38 \uC190\uC7A1\uC774"
+  Spongebob: 0
+  Pineapple: 9
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &5851648900916388328
 GameObject:
   m_ObjectHideFlags: 0
@@ -7362,6 +7783,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 4d7ea7351cd9fdf4b9d22d65d588288e, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uC78E "
+  Spongebob: 0
+  Pineapple: 1
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &5927891670707299437
 GameObject:
   m_ObjectHideFlags: 0
@@ -7475,6 +7903,12 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 34aee5dc97b9b4a4ca083314bfd612b0, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uC815\uBB38 \uD2C0"
+  Spongebob: 0
+  Pineapple: 8
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &5934185722572748389
 GameObject:
   m_ObjectHideFlags: 0
@@ -7588,6 +8022,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: d1a538b4b53de6c46ae5f4b1647b286b, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uD310"
+  Spongebob: 0
+  Pineapple: 2
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &6035205611008977164
 GameObject:
   m_ObjectHideFlags: 0
@@ -7701,6 +8142,12 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 8f3f931936a7e264eb4527329cf93858, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uAE38 \uB514\uB524\uB3CC"
+  Spongebob: 0
+  Pineapple: 16
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &6294209673492831288
 GameObject:
   m_ObjectHideFlags: 0
@@ -7814,6 +8261,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: d4ae2629383f5bb48b3052080da10a2c, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uB465\uADFC \uCC3D\uBB38
+    \uD2C0"
+  Spongebob: 0
+  Pineapple: 6
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &6395778008433495713
 GameObject:
   m_ObjectHideFlags: 0
@@ -7927,6 +8381,12 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 82af9ba8d341bf74cb65a510e4470441, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uAE38 \uB514\uB524\uB3CC"
+  Spongebob: 0
+  Pineapple: 16
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &6454051678012713995
 GameObject:
   m_ObjectHideFlags: 0
@@ -8040,6 +8500,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 0fead2d09195c954c85d301bc39c9413, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uD310"
+  Spongebob: 0
+  Pineapple: 2
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &6562427206099769655
 GameObject:
   m_ObjectHideFlags: 0
@@ -8153,6 +8620,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 7c1c2436e9f7b454d9e106ce2f35420a, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uD310"
+  Spongebob: 0
+  Pineapple: 2
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &6639849693421934979
 GameObject:
   m_ObjectHideFlags: 0
@@ -8266,6 +8740,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 54cc2fb70ddc18c439afb92e962f179e, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uC78E "
+  Spongebob: 0
+  Pineapple: 1
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &6801914193572254202
 GameObject:
   m_ObjectHideFlags: 0
@@ -8379,6 +8860,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: b8dcc1d9892602448ad45a39d4dfdbe1, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uD310"
+  Spongebob: 0
+  Pineapple: 2
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &6812959799827732981
 GameObject:
   m_ObjectHideFlags: 0
@@ -8492,6 +8980,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 870e4548e67e22641a5d30915f7b4278, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uD310"
+  Spongebob: 0
+  Pineapple: 2
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &6838624515605542574
 GameObject:
   m_ObjectHideFlags: 0
@@ -8605,6 +9100,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 6dfe686582b50534f9deda48a3bc8414, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uD310"
+  Spongebob: 0
+  Pineapple: 2
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &6838871572295043988
 GameObject:
   m_ObjectHideFlags: 0
@@ -8718,6 +9220,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 7b3c9ff3c35598a41881e6a3d6056e02, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uD310"
+  Spongebob: 0
+  Pineapple: 2
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &6876416424613413810
 GameObject:
   m_ObjectHideFlags: 0
@@ -8831,6 +9340,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 40dc9ed9ddef21946ba0c5e1604d0f44, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uC704\uCABD \uD310"
+  Spongebob: 0
+  Pineapple: 4
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &7047098338221350955
 GameObject:
   m_ObjectHideFlags: 0
@@ -8944,6 +9460,12 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 76c6b7f5eb340c24f845b8184248133e, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uC815\uBB38"
+  Spongebob: 0
+  Pineapple: 7
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &7066636996523223441
 GameObject:
   m_ObjectHideFlags: 0
@@ -9057,6 +9579,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 6071b64998083c0499e6e36dceaf49ca, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uC544\uB798\uCABD \uD310"
+  Spongebob: 0
+  Pineapple: 3
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &7173469436961857833
 GameObject:
   m_ObjectHideFlags: 0
@@ -9170,6 +9699,12 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: aba912d24e7495c4d869463a76a78de6, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uAE38 \uB514\uB524\uB3CC"
+  Spongebob: 0
+  Pineapple: 16
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &7434965233093364800
 GameObject:
   m_ObjectHideFlags: 0
@@ -9283,6 +9818,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 134e2fcd36dd02d489ed69ed1ff0c024, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uAF41\uB2E4\uB9AC"
+  Spongebob: 0
+  Pineapple: 5
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &7507861747644503243
 GameObject:
   m_ObjectHideFlags: 0
@@ -9396,6 +9938,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: dd520f27cd052834cb7a68b6ed7049be, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uD310"
+  Spongebob: 0
+  Pineapple: 2
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &7583183429837841410
 GameObject:
   m_ObjectHideFlags: 0
@@ -9509,6 +10058,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 84ccca1cae1df6149b3987fa095188a3, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uC704\uCABD \uD310"
+  Spongebob: 0
+  Pineapple: 4
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &7627385699808313475
 GameObject:
   m_ObjectHideFlags: 0
@@ -9622,6 +10178,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: d65af32c7df0d5841b5d8e8d2cdb1244, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uC554\uCD08 \uC1A1\uD48D\uAE30
+    \uB178\uC990"
+  Spongebob: 0
+  Pineapple: 18
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &7857108736961425686
 GameObject:
   m_ObjectHideFlags: 0
@@ -9735,6 +10298,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 26590941b77a29641ab6404407f5dbb9, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uD310"
+  Spongebob: 0
+  Pineapple: 2
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &8000136739101481497
 GameObject:
   m_ObjectHideFlags: 0
@@ -9848,6 +10418,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: fd56ab1bd5a7b554d8704834743f7bcb, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uD310"
+  Spongebob: 0
+  Pineapple: 2
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &8452260084739161621
 GameObject:
   m_ObjectHideFlags: 0
@@ -9961,6 +10538,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 73be50ed60e43a74682ccfda23d8cbe2, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uD310"
+  Spongebob: 0
+  Pineapple: 2
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &8480133928265594809
 GameObject:
   m_ObjectHideFlags: 0
@@ -10074,6 +10658,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 66384e715fcbd9946af447aff4f51818, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uD310"
+  Spongebob: 0
+  Pineapple: 2
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &8493306771573729337
 GameObject:
   m_ObjectHideFlags: 0
@@ -10187,6 +10778,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 9b46d8d8d3f96374bbf3ccbbbec6c382, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uD310"
+  Spongebob: 0
+  Pineapple: 2
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &8525795038170334935
 GameObject:
   m_ObjectHideFlags: 0
@@ -10300,6 +10898,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: ab8e96647550d694c9b5dd5760e65560, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uD310"
+  Spongebob: 0
+  Pineapple: 2
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &8648990249744097840
 GameObject:
   m_ObjectHideFlags: 0
@@ -10413,6 +11018,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: a35cd9700d007c045939b2fba1d0d4fe, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uD310"
+  Spongebob: 0
+  Pineapple: 2
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &8695250875101441344
 GameObject:
   m_ObjectHideFlags: 0
@@ -10526,6 +11138,12 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 255d4bea185d683409fc630505da150c, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uAE38 \uB514\uB524\uB3CC"
+  Spongebob: 0
+  Pineapple: 16
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &8695481819264223544
 GameObject:
   m_ObjectHideFlags: 0
@@ -10639,6 +11257,12 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 46954dad64d74c34f8f6b9df8a586a19, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uB465\uADFC \uCC3D\uBB38"
+  Spongebob: 0
+  Pineapple: 12
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &8697188293332108219
 GameObject:
   m_ObjectHideFlags: 0
@@ -10752,6 +11376,12 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 56e3e9e2ba1edc94aaee65797364c37e, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uAE38 \uB514\uB524\uB3CC"
+  Spongebob: 0
+  Pineapple: 16
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &8777187729127608053
 GameObject:
   m_ObjectHideFlags: 0
@@ -10865,6 +11495,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 85bacbd77e795ab4ca8eb42da8c5747b, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uC704\uCABD \uD310"
+  Spongebob: 0
+  Pineapple: 4
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &8815724675221973121
 GameObject:
   m_ObjectHideFlags: 0
@@ -10978,6 +11615,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 526bb7251cd2df9448720def477fc6e2, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uC704\uCABD \uD310"
+  Spongebob: 0
+  Pineapple: 4
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &9052736582863100957
 GameObject:
   m_ObjectHideFlags: 0
@@ -11091,6 +11735,12 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 5a1c5b78eddd052488a59417c97cf76d, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uAE38 \uB514\uB524\uB3CC"
+  Spongebob: 0
+  Pineapple: 16
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &9091798004134880089
 GameObject:
   m_ObjectHideFlags: 0
@@ -11204,6 +11854,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 690ac800c37061540bd20997dbeb468c, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uD310"
+  Spongebob: 0
+  Pineapple: 2
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &9101885134905353861
 GameObject:
   m_ObjectHideFlags: 0
@@ -11317,6 +11974,13 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 3f9d3d964a47c0c45b3532cecb891529, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uD310"
+  Spongebob: 0
+  Pineapple: 2
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0
 --- !u!1 &9204539981771381591
 GameObject:
   m_ObjectHideFlags: 0
@@ -11430,3 +12094,10 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 2ebcd397ebf8de649a102cdf44f5cca0, type: 3}
+  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
+    \uD310"
+  Spongebob: 0
+  Pineapple: 2
+  Patrick: 0
+  Squidward: 0
+  KrustyKrab: 0

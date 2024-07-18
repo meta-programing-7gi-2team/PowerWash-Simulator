@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 public class CleanDraw : MonoBehaviour, IObserver
 {
     private MaterialPropertyBlock TextureBlock
@@ -54,6 +55,13 @@ public class CleanDraw : MonoBehaviour, IObserver
     private int curCount;
     private float initColorRatio;
     public float ColorRatio { get; private set; }
+
+    public EnumObject.Spongebob Spongebob;
+    public EnumObject.Pineapple Pineapple;
+    public EnumObject.Patrick Patrick;
+    public EnumObject.Squidward Squidward;
+    public EnumObject.KrustyKrab KrustyKrab;
+
 
     //private void OnEnable()
     private void Start()
