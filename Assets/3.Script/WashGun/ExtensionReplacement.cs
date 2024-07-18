@@ -28,28 +28,28 @@ public class ExtensionReplacement : MonoBehaviour
             Extension[currentIndex].SetActive(false);
             currentIndex = 0;
             Extension[currentIndex].SetActive(true);
-            washGun.SetBlockRange(1.1f);
+            washGun.SetBlockRange(0.6f);
         }
         else if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             Extension[currentIndex].SetActive(false);
             currentIndex = 1;
             Extension[currentIndex].SetActive(true);
-            washGun.SetBlockRange(1.5f);
+            washGun.SetBlockRange(0.8f);
         }
         else if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             Extension[currentIndex].SetActive(false);
             currentIndex = 2;
             Extension[currentIndex].SetActive(true);
-            washGun.SetBlockRange(2.05f);
+            washGun.SetBlockRange(1f);
         }
         else if (Input.GetKeyDown(KeyCode.Alpha4))
         {
             Extension[currentIndex].SetActive(false);
             currentIndex = 3;
             Extension[currentIndex].SetActive(true);
-            washGun.SetBlockRange(2.8f);
+            washGun.SetBlockRange(1.4f);
         }
     }
     public void SetNozzlePivot()

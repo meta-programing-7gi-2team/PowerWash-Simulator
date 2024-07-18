@@ -12,10 +12,9 @@ public class WashGunControl : MonoBehaviour
     private PlayerState playerState;
     private Crosshair crosshair;
 
-    [SerializeField] private float shotRange = 4f;
-    [SerializeField] private float blockRange;
-    [SerializeField] private LayerMask playerLayer;
-
+    private LayerMask layers;
+    [SerializeField]
+    private float blockRange;
     private bool isAuto = false;
 
 
@@ -26,8 +25,10 @@ public class WashGunControl : MonoBehaviour
         anim = GetComponent<Animator>();
         playerState = FindObjectOfType<PlayerState>();
         crosshair = FindObjectOfType<Crosshair>();
+        layers = (1 << LayerMask.NameToLayer("Pack")) + (1 << LayerMask.NameToLayer("Player"));
+        blockRange = 0.6f;
         NozzleChange();
-        SetBlockRange(1.1f);
+        
     }
     private void NozzleChange()
     {
@@ -71,7 +72,7 @@ public class WashGunControl : MonoBehaviour
     }
     private bool BlockCheck()
     {
-        if (Physics.Raycast(playerCamera.position, playerCamera.forward, blockRange, ~playerLayer))
+        if (Physics.Raycast(playerCamera.position, playerCamera.forward, blockRange, ~layers))
         {
             anim.SetBool("Await", true);
             water.SetActive(false);
