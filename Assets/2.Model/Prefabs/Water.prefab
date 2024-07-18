@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1086949806617766607}
   m_Layer: 0
-  m_Name: RainEffect
+  m_Name: Water
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
