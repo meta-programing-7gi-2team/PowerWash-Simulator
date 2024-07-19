@@ -62,11 +62,13 @@ public class NozzleControl : MonoBehaviour
         {
             nozzle[cur].GetComponent<Animator>().SetTrigger("Right");
             crosshair.GetComponent<Animator>().SetTrigger("Right");
+            crosshair.transform.localRotation = Quaternion.Euler(Vector3.zero);
         }
         else
         {
             nozzle[cur].GetComponent<Animator>().SetTrigger("Left");
             crosshair.GetComponent<Animator>().SetTrigger("Left");
+            crosshair.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, 90f));
         }
         for (int i = 0; i < 4; i++)
         {
@@ -74,12 +76,10 @@ public class NozzleControl : MonoBehaviour
             if(nozzle[i].transform.localRotation.z > 0f)
             {
                 nozzle[i].transform.localRotation = Quaternion.Euler(Vector3.zero);
-                crosshair.transform.localRotation = Quaternion.Euler(Vector3.zero);
             }
             else
             {
                 nozzle[i].transform.localRotation = Quaternion.Euler(new Vector3(0, 0, 90f));
-                crosshair.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, 90f));
             }
         }
     }
