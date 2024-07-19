@@ -34,9 +34,4 @@ public class Stream : MonoBehaviour
             Debug.DrawRay(transform.position, transform.forward * shotRange, Color.red);
         }
     }
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawRay(transform.position, transform.forward * shotRange);
-    }
 }

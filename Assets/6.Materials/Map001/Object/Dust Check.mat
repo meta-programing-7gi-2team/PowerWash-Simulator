@@ -49,7 +49,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats: []
     m_Colors:
-    - _Color: {r: 0.7, g: 0.7, b: 0.7, a: 0}
+    - _Color: {r: 1, g: 0.5179002, b: 0, a: 0}
     - _DustTileling: {r: 1, g: 1, b: 0, a: 0}
     - _MainTileling: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
