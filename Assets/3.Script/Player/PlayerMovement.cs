@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
 
     private CharacterController cc;
     private PlayerState playerState;
-
+    private Transform playerCamera;
 
     public float speed = 3f;
     private float speedWeight = 1f;
@@ -21,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
     {
         cc = GetComponent<CharacterController>();
         playerState = FindObjectOfType<PlayerState>();
-
+        playerCamera = Camera.main.transform;
     }
     private void Update()
     {
@@ -87,19 +87,17 @@ public class PlayerMovement : MonoBehaviour
         switch (playerState.state)
         {
             case State.Idle:
-                cc.height = 2.0f;
+                playerCamera.localPosition = new Vector3(0, 1f, 0);
                 break;
             case State.Crouch:
-                cc.height = 1.4f;
+                playerCamera.localPosition = new Vector3(0, 0.1f, 0);
                 break;
             case State.Lie:
-                cc.height = 1.0f;
+                playerCamera.localPosition = new Vector3(0, -0.5f, 0);
                 break;
             case State.Run:
-                cc.height = 2.0f;
-                break;
             case State.Hand:
-                cc.height = 2.0f;
+                playerCamera.localPosition = new Vector3(0, 1f, 0);
                 break;
         }
     }
