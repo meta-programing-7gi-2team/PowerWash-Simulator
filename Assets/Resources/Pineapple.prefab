@@ -145,7 +145,7 @@ GameObject:
   - component: {fileID: 77304774889396798}
   m_Layer: 10
   m_Name: SB-PineapplePanel_2_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -243,8 +243,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: ef3467a102714fe4da577cad4a946539, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uD310"
   Spongebob: 0
   Pineapple: 2
   Patrick: 0
@@ -265,7 +263,7 @@ GameObject:
   - component: {fileID: 77304773526802587}
   m_Layer: 10
   m_Name: SB-PineapplePanel_10_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -363,8 +361,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 2187258fff4325946b49a09026ba0a6c, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uD310"
   Spongebob: 0
   Pineapple: 2
   Patrick: 0
@@ -385,7 +381,7 @@ GameObject:
   - component: {fileID: 77304774247817499}
   m_Layer: 10
   m_Name: SB-PathSteppingStone_7_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -483,7 +479,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 14e1d492525bcc04d859e06d0773e4ad, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uAE38 \uB514\uB524\uB3CC"
   Spongebob: 0
   Pineapple: 16
   Patrick: 0
@@ -504,7 +499,7 @@ GameObject:
   - component: {fileID: 77304773442321962}
   m_Layer: 10
   m_Name: SB-Path_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -602,7 +597,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: b61cb78dd0376494ab9818800adfd1f3, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uAE38"
   Spongebob: 0
   Pineapple: 15
   Patrick: 0
@@ -623,7 +617,7 @@ GameObject:
   - component: {fileID: 77304773500708480}
   m_Layer: 10
   m_Name: SB-PineapplePanel_38_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -721,8 +715,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 0b2c0336fb35e6b459b9be6bf4d6999f, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uD310"
   Spongebob: 0
   Pineapple: 2
   Patrick: 0
@@ -743,7 +735,7 @@ GameObject:
   - component: {fileID: 77304774775740604}
   m_Layer: 10
   m_Name: SB-PineapplePanelTop_6_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -841,8 +833,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: da44fe56b0e568342aa6dbefb7c2ac25, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uC704\uCABD \uD310"
   Spongebob: 0
   Pineapple: 4
   Patrick: 0
@@ -863,7 +853,7 @@ GameObject:
   - component: {fileID: 77304773559499751}
   m_Layer: 10
   m_Name: SB-PineapplePanel_22_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -961,8 +951,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 1f53416b83e08504b897235312f35707, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uD310"
   Spongebob: 0
   Pineapple: 2
   Patrick: 0
@@ -983,7 +971,7 @@ GameObject:
   - component: {fileID: 77304772787682235}
   m_Layer: 10
   m_Name: SB-PineapplePanel_15_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1081,8 +1069,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: aa79806db58783746ab26c522fbcf849, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uD310"
   Spongebob: 0
   Pineapple: 2
   Patrick: 0
@@ -1103,7 +1089,7 @@ GameObject:
   - component: {fileID: 77304773398321574}
   m_Layer: 10
   m_Name: SB-PineappleLeaf_8_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1201,8 +1187,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: c4bb45b4e8e945f4385a669bf99a508c, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uC78E "
   Spongebob: 0
   Pineapple: 1
   Patrick: 0
@@ -1223,7 +1207,7 @@ GameObject:
   - component: {fileID: 77304773895107613}
   m_Layer: 10
   m_Name: SB-PineapplePanel_27_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1321,8 +1305,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 8c834bd4c0045f548a5f081dae8a733d, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uD310"
   Spongebob: 0
   Pineapple: 2
   Patrick: 0
@@ -1343,7 +1325,7 @@ GameObject:
   - component: {fileID: 77304772897308235}
   m_Layer: 10
   m_Name: SB-PineappleLeaf_9_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1441,8 +1423,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: f87d03eb2c98cc641b04fdcb6be81c36, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uC78E "
   Spongebob: 0
   Pineapple: 1
   Patrick: 0
@@ -1463,7 +1443,7 @@ GameObject:
   - component: {fileID: 77304773696045193}
   m_Layer: 10
   m_Name: SB-Chimney_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1561,7 +1541,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 6e96c3087572a004ca53004acdebd315, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uAD74\uB69D"
   Spongebob: 0
   Pineapple: 13
   Patrick: 0
@@ -1582,7 +1561,7 @@ GameObject:
   - component: {fileID: 77304774296477725}
   m_Layer: 10
   m_Name: SB-PineapplePanelTop_2_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1680,8 +1659,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 22544c543a0b79d429464a48e22f940f, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uC704\uCABD \uD310"
   Spongebob: 0
   Pineapple: 4
   Patrick: 0
@@ -1702,7 +1679,7 @@ GameObject:
   - component: {fileID: 77304773756352529}
   m_Layer: 10
   m_Name: SB-PineapplePanel_17_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1800,8 +1777,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 67701ae966e483842a0f6efdcf6bd797, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uD310"
   Spongebob: 0
   Pineapple: 2
   Patrick: 0
@@ -1822,7 +1797,7 @@ GameObject:
   - component: {fileID: 77304773458025739}
   m_Layer: 10
   m_Name: SB-PathSteppingStone_2_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1920,7 +1895,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 5696408afcf31a74ca90efd446b940b7, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uAE38 \uB514\uB524\uB3CC"
   Spongebob: 0
   Pineapple: 16
   Patrick: 0
@@ -1941,7 +1915,7 @@ GameObject:
   - component: {fileID: 77304773789822900}
   m_Layer: 10
   m_Name: SB-PineapplePanel_3_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2039,8 +2013,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: e7fdd49dc67b1104db83e8ea27a77ba2, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uD310"
   Spongebob: 0
   Pineapple: 2
   Patrick: 0
@@ -2061,7 +2033,7 @@ GameObject:
   - component: {fileID: 77304774892475997}
   m_Layer: 10
   m_Name: SB-PineapplePanel_20_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2159,8 +2131,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 3b95b607e2f550e428cbf6d346908bfa, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uD310"
   Spongebob: 0
   Pineapple: 2
   Patrick: 0
@@ -2181,7 +2151,7 @@ GameObject:
   - component: {fileID: 77304773954972597}
   m_Layer: 10
   m_Name: SB-PortholeFrame_1_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2279,8 +2249,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: c3aee34e7bb144b4198d175595d40cd8, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uB465\uADFC \uCC3D\uBB38
-    \uD2C0"
   Spongebob: 0
   Pineapple: 6
   Patrick: 0
@@ -2301,7 +2269,7 @@ GameObject:
   - component: {fileID: 77304773489818635}
   m_Layer: 10
   m_Name: SB-PineapplePanel_37_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2399,8 +2367,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 6bfb04bebf759fd499cabb3a67047eb5, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uD310"
   Spongebob: 0
   Pineapple: 2
   Patrick: 0
@@ -2421,7 +2387,7 @@ GameObject:
   - component: {fileID: 77304773422841197}
   m_Layer: 10
   m_Name: SB-PineapplePanel_4_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2519,8 +2485,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 7c594799cede1e346a9a8ff365a719e0, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uD310"
   Spongebob: 0
   Pineapple: 2
   Patrick: 0
@@ -2541,7 +2505,7 @@ GameObject:
   - component: {fileID: 77304774495385515}
   m_Layer: 10
   m_Name: SB-PathSteppingStone_4_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2639,7 +2603,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 11890128cd43ce146a0b2d796c1216ac, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uAE38 \uB514\uB524\uB3CC"
   Spongebob: 0
   Pineapple: 16
   Patrick: 0
@@ -2660,7 +2623,7 @@ GameObject:
   - component: {fileID: 77304773844775621}
   m_Layer: 10
   m_Name: SB-PineapplePanel_7_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2758,8 +2721,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: b9e9459bc2aa03646af091104a4d23f6, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uD310"
   Spongebob: 0
   Pineapple: 2
   Patrick: 0
@@ -2780,7 +2741,7 @@ GameObject:
   - component: {fileID: 77304774214975571}
   m_Layer: 10
   m_Name: SB-GarageDoorAlcove_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2878,7 +2839,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: a799a02ed17a3e7428c159a82f1b132b, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uCC28\uACE0 \uBB38 \uBCBD\uAC10"
   Spongebob: 0
   Pineapple: 11
   Patrick: 0
@@ -2899,7 +2859,7 @@ GameObject:
   - component: {fileID: 77304773845514181}
   m_Layer: 10
   m_Name: SB-PineapplePanelBottom_4_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2997,8 +2957,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 41bd099522188be4b8fd2109ae918f05, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uC544\uB798\uCABD \uD310"
   Spongebob: 0
   Pineapple: 3
   Patrick: 0
@@ -3019,7 +2977,7 @@ GameObject:
   - component: {fileID: 77304773933864900}
   m_Layer: 10
   m_Name: SB-PathSteppingStone_5_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3117,7 +3075,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: f2dac905c602742499e0b6bed1fe12a1, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uAE38 \uB514\uB524\uB3CC"
   Spongebob: 0
   Pineapple: 16
   Patrick: 0
@@ -3138,7 +3095,7 @@ GameObject:
   - component: {fileID: 77304774720082744}
   m_Layer: 10
   m_Name: SB-PineapplePanel_30_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3236,8 +3193,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 33b0c85d9f27add47ab1f0fc264fc628, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uD310"
   Spongebob: 0
   Pineapple: 2
   Patrick: 0
@@ -3258,7 +3213,7 @@ GameObject:
   - component: {fileID: 77304772936672806}
   m_Layer: 10
   m_Name: SB-PineapplePanelTop_4_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3356,8 +3311,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 9bb29edb60fdb18418200081edf76a8f, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uC704\uCABD \uD310"
   Spongebob: 0
   Pineapple: 4
   Patrick: 0
@@ -3378,7 +3331,7 @@ GameObject:
   - component: {fileID: 77304774576777261}
   m_Layer: 10
   m_Name: SB-PineapplePanelBottom_3_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3476,8 +3429,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: dc0cf957b1205fd4f8af1f83c5a3f164, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uC544\uB798\uCABD \uD310"
   Spongebob: 0
   Pineapple: 3
   Patrick: 0
@@ -3498,7 +3449,7 @@ GameObject:
   - component: {fileID: 77304773203636614}
   m_Layer: 10
   m_Name: SB-PineappleLeaf_3_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3596,8 +3547,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 62f2b14dd2b633e4fbd825e934a55d48, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uC78E "
   Spongebob: 0
   Pineapple: 1
   Patrick: 0
@@ -3618,7 +3567,7 @@ GameObject:
   - component: {fileID: 77304772805694588}
   m_Layer: 10
   m_Name: SB-PathSteppingStone_6_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3716,7 +3665,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: d140c129d7d251d49bc633653331aa33, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uAE38 \uB514\uB524\uB3CC"
   Spongebob: 0
   Pineapple: 16
   Patrick: 0
@@ -3737,7 +3685,7 @@ GameObject:
   - component: {fileID: 77304773978663448}
   m_Layer: 10
   m_Name: SB-PineapplePanel_31_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3835,8 +3783,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 8ab539df34b024349a4decbcfc25645d, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uD310"
   Spongebob: 0
   Pineapple: 2
   Patrick: 0
@@ -3857,7 +3803,7 @@ GameObject:
   - component: {fileID: 77304773970797213}
   m_Layer: 10
   m_Name: SB-PathSteppingStone_8_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3955,7 +3901,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 3d7e3eed536412b40958268cfa357fff, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uAE38 \uB514\uB524\uB3CC"
   Spongebob: 0
   Pineapple: 16
   Patrick: 0
@@ -3976,7 +3921,7 @@ GameObject:
   - component: {fileID: 77304774488835788}
   m_Layer: 10
   m_Name: SB-PineapplePanelBottom_2_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4074,8 +4019,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 48b82455ed034df429188d4b5e8cee17, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uC544\uB798\uCABD \uD310"
   Spongebob: 0
   Pineapple: 3
   Patrick: 0
@@ -4096,7 +4039,7 @@ GameObject:
   - component: {fileID: 77304773875309319}
   m_Layer: 10
   m_Name: SB-PathSteppingStone_11_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4194,7 +4137,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 302e6e5ecaee5b94e899d25ee7ab5a4c, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uAE38 \uB514\uB524\uB3CC"
   Spongebob: 0
   Pineapple: 16
   Patrick: 0
@@ -4215,7 +4157,7 @@ GameObject:
   - component: {fileID: 77304773863195561}
   m_Layer: 10
   m_Name: SB-PineappleLeaf_7_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4313,8 +4255,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 3ff8fdb14f575b24c8a112617a6e208d, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uC78E "
   Spongebob: 0
   Pineapple: 1
   Patrick: 0
@@ -4335,7 +4275,7 @@ GameObject:
   - component: {fileID: 77304773067561762}
   m_Layer: 10
   m_Name: SB-PineapplePanelTop_0_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4433,8 +4373,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 792e945afe64a5847864e496917a71c2, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uC704\uCABD \uD310"
   Spongebob: 0
   Pineapple: 4
   Patrick: 0
@@ -4455,7 +4393,7 @@ GameObject:
   - component: {fileID: 77304774190243245}
   m_Layer: 10
   m_Name: SB-PineapplePanelBottom_5_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4553,8 +4491,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 09c1bc2222e9ae649817df46728c7f24, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uC544\uB798\uCABD \uD310"
   Spongebob: 0
   Pineapple: 3
   Patrick: 0
@@ -4575,7 +4511,7 @@ GameObject:
   - component: {fileID: 77304774481179579}
   m_Layer: 10
   m_Name: SB-PineappleLeaf_2_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4673,8 +4609,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: efa38f19f36091a4db70512f32b29fbc, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uC78E "
   Spongebob: 0
   Pineapple: 1
   Patrick: 0
@@ -4695,7 +4629,7 @@ GameObject:
   - component: {fileID: 77304774059426509}
   m_Layer: 10
   m_Name: SB-PineapplePanel_23_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4793,8 +4727,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: e536e9a8cd6abd94aa5f133435079400, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uD310"
   Spongebob: 0
   Pineapple: 2
   Patrick: 0
@@ -4815,7 +4747,7 @@ GameObject:
   - component: {fileID: 77304774053136673}
   m_Layer: 10
   m_Name: SB-PortholeWindow_0_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4913,7 +4845,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 0db2837fee8d5f44b80ceb2f07fb994f, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uB465\uADFC \uCC3D\uBB38"
   Spongebob: 0
   Pineapple: 12
   Patrick: 0
@@ -4934,7 +4865,7 @@ GameObject:
   - component: {fileID: 77304774741543374}
   m_Layer: 10
   m_Name: SB-PathSteppingStone_3_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5032,7 +4963,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 71b9546e887ec63409a855a01be6a33d, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uAE38 \uB514\uB524\uB3CC"
   Spongebob: 0
   Pineapple: 16
   Patrick: 0
@@ -5053,7 +4983,7 @@ GameObject:
   - component: {fileID: 77304774454435192}
   m_Layer: 10
   m_Name: SB-PineapplePanel_16_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5151,8 +5081,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: a26c0b99337e62f4893af429a5de017e, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uD310"
   Spongebob: 0
   Pineapple: 2
   Patrick: 0
@@ -5173,7 +5101,7 @@ GameObject:
   - component: {fileID: 77304773399062084}
   m_Layer: 10
   m_Name: SB-GarageDoor_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5271,7 +5199,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 7a3f3df1b1334f24a9e91d02db750194, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uCC28\uACE0 \uBB38"
   Spongebob: 0
   Pineapple: 10
   Patrick: 0
@@ -5292,7 +5219,7 @@ GameObject:
   - component: {fileID: 77304773961593073}
   m_Layer: 10
   m_Name: SB-PineapplePanelBottom_7_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5390,8 +5317,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 9dc1e81a3f2ef4a41935e180ee61cbf7, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uC544\uB798\uCABD \uD310"
   Spongebob: 0
   Pineapple: 3
   Patrick: 0
@@ -5412,7 +5337,7 @@ GameObject:
   - component: {fileID: 77304773786610177}
   m_Layer: 10
   m_Name: SB-PineappleLeaf_1_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5510,8 +5435,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 6ac865decadbfd34c9a84ab0e06d8ecf, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uC78E "
   Spongebob: 0
   Pineapple: 1
   Patrick: 0
@@ -5532,7 +5455,7 @@ GameObject:
   - component: {fileID: 77304773907648377}
   m_Layer: 10
   m_Name: SB-ReefBlower_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5630,7 +5553,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 0fd3cabc2d35b0748979b10618eaadc5, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uC554\uCD08 \uC1A1\uD48D\uAE30"
   Spongebob: 0
   Pineapple: 17
   Patrick: 0
@@ -5651,7 +5573,7 @@ GameObject:
   - component: {fileID: 77304774772994715}
   m_Layer: 10
   m_Name: SB-PathSteppingStone_14_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5749,7 +5671,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 15f549d173e5ec34482048a68f4c602b, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uAE38 \uB514\uB524\uB3CC"
   Spongebob: 0
   Pineapple: 16
   Patrick: 0
@@ -5770,7 +5691,7 @@ GameObject:
   - component: {fileID: 77304774906367855}
   m_Layer: 10
   m_Name: SB-PineapplePanel_28_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5868,8 +5789,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: fca2954bab3ed7f4fa8866d736d46198, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uD310"
   Spongebob: 0
   Pineapple: 2
   Patrick: 0
@@ -5890,7 +5809,7 @@ GameObject:
   - component: {fileID: 77304774813028858}
   m_Layer: 10
   m_Name: SB-PineapplePanelBottom_0_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5988,8 +5907,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: cd5131e69547e6645a8e71410368e9c9, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uC544\uB798\uCABD \uD310"
   Spongebob: 0
   Pineapple: 3
   Patrick: 0
@@ -6010,7 +5927,7 @@ GameObject:
   - component: {fileID: 77304773008414876}
   m_Layer: 10
   m_Name: SB-PortholeFrame_0_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6108,8 +6025,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 7912c3efec384b44ba36e004e8feacb4, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uB465\uADFC \uCC3D\uBB38
-    \uD2C0"
   Spongebob: 0
   Pineapple: 6
   Patrick: 0
@@ -6130,7 +6045,7 @@ GameObject:
   - component: {fileID: 77304773100475033}
   m_Layer: 10
   m_Name: SB-PineappleLeaf_4_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6228,8 +6143,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: a73f400adba891840b636d3f4aa8c76e, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uC78E "
   Spongebob: 0
   Pineapple: 1
   Patrick: 0
@@ -6250,7 +6163,7 @@ GameObject:
   - component: {fileID: 77304773496296515}
   m_Layer: 10
   m_Name: SB-PineapplePanelBottom_1_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6348,8 +6261,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: ed33bd8621f821249b69848615aa055b, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uC544\uB798\uCABD \uD310"
   Spongebob: 0
   Pineapple: 3
   Patrick: 0
@@ -6370,7 +6281,7 @@ GameObject:
   - component: {fileID: 77304774167104311}
   m_Layer: 10
   m_Name: SB-PathSteppingStone_15_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6468,7 +6379,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 43f9f1c5d68674d48b5c4dc0fda0f578, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uAE38 \uB514\uB524\uB3CC"
   Spongebob: 0
   Pineapple: 16
   Patrick: 0
@@ -6489,7 +6399,7 @@ GameObject:
   - component: {fileID: 77304774518494345}
   m_Layer: 10
   m_Name: SB-PineapplePanel_9_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6587,8 +6497,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: d857a605bd953664db3a07b5f5a93edb, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uD310"
   Spongebob: 0
   Pineapple: 2
   Patrick: 0
@@ -6609,7 +6517,7 @@ GameObject:
   - component: {fileID: 77304774563929697}
   m_Layer: 10
   m_Name: SB-PineapplePanel_39_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6707,8 +6615,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: e2dbc465bb704774b8734017f95d85b2, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uD310"
   Spongebob: 0
   Pineapple: 2
   Patrick: 0
@@ -6729,7 +6635,7 @@ GameObject:
   - component: {fileID: 77304774801490105}
   m_Layer: 10
   m_Name: SB-PortholeWindow_1_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6827,7 +6733,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 110bfbcb46c700c4187e3ea439f823ba, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uB465\uADFC \uCC3D\uBB38"
   Spongebob: 0
   Pineapple: 12
   Patrick: 0
@@ -6848,7 +6753,7 @@ GameObject:
   - component: {fileID: 77304774257760191}
   m_Layer: 10
   m_Name: SB-PineapplePanel_13_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6946,8 +6851,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: f223e3cc6635dfe4da525cc53445295b, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uD310"
   Spongebob: 0
   Pineapple: 2
   Patrick: 0
@@ -6968,7 +6871,7 @@ GameObject:
   - component: {fileID: 77304773402844659}
   m_Layer: 10
   m_Name: SB-PineapplePanel_25_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7066,8 +6969,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 542570f45af15fe4b99195a2c524ea14, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uD310"
   Spongebob: 0
   Pineapple: 2
   Patrick: 0
@@ -7088,7 +6989,7 @@ GameObject:
   - component: {fileID: 77304773335976607}
   m_Layer: 10
   m_Name: SB-PineapplePanel_24_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7186,8 +7087,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: f619bf19f08589743acc3fa49e991a7f, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uD310"
   Spongebob: 0
   Pineapple: 2
   Patrick: 0
@@ -7208,7 +7107,7 @@ GameObject:
   - component: {fileID: 77304774851128678}
   m_Layer: 10
   m_Name: SB-PathSteppingStone_0_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7306,7 +7205,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 26d92e46d0abf9048b19c900bd758783, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uAE38 \uB514\uB524\uB3CC"
   Spongebob: 0
   Pineapple: 16
   Patrick: 0
@@ -7327,7 +7225,7 @@ GameObject:
   - component: {fileID: 77304773614540545}
   m_Layer: 10
   m_Name: SB-PineappleLeaf_5_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7425,8 +7323,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: af28a4cb78cb0c3489260da46e542d17, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uC78E "
   Spongebob: 0
   Pineapple: 1
   Patrick: 0
@@ -7447,7 +7343,7 @@ GameObject:
   - component: {fileID: 77304773682536541}
   m_Layer: 10
   m_Name: SB-ImaginationBox_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7545,7 +7441,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 7c60b9b60ce2800418a89d3e84548f06, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uC0C1\uC0C1\uB825 \uC0C1\uC790"
   Spongebob: 0
   Pineapple: 14
   Patrick: 0
@@ -7566,7 +7461,7 @@ GameObject:
   - component: {fileID: 77304773833989871}
   m_Layer: 10
   m_Name: SB-FrontDoorHandle_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7664,7 +7559,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: abc8c9c5cc694074784d204a85269882, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uC815\uBB38 \uC190\uC7A1\uC774"
   Spongebob: 0
   Pineapple: 9
   Patrick: 0
@@ -7685,7 +7579,7 @@ GameObject:
   - component: {fileID: 77304773035088243}
   m_Layer: 10
   m_Name: SB-PineappleLeaf_6_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7783,8 +7677,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 4d7ea7351cd9fdf4b9d22d65d588288e, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uC78E "
   Spongebob: 0
   Pineapple: 1
   Patrick: 0
@@ -7805,7 +7697,7 @@ GameObject:
   - component: {fileID: 77304773854775191}
   m_Layer: 10
   m_Name: SB-FrontDoorFrame_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7903,7 +7795,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 34aee5dc97b9b4a4ca083314bfd612b0, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uC815\uBB38 \uD2C0"
   Spongebob: 0
   Pineapple: 8
   Patrick: 0
@@ -7924,7 +7815,7 @@ GameObject:
   - component: {fileID: 77304772877786266}
   m_Layer: 10
   m_Name: SB-PineapplePanel_26_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8022,8 +7913,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: d1a538b4b53de6c46ae5f4b1647b286b, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uD310"
   Spongebob: 0
   Pineapple: 2
   Patrick: 0
@@ -8044,7 +7933,7 @@ GameObject:
   - component: {fileID: 77304774253217105}
   m_Layer: 10
   m_Name: SB-PathSteppingStone_10_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8142,7 +8031,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 8f3f931936a7e264eb4527329cf93858, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uAE38 \uB514\uB524\uB3CC"
   Spongebob: 0
   Pineapple: 16
   Patrick: 0
@@ -8163,7 +8051,7 @@ GameObject:
   - component: {fileID: 77304774107717287}
   m_Layer: 10
   m_Name: SB-PortholeFrame_2_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8261,8 +8149,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: d4ae2629383f5bb48b3052080da10a2c, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uB465\uADFC \uCC3D\uBB38
-    \uD2C0"
   Spongebob: 0
   Pineapple: 6
   Patrick: 0
@@ -8283,7 +8169,7 @@ GameObject:
   - component: {fileID: 77304773330208617}
   m_Layer: 10
   m_Name: SB-PathSteppingStone_12_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8381,7 +8267,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 82af9ba8d341bf74cb65a510e4470441, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uAE38 \uB514\uB524\uB3CC"
   Spongebob: 0
   Pineapple: 16
   Patrick: 0
@@ -8402,7 +8287,7 @@ GameObject:
   - component: {fileID: 77304773363171583}
   m_Layer: 10
   m_Name: SB-PineapplePanel_0_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8500,8 +8385,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 0fead2d09195c954c85d301bc39c9413, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uD310"
   Spongebob: 0
   Pineapple: 2
   Patrick: 0
@@ -8522,7 +8405,7 @@ GameObject:
   - component: {fileID: 77304773213169752}
   m_Layer: 10
   m_Name: SB-PineapplePanel_19_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8620,8 +8503,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 7c1c2436e9f7b454d9e106ce2f35420a, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uD310"
   Spongebob: 0
   Pineapple: 2
   Patrick: 0
@@ -8642,7 +8523,7 @@ GameObject:
   - component: {fileID: 77304774785080908}
   m_Layer: 10
   m_Name: SB-PineappleLeaf_0_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8740,8 +8621,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 54cc2fb70ddc18c439afb92e962f179e, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uC78E "
   Spongebob: 0
   Pineapple: 1
   Patrick: 0
@@ -8762,7 +8641,7 @@ GameObject:
   - component: {fileID: 77304772974321582}
   m_Layer: 10
   m_Name: SB-PineapplePanel_11_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8860,8 +8739,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: b8dcc1d9892602448ad45a39d4dfdbe1, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uD310"
   Spongebob: 0
   Pineapple: 2
   Patrick: 0
@@ -8882,7 +8759,7 @@ GameObject:
   - component: {fileID: 77304773970617235}
   m_Layer: 10
   m_Name: SB-PineapplePanel_6_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8980,8 +8857,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 870e4548e67e22641a5d30915f7b4278, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uD310"
   Spongebob: 0
   Pineapple: 2
   Patrick: 0
@@ -9002,7 +8877,7 @@ GameObject:
   - component: {fileID: 77304773084816793}
   m_Layer: 10
   m_Name: SB-PineapplePanel_14_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9100,8 +8975,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 6dfe686582b50534f9deda48a3bc8414, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uD310"
   Spongebob: 0
   Pineapple: 2
   Patrick: 0
@@ -9122,7 +8995,7 @@ GameObject:
   - component: {fileID: 77304773191410666}
   m_Layer: 10
   m_Name: SB-PineapplePanel_18_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9220,8 +9093,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 7b3c9ff3c35598a41881e6a3d6056e02, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uD310"
   Spongebob: 0
   Pineapple: 2
   Patrick: 0
@@ -9242,7 +9113,7 @@ GameObject:
   - component: {fileID: 77304773515064510}
   m_Layer: 10
   m_Name: SB-PineapplePanelTop_1_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9340,8 +9211,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 40dc9ed9ddef21946ba0c5e1604d0f44, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uC704\uCABD \uD310"
   Spongebob: 0
   Pineapple: 4
   Patrick: 0
@@ -9362,7 +9231,7 @@ GameObject:
   - component: {fileID: 77304774195421373}
   m_Layer: 10
   m_Name: SB-FrontDoor_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9460,7 +9329,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 76c6b7f5eb340c24f845b8184248133e, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uC815\uBB38"
   Spongebob: 0
   Pineapple: 7
   Patrick: 0
@@ -9481,7 +9349,7 @@ GameObject:
   - component: {fileID: 77304773759049893}
   m_Layer: 10
   m_Name: SB-PineapplePanelBottom_6_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9579,8 +9447,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 6071b64998083c0499e6e36dceaf49ca, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uC544\uB798\uCABD \uD310"
   Spongebob: 0
   Pineapple: 3
   Patrick: 0
@@ -9601,7 +9467,7 @@ GameObject:
   - component: {fileID: 77304774097782574}
   m_Layer: 10
   m_Name: SB-PathSteppingStone_1_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9699,7 +9565,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: aba912d24e7495c4d869463a76a78de6, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uAE38 \uB514\uB524\uB3CC"
   Spongebob: 0
   Pineapple: 16
   Patrick: 0
@@ -9720,7 +9585,7 @@ GameObject:
   - component: {fileID: 77304773323669319}
   m_Layer: 10
   m_Name: SB-PineappleCrown_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9818,8 +9683,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 134e2fcd36dd02d489ed69ed1ff0c024, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uAF41\uB2E4\uB9AC"
   Spongebob: 0
   Pineapple: 5
   Patrick: 0
@@ -9840,7 +9703,7 @@ GameObject:
   - component: {fileID: 77304772810344789}
   m_Layer: 10
   m_Name: SB-PineapplePanel_33_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9938,8 +9801,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: dd520f27cd052834cb7a68b6ed7049be, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uD310"
   Spongebob: 0
   Pineapple: 2
   Patrick: 0
@@ -9960,7 +9821,7 @@ GameObject:
   - component: {fileID: 77304773780693408}
   m_Layer: 10
   m_Name: SB-PineapplePanelTop_7_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10058,8 +9919,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 84ccca1cae1df6149b3987fa095188a3, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uC704\uCABD \uD310"
   Spongebob: 0
   Pineapple: 4
   Patrick: 0
@@ -10080,7 +9939,7 @@ GameObject:
   - component: {fileID: 77304774777002750}
   m_Layer: 10
   m_Name: SB-ReefBlowerNozzle_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10178,8 +10037,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: d65af32c7df0d5841b5d8e8d2cdb1244, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uC554\uCD08 \uC1A1\uD48D\uAE30
-    \uB178\uC990"
   Spongebob: 0
   Pineapple: 18
   Patrick: 0
@@ -10200,7 +10057,7 @@ GameObject:
   - component: {fileID: 77304774714183128}
   m_Layer: 10
   m_Name: SB-PineapplePanel_1_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10298,8 +10155,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 26590941b77a29641ab6404407f5dbb9, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uD310"
   Spongebob: 0
   Pineapple: 2
   Patrick: 0
@@ -10320,7 +10175,7 @@ GameObject:
   - component: {fileID: 77304773927384698}
   m_Layer: 10
   m_Name: SB-PineapplePanel_32_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10418,8 +10273,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: fd56ab1bd5a7b554d8704834743f7bcb, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uD310"
   Spongebob: 0
   Pineapple: 2
   Patrick: 0
@@ -10440,7 +10293,7 @@ GameObject:
   - component: {fileID: 77304773492362928}
   m_Layer: 10
   m_Name: SB-PineapplePanel_5_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10538,8 +10391,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 73be50ed60e43a74682ccfda23d8cbe2, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uD310"
   Spongebob: 0
   Pineapple: 2
   Patrick: 0
@@ -10560,7 +10411,7 @@ GameObject:
   - component: {fileID: 77304773582566489}
   m_Layer: 10
   m_Name: SB-PineapplePanel_12_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10658,8 +10509,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 66384e715fcbd9946af447aff4f51818, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uD310"
   Spongebob: 0
   Pineapple: 2
   Patrick: 0
@@ -10680,7 +10529,7 @@ GameObject:
   - component: {fileID: 77304774827004021}
   m_Layer: 10
   m_Name: SB-PineapplePanel_21_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10778,8 +10627,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 9b46d8d8d3f96374bbf3ccbbbec6c382, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uD310"
   Spongebob: 0
   Pineapple: 2
   Patrick: 0
@@ -10800,7 +10647,7 @@ GameObject:
   - component: {fileID: 77304773048714972}
   m_Layer: 10
   m_Name: SB-PineapplePanel_29_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10898,8 +10745,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: ab8e96647550d694c9b5dd5760e65560, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uD310"
   Spongebob: 0
   Pineapple: 2
   Patrick: 0
@@ -10920,7 +10765,7 @@ GameObject:
   - component: {fileID: 77304774088770462}
   m_Layer: 10
   m_Name: SB-PineapplePanel_34_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11018,8 +10863,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: a35cd9700d007c045939b2fba1d0d4fe, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uD310"
   Spongebob: 0
   Pineapple: 2
   Patrick: 0
@@ -11040,7 +10883,7 @@ GameObject:
   - component: {fileID: 77304773289725744}
   m_Layer: 10
   m_Name: SB-PathSteppingStone_9_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11138,7 +10981,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 255d4bea185d683409fc630505da150c, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uAE38 \uB514\uB524\uB3CC"
   Spongebob: 0
   Pineapple: 16
   Patrick: 0
@@ -11159,7 +11001,7 @@ GameObject:
   - component: {fileID: 77304773625302098}
   m_Layer: 10
   m_Name: SB-PortholeWindow_2_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11257,7 +11099,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 46954dad64d74c34f8f6b9df8a586a19, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uB465\uADFC \uCC3D\uBB38"
   Spongebob: 0
   Pineapple: 12
   Patrick: 0
@@ -11278,7 +11119,7 @@ GameObject:
   - component: {fileID: 77304774044026300}
   m_Layer: 10
   m_Name: SB-PathSteppingStone_13_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11376,7 +11217,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 56e3e9e2ba1edc94aaee65797364c37e, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uAE38 \uB514\uB524\uB3CC"
   Spongebob: 0
   Pineapple: 16
   Patrick: 0
@@ -11397,7 +11237,7 @@ GameObject:
   - component: {fileID: 77304774828378807}
   m_Layer: 10
   m_Name: SB-PineapplePanelTop_3_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11495,8 +11335,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 85bacbd77e795ab4ca8eb42da8c5747b, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uC704\uCABD \uD310"
   Spongebob: 0
   Pineapple: 4
   Patrick: 0
@@ -11517,7 +11355,7 @@ GameObject:
   - component: {fileID: 77304773096736796}
   m_Layer: 10
   m_Name: SB-PineapplePanelTop_5_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11615,8 +11453,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 526bb7251cd2df9448720def477fc6e2, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uC704\uCABD \uD310"
   Spongebob: 0
   Pineapple: 4
   Patrick: 0
@@ -11637,7 +11473,7 @@ GameObject:
   - component: {fileID: 77304773679709563}
   m_Layer: 10
   m_Name: SB-PathSteppingStone_16_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11735,7 +11571,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 5a1c5b78eddd052488a59417c97cf76d, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uAE38 \uB514\uB524\uB3CC"
   Spongebob: 0
   Pineapple: 16
   Patrick: 0
@@ -11756,7 +11591,7 @@ GameObject:
   - component: {fileID: 77304774772260489}
   m_Layer: 10
   m_Name: SB-PineapplePanel_35_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11854,8 +11689,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 690ac800c37061540bd20997dbeb468c, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uD310"
   Spongebob: 0
   Pineapple: 2
   Patrick: 0
@@ -11876,7 +11709,7 @@ GameObject:
   - component: {fileID: 77304773137360136}
   m_Layer: 10
   m_Name: SB-PineapplePanel_8_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11974,8 +11807,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 3f9d3d964a47c0c45b3532cecb891529, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uD310"
   Spongebob: 0
   Pineapple: 2
   Patrick: 0
@@ -11996,7 +11827,7 @@ GameObject:
   - component: {fileID: 77304773405409353}
   m_Layer: 10
   m_Name: SB-PineapplePanel_36_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12094,8 +11925,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 2ebcd397ebf8de649a102cdf44f5cca0, type: 3}
-  ObjectNames: "\uC2A4\uD3F0\uC9C0\uBC25\uC758 \uC9D1 - \uD30C\uC778\uC560\uD50C
-    \uD310"
   Spongebob: 0
   Pineapple: 2
   Patrick: 0

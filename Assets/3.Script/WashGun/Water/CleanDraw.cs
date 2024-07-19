@@ -245,6 +245,7 @@ public class CleanDraw : MonoBehaviour, IObserver
             float colorRatio = CalculateColorRatio(renderMaskTexture) - initColorRatio;
             ColorRatio = (colorRatio * 100.0f) / (1.0f - initColorRatio);
             //Todo: UI텍스트 표시 필요
+            UIManager.instance.AllObjcetList();
         }
         else if(!isCleanCheck)
         {

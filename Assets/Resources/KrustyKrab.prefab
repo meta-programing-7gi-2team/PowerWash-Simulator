@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2293176174006137796}
   m_Layer: 10
   m_Name: KK-SideWallPlank_1_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 5647665525353039781}
   m_Layer: 10
   m_Name: KK-DumpsterOuter_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -251,7 +251,7 @@ GameObject:
   - component: {fileID: 5095248228462061436}
   m_Layer: 10
   m_Name: KK-Nail_4_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -369,7 +369,7 @@ GameObject:
   - component: {fileID: 5997408159188445935}
   m_Layer: 10
   m_Name: KK-RoofPlank_2_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -487,7 +487,7 @@ GameObject:
   - component: {fileID: 5623942569296020421}
   m_Layer: 10
   m_Name: KK-Window_3_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -605,7 +605,7 @@ GameObject:
   - component: {fileID: 7588142807343079477}
   m_Layer: 10
   m_Name: KK-MaritimeFlag_2_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -723,7 +723,7 @@ GameObject:
   - component: {fileID: 4108503045479431120}
   m_Layer: 0
   m_Name: KK-EntranceSignPost_1
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -841,7 +841,7 @@ GameObject:
   - component: {fileID: 1859090274775952570}
   m_Layer: 10
   m_Name: KK-SignLetter_6_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -959,7 +959,7 @@ GameObject:
   - component: {fileID: 575148595303993618}
   m_Layer: 10
   m_Name: KK-SignLetter_1_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1077,7 +1077,7 @@ GameObject:
   - component: {fileID: 2354852680922157223}
   m_Layer: 10
   m_Name: KK-SignLetter_7_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1195,7 +1195,7 @@ GameObject:
   - component: {fileID: 3959696172808281074}
   m_Layer: 10
   m_Name: KK-RoofPlank_0_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1312,7 +1312,7 @@ GameObject:
   - component: {fileID: 8107752535127643019}
   m_Layer: 10
   m_Name: KK-Door_1_1
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1409,7 +1409,7 @@ GameObject:
   - component: {fileID: 3996561120721237788}
   m_Layer: 10
   m_Name: KK-RearWall_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1527,7 +1527,7 @@ GameObject:
   - component: {fileID: 8799635786790021150}
   m_Layer: 10
   m_Name: KK-RoofPlank_4_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1645,7 +1645,7 @@ GameObject:
   - component: {fileID: 1052062561333898741}
   m_Layer: 10
   m_Name: KK-SignLetter_0_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1763,7 +1763,7 @@ GameObject:
   - component: {fileID: 5826395667888072192}
   m_Layer: 10
   m_Name: KK-RearDoor_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1881,7 +1881,7 @@ GameObject:
   - component: {fileID: 6131538461627948848}
   m_Layer: 10
   m_Name: KK-Nail_13_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1999,7 +1999,7 @@ GameObject:
   - component: {fileID: 6635478784747294271}
   m_Layer: 10
   m_Name: KK-Window_0_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2116,7 +2116,7 @@ GameObject:
   - component: {fileID: 1171800813593550215}
   m_Layer: 10
   m_Name: KK-Door_0_1
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2213,7 +2213,7 @@ GameObject:
   - component: {fileID: 5107500499264991214}
   m_Layer: 10
   m_Name: KK-SignLetter_11_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2331,7 +2331,7 @@ GameObject:
   - component: {fileID: 6336705685776763280}
   m_Layer: 10
   m_Name: KK-DumpsterLidRim_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2449,7 +2449,7 @@ GameObject:
   - component: {fileID: 8341492490826740955}
   m_Layer: 10
   m_Name: KK-EntranceSignPost_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2566,7 +2566,7 @@ GameObject:
   - component: {fileID: 1162673776681404252}
   m_Layer: 10
   m_Name: KK-Floor_pt2_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2663,7 +2663,7 @@ GameObject:
   - component: {fileID: 1030111430565354864}
   m_Layer: 10
   m_Name: KK-Nail_1_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2781,7 +2781,7 @@ GameObject:
   - component: {fileID: 1374566099286257852}
   m_Layer: 10
   m_Name: KK-RoofPlank_10_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2899,7 +2899,7 @@ GameObject:
   - component: {fileID: 7076912222980314034}
   m_Layer: 10
   m_Name: KK-MaritimeFlag_0_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3017,7 +3017,7 @@ GameObject:
   - component: {fileID: 7225314994794976895}
   m_Layer: 10
   m_Name: KK-DumpsterLidFace_0_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3135,7 +3135,7 @@ GameObject:
   - component: {fileID: 7464720719968370226}
   m_Layer: 10
   m_Name: KK-SignLetter_2_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3252,7 +3252,7 @@ GameObject:
   - component: {fileID: 4404236348095472906}
   m_Layer: 10
   m_Name: KK-Floor_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3349,7 +3349,7 @@ GameObject:
   - component: {fileID: 6644266463225388424}
   m_Layer: 10
   m_Name: KK-RoofPlank_7_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3467,7 +3467,7 @@ GameObject:
   - component: {fileID: 7379224443155425432}
   m_Layer: 10
   m_Name: KK-SignLetter_10_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3585,7 +3585,7 @@ GameObject:
   - component: {fileID: 4326535742355733031}
   m_Layer: 10
   m_Name: KK-Window_2_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3703,7 +3703,7 @@ GameObject:
   - component: {fileID: 4567956755206956128}
   m_Layer: 10
   m_Name: KK-Nail_6_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3821,7 +3821,7 @@ GameObject:
   - component: {fileID: 7394544669055711810}
   m_Layer: 10
   m_Name: KK-DoorFrame_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3939,7 +3939,7 @@ GameObject:
   - component: {fileID: 1722057482659418692}
   m_Layer: 10
   m_Name: KK-DumpsterLidFace_1_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4057,7 +4057,7 @@ GameObject:
   - component: {fileID: 1085781859672227179}
   m_Layer: 10
   m_Name: KK-Arch_1_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4175,7 +4175,7 @@ GameObject:
   - component: {fileID: 3895047813400560075}
   m_Layer: 10
   m_Name: KK-Nail_14_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4293,7 +4293,7 @@ GameObject:
   - component: {fileID: 556418769551181651}
   m_Layer: 10
   m_Name: KK-DoorHandle_0_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4411,7 +4411,7 @@ GameObject:
   - component: {fileID: 3694010788289731073}
   m_Layer: 10
   m_Name: KK-Nail_12_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4529,7 +4529,7 @@ GameObject:
   - component: {fileID: 3062612568612864337}
   m_Layer: 10
   m_Name: KK-RearDoorPorthole_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4648,7 +4648,7 @@ GameObject:
   - component: {fileID: 2367242243793042016}
   m_Layer: 10
   m_Name: KK-Mayo_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4780,7 +4780,7 @@ GameObject:
   - component: {fileID: 61580907760910099}
   m_Layer: 10
   m_Name: KK-SignShell_1_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4898,7 +4898,7 @@ GameObject:
   - component: {fileID: 7751771025526588402}
   m_Layer: 10
   m_Name: KK-Nail_3_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5016,7 +5016,7 @@ GameObject:
   - component: {fileID: 3195259919990422679}
   m_Layer: 10
   m_Name: KK-RoofPlank_11_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5133,7 +5133,7 @@ GameObject:
   - component: {fileID: 214248492761312510}
   m_Layer: 10
   m_Name: KK-Floor_pt2_1
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5230,7 +5230,7 @@ GameObject:
   - component: {fileID: 6233761625881862007}
   m_Layer: 10
   m_Name: KK-DumpsterInner_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5348,7 +5348,7 @@ GameObject:
   - component: {fileID: 2416822675575418908}
   m_Layer: 10
   m_Name: KK-Nail_9_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5466,7 +5466,7 @@ GameObject:
   - component: {fileID: 3852538927546642783}
   m_Layer: 10
   m_Name: KK-SignLetter_9_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5584,7 +5584,7 @@ GameObject:
   - component: {fileID: 3931665409500155719}
   m_Layer: 10
   m_Name: KK-Base_1_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5702,7 +5702,7 @@ GameObject:
   - component: {fileID: 1189425483527331276}
   m_Layer: 10
   m_Name: KK-Door_0_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5820,7 +5820,7 @@ GameObject:
   - component: {fileID: 2807619657522780983}
   m_Layer: 10
   m_Name: KK-DumpsterWheel_3_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5938,7 +5938,7 @@ GameObject:
   - component: {fileID: 517693337526686739}
   m_Layer: 10
   m_Name: KK-SideWallRope_0_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6056,7 +6056,7 @@ GameObject:
   - component: {fileID: 1466931021671203197}
   m_Layer: 10
   m_Name: KK-RoofPlank_1_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6174,7 +6174,7 @@ GameObject:
   - component: {fileID: 5355912336868381737}
   m_Layer: 10
   m_Name: KK-SignShell_0_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6292,7 +6292,7 @@ GameObject:
   - component: {fileID: 281358167857081860}
   m_Layer: 10
   m_Name: KK-SignPole_1
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6410,7 +6410,7 @@ GameObject:
   - component: {fileID: 1166917160499199503}
   m_Layer: 10
   m_Name: KK-SignLetter_12_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6528,7 +6528,7 @@ GameObject:
   - component: {fileID: 6462074801806022359}
   m_Layer: 10
   m_Name: KK-SideWallPlank_2_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6646,7 +6646,7 @@ GameObject:
   - component: {fileID: 6701149668546696795}
   m_Layer: 10
   m_Name: KK-SideWallPlank_5_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6764,7 +6764,7 @@ GameObject:
   - component: {fileID: 8755254037134192015}
   m_Layer: 10
   m_Name: KK-SideWallPlank_3_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6882,7 +6882,7 @@ GameObject:
   - component: {fileID: 7979486214799683437}
   m_Layer: 10
   m_Name: KK-RoofPlank_9_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7000,7 +7000,7 @@ GameObject:
   - component: {fileID: 4570165511473761448}
   m_Layer: 10
   m_Name: KK-FlagRope_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7118,7 +7118,7 @@ GameObject:
   - component: {fileID: 7430115630336454870}
   m_Layer: 10
   m_Name: KK-SideWallPlank_4_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7236,7 +7236,7 @@ GameObject:
   - component: {fileID: 6306389541476542176}
   m_Layer: 10
   m_Name: KK-Nail_7_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7354,7 +7354,7 @@ GameObject:
   - component: {fileID: 9128073368043991646}
   m_Layer: 10
   m_Name: KK-RearDoorPorthole_1
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7472,7 +7472,7 @@ GameObject:
   - component: {fileID: 7933310741880398900}
   m_Layer: 10
   m_Name: KK-Nail_5_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7590,7 +7590,7 @@ GameObject:
   - component: {fileID: 5479124357128833467}
   m_Layer: 10
   m_Name: KK-MaritimeFlag_1_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7708,7 +7708,7 @@ GameObject:
   - component: {fileID: 2557362664225419329}
   m_Layer: 10
   m_Name: KK-WeatherVane_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7826,7 +7826,7 @@ GameObject:
   - component: {fileID: 1100152420354313979}
   m_Layer: 10
   m_Name: KK-Chimney_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7944,7 +7944,7 @@ GameObject:
   - component: {fileID: 1035517786838475044}
   m_Layer: 10
   m_Name: KK-Arch_0_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8062,7 +8062,7 @@ GameObject:
   - component: {fileID: 589971367854628180}
   m_Layer: 10
   m_Name: KK-Nail_8_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8180,7 +8180,7 @@ GameObject:
   - component: {fileID: 4096975852183709162}
   m_Layer: 10
   m_Name: KK-Base_0_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8298,7 +8298,7 @@ GameObject:
   - component: {fileID: 9075746503764692971}
   m_Layer: 10
   m_Name: KK-Window_1_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8416,7 +8416,7 @@ GameObject:
   - component: {fileID: 3469093958794495428}
   m_Layer: 10
   m_Name: KK-SignLetter_3_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8534,7 +8534,7 @@ GameObject:
   - component: {fileID: 3634795950102105887}
   m_Layer: 10
   m_Name: KK-SideWallRope_1_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8652,7 +8652,7 @@ GameObject:
   - component: {fileID: 8245846768530775438}
   m_Layer: 10
   m_Name: KK-Door_1_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8770,7 +8770,7 @@ GameObject:
   - component: {fileID: 5053891944228372579}
   m_Layer: 10
   m_Name: KK-SideWallPlank_7_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8888,7 +8888,7 @@ GameObject:
   - component: {fileID: 4502187050716545322}
   m_Layer: 10
   m_Name: KK-SignLetter_5_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9006,7 +9006,7 @@ GameObject:
   - component: {fileID: 8121293981831870211}
   m_Layer: 10
   m_Name: KK-Nail_11_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9124,7 +9124,7 @@ GameObject:
   - component: {fileID: 7427482106504092343}
   m_Layer: 10
   m_Name: KK-DumpsterWheel_0_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9242,7 +9242,7 @@ GameObject:
   - component: {fileID: 8486545255215096982}
   m_Layer: 10
   m_Name: KK-SignLetter_4_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9360,7 +9360,7 @@ GameObject:
   - component: {fileID: 4269909418184273295}
   m_Layer: 10
   m_Name: KK-DumpsterRim_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9478,7 +9478,7 @@ GameObject:
   - component: {fileID: 803465007198362332}
   m_Layer: 10
   m_Name: KK-PortholeFrame_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9596,7 +9596,7 @@ GameObject:
   - component: {fileID: 8857248161986752978}
   m_Layer: 10
   m_Name: KK-Window_0_1
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9714,7 +9714,7 @@ GameObject:
   - component: {fileID: 285765732268662851}
   m_Layer: 10
   m_Name: KK-SideWallPlank_6_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9832,7 +9832,7 @@ GameObject:
   - component: {fileID: 5190567097093019730}
   m_Layer: 10
   m_Name: KK-DumpsterWheel_2_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9950,7 +9950,7 @@ GameObject:
   - component: {fileID: 2365627636272431053}
   m_Layer: 10
   m_Name: KK-DumpsterWheel_1_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10068,7 +10068,7 @@ GameObject:
   - component: {fileID: 6248743005151391811}
   m_Layer: 10
   m_Name: KK-RoofPlank_5_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10186,7 +10186,7 @@ GameObject:
   - component: {fileID: 3378378918065241408}
   m_Layer: 10
   m_Name: KK-Nail_0_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10304,7 +10304,7 @@ GameObject:
   - component: {fileID: 7268902901481648119}
   m_Layer: 10
   m_Name: KK-RoofPlank_6_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10422,7 +10422,7 @@ GameObject:
   - component: {fileID: 1659664053804000078}
   m_Layer: 10
   m_Name: KK-SignLetter_8_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10540,7 +10540,7 @@ GameObject:
   - component: {fileID: 2149550183637627669}
   m_Layer: 10
   m_Name: KK-Nail_15_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10658,7 +10658,7 @@ GameObject:
   - component: {fileID: 6122888153159999991}
   m_Layer: 10
   m_Name: KK-Nail_2_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10776,7 +10776,7 @@ GameObject:
   - component: {fileID: 5903852181755666387}
   m_Layer: 10
   m_Name: KK-Nail_10_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11027,7 +11027,7 @@ GameObject:
   - component: {fileID: 7984504941838664978}
   m_Layer: 10
   m_Name: KK-SignPole_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11145,7 +11145,7 @@ GameObject:
   - component: {fileID: 8791572818622576908}
   m_Layer: 10
   m_Name: KK-MaritimeFlag_3_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11263,7 +11263,7 @@ GameObject:
   - component: {fileID: 7860452058462212209}
   m_Layer: 10
   m_Name: KK-SideWallPlank_0_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11381,7 +11381,7 @@ GameObject:
   - component: {fileID: 6380802256889931749}
   m_Layer: 10
   m_Name: KK-RoofPlank_12_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11499,7 +11499,7 @@ GameObject:
   - component: {fileID: 6608016141960191549}
   m_Layer: 10
   m_Name: KK-RoofPlank_8_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11617,7 +11617,7 @@ GameObject:
   - component: {fileID: 3173281766337691304}
   m_Layer: 10
   m_Name: KK-RearDoorFrame_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11735,7 +11735,7 @@ GameObject:
   - component: {fileID: 924327992774187470}
   m_Layer: 10
   m_Name: KK-MaritimeFlag_4_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11853,7 +11853,7 @@ GameObject:
   - component: {fileID: 4415917704426925692}
   m_Layer: 10
   m_Name: KK-RoofPlank_3_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11971,7 +11971,7 @@ GameObject:
   - component: {fileID: 9190525299108629231}
   m_Layer: 10
   m_Name: KK-PortholeWindow_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12089,7 +12089,7 @@ GameObject:
   - component: {fileID: 5936143895839935368}
   m_Layer: 10
   m_Name: KK-DoorHandle_1_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

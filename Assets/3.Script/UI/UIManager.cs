@@ -8,11 +8,17 @@ public class UIManager : MonoBehaviour
 {
     public static UIManager instance = null;
     private AsyncOperation operation;
+    private CleanPercent percent;
 
     [SerializeField] private GameObject LoadAll;
     [SerializeField] private Slider loadingSlider; // 로딩바
+    [SerializeField] private Slider AllObjectSlider; // 모든오브젝트게이지
+    [SerializeField] private Text AllObjectText; // 모든오브젝트텍스트
     [SerializeField] private Text text; // 처음 텍스트
     [SerializeField] private GameObject Button; // 버튼
+
+    public float ObjectAll;
+    public List<GameObject> objectsWithTag = new List<GameObject>();
 
     private float targetProgress = 0f;
 
@@ -95,6 +101,7 @@ public class UIManager : MonoBehaviour
         text.gameObject.SetActive(false);
         loadingSlider.gameObject.SetActive(false);
         Button.gameObject.SetActive(true); // 로딩이 완료되면 버튼을 활성화
+        AllObjcetList();
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
     }
@@ -130,4 +137,39 @@ public class UIManager : MonoBehaviour
             }
         }
     }
+
+    public void AllObjcetList()
+    {
+        if (objectsWithTag == null || objectsWithTag.Count == 0)
+        {
+            objectsWithTag.AddRange(GameObject.FindGameObjectsWithTag("Object"));
+        }
+
+        ObjectAll = 0;
+
+        foreach (GameObject obj in objectsWithTag)
+        {
+            if (obj.TryGetComponent(out CleanDraw cleanComponent))
+            {
+                ObjectAll += cleanComponent.ColorRatio;
+            }
+        }
+
+        if(AllObjectSlider == null)
+        {
+            GameObject sliderObject = GameObject.FindGameObjectWithTag("Recorder");
+            GameObject sliderText = GameObject.FindGameObjectWithTag("SliderText");
+            AllObjectSlider = sliderObject.GetComponent<Slider>();
+            AllObjectText = sliderText.GetComponent<Text>();
+            AllObjectSlider.minValue = 0;
+            AllObjectSlider.maxValue = 100;
+            AllObjectText.text = "0%";
+        }
+        else
+        {
+            AllObjectSlider.value = (ObjectAll / objectsWithTag.Count);
+            AllObjectText.text = $"{(AllObjectSlider.value):0}%";
+        }
+    }
+
 }

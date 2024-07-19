@@ -48,7 +48,7 @@ public class CleanPercent : MonoBehaviour
                                 name = "스폰지밥의 집 - 둥근 창문 틀";
                                 break;
                             case EnumObject.Pineapple.FrontDoor:
-                                name = "스폰지밥의 집 - 둥근 창문";
+                                name = "스폰지밥의 집 - 정문";
                                 break;
                             case EnumObject.Pineapple.FrontDoorFrame:
                                 name = "스폰지밥의 집 - 정문 프레임";

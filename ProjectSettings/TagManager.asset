@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Recorder
+  - Object
+  - SliderText
   layers:
   - Default
   - TransparentFX

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2108180618528035386}
   m_Layer: 10
   m_Name: SB-BubbleStandPlaque_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -113,7 +113,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 66766cf2bb5d6d641a61cf0b0d476bf0, type: 3}
-  ObjectNames: 
   Spongebob: 0
   Pineapple: 21
   Patrick: 0
@@ -169,7 +168,7 @@ GameObject:
   - component: {fileID: 2108180618999959397}
   m_Layer: 10
   m_Name: SB-BubbleStand_1
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -267,7 +266,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 48d25ed39cfad94489f5083310cfe5cc, type: 3}
-  ObjectNames: 
   Spongebob: 0
   Pineapple: 19
   Patrick: 0
@@ -288,7 +286,7 @@ GameObject:
   - component: {fileID: 2108180618036957773}
   m_Layer: 10
   m_Name: SB-BubbleStandSign_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -386,7 +384,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 9b0df1693f514964f83d8ab1800b2fae, type: 3}
-  ObjectNames: 
   Spongebob: 0
   Pineapple: 22
   Patrick: 0
@@ -407,7 +404,7 @@ GameObject:
   - component: {fileID: 2108180617026761715}
   m_Layer: 10
   m_Name: SB-BubbleStandContainer_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -505,7 +502,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 56960448a4c7b4843bfd0406310a4b6a, type: 3}
-  ObjectNames: 
   Spongebob: 0
   Pineapple: 20
   Patrick: 0
@@ -526,7 +522,7 @@ GameObject:
   - component: {fileID: 2108180617029716815}
   m_Layer: 10
   m_Name: SB-BubbleStand_0
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -624,7 +620,6 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 48d25ed39cfad94489f5083310cfe5cc, type: 3}
-  ObjectNames: 
   Spongebob: 0
   Pineapple: 19
   Patrick: 0
