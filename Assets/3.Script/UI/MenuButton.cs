@@ -14,6 +14,7 @@ public class MenuButton : MonoBehaviour
     [SerializeField] private GameObject Continue_Btn;
     [SerializeField] private GameObject Freedom_Btn;
     [SerializeField] private GameObject Back_Btn;
+    [SerializeField] private GameObject GameBack_Btn;
     [SerializeField] private GameObject Fast_Btn;
     [SerializeField] private GameObject FastClose_Btn;
     [SerializeField] private GameObject SetChoice_Toggle;
@@ -89,9 +90,24 @@ public class MenuButton : MonoBehaviour
         Continue_Btn.SetActive(false);
         Freedom_Btn.SetActive(false);
         MenuShadow.SetActive(false);
+        Back_Btn.SetActive(false);
         GameSelectShadow.SetActive(true);
+        GameBack_Btn.SetActive(true);
         SetChoice_Toggle.SetActive(true);
         Pineapple_Btn.SetActive(true);
         KrustyKrab_Btn.SetActive(true);
+    }
+
+    public void GameBackButton()
+    {
+        GameSelectShadow.SetActive(false);
+        GameBack_Btn.SetActive(false);
+        SetChoice_Toggle.SetActive(false);
+        Pineapple_Btn.SetActive(false);
+        KrustyKrab_Btn.SetActive(false);
+        Continue_Btn.SetActive(true);
+        Freedom_Btn.SetActive(true);
+        MenuShadow.SetActive(true);
+        Back_Btn.SetActive(true);
     }
 }
