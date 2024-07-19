@@ -5,7 +5,7 @@ using UnityEngine;
 public class Stream : MonoBehaviour
 {
     private RaycastHit hit;
-    private LayerMask layerMask;
+    private LayerMask layer;
     private CleanDraw cleanDraw;
 
     [SerializeField]
@@ -14,13 +14,13 @@ public class Stream : MonoBehaviour
     private float offsetY;
     private void Start()
     {
-        layerMask = ~LayerMask.GetMask("Ground");
+        layer = (1 << LayerMask.NameToLayer("Ground")) + (1 << LayerMask.NameToLayer("Pack"));
         transform.localRotation = Quaternion.Euler(new Vector3(0, offsetY, 0));
     }
 
     private void Update()
     {
-        if (Physics.Raycast(transform.position, transform.forward, out hit, shotRange, layerMask))
+        if (Physics.Raycast(transform.position, transform.forward, out hit, shotRange, ~layer))
         {
             hit.transform.TryGetComponent<CleanDraw>(out cleanDraw);
             if(cleanDraw)

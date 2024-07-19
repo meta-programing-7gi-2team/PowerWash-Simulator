@@ -8,16 +8,21 @@ public class CleanPercent : MonoBehaviour
     private CleanDraw Clean;
     [SerializeField] private Text ObjectName;
     [SerializeField] private Slider ObjectSlider;
+    LayerMask layer;
     RaycastHit hit;
     Ray ray;
 
+    private void Start()
+    {
+        layer = (1 << LayerMask.NameToLayer("Pack"));
+    }
     private void Update()
     {
         // 카메라에서 마우스 위치로 향하는 레이 생성
         ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
         // 레이캐스트 수행
-        if (Physics.Raycast(ray, out hit))
+        if (Physics.Raycast(ray, out hit, Mathf.Infinity, ~layer))
         {
             hit.transform.TryGetComponent(out Clean);
             string name = string.Empty;

@@ -15,7 +15,6 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject Button; // 버튼
 
     private float targetProgress = 0f;
-
     private void Awake()
     {
         if (instance == null)
@@ -34,7 +33,6 @@ public class UIManager : MonoBehaviour
         LoadAll.SetActive(false);
         text.gameObject.SetActive(false); // 텍스트 비활성화
     }
-
     public void LoadStart(int Index)
     {
         LoadAll.SetActive(true);
