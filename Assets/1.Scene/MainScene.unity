@@ -211,10 +211,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 87534276}
-        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: LoadStart
-        m_Mode: 3
+      - m_Target: {fileID: 1772948000}
+        m_TargetAssemblyTypeName: MenuButton, Assembly-CSharp
+        m_MethodName: ContinueButton
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4081,7 +4081,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -5156,7 +5156,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &279232486
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6360,7 +6360,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &384230388
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10175,7 +10175,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &672171165
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17324,7 +17324,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -20935,7 +20935,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1450733110
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20984,7 +20984,7 @@ GameObject:
   - component: {fileID: 1455893452}
   - component: {fileID: 1455893451}
   m_Layer: 5
-  m_Name: KrustyKrab_Btn
+  m_Name: FastClose_Btn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22073,7 +22073,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1500045075
 RectTransform:
   m_ObjectHideFlags: 0
@@ -24246,7 +24246,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1697065366
 RectTransform:
   m_ObjectHideFlags: 0
@@ -25924,6 +25924,7 @@ MonoBehaviour:
   MainMenu: {fileID: 672171164}
   FastManu: {fileID: 407377444}
   MenuShadow: {fileID: 1614988193}
+  GameSelectShadow: {fileID: 1697065365}
   Career_Btn: {fileID: 1500045074}
   Special_Btn: {fileID: 1822380613}
   Option_Btn: {fileID: 1898208968}
@@ -25932,6 +25933,9 @@ MonoBehaviour:
   Back_Btn: {fileID: 78364041}
   Fast_Btn: {fileID: 951442693}
   FastClose_Btn: {fileID: 1455893449}
+  SetChoice_Toggle: {fileID: 1450733109}
+  Pineapple_Btn: {fileID: 279232485}
+  KrustyKrab_Btn: {fileID: 384230387}
 --- !u!1 &1772969789
 GameObject:
   m_ObjectHideFlags: 0
@@ -26948,7 +26952,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1822380614
 RectTransform:
   m_ObjectHideFlags: 0
@@ -27614,7 +27618,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1898208969
 RectTransform:
   m_ObjectHideFlags: 0
@@ -30155,7 +30159,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
