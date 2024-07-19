@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 587759865}
-  m_IndirectSpecularColor: {r: 0.13388306, g: 0.614559, b: 0.8760026, a: 1}
+  m_IndirectSpecularColor: {r: 0.1338923, g: 0.6145655, b: 0.8760026, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1204,6 +1204,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4653825809122398664, guid: ca5cb11fc852eab40b2b30ae59fb4e2d, type: 3}
+      propertyPath: m_Text
+      value: 0%
+      objectReference: {fileID: 0}
+    - target: {fileID: 4653825809122398664, guid: ca5cb11fc852eab40b2b30ae59fb4e2d, type: 3}
+      propertyPath: m_FontData.m_VerticalOverflow
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4653825809122398664, guid: ca5cb11fc852eab40b2b30ae59fb4e2d, type: 3}
+      propertyPath: m_FontData.m_HorizontalOverflow
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4653825809122398670, guid: ca5cb11fc852eab40b2b30ae59fb4e2d, type: 3}
+      propertyPath: m_TagString
+      value: SliderText
+      objectReference: {fileID: 0}
     - target: {fileID: 4653825809338543497, guid: ca5cb11fc852eab40b2b30ae59fb4e2d, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -1214,6 +1230,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4653825809568890054, guid: ca5cb11fc852eab40b2b30ae59fb4e2d, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4653825809715417253, guid: ca5cb11fc852eab40b2b30ae59fb4e2d, type: 3}
+      propertyPath: m_TagString
+      value: Recorder
+      objectReference: {fileID: 0}
+    - target: {fileID: 4653825809715417255, guid: ca5cb11fc852eab40b2b30ae59fb4e2d, type: 3}
+      propertyPath: m_Value
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4653825809726295626, guid: ca5cb11fc852eab40b2b30ae59fb4e2d, type: 3}
