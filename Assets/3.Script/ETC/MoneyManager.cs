@@ -4,7 +4,7 @@ using System;
 public class MoneyManager
 {
     public MoneyData moneyData { get; private set; }
-    public string DriName = "Save";
+    public string DirName = "Save";
     private string FileName = "money";
 
     // 데이터 초기화
@@ -22,7 +22,12 @@ public class MoneyManager
             // JSON으로 직렬화하여 저장
             string jsonData = JsonUtility.ToJson(moneyData, true);
 
-            File.WriteAllText(Path.Combine(Application.dataPath, DriName, FileName + ".json"), jsonData);
+            string dirName = Path.Combine(Application.dataPath, DirName);
+            if (!Directory.Exists(dirName))
+            {
+                Directory.CreateDirectory(dirName);
+            }
+            File.WriteAllText(Path.Combine(Application.dataPath, DirName, FileName + ".json"), jsonData);
             Debug.Log("Data saved successfully.");
         }
         catch (Exception e)
@@ -34,7 +39,7 @@ public class MoneyManager
     // 데이터 불러오기
     public MoneyData LoadData()
     {
-        string filePath = Path.Combine(Application.dataPath, DriName, FileName + ".json");
+        string filePath = Path.Combine(Application.dataPath, DirName, FileName + ".json");
 
         if (File.Exists(filePath))
         {

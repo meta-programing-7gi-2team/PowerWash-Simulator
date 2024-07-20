@@ -6,7 +6,7 @@ public class MapManager
 {
     public string FileName;
     public MapData mapData { get; private set; }
-    public string DriName = "Save";
+    public string DirName = "Save";
 
     // 데이터 초기화
     public void InitializeMapData()
@@ -23,7 +23,12 @@ public class MapManager
             // JSON으로 직렬화하여 저장
             string jsonData = JsonUtility.ToJson(mapData, true);
 
-            File.WriteAllText(Path.Combine(Application.dataPath, DriName, FileName + ".json"), jsonData);
+            string dirName = Path.Combine(Application.dataPath, DirName);
+            if (!Directory.Exists(dirName))
+            {
+                Directory.CreateDirectory(dirName);
+            }
+            File.WriteAllText(Path.Combine(Application.dataPath, DirName, FileName + ".json"), jsonData);
             Debug.Log("Data saved successfully.");
         }
         catch (Exception e)
@@ -35,7 +40,7 @@ public class MapManager
     // 데이터 불러오기
     public MapData LoadMap()
     {
-        string filePath = Path.Combine(Application.dataPath, DriName, FileName + ".json");
+        string filePath = Path.Combine(Application.dataPath, DirName, FileName + ".json");
 
         if (File.Exists(filePath))
         {

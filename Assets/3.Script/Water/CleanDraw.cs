@@ -129,7 +129,7 @@ public class CleanDraw : MonoBehaviour, IObserver
     {
         mapManager = new MapManager();
         mapManager.FileName = FileName;
-        mapManager.DriName = DirName;
+        mapManager.DirName = DirName;
         mapManager.LoadMap();
     }
     private void InitBrushTexture()
