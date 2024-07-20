@@ -1,16 +1,16 @@
 using UnityEngine;
 using System.IO;
 using System;
-public class MoneyManager
+public class AmountManager
 {
-    public MoneyData moneyData { get; private set; }
+    public AmountData amountData { get; private set; }
     public string DirName = "Save";
-    private string FileName = "money";
+    private string FileName = "Amount";
 
     // 데이터 초기화
     public void InitializeMapData()
     {
-        moneyData = new MoneyData(0);
+        amountData = new AmountData(0);
         SaveMap();
     }
 
@@ -20,7 +20,7 @@ public class MoneyManager
         try
         {
             // JSON으로 직렬화하여 저장
-            string jsonData = JsonUtility.ToJson(moneyData, true);
+            string jsonData = JsonUtility.ToJson(amountData, true);
 
             string dirName = Path.Combine(Application.dataPath, DirName);
             if (!Directory.Exists(dirName))
@@ -37,7 +37,7 @@ public class MoneyManager
     }
 
     // 데이터 불러오기
-    public MoneyData LoadData()
+    public AmountData LoadData()
     {
         string filePath = Path.Combine(Application.dataPath, DirName, FileName + ".json");
 
@@ -46,7 +46,7 @@ public class MoneyManager
             try
             {
                 string jsonData = File.ReadAllText(filePath);
-                moneyData = JsonUtility.FromJson<MoneyData>(jsonData);
+                amountData = JsonUtility.FromJson<AmountData>(jsonData);
                 Debug.Log("Data loaded successfully.");
             }
             catch (Exception e)
@@ -60,17 +60,17 @@ public class MoneyManager
             InitializeMapData(); // 저장된 데이터가 없을 경우 초기화
         }
 
-        return moneyData;
+        return amountData;
     }
 
-    public void SaveMoney(float money)
+    public void SaveAmount(float amount)
     {
-        moneyData = new MoneyData(money);
+        amountData = new AmountData(amount);
         SaveMap();
     }
-    public float GetMoney()
+    public float GetAmount()
     {
-        return LoadData().money;
+        return LoadData().Amount;
     }
 }
 

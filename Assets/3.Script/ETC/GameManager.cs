@@ -6,9 +6,9 @@ public class GameManage : MonoBehaviour
 {
     public static GameManage instance = null;
     public string DriName = "Save";
-    public string FileName = "money";
-    private MoneyManager moneyManager;
-    private float money;
+    public string FileName = "Amount";
+    private AmountManager amountManager;
+    private float amount;
     private void Awake()
     {
         if (instance == null)
@@ -24,16 +24,16 @@ public class GameManage : MonoBehaviour
     }
     private void Init()
     {
-        moneyManager = new MoneyManager();
-        money = moneyManager.GetMoney();
+        amountManager = new AmountManager();
+        amount = amountManager.GetAmount();
     }
-    public float GetMoney()
+    public float GetAmount()
     {
-        return money;
+        return amount;
     }
-    public void AddMoney(float money)
+    public void AddAmount(float amount)
     {
-        this.money += money;
-        moneyManager.SaveMoney(this.money);
+        this.amount += amount;
+        amountManager.SaveAmount(this.amount);
     }
 }
