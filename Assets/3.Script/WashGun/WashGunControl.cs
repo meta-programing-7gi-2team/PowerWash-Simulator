@@ -17,6 +17,7 @@ public class WashGunControl : MonoBehaviour
     private float blockRange;
     private bool isAuto = false;
 
+    public float Range => blockRange;
 
     private void Start()
     {
