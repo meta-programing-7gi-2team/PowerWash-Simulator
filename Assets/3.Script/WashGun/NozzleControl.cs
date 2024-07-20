@@ -9,6 +9,7 @@ public class NozzleControl : MonoBehaviour
     [SerializeField] private GameObject[] nozzle;
     [SerializeField] private Sprite[] crosshairImage;
     private Image crosshair;
+    private float scroll;
 
     public int Index { get; private set; }
 
@@ -24,7 +25,7 @@ public class NozzleControl : MonoBehaviour
             PlayerState.instance.state.Equals(State.Run))
             return;
 
-        float scroll = Input.GetAxis("Mouse ScrollWheel");
+        scroll = Input.GetAxis("Mouse ScrollWheel");
         if (scroll > 0)
         {
             ScrollUp();
@@ -60,12 +61,14 @@ public class NozzleControl : MonoBehaviour
     {
         if (nozzle[Index].transform.localRotation.z > 0f)
         {
+
             nozzle[Index].GetComponent<Animator>().SetTrigger("Right");
             crosshair.GetComponent<Animator>().SetTrigger("Right");
             crosshair.transform.localRotation = Quaternion.Euler(Vector3.zero);
         }
         else
         {
+        
             nozzle[Index].GetComponent<Animator>().SetTrigger("Left");
             crosshair.GetComponent<Animator>().SetTrigger("Left");
             crosshair.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, 90f));

@@ -24,7 +24,7 @@ public class Stream : MonoBehaviour
     }
     private void Update()
     {
-        firePoint = view.position + view.forward * washGun.Range;
+        firePoint = view.position + view.forward * washGun.offsetRange;
 
         if (Physics.Raycast(firePoint, transform.forward, out hit, shotRange, layer))
         {
