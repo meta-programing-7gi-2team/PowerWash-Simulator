@@ -2,59 +2,58 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ExtensionReplacement : MonoBehaviour
+public class ExtensionControl : MonoBehaviour
 {
     [SerializeField] private GameObject[] Extension;
     [SerializeField] Transform nozzlePivot;
 
-    private PlayerState playerState;
     private WashGunControl washGun;
-    private int currentIndex = 0;
+    public int Index { get; private set; }
 
     private void Start()
     {
         washGun = GetComponent<WashGunControl>();
-        playerState = FindObjectOfType<PlayerState>();
+        Index = 0;
     }
     private void Update()
     {
-        if (playerState.state.Equals(State.Hand) ||
-            playerState.state.Equals(State.Run))
+        if (PlayerState.instance.state.Equals(State.Hand) ||
+            PlayerState.instance.state.Equals(State.Run))
             return;
 
         SetNozzlePivot();
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            Extension[currentIndex].SetActive(false);
-            currentIndex = 0;
-            Extension[currentIndex].SetActive(true);
+            Extension[Index].SetActive(false);
+            Index = 0;
+            Extension[Index].SetActive(true);
             washGun.SetBlockRange(0.6f);
         }
         else if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            Extension[currentIndex].SetActive(false);
-            currentIndex = 1;
-            Extension[currentIndex].SetActive(true);
+            Extension[Index].SetActive(false);
+            Index = 1;
+            Extension[Index].SetActive(true);
             washGun.SetBlockRange(0.8f);
         }
         else if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            Extension[currentIndex].SetActive(false);
-            currentIndex = 2;
-            Extension[currentIndex].SetActive(true);
+            Extension[Index].SetActive(false);
+            Index = 2;
+            Extension[Index].SetActive(true);
             washGun.SetBlockRange(1f);
         }
         else if (Input.GetKeyDown(KeyCode.Alpha4))
         {
-            Extension[currentIndex].SetActive(false);
-            currentIndex = 3;
-            Extension[currentIndex].SetActive(true);
+            Extension[Index].SetActive(false);
+            Index = 3;
+            Extension[Index].SetActive(true);
             washGun.SetBlockRange(1.4f);
         }
     }
     public void SetNozzlePivot()
     {
-        switch (currentIndex)
+        switch (Index)
         {
             case 0:
                 nozzlePivot.localPosition = new Vector3(0, 0.04f, 0.2f);
