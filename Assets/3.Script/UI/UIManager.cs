@@ -108,7 +108,7 @@ public class UIManager : MonoBehaviour
     {
         if (Index == 1)
         {
-            string[] objectsToLoad = { "Pineapple", "Patrick", "Squidward", "Stand" };
+            string[] objectsToLoad = { "Stand" };
 
             for (int i = 0; i < objectsToLoad.Length; i++)
             {

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 
 public class CleanDraw : MonoBehaviour, IObserver
@@ -29,6 +30,7 @@ public class CleanDraw : MonoBehaviour, IObserver
     [SerializeField] private RenderTexture renderMaskTexture; // 브러시로 그려질 대상 렌더 텍스쳐
     [SerializeField] private RenderTexture renderWaterTexture; // 브러시로 그려질 대상 렌더 텍스쳐
     [SerializeField] private Texture2D maskTexture; // 렌더 텍스쳐의 원본 텍스처
+    private Texture2D maskSavedTexture; // 렌더 텍스쳐의 저장본 텍스처
 
     private BrushController brushController;
     private Texture2D whiteBrushTexture; // Painter
@@ -61,6 +63,11 @@ public class CleanDraw : MonoBehaviour, IObserver
     public EnumObject.Patrick Patrick;
     public EnumObject.Squidward Squidward;
     public EnumObject.KrustyKrab KrustyKrab;
+
+    [SerializeField] private string FileName;
+    [SerializeField] private string DirName = "Save";
+    [SerializeField] bool isSave = false;
+    private MapManager mapManager;
 
 
     //private void OnEnable()
@@ -118,23 +125,12 @@ public class CleanDraw : MonoBehaviour, IObserver
         // MeshRenderer 가져오기
         TryGetComponent(out _mr);
     }
-    //렌더 텍스처 초기화
-    private void InitRenderTexture()
+    private void InitMapDate()
     {
-        renderMaskTexture = new RenderTexture(resolution, resolution, 32);
-        renderWaterTexture = new RenderTexture(resolution, resolution, 32);
-        renderWaterTexture.enableRandomWrite = true; // UAV 사용 플래그 설정
-        renderWaterTexture.Create();
-
-        Graphics.Blit(maskTexture, renderMaskTexture);
-
-        // 마테리얼 프로퍼티 블록 이용하여 배칭 유지하고
-        // 마테리얼의 프로퍼티에 렌더 텍스쳐 넣어주기
-        TextureBlock.SetTexture(MaskPaintTexPropertyName, renderMaskTexture);
-        TextureBlock.SetTexture(WaterPaintTexPropertyName, renderWaterTexture);
-        _mr.SetPropertyBlock(TextureBlock);
-
-        resultBuffer = new ComputeBuffer(resolution * resolution, sizeof(int));
+        mapManager = new MapManager();
+        mapManager.FileName = FileName;
+        mapManager.DriName = DirName;
+        mapManager.LoadMap();
     }
     private void InitBrushTexture()
     {
@@ -152,6 +148,34 @@ public class CleanDraw : MonoBehaviour, IObserver
         initCount = Mathf.CeilToInt(brushController.ColorNum / fadeAmount);
         curCount = 0;
     }
+    //렌더 텍스처 초기화
+    private void InitRenderTexture()
+    {
+        renderMaskTexture = new RenderTexture(resolution, resolution, 32);
+        renderWaterTexture = new RenderTexture(resolution, resolution, 32);
+        renderWaterTexture.enableRandomWrite = true; // UAV 사용 플래그 설정
+        renderWaterTexture.Create();
+
+        InitMapDate();
+        if (mapManager.mapData.isSaved)
+        {
+            maskSavedTexture = LoadTextureFromFile(FileName);
+            Graphics.Blit(maskSavedTexture, renderMaskTexture);
+        }
+        else
+        {
+            Graphics.Blit(maskTexture, renderMaskTexture);
+        }
+
+        // 마테리얼 프로퍼티 블록 이용하여 배칭 유지하고
+        // 마테리얼의 프로퍼티에 렌더 텍스쳐 넣어주기
+        TextureBlock.SetTexture(MaskPaintTexPropertyName, renderMaskTexture);
+        TextureBlock.SetTexture(WaterPaintTexPropertyName, renderWaterTexture);
+        _mr.SetPropertyBlock(TextureBlock);
+
+        resultBuffer = new ComputeBuffer(resolution * resolution, sizeof(int));
+    }
+
     private void InitMaterial()
     {
         Renderer renderer = GetComponent<Renderer>();
@@ -202,6 +226,7 @@ public class CleanDraw : MonoBehaviour, IObserver
                 PaintBrush(blackBrushTexture, renderMaskTexture, pixelUV, brushSize);
                 PaintBrush(whiteBrushTexture, renderWaterTexture, pixelUV, brushSize);
                 curCount = initCount;
+                SaveRenderTextureToFile(renderMaskTexture, FileName);
             }
         }
     }
@@ -293,6 +318,45 @@ public class CleanDraw : MonoBehaviour, IObserver
         int threadGroupsX = Mathf.CeilToInt(renderTexture.width / 16);
         int threadGroupsY = Mathf.CeilToInt(renderTexture.height / 16);
         fadeTextureComputeShader.Dispatch(kernelHandle, threadGroupsX, threadGroupsY, 1);
+    }
+    public void SaveRenderTextureToFile(RenderTexture rt, string fileName)
+    {
+        string dirName = Path.Combine(Application.dataPath, DirName);
+        if (!Directory.Exists(dirName))
+        {
+            Directory.CreateDirectory(dirName);
+        }
+        string filePath = Path.Combine(Application.dataPath, DirName, fileName + ".png");
+
+        RenderTexture currentRT = RenderTexture.active;
+        RenderTexture.active = rt;
+
+        Texture2D texture = new Texture2D(rt.width, rt.height, TextureFormat.RGB24, false);
+        texture.ReadPixels(new Rect(0, 0, rt.width, rt.height), 0, 0);
+        texture.Apply();
+
+        byte[] bytes = texture.EncodeToPNG();
+        File.WriteAllBytes(filePath, bytes);
+
+        RenderTexture.active = currentRT;
+
+        mapManager.Saved(); // json 파일에 저장했음을 표시
+    }
+    public Texture2D LoadTextureFromFile(string fileName)
+    {
+        string filePath = Path.Combine(Application.dataPath, DirName, fileName + ".png");
+        if (File.Exists(filePath))
+        {
+            byte[] fileData = File.ReadAllBytes(filePath);
+            Texture2D texture = new Texture2D(2, 2);
+            texture.LoadImage(fileData); // Automatically resizes the texture dimensions.
+            return texture;
+        }
+        else
+        {
+            Debug.LogError("File not found: " + filePath);
+            return null;
+        }
     }
     private void OnDestroy()
     {
