@@ -56,7 +56,7 @@ public class MovableObject : MonoBehaviour
     {
         isHanded = false;
         transform.parent = parent;
-        gameObject.layer = LayerMask.NameToLayer("Default");
+        gameObject.layer = LayerMask.NameToLayer("Pack");
     }
     public void Move(Vector3 pos)
     {

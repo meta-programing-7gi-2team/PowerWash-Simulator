@@ -13,8 +13,20 @@ public enum State
 
 public class PlayerState : MonoBehaviour
 {
+    public static PlayerState instance = null;
     public State state { get; private set; }
-
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
     private void Start()
     {
         state = State.Idle;
