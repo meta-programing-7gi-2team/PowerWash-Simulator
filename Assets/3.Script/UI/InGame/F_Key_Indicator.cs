@@ -6,7 +6,7 @@ public class F_Key_Indicator : MonoBehaviour
 {
     private CanvasGroup cg;
     private RaycastHit hit;
-    private Transform playerCamera;
+    private Transform view;
     [SerializeField]
     private float fadeSpeed;
     [SerializeField]
@@ -16,7 +16,7 @@ public class F_Key_Indicator : MonoBehaviour
 
     private void Start()
     {
-        playerCamera = Camera.main.transform;
+        view = Camera.main.transform;
         cg = GetComponent<CanvasGroup>();
     }
 
@@ -29,10 +29,15 @@ public class F_Key_Indicator : MonoBehaviour
             return;
         }
 
-        if (Physics.Raycast(playerCamera.position, playerCamera.forward, out hit, Mathf.Infinity, layer))
+        if (Physics.Raycast(view.position, view.forward, out hit, Mathf.Infinity, layer))
         {
             if (hit.transform.CompareTag("Patrick"))
             {
+                if (hit.transform.GetComponent<ActableObject>().DangerZone.isDanger)
+                {
+                    FadeOut();
+                    return;
+                }
                 text.text = "¶×ÀÌÀÇ Áý ¿­±â/´Ý±â";
             }
             else
