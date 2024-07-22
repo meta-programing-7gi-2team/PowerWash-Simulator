@@ -25,7 +25,7 @@ public class PlayerLadderControl : MonoBehaviour
         {
             if(Physics.Raycast(GameManager.view.position, GameManager.view.forward, out hit, Mathf.Infinity, layer))
             {
-                hit.transform.TryGetComponent<Blueprint>(out blueprint);
+                hit.transform.TryGetComponent(out blueprint);
                 if (!blueprint.state.Equals(Blueprint_State.Block))
                 {
                     blueprint.SetBlueprintState(Blueprint_State.Arrange);
