@@ -28,7 +28,6 @@ public class MenuButton : MonoBehaviour
     [SerializeField] private Animator FastMain_Btn;
     [SerializeField] private Animator FastQuit_Btn;
 
-    private bool SpecialCheck;
     private bool FastCheck;
 
     public void SpecialButton()
@@ -42,8 +41,6 @@ public class MenuButton : MonoBehaviour
         Continue_Btn.SetActive(true);
         Freedom_Btn.SetActive(true);
         Back_Btn.SetActive(true);
-
-        SpecialCheck = true;
 
         if(FastCheck.Equals(true))
         {
@@ -70,71 +67,34 @@ public class MenuButton : MonoBehaviour
         Special_Btn.SetActive(true);
         Career_Btn.SetActive(true);
         Option_Btn.SetActive(true);
-        SpecialCheck = false;
     }
 
     public void FastButton()
     {
-        if(SpecialCheck)
-        {
-            Fast_Btn.SetActive(false);
-            Back_Btn.SetActive(false);
-            FastClose_Btn.SetActive(true);
-            FastManu.SetTrigger("FastOpen");
-            FastShop_Btn.SetTrigger("FastOpen");
-            FastCareer_Btn.SetTrigger("FastOpen");
-            FastSpecial_Btn.SetTrigger("FastOpen");
-            FastOption_Btn.SetTrigger("FastOpen");
-            FastMain_Btn.SetTrigger("FastOpen");
-            FastQuit_Btn.SetTrigger("FastOpen");
-            FastCheck = true;
-        }
-        else
-        {
-            Fast_Btn.SetActive(false);
-            Option_Btn.SetActive(false);
-            FastClose_Btn.SetActive(true);
-            FastManu.SetTrigger("FastOpen");
-            FastShop_Btn.SetTrigger("FastOpen");
-            FastCareer_Btn.SetTrigger("FastOpen");
-            FastSpecial_Btn.SetTrigger("FastOpen");
-            FastOption_Btn.SetTrigger("FastOpen");
-            FastMain_Btn.SetTrigger("FastOpen");
-            FastQuit_Btn.SetTrigger("FastOpen");
-            FastCheck = true;
-        }
+        Fast_Btn.SetActive(false);
+        FastClose_Btn.SetActive(true);
+        FastManu.SetTrigger("FastOpen");
+        FastShop_Btn.SetTrigger("FastOpen");
+        FastCareer_Btn.SetTrigger("FastOpen");
+        FastSpecial_Btn.SetTrigger("FastOpen");
+        FastOption_Btn.SetTrigger("FastOpen");
+        FastMain_Btn.SetTrigger("FastOpen");
+        FastQuit_Btn.SetTrigger("FastOpen");
+        FastCheck = true;
     }
 
     public void FastButtonClose()
     {
-        if (SpecialCheck)
-        {
-            FastClose_Btn.SetActive(false);
-            Fast_Btn.SetActive(true);
-            Back_Btn.SetActive(true);
-            FastManu.SetTrigger("FastClose");
-            FastShop_Btn.SetTrigger("FastClose");
-            FastCareer_Btn.SetTrigger("FastClose");
-            FastSpecial_Btn.SetTrigger("FastClose");
-            FastOption_Btn.SetTrigger("FastClose");
-            FastMain_Btn.SetTrigger("FastClose");
-            FastQuit_Btn.SetTrigger("FastClose");
-            FastCheck = false;
-        }
-        else
-        {
-            FastClose_Btn.SetActive(false);
-            Option_Btn.SetActive(true);
-            Fast_Btn.SetActive(true);
-            FastManu.SetTrigger("FastClose");
-            FastShop_Btn.SetTrigger("FastClose");
-            FastCareer_Btn.SetTrigger("FastClose");
-            FastSpecial_Btn.SetTrigger("FastClose");
-            FastOption_Btn.SetTrigger("FastClose");
-            FastMain_Btn.SetTrigger("FastClose");
-            FastQuit_Btn.SetTrigger("FastClose");
-            FastCheck = false;
-        }
+        FastClose_Btn.SetActive(false);
+        Fast_Btn.SetActive(true);
+        FastManu.SetTrigger("FastClose");
+        FastShop_Btn.SetTrigger("FastClose");
+        FastCareer_Btn.SetTrigger("FastClose");
+        FastSpecial_Btn.SetTrigger("FastClose");
+        FastOption_Btn.SetTrigger("FastClose");
+        FastMain_Btn.SetTrigger("FastClose");
+        FastQuit_Btn.SetTrigger("FastClose");
+        FastCheck = false;
     }
 
     public void ContinueButton()
