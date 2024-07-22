@@ -19,13 +19,13 @@ public class Information_Control : MonoBehaviour
         {
             if (currentSceneName == sceneName)
             {
-                if (Input.GetKeyDown(KeyCode.Escape))
-                {
-                    
-                    Debug.Log("¿ﬂ ¿€µøµ ");
-                }
+
             }
         }
+
+
+
+
     }
 
 }

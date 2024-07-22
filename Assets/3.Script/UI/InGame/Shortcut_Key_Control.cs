@@ -1,17 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Shortcut_Key_Control : MonoBehaviour
 {
+    
+    [SerializeField] private Image menuicon;
+    [SerializeField] private Text menuname;
+    [SerializeField] private Text togglename;
 
-    //private bool shortcut_E = false;
-    //private bool shortcut_N = false;
-    //
-    //[SerializeField] private Image menuicon;
-    //[SerializeField] private Text menuname;
-    //[SerializeField] private Text togglename;
+    [SerializeField] private GameObject Shortcut;
+
 
     /*
     [Header("확장기")]
@@ -34,5 +35,23 @@ public class Shortcut_Key_Control : MonoBehaviour
         
     }
 
+    private void Update()
+    {
+        ActiveShortcut();
+    }
+
+    private void ActiveShortcut()
+    {
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            Shortcut.SetActive(true);
+            menuname.text = "확장기";
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+
+        }
+    }
 
 }
