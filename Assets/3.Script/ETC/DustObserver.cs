@@ -2,19 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DustManager : MonoBehaviour, ISubject
+public class DustObserver : MonoBehaviour, IDustSubject
 {
-    private List<IObserver> observers = new List<IObserver>();
+    private List<IDustObserver> observers = new List<IDustObserver>();
     [SerializeField] private Material dustMaterial;
     [SerializeField] private Material cleanMaterial;
     private bool isChange;
 
-    public void RegisterObserver(IObserver observer)
+    public void RegisterObserver(IDustObserver observer)
     {
         observers.Add(observer);
     }
 
-    public void RemoveObserver(IObserver observer)
+    public void RemoveObserver(IDustObserver observer)
     {
         observers.Add(observer);
     }
@@ -24,7 +24,6 @@ public class DustManager : MonoBehaviour, ISubject
         {
             observer.DustSparkle();
         }
-
     }
     private void Update()
     {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 
-public class CleanDraw : MonoBehaviour, IObserver
+public class CleanDraw : MonoBehaviour, IDustObserver, ISaveObserver
 {
     private MaterialPropertyBlock TextureBlock
     {
@@ -40,7 +40,7 @@ public class CleanDraw : MonoBehaviour, IObserver
     private Material initMaterial;
     private Material cleanMaterial;
     private Material dustMaterial;
-    private DustManager dustManager;
+    private DustObserver dustObserver;
     private bool isCleanCheck = false;
     private bool isCleanCheckComplete = false;
     private int cleanCount = 100;
@@ -68,6 +68,7 @@ public class CleanDraw : MonoBehaviour, IObserver
     [SerializeField] private string DirName = "Save";
     [SerializeField] bool isSave = false;
     private MapManager mapManager;
+    private SaveObserver saveObserver;
 
     private void Start()
     {
@@ -100,11 +101,16 @@ public class CleanDraw : MonoBehaviour, IObserver
             }
         }
     }
+    public void Save()
+    {
+        SaveRenderTextureToFile(renderMaskTexture, FileName);
 
+        mapManager.Saved(); // json 파일에 저장했음을 표시
+    }
     public void DustSparkle()
     {
         // 먼지 반짝이
-        if (dustManager.IsChange())
+        if (dustObserver.IsChange())
         {
             _mr.material = initMaterial;
         }
@@ -183,17 +189,22 @@ public class CleanDraw : MonoBehaviour, IObserver
             initMaterial = renderer.material;
         }
 
-        dustManager = FindObjectOfType<DustManager>();
-        if (dustManager != null)
+        dustObserver = FindObjectOfType<DustObserver>();
+        if (dustObserver != null)
         {
-            dustManager.RegisterObserver(this);
+            dustObserver.RegisterObserver(this);
+        }
+        saveObserver = FindObjectOfType<SaveObserver>();
+        if (saveObserver != null)
+        {
+            saveObserver.RegisterObserver(this);
         }
         Texture mainTex = initMaterial.GetTexture(MainPaintTexPropertyName);
 
-        cleanMaterial = dustManager.GetCleanMrial();
+        cleanMaterial = dustObserver.GetCleanMrial();
         cleanMaterial.SetTexture(MainPaintTexPropertyName, mainTex);
 
-        dustMaterial = dustManager.GetDustMaterial();
+        dustMaterial = dustObserver.GetDustMaterial();
         dustMaterial.SetTexture(MaskPaintTexPropertyName, renderMaskTexture);
         dustMaterial.SetTexture(MainPaintTexPropertyName, mainTex);
     }
@@ -224,7 +235,7 @@ public class CleanDraw : MonoBehaviour, IObserver
                 PaintBrush(blackBrushTexture, renderMaskTexture, pixelUV, brushSize);
                 PaintBrush(whiteBrushTexture, renderWaterTexture, pixelUV, brushSize);
                 curCount = initCount;
-                SaveRenderTextureToFile(renderMaskTexture, FileName);
+                //SaveRenderTextureToFile(renderMaskTexture, FileName);
             }
         }
     }
@@ -337,8 +348,6 @@ public class CleanDraw : MonoBehaviour, IObserver
         File.WriteAllBytes(filePath, bytes);
 
         RenderTexture.active = currentRT;
-
-        mapManager.Saved(); // json 파일에 저장했음을 표시
     }
     public Texture2D LoadTextureFromFile(string fileName)
     {
@@ -362,9 +371,9 @@ public class CleanDraw : MonoBehaviour, IObserver
         {
             resultBuffer.Release();
         }
-        if (dustManager != null)
+        if (dustObserver != null)
         {
-            dustManager.RemoveObserver(this);
+            dustObserver.RemoveObserver(this);
         }
     }
 }
