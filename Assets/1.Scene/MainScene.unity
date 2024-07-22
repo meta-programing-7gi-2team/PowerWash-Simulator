@@ -1607,6 +1607,7 @@ MonoBehaviour:
   AllObjectText: {fileID: 0}
   text: {fileID: 493609043}
   Button: {fileID: 1715460890}
+  Tablet: {fileID: 0}
   objectsWithTag: []
 --- !u!114 &87534277
 MonoBehaviour:
