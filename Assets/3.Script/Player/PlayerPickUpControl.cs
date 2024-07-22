@@ -38,7 +38,6 @@ public class PlayerPickUpControl : MonoBehaviour
         if (target)
         {
             TargetMove();
-
             if (Input.GetMouseButtonDown(0) && target.isArrange)
             {
                 TargetDrop();
