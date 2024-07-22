@@ -24,6 +24,8 @@ public class NozzleControl : MonoBehaviour
 
     private void Update()
     {
+        if (UIManager.instance.isCursor) return;
+
         if (PlayerState.instance.state.Equals(State.Hand) ||
             PlayerState.instance.state.Equals(State.Run))
             return;

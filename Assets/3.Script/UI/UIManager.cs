@@ -23,6 +23,7 @@ public class UIManager : MonoBehaviour
     private float ObjectAll;
     public List<GameObject> objectsWithTag = new List<GameObject>();
 
+    public bool isCursor { get; private set; }
     private float targetProgress = 0f;
     private void Awake()
     {
@@ -51,7 +52,20 @@ public class UIManager : MonoBehaviour
             {
                 if (Input.GetKeyDown(KeyCode.Escape))
                 {
-                    Tablet.SetActive(!Tablet.activeSelf);
+                    if (Tablet.activeSelf)
+                    {
+                        isCursor = false;
+                        Tablet.SetActive(false);
+                        Cursor.visible = false;
+                        Cursor.lockState = CursorLockMode.Locked;
+                    }
+                    else
+                    {
+                        isCursor = true;
+                        Tablet.SetActive(true);
+                        Cursor.visible = false;
+                        Cursor.lockState = CursorLockMode.None;
+                    }
                 }
             }
         }

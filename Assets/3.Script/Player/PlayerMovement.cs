@@ -19,6 +19,8 @@ public class PlayerMovement : MonoBehaviour
     }
     private void Update()
     {
+        if (UIManager.instance.isCursor) return;
+
         SetHeight();
 
         if(!PlayerState.instance.state.Equals(State.Hand))
