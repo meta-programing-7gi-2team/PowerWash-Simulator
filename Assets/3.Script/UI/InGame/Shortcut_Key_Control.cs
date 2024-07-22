@@ -5,12 +5,13 @@ using UnityEngine.UI;
 
 public class Shortcut_Key_Control : MonoBehaviour
 {
-    private bool shortcut_E = false;
-    private bool shortcut_N = false;
 
-    [SerializeField] private Image menuicon;
-    [SerializeField] private Text menuname;
-    [SerializeField] private Text togglename;
+    //private bool shortcut_E = false;
+    //private bool shortcut_N = false;
+    //
+    //[SerializeField] private Image menuicon;
+    //[SerializeField] private Text menuname;
+    //[SerializeField] private Text togglename;
 
     /*
     [Header("»Æ¿Â±‚")]
