@@ -7,11 +7,9 @@ public class PlayerLadderControl : MonoBehaviour
     private LadderObject ladder;
     private Blueprint blueprint;
     private GameObject ladder_Blueprint;
-
+    private RaycastHit hit;
     [SerializeField]
     private LayerMask layer;
-    private RaycastHit hit;
-
     private void Start()
     {
         ladder_Blueprint = GameObject.FindWithTag("Blueprint").transform.GetChild(0).gameObject;
@@ -25,20 +23,29 @@ public class PlayerLadderControl : MonoBehaviour
         {
             if(Physics.Raycast(GameManager.view.position, GameManager.view.forward, out hit, Mathf.Infinity, layer))
             {
-                hit.transform.TryGetComponent<Blueprint>(out blueprint);
-                if (!blueprint.state.Equals(Blueprint_State.Block))
+                if (hit.transform.gameObject.layer.Equals(LayerMask.NameToLayer("Blueprint")))
                 {
-                    blueprint.SetBlueprintState(Blueprint_State.Arrange);
-                    ladder.Arranged(blueprint.pos, blueprint.rot, blueprint.valueY);
+                    hit.transform.TryGetComponent<Blueprint>(out blueprint);
+                    if (!blueprint.state.Equals(Blueprint_State.Block))
+                    {
+                        blueprint.SetBlueprintState(Blueprint_State.Arrange);
+                        ladder.Arranged(blueprint.pos, blueprint.rot, blueprint.valueY);
+                    }
+                    else
+                    {
+                        ladder.PickUped();
+                    }
                 }
                 else
                 {
+                    if (blueprint && !blueprint.state.Equals(Blueprint_State.Block))
+                        blueprint.SetBlueprintState(Blueprint_State.NotArrange);
                     ladder.PickUped();
                 }
             }
             else
             {
-                if (blueprint && !blueprint.state.Equals(Blueprint_State.Block)) 
+                if (blueprint && !blueprint.state.Equals(Blueprint_State.Block))
                     blueprint.SetBlueprintState(Blueprint_State.NotArrange);
                 ladder.PickUped();
             }
