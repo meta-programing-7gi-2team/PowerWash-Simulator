@@ -10,8 +10,8 @@ public class ToggleController : MonoBehaviour
     private Text toggle1Text;
     private Text toggle2Text;
 
-    [SerializeField] private Color SelectedColor = new Color(255, 255, 255);
-    [SerializeField] private Color DeselectedColor = new Color(22, 145, 255);
+    [SerializeField] private Color SelectedColor = new Color(1, 1, 1, 1);
+    [SerializeField] private Color DeselectedColor = new Color(0.08f, 0.56f, 1);
 
     private void Start()
     {
