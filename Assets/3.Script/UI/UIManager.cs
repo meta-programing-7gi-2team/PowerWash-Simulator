@@ -43,12 +43,25 @@ public class UIManager : MonoBehaviour
         {
             Tablet = GameObject.FindWithTag("Tablet").transform.GetChild(0).gameObject;
         }
-        string currentSceneName = SceneManager.GetActiveScene().name;
-        if (Input.GetKeyDown(KeyCode.Escape))
+       string currentSceneName = SceneManager.GetActiveScene().name;
+        //if (Input.GetKeyDown(KeyCode.Escape))
+        //{
+        //    Tablet.SetActive(true);
+        //    Debug.Log("¿ﬂ ¿€µøµ ");
+        //}
+
+        foreach (string sceneName in targetSceneName)
         {
-            Tablet.SetActive(true);
-            Debug.Log("¿ﬂ ¿€µøµ ");
+            if (currentSceneName == sceneName)
+            {
+                if (Input.GetKeyDown(KeyCode.Escape))
+                {
+                    Tablet.SetActive(!Tablet.activeSelf);
+                }
+            }
         }
+
+
     }
 
     private void Start()
