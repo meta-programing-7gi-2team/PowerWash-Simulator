@@ -9,7 +9,6 @@ public class PlayerLadderControl : MonoBehaviour
     private LadderObject ladder;
     private LadderShape shape;
 
-    [SerializeField]
     private GameObject ladderShapes;
     [SerializeField]
     private LayerMask shapeLayer;
@@ -19,6 +18,7 @@ public class PlayerLadderControl : MonoBehaviour
     {
         playerCamera = Camera.main.transform;
         playerState = FindObjectOfType<PlayerState>();
+        ladderShapes = GameObject.FindWithTag("Shapes").transform.GetChild(0).gameObject;
     }
     private void Update()
     {

@@ -10,6 +10,7 @@ public class ActableObject : MonoBehaviour
     [SerializeField]
     private DangerZone dangerZone;
 
+    public DangerZone DangerZone => dangerZone;
     public void Act()
     {
         if (dangerZone.isDanger) return;

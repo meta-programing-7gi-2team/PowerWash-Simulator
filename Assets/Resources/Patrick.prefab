@@ -365,7 +365,7 @@ GameObject:
   - component: {fileID: 7170030522651023848}
   - component: {fileID: 1623904294574357634}
   - component: {fileID: 6906410083110774043}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: DangerZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1613,7 +1613,7 @@ GameObject:
   - component: {fileID: 5549039800644156433}
   m_Layer: 12
   m_Name: Recognize
-  m_TagString: Untagged
+  m_TagString: Patrick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
