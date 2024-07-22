@@ -22,8 +22,5 @@ public class Tablet_Control : MonoBehaviour
                 }
             }
         }
-
-        
     }
-
 }

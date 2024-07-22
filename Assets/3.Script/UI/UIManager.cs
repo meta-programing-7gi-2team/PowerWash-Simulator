@@ -17,6 +17,9 @@ public class UIManager : MonoBehaviour
     [SerializeField] private Text text; // 처음 텍스트
     [SerializeField] private GameObject Button; // 버튼
 
+    private string[] targetSceneName = { "Map001", "Map002" };
+    [SerializeField] private GameObject Tablet;
+
     private float ObjectAll;
     public List<GameObject> objectsWithTag = new List<GameObject>();
 
@@ -33,6 +36,23 @@ public class UIManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    private void Update()
+    {
+        string currentSceneName = SceneManager.GetActiveScene().name;
+        foreach (string sceneName in targetSceneName)
+        {
+            if (currentSceneName == sceneName)
+            {
+                if (Input.GetKeyDown(KeyCode.Escape))
+                {
+                    Tablet.SetActive(true);
+                    Debug.Log("잘 작동됨");
+                }
+            }
+        }
+    }
+
 
     private void Start()
     {
