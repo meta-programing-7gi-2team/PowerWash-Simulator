@@ -149,7 +149,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92f42dd971f2877489fbca50107cc8d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blockRange: 0
+  layer:
+    serializedVersion: 2
+    m_Bits: 1847
 --- !u!114 &278649945599296031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1065,9 +1067,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9a1da959db81134cb8caf4a95d73f23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shapeLayer:
+  layer:
     serializedVersion: 2
-    m_Bits: 2048
+    m_Bits: 0
 --- !u!1 &6123776673558284757
 GameObject:
   m_ObjectHideFlags: 0

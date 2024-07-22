@@ -6,27 +6,21 @@ public class WashGunControl : MonoBehaviour
 {
     private GameObject water;
     private GameObject stream;
-    private Transform playerCamera;
     private NozzleControl nozzle;
-    private Animator anim;
-    private PlayerState playerState;
     private Crosshair crosshair;
+    private Animator anim;
 
-    private LayerMask layers;
-    [SerializeField]
-    private float blockRange;
     private bool isAuto = false;
+    private float blockRange;
+    [SerializeField] private LayerMask layer;
 
-    public float offsetRange => blockRange;
+    public Vector3 firePoint { get; private set; }
 
     private void Start()
     {
-        playerCamera = Camera.main.transform;
         nozzle = GetComponent<NozzleControl>();
         anim = GetComponent<Animator>();
-        playerState = FindObjectOfType<PlayerState>();
         crosshair = FindObjectOfType<Crosshair>();
-        layers = (1 << LayerMask.NameToLayer("Pack")) + (1 << LayerMask.NameToLayer("Player"));
         blockRange = 0.6f;
         NozzleChange();
         
@@ -38,8 +32,10 @@ public class WashGunControl : MonoBehaviour
     }
     private void Update()
     {
-        if (playerState.state.Equals(State.Hand) ||
-            playerState.state.Equals(State.Run))
+        firePoint = GameManage.view.position + GameManage.view.forward * blockRange;
+
+        if (PlayerState.instance.state.Equals(State.Hand) ||
+            PlayerState.instance.state.Equals(State.Run))
         {
             water.SetActive(false);
             stream.SetActive(false);
@@ -73,7 +69,7 @@ public class WashGunControl : MonoBehaviour
     }
     private bool BlockCheck()
     {
-        if (Physics.Raycast(playerCamera.position, playerCamera.forward, blockRange, ~layers))
+        if (Physics.Raycast(GameManage.view.position, GameManage.view.forward, blockRange, layer))
         {
             anim.SetBool("Await", true);
             water.SetActive(false);

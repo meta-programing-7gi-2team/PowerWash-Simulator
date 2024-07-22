@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class Water : MonoBehaviour
 {
-    private Transform view; 
     private RaycastHit hit;
-    private Vector3 firePoint;
     private WashGunControl washGun;
     private Quaternion rotation;
     [SerializeField]
@@ -15,14 +13,11 @@ public class Water : MonoBehaviour
     private float shotRange;
     private void Start()
     {
-        view = Camera.main.transform;
         washGun = FindObjectOfType<WashGunControl>();
     }
     void Update()
     {
-        firePoint = view.position + view.forward * washGun.offsetRange;
-
-        if (Physics.Raycast(firePoint, view.forward, out hit, shotRange, layer))
+        if (Physics.Raycast(washGun.firePoint, GameManage.view.forward, out hit, shotRange, layer))
         {
             transform.LookAt(hit.point);
             rotation = transform.localRotation;
@@ -32,7 +27,7 @@ public class Water : MonoBehaviour
         else
         {
 
-            Vector3 targetPosition = firePoint + view.forward * shotRange;
+            Vector3 targetPosition = washGun.firePoint + GameManage.view.forward * shotRange;
             transform.LookAt(targetPosition);
             rotation = transform.localRotation;
             rotation.eulerAngles = new Vector3(rotation.eulerAngles.x, rotation.eulerAngles.y, 0f);
