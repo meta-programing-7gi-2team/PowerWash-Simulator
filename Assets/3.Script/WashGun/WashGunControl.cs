@@ -6,46 +6,32 @@ public class WashGunControl : MonoBehaviour
 {
     private GameObject water;
     private GameObject stream;
-    private Transform playerCamera;
-    private NozzleControl nozzle;
+    [SerializeField] private LayerMask layer;
     private Animator anim;
-    private PlayerState playerState;
-    private Crosshair crosshair;
 
-    private LayerMask layers;
-    [SerializeField]
-    private float blockRange;
     private bool isAuto = false;
+    private float blockRange;
 
-    public float offsetRange => blockRange;
+    public bool isFire { get; private set; }
+    public Vector3 firePoint { get; private set; }
 
     private void Start()
     {
-        playerCamera = Camera.main.transform;
-        nozzle = GetComponent<NozzleControl>();
         anim = GetComponent<Animator>();
-        playerState = FindObjectOfType<PlayerState>();
-        crosshair = FindObjectOfType<Crosshair>();
-        layers = (1 << LayerMask.NameToLayer("Pack")) + (1 << LayerMask.NameToLayer("Player"));
         blockRange = 0.6f;
-        NozzleChange();
-        
-    }
-    private void NozzleChange()
-    {
-        water = nozzle.GetCurrentWater();
-        stream = nozzle.GetCurrentStream();
+        firePoint = GameManager.view.position + GameManager.view.forward * blockRange;
     }
     private void Update()
     {
-        if (playerState.state.Equals(State.Hand) ||
-            playerState.state.Equals(State.Run))
+        firePoint = GameManager.view.position + GameManager.view.forward * blockRange;
+
+        if (PlayerState.instance.state.Equals(State.Hand) ||
+            PlayerState.instance.state.Equals(State.Run))
         {
-            water.SetActive(false);
-            stream.SetActive(false);
+            Stop();
             return;
         }
-        NozzleChange();
+
         if (!BlockCheck())
         {
             if (Input.GetMouseButtonDown(1) ||
@@ -55,29 +41,32 @@ public class WashGunControl : MonoBehaviour
             }
             if (Input.GetMouseButton(0) || isAuto)
             {
-                Shot();
+                Fire();
             }
             else if (Input.GetMouseButtonUp(0) || !isAuto)
             {
-                water.SetActive(false);
-                stream.SetActive(false);
-                crosshair.SetIsFade(true);
+                Stop();
             }
         }
     }
-    private void Shot()
+    private void Fire()
     {
+        isFire = true;
         water.SetActive(true);
         stream.SetActive(true);
-        crosshair.SetIsFade(false);
+    }
+    private void Stop()
+    {
+        isFire = false;
+        water.SetActive(false);
+        stream.SetActive(false);
     }
     private bool BlockCheck()
     {
-        if (Physics.Raycast(playerCamera.position, playerCamera.forward, blockRange, ~layers))
+        if (Physics.Raycast(GameManager.view.position, GameManager.view.forward, blockRange, layer))
         {
+            Stop();
             anim.SetBool("Await", true);
-            water.SetActive(false);
-            stream.SetActive(false);
             return true;
         }
         else
@@ -89,5 +78,10 @@ public class WashGunControl : MonoBehaviour
     public void SetBlockRange(float range)
     {
         blockRange = range;
+    }
+    public void SetNozzleInfo(GameObject water, GameObject stream)
+    {
+        this.water = water;
+        this.stream = stream;
     }
 }

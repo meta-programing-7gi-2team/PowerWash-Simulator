@@ -4,35 +4,32 @@ using UnityEngine;
 
 public class PlayerLadderControl : MonoBehaviour
 {
-    private Transform playerCamera;
-    private PlayerState playerState;
     private LadderObject ladder;
-    private LadderShape shape;
+    private Blueprint blueprint;
+    private GameObject ladder_Blueprint;
 
-    private GameObject ladderShapes;
     [SerializeField]
-    private LayerMask shapeLayer;
+    private LayerMask layer;
     private RaycastHit hit;
 
     private void Start()
     {
-        playerCamera = Camera.main.transform;
-        playerState = FindObjectOfType<PlayerState>();
-        ladderShapes = GameObject.FindWithTag("Shapes").transform.GetChild(0).gameObject;
+        ladder_Blueprint = GameObject.FindWithTag("Blueprint").transform.GetChild(0).gameObject;
     }
     private void Update()
     {
-        if (playerState.state.Equals(State.Run)) return;
+        if (PlayerState.instance.state.Equals(State.Run))
+            return;
 
         if (ladder)
         {
-            if(Physics.Raycast(playerCamera.position, playerCamera.forward, out hit, Mathf.Infinity, shapeLayer))
+            if(Physics.Raycast(GameManager.view.position, GameManager.view.forward, out hit, Mathf.Infinity, layer))
             {
-                hit.transform.TryGetComponent<LadderShape>(out shape);
-                if (!shape.state.Equals(Shape.Block))
+                hit.transform.TryGetComponent(out blueprint);
+                if (!blueprint.state.Equals(Blueprint_State.Block))
                 {
-                    shape.SetShape(Shape.Arrange);
-                    ladder.Arranged(shape.pos, shape.rot, shape.valueY);
+                    blueprint.SetBlueprintState(Blueprint_State.Arrange);
+                    ladder.Arranged(blueprint.pos, blueprint.rot, blueprint.valueY);
                 }
                 else
                 {
@@ -41,13 +38,13 @@ public class PlayerLadderControl : MonoBehaviour
             }
             else
             {
-                if (shape && !shape.state.Equals(Shape.Block)) shape.SetShape(Shape.NotArrange);
+                if (blueprint && !blueprint.state.Equals(Blueprint_State.Block)) blueprint.SetBlueprintState(Blueprint_State.NotArrange);
                 ladder.PickUped();
             }
         }
         else
         {
-            Physics.Raycast(playerCamera.position, playerCamera.forward, out hit, Mathf.Infinity);
+            Physics.Raycast(GameManager.view.position, GameManager.view.forward, out hit, Mathf.Infinity);
         }
 
         if (Input.GetKeyDown(KeyCode.F))
@@ -88,21 +85,21 @@ public class PlayerLadderControl : MonoBehaviour
     }
     private void PickUp()
     {
-        playerState.SetState(State.Hand);
-        ladderShapes.SetActive(true);
+        PlayerState.instance.SetState(State.Hand);
+        ladder_Blueprint.SetActive(true);
         ladder.PickUped();
     }
     private void Drop()
     {
-        playerState.SetState(State.Idle);
-        ladderShapes.SetActive(false);
+        PlayerState.instance.SetState(State.Idle);
+        ladder_Blueprint.SetActive(false);
         ladder.Droped();
         ladder = null;
     }
     private void Place()
     {
-        playerState.SetState(State.Idle);
-        ladderShapes.SetActive(false);
+        PlayerState.instance.SetState(State.Idle);
+        ladder_Blueprint.SetActive(false);
         ladder.Placed();
         ladder = null;
     }

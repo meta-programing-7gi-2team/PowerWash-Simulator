@@ -4,17 +4,12 @@ using UnityEngine;
 using UnityEngine.UI;
 public class PostureControl : MonoBehaviour
 {
-    private PlayerState playerState;
 
     [SerializeField]
     private Image[] posture;
     private int curPos = 0;
     private Color disable = new Color(35f / 255f, 81f / 255f, 131f / 255f);
 
-    private void Start()
-    {
-        playerState = FindObjectOfType<PlayerState>();
-    }
     private void Update()
     {
         ChangePostureUI();
@@ -23,7 +18,7 @@ public class PostureControl : MonoBehaviour
     private void ChangePostureUI()
     {
         posture[curPos].color = disable;
-        switch (playerState.state)
+        switch (PlayerState.instance.state)
         {
             case State.Idle:
             case State.Run:

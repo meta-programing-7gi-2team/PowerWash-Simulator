@@ -4,18 +4,16 @@ using UnityEngine;
 
 public class PlayerAnimationControl : MonoBehaviour
 {
-    private PlayerState playerState;
     private Animator player_anim;
 
     private void Start()
     {
         player_anim = GetComponent<Animator>();
-        playerState = GetComponent<PlayerState>();
     }
     private void Update()
     {
-        if(playerState.state.Equals(State.Run) ||
-            playerState.state.Equals(State.Hand))
+        if(PlayerState.instance.state.Equals(State.Run) ||
+            PlayerState.instance.state.Equals(State.Hand))
         {
             player_anim.SetBool("HandUp", false);
         }

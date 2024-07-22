@@ -7,20 +7,21 @@ public class Crosshair : MonoBehaviour
     private RectTransform rect;
     private FirstPersonCamera fpc;
     private Image image;
+    private WashGunControl washGun;
 
     private Vector3 center;
     private Color color;
 
     [SerializeField]
     private float fadeSpeed;
-    private bool isFadeIn;
-    
+
     private void Start()
     {
         rect = GetComponent<RectTransform>();
         fpc = FindObjectOfType<FirstPersonCamera>();
         image = GetComponent<Image>();
         color = GetComponent<Image>().color;
+        washGun = FindObjectOfType<WashGunControl>();
         center = new Vector3(Screen.width / 2, Screen.height / 2, 0);
     }
 
@@ -36,13 +37,13 @@ public class Crosshair : MonoBehaviour
             rect.position = center;
         }
 
-        if (isFadeIn)
+        if (washGun.isFire)
         {
-            FadeIn();
+            FadeOut();
         }
         else
         {
-            FadeOut();
+            FadeIn();
         }
     }
     private void FadeIn()
@@ -62,9 +63,5 @@ public class Crosshair : MonoBehaviour
             color.a = Mathf.Clamp(color.a, 0f, 1f);
             image.color = color;
         }
-    }
-    public void SetIsFade(bool b)
-    {
-        isFadeIn = b;
     }
 }
