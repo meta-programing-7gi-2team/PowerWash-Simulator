@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class MenuButton : MonoBehaviour
 {
@@ -20,11 +21,19 @@ public class MenuButton : MonoBehaviour
     [SerializeField] private GameObject SetChoice_Toggle;
     [SerializeField] private GameObject Pineapple_Btn;
     [SerializeField] private GameObject KrustyKrab_Btn;
+    [SerializeField] private Animator FastShop_Btn;
+    [SerializeField] private Animator FastCareer_Btn;
+    [SerializeField] private Animator FastSpecial_Btn;
+    [SerializeField] private Animator FastOption_Btn;
+    [SerializeField] private Animator FastMain_Btn;
+    [SerializeField] private Animator FastQuit_Btn;
 
     private bool SpecialCheck;
+    private bool FastCheck;
 
     public void SpecialButton()
     {
+
         MainMenu.SetActive(false);
         Special_Btn.SetActive(false);
         Career_Btn.SetActive(false);
@@ -33,7 +42,22 @@ public class MenuButton : MonoBehaviour
         Continue_Btn.SetActive(true);
         Freedom_Btn.SetActive(true);
         Back_Btn.SetActive(true);
+
         SpecialCheck = true;
+
+        if(FastCheck.Equals(true))
+        {
+            FastClose_Btn.SetActive(false);
+            Fast_Btn.SetActive(true);
+            FastManu.SetTrigger("FastClose");
+            FastShop_Btn.SetTrigger("FastClose");
+            FastCareer_Btn.SetTrigger("FastClose");
+            FastSpecial_Btn.SetTrigger("FastClose");
+            FastOption_Btn.SetTrigger("FastClose");
+            FastMain_Btn.SetTrigger("FastClose");
+            FastQuit_Btn.SetTrigger("FastClose");
+            FastCheck = false;
+        }
     }
 
     public void BackButton()
@@ -57,6 +81,13 @@ public class MenuButton : MonoBehaviour
             Back_Btn.SetActive(false);
             FastClose_Btn.SetActive(true);
             FastManu.SetTrigger("FastOpen");
+            FastShop_Btn.SetTrigger("FastOpen");
+            FastCareer_Btn.SetTrigger("FastOpen");
+            FastSpecial_Btn.SetTrigger("FastOpen");
+            FastOption_Btn.SetTrigger("FastOpen");
+            FastMain_Btn.SetTrigger("FastOpen");
+            FastQuit_Btn.SetTrigger("FastOpen");
+            FastCheck = true;
         }
         else
         {
@@ -64,6 +95,13 @@ public class MenuButton : MonoBehaviour
             Option_Btn.SetActive(false);
             FastClose_Btn.SetActive(true);
             FastManu.SetTrigger("FastOpen");
+            FastShop_Btn.SetTrigger("FastOpen");
+            FastCareer_Btn.SetTrigger("FastOpen");
+            FastSpecial_Btn.SetTrigger("FastOpen");
+            FastOption_Btn.SetTrigger("FastOpen");
+            FastMain_Btn.SetTrigger("FastOpen");
+            FastQuit_Btn.SetTrigger("FastOpen");
+            FastCheck = true;
         }
     }
 
@@ -75,6 +113,13 @@ public class MenuButton : MonoBehaviour
             Fast_Btn.SetActive(true);
             Back_Btn.SetActive(true);
             FastManu.SetTrigger("FastClose");
+            FastShop_Btn.SetTrigger("FastClose");
+            FastCareer_Btn.SetTrigger("FastClose");
+            FastSpecial_Btn.SetTrigger("FastClose");
+            FastOption_Btn.SetTrigger("FastClose");
+            FastMain_Btn.SetTrigger("FastClose");
+            FastQuit_Btn.SetTrigger("FastClose");
+            FastCheck = false;
         }
         else
         {
@@ -82,6 +127,13 @@ public class MenuButton : MonoBehaviour
             Option_Btn.SetActive(true);
             Fast_Btn.SetActive(true);
             FastManu.SetTrigger("FastClose");
+            FastShop_Btn.SetTrigger("FastClose");
+            FastCareer_Btn.SetTrigger("FastClose");
+            FastSpecial_Btn.SetTrigger("FastClose");
+            FastOption_Btn.SetTrigger("FastClose");
+            FastMain_Btn.SetTrigger("FastClose");
+            FastQuit_Btn.SetTrigger("FastClose");
+            FastCheck = false;
         }
     }
 
@@ -96,6 +148,20 @@ public class MenuButton : MonoBehaviour
         SetChoice_Toggle.SetActive(true);
         Pineapple_Btn.SetActive(true);
         KrustyKrab_Btn.SetActive(true);
+
+        if (FastCheck.Equals(true))
+        {
+            FastClose_Btn.SetActive(false);
+            Fast_Btn.SetActive(true);
+            FastManu.SetTrigger("FastClose");
+            FastShop_Btn.SetTrigger("FastClose");
+            FastCareer_Btn.SetTrigger("FastClose");
+            FastSpecial_Btn.SetTrigger("FastClose");
+            FastOption_Btn.SetTrigger("FastClose");
+            FastMain_Btn.SetTrigger("FastClose");
+            FastQuit_Btn.SetTrigger("FastClose");
+            FastCheck = false;
+        }
     }
 
     public void GameBackButton()
@@ -109,5 +175,19 @@ public class MenuButton : MonoBehaviour
         Freedom_Btn.SetActive(true);
         MenuShadow.SetActive(true);
         Back_Btn.SetActive(true);
+    }
+
+    public void Disabled()
+    {
+        EventSystem.current.SetSelectedGameObject(null);
+    }
+
+    public void GameExit()
+    {
+        #if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+        #endif
+
+        Application.Quit();
     }
 }
