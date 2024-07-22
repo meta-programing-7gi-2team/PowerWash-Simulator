@@ -39,17 +39,15 @@ public class UIManager : MonoBehaviour
 
     private void Update()
     {
-        string currentSceneName = SceneManager.GetActiveScene().name;
-        foreach (string sceneName in targetSceneName)
+        if (Tablet == null)
         {
-            if (currentSceneName == sceneName)
-            {
-                if (Input.GetKeyDown(KeyCode.Escape))
-                {
-                    Tablet.SetActive(true);
-                    Debug.Log("¿ﬂ ¿€µøµ ");
-                }
-            }
+            Tablet = GameObject.FindWithTag("Tablet").transform.GetChild(0).gameObject;
+        }
+        string currentSceneName = SceneManager.GetActiveScene().name;
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Tablet.SetActive(true);
+            Debug.Log("¿ﬂ ¿€µøµ ");
         }
     }
 
@@ -153,19 +151,6 @@ public class UIManager : MonoBehaviour
                 }
                 Instantiate(resourceRequest.asset);
             }
-        }
-    }
-
-    private void TabletSetting()
-    {
-        if (Tablet == null)
-        {
-            GameObject tablet = GameObject.FindGameObjectWithTag("Tablet");
-
-            //if (tablet != null)
-            //{
-            //    Tablet=tablet.GetComponent<>
-            //}
         }
     }
 
