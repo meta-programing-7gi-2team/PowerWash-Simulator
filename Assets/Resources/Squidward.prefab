@@ -118,6 +118,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 1
   KrustyKrab: 0
+  FileName: SH-Bicycle_1
+  DirName: Save
+  isSave: 0
 --- !u!1 &618717057957896043
 GameObject:
   m_ObjectHideFlags: 0
@@ -236,6 +239,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 6
   KrustyKrab: 0
+  FileName: SH-Ear_0_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &810112000955291828
 GameObject:
   m_ObjectHideFlags: 0
@@ -354,6 +360,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 10
   KrustyKrab: 0
+  FileName: SH-PortholeWindow_1_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &914661544049778202
 GameObject:
   m_ObjectHideFlags: 0
@@ -472,6 +481,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 14
   KrustyKrab: 0
+  FileName: SH-RoofChair_1
+  DirName: Save
+  isSave: 0
 --- !u!1 &1728891972575711938
 GameObject:
   m_ObjectHideFlags: 0
@@ -590,6 +602,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 1
   KrustyKrab: 0
+  FileName: SH-Bicycle_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &2635607001620687969
 GameObject:
   m_ObjectHideFlags: 0
@@ -708,6 +723,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 10
   KrustyKrab: 0
+  FileName: SH-PortholeWindow_0_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &2790452472178796644
 GameObject:
   m_ObjectHideFlags: 0
@@ -826,6 +844,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 9
   KrustyKrab: 0
+  FileName: SH-PortholeFrame_0_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &3391204019168053658
 GameObject:
   m_ObjectHideFlags: 0
@@ -944,6 +965,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 12
   KrustyKrab: 0
+  FileName: SH-RearWindowFrame_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &3731761446384368473
 GameObject:
   m_ObjectHideFlags: 0
@@ -1062,6 +1086,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 8
   KrustyKrab: 0
+  FileName: SH-Nose_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &4884508018167562485
 GameObject:
   m_ObjectHideFlags: 0
@@ -1180,6 +1207,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 14
   KrustyKrab: 0
+  FileName: SH-RoofChair_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &5041774049914645992
 GameObject:
   m_ObjectHideFlags: 0
@@ -1298,6 +1328,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 2
   KrustyKrab: 0
+  FileName: SH-Brow_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &5051328981405561287
 GameObject:
   m_ObjectHideFlags: 0
@@ -1416,6 +1449,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 5
   KrustyKrab: 0
+  FileName: SH-DoorKnob_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &5100873878195614090
 GameObject:
   m_ObjectHideFlags: 0
@@ -1534,6 +1570,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 15
   KrustyKrab: 0
+  FileName: SH-Step_1_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &5232928814058927858
 GameObject:
   m_ObjectHideFlags: 0
@@ -1652,6 +1691,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 11
   KrustyKrab: 0
+  FileName: SH-RearWindow_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &5613241411562017177
 GameObject:
   m_ObjectHideFlags: 0
@@ -1770,6 +1812,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 15
   KrustyKrab: 0
+  FileName: SH-Step_3_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &5786978842211419734
 GameObject:
   m_ObjectHideFlags: 0
@@ -1888,6 +1933,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 13
   KrustyKrab: 0
+  FileName: SH-Roof_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &6573683330660322235
 GameObject:
   m_ObjectHideFlags: 0
@@ -2006,6 +2054,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 3
   KrustyKrab: 0
+  FileName: SH-Door_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &6762576455338149311
 GameObject:
   m_ObjectHideFlags: 0
@@ -2177,6 +2228,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 7
   KrustyKrab: 0
+  FileName: SH-Head_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &7722282374908531594
 GameObject:
   m_ObjectHideFlags: 0
@@ -2295,6 +2349,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 9
   KrustyKrab: 0
+  FileName: SH-PortholeFrame_1_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &7978178993357634815
 GameObject:
   m_ObjectHideFlags: 0
@@ -2413,6 +2470,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 4
   KrustyKrab: 0
+  FileName: SH-DoorAlcove_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &8459835893821448340
 GameObject:
   m_ObjectHideFlags: 0
@@ -2531,6 +2591,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 15
   KrustyKrab: 0
+  FileName: SH-Step_2_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &8475703479604097723
 GameObject:
   m_ObjectHideFlags: 0
@@ -2649,6 +2712,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 6
   KrustyKrab: 0
+  FileName: SH-Ear_1_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &8526297005851808124
 GameObject:
   m_ObjectHideFlags: 0
@@ -2767,3 +2833,6 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 15
   KrustyKrab: 0
+  FileName: SH-Step_0_0
+  DirName: Save
+  isSave: 0

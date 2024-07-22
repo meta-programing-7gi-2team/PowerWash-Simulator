@@ -118,6 +118,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 24
+  FileName: KK-SideWallPlank_1_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &110912151261564587
 GameObject:
   m_ObjectHideFlags: 0
@@ -236,6 +239,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 10
+  FileName: KK-DumpsterOuter_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &112185853030803034
 GameObject:
   m_ObjectHideFlags: 0
@@ -354,6 +360,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 16
+  FileName: KK-Nail_4_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &230119515925078218
 GameObject:
   m_ObjectHideFlags: 0
@@ -472,6 +481,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 23
+  FileName: KK-RoofPlank_2_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &237177683384685769
 GameObject:
   m_ObjectHideFlags: 0
@@ -590,6 +602,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 28
+  FileName: KK-Window_3_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &290091756186508971
 GameObject:
   m_ObjectHideFlags: 0
@@ -708,6 +723,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 31
+  FileName: KK-MaritimeFlag_2_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &419820294517115395
 GameObject:
   m_ObjectHideFlags: 0
@@ -826,6 +844,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 13
+  FileName: KK-EntranceSignPost_1
+  DirName: Save
+  isSave: 0
 --- !u!1 &468604757065823978
 GameObject:
   m_ObjectHideFlags: 0
@@ -944,6 +965,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 27
+  FileName: KK-SignLetter_6_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &715229454510243576
 GameObject:
   m_ObjectHideFlags: 0
@@ -1062,6 +1086,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 27
+  FileName: KK-SignLetter_1_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &731495332372899184
 GameObject:
   m_ObjectHideFlags: 0
@@ -1180,6 +1207,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 27
+  FileName: KK-SignLetter_7_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &809323185997088097
 GameObject:
   m_ObjectHideFlags: 0
@@ -1298,6 +1328,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 23
+  FileName: KK-RoofPlank_0_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &1013170718709978324
 GameObject:
   m_ObjectHideFlags: 0
@@ -1512,6 +1545,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 22
+  FileName: KK-RearWall_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &1231400696203462245
 GameObject:
   m_ObjectHideFlags: 0
@@ -1630,6 +1666,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 23
+  FileName: KK-RoofPlank_4_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &1310834013434886206
 GameObject:
   m_ObjectHideFlags: 0
@@ -1748,6 +1787,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 27
+  FileName: KK-SignLetter_0_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &1435221226790511085
 GameObject:
   m_ObjectHideFlags: 0
@@ -1866,6 +1908,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 19
+  FileName: KK-RearDoor_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &1528765854006670914
 GameObject:
   m_ObjectHideFlags: 0
@@ -1984,6 +2029,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 16
+  FileName: KK-Nail_13_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &1541225882785425190
 GameObject:
   m_ObjectHideFlags: 0
@@ -2102,6 +2150,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 28
+  FileName: KK-Window_0_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &1701710353185218819
 GameObject:
   m_ObjectHideFlags: 0
@@ -2316,6 +2367,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 27
+  FileName: KK-SignLetter_11_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &1781468284167609349
 GameObject:
   m_ObjectHideFlags: 0
@@ -2434,6 +2488,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 9
+  FileName: KK-DumpsterLidRim_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &1839353956859246637
 GameObject:
   m_ObjectHideFlags: 0
@@ -2552,6 +2609,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 13
+  FileName: KK-EntranceSignPost_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &1869965170802471375
 GameObject:
   m_ObjectHideFlags: 0
@@ -2766,6 +2826,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 16
+  FileName: KK-Nail_1_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &1952267839088401634
 GameObject:
   m_ObjectHideFlags: 0
@@ -2884,6 +2947,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 23
+  FileName: KK-RoofPlank_10_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &1980374445154647650
 GameObject:
   m_ObjectHideFlags: 0
@@ -3002,6 +3068,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 31
+  FileName: KK-MaritimeFlag_0_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &2044837152658333179
 GameObject:
   m_ObjectHideFlags: 0
@@ -3120,6 +3189,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 8
+  FileName: KK-DumpsterLidFace_0_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &2135753934716711413
 GameObject:
   m_ObjectHideFlags: 0
@@ -3238,6 +3310,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 27
+  FileName: KK-SignLetter_2_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &2170775679119114906
 GameObject:
   m_ObjectHideFlags: 0
@@ -3452,6 +3527,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 23
+  FileName: KK-RoofPlank_7_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &2501124454134333899
 GameObject:
   m_ObjectHideFlags: 0
@@ -3570,6 +3648,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 27
+  FileName: KK-SignLetter_10_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &2530905735736819770
 GameObject:
   m_ObjectHideFlags: 0
@@ -3688,6 +3769,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 28
+  FileName: KK-Window_2_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &2682928977965423168
 GameObject:
   m_ObjectHideFlags: 0
@@ -3806,6 +3890,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 16
+  FileName: KK-Nail_5_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &2715644322961916985
 GameObject:
   m_ObjectHideFlags: 0
@@ -3924,6 +4011,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 5
+  FileName: KK-Door_1_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &2738181634578446599
 GameObject:
   m_ObjectHideFlags: 0
@@ -4042,6 +4132,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 8
+  FileName: KK-DumpsterLidFace_1_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &2809964818190629435
 GameObject:
   m_ObjectHideFlags: 0
@@ -4160,6 +4253,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 1
+  FileName: KK-Arch_1_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &2901987206583060915
 GameObject:
   m_ObjectHideFlags: 0
@@ -4278,6 +4374,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 16
+  FileName: KK-Nail_14_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &2911014508102847648
 GameObject:
   m_ObjectHideFlags: 0
@@ -4396,6 +4495,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 6
+  FileName: KK-Door_1_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &2958792763982627955
 GameObject:
   m_ObjectHideFlags: 0
@@ -4514,6 +4616,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 16
+  FileName: KK-Nail_12_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &3089815350192780913
 GameObject:
   m_ObjectHideFlags: 0
@@ -4632,6 +4737,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 21
+  FileName: KK-RearDoorPorthole_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &3113975867826799175
 GameObject:
   m_ObjectHideFlags: 0
@@ -4644,7 +4752,6 @@ GameObject:
   - component: {fileID: 2544796093752720766}
   - component: {fileID: 6229202314977038809}
   - component: {fileID: 7879979006161804822}
-  - component: {fileID: 9059502983070614074}
   - component: {fileID: 2367242243793042016}
   m_Layer: 10
   m_Name: KK-Mayo_0
@@ -4730,20 +4837,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -6369524236297792516, guid: bea0fa7a0148f3547ac5307f3173fc19, type: 3}
---- !u!64 &9059502983070614074
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3113975867826799175}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -6369524236297792516, guid: bea0fa7a0148f3547ac5307f3173fc19, type: 3}
 --- !u!114 &2367242243793042016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4765,6 +4858,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 15
+  FileName: KK-Mayo_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &3192687509950955281
 GameObject:
   m_ObjectHideFlags: 0
@@ -4883,6 +4979,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 26
+  FileName: KK-SignShell_1_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &3320896630643762248
 GameObject:
   m_ObjectHideFlags: 0
@@ -5001,6 +5100,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 16
+  FileName: KK-Nail_3_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &3352139426943303819
 GameObject:
   m_ObjectHideFlags: 0
@@ -5119,6 +5221,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 23
+  FileName: KK-RoofPlank_11_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &3461243076959568329
 GameObject:
   m_ObjectHideFlags: 0
@@ -5333,6 +5438,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 7
+  FileName: KK-DumpsterInner_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &3676604559627215576
 GameObject:
   m_ObjectHideFlags: 0
@@ -5451,6 +5559,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 16
+  FileName: KK-Nail_9_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &3694503628429689503
 GameObject:
   m_ObjectHideFlags: 0
@@ -5569,6 +5680,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 27
+  FileName: KK-SignLetter_9_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &3871818645214152928
 GameObject:
   m_ObjectHideFlags: 0
@@ -5687,6 +5801,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 2
+  FileName: KK-Arch_1_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &3896014324927365297
 GameObject:
   m_ObjectHideFlags: 0
@@ -5805,6 +5922,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 4
+  FileName: KK-Door_0_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &3956658671542278485
 GameObject:
   m_ObjectHideFlags: 0
@@ -5923,6 +6043,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 12
+  FileName: KK-DumpsterWheel_3_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &4033035000164601196
 GameObject:
   m_ObjectHideFlags: 0
@@ -6041,6 +6164,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 30
+  FileName: KK-SideWallRope_0_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &4094794041761844931
 GameObject:
   m_ObjectHideFlags: 0
@@ -6159,6 +6285,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 23
+  FileName: KK-RoofPlank_1_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &4146426468112357025
 GameObject:
   m_ObjectHideFlags: 0
@@ -6277,6 +6406,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 26
+  FileName: KK-SignShell_0_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &4199809574622046609
 GameObject:
   m_ObjectHideFlags: 0
@@ -6395,6 +6527,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 25
+  FileName: KK-SignPole_1
+  DirName: Save
+  isSave: 0
 --- !u!1 &4298880058083154709
 GameObject:
   m_ObjectHideFlags: 0
@@ -6513,6 +6648,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 27
+  FileName: KK-SignLetter_12_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &4358695760925887472
 GameObject:
   m_ObjectHideFlags: 0
@@ -6631,6 +6769,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 24
+  FileName: KK-SideWallPlank_2_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &4412251531813519843
 GameObject:
   m_ObjectHideFlags: 0
@@ -6749,6 +6890,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 24
+  FileName: KK-SideWallPlank_5_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &4464919570307239883
 GameObject:
   m_ObjectHideFlags: 0
@@ -6867,6 +7011,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 24
+  FileName: KK-SideWallPlank_3_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &4474654528847644724
 GameObject:
   m_ObjectHideFlags: 0
@@ -6985,6 +7132,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 23
+  FileName: KK-RoofPlank_9_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &4481910223033212791
 GameObject:
   m_ObjectHideFlags: 0
@@ -7103,6 +7253,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 14
+  FileName: KK-FlagRope_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &4716666954179740647
 GameObject:
   m_ObjectHideFlags: 0
@@ -7221,6 +7374,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 24
+  FileName: KK-SideWallPlank_4_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &4744570336227379770
 GameObject:
   m_ObjectHideFlags: 0
@@ -7339,6 +7495,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 16
+  FileName: KK-Nail_5_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &4776146892733198719
 GameObject:
   m_ObjectHideFlags: 0
@@ -7457,6 +7616,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 21
+  FileName: KK-RearDoorPorthole_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &4968474919139217826
 GameObject:
   m_ObjectHideFlags: 0
@@ -7575,6 +7737,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 16
+  FileName: KK-Nail_5_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &4993295113852278481
 GameObject:
   m_ObjectHideFlags: 0
@@ -7693,6 +7858,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 31
+  FileName: KK-MaritimeFlag_1_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &5017049878816710349
 GameObject:
   m_ObjectHideFlags: 0
@@ -7811,6 +7979,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 29
+  FileName: KK-WeatherVane_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &5105624040519803538
 GameObject:
   m_ObjectHideFlags: 0
@@ -7929,6 +8100,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 3
+  FileName: KK-Chimney_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &5668538661995277684
 GameObject:
   m_ObjectHideFlags: 0
@@ -8047,6 +8221,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 1
+  FileName: KK-Arch_0_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &5825145841196739180
 GameObject:
   m_ObjectHideFlags: 0
@@ -8165,6 +8342,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 16
+  FileName: KK-Nail_5_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &5857862436109713853
 GameObject:
   m_ObjectHideFlags: 0
@@ -8283,6 +8463,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 2
+  FileName: KK-Arch_1_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &5890683523289617403
 GameObject:
   m_ObjectHideFlags: 0
@@ -8401,6 +8584,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 28
+  FileName: KK-Window_1_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &5997142087687834498
 GameObject:
   m_ObjectHideFlags: 0
@@ -8519,6 +8705,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 27
+  FileName: KK-SignLetter_3_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &6391163563055432439
 GameObject:
   m_ObjectHideFlags: 0
@@ -8637,6 +8826,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 30
+  FileName: KK-SideWallRope_1_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &6430922159571285235
 GameObject:
   m_ObjectHideFlags: 0
@@ -8755,6 +8947,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 4
+  FileName: KK-Door_1_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &6555199950146946409
 GameObject:
   m_ObjectHideFlags: 0
@@ -8873,6 +9068,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 24
+  FileName: KK-SideWallPlank_7_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &6871524779472742529
 GameObject:
   m_ObjectHideFlags: 0
@@ -8991,6 +9189,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 27
+  FileName: KK-SignLetter_5_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &6909220386739160740
 GameObject:
   m_ObjectHideFlags: 0
@@ -9109,6 +9310,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 16
+  FileName: KK-Nail_11_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &6915786822181850782
 GameObject:
   m_ObjectHideFlags: 0
@@ -9227,6 +9431,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 12
+  FileName: KK-DumpsterWheel_0_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &7024847548440105440
 GameObject:
   m_ObjectHideFlags: 0
@@ -9345,6 +9552,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 27
+  FileName: KK-SignLetter_4_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &7066503445418198362
 GameObject:
   m_ObjectHideFlags: 0
@@ -9463,6 +9673,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 11
+  FileName: KK-DumpsterRim_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &7178547041409783328
 GameObject:
   m_ObjectHideFlags: 0
@@ -9581,6 +9794,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 17
+  FileName: KK-PortholeFrame_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &7191981139015643369
 GameObject:
   m_ObjectHideFlags: 0
@@ -9699,6 +9915,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 28
+  FileName: KK-Window_0_1
+  DirName: Save
+  isSave: 0
 --- !u!1 &7192192272989961498
 GameObject:
   m_ObjectHideFlags: 0
@@ -9817,6 +10036,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 24
+  FileName: KK-SideWallPlank_6_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &7264340906212389734
 GameObject:
   m_ObjectHideFlags: 0
@@ -9935,6 +10157,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 12
+  FileName: KK-DumpsterWheel_2_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &7375718395163636700
 GameObject:
   m_ObjectHideFlags: 0
@@ -10053,6 +10278,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 12
+  FileName: KK-DumpsterWheel_0_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &7442215170921103266
 GameObject:
   m_ObjectHideFlags: 0
@@ -10171,6 +10399,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 23
+  FileName: KK-RoofPlank_5_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &7478713546098140319
 GameObject:
   m_ObjectHideFlags: 0
@@ -10289,6 +10520,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 16
+  FileName: KK-Nail_0_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &7582279239071542711
 GameObject:
   m_ObjectHideFlags: 0
@@ -10407,6 +10641,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 23
+  FileName: KK-RoofPlank_6_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &7631292706386186149
 GameObject:
   m_ObjectHideFlags: 0
@@ -10525,6 +10762,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 27
+  FileName: KK-SignLetter_8_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &7635013353652226008
 GameObject:
   m_ObjectHideFlags: 0
@@ -10643,6 +10883,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 16
+  FileName: KK-Nail_15_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &7652327774978390452
 GameObject:
   m_ObjectHideFlags: 0
@@ -10761,6 +11004,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 16
+  FileName: KK-Nail_2_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &7696909509414131604
 GameObject:
   m_ObjectHideFlags: 0
@@ -10879,6 +11125,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 16
+  FileName: KK-Nail_10_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &7879979005043047621
 GameObject:
   m_ObjectHideFlags: 0
@@ -11130,6 +11379,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 25
+  FileName: KK-SignPole_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &8072643887574691698
 GameObject:
   m_ObjectHideFlags: 0
@@ -11248,6 +11500,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 31
+  FileName: KK-MaritimeFlag_3_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &8323019415382396147
 GameObject:
   m_ObjectHideFlags: 0
@@ -11366,6 +11621,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 24
+  FileName: KK-SideWallPlank_0_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &8332125909050236705
 GameObject:
   m_ObjectHideFlags: 0
@@ -11484,6 +11742,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 23
+  FileName: KK-RoofPlank_12_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &8384974551557697718
 GameObject:
   m_ObjectHideFlags: 0
@@ -11602,6 +11863,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 23
+  FileName: KK-RoofPlank_8_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &8516490431694755881
 GameObject:
   m_ObjectHideFlags: 0
@@ -11720,6 +11984,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 20
+  FileName: KK-RearDoorFrame_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &8928512956777014628
 GameObject:
   m_ObjectHideFlags: 0
@@ -11838,6 +12105,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 31
+  FileName: KK-MaritimeFlag_4_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &8940299752864461802
 GameObject:
   m_ObjectHideFlags: 0
@@ -11956,6 +12226,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 23
+  FileName: KK-RoofPlank_3_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &9093902018342604769
 GameObject:
   m_ObjectHideFlags: 0
@@ -12074,6 +12347,9 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 18
+  FileName: KK-PortholeWindow_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &9188302364704319162
 GameObject:
   m_ObjectHideFlags: 0
@@ -12192,3 +12468,6 @@ MonoBehaviour:
   Patrick: 0
   Squidward: 0
   KrustyKrab: 6
+  FileName: KK-DoorHandle_1_0
+  DirName: Save
+  isSave: 0

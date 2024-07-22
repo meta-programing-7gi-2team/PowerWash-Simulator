@@ -69,8 +69,6 @@ public class CleanDraw : MonoBehaviour, IObserver
     [SerializeField] bool isSave = false;
     private MapManager mapManager;
 
-
-    //private void OnEnable()
     private void Start()
     {
         Init();

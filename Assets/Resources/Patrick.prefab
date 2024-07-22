@@ -118,6 +118,9 @@ MonoBehaviour:
   Patrick: 6
   Squidward: 0
   KrustyKrab: 0
+  FileName: PH-Rock_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &1650427521897393945
 GameObject:
   m_ObjectHideFlags: 0
@@ -236,6 +239,9 @@ MonoBehaviour:
   Patrick: 4
   Squidward: 0
   KrustyKrab: 0
+  FileName: PH-Lamp_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &1880212942934315559
 GameObject:
   m_ObjectHideFlags: 0
@@ -354,6 +360,9 @@ MonoBehaviour:
   Patrick: 5
   Squidward: 0
   KrustyKrab: 0
+  FileName: PH-Television_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &2626265145641618310
 GameObject:
   m_ObjectHideFlags: 0
@@ -530,6 +539,9 @@ MonoBehaviour:
   Patrick: 1
   Squidward: 0
   KrustyKrab: 0
+  FileName: PH-Bin_1_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &4778891709897815202
 GameObject:
   m_ObjectHideFlags: 0
@@ -648,6 +660,9 @@ MonoBehaviour:
   Patrick: 3
   Squidward: 0
   KrustyKrab: 0
+  FileName: PH-Couch_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &5081392844148854742
 GameObject:
   m_ObjectHideFlags: 0
@@ -766,6 +781,9 @@ MonoBehaviour:
   Patrick: 4
   Squidward: 0
   KrustyKrab: 0
+  FileName: PH-Lamp_1
+  DirName: Save
+  isSave: 0
 --- !u!1 &5747234837693941682
 GameObject:
   m_ObjectHideFlags: 0
@@ -884,6 +902,9 @@ MonoBehaviour:
   Patrick: 9
   Squidward: 0
   KrustyKrab: 0
+  FileName: PH-WeatherVane_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &5968087110335920026
 GameObject:
   m_ObjectHideFlags: 0
@@ -1002,6 +1023,9 @@ MonoBehaviour:
   Patrick: 7
   Squidward: 0
   KrustyKrab: 0
+  FileName: PH-RockUnderside_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &6636889217284005332
 GameObject:
   m_ObjectHideFlags: 0
@@ -1120,6 +1144,9 @@ MonoBehaviour:
   Patrick: 2
   Squidward: 0
   KrustyKrab: 0
+  FileName: PH-Path_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &7146239592315868054
 GameObject:
   m_ObjectHideFlags: 0
@@ -1238,6 +1265,9 @@ MonoBehaviour:
   Patrick: 1
   Squidward: 0
   KrustyKrab: 0
+  FileName: PH-Bin_0_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &7646299638227768965
 GameObject:
   m_ObjectHideFlags: 0
@@ -1356,6 +1386,9 @@ MonoBehaviour:
   Patrick: 5
   Squidward: 0
   KrustyKrab: 0
+  FileName: PH-Television_1
+  DirName: Save
+  isSave: 0
 --- !u!1 &8588043831873884627
 GameObject:
   m_ObjectHideFlags: 0
@@ -1600,6 +1633,9 @@ MonoBehaviour:
   Patrick: 8
   Squidward: 0
   KrustyKrab: 0
+  FileName: PH-RockHinge_0
+  DirName: Save
+  isSave: 0
 --- !u!1 &8749108793146828813
 GameObject:
   m_ObjectHideFlags: 0
