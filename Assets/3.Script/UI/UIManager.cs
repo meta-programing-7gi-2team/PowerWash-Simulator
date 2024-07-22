@@ -17,7 +17,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private Text text; // 처음 텍스트
     [SerializeField] private GameObject Button; // 버튼
 
-    public float ObjectAll;
+    private float ObjectAll;
     public List<GameObject> objectsWithTag = new List<GameObject>();
 
     private float targetProgress = 0f;
@@ -99,6 +99,7 @@ public class UIManager : MonoBehaviour
         text.gameObject.SetActive(false);
         loadingSlider.gameObject.SetActive(false);
         Button.gameObject.SetActive(true); // 로딩이 완료되면 버튼을 활성화
+        Slidersetting();
         AllObjcetList();
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
@@ -108,7 +109,7 @@ public class UIManager : MonoBehaviour
     {
         if (Index == 1)
         {
-            string[] objectsToLoad = { "Stand" };
+            string[] objectsToLoad = { "Pineapple", "Patrick", "Squidward", "Stand" };
 
             for (int i = 0; i < objectsToLoad.Length; i++)
             {
@@ -136,6 +137,26 @@ public class UIManager : MonoBehaviour
         }
     }
 
+    private void Slidersetting()
+    {
+        if (AllObjectSlider == null || AllObjectText == null)
+        {
+            GameObject sliderObject = GameObject.FindGameObjectWithTag("Recorder");
+            GameObject sliderText = GameObject.FindGameObjectWithTag("SliderText");
+            if (sliderObject != null)
+            {
+                AllObjectSlider = sliderObject.GetComponent<Slider>();
+                AllObjectSlider.minValue = 0;
+                AllObjectSlider.maxValue = 100;
+            }
+            if (sliderText != null)
+            {
+                AllObjectText = sliderText.GetComponent<Text>();
+                AllObjectText.text = "0%";
+            }
+        }
+    }
+
     public void AllObjcetList()
     {
         if (objectsWithTag == null || objectsWithTag.Count == 0)
@@ -153,20 +174,12 @@ public class UIManager : MonoBehaviour
             }
         }
 
-        if(AllObjectSlider == null)
+        if (AllObjectSlider != null && AllObjectText != null)
         {
-            GameObject sliderObject = GameObject.FindGameObjectWithTag("Recorder");
-            GameObject sliderText = GameObject.FindGameObjectWithTag("SliderText");
-            AllObjectSlider = sliderObject.GetComponent<Slider>();
-            AllObjectText = sliderText.GetComponent<Text>();
-            AllObjectSlider.minValue = 0;
-            AllObjectSlider.maxValue = 100;
-            AllObjectText.text = "0%";
-        }
-        else
-        {
-            AllObjectSlider.value = (ObjectAll / objectsWithTag.Count);
-            AllObjectText.text = $"{(AllObjectSlider.value):0}%";
+            // 슬라이더 값 및 텍스트 업데이트
+            float averageRatio = ObjectAll / objectsWithTag.Count;
+            AllObjectSlider.value = Mathf.Clamp(averageRatio, 0, 100);
+            AllObjectText.text = $"{Mathf.RoundToInt(AllObjectSlider.value)}%";
         }
     }
 
