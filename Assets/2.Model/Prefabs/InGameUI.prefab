@@ -3373,5 +3373,5 @@ MonoBehaviour:
   fadeSpeed: 3
   layer:
     serializedVersion: 2
-    m_Bits: 4096
+    m_Bits: 5120
   text: {fileID: 6342287195239688649}

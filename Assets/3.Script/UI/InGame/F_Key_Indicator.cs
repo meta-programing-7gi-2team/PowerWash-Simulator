@@ -6,11 +6,8 @@ public class F_Key_Indicator : MonoBehaviour
 {
     private CanvasGroup cg;
     private RaycastHit hit;
-
     [SerializeField]
     private float fadeSpeed;
-    [SerializeField]
-    private LayerMask layer;
     [SerializeField]
     private Text text;
 
@@ -27,8 +24,8 @@ public class F_Key_Indicator : MonoBehaviour
             FadeOut();
             return;
         }
-
-        if (Physics.Raycast(GameManager.view.position, GameManager.view.forward, out hit, Mathf.Infinity, layer))
+        Physics.Raycast(GameManager.view.position, GameManager.view.forward, out hit, Mathf.Infinity);
+        if (hit.transform.gameObject.layer.Equals(LayerMask.NameToLayer("Pack")))
         {
             if (hit.transform.CompareTag("Patrick"))
             {

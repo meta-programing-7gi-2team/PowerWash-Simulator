@@ -19,7 +19,6 @@ public class WashGunControl : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         blockRange = 0.6f;
-        firePoint = GameManager.view.position + GameManager.view.forward * blockRange;
     }
     private void Update()
     {

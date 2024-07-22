@@ -26,7 +26,6 @@ public class GameManager : MonoBehaviour
     }
     private void Init()
     {
-        view = Camera.main.transform;
         amountManager = new AmountManager();
         amount = amountManager.GetAmount();
     }
@@ -38,5 +37,12 @@ public class GameManager : MonoBehaviour
     {
         this.amount += amount;
         amountManager.SaveAmount(this.amount);
+    }
+    private void Update()
+    {
+        if(view == null)
+        {
+            view = Camera.main.transform;
+        }
     }
 }
