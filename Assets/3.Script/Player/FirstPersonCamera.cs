@@ -20,6 +20,8 @@ public class FirstPersonCamera : MonoBehaviour
     }
     private void Update()
     {
+        if (UIManager.instance.isCursor) return;
+
         if (PlayerState.instance.state.Equals(State.Run) ||
             PlayerState.instance.state.Equals(State.Hand))
         {
@@ -35,6 +37,8 @@ public class FirstPersonCamera : MonoBehaviour
     }
     private void FixedUpdate()
     {
+        if (UIManager.instance.isCursor) return;
+
         CameraMove();
     }
     private void CameraMove()

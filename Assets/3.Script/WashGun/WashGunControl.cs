@@ -22,6 +22,8 @@ public class WashGunControl : MonoBehaviour
     }
     private void Update()
     {
+        if (UIManager.instance.isCursor) return;
+
         firePoint = GameManager.view.position + GameManager.view.forward * blockRange;
 
         if (PlayerState.instance.state.Equals(State.Hand) ||
