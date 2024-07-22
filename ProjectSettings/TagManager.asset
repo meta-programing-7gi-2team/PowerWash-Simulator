@@ -9,6 +9,7 @@ TagManager:
   - SliderText
   - Patrick
   - Blueprint
+  - Tablet
   layers:
   - Default
   - TransparentFX

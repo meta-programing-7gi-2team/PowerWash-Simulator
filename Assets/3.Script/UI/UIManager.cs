@@ -17,7 +17,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private Text text; // 처음 텍스트
     [SerializeField] private GameObject Button; // 버튼
 
-    private string[] targetSceneName = { "Map001", "Map002" };
+    public static string[] targetSceneName = { "Map001", "Map002" };
     [SerializeField] private GameObject Tablet;
 
     private float ObjectAll;
@@ -52,7 +52,6 @@ public class UIManager : MonoBehaviour
             }
         }
     }
-
 
     private void Start()
     {
@@ -154,6 +153,19 @@ public class UIManager : MonoBehaviour
                 }
                 Instantiate(resourceRequest.asset);
             }
+        }
+    }
+
+    private void TabletSetting()
+    {
+        if (Tablet == null)
+        {
+            GameObject tablet = GameObject.FindGameObjectWithTag("Tablet");
+
+            //if (tablet != null)
+            //{
+            //    Tablet=tablet.GetComponent<>
+            //}
         }
     }
 

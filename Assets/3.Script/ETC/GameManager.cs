@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public string FileName = "Amount";
     private AmountManager amountManager;
     private float amount;
+
     private void Awake()
     {
         if (instance == null)
