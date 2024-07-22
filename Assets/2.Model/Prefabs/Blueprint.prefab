@@ -91,7 +91,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7614339800599248002}
   m_Layer: 0
-  m_Name: Ladder_Shapes
+  m_Name: Blueprint_Ladder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -122,8 +122,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2849945032890275940}
   m_Layer: 0
-  m_Name: Ladder_Shapes
-  m_TagString: Shapes
+  m_Name: Blueprint
+  m_TagString: Blueprint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -155,7 +155,7 @@ GameObject:
   - component: {fileID: 4038530754913929616}
   - component: {fileID: 4038530754913929617}
   m_Layer: 11
-  m_Name: Ladder_Shape
+  m_Name: Blueprint_Ladder_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

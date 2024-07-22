@@ -8,7 +8,6 @@ public class FirstPersonCamera : MonoBehaviour
     private float mouseSensitivity = 100.0f;
     [SerializeField] 
     private Transform playerBody;
-    private PlayerState playerState;
 
     private float xRotation = 0.0f;
     private float offsetX = 20f;
@@ -16,14 +15,13 @@ public class FirstPersonCamera : MonoBehaviour
     public bool isFreeMode { get; private set; }
     private void Start()
     {
-        playerState = FindObjectOfType<PlayerState>();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
     private void Update()
     {
-        if (playerState.state.Equals(State.Run) ||
-            playerState.state.Equals(State.Hand))
+        if (PlayerState.instance.state.Equals(State.Run) ||
+            PlayerState.instance.state.Equals(State.Hand))
         {
             isFreeMode = false;
             Cursor.lockState = CursorLockMode.Locked;

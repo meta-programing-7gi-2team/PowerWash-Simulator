@@ -2,49 +2,49 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum Shape
+public enum Blueprint_State
 {
     NotArrange,
     Arrange,
     Block
 }
 
-public class LadderShape : MonoBehaviour
+public class Blueprint : MonoBehaviour
 {
     [SerializeField]
     private Material[] mat;
     [SerializeField]
     private MeshRenderer[] part;
 
-    public Shape state { get; private set; }
+    public Blueprint_State state { get; private set; }
     public Vector3 pos { get; private set; }
     public Quaternion rot { get; private set; }
     public float valueY { get; private set; }
 
     private void Start()
     {
-        state = Shape.NotArrange;
+        state = Blueprint_State.NotArrange;
         pos = transform.position;
         rot = transform.rotation;
-        valueY = transform.GetChild(1).transform.localPosition.y;
+        valueY = transform.GetChild(1).localPosition.y;
     }
     private void OnEnable()
     {
-        state = Shape.NotArrange;
+        state = Blueprint_State.NotArrange;
     }
     private void Update()
     {
         switch (state)
         {
-            case Shape.NotArrange:
+            case Blueprint_State.NotArrange:
                 part[0].material = mat[0];
                 part[1].material = mat[0];
                 break;
-            case Shape.Arrange:
+            case Blueprint_State.Arrange:
                 part[0].material = mat[1];
                 part[1].material = mat[1];
                 break;
-            case Shape.Block:
+            case Blueprint_State.Block:
                 part[0].material = mat[2];
                 part[1].material = mat[2];
                 break;
@@ -52,14 +52,14 @@ public class LadderShape : MonoBehaviour
     }
     private void OnTriggerStay(Collider other)
     {
-        state = Shape.Block;
+        state = Blueprint_State.Block;
     }
     private void OnTriggerExit(Collider other)
     {
-        state = Shape.NotArrange;
+        state = Blueprint_State.NotArrange;
     }
-    public void SetShape(Shape shape)
+    public void SetBlueprintState(Blueprint_State state)
     {
-        state = shape;
+        this.state = state;
     }
 }

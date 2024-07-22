@@ -5,49 +5,46 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-
-    private Vector3 moveDir;
-
     private CharacterController cc;
-    private PlayerState playerState;
-    private Transform playerCamera;
 
-    public float speed = 3f;
-    private float speedWeight = 1f;
-    public float jumpForce = 6f;
-    private float gravity = 20f;
+    private Vector3 moveDir = Vector3.zero;
+    [SerializeField] private float speed = 3f;
+    [SerializeField] private float speedWeight = 1f;
+    [SerializeField] private float jumpForce = 6f;
+    [SerializeField] private float gravity = 20f;
 
     private void Start()
     {
         cc = GetComponent<CharacterController>();
-        playerState = FindObjectOfType<PlayerState>();
-        playerCamera = Camera.main.transform;
     }
     private void Update()
     {
         SetHeight();
-        if(!playerState.state.Equals(State.Hand))
+
+        if(!PlayerState.instance.state.Equals(State.Hand))
             Run();
 
         SetSpeedWeight();
+
         Move();
+
         if (Input.GetKeyDown(KeyCode.LeftControl) &&
-            !playerState.state.Equals(State.Hand) &&
-            !playerState.state.Equals(State.Run))
+            !PlayerState.instance.state.Equals(State.Hand) &&
+            !PlayerState.instance.state.Equals(State.Run))
         {
-            ChangeState();
+            ChangePosture();
         }
     }
     private void Move()
     {
-        if (cc.isGrounded && !playerState.state.Equals(State.Hand))
+        if (cc.isGrounded && !PlayerState.instance.state.Equals(State.Hand))
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                if(playerState.state.Equals(State.Crouch) ||
-                    playerState.state.Equals(State.Lie))
+                if(PlayerState.instance.state.Equals(State.Crouch) ||
+                    PlayerState.instance.state.Equals(State.Lie))
                 {
-                    playerState.SetState(State.Idle);
+                    PlayerState.instance.SetState(State.Idle);
                     cc.height = 2.0f;
                 }
                 moveDir.y = jumpForce;
@@ -67,7 +64,7 @@ public class PlayerMovement : MonoBehaviour
     }
     private void SetSpeedWeight()
     {
-        switch (playerState.state)
+        switch (PlayerState.instance.state)
         {
             case State.Idle:
             case State.Hand:
@@ -84,35 +81,35 @@ public class PlayerMovement : MonoBehaviour
     }
     private void SetHeight()
     {
-        switch (playerState.state)
+        switch (PlayerState.instance.state)
         {
             case State.Idle:
-                playerCamera.localPosition = new Vector3(0, 1f, 0);
+                GameManage.view.localPosition = new Vector3(0, 1f, 0);
                 break;
             case State.Crouch:
-                playerCamera.localPosition = new Vector3(0, 0.1f, 0);
+                GameManage.view.localPosition = new Vector3(0, 0.1f, 0);
                 break;
             case State.Lie:
-                playerCamera.localPosition = new Vector3(0, -0.5f, 0);
+                GameManage.view.localPosition = new Vector3(0, -0.5f, 0);
                 break;
             case State.Run:
             case State.Hand:
-                playerCamera.localPosition = new Vector3(0, 1f, 0);
+                GameManage.view.localPosition = new Vector3(0, 1f, 0);
                 break;
         }
     }
-    private void ChangeState()
+    private void ChangePosture()
     {
-        switch (playerState.state)
+        switch (PlayerState.instance.state)
         {
             case State.Idle:
-                playerState.SetState(State.Crouch);
+                PlayerState.instance.SetState(State.Crouch);
                 break;
             case State.Crouch:
-                playerState.SetState(State.Lie);
+                PlayerState.instance.SetState(State.Lie);
                 break;
             case State.Lie:
-                playerState.SetState(State.Idle);
+                PlayerState.instance.SetState(State.Idle);
                 break;
             case State.Run:
             case State.Hand:
@@ -123,11 +120,11 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.LeftShift))
         {
-            playerState.SetState(State.Run);
+            PlayerState.instance.SetState(State.Run);
         }
         else if (Input.GetKeyUp(KeyCode.LeftShift))
         {  
-            playerState.SetState(State.Idle);
+            PlayerState.instance.SetState(State.Idle);
         }
     }
 }

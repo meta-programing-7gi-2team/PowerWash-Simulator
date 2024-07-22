@@ -6,7 +6,6 @@ public class LadderObject : MonoBehaviour
 {
     [SerializeField]
     private MeshCollider[] part;
-    private Transform playerCamera;
     private Transform parent;
     private Transform extension;
     private float extensionHeght;
@@ -17,7 +16,6 @@ public class LadderObject : MonoBehaviour
 
     private void Start()
     {
-        playerCamera = Camera.main.transform;
         parent = transform.parent;
         extension = transform.GetChild(1);
         extensionHeght = 0f;
@@ -29,7 +27,7 @@ public class LadderObject : MonoBehaviour
     public void PickUped()
     {
         isArranged = false;
-        transform.parent = playerCamera;
+        transform.parent = GameManage.view;
         transform.localPosition = new Vector3(0, -0.5f, 1f);
         transform.localRotation = Quaternion.Euler(0f, 90f, 20f);
         extension.localPosition = Vector3.zero;

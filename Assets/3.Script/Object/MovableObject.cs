@@ -8,13 +8,11 @@ public class MovableObject : MonoBehaviour
     private Material material;
     private bool isHanded = false;
     private Transform parent;
-    private Transform playerCamera;
     private float yRotation = 0f;
     public bool isArrange { get; private set; }
 
     private void Start()
     {
-        playerCamera = Camera.main.transform;
         parent = transform.parent;
     }
     private void Update()
@@ -49,7 +47,7 @@ public class MovableObject : MonoBehaviour
     public void PickUped()
     {
         isHanded = true;
-        transform.parent = playerCamera;
+        transform.parent = GameManage.view;
         gameObject.layer = LayerMask.NameToLayer("Movable");
     }
     public void Droped()

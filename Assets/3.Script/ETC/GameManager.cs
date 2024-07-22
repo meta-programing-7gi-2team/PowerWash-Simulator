@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameManage : MonoBehaviour
 {
     public static GameManage instance = null;
+    public static Transform view;
     public string DriName = "Save";
     public string FileName = "Amount";
     private AmountManager amountManager;
@@ -21,6 +22,10 @@ public class GameManage : MonoBehaviour
             Destroy(gameObject);
         }
         Init();
+    }
+    private void Start()
+    {
+        view = Camera.main.transform;
     }
     private void Init()
     {

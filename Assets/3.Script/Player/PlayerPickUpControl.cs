@@ -5,24 +5,17 @@ using UnityEngine;
 public class PlayerPickUpControl : MonoBehaviour
 {
     [SerializeField]
-    private LayerMask movable;
-
-    private Transform playerCamera;
-    private MovableObject target;
-    private PlayerState playerState;
-
+    private LayerMask layer;
     private RaycastHit hit;
- 
-    private void Start()
-    {
-        playerCamera = Camera.main.transform;
-        playerState = FindObjectOfType<PlayerState>();
-    }
+
+    private MovableObject target;
+
     private void Update()
     {
-        if (playerState.state.Equals(State.Run)) return;
+        if (PlayerState.instance.state.Equals(State.Run))
+            return;
 
-        Physics.Raycast(playerCamera.position, playerCamera.forward, out hit, Mathf.Infinity, ~movable);
+        Physics.Raycast(GameManage.view.position, GameManage.view.forward, out hit, Mathf.Infinity, layer);
 
         if (Input.GetKeyDown(KeyCode.F))
         {
@@ -54,12 +47,12 @@ public class PlayerPickUpControl : MonoBehaviour
     }
     private void TargetPickUp()
     {
-        playerState.SetState(State.Hand);
+        PlayerState.instance.SetState(State.Hand);
         target.PickUped();
     }
     private void TargetDrop()
     {
-        playerState.SetState(State.Idle);
+        PlayerState.instance.SetState(State.Idle);
         target.Droped();
         target = null;
     }
