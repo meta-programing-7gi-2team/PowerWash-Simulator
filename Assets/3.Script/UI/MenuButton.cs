@@ -28,6 +28,9 @@ public class MenuButton : MonoBehaviour
     [SerializeField] private Animator FastMain_Btn;
     [SerializeField] private Animator FastQuit_Btn;
 
+    [SerializeField] private GameObject Info;
+    [SerializeField] private GameObject D_Info;
+
     private bool FastCheck;
 
     public void SpecialButton()
