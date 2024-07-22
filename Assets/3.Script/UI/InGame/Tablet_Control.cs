@@ -10,10 +10,20 @@ public class Tablet_Control : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        string currentSceneName = SceneManager.GetActiveScene().name;
+        foreach (string sceneName in targetSceneName)
         {
-            Debug.Log("¿ﬂ ¿€µøµ ");
+            if (currentSceneName == sceneName)
+            {
+                if (Input.GetKeyDown(KeyCode.Escape))
+                {
+                    Tablet.SetActive(true);
+                    Debug.Log("¿ﬂ ¿€µøµ ");
+                }
+            }
         }
+
+        
     }
 
 }
