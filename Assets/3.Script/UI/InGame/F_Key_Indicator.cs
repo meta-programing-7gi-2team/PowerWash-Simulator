@@ -28,7 +28,7 @@ public class F_Key_Indicator : MonoBehaviour
             return;
         }
 
-        if (Physics.Raycast(GameManage.view.position, GameManage.view.forward, out hit, Mathf.Infinity, layer))
+        if (Physics.Raycast(GameManager.view.position, GameManager.view.forward, out hit, Mathf.Infinity, layer))
         {
             if (hit.transform.CompareTag("Patrick"))
             {

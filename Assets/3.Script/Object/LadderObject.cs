@@ -27,7 +27,7 @@ public class LadderObject : MonoBehaviour
     public void PickUped()
     {
         isArranged = false;
-        transform.parent = GameManage.view;
+        transform.parent = GameManager.view;
         transform.localPosition = new Vector3(0, -0.5f, 1f);
         transform.localRotation = Quaternion.Euler(0f, 90f, 20f);
         extension.localPosition = Vector3.zero;

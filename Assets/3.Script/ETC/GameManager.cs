@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManage : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
-    public static GameManage instance = null;
+    public static GameManager instance = null;
     public static Transform view;
     public string DriName = "Save";
     public string FileName = "Amount";
@@ -23,12 +23,9 @@ public class GameManage : MonoBehaviour
         }
         Init();
     }
-    private void Start()
-    {
-        view = Camera.main.transform;
-    }
     private void Init()
     {
+        view = Camera.main.transform;
         amountManager = new AmountManager();
         amount = amountManager.GetAmount();
     }

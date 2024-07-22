@@ -84,17 +84,17 @@ public class PlayerMovement : MonoBehaviour
         switch (PlayerState.instance.state)
         {
             case State.Idle:
-                GameManage.view.localPosition = new Vector3(0, 1f, 0);
+                GameManager.view.localPosition = new Vector3(0, 1f, 0);
                 break;
             case State.Crouch:
-                GameManage.view.localPosition = new Vector3(0, 0.1f, 0);
+                GameManager.view.localPosition = new Vector3(0, 0.1f, 0);
                 break;
             case State.Lie:
-                GameManage.view.localPosition = new Vector3(0, -0.5f, 0);
+                GameManager.view.localPosition = new Vector3(0, -0.5f, 0);
                 break;
             case State.Run:
             case State.Hand:
-                GameManage.view.localPosition = new Vector3(0, 1f, 0);
+                GameManager.view.localPosition = new Vector3(0, 1f, 0);
                 break;
         }
     }

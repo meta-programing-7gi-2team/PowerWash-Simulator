@@ -8,6 +8,7 @@ public class NozzleControl : MonoBehaviour
 
     [SerializeField] private GameObject[] nozzle;
     [SerializeField] private Sprite[] crosshairImage;
+    private WashGunControl washGun;
     private Image crosshair;
     private float scroll;
 
@@ -16,7 +17,9 @@ public class NozzleControl : MonoBehaviour
     private void Start()
     {
         Index = 0;
+        washGun = FindObjectOfType<WashGunControl>();
         crosshair = FindObjectOfType<Crosshair>().GetComponent<Image>();
+        washGun.SetNozzleInfo(nozzle[Index].transform.GetChild(1).gameObject, nozzle[Index].transform.GetChild(2).gameObject);
     }
 
     private void Update()
@@ -47,6 +50,7 @@ public class NozzleControl : MonoBehaviour
         nozzle[Index].SetActive(true);
         crosshair.sprite = crosshairImage[Index];
         crosshair.SetNativeSize();
+        washGun.SetNozzleInfo(nozzle[Index].transform.GetChild(1).gameObject, nozzle[Index].transform.GetChild(2).gameObject);
     }
     private void ScrollDown()
     {
@@ -56,6 +60,7 @@ public class NozzleControl : MonoBehaviour
         nozzle[Index].SetActive(true);
         crosshair.sprite = crosshairImage[Index];
         crosshair.SetNativeSize();
+        washGun.SetNozzleInfo(nozzle[Index].transform.GetChild(1).gameObject, nozzle[Index].transform.GetChild(2).gameObject);
     }
     private void Rotate()
     {
@@ -85,13 +90,5 @@ public class NozzleControl : MonoBehaviour
                 nozzle[i].transform.localRotation = Quaternion.Euler(new Vector3(0, 0, 90f));
             }
         }
-    }
-    public GameObject GetCurrentWater()
-    {
-        return nozzle[Index].transform.GetChild(1).gameObject;
-    }
-    public GameObject GetCurrentStream()
-    {
-        return nozzle[Index].transform.GetChild(2).gameObject;
     }
 }

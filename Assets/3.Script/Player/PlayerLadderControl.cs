@@ -23,7 +23,7 @@ public class PlayerLadderControl : MonoBehaviour
 
         if (ladder)
         {
-            if(Physics.Raycast(GameManage.view.position, GameManage.view.forward, out hit, Mathf.Infinity, layer))
+            if(Physics.Raycast(GameManager.view.position, GameManager.view.forward, out hit, Mathf.Infinity, layer))
             {
                 hit.transform.TryGetComponent<Blueprint>(out blueprint);
                 if (!blueprint.state.Equals(Blueprint_State.Block))
@@ -44,7 +44,7 @@ public class PlayerLadderControl : MonoBehaviour
         }
         else
         {
-            Physics.Raycast(GameManage.view.position, GameManage.view.forward, out hit, Mathf.Infinity);
+            Physics.Raycast(GameManager.view.position, GameManager.view.forward, out hit, Mathf.Infinity);
         }
 
         if (Input.GetKeyDown(KeyCode.F))

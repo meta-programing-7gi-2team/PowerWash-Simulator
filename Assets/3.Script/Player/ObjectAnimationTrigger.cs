@@ -12,7 +12,7 @@ public class ObjectAnimationTrigger : MonoBehaviour
         if (PlayerState.instance.state.Equals(State.Run)) 
             return;
         
-        if (Physics.Raycast(GameManage.view.position, GameManage.view.forward, out hit))
+        if (Physics.Raycast(GameManager.view.position, GameManager.view.forward, out hit))
         {
             if (Input.GetKeyDown(KeyCode.F))
             {

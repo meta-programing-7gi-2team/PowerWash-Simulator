@@ -47,7 +47,7 @@ public class MovableObject : MonoBehaviour
     public void PickUped()
     {
         isHanded = true;
-        transform.parent = GameManage.view;
+        transform.parent = GameManager.view;
         gameObject.layer = LayerMask.NameToLayer("Movable");
     }
     public void Droped()

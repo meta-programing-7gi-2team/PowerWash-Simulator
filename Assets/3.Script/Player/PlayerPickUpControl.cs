@@ -15,7 +15,7 @@ public class PlayerPickUpControl : MonoBehaviour
         if (PlayerState.instance.state.Equals(State.Run))
             return;
 
-        Physics.Raycast(GameManage.view.position, GameManage.view.forward, out hit, Mathf.Infinity, layer);
+        Physics.Raycast(GameManager.view.position, GameManager.view.forward, out hit, Mathf.Infinity, layer);
 
         if (Input.GetKeyDown(KeyCode.F))
         {

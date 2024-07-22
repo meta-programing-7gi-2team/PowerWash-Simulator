@@ -21,7 +21,6 @@ public class Stream : MonoBehaviour
     }
     private void Update()
     {
-
         if (Physics.Raycast(washGun.firePoint, transform.forward, out hit, shotRange, layer))
         {
             hit.transform.TryGetComponent<CleanDraw>(out cleanDraw);
