@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-
+using DG.Tweening;
 public class UIManager : MonoBehaviour
 {
     public static UIManager instance = null;
@@ -16,9 +16,10 @@ public class UIManager : MonoBehaviour
     [SerializeField] private Text AllObjectText; // 모든오브젝트텍스트
     [SerializeField] private Text text; // 처음 텍스트
     [SerializeField] private GameObject Button; // 버튼
+    [SerializeField] private GameObject Tablet;
+    private CanvasGroup InGame;
 
     public static string[] targetSceneName = { "Map001", "Map002" };
-    [SerializeField] private GameObject Tablet;
 
     private float ObjectAll;
     public bool Map001;
@@ -41,14 +42,14 @@ public class UIManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
     private void Update()
     {
-        if (Tablet == null)
+        if (Tablet.Equals(null))
         {
-            Tablet = GameObject.FindWithTag("Tablet").transform.GetChild(0).gameObject;
+            Tablet = GameObject.FindWithTag("Tablet");
         }
-       string currentSceneName = SceneManager.GetActiveScene().name;
+
+        string currentSceneName = SceneManager.GetActiveScene().name;
 
         foreach (string sceneName in targetSceneName)
         {
@@ -56,17 +57,23 @@ public class UIManager : MonoBehaviour
             {
                 if (Input.GetKeyDown(KeyCode.Escape))
                 {
-                    if (Tablet.activeSelf)
+                    if (!InGame)
+                    {
+                        InGame = GameObject.FindWithTag("InGame").GetComponent<CanvasGroup>();
+                    }
+                    if (isCursor)
                     {
                         isCursor = false;
-                        Tablet.SetActive(false);
+                        Tablet.GetComponent<RectTransform>().DOAnchorPosY(-540, 0.3f);
+                        InGame.DOFade(1, 0.3f);
                         Cursor.visible = false;
                         Cursor.lockState = CursorLockMode.Locked;
                     }
                     else
                     {
                         isCursor = true;
-                        Tablet.SetActive(true);
+                        Tablet.GetComponent<RectTransform>().DOAnchorPosY(540, 0.3f);
+                        InGame.DOFade(0, 0.3f);
                         Cursor.visible = false;
                         Cursor.lockState = CursorLockMode.None;
                     }
