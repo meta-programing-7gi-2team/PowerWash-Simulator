@@ -1,19 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.EventSystems;
+using System.IO;
+using System;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance = null;
     private AmountManager amountManager;
+    public AmountData amountData { get; private set; }
     private float amount;
-    [SerializeField] private GameObject buttonPrefab;
-    [SerializeField] private Transform buttonParent;
-    [SerializeField] private Text amountText;
-    [SerializeField] private Text getAmountText;
-    [SerializeField] private Text stateText;
+
+    public string DirName = "Save";
+    private string FileName = "Amount";
 
     private void Awake()
     {
@@ -30,65 +29,71 @@ public class GameManager : MonoBehaviour
     }
     private void Init()
     {
-        amountManager = FindObjectOfType<AmountManager>();
-        amountManager.GetMap001();
-        amountManager.GetMap002();
-        amount = amountManager.GetAmount();
-
-        float amount_Sum = 0;
-        float getAmount_Sum = 0;
-        float state_Sum = 0;
-
-        for (int i = 0; i< amountManager.Map001_AmountData.Count; i++)
+        amount = GetAmount();
+    }
+    #region Amount
+    public void InitializeAmount()
+    {
+        amountData = new AmountData(0);
+        SaveAmount();
+    }
+    private void SaveAmount()
+    {
+        try
         {
-            GameObject newButton = Instantiate(buttonPrefab, buttonParent);
-            Text[] buttonTextComponent = newButton.GetComponentsInChildren<Text>();
-            if (buttonTextComponent != null)
-            {
-                buttonTextComponent[0].text = amountManager.Map001_AmountData[i].Name;
-                buttonTextComponent[1].text = amountManager.Map001_AmountData[i].Amount.ToString("$0.00");
-                buttonTextComponent[2].text = amountManager.Map001_AmountData[i].GetAmount.ToString("$0.00");
+            // JSON으로 직렬화하여 저장
+            string jsonData = JsonUtility.ToJson(amountData, true);
 
-                amount_Sum += amountManager.Map001_AmountData[i].Amount;
-                getAmount_Sum += amountManager.Map001_AmountData[i].GetAmount;
-                state_Sum += amountManager.Map001_AmountData[i].State;
-                if (amountManager.Map001_AmountData[i].State.Equals(0))
-                {
-                    buttonTextComponent[3].text = "-";
-                }
-                else if(amountManager.Map001_AmountData[i].State.Equals(100))
-                {
-                    buttonTextComponent[3].text = "청소 완료!";
-                }
-                else
-                {
-                    buttonTextComponent[3].text = string.Format("{0}%", (int)amountManager.Map001_AmountData[i].State);
-                }
-            }
-            // 버튼의 클릭 이벤트 설정
-            Button buttonComponent = newButton.GetComponent<Button>();
-            if (buttonComponent != null)
+            string dirName = Path.Combine(Application.dataPath, DirName);
+            if (!Directory.Exists(dirName))
             {
-                buttonComponent.onClick.AddListener(() => OnButtonClick(i.ToString()));
+                Directory.CreateDirectory(dirName);
             }
-            amountText.text = amount_Sum.ToString("$0.00");
-            getAmountText.text = getAmount_Sum.ToString("$0.00");
-            stateText.text = string.Format("{0}%",(int)(state_Sum / amountManager.Map001_AmountData.Count));
+            File.WriteAllText(Path.Combine(Application.dataPath, DirName, FileName + ".json"), jsonData);
         }
+        catch (Exception e)
+        {
+            Debug.LogError("Failed to save data: " + e.Message);
+        }
+    }
+    private AmountData LoadAmount()
+    {
+        string filePath = Path.Combine(Application.dataPath, DirName, FileName + ".json");
+
+        if (File.Exists(filePath))
+        {
+            try
+            {
+                string jsonData = File.ReadAllText(filePath);
+                amountData = JsonUtility.FromJson<AmountData>(jsonData);
+            }
+            catch (Exception e)
+            {
+                Debug.LogError("Failed to load data: " + e.Message);
+                InitializeAmount(); // 데이터 로드 실패 시 초기화
+            }
+        }
+        else
+        {
+            InitializeAmount(); // 저장된 데이터가 없을 경우 초기화
+        }
+
+        return amountData;
+    }
+    public void SetAmount(float amount)
+    {
+        amountData = new AmountData(amount);
+        SaveAmount();
     }
     public float GetAmount()
     {
-        return amount;
+        LoadAmount();
+        return amountData.Amount;
     }
     public void AddAmount(float amount)
     {
         this.amount += amount;
-        amountManager.SetAmount(this.amount);
+        SetAmount(this.amount);
     }
-    void OnButtonClick(string buttonText)
-    {
-        Debug.Log(buttonText + " clicked!");
-        EventSystem.current.SetSelectedGameObject(null);
-        
-    }
+    #endregion
 }

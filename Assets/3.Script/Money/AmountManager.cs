@@ -2,9 +2,11 @@ using UnityEngine;
 using System.Collections.Generic;
 using System.IO;
 using System;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;
+
 public class AmountManager : MonoBehaviour
 {
-    public AmountData amountData { get; private set; }
     // ---------------------------------------------------------
     #region 맵1
     public List<MapAmountData> Map001_AmountData { get; private set; } = new List<MapAmountData>();
@@ -22,12 +24,61 @@ public class AmountManager : MonoBehaviour
     public string DirName = "Save";
     private string FileName = "Amount";
 
+    [SerializeField] private GameObject buttonPrefab;
+    [SerializeField] private Transform buttonParent;
+    [SerializeField] private Text amountText;
+    [SerializeField] private Text getAmountText;
+    [SerializeField] private Text stateText;
+
     // 데이터 초기화
-    public void InitializeAmount()
+
+    private void Init()
     {
-        amountData = new AmountData(0);
-        SaveAmount();
+        GetMap001();
+        GetMap002();
+
+        float amount_Sum = 0;
+        float getAmount_Sum = 0;
+        float state_Sum = 0;
+
+        for (int i = 0; i < Map001_AmountData.Count; i++)
+        {
+            GameObject newButton = Instantiate(buttonPrefab, buttonParent);
+            Text[] buttonTextComponent = newButton.GetComponentsInChildren<Text>();
+            if (buttonTextComponent != null)
+            {
+                buttonTextComponent[0].text = Map001_AmountData[i].Name;
+                buttonTextComponent[1].text = Map001_AmountData[i].Amount.ToString("$0.00");
+                buttonTextComponent[2].text = Map001_AmountData[i].GetAmount.ToString("$0.00");
+
+                amount_Sum += Map001_AmountData[i].Amount;
+                getAmount_Sum += Map001_AmountData[i].GetAmount;
+                state_Sum += Map001_AmountData[i].State;
+                if (Map001_AmountData[i].State.Equals(0))
+                {
+                    buttonTextComponent[3].text = "-";
+                }
+                else if (Map001_AmountData[i].State.Equals(100))
+                {
+                    buttonTextComponent[3].text = "청소 완료!";
+                }
+                else
+                {
+                    buttonTextComponent[3].text = string.Format("{0}%", (int)Map001_AmountData[i].State);
+                }
+            }
+            // 버튼의 클릭 이벤트 설정
+            Button buttonComponent = newButton.GetComponent<Button>();
+            if (buttonComponent != null)
+            {
+                buttonComponent.onClick.AddListener(() => OnButtonClick(i.ToString()));
+            }
+            amountText.text = amount_Sum.ToString("$0.00");
+            getAmountText.text = getAmount_Sum.ToString("$0.00");
+            stateText.text = string.Format("{0}%", (int)(state_Sum / Map001_AmountData.Count));
+        }
     }
+
     public void InitializeMap001()
     {
         Map001_ProcessData = new MapProcessData(Process.New);
@@ -54,25 +105,6 @@ public class AmountManager : MonoBehaviour
     // 데이터 저장
 
     #region Save
-    private void SaveAmount()
-    {
-        try
-        {
-            // JSON으로 직렬화하여 저장
-            string jsonData = JsonUtility.ToJson(amountData, true);
-
-            string dirName = Path.Combine(Application.dataPath, DirName);
-            if (!Directory.Exists(dirName))
-            {
-                Directory.CreateDirectory(dirName);
-            }
-            File.WriteAllText(Path.Combine(Application.dataPath, DirName, FileName + ".json"), jsonData);
-        }
-        catch (Exception e)
-        {
-            Debug.LogError("Failed to save data: " + e.Message);
-        }
-    }
     private void SaveMap001()
     {
         try
@@ -114,30 +146,6 @@ public class AmountManager : MonoBehaviour
     // 데이터 불러오기
 
     #region Load
-    private AmountData LoadAmount()
-    {
-        string filePath = Path.Combine(Application.dataPath, DirName, FileName + ".json");
-
-        if (File.Exists(filePath))
-        {
-            try
-            {
-                string jsonData = File.ReadAllText(filePath);
-                amountData = JsonUtility.FromJson<AmountData>(jsonData);
-            }
-            catch (Exception e)
-            {
-                Debug.LogError("Failed to load data: " + e.Message);
-                InitializeAmount(); // 데이터 로드 실패 시 초기화
-            }
-        }
-        else
-        {
-            InitializeAmount(); // 저장된 데이터가 없을 경우 초기화
-        }
-
-        return amountData;
-    }
     private List<MapAmountData> LoadMap001()
     {
         string filePath = Path.Combine(Application.dataPath, DirName, FileName + "_map001.json");
@@ -192,11 +200,6 @@ public class AmountManager : MonoBehaviour
     }
     #endregion
 
-    public void SetAmount(float amount)
-    {
-        amountData = new AmountData(amount);
-        SaveAmount();
-    }
     public void SetMap001_Data(MapAmountData mapAmountData, Process process)
     {
         Map001_ProcessData.process = process;
@@ -222,11 +225,6 @@ public class AmountManager : MonoBehaviour
             }
         }
         SaveMap002();
-    }
-    public float GetAmount()
-    {
-        LoadAmount();
-        return amountData.Amount;
     }
     public List<MapAmountData> GetMap001()
     {
@@ -261,6 +259,11 @@ public class AmountManager : MonoBehaviour
             }
         }
         return new MapAmountData("-", 0, 0, 0);
+    }
+    void OnButtonClick(string buttonText)
+    {
+        Debug.Log(buttonText + " clicked!");
+        EventSystem.current.SetSelectedGameObject(null);
     }
 
     [System.Serializable]
