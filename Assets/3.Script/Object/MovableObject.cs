@@ -2,11 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MovableObject : MonoBehaviour
+public class MovableObject : InteractionObject
 {
     [SerializeField]
     private Material material;
-    private bool isHanded = false;
     private Transform parent;
     private float yRotation = 0f;
     public bool isArrange { get; private set; }
@@ -17,7 +16,7 @@ public class MovableObject : MonoBehaviour
     }
     private void Update()
     {
-        if (isHanded)
+        if (isOnAct)
         {
             float scroll = Input.GetAxis("Mouse ScrollWheel");
             if (scroll > 0)
@@ -29,11 +28,10 @@ public class MovableObject : MonoBehaviour
                 yRotation -= 30f;
             }
         }
-      
     }
     private void OnTriggerStay(Collider col)
     {
-        if (col.gameObject.layer.Equals(LayerMask.NameToLayer("Ground")) || !isHanded) 
+        if (col.gameObject.layer.Equals(LayerMask.NameToLayer("Ground")) || !isOnAct) 
             return;
 
         material.color = Color.red;
@@ -44,21 +42,31 @@ public class MovableObject : MonoBehaviour
         material.color = Color.white;
         isArrange = true;
     }
-    public void PickUped()
+    public override void OnAct(InteractionController interactionController)
     {
-        isHanded = true;
+        PlayerState.instance.SetState(State.Hand);
+        isOnAct = true;
         transform.parent = GameManager.view;
         gameObject.layer = LayerMask.NameToLayer("Movable");
     }
-    public void Droped()
+    public override void NotAct(InteractionController interactionController)
     {
-        isHanded = false;
-        transform.parent = parent;
-        gameObject.layer = LayerMask.NameToLayer("Pack");
+        if (!isArrange)
+        {
+            return;
+        }
+        else
+        {
+            PlayerState.instance.SetState(State.Idle);
+            isOnAct = false;
+            transform.parent = parent;
+            gameObject.layer = LayerMask.NameToLayer("Pack");
+            interactionController.Init();
+        }
     }
-    public void Move(Vector3 pos)
+    public override void OnMove(RaycastHit hit)
     {
-        transform.position = pos;
+        transform.position = hit.point;
         transform.rotation = Quaternion.Euler(0, yRotation, 0);
     }
 }

@@ -2,30 +2,35 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LadderObject : MonoBehaviour
+public class LadderObject : InteractionObject
 {
     [SerializeField]
     private MeshCollider[] part;
     private Transform parent;
     private Transform extension;
-    private float extensionHeght;
+    private float valueY;
 
     private Vector3 defaultPos;
     private Quaternion defaultRot;
+
+    private Blueprint blueprint;
+    private GameObject ladder_Blueprint;
     public bool isArranged { get; private set; }
 
     private void Start()
     {
+        ladder_Blueprint = GameObject.FindWithTag("Blueprint").transform.GetChild(0).gameObject;
         parent = transform.parent;
         extension = transform.GetChild(1);
-        extensionHeght = 0f;
+        valueY = 0f;
         defaultPos = transform.position;
         defaultRot = transform.rotation;
         isArranged = false;
     }
-    
-    public void PickUped()
+    public override void OnAct(InteractionController interactionController)
     {
+        PlayerState.instance.SetState(State.Hand);
+        ladder_Blueprint.SetActive(true);
         isArranged = false;
         transform.parent = GameManager.view;
         transform.localPosition = new Vector3(0, -0.5f, 1f);
@@ -34,32 +39,59 @@ public class LadderObject : MonoBehaviour
         part[0].enabled = false;
         part[1].enabled = false;
     }
-    public void Droped()
+    public override void NotAct(InteractionController interactionController)
     {
-        isArranged = false;
+        PlayerState.instance.SetState(State.Idle);
+        ladder_Blueprint.SetActive(false);
+        if (isArranged)
+        {
+            isArranged = false;
+            defaultPos = transform.position;
+            defaultRot = transform.rotation;
+            valueY = extension.localPosition.y;
+        }
+        else
+        {
+            transform.position = defaultPos;
+            transform.rotation = defaultRot;
+            extension.localPosition = new Vector3(0, valueY, 0);
+        }
         transform.parent = parent;
-        transform.position = defaultPos;
-        transform.rotation = defaultRot;
-        extension.localPosition = new Vector3(0, extensionHeght, 0);
         part[0].enabled = true;
         part[1].enabled = true;
+        interactionController.Init();
     }
-    public void Arranged(Vector3 pos, Quaternion rot, float valueY)
+    public override void OnMove(RaycastHit hit)
     {
-        isArranged = true;
-        transform.parent = parent;
-        transform.position = pos;
-        transform.rotation = rot;
-        extension.localPosition = new Vector3(0, valueY, 0);
-    }
-    public void Placed()
-    {
-        isArranged = false;
-        transform.parent = parent;
-        defaultPos = transform.position;
-        defaultRot = transform.rotation;
-        extensionHeght = extension.localPosition.y;
-        part[0].enabled = true;
-        part[1].enabled = true;
+        blueprint = null;
+        hit.transform.TryGetComponent<Blueprint>(out blueprint);
+
+        if (blueprint)
+        {
+            if (!blueprint.isBlock)
+            {
+                isArranged = true;
+                transform.parent = parent;
+                transform.position = blueprint.pos;
+                transform.rotation = blueprint.rot;
+                extension.localPosition = new Vector3(0, blueprint.valueY, 0);
+            }
+            else
+            {
+                isArranged = false;
+                transform.parent = GameManager.view;
+                transform.localPosition = new Vector3(0, -0.5f, 1f);
+                transform.localRotation = Quaternion.Euler(0f, 90f, 20f);
+                extension.localPosition = Vector3.zero;
+            }
+        }
+        else
+        {
+            isArranged = false;
+            transform.parent = GameManager.view;
+            transform.localPosition = new Vector3(0, -0.5f, 1f);
+            transform.localRotation = Quaternion.Euler(0f, 90f, 20f);
+            extension.localPosition = Vector3.zero;
+        }
     }
 }

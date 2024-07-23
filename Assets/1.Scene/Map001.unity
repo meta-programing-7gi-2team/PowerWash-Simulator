@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 587759865}
-  m_IndirectSpecularColor: {r: 0.1338923, g: 0.6145655, b: 0.8760026, a: 1}
+  m_IndirectSpecularColor: {r: 0.13388306, g: 0.614559, b: 0.8760026, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8241,7 +8241,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mat:
   - {fileID: 2100000, guid: 35fc2e3e99bbec94c891b41d334742c1, type: 2}
-  - {fileID: 2100000, guid: 79b07f5a84c004d40b47776cfb226286, type: 2}
   - {fileID: 2100000, guid: 255e04f4d91a87c4cb1ead9f3c911ea3, type: 2}
   part:
   - {fileID: 402227096}
@@ -9081,7 +9080,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mat:
   - {fileID: 2100000, guid: 35fc2e3e99bbec94c891b41d334742c1, type: 2}
-  - {fileID: 2100000, guid: 79b07f5a84c004d40b47776cfb226286, type: 2}
   - {fileID: 2100000, guid: 255e04f4d91a87c4cb1ead9f3c911ea3, type: 2}
   part:
   - {fileID: 1031514667}
@@ -9434,7 +9432,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mat:
   - {fileID: 2100000, guid: 35fc2e3e99bbec94c891b41d334742c1, type: 2}
-  - {fileID: 2100000, guid: 79b07f5a84c004d40b47776cfb226286, type: 2}
   - {fileID: 2100000, guid: 255e04f4d91a87c4cb1ead9f3c911ea3, type: 2}
   part:
   - {fileID: 1803645364}
@@ -13237,7 +13234,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mat:
   - {fileID: 2100000, guid: 35fc2e3e99bbec94c891b41d334742c1, type: 2}
-  - {fileID: 2100000, guid: 79b07f5a84c004d40b47776cfb226286, type: 2}
   - {fileID: 2100000, guid: 255e04f4d91a87c4cb1ead9f3c911ea3, type: 2}
   part:
   - {fileID: 1680407763}
@@ -14692,7 +14688,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mat:
   - {fileID: 2100000, guid: 35fc2e3e99bbec94c891b41d334742c1, type: 2}
-  - {fileID: 2100000, guid: 79b07f5a84c004d40b47776cfb226286, type: 2}
   - {fileID: 2100000, guid: 255e04f4d91a87c4cb1ead9f3c911ea3, type: 2}
   part:
   - {fileID: 1396298152}
@@ -25288,7 +25283,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mat:
   - {fileID: 2100000, guid: 35fc2e3e99bbec94c891b41d334742c1, type: 2}
-  - {fileID: 2100000, guid: 79b07f5a84c004d40b47776cfb226286, type: 2}
   - {fileID: 2100000, guid: 255e04f4d91a87c4cb1ead9f3c911ea3, type: 2}
   part:
   - {fileID: 736448895}
@@ -25644,7 +25638,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mat:
   - {fileID: 2100000, guid: 35fc2e3e99bbec94c891b41d334742c1, type: 2}
-  - {fileID: 2100000, guid: 79b07f5a84c004d40b47776cfb226286, type: 2}
   - {fileID: 2100000, guid: 255e04f4d91a87c4cb1ead9f3c911ea3, type: 2}
   part:
   - {fileID: 1904341216}
@@ -26669,6 +26662,8 @@ MonoBehaviour:
   FastOption_Btn: {fileID: 1486704937}
   FastMain_Btn: {fileID: 1804991939}
   FastQuit_Btn: {fileID: 145203010}
+  Info: {fileID: 0}
+  D_Info: {fileID: 0}
 --- !u!114 &1823779587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27423,7 +27418,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mat:
   - {fileID: 2100000, guid: 35fc2e3e99bbec94c891b41d334742c1, type: 2}
-  - {fileID: 2100000, guid: 79b07f5a84c004d40b47776cfb226286, type: 2}
   - {fileID: 2100000, guid: 255e04f4d91a87c4cb1ead9f3c911ea3, type: 2}
   part:
   - {fileID: 248665106}
@@ -27508,7 +27502,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mat:
   - {fileID: 2100000, guid: 35fc2e3e99bbec94c891b41d334742c1, type: 2}
-  - {fileID: 2100000, guid: 79b07f5a84c004d40b47776cfb226286, type: 2}
   - {fileID: 2100000, guid: 255e04f4d91a87c4cb1ead9f3c911ea3, type: 2}
   part:
   - {fileID: 1617101246}
@@ -28297,7 +28290,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mat:
   - {fileID: 2100000, guid: 35fc2e3e99bbec94c891b41d334742c1, type: 2}
-  - {fileID: 2100000, guid: 79b07f5a84c004d40b47776cfb226286, type: 2}
   - {fileID: 2100000, guid: 255e04f4d91a87c4cb1ead9f3c911ea3, type: 2}
   part:
   - {fileID: 1923599926}
