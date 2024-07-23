@@ -1,57 +1,139 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class Shortcut_Key_Control : MonoBehaviour
 {
-    
+    [SerializeField] private GameObject Ob_Back;
+
+    [SerializeField] private ToggleGroup toggleGroup;
+    [SerializeField] private Toggle[] toggles;
+    [SerializeField] private GameObject[] toggleSprites;
+
     [SerializeField] private Image menuicon;
     [SerializeField] private Text menuname;
     [SerializeField] private Text togglename;
 
-    [SerializeField] private GameObject Shortcut;
+    [SerializeField] private Sprite[] icon_Img;
 
+    [SerializeField] private Color SelectedColor = new Color(1, 1, 1, 1);
 
-    /*
-    [Header("»Æ¿Â±‚")]
-    [SerializeField] private ToggleController E_toggle1;
-    [SerializeField] private ToggleController E_toggle2;
-    [SerializeField] private ToggleController E_toggle3;
-    [SerializeField] private ToggleController E_toggle4;
-
-    [Header("≥Î¡Ò")]
-    [SerializeField] private ToggleController N_toggle1;
-    [SerializeField] private ToggleController N_toggle2;
-    [SerializeField] private ToggleController N_toggle3;
-    [SerializeField] private ToggleController N_toggle4;
-
-    [SerializeField] private Color StartColor = Color.white;
-    */
+    private string[] togglenames_1 = { "æ¯¿Ω (Ω∫≈Õ∫Ò ∞«)", "µˆ ≈¨∏Æ≥  4000 ºÙ »Æ¿Â±‚", "µˆ ≈¨∏Æ≥  4000 ∑’ »Æ¿Â±‚", "µˆ ≈¨∏Æ≥  ø¢Ω∫∆Æ∂Û ∑’ »Æ¿Â±‚" };
+    private string[] togglenames_2 = { "0µµ ≥Î¡Ò", "15µµ ≥Î¡Ò", "25µµ ≥Î¡Ò", "40µµ ≥Î¡Ò" };
 
     private void Start()
     {
-        
+        foreach (var toggle in toggles)
+        {
+            toggle.onValueChanged.AddListener(delegate { ToggleValueChanged(toggle); });
+        }
+
+        HideAllSprites();
+        SetInitialText();
     }
 
     private void Update()
     {
-        ActiveShortcut();
+        if (Input.GetKey(KeyCode.Alpha1) || Input.GetKey(KeyCode.Alpha2))
+        {
+            Ob_Back.SetActive(true);
+
+            ActiveShortcut();
+        }
+        else if(Input.GetKeyUp(KeyCode.Alpha1) || Input.GetKeyUp(KeyCode.Alpha2))
+        {
+            Ob_Back.SetActive(false);
+        }
     }
 
     private void ActiveShortcut()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        if (Input.GetKey(KeyCode.Alpha1))
         {
-            Shortcut.SetActive(true);
+            //menuicon.sprite = icon_Img[index];
             menuname.text = "»Æ¿Â±‚";
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha2))
+        if (Input.GetKey(KeyCode.Alpha2))
         {
-
+            //menuicon.sprite = icon_Img[index];
+            menuname.text = "≥Î¡Ò";
         }
     }
 
+    public void OnPointerEnter(int index)
+    {
+        ShowSprite(index);
+
+        if (Input.GetKey(KeyCode.Alpha1))
+        {
+            togglename.text = togglenames_1[index];
+        }
+
+        if (Input.GetKey(KeyCode.Alpha2))
+        {
+            togglename.text = togglenames_2[index];
+        }
+
+    }
+
+    public void OnPointerExit(int index)
+    {
+        HideSprite(index);
+        SetTextToSelectedToggle();
+    }
+
+    private void ToggleValueChanged(Toggle changedToggle)
+    {
+        if (changedToggle.isOn)
+        {
+            SetTextToSelectedToggle();
+        }
+    }
+
+    private void ShowSprite(int index)
+    {
+        HideAllSprites();
+        toggleSprites[index].SetActive(true);
+    }
+
+    private void HideSprite(int index)
+    {
+        toggleSprites[index].SetActive(false);
+    }
+
+    private void HideAllSprites()
+    {
+        foreach (var sprite in toggleSprites)
+        {
+            sprite.SetActive(false);
+        }
+    }
+
+    private void SetTextToSelectedToggle()
+    {
+        for (int i = 0; i < toggles.Length; i++)
+        {
+            if (toggles[i].isOn)
+            {
+                if (Input.GetKey(KeyCode.Alpha1))
+                {
+                    togglename.text = togglenames_1[i];
+                }
+
+                if (Input.GetKey(KeyCode.Alpha2))
+                {
+                    togglename.text = togglenames_2[i];
+                }
+                break;
+            }
+        }
+    }
+
+    private void SetInitialText()
+    {
+        SetTextToSelectedToggle();
+    }
 }
