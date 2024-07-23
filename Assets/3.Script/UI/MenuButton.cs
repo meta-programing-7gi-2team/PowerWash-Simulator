@@ -109,8 +109,8 @@ public class MenuButton : MonoBehaviour
         GameSelectShadow.SetActive(true);
         GameBack_Btn.SetActive(true);
         SetChoice_Toggle.SetActive(true);
-        Pineapple_Btn.SetActive(true);
-        KrustyKrab_Btn.SetActive(true);
+        //Pineapple_Btn.SetActive(true);
+        //KrustyKrab_Btn.SetActive(true);
 
         if (FastCheck.Equals(true))
         {
