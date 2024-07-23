@@ -10,6 +10,7 @@ TagManager:
   - Patrick
   - Blueprint
   - Tablet
+  - InGame
   layers:
   - Default
   - TransparentFX
