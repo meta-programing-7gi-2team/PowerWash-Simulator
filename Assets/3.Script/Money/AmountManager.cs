@@ -31,7 +31,10 @@ public class AmountManager : MonoBehaviour
     [SerializeField] private Text stateText;
 
     // 데이터 초기화
-
+    private void Awake()
+    {
+        Init();
+    }
     private void Init()
     {
         GetMap001();
