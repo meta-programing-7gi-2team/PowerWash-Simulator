@@ -26,6 +26,13 @@ public class UIManager : MonoBehaviour
     public bool Map002;
     public List<GameObject> objectsWithTag = new List<GameObject>();
 
+    private bool Pineapple;
+    private bool Squidward;
+    private bool Patrick;
+    private bool Stand;
+    private bool KrustyKrab;
+    private bool ChumBucket;
+
     private AsyncOperation asyncLoad;
 
     public bool isCursor { get; private set; }
@@ -137,53 +144,93 @@ public class UIManager : MonoBehaviour
             targetProgress = 0.7f;
             while (loadingSlider.value < 0.7f)
             {
-                ResourceRequest resourceRequest = Resources.LoadAsync<GameObject>("Pineapple");
-                while (!resourceRequest.isDone)
+                if (!Pineapple)
+                {
+                    ResourceRequest resourceRequest = Resources.LoadAsync<GameObject>("Pineapple");
+                    while (!resourceRequest.isDone)
+                    {
+                        loadingSlider.value = Mathf.MoveTowards(loadingSlider.value, targetProgress, Time.deltaTime * 0.5f);
+                        text.text = "ø¿ø∞ ∑ŒµÂ ¡ﬂ";
+                        yield return null;
+                    }
+                    Instantiate(resourceRequest.asset);
+                    Pineapple = true;
+                }
+                else
                 {
                     loadingSlider.value = Mathf.MoveTowards(loadingSlider.value, targetProgress, Time.deltaTime * 0.5f);
                     text.text = "ø¿ø∞ ∑ŒµÂ ¡ﬂ";
                     yield return null;
                 }
-                Instantiate(resourceRequest.asset);
             }
 
             targetProgress = 0.8f;
             while (loadingSlider.value < 0.8f)
             {
-                ResourceRequest resourceRequest = Resources.LoadAsync<GameObject>("Squidward");
-                while (!resourceRequest.isDone)
+                if (!Squidward)
+                {
+                    ResourceRequest resourceRequest = Resources.LoadAsync<GameObject>("Squidward");
+                    while (!resourceRequest.isDone)
+                    {
+                        loadingSlider.value = Mathf.MoveTowards(loadingSlider.value, targetProgress, Time.deltaTime * 0.5f);
+                        text.text = "ø¿ø∞ ∑ŒµÂ ¡ﬂ";
+                        yield return null;
+                    }
+                    Instantiate(resourceRequest.asset);
+                    Squidward = true;
+                }
+                else
                 {
                     loadingSlider.value = Mathf.MoveTowards(loadingSlider.value, targetProgress, Time.deltaTime * 0.5f);
                     text.text = "ø¿ø∞ ∑ŒµÂ ¡ﬂ";
                     yield return null;
                 }
-                Instantiate(resourceRequest.asset);
             }
 
             targetProgress = 0.9f;
             while (loadingSlider.value < 0.9f)
             {
-                ResourceRequest resourceRequest = Resources.LoadAsync<GameObject>("Patrick");
-                while (!resourceRequest.isDone)
+                if (!Patrick)
+                {
+                    ResourceRequest resourceRequest = Resources.LoadAsync<GameObject>("Patrick");
+                    while (!resourceRequest.isDone)
+                    {
+                        loadingSlider.value = Mathf.MoveTowards(loadingSlider.value, targetProgress, Time.deltaTime * 0.5f);
+                        text.text = "ø¿ø∞ ∑ŒµÂ ¡ﬂ";
+                        yield return null;
+                    }
+                    Instantiate(resourceRequest.asset);
+                    Patrick = true;
+                }
+                else
                 {
                     loadingSlider.value = Mathf.MoveTowards(loadingSlider.value, targetProgress, Time.deltaTime * 0.5f);
                     text.text = "ø¿ø∞ ∑ŒµÂ ¡ﬂ";
                     yield return null;
                 }
-                Instantiate(resourceRequest.asset);
             }
 
             targetProgress = 1f;
             while (loadingSlider.value < 1f)
             {
-                ResourceRequest resourceRequest = Resources.LoadAsync<GameObject>("Stand");
-                while (!resourceRequest.isDone)
+                if (!Stand)
+                {
+                    ResourceRequest resourceRequest = Resources.LoadAsync<GameObject>("Stand");
+                    while (!resourceRequest.isDone)
+                    {
+                        loadingSlider.value = Mathf.MoveTowards(loadingSlider.value, targetProgress, Time.deltaTime * 0.5f);
+                        text.text = "ø¿ø∞ ∑ŒµÂ ¡ﬂ";
+                        yield return null;
+                    }
+                    Instantiate(resourceRequest.asset);
+                    Stand = true;
+                }
+                else
                 {
                     loadingSlider.value = Mathf.MoveTowards(loadingSlider.value, targetProgress, Time.deltaTime * 0.5f);
                     text.text = "ø¿ø∞ ∑ŒµÂ ¡ﬂ";
                     yield return null;
                 }
-                Instantiate(resourceRequest.asset);
             }
         }
 
@@ -192,27 +239,47 @@ public class UIManager : MonoBehaviour
             targetProgress = 0.8f;
             while (loadingSlider.value < 0.8f)
             {
-                ResourceRequest resourceRequest = Resources.LoadAsync<GameObject>("KrustyKrab");
-                while (!resourceRequest.isDone)
+                if (!KrustyKrab)
+                {
+                    ResourceRequest resourceRequest = Resources.LoadAsync<GameObject>("KrustyKrab");
+                    while (!resourceRequest.isDone)
+                    {
+                        loadingSlider.value = Mathf.MoveTowards(loadingSlider.value, targetProgress, Time.deltaTime * 0.5f);
+                        text.text = "ø¿ø∞ ∑ŒµÂ ¡ﬂ";
+                        yield return null;
+                    }
+                    Instantiate(resourceRequest.asset);
+                    KrustyKrab = true;
+                }
+                else
                 {
                     loadingSlider.value = Mathf.MoveTowards(loadingSlider.value, targetProgress, Time.deltaTime * 0.5f);
                     text.text = "ø¿ø∞ ∑ŒµÂ ¡ﬂ";
                     yield return null;
                 }
-                Instantiate(resourceRequest.asset);
             }
 
             targetProgress = 1f;
             while (loadingSlider.value < 1f)
             {
-                ResourceRequest resourceRequest = Resources.LoadAsync<GameObject>("ChumBucket");
-                while (!resourceRequest.isDone)
+                if (!ChumBucket)
+                {
+                    ResourceRequest resourceRequest = Resources.LoadAsync<GameObject>("ChumBucket");
+                    while (!resourceRequest.isDone)
+                    {
+                        loadingSlider.value = Mathf.MoveTowards(loadingSlider.value, targetProgress, Time.deltaTime * 0.5f);
+                        text.text = "ø¿ø∞ ∑ŒµÂ ¡ﬂ";
+                        yield return null;
+                    }
+                    Instantiate(resourceRequest.asset);
+                    ChumBucket = true;
+                }
+                else
                 {
                     loadingSlider.value = Mathf.MoveTowards(loadingSlider.value, targetProgress, Time.deltaTime * 0.5f);
                     text.text = "ø¿ø∞ ∑ŒµÂ ¡ﬂ";
                     yield return null;
                 }
-                Instantiate(resourceRequest.asset);
             }
         }
 
