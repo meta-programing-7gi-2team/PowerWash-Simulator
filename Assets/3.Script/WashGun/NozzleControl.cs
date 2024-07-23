@@ -3,17 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class NozzleControl : MonoBehaviour
+public class NozzleControl : MonoBehaviour,IObserver
 {
 
     [SerializeField] private GameObject[] nozzle;
     [SerializeField] private Sprite[] crosshairImage;
+    [SerializeField] private PlayerState playerState;
     private WashGunControl washGun;
     private Image crosshair;
     private float scroll;
-
+    private State state;
     public int Index { get; private set; }
-
+    private void OnEnable()
+    {
+        playerState.Register(this);
+    }
     private void Start()
     {
         Index = 0;
@@ -26,8 +30,8 @@ public class NozzleControl : MonoBehaviour
     {
         if (UIManager.instance.isCursor) return;
 
-        if (PlayerState.instance.state.Equals(State.Hand) ||
-            PlayerState.instance.state.Equals(State.Run))
+        if (state.Equals(State.Hand) ||
+            state.Equals(State.Run))
             return;
 
         scroll = Input.GetAxis("Mouse ScrollWheel");
@@ -92,5 +96,10 @@ public class NozzleControl : MonoBehaviour
                 nozzle[i].transform.localRotation = Quaternion.Euler(new Vector3(0, 0, 90f));
             }
         }
+    }
+
+    public void UpdateState(State state)
+    {
+        this.state = state;
     }
 }

@@ -11,28 +11,36 @@ public enum State
     Hand
 }
 
-public class PlayerState : MonoBehaviour
+public class PlayerState : MonoBehaviour, ISubject
 {
-    public static PlayerState instance = null;
+    private List<IObserver> _observer = new List<IObserver>();
     public State state { get; private set; }
-    private void Awake()
-    {
-        if (instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
     private void Start()
     {
         state = State.Idle;
+        Notify();
     }
     public void SetState(State state)
     {
         this.state = state;
+        Notify();
+    }
+
+    public void Register(IObserver observer)
+    {
+        _observer.Add(observer);
+    }
+
+    public void Remover(IObserver observer)
+    {
+        _observer.Remove(observer);
+    }
+
+    public void Notify()
+    {
+        foreach(IObserver o in _observer)
+        {
+            o.UpdateState(state);
+        }
     }
 }

@@ -2,21 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WashGunControl : MonoBehaviour
+public class WashGunControl : MonoBehaviour,IObserver
 {
     private GameObject water;
     private GameObject stream;
-    [SerializeField] private LayerMask layer;
     private Animator anim;
-
+    [SerializeField] private LayerMask layer;
+    [SerializeField] private PlayerState playerState;
+    private State state;
+    private Transform playerCamera;
     private bool isAuto = false;
     private float blockRange;
-
     public bool isFire { get; private set; }
     public Vector3 firePoint { get; private set; }
 
+    private void OnEnable()
+    {
+        playerState.Register(this);
+    }
+
     private void Start()
     {
+        playerCamera = Camera.main.transform;
         anim = GetComponent<Animator>();
         blockRange = 0.6f;
     }
@@ -24,10 +31,10 @@ public class WashGunControl : MonoBehaviour
     {
         if (UIManager.instance.isCursor) return;
 
-        firePoint = GameManager.view.position + GameManager.view.forward * blockRange;
+        firePoint = playerCamera.position + playerCamera.forward * blockRange;
 
-        if (PlayerState.instance.state.Equals(State.Hand) ||
-            PlayerState.instance.state.Equals(State.Run))
+        if (state.Equals(State.Hand) ||
+            state.Equals(State.Run))
         {
             Stop();
             return;
@@ -64,7 +71,7 @@ public class WashGunControl : MonoBehaviour
     }
     private bool BlockCheck()
     {
-        if (Physics.Raycast(GameManager.view.position, GameManager.view.forward, blockRange, layer))
+        if (Physics.Raycast(playerCamera.position, playerCamera.forward, blockRange, layer))
         {
             Stop();
             anim.SetBool("Await", true);
@@ -84,5 +91,9 @@ public class WashGunControl : MonoBehaviour
     {
         this.water = water;
         this.stream = stream;
+    }
+    public void UpdateState(State state)
+    {
+        this.state = state;
     }
 }

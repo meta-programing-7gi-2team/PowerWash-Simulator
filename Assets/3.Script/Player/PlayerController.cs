@@ -3,50 +3,56 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerController : MonoBehaviour,IObserver
 {
     private CharacterController cc;
-
+    private Animator player_anim;
+    private State state;
     private Vector3 moveDir = Vector3.zero;
+    private Transform playerCamera;
+    [SerializeField] private PlayerState playerState;
     [SerializeField] private float speed = 3f;
     [SerializeField] private float speedWeight = 1f;
     [SerializeField] private float jumpForce = 6f;
     [SerializeField] private float gravity = 20f;
 
+    private void OnEnable()
+    {
+        playerState.Register(this);
+    }
     private void Start()
     {
+        playerCamera = Camera.main.transform;
         cc = GetComponent<CharacterController>();
+        player_anim = GetComponent<Animator>();
+        playerState = GetComponent<PlayerState>();
     }
     private void Update()
     {
         if (UIManager.instance.isCursor) return;
 
-        SetHeight();
-
-        if(!PlayerState.instance.state.Equals(State.Hand))
+        if(!state.Equals(State.Hand))
             Run();
-
-        SetSpeedWeight();
 
         Move();
 
         if (Input.GetKeyDown(KeyCode.LeftControl) &&
-            !PlayerState.instance.state.Equals(State.Hand) &&
-            !PlayerState.instance.state.Equals(State.Run))
+            !state.Equals(State.Hand) &&
+            !state.Equals(State.Run))
         {
             ChangePosture();
         }
     }
     private void Move()
     {
-        if (cc.isGrounded && !PlayerState.instance.state.Equals(State.Hand))
+        if (cc.isGrounded && !state.Equals(State.Hand))
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                if(PlayerState.instance.state.Equals(State.Crouch) ||
-                    PlayerState.instance.state.Equals(State.Lie))
+                if(state.Equals(State.Crouch) ||
+                    state.Equals(State.Lie))
                 {
-                    PlayerState.instance.SetState(State.Idle);
+                    playerState.SetState(State.Idle);
                     cc.height = 2.0f;
                 }
                 moveDir.y = jumpForce;
@@ -66,7 +72,7 @@ public class PlayerMovement : MonoBehaviour
     }
     private void SetSpeedWeight()
     {
-        switch (PlayerState.instance.state)
+        switch (state)
         {
             case State.Idle:
             case State.Hand:
@@ -83,35 +89,35 @@ public class PlayerMovement : MonoBehaviour
     }
     private void SetHeight()
     {
-        switch (PlayerState.instance.state)
+        switch (state)
         {
             case State.Idle:
-                GameManager.view.localPosition = new Vector3(0, 1f, 0);
+                playerCamera.localPosition = new Vector3(0, 1f, 0);
                 break;
             case State.Crouch:
-                GameManager.view.localPosition = new Vector3(0, 0.1f, 0);
+                playerCamera.localPosition = new Vector3(0, 0.1f, 0);
                 break;
             case State.Lie:
-                GameManager.view.localPosition = new Vector3(0, -0.5f, 0);
+                playerCamera.localPosition = new Vector3(0, -0.5f, 0);
                 break;
             case State.Run:
             case State.Hand:
-                GameManager.view.localPosition = new Vector3(0, 1f, 0);
+                playerCamera.localPosition = new Vector3(0, 1f, 0);
                 break;
         }
     }
     private void ChangePosture()
     {
-        switch (PlayerState.instance.state)
+        switch (state)
         {
             case State.Idle:
-                PlayerState.instance.SetState(State.Crouch);
+                playerState.SetState(State.Crouch);
                 break;
             case State.Crouch:
-                PlayerState.instance.SetState(State.Lie);
+                playerState.SetState(State.Lie);
                 break;
             case State.Lie:
-                PlayerState.instance.SetState(State.Idle);
+                playerState.SetState(State.Idle);
                 break;
             case State.Run:
             case State.Hand:
@@ -122,12 +128,31 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.LeftShift))
         {
-            PlayerState.instance.SetState(State.Run);
+            playerState.SetState(State.Run);
         }
         else if (Input.GetKeyUp(KeyCode.LeftShift))
-        {  
-            PlayerState.instance.SetState(State.Idle);
+        {
+            playerState.SetState(State.Idle);
         }
+    }
+    private void SetAnimation()
+    {
+        if (state.Equals(State.Run) ||
+           state.Equals(State.Hand))
+        {
+            player_anim.SetBool("HandUp", false);
+        }
+        else
+        {
+            player_anim.SetBool("HandUp", true);
+        }
+    }
+    public void UpdateState(State state)
+    {
+        this.state = state;
+        SetAnimation();
+        SetHeight();
+        SetSpeedWeight();
     }
 }
 

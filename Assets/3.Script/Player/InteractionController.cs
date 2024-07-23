@@ -6,14 +6,18 @@ public class InteractionController : MonoBehaviour
 {
     private RaycastHit hit;
     private InteractionObject target;
-
+    private Transform playerCamera;
+    private void Start()
+    {
+        playerCamera = Camera.main.transform;
+    }
     private void Update()
     {
         if (UIManager.instance.isCursor) return;
 
         if (target)
         {
-            if(Physics.Raycast(GameManager.view.position, GameManager.view.forward, out hit, Mathf.Infinity, target.Layer))
+            if(Physics.Raycast(playerCamera.position, playerCamera.forward, out hit, Mathf.Infinity, target.Layer))
             {
                 target.OnMove(hit);
             }
@@ -24,7 +28,7 @@ public class InteractionController : MonoBehaviour
         }
         else
         {
-            Physics.Raycast(GameManager.view.position, GameManager.view.forward, out hit, Mathf.Infinity);
+            Physics.Raycast(playerCamera.position, playerCamera.forward, out hit, Mathf.Infinity);
         }
 
         if (Input.GetKeyDown(KeyCode.F))

@@ -5,7 +5,6 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance = null;
-    public static Transform view;
     public string DriName = "Save";
     public string FileName = "Amount";
     private AmountManager amountManager;
@@ -37,12 +36,5 @@ public class GameManager : MonoBehaviour
     {
         this.amount += amount;
         amountManager.SaveAmount(this.amount);
-    }
-    private void Update()
-    {
-        if(view == null)
-        {
-            view = Camera.main.transform;
-        }
     }
 }
