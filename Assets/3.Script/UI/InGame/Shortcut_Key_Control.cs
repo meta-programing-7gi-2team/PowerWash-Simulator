@@ -17,6 +17,8 @@ public class Shortcut_Key_Control : MonoBehaviour
     [SerializeField] private Text togglename;
 
     [SerializeField] private Sprite[] icon_Img;
+    [SerializeField] private Image[] E_toggleImg;
+    [SerializeField] private Image[] N_toggleImg;
 
     [SerializeField] private Color SelectedColor = new Color(1, 1, 1, 1);
 
