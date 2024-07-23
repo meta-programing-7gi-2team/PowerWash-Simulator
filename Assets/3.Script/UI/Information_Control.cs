@@ -10,9 +10,8 @@ public class Information_Control : MonoBehaviour
    [SerializeField] private Text npc_name_txt;
    [SerializeField] private Text place;
    [SerializeField] private Text info_txt;
-   
-   
-   private void Start()
+
+    private void Info_Text()
    {
        if (UIManager.instance.Map001_btn_clk.Equals(true))
        {
