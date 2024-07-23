@@ -4,9 +4,9 @@ public class MapAmountData
     public string Name; //설명
     public float Amount; //값
     public float GetAmount; //획득함
-    public string State; // - 0~99% 청소완료
+    public float State; // - 0~99% 청소완료
 
-    public MapAmountData(string name, float amount, float getAmount, string state)
+    public MapAmountData(string name, float amount, float getAmount, float state)
     {
         Name = name;
         Amount = amount;

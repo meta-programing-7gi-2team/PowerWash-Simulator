@@ -35,7 +35,7 @@ public class AmountManager : MonoBehaviour
         for (int i = 0; i < Map001_MoneyData.Count; i++)
         {
             string name = EnumObject.GetName(Map001_MoneyData[i].Spongebob, Map001_MoneyData[i].Pineapple, Map001_MoneyData[i].Patrick, Map001_MoneyData[i].Squidward, Map001_MoneyData[i].KrustyKrab);
-            Map001_AmountData.Add(new MapAmountData(name, Map001_MoneyData[i].Amount, 0, "-"));
+            Map001_AmountData.Add(new MapAmountData(name, Map001_MoneyData[i].Amount, 0, 0));
         }
         SaveMap001();
     }
@@ -46,7 +46,7 @@ public class AmountManager : MonoBehaviour
         for (int i = 0; i < Map002_MoneyData.Count; i++)
         {
             string name = EnumObject.GetName(Map002_MoneyData[i].Spongebob, Map002_MoneyData[i].Pineapple, Map002_MoneyData[i].Patrick, Map002_MoneyData[i].Squidward, Map002_MoneyData[i].KrustyKrab);
-            Map002_AmountData.Add(new MapAmountData(name, Map002_MoneyData[i].Amount, 0, "-"));
+            Map002_AmountData.Add(new MapAmountData(name, Map002_MoneyData[i].Amount, 0, 0));
         }
         SaveMap002();
     }
@@ -243,7 +243,7 @@ public class AmountManager : MonoBehaviour
                 return Map001_AmountData[i];
             }
         }
-        return new MapAmountData("-", 0, 0, "-");
+        return new MapAmountData("-", 0, 0, 0);
     }
     public List<MapAmountData> GetMap002()
     {
@@ -260,7 +260,7 @@ public class AmountManager : MonoBehaviour
                 return Map002_AmountData[i];
             }
         }
-        return new MapAmountData("-", 0, 0, "-");
+        return new MapAmountData("-", 0, 0, 0);
     }
 
     [System.Serializable]
