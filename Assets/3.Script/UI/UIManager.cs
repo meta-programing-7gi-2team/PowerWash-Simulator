@@ -74,7 +74,7 @@ public class UIManager : MonoBehaviour
                         isCursor = true;
                         Tablet.GetComponent<RectTransform>().DOAnchorPosY(540, 0.3f);
                         InGame.DOFade(0, 0.3f);
-                        Cursor.visible = false;
+                        Cursor.visible = true;
                         Cursor.lockState = CursorLockMode.None;
                     }
                 }
