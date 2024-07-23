@@ -17,8 +17,8 @@ public class Shortcut_Key_Control : MonoBehaviour
     [SerializeField] private Text togglename;
 
     [SerializeField] private Sprite[] icon_Img;
-    [SerializeField] private Image[] E_toggleImg;
-    [SerializeField] private Image[] N_toggleImg;
+    [SerializeField] private GameObject[] E_toggleImg;
+    [SerializeField] private GameObject[] N_toggleImg;
 
     [SerializeField] private Color SelectedColor = new Color(1, 1, 1, 1);
 
@@ -56,9 +56,27 @@ public class Shortcut_Key_Control : MonoBehaviour
 
             ActiveShortcut();
         }
-        else if(Input.GetKeyUp(KeyCode.Alpha1) || Input.GetKeyUp(KeyCode.Alpha2))
+        
+        
+        if(Input.GetKeyUp(KeyCode.Alpha1) || Input.GetKeyUp(KeyCode.Alpha2))
         {
             Ob_Back.SetActive(false);
+
+            for (int i = 0; i < E_toggleImg.Length; i++)
+            {
+                if (E_toggleImg[i] != null)
+                {
+                    E_toggleImg[i].SetActive(false);
+                }
+            }
+
+            for (int i = 0; i < N_toggleImg.Length; i++)
+            {
+                if (N_toggleImg[i] != null)
+                {
+                    N_toggleImg[i].SetActive(false);
+                }
+            }
         }
     }
 
@@ -66,14 +84,30 @@ public class Shortcut_Key_Control : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Alpha1))
         {
-            //menuicon.sprite = icon_Img[index];
+            menuicon.sprite = icon_Img[0];
             menuname.text = "È®Àå±â";
+
+            for (int i = 0; i < E_toggleImg.Length; i++)
+            {
+                if (E_toggleImg[i] != null)
+                {
+                    E_toggleImg[i].SetActive(true);
+                }
+            }
         }
 
         if (Input.GetKey(KeyCode.Alpha2))
         {
-            //menuicon.sprite = icon_Img[index];
+            menuicon.sprite = icon_Img[1];
             menuname.text = "³ëÁñ";
+
+            for (int i = 0; i < N_toggleImg.Length; i++)
+            {
+                if (N_toggleImg[i] != null)
+                {
+                    N_toggleImg[i].SetActive(true);
+                }
+            }
         }
     }
 
