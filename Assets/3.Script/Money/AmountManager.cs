@@ -33,7 +33,7 @@ public class AmountManager : MonoBehaviour
     // 데이터 초기화
     private void Awake()
     {
-        Init();
+        //Init();
     }
     private void Init()
     {
@@ -203,9 +203,13 @@ public class AmountManager : MonoBehaviour
     }
     #endregion
 
-    public void SetMap001_Data(MapAmountData mapAmountData, Process process)
+    public void SetMap001_Data(Process process)
     {
         Map001_ProcessData.process = process;
+        SaveMap001();
+    }
+    public void SetMap001_Data(MapAmountData mapAmountData)
+    {
         for (int i = 0; i< Map001_AmountData.Count; i++)
         {
             if(Map001_AmountData[i].Name.Equals(mapAmountData.Name))
@@ -216,12 +220,16 @@ public class AmountManager : MonoBehaviour
         }
         SaveMap001();
     }
-    public void SetMap002_Data(MapAmountData mapAmountData, Process process)
+    public void SetMap002_Data(Process process)
     {
         Map002_ProcessData.process = process;
-        for (int i = 0; i< Map002_AmountData.Count; i++)
+        SaveMap002();
+    }
+    public void SetMap002_Data(MapAmountData mapAmountData)
+    {
+        for (int i = 0; i < Map002_AmountData.Count; i++)
         {
-            if(Map002_AmountData[i].Name.Equals(mapAmountData.Name))
+            if (Map002_AmountData[i].Name.Equals(mapAmountData.Name))
             {
                 Map002_AmountData[i] = mapAmountData;
                 break;
