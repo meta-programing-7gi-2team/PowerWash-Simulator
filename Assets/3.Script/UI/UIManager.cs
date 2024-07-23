@@ -22,8 +22,7 @@ public class UIManager : MonoBehaviour
     public static string[] targetSceneName = { "Map001", "Map002" };
 
     private float ObjectAll;
-    public bool Map001;
-    public bool Map002;
+
     public List<GameObject> objectsWithTag = new List<GameObject>();
 
     private bool Pineapple;
