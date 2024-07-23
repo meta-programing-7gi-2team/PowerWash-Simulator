@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour
     }
     private void Init()
     {
-        amountManager = new AmountManager();
+        amountManager = FindObjectOfType<AmountManager>();
         amount = amountManager.GetAmount();
     }
     public float GetAmount()
@@ -36,7 +36,7 @@ public class GameManager : MonoBehaviour
     public void AddAmount(float amount)
     {
         this.amount += amount;
-        amountManager.SaveAmount(this.amount);
+        amountManager.SetAmount(this.amount);
     }
     private void Update()
     {
