@@ -15,6 +15,7 @@ public class MovableObject : InteractionObject
 
     private void Start()
     {
+        playerState = FindObjectOfType<PlayerState>();
         playerCamera = Camera.main.transform;
         parent = transform.parent;
     }

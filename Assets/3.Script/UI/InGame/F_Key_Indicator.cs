@@ -14,10 +14,15 @@ public class F_Key_Indicator : MonoBehaviour, IObserver
     private PlayerState playerState;
     private Transform playerCamera;
     private State state;
+
+    private void Awake()
+    {
+        playerState = FindObjectOfType<PlayerState>();
+        playerCamera = Camera.main.transform;
+    }
     private void OnEnable()
     {
         playerState.Register(this);
-        playerCamera = Camera.main.transform;
     }
     private void Start()
     {

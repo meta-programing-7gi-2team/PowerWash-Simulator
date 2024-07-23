@@ -113,14 +113,15 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 781f5dfd3334e45459ce72c088017963, type: 3}
+  cleanRatio: 95
   Spongebob: 2
   Pineapple: 0
   Patrick: 0
   Squidward: 1
   KrustyKrab: 0
+  ChumBucket: 0
   FileName: SH-Bicycle_1
   DirName: Save
-  isSave: 0
 --- !u!1 &618717057957896043
 GameObject:
   m_ObjectHideFlags: 0
@@ -234,14 +235,15 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: c609188d35df1f0458e3c6ce86366b99, type: 3}
+  cleanRatio: 95
   Spongebob: 2
   Pineapple: 0
   Patrick: 0
   Squidward: 6
   KrustyKrab: 0
+  ChumBucket: 0
   FileName: SH-Ear_0_0
   DirName: Save
-  isSave: 0
 --- !u!1 &810112000955291828
 GameObject:
   m_ObjectHideFlags: 0
@@ -355,14 +357,15 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 3ac9a79ae911fdf478b1194fed9c05a2, type: 3}
+  cleanRatio: 95
   Spongebob: 2
   Pineapple: 0
   Patrick: 0
   Squidward: 10
   KrustyKrab: 0
+  ChumBucket: 0
   FileName: SH-PortholeWindow_1_0
   DirName: Save
-  isSave: 0
 --- !u!1 &914661544049778202
 GameObject:
   m_ObjectHideFlags: 0
@@ -476,14 +479,15 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 1fdf45dc3bbc10942af23af92843f94c, type: 3}
+  cleanRatio: 95
   Spongebob: 2
   Pineapple: 0
   Patrick: 0
   Squidward: 14
   KrustyKrab: 0
+  ChumBucket: 0
   FileName: SH-RoofChair_1
   DirName: Save
-  isSave: 0
 --- !u!1 &1728891972575711938
 GameObject:
   m_ObjectHideFlags: 0
@@ -597,14 +601,15 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 781f5dfd3334e45459ce72c088017963, type: 3}
+  cleanRatio: 95
   Spongebob: 2
   Pineapple: 0
   Patrick: 0
   Squidward: 1
   KrustyKrab: 0
+  ChumBucket: 0
   FileName: SH-Bicycle_0
   DirName: Save
-  isSave: 0
 --- !u!1 &2635607001620687969
 GameObject:
   m_ObjectHideFlags: 0
@@ -718,14 +723,15 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 5110a3defffaeef4ebb443c135bbae2b, type: 3}
+  cleanRatio: 95
   Spongebob: 2
   Pineapple: 0
   Patrick: 0
   Squidward: 10
   KrustyKrab: 0
+  ChumBucket: 0
   FileName: SH-PortholeWindow_0_0
   DirName: Save
-  isSave: 0
 --- !u!1 &2790452472178796644
 GameObject:
   m_ObjectHideFlags: 0
@@ -839,14 +845,15 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 131857f309564ec4f8c6d0057f5b7b20, type: 3}
+  cleanRatio: 95
   Spongebob: 2
   Pineapple: 0
   Patrick: 0
   Squidward: 9
   KrustyKrab: 0
+  ChumBucket: 0
   FileName: SH-PortholeFrame_0_0
   DirName: Save
-  isSave: 0
 --- !u!1 &3391204019168053658
 GameObject:
   m_ObjectHideFlags: 0
@@ -960,14 +967,15 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 1f38578f6c8299546a1f56cef1a8af21, type: 3}
+  cleanRatio: 95
   Spongebob: 2
   Pineapple: 0
   Patrick: 0
   Squidward: 12
   KrustyKrab: 0
+  ChumBucket: 0
   FileName: SH-RearWindowFrame_0
   DirName: Save
-  isSave: 0
 --- !u!1 &3731761446384368473
 GameObject:
   m_ObjectHideFlags: 0
@@ -1081,14 +1089,15 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 24448e15df4aba8469693e36ba120604, type: 3}
+  cleanRatio: 95
   Spongebob: 2
   Pineapple: 0
   Patrick: 0
   Squidward: 8
   KrustyKrab: 0
+  ChumBucket: 0
   FileName: SH-Nose_0
   DirName: Save
-  isSave: 0
 --- !u!1 &4884508018167562485
 GameObject:
   m_ObjectHideFlags: 0
@@ -1202,14 +1211,15 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 1fdf45dc3bbc10942af23af92843f94c, type: 3}
+  cleanRatio: 95
   Spongebob: 2
   Pineapple: 0
   Patrick: 0
   Squidward: 14
   KrustyKrab: 0
+  ChumBucket: 0
   FileName: SH-RoofChair_0
   DirName: Save
-  isSave: 0
 --- !u!1 &5041774049914645992
 GameObject:
   m_ObjectHideFlags: 0
@@ -1323,14 +1333,15 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 29931811c3a36904085a04cdbd8af134, type: 3}
+  cleanRatio: 95
   Spongebob: 2
   Pineapple: 0
   Patrick: 0
   Squidward: 2
   KrustyKrab: 0
+  ChumBucket: 0
   FileName: SH-Brow_0
   DirName: Save
-  isSave: 0
 --- !u!1 &5051328981405561287
 GameObject:
   m_ObjectHideFlags: 0
@@ -1444,14 +1455,15 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: eab94b16ff79bc34ba08d8550a6e6647, type: 3}
+  cleanRatio: 95
   Spongebob: 2
   Pineapple: 0
   Patrick: 0
   Squidward: 5
   KrustyKrab: 0
+  ChumBucket: 0
   FileName: SH-DoorKnob_0
   DirName: Save
-  isSave: 0
 --- !u!1 &5100873878195614090
 GameObject:
   m_ObjectHideFlags: 0
@@ -1565,14 +1577,15 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: ea5fc6dc715a52e4ab0a805be69b8697, type: 3}
+  cleanRatio: 95
   Spongebob: 2
   Pineapple: 0
   Patrick: 0
   Squidward: 15
   KrustyKrab: 0
+  ChumBucket: 0
   FileName: SH-Step_1_0
   DirName: Save
-  isSave: 0
 --- !u!1 &5232928814058927858
 GameObject:
   m_ObjectHideFlags: 0
@@ -1686,14 +1699,15 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 149e608db67314f4b8d5c08471b48f5b, type: 3}
+  cleanRatio: 95
   Spongebob: 2
   Pineapple: 0
   Patrick: 0
   Squidward: 11
   KrustyKrab: 0
+  ChumBucket: 0
   FileName: SH-RearWindow_0
   DirName: Save
-  isSave: 0
 --- !u!1 &5613241411562017177
 GameObject:
   m_ObjectHideFlags: 0
@@ -1807,14 +1821,15 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: d575c195e3d4cb84fb33c62d4efe4e6f, type: 3}
+  cleanRatio: 95
   Spongebob: 2
   Pineapple: 0
   Patrick: 0
   Squidward: 15
   KrustyKrab: 0
+  ChumBucket: 0
   FileName: SH-Step_3_0
   DirName: Save
-  isSave: 0
 --- !u!1 &5786978842211419734
 GameObject:
   m_ObjectHideFlags: 0
@@ -1928,14 +1943,15 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: b125c9b40d5f051409bc247127553fdf, type: 3}
+  cleanRatio: 95
   Spongebob: 2
   Pineapple: 0
   Patrick: 0
   Squidward: 13
   KrustyKrab: 0
+  ChumBucket: 0
   FileName: SH-Roof_0
   DirName: Save
-  isSave: 0
 --- !u!1 &6573683330660322235
 GameObject:
   m_ObjectHideFlags: 0
@@ -2049,14 +2065,15 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 8a469d52af3a4e1488ef2061df92055f, type: 3}
+  cleanRatio: 95
   Spongebob: 2
   Pineapple: 0
   Patrick: 0
   Squidward: 3
   KrustyKrab: 0
+  ChumBucket: 0
   FileName: SH-Door_0
   DirName: Save
-  isSave: 0
 --- !u!1 &6762576455338149311
 GameObject:
   m_ObjectHideFlags: 0
@@ -2223,14 +2240,15 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: c7f88a51ad6eb2c4ab5885f8a6cb5234, type: 3}
+  cleanRatio: 95
   Spongebob: 2
   Pineapple: 0
   Patrick: 0
   Squidward: 7
   KrustyKrab: 0
+  ChumBucket: 0
   FileName: SH-Head_0
   DirName: Save
-  isSave: 0
 --- !u!1 &7722282374908531594
 GameObject:
   m_ObjectHideFlags: 0
@@ -2344,14 +2362,15 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: a240a4bc6fc587f428205a620c825618, type: 3}
+  cleanRatio: 95
   Spongebob: 2
   Pineapple: 0
   Patrick: 0
   Squidward: 9
   KrustyKrab: 0
+  ChumBucket: 0
   FileName: SH-PortholeFrame_1_0
   DirName: Save
-  isSave: 0
 --- !u!1 &7978178993357634815
 GameObject:
   m_ObjectHideFlags: 0
@@ -2465,14 +2484,15 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 9570bd02b4417904f93c8eadf13431f4, type: 3}
+  cleanRatio: 95
   Spongebob: 2
   Pineapple: 0
   Patrick: 0
   Squidward: 4
   KrustyKrab: 0
+  ChumBucket: 0
   FileName: SH-DoorAlcove_0
   DirName: Save
-  isSave: 0
 --- !u!1 &8459835893821448340
 GameObject:
   m_ObjectHideFlags: 0
@@ -2586,14 +2606,15 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: cf089ea8c4c22db42be01dfbb1266509, type: 3}
+  cleanRatio: 95
   Spongebob: 2
   Pineapple: 0
   Patrick: 0
   Squidward: 15
   KrustyKrab: 0
+  ChumBucket: 0
   FileName: SH-Step_2_0
   DirName: Save
-  isSave: 0
 --- !u!1 &8475703479604097723
 GameObject:
   m_ObjectHideFlags: 0
@@ -2707,14 +2728,15 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 61b424948a832b5489594bad9c002fb8, type: 3}
+  cleanRatio: 95
   Spongebob: 2
   Pineapple: 0
   Patrick: 0
   Squidward: 6
   KrustyKrab: 0
+  ChumBucket: 0
   FileName: SH-Ear_1_0
   DirName: Save
-  isSave: 0
 --- !u!1 &8526297005851808124
 GameObject:
   m_ObjectHideFlags: 0
@@ -2828,11 +2850,12 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: e59846fd1e0aa534895c0ce3b60eb668, type: 3}
+  cleanRatio: 95
   Spongebob: 2
   Pineapple: 0
   Patrick: 0
   Squidward: 15
   KrustyKrab: 0
+  ChumBucket: 0
   FileName: SH-Step_0_0
   DirName: Save
-  isSave: 0

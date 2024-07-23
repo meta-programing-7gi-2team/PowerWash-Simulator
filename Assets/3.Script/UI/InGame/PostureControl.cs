@@ -12,6 +12,11 @@ public class PostureControl : MonoBehaviour, IObserver
     private int curPos = 0;
     private Color disable = new Color(35f / 255f, 81f / 255f, 131f / 255f);
     private State state;
+
+    private void Awake()
+    {
+        playerState = FindObjectOfType<PlayerState>();
+    }
     private void OnEnable()
     {
         playerState.Register(this);

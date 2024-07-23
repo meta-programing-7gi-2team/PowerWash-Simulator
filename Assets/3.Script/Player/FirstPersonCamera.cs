@@ -54,7 +54,7 @@ public class FirstPersonCamera : MonoBehaviour, IObserver
             float mouseY = Input.GetAxis("Mouse Y") * sensitivity * Time.deltaTime;
 
             xRotation -= mouseY;
-            xRotation = Mathf.Clamp(xRotation, -80.0f, 80.0f);
+            xRotation = Mathf.Clamp(xRotation, -80.0f, 90.0f);
 
             transform.localRotation = Quaternion.Euler(xRotation, 0.0f, 0.0f);
             playerBody.Rotate(Vector3.up * mouseX);

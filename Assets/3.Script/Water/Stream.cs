@@ -10,7 +10,7 @@ public class Stream : MonoBehaviour
     [SerializeField]
     private float shotRange;
     [SerializeField]
-    private float offsetY;
+    [Range(-40,40)]private float offsetY;
 
     private WashGunControl washGun;
     private CleanDraw cleanDraw;

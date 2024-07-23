@@ -22,6 +22,7 @@ public class LadderObject : InteractionObject
 
     private void Start()
     {
+        playerState = FindObjectOfType<PlayerState>();
         playerCamera = Camera.main.transform;
         ladder_Blueprint = GameObject.FindWithTag("Blueprint").transform.GetChild(0).gameObject;
         parent = transform.parent;

@@ -113,14 +113,15 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 66766cf2bb5d6d641a61cf0b0d476bf0, type: 3}
+  cleanRatio: 95
   Spongebob: 0
   Pineapple: 21
   Patrick: 0
   Squidward: 0
   KrustyKrab: 0
+  ChumBucket: 0
   FileName: SB-BubbleStandPlaque_0
   DirName: Save
-  isSave: 0
 --- !u!1 &2108180617290238484
 GameObject:
   m_ObjectHideFlags: 0
@@ -269,14 +270,15 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 48d25ed39cfad94489f5083310cfe5cc, type: 3}
+  cleanRatio: 95
   Spongebob: 0
   Pineapple: 19
   Patrick: 0
   Squidward: 0
   KrustyKrab: 0
+  ChumBucket: 0
   FileName: SB-BubbleStand_1
   DirName: Save
-  isSave: 0
 --- !u!1 &6309839621671828908
 GameObject:
   m_ObjectHideFlags: 0
@@ -390,14 +392,15 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 9b0df1693f514964f83d8ab1800b2fae, type: 3}
+  cleanRatio: 95
   Spongebob: 0
   Pineapple: 22
   Patrick: 0
   Squidward: 0
   KrustyKrab: 0
+  ChumBucket: 0
   FileName: SB-BubbleStandSign_0
   DirName: Save
-  isSave: 0
 --- !u!1 &7501482501529657753
 GameObject:
   m_ObjectHideFlags: 0
@@ -511,14 +514,15 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 56960448a4c7b4843bfd0406310a4b6a, type: 3}
+  cleanRatio: 95
   Spongebob: 0
   Pineapple: 20
   Patrick: 0
   Squidward: 0
   KrustyKrab: 0
+  ChumBucket: 0
   FileName: SB-BubbleStandContainer_0
   DirName: Save
-  isSave: 0
 --- !u!1 &8338599275618595844
 GameObject:
   m_ObjectHideFlags: 0
@@ -632,11 +636,12 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 48d25ed39cfad94489f5083310cfe5cc, type: 3}
+  cleanRatio: 95
   Spongebob: 0
   Pineapple: 19
   Patrick: 0
   Squidward: 0
   KrustyKrab: 0
+  ChumBucket: 0
   FileName: SB-BubbleStand_0
   DirName: Save
-  isSave: 0
