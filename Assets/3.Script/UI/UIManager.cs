@@ -33,6 +33,7 @@ public class UIManager : MonoBehaviour
     private bool ChumBucket;
 
     private AsyncOperation asyncLoad;
+    private AmountManager amountManager;
 
     public bool Map001_btn_clk;
     public bool Map002_btn_clk;
@@ -44,6 +45,7 @@ public class UIManager : MonoBehaviour
         if (instance == null)
         {
             instance = this;
+            amountManager = FindObjectOfType<AmountManager>();
             DontDestroyOnLoad(gameObject);
         }
         else
@@ -98,10 +100,18 @@ public class UIManager : MonoBehaviour
         LoadAll.SetActive(false);
         text.gameObject.SetActive(false); // 텍스트 비활성화
     }
+
     public void LoadStart(string Scene)
     {
         LoadAll.SetActive(true);
         StartCoroutine(LoadYourAsyncScene(Scene));
+
+        if(Scene.Equals("Map001"))
+        {
+            amountManager.GetMap001();
+            amountManager.SetMap001_Data(Process.Proceeding);
+        }
+
     }
 
     public void ButtonClick()
