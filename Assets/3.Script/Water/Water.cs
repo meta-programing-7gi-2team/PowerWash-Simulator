@@ -7,17 +7,19 @@ public class Water : MonoBehaviour
     private RaycastHit hit;
     private WashGunControl washGun;
     private Quaternion rotation;
+    private Transform playerCamera;
     [SerializeField]
     private LayerMask layer;
     [SerializeField]
     private float shotRange;
     private void Start()
     {
+        playerCamera = Camera.main.transform;
         washGun = FindObjectOfType<WashGunControl>();
     }
     void Update()
     {
-        if (Physics.Raycast(washGun.firePoint, GameManager.view.forward, out hit, shotRange, layer))
+        if (Physics.Raycast(washGun.firePoint, playerCamera.forward, out hit, shotRange, layer))
         {
             transform.LookAt(hit.point);
             rotation = transform.localRotation;
@@ -27,7 +29,7 @@ public class Water : MonoBehaviour
         else
         {
 
-            Vector3 targetPosition = washGun.firePoint + GameManager.view.forward * shotRange;
+            Vector3 targetPosition = washGun.firePoint + playerCamera.forward * shotRange;
             transform.LookAt(targetPosition);
             rotation = transform.localRotation;
             rotation.eulerAngles = new Vector3(rotation.eulerAngles.x, rotation.eulerAngles.y, 0f);

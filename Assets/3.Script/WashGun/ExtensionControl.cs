@@ -2,14 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ExtensionControl : MonoBehaviour
+public class ExtensionControl : MonoBehaviour, IObserver
 {
     [SerializeField] private GameObject[] Extension;
     [SerializeField] Transform nozzlePivot;
-
+    [SerializeField] private PlayerState playerState;
+    private State state;
     private WashGunControl washGun;
     public int Index { get; private set; }
-
+    private void OnEnable()
+    {
+        playerState.Register(this);
+    }
     private void Start()
     {
         washGun = GetComponent<WashGunControl>();
@@ -19,8 +23,8 @@ public class ExtensionControl : MonoBehaviour
     {
         if (UIManager.instance.isCursor) return;
 
-        if (PlayerState.instance.state.Equals(State.Hand) ||
-            PlayerState.instance.state.Equals(State.Run))
+        if (state.Equals(State.Hand) ||
+            state.Equals(State.Run))
             return;
 
         SetNozzlePivot();
@@ -71,5 +75,9 @@ public class ExtensionControl : MonoBehaviour
                 break;
         }
     }
-    
+
+    public void UpdateState(State state)
+    {
+        this.state = state;
+    }
 }

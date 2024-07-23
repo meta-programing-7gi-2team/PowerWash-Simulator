@@ -8,17 +8,19 @@ public class CleanPercent : MonoBehaviour
     private CleanDraw Clean;
     [SerializeField] private Text ObjectName;
     [SerializeField] private Slider ObjectSlider;
+    private Transform playerCamera;
     LayerMask layer;
     RaycastHit hit;
 
     private void Start()
     {
+        playerCamera = Camera.main.transform;
         layer = (1 << LayerMask.NameToLayer("Pack"));
     }
     private void Update()
     {
         // 레이캐스트 수행
-        if (Physics.Raycast(GameManager.view.position,GameManager.view.forward, out hit, Mathf.Infinity, ~layer))
+        if (Physics.Raycast(playerCamera.position, playerCamera.forward, out hit, Mathf.Infinity, ~layer))
         {
             hit.transform.TryGetComponent(out Clean);
 

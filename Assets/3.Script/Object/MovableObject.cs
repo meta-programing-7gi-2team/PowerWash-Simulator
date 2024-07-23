@@ -7,11 +7,15 @@ public class MovableObject : InteractionObject
     [SerializeField]
     private Material material;
     private Transform parent;
+    [SerializeField] 
+    private PlayerState playerState;
+    private Transform playerCamera;
     private float yRotation = 0f;
     public bool isArrange { get; private set; }
 
     private void Start()
     {
+        playerCamera = Camera.main.transform;
         parent = transform.parent;
     }
     private void Update()
@@ -44,9 +48,9 @@ public class MovableObject : InteractionObject
     }
     public override void OnAct(InteractionController interactionController)
     {
-        PlayerState.instance.SetState(State.Hand);
+        playerState.SetState(State.Hand);
         isOnAct = true;
-        transform.parent = GameManager.view;
+        transform.parent = playerCamera;
         gameObject.layer = LayerMask.NameToLayer("Movable");
     }
     public override void NotAct(InteractionController interactionController)
@@ -57,7 +61,7 @@ public class MovableObject : InteractionObject
         }
         else
         {
-            PlayerState.instance.SetState(State.Idle);
+            playerState.SetState(State.Idle);
             isOnAct = false;
             transform.parent = parent;
             gameObject.layer = LayerMask.NameToLayer("Pack");
@@ -69,4 +73,5 @@ public class MovableObject : InteractionObject
         transform.position = hit.point;
         transform.rotation = Quaternion.Euler(0, yRotation, 0);
     }
+
 }

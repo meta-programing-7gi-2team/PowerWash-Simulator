@@ -6,8 +6,11 @@ public class LadderObject : InteractionObject
 {
     [SerializeField]
     private MeshCollider[] part;
+    [SerializeField] 
+    private PlayerState playerState;
     private Transform parent;
     private Transform extension;
+    private Transform playerCamera;
     private float valueY;
 
     private Vector3 defaultPos;
@@ -19,6 +22,7 @@ public class LadderObject : InteractionObject
 
     private void Start()
     {
+        playerCamera = Camera.main.transform;
         ladder_Blueprint = GameObject.FindWithTag("Blueprint").transform.GetChild(0).gameObject;
         parent = transform.parent;
         extension = transform.GetChild(1);
@@ -29,10 +33,10 @@ public class LadderObject : InteractionObject
     }
     public override void OnAct(InteractionController interactionController)
     {
-        PlayerState.instance.SetState(State.Hand);
+        playerState.SetState(State.Hand);
         ladder_Blueprint.SetActive(true);
         isArranged = false;
-        transform.parent = GameManager.view;
+        transform.parent = playerCamera;
         transform.localPosition = new Vector3(0, -0.5f, 1f);
         transform.localRotation = Quaternion.Euler(0f, 90f, 20f);
         extension.localPosition = Vector3.zero;
@@ -41,7 +45,7 @@ public class LadderObject : InteractionObject
     }
     public override void NotAct(InteractionController interactionController)
     {
-        PlayerState.instance.SetState(State.Idle);
+        playerState.SetState(State.Idle);
         ladder_Blueprint.SetActive(false);
         if (isArranged)
         {
@@ -79,7 +83,7 @@ public class LadderObject : InteractionObject
             else
             {
                 isArranged = false;
-                transform.parent = GameManager.view;
+                transform.parent = playerCamera;
                 transform.localPosition = new Vector3(0, -0.5f, 1f);
                 transform.localRotation = Quaternion.Euler(0f, 90f, 20f);
                 extension.localPosition = Vector3.zero;
@@ -88,10 +92,11 @@ public class LadderObject : InteractionObject
         else
         {
             isArranged = false;
-            transform.parent = GameManager.view;
+            transform.parent = playerCamera;
             transform.localPosition = new Vector3(0, -0.5f, 1f);
             transform.localRotation = Quaternion.Euler(0f, 90f, 20f);
             extension.localPosition = Vector3.zero;
         }
     }
+
 }
