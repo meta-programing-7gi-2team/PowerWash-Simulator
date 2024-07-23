@@ -7,7 +7,6 @@ using UnityEngine.EventSystems;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance = null;
-    public static Transform view;
     private AmountManager amountManager;
     private float amount;
     [SerializeField] private GameObject buttonPrefab;
@@ -91,12 +90,5 @@ public class GameManager : MonoBehaviour
         Debug.Log(buttonText + " clicked!");
         EventSystem.current.SetSelectedGameObject(null);
         
-    }
-    private void Update()
-    {
-        if(view == null)
-        {
-            view = Camera.main.transform;
-        }
     }
 }
