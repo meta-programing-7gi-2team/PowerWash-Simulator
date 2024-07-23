@@ -66,7 +66,6 @@ public class CleanDraw : MonoBehaviour, IDustObserver, ISaveObserver
 
     [SerializeField] private string FileName;
     [SerializeField] private string DirName = "Save";
-    [SerializeField] bool isSave = false;
     private MapManager mapManager;
     private SaveObserver saveObserver;
 

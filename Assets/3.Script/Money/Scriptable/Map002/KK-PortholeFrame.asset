@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88b5bee0e8a69c546b4745c617e922d0, type: 3}
   m_Name: KK-PortholeFrame
   m_EditorClassIdentifier: 
-  Spongebob: 0
+  Spongebob: 3
   Pineapple: 0
   Patrick: 0
   Squidward: 0
-  KrustyKrab: 0
-  Amount: 0
+  KrustyKrab: 17
+  Amount: 0.75

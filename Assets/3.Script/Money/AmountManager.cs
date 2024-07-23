@@ -2,20 +2,20 @@ using UnityEngine;
 using System.Collections.Generic;
 using System.IO;
 using System;
-public class AmountManager
+public class AmountManager : MonoBehaviour
 {
     public AmountData amountData { get; private set; }
     // ---------------------------------------------------------
     #region ¸Ê1
     public List<MapAmountData> Map001_AmountData { get; private set; }
     public bool IsStart_Map001 { get; private set; }
-    public List<MoneyData> Map001_MoneyData { get; private set; }
+    public List<MoneyData> Map001_MoneyData;
     #endregion
     // ---------------------------------------------------------
     #region ¸Ê2
     public List<MapAmountData> Map002_AmountData { get; private set; }
     public bool IsStart_Map002 { get; private set; }
-    public List<MoneyData> Map002_MoneyData { get; private set; }
+    public List<MoneyData> Map002_MoneyData;
     #endregion
     // ---------------------------------------------------------
 
