@@ -56,6 +56,7 @@ public class CleanDraw : MonoBehaviour, IDustObserver, ISaveObserver
     private int initCount;
     private int curCount;
     private float initColorRatio;
+    [SerializeField] [Range(1, 100)] private int cleanRatio = 100;
     public float ColorRatio { get; private set; }
 
     public EnumObject.Spongebob Spongebob;
@@ -282,7 +283,7 @@ public class CleanDraw : MonoBehaviour, IDustObserver, ISaveObserver
     }
     private void ApplyCalculateRatio()
     {
-        if (ColorRatio < 100)
+        if (ColorRatio < cleanRatio)
         {
             float colorRatio = CalculateColorRatio(renderMaskTexture) - initColorRatio;
             ColorRatio = (colorRatio * 100.0f) / (1.0f - initColorRatio);
@@ -290,9 +291,27 @@ public class CleanDraw : MonoBehaviour, IDustObserver, ISaveObserver
         }
         else if(!isCleanCheck)
         {
+            ColorRatio = 100;
+            
+            RenderTexture.active = renderMaskTexture;
+
+            Texture2D texture = new Texture2D(renderMaskTexture.width, renderMaskTexture.height);
+            Color[] colors = new Color[renderMaskTexture.width * renderMaskTexture.height];
+
+            for (int i = 0; i < colors.Length; i++)
+            {
+                colors[i] = Color.black;
+            }
+            texture.SetPixels(colors);
+            texture.Apply();
+
+            Graphics.Blit(texture, renderMaskTexture);
+            RenderTexture.active = null;
+
             isCleanCheck = true;
             CleanSparkle();
             isCleanCheckComplete = true;
+            //Todo: µ·Áö±Þ
         }
     }
     private float CalculateColorRatio(RenderTexture renderTexture)
