@@ -128,7 +128,7 @@ public class CleanDraw : MonoBehaviour, IDustObserver, ISaveObserver
         // MeshRenderer 가져오기
         TryGetComponent(out _mr);
     }
-    private void InitMapDate()
+    private void InitMapData()
     {
         mapManager = new MapManager();
         mapManager.FileName = FileName;
@@ -168,7 +168,7 @@ public class CleanDraw : MonoBehaviour, IDustObserver, ISaveObserver
         renderWaterTexture.enableRandomWrite = true; // UAV 사용 플래그 설정
         renderWaterTexture.Create();
 
-        InitMapDate();
+        InitMapData();
         if (mapManager.mapData.isSaved)
         {
             maskSavedTexture = LoadTextureFromFile(FileName);

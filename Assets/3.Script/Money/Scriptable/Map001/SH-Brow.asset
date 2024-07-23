@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 88b5bee0e8a69c546b4745c617e922d0, type: 3}
-  m_Name: New Money Data
+  m_Name: SH-Brow
   m_EditorClassIdentifier: 
-  Spongebob: 0
+  Spongebob: 2
   Pineapple: 0
   Patrick: 0
-  Squidward: 0
+  Squidward: 2
   KrustyKrab: 0
-  money: 0
+  Amount: 0

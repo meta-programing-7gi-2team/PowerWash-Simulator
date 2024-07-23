@@ -5,18 +5,18 @@ using System;
 public class MapManager
 {
     public string FileName;
-    public MapData mapData { get; private set; }
+    public MapSaveData mapData { get; private set; }
     public string DirName = "Save";
 
     // 데이터 초기화
-    public void InitializeMapData()
+    private void InitializeMapData()
     {
-        mapData = new MapData(false);
+        mapData = new MapSaveData(false);
         SaveMap();
     }
 
     // 데이터 저장
-    public void SaveMap()
+    private void SaveMap()
     {
         try
         {
@@ -29,7 +29,6 @@ public class MapManager
                 Directory.CreateDirectory(dirName);
             }
             File.WriteAllText(Path.Combine(Application.dataPath, DirName, FileName + ".json"), jsonData);
-            Debug.Log("Data saved successfully.");
         }
         catch (Exception e)
         {
@@ -38,7 +37,7 @@ public class MapManager
     }
 
     // 데이터 불러오기
-    public MapData LoadMap()
+    public MapSaveData LoadMap()
     {
         string filePath = Path.Combine(Application.dataPath, DirName, FileName + ".json");
 
@@ -47,8 +46,7 @@ public class MapManager
             try
             {
                 string jsonData = File.ReadAllText(filePath);
-                mapData = JsonUtility.FromJson<MapData>(jsonData);
-                Debug.Log("Data loaded successfully.");
+                mapData = JsonUtility.FromJson<MapSaveData>(jsonData);
             }
             catch (Exception e)
             {
@@ -66,7 +64,7 @@ public class MapManager
 
     public void Saved()
     {
-        mapData = new MapData(true);
+        mapData = new MapSaveData(true);
         SaveMap();
     }
 }
