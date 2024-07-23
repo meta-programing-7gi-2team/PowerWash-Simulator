@@ -204,7 +204,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mat:
   - {fileID: 2100000, guid: 35fc2e3e99bbec94c891b41d334742c1, type: 2}
-  - {fileID: 2100000, guid: 79b07f5a84c004d40b47776cfb226286, type: 2}
   - {fileID: 2100000, guid: 255e04f4d91a87c4cb1ead9f3c911ea3, type: 2}
   part:
   - {fileID: 4171570308374400601}
