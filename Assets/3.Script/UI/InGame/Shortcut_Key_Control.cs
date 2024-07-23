@@ -28,6 +28,18 @@ public class Shortcut_Key_Control : MonoBehaviour
         foreach (var toggle in toggles)
         {
             toggle.onValueChanged.AddListener(delegate { ToggleValueChanged(toggle); });
+
+            EventTrigger trigger = toggle.gameObject.AddComponent<EventTrigger>();
+
+            EventTrigger.Entry entryEnter = new EventTrigger.Entry();
+            entryEnter.eventID = EventTriggerType.PointerEnter;
+            entryEnter.callback.AddListener((data) => { OnPointerEnter(System.Array.IndexOf(toggles, toggle)); });
+            trigger.triggers.Add(entryEnter);
+
+            EventTrigger.Entry entryExit = new EventTrigger.Entry();
+            entryExit.eventID = EventTriggerType.PointerExit;
+            entryExit.callback.AddListener((data) => { OnPointerExit(System.Array.IndexOf(toggles, toggle)); });
+            trigger.triggers.Add(entryExit);
         }
 
         HideAllSprites();
@@ -65,6 +77,8 @@ public class Shortcut_Key_Control : MonoBehaviour
 
     public void OnPointerEnter(int index)
     {
+        if (toggles[index].isOn) return;
+
         ShowSprite(index);
 
         if (Input.GetKey(KeyCode.Alpha1))
@@ -81,6 +95,8 @@ public class Shortcut_Key_Control : MonoBehaviour
 
     public void OnPointerExit(int index)
     {
+        if (toggles[index].isOn) return;
+
         HideSprite(index);
         SetTextToSelectedToggle();
     }
