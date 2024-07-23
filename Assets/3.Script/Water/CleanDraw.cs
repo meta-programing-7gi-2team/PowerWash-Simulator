@@ -74,10 +74,9 @@ public class CleanDraw : MonoBehaviour, IDustObserver, ISaveObserver
     {
         Init();
         InitBrushTexture();
+        InitRatio();
         InitRenderTexture();
         InitMaterial();
-
-        initColorRatio = CalculateColorRatio(renderMaskTexture);
     }
     private void Update()
     {
@@ -152,6 +151,15 @@ public class CleanDraw : MonoBehaviour, IDustObserver, ISaveObserver
         initCount = Mathf.CeilToInt(brushController.ColorNum / fadeAmount);
         curCount = 0;
     }
+    private void InitRatio()
+    {
+        renderMaskTexture = new RenderTexture(resolution, resolution, 32);
+        Graphics.Blit(maskTexture, renderMaskTexture);
+
+        resultBuffer = new ComputeBuffer(resolution * resolution, sizeof(int));
+
+        initColorRatio = CalculateColorRatio(renderMaskTexture);
+    }
     //렌더 텍스처 초기화
     private void InitRenderTexture()
     {
@@ -165,6 +173,8 @@ public class CleanDraw : MonoBehaviour, IDustObserver, ISaveObserver
         {
             maskSavedTexture = LoadTextureFromFile(FileName);
             Graphics.Blit(maskSavedTexture, renderMaskTexture);
+            ApplyCalculateRatio(); //초기 퍼센트 데이터 불러옴
+            //Todo:이후에 Clean Sparkcle 막아야됨
         }
         else
         {
@@ -176,8 +186,6 @@ public class CleanDraw : MonoBehaviour, IDustObserver, ISaveObserver
         TextureBlock.SetTexture(MaskPaintTexPropertyName, renderMaskTexture);
         TextureBlock.SetTexture(WaterPaintTexPropertyName, renderWaterTexture);
         _mr.SetPropertyBlock(TextureBlock);
-
-        resultBuffer = new ComputeBuffer(resolution * resolution, sizeof(int));
     }
 
     private void InitMaterial()
@@ -278,7 +286,6 @@ public class CleanDraw : MonoBehaviour, IDustObserver, ISaveObserver
         {
             float colorRatio = CalculateColorRatio(renderMaskTexture) - initColorRatio;
             ColorRatio = (colorRatio * 100.0f) / (1.0f - initColorRatio);
-            //Todo: UI텍스트 표시 필요
             UIManager.instance.AllObjcetList();
         }
         else if(!isCleanCheck)
