@@ -21,7 +21,11 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject Tablet;
 
     private float ObjectAll;
+    public bool Map001;
+    public bool Map002;
     public List<GameObject> objectsWithTag = new List<GameObject>();
+
+    private AsyncOperation asyncLoad;
 
     public bool isCursor { get; private set; }
     private float targetProgress = 0f;
@@ -78,61 +82,131 @@ public class UIManager : MonoBehaviour
         LoadAll.SetActive(false);
         text.gameObject.SetActive(false); // 텍스트 비활성화
     }
-    public void LoadStart(int Index)
+    public void LoadStart(string Scene)
     {
         LoadAll.SetActive(true);
-        StartCoroutine(LoadSceneAsync(Index));
+        StartCoroutine(LoadYourAsyncScene(Scene));
     }
 
     public void ButtonClick()
     {
         LoadAll.SetActive(false);
         text.gameObject.SetActive(false);
+        asyncLoad.allowSceneActivation = true;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
     }
 
-    private IEnumerator LoadSceneAsync(int sceneIndex)
+    private IEnumerator LoadYourAsyncScene(string Scene)
     {
+
         loadingSlider.maxValue = 1f; // 명시적으로 최대값 설정
         loadingSlider.value = 0f; // 초기값 설정
 
         // 텍스트 초기화
         text.gameObject.SetActive(true);
-        text.text = "로딩 중... 0%";
 
-        // 씬 로드 시작
-        operation = SceneManager.LoadSceneAsync(sceneIndex);
-        operation.allowSceneActivation = false; // 씬 전환을 수동으로 조절
+        asyncLoad = SceneManager.LoadSceneAsync(Scene);
 
-        while (!operation.isDone)
+        targetProgress = 0.3f;
+        while (loadingSlider.value < 0.3f)
         {
-            // 씬 로드 진행률 업데이트
-            if (operation.progress < 0.9f)
-            {
-                targetProgress = Mathf.Clamp01(operation.progress / 0.9f) * 0.9f; // 90%까지 증가
-            }
-            else if (!operation.allowSceneActivation)
-            {
-                operation.allowSceneActivation = true;
-            }
-
-            // 로딩 바 부드럽게 업데이트
-            loadingSlider.value = Mathf.MoveTowards(loadingSlider.value, targetProgress, Time.deltaTime * 0.5f);
-            text.text = $"로딩 중... {(loadingSlider.value * 100f):0}%";
-            yield return null; // 프레임마다 반복
+            loadingSlider.value = Mathf.MoveTowards(loadingSlider.value, targetProgress, Time.deltaTime * 0.3f);
+            text.text = "정리 하는 중";
+            yield return null;
         }
 
-        // 씬 로드 완료 후 오브젝트 로드 시작
-        yield return StartCoroutine(LoadObjectsAsync(sceneIndex));
-
-        // 로딩 완료
-        targetProgress = 1f; // 100% 진행
-        while (loadingSlider.value < 1f)
+        targetProgress = 0.6f;
+        while (loadingSlider.value < 0.6f)
         {
-            loadingSlider.value = Mathf.MoveTowards(loadingSlider.value, targetProgress, Time.deltaTime * 0.5f);
-            text.text = $"로딩 중... {(loadingSlider.value * 100f):0}%";
+            loadingSlider.value = Mathf.MoveTowards(loadingSlider.value, targetProgress, Time.deltaTime * 0.3f);
+            text.text = "레벨 로드 중";
             yield return null;
+
+        }
+
+        if(Scene.Equals("Map001"))
+        {
+            targetProgress = 0.7f;
+            while (loadingSlider.value < 0.7f)
+            {
+                ResourceRequest resourceRequest = Resources.LoadAsync<GameObject>("Pineapple");
+                while (!resourceRequest.isDone)
+                {
+                    loadingSlider.value = Mathf.MoveTowards(loadingSlider.value, targetProgress, Time.deltaTime * 0.5f);
+                    text.text = "오염 로드 중";
+                    yield return null;
+                }
+                Instantiate(resourceRequest.asset);
+            }
+
+            targetProgress = 0.8f;
+            while (loadingSlider.value < 0.8f)
+            {
+                ResourceRequest resourceRequest = Resources.LoadAsync<GameObject>("Squidward");
+                while (!resourceRequest.isDone)
+                {
+                    loadingSlider.value = Mathf.MoveTowards(loadingSlider.value, targetProgress, Time.deltaTime * 0.5f);
+                    text.text = "오염 로드 중";
+                    yield return null;
+                }
+                Instantiate(resourceRequest.asset);
+            }
+
+            targetProgress = 0.9f;
+            while (loadingSlider.value < 0.9f)
+            {
+                ResourceRequest resourceRequest = Resources.LoadAsync<GameObject>("Patrick");
+                while (!resourceRequest.isDone)
+                {
+                    loadingSlider.value = Mathf.MoveTowards(loadingSlider.value, targetProgress, Time.deltaTime * 0.5f);
+                    text.text = "오염 로드 중";
+                    yield return null;
+                }
+                Instantiate(resourceRequest.asset);
+            }
+
+            targetProgress = 1f;
+            while (loadingSlider.value < 1f)
+            {
+                ResourceRequest resourceRequest = Resources.LoadAsync<GameObject>("Stand");
+                while (!resourceRequest.isDone)
+                {
+                    loadingSlider.value = Mathf.MoveTowards(loadingSlider.value, targetProgress, Time.deltaTime * 0.5f);
+                    text.text = "오염 로드 중";
+                    yield return null;
+                }
+                Instantiate(resourceRequest.asset);
+            }
+        }
+
+        else if(Scene.Equals("Map002"))
+        {
+            targetProgress = 0.8f;
+            while (loadingSlider.value < 0.8f)
+            {
+                ResourceRequest resourceRequest = Resources.LoadAsync<GameObject>("KrustyKrab");
+                while (!resourceRequest.isDone)
+                {
+                    loadingSlider.value = Mathf.MoveTowards(loadingSlider.value, targetProgress, Time.deltaTime * 0.5f);
+                    text.text = "오염 로드 중";
+                    yield return null;
+                }
+                Instantiate(resourceRequest.asset);
+            }
+
+            targetProgress = 1f;
+            while (loadingSlider.value < 1f)
+            {
+                ResourceRequest resourceRequest = Resources.LoadAsync<GameObject>("ChumBucket");
+                while (!resourceRequest.isDone)
+                {
+                    loadingSlider.value = Mathf.MoveTowards(loadingSlider.value, targetProgress, Time.deltaTime * 0.5f);
+                    text.text = "오염 로드 중";
+                    yield return null;
+                }
+                Instantiate(resourceRequest.asset);
+            }
         }
 
         text.gameObject.SetActive(false);
@@ -142,38 +216,6 @@ public class UIManager : MonoBehaviour
         AllObjcetList();
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
-    }
-
-    private IEnumerator LoadObjectsAsync(int Index)
-    {
-        if (Index == 1)
-        {
-            string[] objectsToLoad = { "Pineapple", "Patrick", "Squidward", "Stand" };
-
-            for (int i = 0; i < objectsToLoad.Length; i++)
-            {
-                ResourceRequest resourceRequest = Resources.LoadAsync<GameObject>(objectsToLoad[i]);
-                while (!resourceRequest.isDone)
-                {
-                    yield return null; // 프레임마다 반복
-                }
-                Instantiate(resourceRequest.asset);
-            }
-        }
-        else
-        {
-            string[] objectsToLoad = { "KrustyKrab" };
-
-            for (int i = 0; i < objectsToLoad.Length; i++)
-            {
-                ResourceRequest resourceRequest = Resources.LoadAsync<GameObject>(objectsToLoad[i]);
-                while (!resourceRequest.isDone)
-                {
-                    yield return null; // 프레임마다 반복
-                }
-                Instantiate(resourceRequest.asset);
-            }
-        }
     }
 
     private void Slidersetting()
