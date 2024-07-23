@@ -1327,6 +1327,8 @@ MonoBehaviour:
   text: {fileID: 493609043}
   Button: {fileID: 1715460890}
   Tablet: {fileID: 1772947995}
+  Map001: 0
+  Map002: 0
   objectsWithTag: []
 --- !u!114 &87534277
 MonoBehaviour:
@@ -22006,8 +22008,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b54a449835e315f4c8702d3e9f1ec084, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonPrefab: {fileID: 8832907357032666581, guid: 0f777ec76a242dc4381e7bd11214181e, type: 3}
-  buttonParent: {fileID: 1314366241}
+  DirName: Save
 --- !u!4 &1850361204
 Transform:
   m_ObjectHideFlags: 0
@@ -22285,6 +22286,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ae1368988f9577844b21fb1a15b838ba, type: 2}
   - {fileID: 11400000, guid: dabd5e75a2c9e854392940361d3bb4df, type: 2}
   DirName: Save
+  buttonPrefab: {fileID: 8832907357032666581, guid: 0f777ec76a242dc4381e7bd11214181e, type: 3}
+  buttonParent: {fileID: 1314366241}
+  amountText: {fileID: 758154954}
+  getAmountText: {fileID: 2134830805}
+  stateText: {fileID: 1668443635}
 --- !u!4 &1858791750
 Transform:
   m_ObjectHideFlags: 0
