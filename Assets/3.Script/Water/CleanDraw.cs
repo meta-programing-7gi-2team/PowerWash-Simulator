@@ -69,6 +69,7 @@ public class CleanDraw : MonoBehaviour, IDustObserver, ISaveObserver
     [SerializeField] private string FileName;
     [SerializeField] private string DirName = "Save";
     private MapManager mapManager;
+    private AmountManager amountManager;
     private SaveObserver saveObserver;
 
     private void Start()
@@ -135,6 +136,8 @@ public class CleanDraw : MonoBehaviour, IDustObserver, ISaveObserver
         mapManager.FileName = FileName;
         mapManager.DirName = DirName;
         mapManager.LoadMap();
+
+        amountManager = FindObjectOfType<AmountManager>();
     }
     private void InitBrushTexture()
     {

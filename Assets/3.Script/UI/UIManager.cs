@@ -23,7 +23,7 @@ public class UIManager : MonoBehaviour
 
     private float ObjectAll;
 
-    public List<GameObject> objectsWithTag = new List<GameObject>();
+    public List<CleanDraw> objectsWith = new List<CleanDraw>();
 
     private bool Pineapple;
     private bool Squidward;
@@ -326,28 +326,53 @@ public class UIManager : MonoBehaviour
 
     public void AllObjcetList()
     {
-        if (objectsWithTag == null || objectsWithTag.Count == 0)
+        if (objectsWith == null || objectsWith.Count == 0)
         {
-            objectsWithTag.AddRange(GameObject.FindGameObjectsWithTag("Object"));
+            objectsWith.AddRange(FindObjectsOfType<CleanDraw>());
         }
 
         ObjectAll = 0;
 
-        foreach (GameObject obj in objectsWithTag)
+        float[] Pineapple = new float[22] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+        float[] Patrick = new float[9] { 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+        float[] Squidward = new float[15] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+        float[] KrustyKrab = new float[31] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+        float[] ChumBucket = new float[11] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+
+        foreach (CleanDraw obj in objectsWith)
         {
-            if (obj.TryGetComponent(out CleanDraw cleanComponent))
+            ObjectAll += obj.ColorRatio;
+
+            if (obj.Spongebob.Equals(EnumObject.Spongebob.Pineapple))
             {
-                ObjectAll += cleanComponent.ColorRatio;
+                Pineapple[(int)obj.Pineapple - 1]++;
+            }
+            if (obj.Spongebob.Equals(EnumObject.Spongebob.Patrick))
+            {
+                Patrick[(int)obj.Patrick - 1]++;
+            }
+            if (obj.Spongebob.Equals(EnumObject.Spongebob.Squidward))
+            {
+                Squidward[(int)obj.Squidward - 1]++;
+            }
+            if (obj.Spongebob.Equals(EnumObject.Spongebob.KrustyKrab))
+            {
+                KrustyKrab[(int)obj.KrustyKrab - 1]++;
+            }
+            if (obj.Spongebob.Equals(EnumObject.Spongebob.ChumBucket))
+            {
+                ChumBucket[(int)obj.ChumBucket - 1]++;
             }
         }
 
         if (AllObjectSlider != null && AllObjectText != null)
         {
-            // 슬라이더 값 및 텍스트 업데이트
-            float averageRatio = ObjectAll / objectsWithTag.Count;
+            float averageRatio = ObjectAll / objectsWith.Count;
             AllObjectSlider.value = Mathf.Clamp(averageRatio, 0, 100);
             AllObjectText.text = $"{Mathf.RoundToInt(AllObjectSlider.value)}%";
         }
     }
+
+
 
 }

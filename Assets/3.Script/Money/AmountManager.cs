@@ -34,6 +34,7 @@ public class AmountManager : MonoBehaviour
     private void Awake()
     {
         //Init();
+        DontDestroyOnLoad(gameObject);
     }
     private void Init()
     {
