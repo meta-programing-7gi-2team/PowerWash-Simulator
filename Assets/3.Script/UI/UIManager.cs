@@ -25,8 +25,11 @@ public class UIManager : MonoBehaviour
     public bool Map001;
     public bool Map002;
     public List<GameObject> objectsWithTag = new List<GameObject>();
-
+    
     private AsyncOperation asyncLoad;
+
+    public bool Map001_btn_clk;
+    public bool Map002_btn_clk;
 
     public bool isCursor { get; private set; }
     private float targetProgress = 0f;
