@@ -1,9 +1,9 @@
 [System.Serializable]
-public class MapData
+public class MapSaveData
 {
     public bool isSaved;
 
-    public MapData(bool saved)
+    public MapSaveData(bool saved)
     {
         isSaved = saved;
     }
