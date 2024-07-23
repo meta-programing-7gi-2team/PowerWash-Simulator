@@ -26,7 +26,7 @@ public class CleanPercent : MonoBehaviour
 
             if (Clean)
             {
-                string name = EnumObject.GetName(Clean.Spongebob, Clean.Pineapple, Clean.Patrick, Clean.Squidward, Clean.KrustyKrab);
+                string name = EnumObject.GetName(Clean.Spongebob, Clean.Pineapple, Clean.Patrick, Clean.Squidward, Clean.KrustyKrab, Clean.ChumBucket);
                 ObjectName.text = name;
                 ObjectSlider.value = 100 - Clean.ColorRatio;
             }

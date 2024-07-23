@@ -63,6 +63,7 @@ public class CleanDraw : MonoBehaviour, IDustObserver, ISaveObserver
     public EnumObject.Patrick Patrick;
     public EnumObject.Squidward Squidward;
     public EnumObject.KrustyKrab KrustyKrab;
+    public EnumObject.ChumBucket ChumBucket;
 
     [SerializeField] private string FileName;
     [SerializeField] private string DirName = "Save";

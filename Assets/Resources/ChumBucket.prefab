@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 3535320745028375693}
   - component: {fileID: 5754108443851361244}
   - component: {fileID: 371610402127103543}
-  - component: {fileID: 371610402127103540}
   m_Layer: 9
   m_Name: CB-Floor_0
   m_TagString: Object
@@ -97,30 +96,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -8594673740521645086, guid: 78ab7f2331c675741aa0839c26f9aa30, type: 3}
---- !u!114 &371610402127103540
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 371610402127103541}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  resolution: 128
-  renderMaskTexture: {fileID: 0}
-  renderWaterTexture: {fileID: 0}
-  maskTexture: {fileID: 0}
-  Spongebob: 0
-  Pineapple: 0
-  Patrick: 0
-  Squidward: 0
-  KrustyKrab: 0
-  FileName: 
-  DirName: Save
-  isSave: 0
 --- !u!1 &452196312882038513
 GameObject:
   m_ObjectHideFlags: 0
@@ -133,7 +108,7 @@ GameObject:
   - component: {fileID: 7447724139682665792}
   - component: {fileID: 171438260816833590}
   - component: {fileID: 452196312882038515}
-  - component: {fileID: 452196312882038512}
+  - component: {fileID: 3482794842241448044}
   m_Layer: 10
   m_Name: CB-Letter_6_0
   m_TagString: Object
@@ -218,7 +193,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -4381086130398410090, guid: 318e0c2ad873b704faa22afa68dcfae4, type: 3}
---- !u!114 &452196312882038512
+--- !u!114 &3482794842241448044
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -234,14 +209,14 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 0}
-  Spongebob: 0
+  Spongebob: 4
   Pineapple: 0
   Patrick: 0
   Squidward: 0
   KrustyKrab: 0
-  FileName: 
+  ChumBucket: 7
+  FileName: CB-Letter_6_0
   DirName: Save
-  isSave: 0
 --- !u!1 &783738471771176440
 GameObject:
   m_ObjectHideFlags: 0
@@ -254,7 +229,6 @@ GameObject:
   - component: {fileID: 2949082770203550890}
   - component: {fileID: 8700492200270640776}
   - component: {fileID: 783738471771176442}
-  - component: {fileID: 783738471771176443}
   m_Layer: 10
   m_Name: CB-Floor_1
   m_TagString: Object
@@ -339,30 +313,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -175522155516420696, guid: 78ab7f2331c675741aa0839c26f9aa30, type: 3}
---- !u!114 &783738471771176443
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 783738471771176440}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  resolution: 128
-  renderMaskTexture: {fileID: 0}
-  renderWaterTexture: {fileID: 0}
-  maskTexture: {fileID: 0}
-  Spongebob: 0
-  Pineapple: 0
-  Patrick: 0
-  Squidward: 0
-  KrustyKrab: 0
-  FileName: 
-  DirName: Save
-  isSave: 0
 --- !u!1 &1211287572552335438
 GameObject:
   m_ObjectHideFlags: 0
@@ -375,7 +325,7 @@ GameObject:
   - component: {fileID: 7556822017910817281}
   - component: {fileID: 16849734036733019}
   - component: {fileID: 1211287572552335432}
-  - component: {fileID: 1211287572552335433}
+  - component: {fileID: 8136933765086217860}
   m_Layer: 10
   m_Name: CB-Letter_0_0
   m_TagString: Object
@@ -460,7 +410,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -3616125722716830842, guid: 3221f401e35f2114692d158fe03084e5, type: 3}
---- !u!114 &1211287572552335433
+--- !u!114 &8136933765086217860
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -476,14 +426,14 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 0}
-  Spongebob: 0
+  Spongebob: 4
   Pineapple: 0
   Patrick: 0
   Squidward: 0
   KrustyKrab: 0
-  FileName: 
+  ChumBucket: 7
+  FileName: CB-Letter_0_0
   DirName: Save
-  isSave: 0
 --- !u!1 &1718968161212330321
 GameObject:
   m_ObjectHideFlags: 0
@@ -496,7 +446,7 @@ GameObject:
   - component: {fileID: 4391329698394300936}
   - component: {fileID: 9083084101221759496}
   - component: {fileID: 1718968161212330323}
-  - component: {fileID: 1718968161212330320}
+  - component: {fileID: 1024275230697532070}
   m_Layer: 10
   m_Name: CB-HandlePin_0_0
   m_TagString: Object
@@ -581,7 +531,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 2582438584140838720, guid: 2353a223be49be941a6ab8b8189d3eca, type: 3}
---- !u!114 &1718968161212330320
+--- !u!114 &1024275230697532070
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -597,14 +547,14 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 0}
-  Spongebob: 0
+  Spongebob: 4
   Pineapple: 0
   Patrick: 0
   Squidward: 0
   KrustyKrab: 0
-  FileName: 
+  ChumBucket: 6
+  FileName: CB-HandlePin_0_0
   DirName: Save
-  isSave: 0
 --- !u!1 &1936993985814858410
 GameObject:
   m_ObjectHideFlags: 0
@@ -617,7 +567,7 @@ GameObject:
   - component: {fileID: 5468630672474199693}
   - component: {fileID: 867583614433827065}
   - component: {fileID: 1936993985814858324}
-  - component: {fileID: 1936993985814858325}
+  - component: {fileID: 4022049552192499724}
   m_Layer: 10
   m_Name: CB-Letter_8_0
   m_TagString: Object
@@ -702,7 +652,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 5719944739103596310, guid: 4a00b0eafb3ae424ba2b0c5843e15195, type: 3}
---- !u!114 &1936993985814858325
+--- !u!114 &4022049552192499724
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -718,14 +668,14 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 0}
-  Spongebob: 0
+  Spongebob: 4
   Pineapple: 0
   Patrick: 0
   Squidward: 0
   KrustyKrab: 0
-  FileName: 
+  ChumBucket: 7
+  FileName: CB-Letter_8_0
   DirName: Save
-  isSave: 0
 --- !u!1 &2449184863535727228
 GameObject:
   m_ObjectHideFlags: 0
@@ -738,7 +688,7 @@ GameObject:
   - component: {fileID: 2092695770581039100}
   - component: {fileID: 1129365463835731380}
   - component: {fileID: 2449184863535727230}
-  - component: {fileID: 2449184863535727231}
+  - component: {fileID: 2735304835091759018}
   m_Layer: 10
   m_Name: CB-Handle_0_0
   m_TagString: Object
@@ -823,7 +773,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1911779576984914883, guid: 879888553cafa2f45bd80e1f40ec1951, type: 3}
---- !u!114 &2449184863535727231
+--- !u!114 &2735304835091759018
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -839,14 +789,14 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 0}
-  Spongebob: 0
+  Spongebob: 4
   Pineapple: 0
   Patrick: 0
   Squidward: 0
   KrustyKrab: 0
-  FileName: 
+  ChumBucket: 5
+  FileName: CB-Handle_0_0
   DirName: Save
-  isSave: 0
 --- !u!1 &2756544003704655373
 GameObject:
   m_ObjectHideFlags: 0
@@ -859,7 +809,7 @@ GameObject:
   - component: {fileID: 5992529690846708955}
   - component: {fileID: 3890807370647558672}
   - component: {fileID: 2756544003704655375}
-  - component: {fileID: 2756544003704655372}
+  - component: {fileID: 1178803096776330366}
   m_Layer: 10
   m_Name: CB-Door_1_0
   m_TagString: Object
@@ -944,7 +894,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 2128542969073271778, guid: afa2166edaa8a7a48aaf808e3b56ddc4, type: 3}
---- !u!114 &2756544003704655372
+--- !u!114 &1178803096776330366
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -960,14 +910,14 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 0}
-  Spongebob: 0
+  Spongebob: 4
   Pineapple: 0
   Patrick: 0
   Squidward: 0
   KrustyKrab: 0
-  FileName: 
+  ChumBucket: 1
+  FileName: CB-Door_1_0
   DirName: Save
-  isSave: 0
 --- !u!1 &2856544129878603221
 GameObject:
   m_ObjectHideFlags: 0
@@ -980,7 +930,7 @@ GameObject:
   - component: {fileID: 8924652675661013013}
   - component: {fileID: 1592533112876735389}
   - component: {fileID: 2856544129878603223}
-  - component: {fileID: 2856544129878603220}
+  - component: {fileID: 9123091976691032123}
   m_Layer: 10
   m_Name: CB-Wall_1_0
   m_TagString: Object
@@ -1065,7 +1015,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2929538792861565322, guid: 8bd665d1f19669a4a942f5b88fd78ec3, type: 3}
---- !u!114 &2856544129878603220
+--- !u!114 &9123091976691032123
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1081,14 +1031,14 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 0}
-  Spongebob: 0
+  Spongebob: 4
   Pineapple: 0
   Patrick: 0
   Squidward: 0
   KrustyKrab: 0
-  FileName: 
+  ChumBucket: 11
+  FileName: CB-Wall_1_0
   DirName: Save
-  isSave: 0
 --- !u!1 &3384986242014909485
 GameObject:
   m_ObjectHideFlags: 0
@@ -1101,7 +1051,7 @@ GameObject:
   - component: {fileID: 4775067718759723159}
   - component: {fileID: 3007790733180294593}
   - component: {fileID: 3384986242014909487}
-  - component: {fileID: 3384986242014909484}
+  - component: {fileID: 2633076162716184163}
   m_Layer: 10
   m_Name: CB-DoorWindow_0_0
   m_TagString: Object
@@ -1186,7 +1136,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -1561218623073688095, guid: af04c82a022771641829db49a1fdbe32, type: 3}
---- !u!114 &3384986242014909484
+--- !u!114 &2633076162716184163
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1202,14 +1152,14 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 0}
-  Spongebob: 0
+  Spongebob: 4
   Pineapple: 0
   Patrick: 0
   Squidward: 0
   KrustyKrab: 0
-  FileName: 
+  ChumBucket: 3
+  FileName: CB-DoorWindow_0_0
   DirName: Save
-  isSave: 0
 --- !u!1 &3564574903919250932
 GameObject:
   m_ObjectHideFlags: 0
@@ -1222,7 +1172,7 @@ GameObject:
   - component: {fileID: 7816280885138497895}
   - component: {fileID: 8161450239290689587}
   - component: {fileID: 3564574903919250934}
-  - component: {fileID: 3564574903919250935}
+  - component: {fileID: 6130878926882531669}
   m_Layer: 10
   m_Name: CB-Glove_0
   m_TagString: Object
@@ -1307,7 +1257,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4637917543298996424, guid: 3cb1382bc55d4e84ba345e9d45584ff2, type: 3}
---- !u!114 &3564574903919250935
+--- !u!114 &6130878926882531669
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1323,14 +1273,14 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 0}
-  Spongebob: 0
+  Spongebob: 4
   Pineapple: 0
   Patrick: 0
   Squidward: 0
   KrustyKrab: 0
-  FileName: 
+  ChumBucket: 4
+  FileName: CB-Glove_0
   DirName: Save
-  isSave: 0
 --- !u!1 &3702746099671425070
 GameObject:
   m_ObjectHideFlags: 0
@@ -1343,7 +1293,7 @@ GameObject:
   - component: {fileID: 4247620861786415964}
   - component: {fileID: 3035010844346417617}
   - component: {fileID: 3702746099671425064}
-  - component: {fileID: 3702746099671425065}
+  - component: {fileID: 2306296969173019581}
   m_Layer: 10
   m_Name: CB-Letter_1_0
   m_TagString: Object
@@ -1428,7 +1378,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 8331919870149948751, guid: 53072b8af8c9ce14b906c05c378b363e, type: 3}
---- !u!114 &3702746099671425065
+--- !u!114 &2306296969173019581
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1444,14 +1394,14 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 0}
-  Spongebob: 0
+  Spongebob: 4
   Pineapple: 0
   Patrick: 0
   Squidward: 0
   KrustyKrab: 0
-  FileName: 
+  ChumBucket: 7
+  FileName: CB-Letter_1_0
   DirName: Save
-  isSave: 0
 --- !u!1 &3851729206506327984
 GameObject:
   m_ObjectHideFlags: 0
@@ -1464,7 +1414,7 @@ GameObject:
   - component: {fileID: 1700395576134318412}
   - component: {fileID: 3583148822022312024}
   - component: {fileID: 3851729206506327986}
-  - component: {fileID: 3851729206506327987}
+  - component: {fileID: 4425841542779703329}
   m_Layer: 10
   m_Name: CB-Roof_0
   m_TagString: Object
@@ -1549,7 +1499,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -4806880253198089769, guid: 986ea36ce83673e489c98b6bce2cb2d7, type: 3}
---- !u!114 &3851729206506327987
+--- !u!114 &4425841542779703329
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1565,14 +1515,14 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 0}
-  Spongebob: 0
+  Spongebob: 4
   Pineapple: 0
   Patrick: 0
   Squidward: 0
   KrustyKrab: 0
-  FileName: 
+  ChumBucket: 10
+  FileName: CB-Roof_0
   DirName: Save
-  isSave: 0
 --- !u!1 &4544394710285805754
 GameObject:
   m_ObjectHideFlags: 0
@@ -1585,7 +1535,7 @@ GameObject:
   - component: {fileID: 3189248118970941342}
   - component: {fileID: 6275496061874842281}
   - component: {fileID: 4544394710285805732}
-  - component: {fileID: 4544394710285805733}
+  - component: {fileID: 2709089777793727646}
   m_Layer: 10
   m_Name: CB-Letter_4_0
   m_TagString: Object
@@ -1670,7 +1620,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2735347632624194857, guid: d75765e111211d74fbba18076818027c, type: 3}
---- !u!114 &4544394710285805733
+--- !u!114 &2709089777793727646
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1686,14 +1636,14 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 0}
-  Spongebob: 0
+  Spongebob: 4
   Pineapple: 0
   Patrick: 0
   Squidward: 0
   KrustyKrab: 0
-  FileName: 
+  ChumBucket: 7
+  FileName: CB-Letter_4_0
   DirName: Save
-  isSave: 0
 --- !u!1 &5090841696059753205
 GameObject:
   m_ObjectHideFlags: 0
@@ -1706,7 +1656,7 @@ GameObject:
   - component: {fileID: 6461826219432566757}
   - component: {fileID: 1128009762694654705}
   - component: {fileID: 5090841696059753207}
-  - component: {fileID: 5090841696059753204}
+  - component: {fileID: 778408507463462549}
   m_Layer: 10
   m_Name: CB-Door_0_0
   m_TagString: Object
@@ -1791,7 +1741,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1219085265205526009, guid: 08366ca008f75bf4697bc963b14847ff, type: 3}
---- !u!114 &5090841696059753204
+--- !u!114 &778408507463462549
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1807,14 +1757,14 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 0}
-  Spongebob: 0
+  Spongebob: 4
   Pineapple: 0
   Patrick: 0
   Squidward: 0
   KrustyKrab: 0
-  FileName: 
+  ChumBucket: 1
+  FileName: CB-Door_0_0
   DirName: Save
-  isSave: 0
 --- !u!1 &5294669041157892975
 GameObject:
   m_ObjectHideFlags: 0
@@ -1885,7 +1835,7 @@ GameObject:
   - component: {fileID: 6676251127069860763}
   - component: {fileID: 405789464316342288}
   - component: {fileID: 5583148048626937764}
-  - component: {fileID: 5583148048626937765}
+  - component: {fileID: 6589423496437040269}
   m_Layer: 10
   m_Name: CB-Letter_2_0
   m_TagString: Object
@@ -1970,7 +1920,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 2946674200097279555, guid: e23d933178c46ae47b9943d968e86a4a, type: 3}
---- !u!114 &5583148048626937765
+--- !u!114 &6589423496437040269
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1986,14 +1936,14 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 0}
-  Spongebob: 0
+  Spongebob: 4
   Pineapple: 0
   Patrick: 0
   Squidward: 0
   KrustyKrab: 0
-  FileName: 
+  ChumBucket: 7
+  FileName: CB-Letter_2_0
   DirName: Save
-  isSave: 0
 --- !u!1 &6273360518209254727
 GameObject:
   m_ObjectHideFlags: 0
@@ -2006,7 +1956,7 @@ GameObject:
   - component: {fileID: 4966743837686883629}
   - component: {fileID: 1147429769405318386}
   - component: {fileID: 6273360518209254721}
-  - component: {fileID: 6273360518209254726}
+  - component: {fileID: 8737582499480839}
   m_Layer: 10
   m_Name: CB-DoorWindow_1_0
   m_TagString: Object
@@ -2091,7 +2041,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 2269084133075433765, guid: 5d33865fbc2efe54a9d0f5bb35e8d86e, type: 3}
---- !u!114 &6273360518209254726
+--- !u!114 &8737582499480839
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2107,14 +2057,14 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 0}
-  Spongebob: 0
+  Spongebob: 4
   Pineapple: 0
   Patrick: 0
   Squidward: 0
   KrustyKrab: 0
-  FileName: 
+  ChumBucket: 3
+  FileName: CB-DoorWindow_1_0
   DirName: Save
-  isSave: 0
 --- !u!1 &6515770462839483799
 GameObject:
   m_ObjectHideFlags: 0
@@ -2127,7 +2077,7 @@ GameObject:
   - component: {fileID: 8437422978169075115}
   - component: {fileID: 63567702599309618}
   - component: {fileID: 6515770462839483793}
-  - component: {fileID: 6515770462839483798}
+  - component: {fileID: 2875582704731210453}
   m_Layer: 10
   m_Name: CB-Handle_1_0
   m_TagString: Object
@@ -2212,7 +2162,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 5238359986939725603, guid: 5bf4a029e3f6b1e41a151361b6db3302, type: 3}
---- !u!114 &6515770462839483798
+--- !u!114 &2875582704731210453
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2228,14 +2178,14 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 0}
-  Spongebob: 0
+  Spongebob: 4
   Pineapple: 0
   Patrick: 0
   Squidward: 0
   KrustyKrab: 0
-  FileName: 
+  ChumBucket: 5
+  FileName: CB-Handle_1_0
   DirName: Save
-  isSave: 0
 --- !u!1 &6558921661140760360
 GameObject:
   m_ObjectHideFlags: 0
@@ -2248,7 +2198,7 @@ GameObject:
   - component: {fileID: 7018610493382757815}
   - component: {fileID: 3086915524810946555}
   - component: {fileID: 6558921661140760362}
-  - component: {fileID: 6558921661140760363}
+  - component: {fileID: 6302110662475449041}
   m_Layer: 10
   m_Name: CB-Letter_3_0
   m_TagString: Object
@@ -2333,7 +2283,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1587087812480065888, guid: b414a20022fbc8a46a2a40811357312f, type: 3}
---- !u!114 &6558921661140760363
+--- !u!114 &6302110662475449041
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2349,14 +2299,14 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 0}
-  Spongebob: 0
+  Spongebob: 4
   Pineapple: 0
   Patrick: 0
   Squidward: 0
   KrustyKrab: 0
-  FileName: 
+  ChumBucket: 7
+  FileName: CB-Letter_3_0
   DirName: Save
-  isSave: 0
 --- !u!1 &6595717464456589738
 GameObject:
   m_ObjectHideFlags: 0
@@ -2369,7 +2319,7 @@ GameObject:
   - component: {fileID: 3002036874195720088}
   - component: {fileID: 9091778252949544894}
   - component: {fileID: 6595717464456589652}
-  - component: {fileID: 6595717464456589653}
+  - component: {fileID: 329155380338103837}
   m_Layer: 10
   m_Name: CB-RimLower_0
   m_TagString: Object
@@ -2454,7 +2404,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4612108387289502563, guid: a1aa09bba1615bb449d6ecff058d599d, type: 3}
---- !u!114 &6595717464456589653
+--- !u!114 &329155380338103837
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2470,14 +2420,14 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 0}
-  Spongebob: 0
+  Spongebob: 4
   Pineapple: 0
   Patrick: 0
   Squidward: 0
   KrustyKrab: 0
-  FileName: 
+  ChumBucket: 8
+  FileName: CB-RimLower_0
   DirName: Save
-  isSave: 0
 --- !u!1 &6863516446782296598
 GameObject:
   m_ObjectHideFlags: 0
@@ -2490,7 +2440,7 @@ GameObject:
   - component: {fileID: 5774305157472656974}
   - component: {fileID: 4522504131336019864}
   - component: {fileID: 6863516446782296592}
-  - component: {fileID: 6863516446782296593}
+  - component: {fileID: 5256497497460567514}
   m_Layer: 10
   m_Name: CB-RimUpper_0
   m_TagString: Object
@@ -2575,7 +2525,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2921679110004037991, guid: 7181d4b7c9f1c464eabdf87d86509f52, type: 3}
---- !u!114 &6863516446782296593
+--- !u!114 &5256497497460567514
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2591,14 +2541,14 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 0}
-  Spongebob: 0
+  Spongebob: 4
   Pineapple: 0
   Patrick: 0
   Squidward: 0
   KrustyKrab: 0
-  FileName: 
+  ChumBucket: 9
+  FileName: CB-RimUpper_0
   DirName: Save
-  isSave: 0
 --- !u!1 &7183091303607085384
 GameObject:
   m_ObjectHideFlags: 0
@@ -2611,7 +2561,7 @@ GameObject:
   - component: {fileID: 4311639764833385878}
   - component: {fileID: 381482638274646084}
   - component: {fileID: 7183091303607085386}
-  - component: {fileID: 7183091303607085387}
+  - component: {fileID: 6486243237093991972}
   m_Layer: 10
   m_Name: CB-HandlePin_1_0
   m_TagString: Object
@@ -2696,7 +2646,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2200553143140333060, guid: fb7bfc12b660ee147ba37d03164094a8, type: 3}
---- !u!114 &7183091303607085387
+--- !u!114 &6486243237093991972
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2712,14 +2662,14 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 0}
-  Spongebob: 0
+  Spongebob: 4
   Pineapple: 0
   Patrick: 0
   Squidward: 0
   KrustyKrab: 0
-  FileName: 
+  ChumBucket: 6
+  FileName: CB-HandlePin_1_0
   DirName: Save
-  isSave: 0
 --- !u!1 &7593549094816943388
 GameObject:
   m_ObjectHideFlags: 0
@@ -2732,7 +2682,7 @@ GameObject:
   - component: {fileID: 1368312564387901908}
   - component: {fileID: 7717790546564118851}
   - component: {fileID: 7593549094816943390}
-  - component: {fileID: 7593549094816943391}
+  - component: {fileID: 3031957703680685301}
   m_Layer: 10
   m_Name: CB-Letter_7_0
   m_TagString: Object
@@ -2817,7 +2767,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -4234799773172734109, guid: c1d95c4cea674c648aef0994fc1b673b, type: 3}
---- !u!114 &7593549094816943391
+--- !u!114 &3031957703680685301
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2833,14 +2783,14 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 0}
-  Spongebob: 0
+  Spongebob: 4
   Pineapple: 0
   Patrick: 0
   Squidward: 0
   KrustyKrab: 0
-  FileName: 
+  ChumBucket: 7
+  FileName: CB-Letter_7_0
   DirName: Save
-  isSave: 0
 --- !u!1 &7681222530146330914
 GameObject:
   m_ObjectHideFlags: 0
@@ -2853,7 +2803,7 @@ GameObject:
   - component: {fileID: 3435047311211480313}
   - component: {fileID: 2159698968983510394}
   - component: {fileID: 7681222530146330924}
-  - component: {fileID: 7681222530146330925}
+  - component: {fileID: 4598128838777173610}
   m_Layer: 10
   m_Name: CB-DoorHandle_1_0
   m_TagString: Object
@@ -2938,7 +2888,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 2352135695323556074, guid: 58ae4d0c7957cca4bb6a0c0c570d272d, type: 3}
---- !u!114 &7681222530146330925
+--- !u!114 &4598128838777173610
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2954,14 +2904,14 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 0}
-  Spongebob: 0
+  Spongebob: 4
   Pineapple: 0
   Patrick: 0
   Squidward: 0
   KrustyKrab: 0
-  FileName: 
+  ChumBucket: 2
+  FileName: CB-DoorHandle_1_0
   DirName: Save
-  isSave: 0
 --- !u!1 &7807386144865025173
 GameObject:
   m_ObjectHideFlags: 0
@@ -2974,7 +2924,7 @@ GameObject:
   - component: {fileID: 907728131422573222}
   - component: {fileID: 9205082458167726848}
   - component: {fileID: 7807386144865025175}
-  - component: {fileID: 7807386144865025172}
+  - component: {fileID: 4376544462692160958}
   m_Layer: 10
   m_Name: CB-Letter_9_0
   m_TagString: Object
@@ -3059,7 +3009,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 5886247995966523379, guid: 3593f542d7d3c984aa3ddcf8491808d7, type: 3}
---- !u!114 &7807386144865025172
+--- !u!114 &4376544462692160958
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3075,14 +3025,14 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 0}
-  Spongebob: 0
+  Spongebob: 4
   Pineapple: 0
   Patrick: 0
   Squidward: 0
   KrustyKrab: 0
-  FileName: 
+  ChumBucket: 7
+  FileName: CB-Letter_9_0
   DirName: Save
-  isSave: 0
 --- !u!1 &7847847644580573093
 GameObject:
   m_ObjectHideFlags: 0
@@ -3095,7 +3045,7 @@ GameObject:
   - component: {fileID: 6781729495378661396}
   - component: {fileID: 4811230540544911602}
   - component: {fileID: 7847847644580573095}
-  - component: {fileID: 7847847644580573092}
+  - component: {fileID: 4829381777135763364}
   m_Layer: 10
   m_Name: CB-Wall_0_0
   m_TagString: Object
@@ -3180,7 +3130,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 3697220939035492354, guid: 8d0296a9c48b97e4cb7e04860a663568, type: 3}
---- !u!114 &7847847644580573092
+--- !u!114 &4829381777135763364
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3196,14 +3146,14 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 0}
-  Spongebob: 0
+  Spongebob: 4
   Pineapple: 0
   Patrick: 0
   Squidward: 0
   KrustyKrab: 0
-  FileName: 
+  ChumBucket: 11
+  FileName: CB-Wall_0_0
   DirName: Save
-  isSave: 0
 --- !u!1 &7871144586087946020
 GameObject:
   m_ObjectHideFlags: 0
@@ -3216,7 +3166,7 @@ GameObject:
   - component: {fileID: 1078577175508842276}
   - component: {fileID: 133904103254556026}
   - component: {fileID: 7871144586087946022}
-  - component: {fileID: 7871144586087946023}
+  - component: {fileID: 2478268725212656217}
   m_Layer: 10
   m_Name: CB-DoorHandle_0_0
   m_TagString: Object
@@ -3301,7 +3251,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -4406857941125494225, guid: fa17294a3376ff7439cefcd02dd11f45, type: 3}
---- !u!114 &7871144586087946023
+--- !u!114 &2478268725212656217
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3317,14 +3267,14 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 0}
-  Spongebob: 0
+  Spongebob: 4
   Pineapple: 0
   Patrick: 0
   Squidward: 0
   KrustyKrab: 0
-  FileName: 
+  ChumBucket: 2
+  FileName: CB-DoorHandle_0_0
   DirName: Save
-  isSave: 0
 --- !u!1 &8707381951615114070
 GameObject:
   m_ObjectHideFlags: 0
@@ -3337,7 +3287,7 @@ GameObject:
   - component: {fileID: 5504857355745655841}
   - component: {fileID: 157947943304444453}
   - component: {fileID: 8707381951615114064}
-  - component: {fileID: 8707381951615114065}
+  - component: {fileID: 6180432436793099629}
   m_Layer: 10
   m_Name: CB-Letter_5_0
   m_TagString: Object
@@ -3422,7 +3372,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 1598263837318791319, guid: 542a28530173f58478dcf0f23e7968c4, type: 3}
---- !u!114 &8707381951615114065
+--- !u!114 &6180432436793099629
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3438,11 +3388,11 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 0}
-  Spongebob: 0
+  Spongebob: 4
   Pineapple: 0
   Patrick: 0
   Squidward: 0
   KrustyKrab: 0
-  FileName: 
+  ChumBucket: 7
+  FileName: CB-Letter_5_0
   DirName: Save
-  isSave: 0

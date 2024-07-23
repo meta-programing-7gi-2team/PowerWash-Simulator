@@ -10,5 +10,6 @@ public class MoneyData : ScriptableObject
     public EnumObject.Patrick Patrick;
     public EnumObject.Squidward Squidward;
     public EnumObject.KrustyKrab KrustyKrab;
+    public EnumObject.ChumBucket ChumBucket;
     public float Amount;
 }

@@ -9,7 +9,8 @@ public class EnumObject
         Pineapple,
         Patrick,
         Squidward,
-        KrustyKrab
+        KrustyKrab,
+        ChumBucket
     };
         
     public enum Pineapple
@@ -109,7 +110,23 @@ public class EnumObject
         MaritimeFlag
     }
 
-    public static string GetName(Spongebob spongebob, Pineapple pineapple, Patrick patrick, Squidward squidward, KrustyKrab krustyKrab)
+    public enum ChumBucket
+    {
+        None,
+        Door,
+        DoorHandle,
+        DoorWindow,
+        Glove,
+        Handle,
+        HandlePin,
+        Letter,
+        RimLower,
+        RimUpper,
+        Roof,
+        Wall
+    }
+
+    public static string GetName(Spongebob spongebob, Pineapple pineapple, Patrick patrick, Squidward squidward, KrustyKrab krustyKrab, ChumBucket ChumBucket)
     {
         string name = string.Empty;
         switch (spongebob)
@@ -362,6 +379,44 @@ public class EnumObject
                         break;
                     case KrustyKrab.MaritimeFlag:
                         name = "Áý°Ô¸®¾Æ - ¹Ù´Ù ±ê¹ß";
+                        break;
+                }
+                break;
+            case Spongebob.ChumBucket:
+                switch (ChumBucket)
+                {
+                    case ChumBucket.Door:
+                        name = "ÇÃ¶ûÅ©Åæ »óÁ¡ - ¹®";
+                        break;
+                    case ChumBucket.DoorHandle:
+                        name = "ÇÃ¶ûÅ©Åæ »óÁ¡ - ¹® ¼ÕÀâÀÌ";
+                        break;
+                    case ChumBucket.DoorWindow:
+                        name = "ÇÃ¶ûÅ©Åæ »óÁ¡ - ¹® Ã¢¹®";
+                        break;
+                    case ChumBucket.Glove:
+                        name = "ÇÃ¶ûÅ©Åæ »óÁ¡ - Àå°©";
+                        break;
+                    case ChumBucket.Handle:
+                        name = "ÇÃ¶ûÅ©Åæ »óÁ¡ - ¼ÕÀâÀÌ";
+                        break;
+                    case ChumBucket.HandlePin:
+                        name = "ÇÃ¶ûÅ©Åæ »óÁ¡ - ¼ÕÀâÀÌ ÇÉ";
+                        break;
+                    case ChumBucket.Letter:
+                        name = "ÇÃ¶ûÅ©Åæ »óÁ¡ - ±Û¾¾";
+                        break;
+                    case ChumBucket.RimLower:
+                        name = "ÇÃ¶ûÅ©Åæ »óÁ¡ - ¾Æ·¡ÂÊ °¡ÀåÀÚ¸®";
+                        break;
+                    case ChumBucket.RimUpper:
+                        name = "ÇÃ¶ûÅ©Åæ »óÁ¡ - À§ÂÊ °¡ÀåÀÚ¸®";
+                        break;
+                    case ChumBucket.Roof:
+                        name = "ÇÃ¶ûÅ©Åæ »óÁ¡ - ÁöºØ";
+                        break;
+                    case ChumBucket.Wall:
+                        name = "ÇÃ¶ûÅ©Åæ »óÁ¡ - º®";
                         break;
                 }
                 break;
