@@ -17,7 +17,6 @@ public class SaveButton : MonoBehaviour
 
     void OnButtonClick()
     {
-        Debug.Log("Button was clicked!");
         Save.SaveObservers();
     }
 
