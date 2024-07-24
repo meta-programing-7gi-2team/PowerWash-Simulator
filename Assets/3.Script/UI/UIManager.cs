@@ -125,6 +125,7 @@ public class UIManager : MonoBehaviour
 
     public void ButtonClick()
     {
+        isCursor = false;
         text.gameObject.SetActive(true);
         loadingSlider.gameObject.SetActive(true);
         Button.gameObject.SetActive(false);
