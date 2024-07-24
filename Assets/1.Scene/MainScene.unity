@@ -1468,10 +1468,11 @@ MonoBehaviour:
   GameBack_Btn_Pine: {fileID: 1722454952}
   GameBack_Btn_Krusty: {fileID: 1397802265}
   Info_Toggle: {fileID: 1523035917}
+  OutLine_Toggle: {fileID: 857866195}
   Info: {fileID: 1809311282}
   D_Info: {fileID: 644373601}
   Start_Btn: {fileID: 1933591320}
-  information: {fileID: 0}
+  information: {fileID: 87534282}
 --- !u!114 &87534282
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
 public class MenuButton : MonoBehaviour
@@ -31,17 +32,13 @@ public class MenuButton : MonoBehaviour
     [SerializeField] private GameObject GameBack_Btn_Krusty;
 
     [SerializeField] private GameObject Info_Toggle;
+    [SerializeField] private Toggle OutLine_Toggle;
     [SerializeField] private GameObject Info;
     [SerializeField] private GameObject D_Info;
     [SerializeField] private GameObject Start_Btn;
 
     [SerializeField] private Information_Control information;
     private bool FastCheck;
-
-    private void Start()
-    {
-        TryGetComponent(out information);
-    }
 
     public void SpecialButton()
     {
@@ -219,6 +216,7 @@ public class MenuButton : MonoBehaviour
         Info.SetActive(true);
         Start_Btn.SetActive(true);
         GameBack_Btn_Pine.SetActive(true);
+        OutLine_Toggle.isOn = true;
         information.Info_Map001();
         UIManager.instance.Mapname = "Map001";
     }
@@ -234,6 +232,7 @@ public class MenuButton : MonoBehaviour
         Info.SetActive(true);
         Start_Btn.SetActive(true);
         GameBack_Btn_Krusty.SetActive(true);
+        OutLine_Toggle.isOn = true;
         information.Info_Map002();
         UIManager.instance.Mapname = "Map002";
     }
@@ -243,6 +242,7 @@ public class MenuButton : MonoBehaviour
         Info_Toggle.SetActive(false);
         Info.SetActive(false);
         Start_Btn.SetActive(false);
+        D_Info.SetActive(false);
         GameBack_Btn_Pine.SetActive(false);
         GameBack_Btn.SetActive(true);
         GameSelectShadow.SetActive(true);
@@ -255,6 +255,7 @@ public class MenuButton : MonoBehaviour
         Info_Toggle.SetActive(false);
         Info.SetActive(false);
         Start_Btn.SetActive(false);
+        D_Info.SetActive(false);
         GameBack_Btn_Krusty.SetActive(false);
         GameBack_Btn.SetActive(true);
         GameSelectShadow.SetActive(true);
