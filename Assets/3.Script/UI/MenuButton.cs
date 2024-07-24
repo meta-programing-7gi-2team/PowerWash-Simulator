@@ -27,13 +27,21 @@ public class MenuButton : MonoBehaviour
     [SerializeField] private Animator FastOption_Btn;
     [SerializeField] private Animator FastMain_Btn;
     [SerializeField] private Animator FastQuit_Btn;
+    [SerializeField] private GameObject GameBack_Btn_Pine;
+    [SerializeField] private GameObject GameBack_Btn_Krusty;
 
     [SerializeField] private GameObject Info_Toggle;
     [SerializeField] private GameObject Info;
     [SerializeField] private GameObject D_Info;
     [SerializeField] private GameObject Start_Btn;
 
+    [SerializeField] private Information_Control information;
     private bool FastCheck;
+
+    private void Start()
+    {
+        TryGetComponent(out information);
+    }
 
     public void SpecialButton()
     {
@@ -111,8 +119,6 @@ public class MenuButton : MonoBehaviour
         GameSelectShadow.SetActive(true);
         GameBack_Btn.SetActive(true);
         SetChoice_Toggle.SetActive(true);
-        //Pineapple_Btn.SetActive(true);
-        //KrustyKrab_Btn.SetActive(true);
 
         if (FastCheck.Equals(true))
         {
@@ -154,5 +160,59 @@ public class MenuButton : MonoBehaviour
         #endif
 
         Application.Quit();
+    }
+
+    public void Pineapple_Btu()
+    {
+        GameSelectShadow.SetActive(false);
+        Pineapple_Btn.SetActive(false);
+        KrustyKrab_Btn.SetActive(false);
+        SetChoice_Toggle.SetActive(false);
+        GameBack_Btn.SetActive(false);
+        Info_Toggle.SetActive(true);
+        Info.SetActive(true);
+        Start_Btn.SetActive(true);
+        GameBack_Btn_Pine.SetActive(true);
+        information.Info_Map001();
+        UIManager.instance.Mapname = "Map001";
+    }
+
+    public void KrustyKrab_Btu()
+    {
+        GameSelectShadow.SetActive(false);
+        Pineapple_Btn.SetActive(false);
+        KrustyKrab_Btn.SetActive(false);
+        SetChoice_Toggle.SetActive(false);
+        GameBack_Btn.SetActive(false);
+        Info_Toggle.SetActive(true);
+        Info.SetActive(true);
+        Start_Btn.SetActive(true);
+        GameBack_Btn_Krusty.SetActive(true);
+        information.Info_Map002();
+        UIManager.instance.Mapname = "Map002";
+    }
+
+    public void GameBack_Pine()
+    {
+        Info_Toggle.SetActive(false);
+        Info.SetActive(false);
+        Start_Btn.SetActive(false);
+        GameBack_Btn_Pine.SetActive(false);
+        GameBack_Btn.SetActive(true);
+        GameSelectShadow.SetActive(true);
+        SetChoice_Toggle.SetActive(true);
+        UIManager.instance.Mapname = null;
+    }
+
+    public void GameBack_Krusty()
+    {
+        Info_Toggle.SetActive(false);
+        Info.SetActive(false);
+        Start_Btn.SetActive(false);
+        GameBack_Btn_Krusty.SetActive(false);
+        GameBack_Btn.SetActive(true);
+        GameSelectShadow.SetActive(true);
+        SetChoice_Toggle.SetActive(true);
+        UIManager.instance.Mapname = null;
     }
 }

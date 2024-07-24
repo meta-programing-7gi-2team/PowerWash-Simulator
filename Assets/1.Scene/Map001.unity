@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 587759865}
-  m_IndirectSpecularColor: {r: 0.13388306, g: 0.614559, b: 0.8760026, a: 1}
+  m_IndirectSpecularColor: {r: 0.1338923, g: 0.6145655, b: 0.8760026, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -26258,8 +26258,13 @@ MonoBehaviour:
   FastOption_Btn: {fileID: 1486704937}
   FastMain_Btn: {fileID: 1804991939}
   FastQuit_Btn: {fileID: 145203010}
+  GameBack_Btn_Pine: {fileID: 0}
+  GameBack_Btn_Krusty: {fileID: 0}
+  Info_Toggle: {fileID: 0}
   Info: {fileID: 0}
   D_Info: {fileID: 0}
+  Start_Btn: {fileID: 0}
+  information: {fileID: 0}
 --- !u!114 &1823779587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26431,7 +26436,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1861431608
 MonoBehaviour:
   m_ObjectHideFlags: 0
