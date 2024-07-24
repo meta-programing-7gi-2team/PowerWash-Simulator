@@ -121,7 +121,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: PH-Bin_1_0
-  DirName: Save
 --- !u!1 &1157193946508047105
 GameObject:
   m_ObjectHideFlags: 0
@@ -149,7 +148,7 @@ Transform:
   m_GameObject: {fileID: 1157193946508047105}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -3.5, y: 0, z: -0.7}
-  m_LocalScale: {x: 1, y: 0, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4851414334942652757}
   m_RootOrder: 5
@@ -301,7 +300,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: PH-Lamp_0
-  DirName: Save
 --- !u!1 &3344670711533562528
 GameObject:
   m_ObjectHideFlags: 0
@@ -423,7 +421,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: PH-Television_0
-  DirName: Save
 --- !u!1 &3541986732741907218
 GameObject:
   m_ObjectHideFlags: 0
@@ -545,7 +542,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: PH-Rock_0
-  DirName: Save
 --- !u!1 &4851414334913596654
 GameObject:
   m_ObjectHideFlags: 0
@@ -793,7 +789,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: PH-RockHinge_0
-  DirName: Save
 --- !u!1 &5554741439003234442
 GameObject:
   m_ObjectHideFlags: 0
@@ -977,7 +972,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: PH-Bin_0_0
-  DirName: Save
 --- !u!1 &6800557472129936898
 GameObject:
   m_ObjectHideFlags: 0
@@ -1099,7 +1093,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: PH-Television_1
-  DirName: Save
 --- !u!1 &7399295871856512797
 GameObject:
   m_ObjectHideFlags: 0
@@ -1221,7 +1214,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: PH-RockUnderside_0
-  DirName: Save
 --- !u!1 &7523127299654821203
 GameObject:
   m_ObjectHideFlags: 0
@@ -1343,7 +1335,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: PH-Path_0
-  DirName: Save
 --- !u!1 &8284873036429604689
 GameObject:
   m_ObjectHideFlags: 0
@@ -1465,7 +1456,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: PH-Lamp_1
-  DirName: Save
 --- !u!1 &8516161003416308773
 GameObject:
   m_ObjectHideFlags: 0
@@ -1587,7 +1577,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: PH-Couch_0
-  DirName: Save
 --- !u!1 &8916903362785591093
 GameObject:
   m_ObjectHideFlags: 0
@@ -1709,4 +1698,3 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: PH-WeatherVane_0
-  DirName: Save
