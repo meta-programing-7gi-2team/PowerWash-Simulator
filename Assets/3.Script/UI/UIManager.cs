@@ -103,13 +103,45 @@ public class UIManager : MonoBehaviour
 
     public void LoadStart()
     {
+        string ActiveScene = SceneManager.GetActiveScene().name;
+
+        if(ActiveScene.Equals("Map001"))
+        {
+            if(ActiveScene.Equals(Mapname))
+            {
+                Debug.Log("∞∞¿∫æ¿¿Œµ•?");
+            }
+            else
+            {
+                Load_Start();
+            }
+        }
+        else if(ActiveScene.Equals("Map002"))
+        {
+            if (ActiveScene.Equals(Mapname))
+            {
+                Debug.Log("∞∞¿∫æ¿¿Œµ•?");
+            }
+            else
+            {
+                Load_Start();
+            }
+        }
+        else
+        {
+            Load_Start();
+        }
+    }
+
+    private void Load_Start()
+    {
         LoadAll.SetActive(true);
         StartCoroutine(LoadYourAsyncScene(Mapname));
         Loding = true;
         Save_Btu.SetActive(false);
         Tablet.transform.position = new Vector3(960, -540, 0);
 
-        if(Mapname.Equals("Map001"))
+        if (Mapname.Equals("Map001"))
         {
             amountManager.GetMap001();
             amountManager.SetMap001_Data(Process.Proceeding);
@@ -120,7 +152,6 @@ public class UIManager : MonoBehaviour
             amountManager.GetMap002();
             amountManager.SetMap002_Data(Process.Proceeding);
         }
-
     }
 
     public void ButtonClick()
