@@ -67,16 +67,6 @@ public class MenuButton : MonoBehaviour
         if(FastCheck.Equals(true))
         {
             FastClose_Btn.SetActive(false);
-            SetChoice_Toggle.SetActive(false);
-            Pineapple_Btn.SetActive(false);
-            KrustyKrab_Btn.SetActive(false);
-            GameBack_Btn.SetActive(false);
-            GameBack_Btn_Pine.SetActive(false);
-            GameBack_Btn_Krusty.SetActive(false);
-            Info_Toggle.SetActive(false);
-            Info.SetActive(false);
-            D_Info.SetActive(false);
-            Start_Btn.SetActive(false);
             Fast_Btn.SetActive(true);
             FastManu.SetTrigger("FastClose");
             FastShop_Btn.SetTrigger("FastClose");

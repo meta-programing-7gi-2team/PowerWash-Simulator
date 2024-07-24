@@ -34,9 +34,8 @@ public class AmountManager : MonoBehaviour
     private void Awake()
     {
         //Init();
-        DontDestroyOnLoad(gameObject);
     }
-    private void Init()
+    public void Init()
     {
         GetMap001();
         GetMap002();

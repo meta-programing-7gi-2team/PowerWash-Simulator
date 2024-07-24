@@ -1327,9 +1327,9 @@ MonoBehaviour:
   text: {fileID: 493609043}
   Button: {fileID: 1715460890}
   Tablet: {fileID: 1772947995}
-  Map001: 0
-  Map002: 0
-  objectsWithTag: []
+  Save_Btu: {fileID: 0}
+  objectsWith: []
+  Mapname: 
 --- !u!114 &87534277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21140,8 +21140,13 @@ MonoBehaviour:
   FastOption_Btn: {fileID: 1363460193}
   FastMain_Btn: {fileID: 1414084504}
   FastQuit_Btn: {fileID: 2109098044}
+  GameBack_Btn_Pine: {fileID: 0}
+  GameBack_Btn_Krusty: {fileID: 0}
+  Info_Toggle: {fileID: 0}
   Info: {fileID: 0}
   D_Info: {fileID: 0}
+  Start_Btn: {fileID: 0}
+  information: {fileID: 0}
 --- !u!1 &1773508749
 GameObject:
   m_ObjectHideFlags: 0
@@ -22008,7 +22013,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b54a449835e315f4c8702d3e9f1ec084, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DirName: Save
 --- !u!4 &1850361204
 Transform:
   m_ObjectHideFlags: 0
@@ -22285,7 +22289,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3b8567373c045014a981ddc8e73aeb1a, type: 2}
   - {fileID: 11400000, guid: ae1368988f9577844b21fb1a15b838ba, type: 2}
   - {fileID: 11400000, guid: dabd5e75a2c9e854392940361d3bb4df, type: 2}
-  DirName: Save
   buttonPrefab: {fileID: 8832907357032666581, guid: 0f777ec76a242dc4381e7bd11214181e, type: 3}
   buttonParent: {fileID: 1314366241}
   amountText: {fileID: 758154954}

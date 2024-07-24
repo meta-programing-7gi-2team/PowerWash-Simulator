@@ -7,8 +7,14 @@ public class ToggleController : MonoBehaviour
 {
     [SerializeField] private Toggle toggle1;
     [SerializeField] private Toggle toggle2;
+    [SerializeField] private GameObject D_nformation;
     private Text toggle1Text;
     private Text toggle2Text;
+
+    [SerializeField] private Information_Control information;
+    [SerializeField] private AmountManager amountManager;
+    [SerializeField] private GameObject Information;
+    [SerializeField] private GameObject Start_Btn;
 
     [SerializeField] private Color SelectedColor = new Color(1, 1, 1, 1);
     [SerializeField] private Color DeselectedColor = new Color(0.08f, 0.56f, 1);
@@ -31,6 +37,42 @@ public class ToggleController : MonoBehaviour
         else
         {
             toggleText.color = DeselectedColor;
+        }
+    }
+
+    public void OutLine_T()
+    {
+        if(UIManager.instance.Mapname.Equals("Map001"))
+        {
+            D_nformation.SetActive(false);
+            Information.SetActive(true);
+            Start_Btn.SetActive(true);
+            information.Info_Map001();
+        }
+        else
+        {
+            D_nformation.SetActive(false);
+            Information.SetActive(true);
+            Start_Btn.SetActive(true);
+            information.Info_Map002();
+        }
+    }
+
+    public void Detailed_T()
+    {
+        if (UIManager.instance.Mapname.Equals("Map001"))
+        {
+            Information.SetActive(false);
+            Start_Btn.SetActive(false);
+            D_nformation.SetActive(true);
+            amountManager.Init();
+        }
+        else
+        {
+            Information.SetActive(false);
+            Start_Btn.SetActive(false);
+            D_nformation.SetActive(true);
+            amountManager.Init();
         }
     }
 }
