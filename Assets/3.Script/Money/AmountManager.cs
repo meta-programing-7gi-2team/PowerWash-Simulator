@@ -29,56 +29,81 @@ public class AmountManager : MonoBehaviour
     [SerializeField] private Text amountText;
     [SerializeField] private Text getAmountText;
     [SerializeField] private Text stateText;
+    private EnumObject.Map state;
+    private Queue<GameObject> gameObjects;
 
     // 데이터 초기화
     private void Awake()
     {
+        state = EnumObject.Map.None;
+        gameObjects = new Queue<GameObject>();
         //Init();
     }
-    public void Init()
+    public void State(EnumObject.Map state)
     {
-        GetMap001();
-        GetMap002();
-
+        if(!this.state.Equals(state))
+        {
+            switch(state)
+            {
+                case EnumObject.Map.Map001:
+                    GetMap001();
+                    LoadMapListData(Map001_AmountData);
+                    break;
+                case EnumObject.Map.Map002:
+                    GetMap002();
+                    LoadMapListData(Map002_AmountData);
+                    break;
+            }
+        }
+    }
+    public void LoadMapListData(List<MapAmountData> AmountData)
+    {
         float amount_Sum = 0;
         float getAmount_Sum = 0;
         float state_Sum = 0;
 
-        for (int i = 0; i < Map001_AmountData.Count; i++)
+        for(int i = gameObjects.Count - 1; i >=  0; i--)
+        {
+            GameObject beforeButton = gameObjects.Dequeue();
+            Destroy(beforeButton);
+        }
+
+        for (int i = 0; i < AmountData.Count; i++)
         {
             GameObject newButton = Instantiate(buttonPrefab, buttonParent);
+            gameObjects.Enqueue(newButton);
             Text[] buttonTextComponent = newButton.GetComponentsInChildren<Text>();
             if (buttonTextComponent != null)
             {
-                buttonTextComponent[0].text = Map001_AmountData[i].Name;
-                buttonTextComponent[1].text = Map001_AmountData[i].Amount.ToString("$0.00");
-                buttonTextComponent[2].text = Map001_AmountData[i].GetAmount.ToString("$0.00");
+                buttonTextComponent[0].text = AmountData[i].Name;
+                buttonTextComponent[1].text = AmountData[i].Amount.ToString("$0.00");
+                buttonTextComponent[2].text = AmountData[i].GetAmount.ToString("$0.00");
 
-                amount_Sum += Map001_AmountData[i].Amount;
-                getAmount_Sum += Map001_AmountData[i].GetAmount;
-                state_Sum += Map001_AmountData[i].State;
-                if (Map001_AmountData[i].State.Equals(0))
+                amount_Sum += AmountData[i].Amount;
+                getAmount_Sum += AmountData[i].GetAmount;
+                state_Sum += AmountData[i].State;
+                if (AmountData[i].State.Equals(0))
                 {
                     buttonTextComponent[3].text = "-";
                 }
-                else if (Map001_AmountData[i].State.Equals(100))
+                else if (AmountData[i].State.Equals(100))
                 {
                     buttonTextComponent[3].text = "청소 완료!";
                 }
                 else
                 {
-                    buttonTextComponent[3].text = string.Format("{0}%", (int)Map001_AmountData[i].State);
+                    buttonTextComponent[3].text = string.Format("{0}%", (int)AmountData[i].State);
                 }
-            }
-            // 버튼의 클릭 이벤트 설정
-            Button buttonComponent = newButton.GetComponent<Button>();
-            if (buttonComponent != null)
-            {
-                buttonComponent.onClick.AddListener(() => OnButtonClick(i.ToString()));
+                // 버튼의 클릭 이벤트 설정
+                Button buttonComponent = newButton.GetComponent<Button>();
+                if (buttonComponent != null)
+                {
+                    buttonComponent.onClick.AddListener(() => OnButtonClick(buttonTextComponent[0].text));
+                }
             }
             amountText.text = amount_Sum.ToString("$0.00");
             getAmountText.text = getAmount_Sum.ToString("$0.00");
-            stateText.text = string.Format("{0}%", (int)(state_Sum / Map001_AmountData.Count));
+            stateText.text = string.Format("{0}%", (int)(state_Sum / AmountData.Count));
         }
     }
 

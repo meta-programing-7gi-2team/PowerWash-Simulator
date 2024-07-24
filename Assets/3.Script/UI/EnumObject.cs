@@ -1,5 +1,11 @@
 public class EnumObject
 {
+    public enum Map
+    {
+        None,
+        Map001,
+        Map002
+    }
     public enum Spongebob
     {
         Pineapple,

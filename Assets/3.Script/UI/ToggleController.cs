@@ -65,14 +65,14 @@ public class ToggleController : MonoBehaviour
             Information.SetActive(false);
             Start_Btn.SetActive(false);
             D_nformation.SetActive(true);
-            amountManager.Init();
+            amountManager.State(EnumObject.Map.Map001);
         }
         else
         {
             Information.SetActive(false);
             Start_Btn.SetActive(false);
             D_nformation.SetActive(true);
-            amountManager.Init();
+            amountManager.State(EnumObject.Map.Map002);
         }
     }
 }
