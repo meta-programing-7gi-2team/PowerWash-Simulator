@@ -32,8 +32,17 @@ public class GameManager : MonoBehaviour
         LoadAmount();
         amount = GetAmount();
         amountManager = FindObjectOfType<AmountManager>();
+        InitializeAmountText();
     }
     #region Amount
+    public void InitializeAmountText()
+    {
+        MoneyText[] moneyTexts = FindObjectsOfType<MoneyText>();
+        for (int i = 0; i < moneyTexts.Length; i++)
+        {
+            moneyTexts[i].Reload();
+        }
+    }
     public void InitializeAmount()
     {
         amountData = new AmountData(0);
@@ -86,10 +95,39 @@ public class GameManager : MonoBehaviour
     {
         return amountData.Amount;
     }
-    public void AddAmount(float amount)
+    public void AddAmount(MoneyData moneyData)
     {
-        this.amount += amount;
-        amountData = new AmountData(amount);
+        this.amount += moneyData.Amount;
+        amountData = new AmountData(this.amount);
+        if(UIManager.instance.Mapname.Equals("Map001"))
+        {
+            amountManager.GetMap001();
+
+            for (int i = 0; i < amountManager.Map001_AmountData.Count; i++)
+            {
+                if (amountManager.Map001_AmountData[i].Name.Equals(EnumObject.GetName(moneyData.Spongebob, moneyData.Pineapple, moneyData.Patrick, moneyData.Squidward, moneyData.KrustyKrab, moneyData.ChumBucket)))
+                {
+                    amountManager.Map001_AmountData[i].GetAmount += moneyData.Amount;
+                    amountManager.SetMap001_Data(amountManager.Map001_AmountData[i]);
+                    break;
+                }
+            }
+        }
+        else
+        {
+            amountManager.GetMap002();
+
+            for (int i = 0; i < amountManager.Map002_AmountData.Count; i++)
+            {
+                if (amountManager.Map002_AmountData[i].Name.Equals(EnumObject.GetName(moneyData.Spongebob, moneyData.Pineapple, moneyData.Patrick, moneyData.Squidward, moneyData.KrustyKrab, moneyData.ChumBucket)))
+                {
+                    amountManager.Map002_AmountData[i].GetAmount += moneyData.Amount;
+                    amountManager.SetMap002_Data(amountManager.Map002_AmountData[i]);
+                    break;
+                }
+            }
+        }
+        InitializeAmountText();
     }
     #endregion
 }

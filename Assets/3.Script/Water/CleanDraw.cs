@@ -316,7 +316,9 @@ public class CleanDraw : MonoBehaviour, IDustObserver, ISaveObserver
             isCleanCheck = true;
             CleanSparkle();
             isCleanCheckComplete = true;
-            GameManager.instance.AddAmount(0);
+
+            MoneyData amount = amountManager.GetAmount(Spongebob, Pineapple, Patrick, Squidward, KrustyKrab, ChumBucket);
+            GameManager.instance.AddAmount(amount);
         }
     }
     

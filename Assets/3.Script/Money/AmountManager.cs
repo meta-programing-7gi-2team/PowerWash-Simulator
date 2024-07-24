@@ -306,7 +306,47 @@ public class AmountManager : MonoBehaviour
         }
         return new MapAmountData("-", 0, 0, 0);
     }
-    void OnButtonClick(string buttonText)
+
+    /// <summary>
+    /// 책정할 가격 데이터를 리턴해주는 메소드
+    /// </summary>
+    public MoneyData GetAmount(EnumObject.Spongebob spongebob, EnumObject.Pineapple pineapple, EnumObject.Patrick patrick, EnumObject.Squidward squidward, EnumObject.KrustyKrab krustyKrab, EnumObject.ChumBucket chumBucket)
+    {
+        for (int i = 0; i< Map001_MoneyData.Count; i++)
+        {
+            if (Map001_MoneyData[i].Spongebob.Equals(spongebob))
+            {
+                if (Map001_MoneyData[i].Pineapple.Equals(pineapple))
+                {
+                    return Map001_MoneyData[i];
+                }
+                else if (Map001_MoneyData[i].Patrick.Equals(patrick))
+                {
+                    return Map001_MoneyData[i];
+                }
+                else if (Map001_MoneyData[i].Squidward.Equals(squidward))
+                {
+                    return Map001_MoneyData[i];
+                }
+            }
+        }
+        for (int i = 0; i < Map002_MoneyData.Count; i++)
+        {
+            if (Map002_MoneyData[i].Spongebob.Equals(spongebob))
+            {
+                if (Map002_MoneyData[i].KrustyKrab.Equals(krustyKrab))
+                {
+                    return Map002_MoneyData[i];
+                }
+                else if (Map002_MoneyData[i].ChumBucket.Equals(chumBucket))
+                {
+                    return Map002_MoneyData[i];
+                }
+            }
+        }
+        return new MoneyData();
+    }
+    public void OnButtonClick(string buttonText)
     {
         Debug.Log(buttonText + " clicked!");
         EventSystem.current.SetSelectedGameObject(null);

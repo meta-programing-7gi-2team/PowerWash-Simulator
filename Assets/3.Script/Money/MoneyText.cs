@@ -8,6 +8,11 @@ public class MoneyText : MonoBehaviour
     [SerializeField] Text moneyTxt;
     private void OnEnable()
     {
-        moneyTxt.text = GameManager.instance.GetAmount().ToString("$0.00");
+        Reload();
+    }
+    public void Reload()
+    {
+        if(GameManager.instance != null)
+            moneyTxt.text = GameManager.instance.GetAmount().ToString("$0.00");
     }
 }
