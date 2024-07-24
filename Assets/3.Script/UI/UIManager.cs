@@ -62,35 +62,27 @@ public class UIManager : MonoBehaviour
     {
         if (Loding) return;
 
-        string currentSceneName = SceneManager.GetActiveScene().name;
-
-        foreach (string sceneName in targetSceneName)
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (currentSceneName == sceneName)
+            if (!InGame)
             {
-                if (Input.GetKeyDown(KeyCode.Escape))
-                {
-                    if (!InGame)
-                    {
-                        InGame = GameObject.FindWithTag("InGame").GetComponent<CanvasGroup>();
-                    }
-                    if (isCursor)
-                    {
-                        isCursor = false;
-                        Tablet.GetComponent<RectTransform>().DOAnchorPosY(-540, 0.3f);
-                        InGame.DOFade(1, 0.3f);
-                        Cursor.visible = false;
-                        Cursor.lockState = CursorLockMode.Locked;
-                    }
-                    else
-                    {
-                        isCursor = true;
-                        Tablet.GetComponent<RectTransform>().DOAnchorPosY(540, 0.3f);
-                        InGame.DOFade(0, 0.3f);
-                        Cursor.visible = true;
-                        Cursor.lockState = CursorLockMode.None;
-                    }
-                }
+                InGame = GameObject.FindWithTag("InGame").GetComponent<CanvasGroup>();
+            }
+            if (isCursor)
+            {
+                isCursor = false;
+                Tablet.GetComponent<RectTransform>().DOAnchorPosY(-540, 0.3f);
+                InGame.DOFade(1, 0.3f);
+                Cursor.visible = false;
+                Cursor.lockState = CursorLockMode.Locked;
+            }
+            else
+            {
+                isCursor = true;
+                Tablet.GetComponent<RectTransform>().DOAnchorPosY(540, 0.3f);
+                InGame.DOFade(0, 0.3f);
+                Cursor.visible = true;
+                Cursor.lockState = CursorLockMode.None;
             }
         }
     }
@@ -387,37 +379,37 @@ public class UIManager : MonoBehaviour
 
         ObjectAll = 0;
 
-        float[] Pineapple = new float[22] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-        float[] Patrick = new float[9] { 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-        float[] Squidward = new float[15] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-        float[] KrustyKrab = new float[31] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-        float[] ChumBucket = new float[11] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+        //float[] Pineapple = new float[22] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+        //float[] Patrick = new float[9] { 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+        //float[] Squidward = new float[15] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+        //float[] KrustyKrab = new float[31] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+        //float[] ChumBucket = new float[11] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 
-        foreach (CleanDraw obj in objectsWith)
-        {
-            ObjectAll += obj.ColorRatio;
+        //foreach (CleanDraw obj in objectsWith)
+        //{
+        //    ObjectAll += obj.ColorRatio;
 
-            if (obj.Spongebob.Equals(EnumObject.Spongebob.Pineapple))
-            {
-                Pineapple[(int)obj.Pineapple - 1]++;
-            }
-            if (obj.Spongebob.Equals(EnumObject.Spongebob.Patrick))
-            {
-                Patrick[(int)obj.Patrick - 1]++;
-            }
-            if (obj.Spongebob.Equals(EnumObject.Spongebob.Squidward))
-            {
-                Squidward[(int)obj.Squidward - 1]++;
-            }
-            if (obj.Spongebob.Equals(EnumObject.Spongebob.KrustyKrab))
-            {
-                KrustyKrab[(int)obj.KrustyKrab - 1]++;
-            }
-            if (obj.Spongebob.Equals(EnumObject.Spongebob.ChumBucket))
-            {
-                ChumBucket[(int)obj.ChumBucket - 1]++;
-            }
-        }
+        //    if (obj.Spongebob.Equals(EnumObject.Spongebob.Pineapple))
+        //    {
+        //        Pineapple[(int)obj.Pineapple - 1]++;
+        //    }
+        //    if (obj.Spongebob.Equals(EnumObject.Spongebob.Patrick))
+        //    {
+        //        Patrick[(int)obj.Patrick - 1]++;
+        //    }
+        //    if (obj.Spongebob.Equals(EnumObject.Spongebob.Squidward))
+        //    {
+        //        Squidward[(int)obj.Squidward - 1]++;
+        //    }
+        //    if (obj.Spongebob.Equals(EnumObject.Spongebob.KrustyKrab))
+        //    {
+        //        KrustyKrab[(int)obj.KrustyKrab - 1]++;
+        //    }
+        //    if (obj.Spongebob.Equals(EnumObject.Spongebob.ChumBucket))
+        //    {
+        //        ChumBucket[(int)obj.ChumBucket - 1]++;
+        //    }
+        //}
 
         if (AllObjectSlider != null && AllObjectText != null)
         {
