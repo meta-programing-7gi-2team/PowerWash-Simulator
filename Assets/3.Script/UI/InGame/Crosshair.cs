@@ -4,12 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 public class Crosshair : MonoBehaviour
 {
-    private RectTransform rect;
-    private FirstPersonCamera fpc;
     private Image image;
     private WashGunControl washGun;
 
-    private Vector3 center;
     private Color color;
 
     [SerializeField]
@@ -17,26 +14,13 @@ public class Crosshair : MonoBehaviour
 
     private void Start()
     {
-        rect = GetComponent<RectTransform>();
-        fpc = FindObjectOfType<FirstPersonCamera>();
         image = GetComponent<Image>();
         color = GetComponent<Image>().color;
         washGun = FindObjectOfType<WashGunControl>();
-        center = new Vector3(Screen.width / 2, Screen.height / 2, 0);
     }
 
     private void Update()
     {
-        if (fpc.isFreeMode)
-        {
-            Vector3 mousePosition = Input.mousePosition;
-            rect.position = mousePosition;
-        }
-        else
-        {
-            rect.position = center;
-        }
-
         if (washGun.isFire)
         {
             FadeOut();
