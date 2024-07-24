@@ -379,37 +379,10 @@ public class UIManager : MonoBehaviour
 
         ObjectAll = 0;
 
-        //float[] Pineapple = new float[22] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-        //float[] Patrick = new float[9] { 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-        //float[] Squidward = new float[15] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-        //float[] KrustyKrab = new float[31] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-        //float[] ChumBucket = new float[11] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
-
-        //foreach (CleanDraw obj in objectsWith)
-        //{
-        //    ObjectAll += obj.ColorRatio;
-
-        //    if (obj.Spongebob.Equals(EnumObject.Spongebob.Pineapple))
-        //    {
-        //        Pineapple[(int)obj.Pineapple - 1]++;
-        //    }
-        //    if (obj.Spongebob.Equals(EnumObject.Spongebob.Patrick))
-        //    {
-        //        Patrick[(int)obj.Patrick - 1]++;
-        //    }
-        //    if (obj.Spongebob.Equals(EnumObject.Spongebob.Squidward))
-        //    {
-        //        Squidward[(int)obj.Squidward - 1]++;
-        //    }
-        //    if (obj.Spongebob.Equals(EnumObject.Spongebob.KrustyKrab))
-        //    {
-        //        KrustyKrab[(int)obj.KrustyKrab - 1]++;
-        //    }
-        //    if (obj.Spongebob.Equals(EnumObject.Spongebob.ChumBucket))
-        //    {
-        //        ChumBucket[(int)obj.ChumBucket - 1]++;
-        //    }
-        //}
+        foreach (CleanDraw obj in objectsWith)
+        {
+            ObjectAll += obj.ColorRatio;
+        }
 
         if (AllObjectSlider != null && AllObjectText != null)
         {
@@ -418,7 +391,4 @@ public class UIManager : MonoBehaviour
             AllObjectText.text = $"{Mathf.RoundToInt(AllObjectSlider.value)}%";
         }
     }
-
-
-
 }

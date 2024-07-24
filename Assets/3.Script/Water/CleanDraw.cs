@@ -180,7 +180,11 @@ public class CleanDraw : MonoBehaviour, IDustObserver, ISaveObserver
             maskSavedTexture = LoadTextureFromFile(FileName);
             Graphics.Blit(maskSavedTexture, renderMaskTexture);
             ApplyCalculateRatio(); //초기 퍼센트 데이터 불러옴
-            //Todo:이후에 Clean Sparkcle 막아야됨
+            if(ColorRatio.Equals(100))
+            {
+                isCleanCheck = true;
+                isCleanCheckComplete = true;
+            }
         }
         else
         {
@@ -308,27 +312,32 @@ public class CleanDraw : MonoBehaviour, IDustObserver, ISaveObserver
         else if(!isCleanCheck)
         {
             ColorRatio = 100;
-            
-            RenderTexture.active = renderMaskTexture;
-
-            Texture2D texture = new Texture2D(renderMaskTexture.width, renderMaskTexture.height);
-            Color[] colors = new Color[renderMaskTexture.width * renderMaskTexture.height];
-
-            for (int i = 0; i < colors.Length; i++)
-            {
-                colors[i] = Color.black;
-            }
-            texture.SetPixels(colors);
-            texture.Apply();
-
-            Graphics.Blit(texture, renderMaskTexture);
-            RenderTexture.active = null;
-
+            ClearTexture();
             isCleanCheck = true;
             CleanSparkle();
             isCleanCheckComplete = true;
-            //Todo: 돈지급
+
+            MoneyData amount = amountManager.GetAmount(Spongebob, Pineapple, Patrick, Squidward, KrustyKrab, ChumBucket);
+            GameManager.instance.AddAmount(amount);
         }
+    }
+    
+    private void ClearTexture()
+    {
+        RenderTexture.active = renderMaskTexture;
+
+        Texture2D texture = new Texture2D(renderMaskTexture.width, renderMaskTexture.height);
+        Color[] colors = new Color[renderMaskTexture.width * renderMaskTexture.height];
+
+        for (int i = 0; i < colors.Length; i++)
+        {
+            colors[i] = Color.black;
+        }
+        texture.SetPixels(colors);
+        texture.Apply();
+
+        Graphics.Blit(texture, renderMaskTexture);
+        RenderTexture.active = null;
     }
     private float CalculateColorRatio(RenderTexture renderTexture)
     {

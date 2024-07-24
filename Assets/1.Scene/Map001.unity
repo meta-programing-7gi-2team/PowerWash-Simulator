@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 587759865}
-  m_IndirectSpecularColor: {r: 0.1338923, g: 0.6145655, b: 0.8760026, a: 1}
+  m_IndirectSpecularColor: {r: 0.13393044, g: 0.6145987, b: 0.8760026, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4862,6 +4862,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toggle1: {fileID: 240733682}
   toggle2: {fileID: 247795517}
+  D_nformation: {fileID: 0}
+  information: {fileID: 0}
+  amountManager: {fileID: 0}
+  Information: {fileID: 0}
+  Start_Btn: {fileID: 0}
   SelectedColor: {r: 1, g: 1, b: 1, a: 1}
   DeselectedColor: {r: 0.08627451, g: 0.5686275, b: 1, a: 1}
 --- !u!1001 &344790469
@@ -7320,7 +7325,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1982f2ab4393ccd45a05e5a4691b3397, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  brushSize: 0.3
+  brushSizeX: 0.2
+  brushSizeY: 0.2
   waterBrushIntensity: 0.1
   eraserBrushIntensity: 0.1
   colorRatioComputeShader: {fileID: 7200000, guid: 814305ab60ec2834b86ac66c5bacf94a, type: 3}
@@ -16197,6 +16203,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1137536547 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6414107323984645948, guid: ca5cb11fc852eab40b2b30ae59fb4e2d, type: 3}
+  m_PrefabInstance: {fileID: 1137536544}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1137536548 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6076815738633691996, guid: ca5cb11fc852eab40b2b30ae59fb4e2d, type: 3}
+  m_PrefabInstance: {fileID: 1137536544}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1137536547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1137536549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1137536547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3d07474bb8bbe4c95911a7508d0943, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moneyTxt: {fileID: 1137536548}
 --- !u!4 &1139747040 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 90774ea4d97f2ca45a5ce36b5f53d40f, type: 3}
@@ -26261,6 +26296,7 @@ MonoBehaviour:
   GameBack_Btn_Pine: {fileID: 0}
   GameBack_Btn_Krusty: {fileID: 0}
   Info_Toggle: {fileID: 0}
+  OutLine_Toggle: {fileID: 0}
   Info: {fileID: 0}
   D_Info: {fileID: 0}
   Start_Btn: {fileID: 0}
