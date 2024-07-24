@@ -72,6 +72,7 @@ public class PlayerController : MonoBehaviour,IObserver
     }
     private void SetSpeedWeight()
     {
+        
         switch (state)
         {
             case State.Idle:
