@@ -35,7 +35,8 @@ public class CleanDraw : MonoBehaviour, IDustObserver, ISaveObserver
     private BrushController brushController;
     private Texture2D whiteBrushTexture; // Painter
     private Texture2D blackBrushTexture; // Eraser
-    private float brushSize; // 브러쉬 크기 기준
+    private float brushSizeX; // 브러쉬 크기 기준
+    private float brushSizeY; // 브러쉬 크기 기준
 
     private Material initMaterial;
     private Material cleanMaterial;
@@ -148,7 +149,8 @@ public class CleanDraw : MonoBehaviour, IDustObserver, ISaveObserver
         }
         whiteBrushTexture = brushController.WaterBrushTexture;
         blackBrushTexture = brushController.EraserBrushTexture;
-        brushSize = brushController.BrushSize;
+        brushSizeX = brushController.BrushSizeX;
+        brushSizeY = brushController.BrushSizeY;
         colorRatioComputeShader = brushController.ColorRatioComputeShader;
         fadeTextureComputeShader = brushController.FadeTextureComputeShader;
         initCount = Mathf.CeilToInt(brushController.ColorNum / fadeAmount);
@@ -243,30 +245,31 @@ public class CleanDraw : MonoBehaviour, IDustObserver, ISaveObserver
                 //Debug.Log($"Hit texture coord: {hitTextureCoord}");
                 sameUvPoint = hitTextureCoord;
                 Vector2 pixelUV = hitTextureCoord;
-                PaintBrush(blackBrushTexture, renderMaskTexture, pixelUV, brushSize);
-                PaintBrush(whiteBrushTexture, renderWaterTexture, pixelUV, brushSize);
+                PaintBrush(blackBrushTexture, renderMaskTexture, pixelUV);
+                PaintBrush(whiteBrushTexture, renderWaterTexture, pixelUV);
                 curCount = initCount;
                 //SaveRenderTextureToFile(renderMaskTexture, FileName);
             }
         }
     }
-    private void PaintBrush(Texture2D brush, RenderTexture texture, Vector2 uv, float size)
+    private void PaintBrush(Texture2D brush, RenderTexture texture, Vector2 uv)
     {
         RenderTexture.active = texture;         // 페인팅을 위해 활성 렌더 텍스쳐 임시 할당
         GL.PushMatrix();                                  // 매트릭스 백업
         GL.LoadPixelMatrix(0, resolution, resolution, 0); // 알맞은 크기로 픽셀 매트릭스 설정
 
-        float brushPixelSize = brushSize * resolution * size;
+        float brushPixelSizeX = brushSizeX * resolution * brushSizeX;
+        float brushPixelSizeY = brushSizeY * resolution * brushSizeY;
         uv.x *= resolution;
         uv.y *= resolution;
 
         // 렌더 텍스쳐에 브러시 텍스쳐를 이용해 그리기
         Graphics.DrawTexture(
             new Rect(
-                uv.x - brushPixelSize * 0.5f,
-                (texture.height - uv.y) - brushPixelSize * 0.5f,
-                brushPixelSize,
-                brushPixelSize
+                uv.x - brushPixelSizeX * 0.5f,
+                (texture.height - uv.y) - brushPixelSizeY * 0.5f,
+                brushPixelSizeX,
+                brushPixelSizeY
             ),
             brush
         );

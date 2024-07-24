@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class BrushController : MonoBehaviour
 {
-    [SerializeField, Range(0.01f, 1f)] private float brushSize = 0.2f; // 브러쉬 크기 기준
+    [SerializeField, Range(0.01f, 1f)] private float brushSizeX = 0.2f; // 브러쉬 크기 기준
+    [SerializeField, Range(0.01f, 1f)] private float brushSizeY = 0.2f; // 브러쉬 크기 기준
     [SerializeField, Range(0.01f, 1f)] private float waterBrushIntensity = 0.1f;
     [SerializeField, Range(0.01f, 1f)] private float eraserBrushIntensity = 0.1f;
     [SerializeField] private ComputeShader colorRatioComputeShader;
@@ -13,11 +14,18 @@ public class BrushController : MonoBehaviour
     public Texture2D WaterBrushTexture { get; private set; } // Painter
     public Texture2D EraserBrushTexture { get; private set; } // Eraser
     public float ColorNum { get; private set; }
-    public float BrushSize
+    public float BrushSizeX
     {
         get
         {
-            return brushSize;
+            return brushSizeX;
+        }
+    }
+    public float BrushSizeY
+    {
+        get
+        {
+            return brushSizeY;
         }
     }
     public ComputeShader ColorRatioComputeShader
