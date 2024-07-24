@@ -72,7 +72,7 @@ Material:
     m_Colors:
     - Vector2_37114cb99da649d8b9bbd39bc13374e1: {r: 10, g: 10, b: 0, a: 0}
     - Vector3_bbc0a5acb4b74413a3328c75d8299449: {r: 6, g: 3, b: 10, a: 0}
-    - _DustTileling: {r: 10, g: 10, b: 0, a: 0}
+    - _DustTileling: {r: 2, g: 2, b: 0, a: 0}
     - _MainTileling: {r: 1, g: 1, b: 0, a: 0}
     - _MaskOffset: {r: -6.43, g: 3.11, b: 0, a: 0}
     - _MaskTileling: {r: 7.47, g: 4.9, b: 0, a: 0}
