@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using DG.Tweening;
 public class WashGunControl : MonoBehaviour,IObserver
 {
     private GameObject water;
@@ -31,27 +31,24 @@ public class WashGunControl : MonoBehaviour,IObserver
     {
         if (UIManager.instance.isCursor) return;
 
-        firePoint = playerCamera.position + playerCamera.forward * blockRange;
-
-        if (state.Equals(State.Hand) ||
-            state.Equals(State.Run))
-        {
-            Stop();
-            return;
-        }
 
         if (!BlockCheck())
         {
-            if (Input.GetMouseButtonDown(1) ||
-            (isAuto && Input.GetMouseButtonDown(0)))
+            firePoint = playerCamera.position + playerCamera.forward * blockRange;
+
+            if (Input.GetMouseButtonDown(1))
             {
+                if (isAuto)
+                {
+                    Stop();
+                }
                 isAuto = !isAuto;
             }
             if (Input.GetMouseButton(0) || isAuto)
             {
                 Fire();
             }
-            else if (Input.GetMouseButtonUp(0) || !isAuto)
+            else if (Input.GetMouseButtonUp(0))
             {
                 Stop();
             }
@@ -62,12 +59,18 @@ public class WashGunControl : MonoBehaviour,IObserver
         isFire = true;
         water.SetActive(true);
         stream.SetActive(true);
+        transform.DOLocalMove(new Vector3(Random.Range(-0.012f, -0.008f), Random.Range(-0.003f, 0.003f), 0.27f), 0.1f);
     }
     private void Stop()
     {
         isFire = false;
         water.SetActive(false);
         stream.SetActive(false);
+        transform.DOLocalMove(new Vector3(-0.01f, 0, 0.32f), 0.15f).OnComplete(Rebound);
+    }
+    private void Rebound()
+    {
+        transform.DOLocalMove(new Vector3(-0.01f, 0f, 0.3f), 0.05f);
     }
     private bool BlockCheck()
     {
@@ -95,5 +98,10 @@ public class WashGunControl : MonoBehaviour,IObserver
     public void UpdateState(State state)
     {
         this.state = state;
+        if (state.Equals(State.Hand) ||
+           state.Equals(State.Run))
+        {
+            Stop();
+        }
     }
 }
