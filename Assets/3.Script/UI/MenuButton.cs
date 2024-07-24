@@ -217,8 +217,8 @@ public class MenuButton : MonoBehaviour
         Start_Btn.SetActive(true);
         GameBack_Btn_Pine.SetActive(true);
         OutLine_Toggle.isOn = true;
-        information.Info_Map001();
         UIManager.instance.Mapname = "Map001";
+        information.Info_Map001();
     }
 
     public void KrustyKrab_Btu()
@@ -233,8 +233,8 @@ public class MenuButton : MonoBehaviour
         Start_Btn.SetActive(true);
         GameBack_Btn_Krusty.SetActive(true);
         OutLine_Toggle.isOn = true;
-        information.Info_Map002();
         UIManager.instance.Mapname = "Map002";
+        information.Info_Map002();
     }
 
     public void GameBack_Pine()
@@ -247,7 +247,7 @@ public class MenuButton : MonoBehaviour
         GameBack_Btn.SetActive(true);
         GameSelectShadow.SetActive(true);
         SetChoice_Toggle.SetActive(true);
-        UIManager.instance.Mapname = null;
+        UIManager.instance.Mapname = "Main";
     }
 
     public void GameBack_Krusty()
@@ -260,6 +260,6 @@ public class MenuButton : MonoBehaviour
         GameBack_Btn.SetActive(true);
         GameSelectShadow.SetActive(true);
         SetChoice_Toggle.SetActive(true);
-        UIManager.instance.Mapname = null;
+        UIManager.instance.Mapname = "Main";
     }
 }
