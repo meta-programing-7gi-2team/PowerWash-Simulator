@@ -31,6 +31,11 @@ public class WashGunControl : MonoBehaviour,IObserver
     {
         if (UIManager.instance.isCursor) return;
 
+        if (state.Equals(State.Hand) ||
+          state.Equals(State.Run))
+        {
+            return;
+        }
 
         if (!BlockCheck())
         {
