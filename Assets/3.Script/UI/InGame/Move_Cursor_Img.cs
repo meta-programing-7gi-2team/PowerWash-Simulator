@@ -6,6 +6,19 @@ using UnityEngine.UI;
 public class Move_Cursor_Img : MonoBehaviour
 {
     [SerializeField] private RectTransform moveCursor_Img;
+    [SerializeField] private RectTransform MoveObject;
+
+    [SerializeField] private bool isFollow = false;
+    [SerializeField] private Vector2 ObjectCenter;
+    [SerializeField] private float ObjectRadius;
+
+    private void Start()
+    {
+        ObjectCenter = MoveObject.localPosition;
+        ObjectRadius = MoveObject.rect.width / 2;
+
+        moveCursor_Img.gameObject.SetActive(false);
+    }
 
     private void Update()
     {
@@ -14,13 +27,27 @@ public class Move_Cursor_Img : MonoBehaviour
 
     private void Update_MousePosition()
     {
-        Vector2 mousePos = Input.mousePosition;
-        moveCursor_Img.position = mousePos;
-        //float w = moveCursor_Img.rect.width;
-        //float h = moveCursor_Img.rect.height;
-        //moveCursor_Img.position = transform_cursor.position + (new Vector3(w, h) * 0.5f);
+        Vector2 localMousePosition;
+
+        RectTransformUtility.ScreenPointToLocalPointInRectangle(MoveObject, Input.mousePosition, null, out localMousePosition);
+
+        if (Vector2.Distance(ObjectCenter, localMousePosition) <= ObjectRadius)
+        {
+            if (!isFollow)
+            {
+                moveCursor_Img.gameObject.SetActive(true);
+                isFollow = true;
+            }
+
+            moveCursor_Img.anchoredPosition = localMousePosition;
+        }
+        else
+        {
+            if (isFollow)
+            {
+                moveCursor_Img.gameObject.SetActive(false);
+                isFollow = false;
+            }
+        }
     }
-
-
-
 }
