@@ -103,5 +103,9 @@ public class GameStartCheck : MonoBehaviour
                 KrustyKrab_Btn.SetActive(true);
             }
         }
+        else
+        {
+            KrustyKrab_Btn.SetActive(false);
+        }
     }
 }
