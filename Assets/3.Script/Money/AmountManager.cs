@@ -21,8 +21,8 @@ public class AmountManager : MonoBehaviour
     #endregion
     // ---------------------------------------------------------
 
-    public string DirName = "Save";
-    private string FileName = "Amount";
+    private string DirName = DefaultName.DirName;
+    private string FileName = DefaultName.AmountFileName;
 
     [SerializeField] private GameObject buttonPrefab;
     [SerializeField] private Transform buttonParent;

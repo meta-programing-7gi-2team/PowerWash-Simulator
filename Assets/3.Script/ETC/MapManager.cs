@@ -6,7 +6,8 @@ public class MapManager
 {
     public string FileName;
     public MapSaveData mapData { get; private set; }
-    public string DirName = "Save";
+
+    private string DirName = DefaultName.DirName;
 
     // 데이터 초기화
     private void InitializeMapData()

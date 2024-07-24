@@ -67,7 +67,7 @@ public class CleanDraw : MonoBehaviour, IDustObserver, ISaveObserver
     public EnumObject.ChumBucket ChumBucket;
 
     [SerializeField] private string FileName;
-    [SerializeField] private string DirName = "Save";
+    private string DirName = DefaultName.DirName;
     private MapManager mapManager;
     private AmountManager amountManager;
     private SaveObserver saveObserver;
@@ -134,7 +134,6 @@ public class CleanDraw : MonoBehaviour, IDustObserver, ISaveObserver
     {
         mapManager = new MapManager();
         mapManager.FileName = FileName;
-        mapManager.DirName = DirName;
         mapManager.LoadMap();
 
         amountManager = FindObjectOfType<AmountManager>();

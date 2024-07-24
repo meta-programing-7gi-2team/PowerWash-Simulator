@@ -11,8 +11,8 @@ public class GameManager : MonoBehaviour
     public AmountData amountData { get; private set; }
     private float amount;
 
-    public string DirName = "Save";
-    private string FileName = "Amount";
+    private string DirName = DefaultName.DirName;
+    private string FileName = DefaultName.AmountFileName;
 
     private void Awake()
     {
