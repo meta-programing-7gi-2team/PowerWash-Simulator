@@ -245,6 +245,11 @@ public class AmountManager : MonoBehaviour
         }
         SaveMap001();
     }
+    public void SetMap001_Data(List<MapAmountData> mapAmountData)
+    {
+        Map001_AmountData = mapAmountData;
+        SaveMap001();
+    }
     public void SetMap002_Data(Process process)
     {
         Map002_ProcessData.process = process;
@@ -260,6 +265,11 @@ public class AmountManager : MonoBehaviour
                 break;
             }
         }
+        SaveMap002();
+    }
+    public void SetMap002_Data(List<MapAmountData> mapAmountData)
+    {
+        Map002_AmountData = mapAmountData;
         SaveMap002();
     }
     public List<MapAmountData> GetMap001()

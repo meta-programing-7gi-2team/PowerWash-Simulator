@@ -29,7 +29,9 @@ public class GameManager : MonoBehaviour
     }
     private void Init()
     {
+        LoadAmount();
         amount = GetAmount();
+        amountManager = FindObjectOfType<AmountManager>();
     }
     #region Amount
     public void InitializeAmount()
@@ -37,7 +39,7 @@ public class GameManager : MonoBehaviour
         amountData = new AmountData(0);
         SaveAmount();
     }
-    private void SaveAmount()
+    public void SaveAmount()
     {
         try
         {
@@ -80,20 +82,14 @@ public class GameManager : MonoBehaviour
 
         return amountData;
     }
-    public void SetAmount(float amount)
-    {
-        amountData = new AmountData(amount);
-        SaveAmount();
-    }
     public float GetAmount()
     {
-        LoadAmount();
         return amountData.Amount;
     }
     public void AddAmount(float amount)
     {
         this.amount += amount;
-        SetAmount(this.amount);
+        amountData = new AmountData(amount);
     }
     #endregion
 }
