@@ -184,6 +184,12 @@ public class Shortcut_Key_Control : MonoBehaviour
         }
     }
 
+    private void ToggleSetFunction()
+    {
+        Vector2 cursorPosition = Input.mousePosition;
+
+    }
+
     private void SetInitialText()
     {
         SetTextToSelectedToggle();
