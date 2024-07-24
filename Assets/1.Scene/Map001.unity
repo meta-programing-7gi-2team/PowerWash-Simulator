@@ -7320,7 +7320,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1982f2ab4393ccd45a05e5a4691b3397, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  brushSize: 0.3
+  brushSizeX: 0.2
+  brushSizeY: 0.14
   waterBrushIntensity: 0.1
   eraserBrushIntensity: 0.1
   colorRatioComputeShader: {fileID: 7200000, guid: 814305ab60ec2834b86ac66c5bacf94a, type: 3}
@@ -26258,8 +26259,10 @@ MonoBehaviour:
   FastOption_Btn: {fileID: 1486704937}
   FastMain_Btn: {fileID: 1804991939}
   FastQuit_Btn: {fileID: 145203010}
+  Info_Toggle: {fileID: 0}
   Info: {fileID: 0}
   D_Info: {fileID: 0}
+  Start_Btn: {fileID: 0}
 --- !u!114 &1823779587
 MonoBehaviour:
   m_ObjectHideFlags: 0

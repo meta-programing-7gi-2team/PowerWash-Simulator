@@ -11,8 +11,9 @@ public class NozzleControl : MonoBehaviour,IObserver
     [SerializeField] private PlayerState playerState;
     private WashGunControl washGun;
     private Image crosshair;
-    private float scroll;
     private State state;
+    private float scroll;
+    public static bool isVertical { get; private set; }
     public int Index { get; private set; }
     private void OnEnable()
     {
@@ -70,16 +71,16 @@ public class NozzleControl : MonoBehaviour,IObserver
     }
     private void Rotate()
     {
-        if (nozzle[Index].transform.localRotation.z > 0f)
+        if (isVertical)
         {
-
+            isVertical = false;
             nozzle[Index].GetComponent<Animator>().SetTrigger("Right");
             crosshair.GetComponent<Animator>().SetTrigger("Right");
             crosshair.transform.localRotation = Quaternion.Euler(Vector3.zero);
         }
         else
         {
-        
+            isVertical = true;
             nozzle[Index].GetComponent<Animator>().SetTrigger("Left");
             crosshair.GetComponent<Animator>().SetTrigger("Left");
             crosshair.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, 90f));

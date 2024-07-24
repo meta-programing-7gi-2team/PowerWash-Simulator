@@ -59,6 +59,7 @@ public class CleanDraw : MonoBehaviour, IDustObserver, ISaveObserver
     private float initColorRatio;
     [SerializeField] [Range(1, 100)] private int cleanRatio = 100;
     public float ColorRatio { get; private set; }
+    public float CleanRatio => cleanRatio;
 
     public EnumObject.Spongebob Spongebob;
     public EnumObject.Pineapple Pineapple;
@@ -258,8 +259,18 @@ public class CleanDraw : MonoBehaviour, IDustObserver, ISaveObserver
         GL.PushMatrix();                                  // 매트릭스 백업
         GL.LoadPixelMatrix(0, resolution, resolution, 0); // 알맞은 크기로 픽셀 매트릭스 설정
 
-        float brushPixelSizeX = brushSizeX * resolution * brushSizeX;
-        float brushPixelSizeY = brushSizeY * resolution * brushSizeY;
+        float brushPixelSizeX;
+        float brushPixelSizeY;
+        if (NozzleControl.isVertical)
+        {
+            brushPixelSizeX = brushSizeY * resolution * brushSizeY;
+            brushPixelSizeY = brushSizeX * resolution * brushSizeX;
+        }
+        else
+        {
+            brushPixelSizeX = brushSizeX * resolution * brushSizeX;
+            brushPixelSizeY = brushSizeY * resolution * brushSizeX;
+        }
         uv.x *= resolution;
         uv.y *= resolution;
 
