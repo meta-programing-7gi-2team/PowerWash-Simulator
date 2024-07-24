@@ -17,6 +17,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private Text text; // 처음 텍스트
     [SerializeField] private GameObject Button; // 버튼
     [SerializeField] private GameObject Tablet;
+    [SerializeField] private GameObject Save_Btu;
     private CanvasGroup InGame;
 
     public static string[] targetSceneName = { "Map001", "Map002" };
@@ -36,11 +37,13 @@ public class UIManager : MonoBehaviour
     private AmountManager amountManager;
     private Information_Control information;
 
-    public bool Map001_btn_clk = false;
-    public bool Map002_btn_clk = false;
+    public string Mapname;
 
     public bool isCursor { get; private set; }
     private float targetProgress = 0f;
+
+    private bool Loding;
+
     private void Awake()
     {
         if (instance == null)
@@ -57,10 +60,7 @@ public class UIManager : MonoBehaviour
     }
     private void Update()
     {
-        if (Tablet.Equals(null))
-        {
-            Tablet = GameObject.FindWithTag("Tablet");
-        }
+        if (Loding) return;
 
         string currentSceneName = SceneManager.GetActiveScene().name;
 
@@ -101,15 +101,24 @@ public class UIManager : MonoBehaviour
         text.gameObject.SetActive(false); // 텍스트 비활성화
     }
 
-    public void LoadStart(string Scene)
+    public void LoadStart()
     {
         LoadAll.SetActive(true);
-        StartCoroutine(LoadYourAsyncScene(Scene));
+        StartCoroutine(LoadYourAsyncScene(Mapname));
+        Loding = true;
+        Save_Btu.SetActive(false);
+        Tablet.transform.position = new Vector3(960, -540, 0);
 
-        if(Scene.Equals("Map001"))
+        if(Mapname.Equals("Map001"))
         {
             amountManager.GetMap001();
             amountManager.SetMap001_Data(Process.Proceeding);
+        }
+
+        if (Mapname.Equals("Map002"))
+        {
+            amountManager.GetMap002();
+            amountManager.SetMap002_Data(Process.Proceeding);
         }
 
     }
@@ -119,14 +128,10 @@ public class UIManager : MonoBehaviour
         LoadAll.SetActive(false);
         text.gameObject.SetActive(false);
         asyncLoad.allowSceneActivation = true;
+        Loding = false;
+        Save_Btu.SetActive(true);
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
-    }
-
-    public void Pineapple_Btn_Click()
-    {
-        Map001_btn_clk = true;
-        information.Info();
     }
 
     private IEnumerator LoadYourAsyncScene(string Scene)
@@ -254,7 +259,6 @@ public class UIManager : MonoBehaviour
 
         else if(Scene.Equals("Map002"))
         {
-            Map002_btn_clk = true;
             targetProgress = 0.8f;
             while (loadingSlider.value < 0.8f)
             {
