@@ -34,9 +34,10 @@ public class UIManager : MonoBehaviour
 
     private AsyncOperation asyncLoad;
     private AmountManager amountManager;
+    private Information_Control information;
 
-    public bool Map001_btn_clk;
-    public bool Map002_btn_clk;
+    public bool Map001_btn_clk = false;
+    public bool Map002_btn_clk = false;
 
     public bool isCursor { get; private set; }
     private float targetProgress = 0f;
@@ -45,6 +46,7 @@ public class UIManager : MonoBehaviour
         if (instance == null)
         {
             instance = this;
+            information = FindObjectOfType<Information_Control>();
             amountManager = FindObjectOfType<AmountManager>();
             DontDestroyOnLoad(gameObject);
         }
@@ -91,8 +93,6 @@ public class UIManager : MonoBehaviour
                 }
             }
         }
-
-
     }
 
     private void Start()
@@ -121,6 +121,12 @@ public class UIManager : MonoBehaviour
         asyncLoad.allowSceneActivation = true;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+    }
+
+    public void Pineapple_Btn_Click()
+    {
+        Map001_btn_clk = true;
+        information.Info();
     }
 
     private IEnumerator LoadYourAsyncScene(string Scene)
@@ -248,6 +254,7 @@ public class UIManager : MonoBehaviour
 
         else if(Scene.Equals("Map002"))
         {
+            Map002_btn_clk = true;
             targetProgress = 0.8f;
             while (loadingSlider.value < 0.8f)
             {
