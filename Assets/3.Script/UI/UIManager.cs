@@ -125,6 +125,9 @@ public class UIManager : MonoBehaviour
 
     public void ButtonClick()
     {
+        text.gameObject.SetActive(true);
+        loadingSlider.gameObject.SetActive(true);
+        Button.gameObject.SetActive(false);
         LoadAll.SetActive(false);
         text.gameObject.SetActive(false);
         asyncLoad.allowSceneActivation = true;

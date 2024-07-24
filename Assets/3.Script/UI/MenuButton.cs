@@ -45,17 +45,73 @@ public class MenuButton : MonoBehaviour
 
     public void SpecialButton()
     {
-
         MainMenu.SetActive(false);
         Special_Btn.SetActive(false);
         Career_Btn.SetActive(false);
         Option_Btn.SetActive(false);
+        SetChoice_Toggle.SetActive(false);
+        Pineapple_Btn.SetActive(false);
+        KrustyKrab_Btn.SetActive(false);
+        GameBack_Btn.SetActive(false);
+        GameBack_Btn_Pine.SetActive(false);
+        GameBack_Btn_Krusty.SetActive(false);
+        Info_Toggle.SetActive(false);
+        Info.SetActive(false);
+        D_Info.SetActive(false);
+        Start_Btn.SetActive(false);
         MenuShadow.SetActive(true);
         Continue_Btn.SetActive(true);
         Freedom_Btn.SetActive(true);
         Back_Btn.SetActive(true);
 
         if(FastCheck.Equals(true))
+        {
+            FastClose_Btn.SetActive(false);
+            SetChoice_Toggle.SetActive(false);
+            Pineapple_Btn.SetActive(false);
+            KrustyKrab_Btn.SetActive(false);
+            GameBack_Btn.SetActive(false);
+            GameBack_Btn_Pine.SetActive(false);
+            GameBack_Btn_Krusty.SetActive(false);
+            Info_Toggle.SetActive(false);
+            Info.SetActive(false);
+            D_Info.SetActive(false);
+            Start_Btn.SetActive(false);
+            Fast_Btn.SetActive(true);
+            FastManu.SetTrigger("FastClose");
+            FastShop_Btn.SetTrigger("FastClose");
+            FastCareer_Btn.SetTrigger("FastClose");
+            FastSpecial_Btn.SetTrigger("FastClose");
+            FastOption_Btn.SetTrigger("FastClose");
+            FastMain_Btn.SetTrigger("FastClose");
+            FastQuit_Btn.SetTrigger("FastClose");
+            FastCheck = false;
+        }
+    }
+
+    public void F_MenuButton()
+    {
+        SetChoice_Toggle.SetActive(false);
+        Pineapple_Btn.SetActive(false);
+        KrustyKrab_Btn.SetActive(false);
+        GameBack_Btn.SetActive(false);
+        GameBack_Btn_Pine.SetActive(false);
+        GameBack_Btn_Krusty.SetActive(false);
+        Info_Toggle.SetActive(false);
+        Info.SetActive(false);
+        D_Info.SetActive(false);
+        Start_Btn.SetActive(false);
+        MenuShadow.SetActive(false);
+        Continue_Btn.SetActive(false);
+        Freedom_Btn.SetActive(false);
+        Back_Btn.SetActive(false);
+
+        MainMenu.SetActive(true);
+        Special_Btn.SetActive(true);
+        Career_Btn.SetActive(true);
+        Option_Btn.SetActive(true);
+
+        if (FastCheck.Equals(true))
         {
             FastClose_Btn.SetActive(false);
             Fast_Btn.SetActive(true);

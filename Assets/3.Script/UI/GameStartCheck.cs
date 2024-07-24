@@ -24,7 +24,7 @@ public class GameStartCheck : MonoBehaviour
         process_map1 = amountManager.Map001_ProcessData.process;
         process_map2 = amountManager.Map002_ProcessData.process;
 
-        if(Toggle_New.isOn)
+        if (Toggle_New.isOn)
         {
             New();
         }
