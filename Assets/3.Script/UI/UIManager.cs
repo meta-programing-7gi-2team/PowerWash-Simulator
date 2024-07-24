@@ -109,7 +109,11 @@ public class UIManager : MonoBehaviour
         {
             if(ActiveScene.Equals(Mapname))
             {
-                Debug.Log("∞∞¿∫æ¿¿Œµ•?");
+                isCursor = false;
+                Tablet.GetComponent<RectTransform>().DOAnchorPosY(-540, 0.3f);
+                InGame.DOFade(1, 0.3f);
+                Cursor.visible = false;
+                Cursor.lockState = CursorLockMode.Locked;
             }
             else
             {
@@ -120,7 +124,11 @@ public class UIManager : MonoBehaviour
         {
             if (ActiveScene.Equals(Mapname))
             {
-                Debug.Log("∞∞¿∫æ¿¿Œµ•?");
+                isCursor = false;
+                Tablet.GetComponent<RectTransform>().DOAnchorPosY(-540, 0.3f);
+                InGame.DOFade(1, 0.3f);
+                Cursor.visible = false;
+                Cursor.lockState = CursorLockMode.Locked;
             }
             else
             {
