@@ -7,6 +7,7 @@ using UnityEngine.EventSystems;
 
 public class AmountManager : MonoBehaviour
 {
+    public static AmountManager instance = null;
     // ---------------------------------------------------------
     #region 맵1
     public List<MapAmountData> Map001_AmountData { get; private set; } = new List<MapAmountData>();
@@ -35,9 +36,16 @@ public class AmountManager : MonoBehaviour
     // 데이터 초기화
     private void Awake()
     {
-        state = EnumObject.Map.None;
-        gameObjects = new Queue<GameObject>();
-        //Init();
+        if (instance == null)
+        {
+            instance = this;
+            state = EnumObject.Map.None;
+            gameObjects = new Queue<GameObject>();
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
     public void State(EnumObject.Map state)
     {
@@ -133,7 +141,7 @@ public class AmountManager : MonoBehaviour
     // 데이터 저장
 
     #region Save
-    private void SaveMap001()
+    public void SaveMap001()
     {
         try
         {
@@ -151,7 +159,7 @@ public class AmountManager : MonoBehaviour
             Debug.LogError("Failed to save data: " + e.Message);
         }
     }
-    private void SaveMap002()
+    public void SaveMap002()
     {
         try
         {

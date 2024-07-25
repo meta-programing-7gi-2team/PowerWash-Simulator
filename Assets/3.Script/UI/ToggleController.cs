@@ -12,7 +12,6 @@ public class ToggleController : MonoBehaviour
     private Text toggle2Text;
 
     [SerializeField] private Information_Control information;
-    [SerializeField] private AmountManager amountManager;
     [SerializeField] private GameObject Information;
     [SerializeField] private GameObject Start_Btn;
 
@@ -65,14 +64,14 @@ public class ToggleController : MonoBehaviour
             Information.SetActive(false);
             Start_Btn.SetActive(false);
             D_nformation.SetActive(true);
-            amountManager.State(EnumObject.Map.Map001);
+            AmountManager.instance.State(EnumObject.Map.Map001);
         }
         else
         {
             Information.SetActive(false);
             Start_Btn.SetActive(false);
             D_nformation.SetActive(true);
-            amountManager.State(EnumObject.Map.Map002);
+            AmountManager.instance.State(EnumObject.Map.Map002);
         }
     }
 }

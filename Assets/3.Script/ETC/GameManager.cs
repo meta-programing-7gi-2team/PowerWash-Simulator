@@ -7,7 +7,6 @@ using System;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance = null;
-    private AmountManager amountManager;
     public AmountData amountData { get; private set; }
     private float amount;
 
@@ -31,7 +30,6 @@ public class GameManager : MonoBehaviour
     {
         LoadAmount();
         amount = GetAmount();
-        amountManager = FindObjectOfType<AmountManager>();
         InitializeAmountText();
     }
     #region Amount
@@ -101,28 +99,26 @@ public class GameManager : MonoBehaviour
         amountData = new AmountData(this.amount);
         if(UIManager.instance.Mapname.Equals("Map001"))
         {
-            amountManager.GetMap001();
+            AmountManager.instance.GetMap001();
 
-            for (int i = 0; i < amountManager.Map001_AmountData.Count; i++)
+            for (int i = 0; i < AmountManager.instance.Map001_AmountData.Count; i++)
             {
-                if (amountManager.Map001_AmountData[i].Name.Equals(EnumObject.GetName(moneyData.Spongebob, moneyData.Pineapple, moneyData.Patrick, moneyData.Squidward, moneyData.KrustyKrab, moneyData.ChumBucket)))
+                if (AmountManager.instance.Map001_AmountData[i].Name.Equals(EnumObject.GetName(moneyData.Spongebob, moneyData.Pineapple, moneyData.Patrick, moneyData.Squidward, moneyData.KrustyKrab, moneyData.ChumBucket)))
                 {
-                    amountManager.Map001_AmountData[i].GetAmount += moneyData.Amount;
-                    amountManager.SetMap001_Data(amountManager.Map001_AmountData[i]);
+                    AmountManager.instance.Map001_AmountData[i].GetAmount += moneyData.Amount;
                     break;
                 }
             }
         }
         else
         {
-            amountManager.GetMap002();
+            AmountManager.instance.GetMap002();
 
-            for (int i = 0; i < amountManager.Map002_AmountData.Count; i++)
+            for (int i = 0; i < AmountManager.instance.Map002_AmountData.Count; i++)
             {
-                if (amountManager.Map002_AmountData[i].Name.Equals(EnumObject.GetName(moneyData.Spongebob, moneyData.Pineapple, moneyData.Patrick, moneyData.Squidward, moneyData.KrustyKrab, moneyData.ChumBucket)))
+                if (AmountManager.instance.Map002_AmountData[i].Name.Equals(EnumObject.GetName(moneyData.Spongebob, moneyData.Pineapple, moneyData.Patrick, moneyData.Squidward, moneyData.KrustyKrab, moneyData.ChumBucket)))
                 {
-                    amountManager.Map002_AmountData[i].GetAmount += moneyData.Amount;
-                    amountManager.SetMap002_Data(amountManager.Map002_AmountData[i]);
+                    AmountManager.instance.Map002_AmountData[i].GetAmount += moneyData.Amount;
                     break;
                 }
             }
