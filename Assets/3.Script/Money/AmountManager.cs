@@ -104,10 +104,6 @@ public class AmountManager : MonoBehaviour
                 buttonTextComponent[0].text = AmountData[i].Name;
                 buttonTextComponent[1].text = AmountData[i].Amount.ToString("$0.00");
                 buttonTextComponent[2].text = AmountData[i].GetAmount.ToString("$0.00");
-
-                amount_Sum += AmountData[i].Amount;
-                getAmount_Sum += AmountData[i].GetAmount;
-                state_Sum += AmountData[i].State;
                 if (AmountData[i].State.Equals(0))
                 {
                     buttonTextComponent[3].text = "-";
@@ -127,6 +123,9 @@ public class AmountManager : MonoBehaviour
                     buttonComponent.onClick.AddListener(() => OnButtonClick(buttonTextComponent[0].text));
                 }
             }
+            amount_Sum += AmountData[i].Amount;
+            getAmount_Sum += AmountData[i].GetAmount;
+            state_Sum += AmountData[i].State;
         }
         if(UIManager.instance.Mapname.Equals("Map001"))
         {

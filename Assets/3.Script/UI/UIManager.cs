@@ -21,6 +21,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject Save_Btu;
     [SerializeField] private Slider Pineapple_Slider;
     [SerializeField] private Slider KrustyKrab_Slider;
+    [SerializeField] private Text amount_txt;
     private CanvasGroup InGame;
 
     public static string[] targetSceneName = { "Map001", "Map002" };
@@ -341,10 +342,12 @@ public class UIManager : MonoBehaviour
         if (Mapname.Equals("Map001"))
         {
             AmountManager.instance.State(EnumObject.Map.Map001);
+            amount_txt.text = string.Format("${0:0.00}/${1:0.00}", AmountManager.instance.Map001_GetAmount, AmountManager.instance.Map001_Amount);
         }
         else
         {
             AmountManager.instance.State(EnumObject.Map.Map002);
+            amount_txt.text = string.Format("${0:0.00}/${1:0.00}", AmountManager.instance.Map002_GetAmount, AmountManager.instance.Map002_Amount);
         }
     }
 
