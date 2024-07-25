@@ -15687,11 +15687,35 @@ MonoBehaviour:
   - eventID: 0
     callback:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 691685997}
+          m_TargetAssemblyTypeName: Shortcut_Key_Control, Assembly-CSharp
+          m_MethodName: OnPointerEnter
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - eventID: 1
     callback:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 691685997}
+          m_TargetAssemblyTypeName: Shortcut_Key_Control, Assembly-CSharp
+          m_MethodName: OnPointerExit
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &870065553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15715,7 +15739,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 0.050980393, g: 0.26666668, b: 0.48235294, a: 0.5882353}
     m_HighlightedColor: {r: 0.050980393, g: 0.26666668, b: 0.48235294, a: 0.5882353}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_SelectedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -19178,6 +19202,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toggle1: {fileID: 1529302969}
   toggle2: {fileID: 587212442}
+  D_nformation: {fileID: 0}
+  information: {fileID: 0}
+  Information: {fileID: 0}
+  Start_Btn: {fileID: 0}
   SelectedColor: {r: 1, g: 1, b: 1, a: 1}
   DeselectedColor: {r: 0.08627451, g: 0.5686275, b: 1, a: 1}
 --- !u!1 &1036700767
@@ -24327,7 +24355,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 691685997}
           m_TargetAssemblyTypeName: Shortcut_Key_Control, Assembly-CSharp
           m_MethodName: OnPointerEnter
           m_Mode: 3
@@ -24343,7 +24371,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 691685997}
           m_TargetAssemblyTypeName: Shortcut_Key_Control, Assembly-CSharp
           m_MethodName: OnPointerExit
           m_Mode: 3
@@ -24378,7 +24406,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 0.050980393, g: 0.26666668, b: 0.48235294, a: 0.5882353}
     m_HighlightedColor: {r: 0.050980393, g: 0.26666668, b: 0.48235294, a: 0.5882353}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_SelectedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -26378,7 +26406,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 691685997}
           m_TargetAssemblyTypeName: Shortcut_Key_Control, Assembly-CSharp
           m_MethodName: OnPointerEnter
           m_Mode: 3
@@ -26394,7 +26422,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 691685997}
           m_TargetAssemblyTypeName: Shortcut_Key_Control, Assembly-CSharp
           m_MethodName: OnPointerExit
           m_Mode: 3
@@ -26429,7 +26457,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 0.050980393, g: 0.26666668, b: 0.48235294, a: 0.5882353}
     m_HighlightedColor: {r: 0.050980393, g: 0.26666668, b: 0.48235294, a: 0.5882353}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_SelectedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -29544,7 +29572,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 691685997}
           m_TargetAssemblyTypeName: Shortcut_Key_Control, Assembly-CSharp
           m_MethodName: OnPointerEnter
           m_Mode: 3
@@ -29560,7 +29588,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 691685997}
           m_TargetAssemblyTypeName: Shortcut_Key_Control, Assembly-CSharp
           m_MethodName: OnPointerExit
           m_Mode: 3
@@ -29595,7 +29623,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 0.050980393, g: 0.26666668, b: 0.48235294, a: 0.5882353}
     m_HighlightedColor: {r: 0.050980393, g: 0.26666668, b: 0.48235294, a: 0.5882353}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_SelectedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -37550,6 +37578,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   toggle1: {fileID: 143764762}
   toggle2: {fileID: 526689659}
+  D_nformation: {fileID: 0}
+  information: {fileID: 0}
+  Information: {fileID: 0}
+  Start_Btn: {fileID: 0}
   SelectedColor: {r: 1, g: 1, b: 1, a: 1}
   DeselectedColor: {r: 0.08627451, g: 0.5686275, b: 1, a: 1}
 --- !u!1 &2078777313
