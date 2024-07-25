@@ -1,19 +1,9 @@
 fileFormatVersion: 2
-guid: 30e55c5a2252afd47935d3ac1c493bc7
+guid: e84ccadb367fba448929e7f2c5adfb94
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: SH-Bicycle_0Mat
-    second: {fileID: 2100000, guid: 3e70511724f9e5b47bbd6216631db0a6, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: SH-Bicycle_1Mat
-    second: {fileID: 2100000, guid: 3e70511724f9e5b47bbd6216631db0a6, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -41,7 +31,7 @@ ModelImporter:
     extraExposedTransformPaths: []
     extraUserProperties: []
     clipAnimations: []
-    isReadable: 1
+    isReadable: 0
   meshes:
     lODScreenPercentages: []
     globalScale: 1
