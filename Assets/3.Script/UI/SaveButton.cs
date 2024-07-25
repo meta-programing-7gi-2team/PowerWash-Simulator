@@ -27,7 +27,8 @@ public class SaveButton : MonoBehaviour
         {
             AmountManager.instance.SetMap001_Data(Process.Complete);
         }
-        else if(AmountManager.instance.Map002_AverageRatio.Equals(100))
+
+        if(AmountManager.instance.Map002_AverageRatio.Equals(100))
         {
             AmountManager.instance.SetMap001_Data(Process.Complete);
         }
