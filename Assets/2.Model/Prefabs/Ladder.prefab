@@ -258,3 +258,4 @@ MonoBehaviour:
   - {fileID: 4544979196783941190}
   - {fileID: 6289806355132169902}
   - {fileID: 6289806355132169902}
+  playerState: {fileID: 0}

@@ -2,41 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-public class F_Key_Indicator : MonoBehaviour, IObserver
+public class F_Key_Indicator : MonoBehaviour
 {
+    private Transform playerCamera;
     private CanvasGroup cg;
     private RaycastHit hit;
     [SerializeField]
     private float fadeSpeed;
     [SerializeField]
     private Text text;
-    [SerializeField] 
-    private PlayerState playerState;
-    private Transform playerCamera;
-    private State state;
+    [SerializeField]
+    private LayerMask layer;
 
-    private void Awake()
-    {
-        playerState = FindObjectOfType<PlayerState>();
-        playerCamera = Camera.main.transform;
-    }
-    private void OnEnable()
-    {
-        playerState.Register(this);
-    }
     private void Start()
     {
+        playerCamera = Camera.main.transform;
         cg = GetComponent<CanvasGroup>();
     }
     private void Update()
     {
-        if(state.Equals(State.Hand))
-        {
-            FadeOut();
-            return;
-        }
-        Physics.Raycast(playerCamera.position, playerCamera.forward, out hit, Mathf.Infinity);
-        if (hit.transform.gameObject.layer.Equals(LayerMask.NameToLayer("Pack")))
+        if(Physics.Raycast(playerCamera.position, playerCamera.forward, out hit, Mathf.Infinity, layer))
         {
             if (hit.transform.CompareTag("Patrick"))
             {
@@ -75,8 +60,4 @@ public class F_Key_Indicator : MonoBehaviour, IObserver
         }
     }
 
-    public void UpdateState(State state)
-    {
-        this.state = state;
-    }
 }
