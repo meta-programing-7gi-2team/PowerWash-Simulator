@@ -217,7 +217,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 7
   FileName: CB-Letter_6_0
-  DirName: Save
 --- !u!1 &783738471771176440
 GameObject:
   m_ObjectHideFlags: 0
@@ -342,7 +341,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1211287572552335438}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.045, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5294669041157892974}
@@ -435,7 +434,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 7
   FileName: CB-Letter_0_0
-  DirName: Save
 --- !u!1 &1718968161212330321
 GameObject:
   m_ObjectHideFlags: 0
@@ -557,7 +555,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 6
   FileName: CB-HandlePin_0_0
-  DirName: Save
 --- !u!1 &1936993985814858410
 GameObject:
   m_ObjectHideFlags: 0
@@ -679,7 +676,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 7
   FileName: CB-Letter_8_0
-  DirName: Save
 --- !u!1 &2449184863535727228
 GameObject:
   m_ObjectHideFlags: 0
@@ -801,7 +797,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 5
   FileName: CB-Handle_0_0
-  DirName: Save
 --- !u!1 &2756544003704655373
 GameObject:
   m_ObjectHideFlags: 0
@@ -923,7 +918,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 1
   FileName: CB-Door_1_0
-  DirName: Save
 --- !u!1 &2856544129878603221
 GameObject:
   m_ObjectHideFlags: 0
@@ -1045,7 +1039,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 11
   FileName: CB-Wall_1_0
-  DirName: Save
 --- !u!1 &3384986242014909485
 GameObject:
   m_ObjectHideFlags: 0
@@ -1167,7 +1160,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 3
   FileName: CB-DoorWindow_0_0
-  DirName: Save
 --- !u!1 &3564574903919250932
 GameObject:
   m_ObjectHideFlags: 0
@@ -1289,7 +1281,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 4
   FileName: CB-Glove_0
-  DirName: Save
 --- !u!1 &3702746099671425070
 GameObject:
   m_ObjectHideFlags: 0
@@ -1411,7 +1402,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 7
   FileName: CB-Letter_1_0
-  DirName: Save
 --- !u!1 &3851729206506327984
 GameObject:
   m_ObjectHideFlags: 0
@@ -1533,7 +1523,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 10
   FileName: CB-Roof_0
-  DirName: Save
 --- !u!1 &4544394710285805754
 GameObject:
   m_ObjectHideFlags: 0
@@ -1655,7 +1644,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 7
   FileName: CB-Letter_4_0
-  DirName: Save
 --- !u!1 &5090841696059753205
 GameObject:
   m_ObjectHideFlags: 0
@@ -1777,7 +1765,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 1
   FileName: CB-Door_0_0
-  DirName: Save
 --- !u!1 &5294669041157892975
 GameObject:
   m_ObjectHideFlags: 0
@@ -1957,7 +1944,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 7
   FileName: CB-Letter_2_0
-  DirName: Save
 --- !u!1 &6273360518209254727
 GameObject:
   m_ObjectHideFlags: 0
@@ -2079,7 +2065,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 3
   FileName: CB-DoorWindow_1_0
-  DirName: Save
 --- !u!1 &6515770462839483799
 GameObject:
   m_ObjectHideFlags: 0
@@ -2201,7 +2186,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 5
   FileName: CB-Handle_1_0
-  DirName: Save
 --- !u!1 &6558921661140760360
 GameObject:
   m_ObjectHideFlags: 0
@@ -2323,7 +2307,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 7
   FileName: CB-Letter_3_0
-  DirName: Save
 --- !u!1 &6595717464456589738
 GameObject:
   m_ObjectHideFlags: 0
@@ -2445,7 +2428,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 8
   FileName: CB-RimLower_0
-  DirName: Save
 --- !u!1 &6863516446782296598
 GameObject:
   m_ObjectHideFlags: 0
@@ -2567,7 +2549,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 9
   FileName: CB-RimUpper_0
-  DirName: Save
 --- !u!1 &7183091303607085384
 GameObject:
   m_ObjectHideFlags: 0
@@ -2689,7 +2670,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 6
   FileName: CB-HandlePin_1_0
-  DirName: Save
 --- !u!1 &7593549094816943388
 GameObject:
   m_ObjectHideFlags: 0
@@ -2811,7 +2791,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 7
   FileName: CB-Letter_7_0
-  DirName: Save
 --- !u!1 &7681222530146330914
 GameObject:
   m_ObjectHideFlags: 0
@@ -2933,7 +2912,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 2
   FileName: CB-DoorHandle_1_0
-  DirName: Save
 --- !u!1 &7807386144865025173
 GameObject:
   m_ObjectHideFlags: 0
@@ -3055,7 +3033,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 7
   FileName: CB-Letter_9_0
-  DirName: Save
 --- !u!1 &7847847644580573093
 GameObject:
   m_ObjectHideFlags: 0
@@ -3177,7 +3154,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 11
   FileName: CB-Wall_0_0
-  DirName: Save
 --- !u!1 &7871144586087946020
 GameObject:
   m_ObjectHideFlags: 0
@@ -3299,7 +3275,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 2
   FileName: CB-DoorHandle_0_0
-  DirName: Save
 --- !u!1 &8707381951615114070
 GameObject:
   m_ObjectHideFlags: 0
@@ -3421,4 +3396,3 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 7
   FileName: CB-Letter_5_0
-  DirName: Save
