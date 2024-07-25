@@ -139,9 +139,9 @@ public class UIManager : MonoBehaviour
     private void Load_Start()
     {
         LoadAll.SetActive(true);
-        StartCoroutine(LoadYourAsyncScene(Mapname));
-        Loding = true;
         Save_Btu.SetActive(false);
+        Loding = true;
+        StartCoroutine(LoadYourAsyncScene(Mapname));
         Tablet.transform.position = new Vector3(960, -540, 0);
 
         if (Mapname.Equals("Map001"))
@@ -571,7 +571,6 @@ public class UIManager : MonoBehaviour
             objectsWith.AddRange(FindObjectsOfType<CleanDraw>());
         }
     }
-
     public void CleanObject()
     {
         ObjectAll = 0;
@@ -587,5 +586,42 @@ public class UIManager : MonoBehaviour
             AllObjectSlider.value = Mathf.Clamp(averageRatio, 0, 100);
             AllObjectText.text = $"{Mathf.RoundToInt(AllObjectSlider.value)}%";
         }
+    }
+
+    public IEnumerator GameExitSave()
+    {
+        loadingSlider.maxValue = 1f; // 명시적으로 최대값 설정
+        loadingSlider.value = 0f; // 초기값 설정
+
+        Tablet.transform.position = new Vector3(960,-540,0);
+        LoadAll.SetActive(true);
+        Save_Btu.SetActive(false);
+        text.gameObject.SetActive(true);
+
+        targetProgress = 1f;
+
+
+        string ActiveScene = SceneManager.GetActiveScene().name;
+
+        if (ActiveScene.Equals("Map001"))
+        {
+            AmountManager.instance.SaveMap001();
+        }
+        else if(ActiveScene.Equals("Map002"))
+        {
+            AmountManager.instance.SaveMap002();
+        }
+
+        while (loadingSlider.value < 1f)
+        {
+            loadingSlider.value = Mathf.MoveTowards(loadingSlider.value, targetProgress, Time.deltaTime * 0.5f);
+            text.text = "정리 하는 중";
+            yield return null;
+        }
+
+        #if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+        #endif
+        Application.Quit();
     }
 }

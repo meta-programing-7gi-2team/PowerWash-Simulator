@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
@@ -198,11 +199,7 @@ public class MenuButton : MonoBehaviour
 
     public void GameExit()
     {
-        #if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false;
-        #endif
-
-        Application.Quit();
+        StartCoroutine(UIManager.instance.GameExitSave());
     }
 
     public void Pineapple_Btu()
