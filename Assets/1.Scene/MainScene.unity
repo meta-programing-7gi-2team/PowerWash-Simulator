@@ -1346,6 +1346,8 @@ MonoBehaviour:
   Button: {fileID: 1715460890}
   Tablet: {fileID: 1772947995}
   Save_Btu: {fileID: 1359684784}
+  Pineapple_Slider: {fileID: 247485537}
+  KrustyKrab_Slider: {fileID: 399329042}
   averageRatio: 0
   objectsWith: []
   Mapname: 
@@ -1493,6 +1495,7 @@ MonoBehaviour:
   place: {fileID: 264419524}
   Map_Img: {fileID: 203984730}
   info_txt: {fileID: 370889026}
+  amount_txt: {fileID: 2059872516}
   Npc_name_Imgs:
   - {fileID: 21300000, guid: b6ac4962ef019be4abdc7ca946709082, type: 3}
   - {fileID: 21300000, guid: 0d9a054841956844291ed70fc08531ce, type: 3}

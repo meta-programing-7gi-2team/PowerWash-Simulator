@@ -19,6 +19,8 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject Button; // 버튼
     [SerializeField] private GameObject Tablet;
     [SerializeField] private GameObject Save_Btu;
+    [SerializeField] private Slider Pineapple_Slider;
+    [SerializeField] private Slider KrustyKrab_Slider;
     private CanvasGroup InGame;
 
     public static string[] targetSceneName = { "Map001", "Map002" };
@@ -86,6 +88,7 @@ public class UIManager : MonoBehaviour
                 Cursor.visible = true;
                 Cursor.lockState = CursorLockMode.None;
                 LoadDetailData();
+                LoadSliderRatio();
             }
         }
     }
@@ -94,6 +97,7 @@ public class UIManager : MonoBehaviour
     {
         LoadAll.SetActive(false);
         text.gameObject.SetActive(false); // 텍스트 비활성화
+        LoadSliderRatio();
     }
 
     public void LoadStart()
@@ -157,6 +161,13 @@ public class UIManager : MonoBehaviour
         }
     }
 
+    private void LoadSliderRatio()
+    {
+        Pineapple_Slider.value = AmountManager.instance.Map001_AverageRatio;
+        KrustyKrab_Slider.value = AmountManager.instance.Map002_AverageRatio;
+        Pineapple_Slider.GetComponentInChildren<Text>().text = AmountManager.instance.Map001_AverageRatio.ToString();
+        KrustyKrab_Slider.GetComponentInChildren<Text>().text = AmountManager.instance.Map002_AverageRatio.ToString();
+    }
     private void LoadDetailData()
     {
         float[] Pineapple = new float[22];

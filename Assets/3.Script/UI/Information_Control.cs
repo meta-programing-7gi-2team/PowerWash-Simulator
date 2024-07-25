@@ -13,6 +13,7 @@ public class Information_Control : MonoBehaviour
     [SerializeField] private Text place;
     [SerializeField] private Image Map_Img;
     [SerializeField] private Text info_txt;
+    [SerializeField] private Text amount_txt;
 
     [SerializeField] private Sprite[] Npc_name_Imgs;
     [SerializeField] private Sprite[] Map_Imgs;
@@ -36,6 +37,9 @@ public class Information_Control : MonoBehaviour
                        "\n우리 세 명의 집을 전부 청소해준다면 게살 버거를 배가 터질 만큼 줄게! 집게사장님도 괜찮다고 하실 거야... 아마도.";
 
         Map_Img.sprite = Map_Imgs[0];
+
+        AmountManager.instance.State(EnumObject.Map.Map001);
+        amount_txt.text = string.Format("${0:0.00}/${1:0.00}", AmountManager.instance.Map001_GetAmount, AmountManager.instance.Map001_Amount);
     }
 
     public void Info_Map002()
@@ -55,5 +59,8 @@ public class Information_Control : MonoBehaviour
                         "\n내 집게리아를 최대한 빨리 청소해줘.미끼가 묻어있는 시간이 길어질수록 손해가 나니까!";
 
         Map_Img.sprite = Map_Imgs[1];
+
+        AmountManager.instance.State(EnumObject.Map.Map002);
+        amount_txt.text = string.Format("${0:0.00}/${1:0.00}", AmountManager.instance.Map002_GetAmount, AmountManager.instance.Map002_Amount);
     }
 }
