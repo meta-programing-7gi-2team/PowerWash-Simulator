@@ -20,6 +20,8 @@ public class AmountManager : MonoBehaviour
     public Process Map001_Process { get; private set; }
     public List<MoneyData> Map001_MoneyData;
     public int Map001_AverageRatio { get; private set; }
+    public float Map001_Amount { get; private set; }
+    public float Map001_GetAmount { get; private set; }
     #endregion
     // ---------------------------------------------------------
     #region ¸Ê2
@@ -27,6 +29,8 @@ public class AmountManager : MonoBehaviour
     public Process Map002_Process { get; private set; }
     public List<MoneyData> Map002_MoneyData;
     public int Map002_AverageRatio { get; private set; }
+    public float Map002_Amount { get; private set; }
+    public float Map002_GetAmount { get; private set; }
     #endregion
     // ---------------------------------------------------------
 
@@ -49,6 +53,12 @@ public class AmountManager : MonoBehaviour
             instance = this;
             state = EnumObject.Map.None;
             gameObjects = new Queue<GameObject>();
+            Map001_AverageRatio = 0;
+            Map001_GetAmount = 0;
+            Map001_Amount = 0;
+            Map002_AverageRatio = 0;
+            Map002_GetAmount = 0;
+            Map002_Amount = 0;
         }
         else
         {
@@ -118,6 +128,19 @@ public class AmountManager : MonoBehaviour
                 }
             }
         }
+        if(UIManager.instance.Mapname.Equals("Map001"))
+        {
+            Map001_AverageRatio = (int)(state_Sum / AmountData.Count);
+            Map001_GetAmount = getAmount_Sum;
+            Map001_Amount = amount_Sum;
+        }
+        else
+        {
+            Map002_AverageRatio = (int)(state_Sum / AmountData.Count);
+            Map002_GetAmount = getAmount_Sum;
+            Map002_Amount = amount_Sum;
+        }
+
         amountText.text = amount_Sum.ToString("$0.00");
         getAmountText.text = getAmount_Sum.ToString("$0.00");
         stateText.text = string.Format("{0}%", (int)(state_Sum / AmountData.Count));
@@ -153,7 +176,7 @@ public class AmountManager : MonoBehaviour
     {
         try
         {
-            string jsonData = JsonUtility.ToJson(new SerializableList<MapAmountData>(Map001_AverageRatio, Map001_Process, Map001_AmountData), true);
+            string jsonData = JsonUtility.ToJson(new SerializableList<MapAmountData>(Map001_AverageRatio, Map001_GetAmount, Map001_Amount, Map001_Process, Map001_AmountData), true);
 
             string dirName = Path.Combine(Application.dataPath, DirName);
             if (!Directory.Exists(dirName))
@@ -171,7 +194,7 @@ public class AmountManager : MonoBehaviour
     {
         try
         {
-            string jsonData = JsonUtility.ToJson(new SerializableList<MapAmountData>(Map002_AverageRatio, Map002_Process, Map002_AmountData), true);
+            string jsonData = JsonUtility.ToJson(new SerializableList<MapAmountData>(Map002_AverageRatio, Map002_GetAmount, Map002_Amount, Map002_Process, Map002_AmountData), true);
 
             string dirName = Path.Combine(Application.dataPath, DirName);
             if (!Directory.Exists(dirName))
@@ -246,11 +269,6 @@ public class AmountManager : MonoBehaviour
     }
     #endregion
 
-    public void SetMap001_Data(int averageRatio)
-    {
-        Map001_AverageRatio = averageRatio;
-        SaveMap001();
-    }
     public void SetMap001_Data(Process process)
     {
         Map001_Process = process;
@@ -272,11 +290,6 @@ public class AmountManager : MonoBehaviour
     {
         Map001_AmountData = mapAmountData;
         SaveMap001();
-    }
-    public void SetMap002_Data(int averageRatio)
-    {
-        Map002_AverageRatio = averageRatio;
-        SaveMap002();
     }
     public void SetMap002_Data(Process process)
     {
@@ -384,12 +397,16 @@ public class AmountManager : MonoBehaviour
     private class SerializableList<T>
     {
         public int averageRatio;
+        public float getAmount;
+        public float amount;
         public Process process;
         public List<T> list;
 
-        public SerializableList(int a, Process p, List<T> l)
+        public SerializableList(int a, float getAmount, float amount, Process p, List<T> l)
         {
             averageRatio = a;
+            this.getAmount = getAmount;
+            this.amount = amount;
             process = p;
             list = l;
         }
