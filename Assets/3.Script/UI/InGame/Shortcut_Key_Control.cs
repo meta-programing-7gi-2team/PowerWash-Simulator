@@ -67,30 +67,34 @@ public class Shortcut_Key_Control : MonoBehaviour
                 key1 = true;
             else if (Input.GetKey(KeyCode.Alpha2))
                 key2 = true;
-
+             
             Cursor.lockState = CursorLockMode.None;
 
             ActiveShortcut();
         }
         else if(Input.GetKeyUp(KeyCode.Alpha1) || Input.GetKeyUp(KeyCode.Alpha2))
         {
-            Ob_Back.SetActive(false);
 
-            key1 = false;
-            key2 = false;
+           Ob_Back.SetActive(false);
 
-            Cursor.lockState = CursorLockMode.Locked;
+           key1 = false;
+           key2 = false;
 
-            DisabledShortcut();
+           Cursor.lockState = CursorLockMode.Locked;
+           
+           DisabledShortcut();
         }
     }
 
     private void ActiveShortcut()
     {
-        if (Input.GetKey(KeyCode.Alpha1) && key1)
+        if(Input.GetKeyDown(KeyCode.Alpha1) && key1)
         {
             toggles[E_toggleSelect].isOn = true;
-
+            key1 = false;
+        }
+        else if (Input.GetKey(KeyCode.Alpha1))
+        {
             menuicon.sprite = icon_Img[0];
             menuname.text = "»Æ¿Â±‚";
 
@@ -103,10 +107,13 @@ public class Shortcut_Key_Control : MonoBehaviour
             }
         }
 
-        if (Input.GetKey(KeyCode.Alpha2) && key2)
+        if (Input.GetKeyDown(KeyCode.Alpha2) && key2)
         {
             toggles[N_toggleSelect].isOn = true;
-
+            key2 = false;
+        }
+        else if (Input.GetKey(KeyCode.Alpha2))
+        {
             menuicon.sprite = icon_Img[1];
             menuname.text = "≥Î¡Ò";
 
@@ -147,11 +154,13 @@ public class Shortcut_Key_Control : MonoBehaviour
 
         if (Input.GetKey(KeyCode.Alpha1))
         {
+            E_toggleSelect = index;
             togglename.text = togglenames_1[index];
         }
 
         if (Input.GetKey(KeyCode.Alpha2))
         {
+            N_toggleSelect = index;
             togglename.text = togglenames_2[index];
         }
 
@@ -200,14 +209,12 @@ public class Shortcut_Key_Control : MonoBehaviour
             {
                 if (Input.GetKey(KeyCode.Alpha1))
                 {
-                    E_toggleSelect = i;
-                    togglename.text = togglenames_1[i];
+                    togglename.text = togglenames_1[E_toggleSelect];
                 }
 
                 if (Input.GetKey(KeyCode.Alpha2))
                 {
-                    N_toggleSelect = i;
-                    togglename.text = togglenames_2[i];
+                    togglename.text = togglenames_2[N_toggleSelect];
                 }
                 break;
             }
