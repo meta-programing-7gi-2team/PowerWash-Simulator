@@ -3527,4 +3527,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fadeSpeed: 3
   text: {fileID: 6342287195239688649}
-  playerState: {fileID: 0}
+  layer:
+    serializedVersion: 2
+    m_Bits: 4096

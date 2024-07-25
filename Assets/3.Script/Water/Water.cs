@@ -8,10 +8,12 @@ public class Water : MonoBehaviour
     private Quaternion rotation;
     [SerializeField]
     private LayerMask layer;
-    private WashGunControl washGun;
-    private Transform playerCamera;
     [SerializeField]
     private float shotRange;
+
+    private WashGunControl washGun;
+    private Transform playerCamera;
+
     private void Start()
     {
         playerCamera = Camera.main.transform;
