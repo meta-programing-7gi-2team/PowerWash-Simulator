@@ -1,19 +1,9 @@
 fileFormatVersion: 2
-guid: 3a5d24bd8cad2f9459fcfa4cbad2dddc
+guid: c0d42ffc7a188644fae16d162b7a9ec0
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: SH-RoofChair_0Mat
-    second: {fileID: 2100000, guid: 0c3b8d1f94f58e44aa535255b4946335, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: SH-RoofChair_1Mat
-    second: {fileID: 2100000, guid: 0c3b8d1f94f58e44aa535255b4946335, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -41,7 +31,7 @@ ModelImporter:
     extraExposedTransformPaths: []
     extraUserProperties: []
     clipAnimations: []
-    isReadable: 1
+    isReadable: 0
   meshes:
     lODScreenPercentages: []
     globalScale: 1

@@ -121,7 +121,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SH-Bicycle_1
-  DirName: Save
 --- !u!1 &618717057957896043
 GameObject:
   m_ObjectHideFlags: 0
@@ -243,7 +242,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SH-Ear_0_0
-  DirName: Save
 --- !u!1 &810112000955291828
 GameObject:
   m_ObjectHideFlags: 0
@@ -365,8 +363,7 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SH-PortholeWindow_1_0
-  DirName: Save
---- !u!1 &914661544049778202
+--- !u!1 &1312935174661984941
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -374,47 +371,47 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7095371079674662713}
-  - component: {fileID: 4069473089313278789}
-  - component: {fileID: 697243531747755919}
-  - component: {fileID: 6762576455336725670}
-  - component: {fileID: 6762576455336725667}
+  - component: {fileID: 7822282974019830166}
+  - component: {fileID: 4925103697512102108}
+  - component: {fileID: 8465854253339565128}
+  - component: {fileID: 906742738130615859}
+  - component: {fileID: 1913177887622957621}
   m_Layer: 10
-  m_Name: SH-RoofChair_1
+  m_Name: SH-RoofChair
   m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7095371079674662713
+--- !u!4 &7822282974019830166
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 914661544049778202}
+  m_GameObject: {fileID: 1312935174661984941}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6762576455338149248}
-  m_RootOrder: 18
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &4069473089313278789
+--- !u!33 &4925103697512102108
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 914661544049778202}
-  m_Mesh: {fileID: -5305443500421883529, guid: 3a5d24bd8cad2f9459fcfa4cbad2dddc, type: 3}
---- !u!23 &697243531747755919
+  m_GameObject: {fileID: 1312935174661984941}
+  m_Mesh: {fileID: -2432090755550338912, guid: c0d42ffc7a188644fae16d162b7a9ec0, type: 3}
+--- !u!23 &8465854253339565128
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 914661544049778202}
+  m_GameObject: {fileID: 1312935174661984941}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -449,27 +446,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &6762576455336725670
+--- !u!64 &906742738130615859
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 914661544049778202}
+  m_GameObject: {fileID: 1312935174661984941}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: -5305443500421883529, guid: 3a5d24bd8cad2f9459fcfa4cbad2dddc, type: 3}
---- !u!114 &6762576455336725667
+  m_Mesh: {fileID: -2432090755550338912, guid: c0d42ffc7a188644fae16d162b7a9ec0, type: 3}
+--- !u!114 &1913177887622957621
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 914661544049778202}
+  m_GameObject: {fileID: 1312935174661984941}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
@@ -486,8 +483,7 @@ MonoBehaviour:
   Squidward: 14
   KrustyKrab: 0
   ChumBucket: 0
-  FileName: SH-RoofChair_1
-  DirName: Save
+  FileName: SH-RoofChair
 --- !u!1 &1728891972575711938
 GameObject:
   m_ObjectHideFlags: 0
@@ -609,7 +605,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SH-Bicycle_0
-  DirName: Save
 --- !u!1 &2635607001620687969
 GameObject:
   m_ObjectHideFlags: 0
@@ -731,7 +726,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SH-PortholeWindow_0_0
-  DirName: Save
 --- !u!1 &2790452472178796644
 GameObject:
   m_ObjectHideFlags: 0
@@ -853,7 +847,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SH-PortholeFrame_0_0
-  DirName: Save
 --- !u!1 &3391204019168053658
 GameObject:
   m_ObjectHideFlags: 0
@@ -975,7 +968,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SH-RearWindowFrame_0
-  DirName: Save
 --- !u!1 &3731761446384368473
 GameObject:
   m_ObjectHideFlags: 0
@@ -1097,129 +1089,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SH-Nose_0
-  DirName: Save
---- !u!1 &4884508018167562485
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5739214954338386966}
-  - component: {fileID: 3147102102947416919}
-  - component: {fileID: 7798669783492389008}
-  - component: {fileID: 6762576455618235853}
-  - component: {fileID: 6762576455618235850}
-  m_Layer: 10
-  m_Name: SH-RoofChair_0
-  m_TagString: Object
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5739214954338386966
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4884508018167562485}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 6762576455338149248}
-  m_RootOrder: 17
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &3147102102947416919
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4884508018167562485}
-  m_Mesh: {fileID: 6267168404813576143, guid: 3a5d24bd8cad2f9459fcfa4cbad2dddc, type: 3}
---- !u!23 &7798669783492389008
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4884508018167562485}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 2cc3262ba199ead45941bdb7201cc3d8, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &6762576455618235853
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4884508018167562485}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 6267168404813576143, guid: 3a5d24bd8cad2f9459fcfa4cbad2dddc, type: 3}
---- !u!114 &6762576455618235850
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4884508018167562485}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  resolution: 128
-  renderMaskTexture: {fileID: 0}
-  renderWaterTexture: {fileID: 0}
-  maskTexture: {fileID: 2800000, guid: 1fdf45dc3bbc10942af23af92843f94c, type: 3}
-  cleanRatio: 95
-  Spongebob: 2
-  Pineapple: 0
-  Patrick: 0
-  Squidward: 14
-  KrustyKrab: 0
-  ChumBucket: 0
-  FileName: SH-RoofChair_0
-  DirName: Save
 --- !u!1 &5041774049914645992
 GameObject:
   m_ObjectHideFlags: 0
@@ -1341,7 +1210,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SH-Brow_0
-  DirName: Save
 --- !u!1 &5051328981405561287
 GameObject:
   m_ObjectHideFlags: 0
@@ -1463,7 +1331,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SH-DoorKnob_0
-  DirName: Save
 --- !u!1 &5100873878195614090
 GameObject:
   m_ObjectHideFlags: 0
@@ -1496,7 +1363,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6762576455338149248}
-  m_RootOrder: 20
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6339252059498719617
 MeshFilter:
@@ -1585,7 +1452,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SH-Step_1_0
-  DirName: Save
 --- !u!1 &5232928814058927858
 GameObject:
   m_ObjectHideFlags: 0
@@ -1707,7 +1573,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SH-RearWindow_0
-  DirName: Save
 --- !u!1 &5613241411562017177
 GameObject:
   m_ObjectHideFlags: 0
@@ -1740,7 +1605,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6762576455338149248}
-  m_RootOrder: 22
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &3605432188944650708
 MeshFilter:
@@ -1829,7 +1694,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SH-Step_3_0
-  DirName: Save
 --- !u!1 &5786978842211419734
 GameObject:
   m_ObjectHideFlags: 0
@@ -1951,7 +1815,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SH-Roof_0
-  DirName: Save
 --- !u!1 &6573683330660322235
 GameObject:
   m_ObjectHideFlags: 0
@@ -2073,7 +1936,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SH-Door_0
-  DirName: Save
 --- !u!1 &6762576455338149311
 GameObject:
   m_ObjectHideFlags: 0
@@ -2118,12 +1980,11 @@ Transform:
   - {fileID: 2576629247406933571}
   - {fileID: 6990601884262403260}
   - {fileID: 3211494826187036223}
-  - {fileID: 5739214954338386966}
-  - {fileID: 7095371079674662713}
   - {fileID: 8246239188526179668}
   - {fileID: 762625597313928030}
   - {fileID: 490487561448658166}
   - {fileID: 3694657922236112345}
+  - {fileID: 7822282974019830166}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
@@ -2248,7 +2109,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SH-Head_0
-  DirName: Save
 --- !u!1 &7722282374908531594
 GameObject:
   m_ObjectHideFlags: 0
@@ -2370,7 +2230,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SH-PortholeFrame_1_0
-  DirName: Save
 --- !u!1 &7978178993357634815
 GameObject:
   m_ObjectHideFlags: 0
@@ -2492,7 +2351,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SH-DoorAlcove_0
-  DirName: Save
 --- !u!1 &8459835893821448340
 GameObject:
   m_ObjectHideFlags: 0
@@ -2525,7 +2383,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6762576455338149248}
-  m_RootOrder: 21
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2751102179986298441
 MeshFilter:
@@ -2614,7 +2472,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SH-Step_2_0
-  DirName: Save
 --- !u!1 &8475703479604097723
 GameObject:
   m_ObjectHideFlags: 0
@@ -2736,7 +2593,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SH-Ear_1_0
-  DirName: Save
 --- !u!1 &8526297005851808124
 GameObject:
   m_ObjectHideFlags: 0
@@ -2769,7 +2625,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6762576455338149248}
-  m_RootOrder: 19
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7693571894061624289
 MeshFilter:
@@ -2858,4 +2714,3 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SH-Step_0_0
-  DirName: Save

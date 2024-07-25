@@ -1346,6 +1346,7 @@ MonoBehaviour:
   Button: {fileID: 1715460890}
   Tablet: {fileID: 1772947995}
   Save_Btu: {fileID: 1359684784}
+  averageRatio: 0
   objectsWith: []
   Mapname: 
 --- !u!114 &87534277
@@ -18481,7 +18482,6 @@ MonoBehaviour:
   toggle2: {fileID: 996465886}
   D_nformation: {fileID: 644373601}
   information: {fileID: 87534282}
-  amountManager: {fileID: 1462400336}
   Information: {fileID: 1809311282}
   Start_Btn: {fileID: 1933591320}
   SelectedColor: {r: 1, g: 1, b: 1, a: 1}
