@@ -90,7 +90,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 618723826063153319}
-  - component: {fileID: 278649945599296016}
   - component: {fileID: 278649945599296030}
   - component: {fileID: 278649945599296031}
   - component: {fileID: 278649945599296017}
@@ -118,25 +117,6 @@ Transform:
   m_Father: {fileID: 4850011420331751545}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &278649945599296016
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 278649945599296029}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f20f28f98d06689428595afd6c251160, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &278649945599296030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -204,7 +184,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2193772557858373449}
-  - component: {fileID: 1529543992269972982}
   m_Layer: 0
   m_Name: Nozzle_15
   m_TagString: Untagged
@@ -229,25 +208,6 @@ Transform:
   m_Father: {fileID: 4850011419956703423}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &1529543992269972982
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1529543992269972979}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 98e62156e343d254e94ee8c29c09540f, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3164037257888336890
 GameObject:
   m_ObjectHideFlags: 0
@@ -668,7 +628,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerBody: {fileID: 4850011421239420781}
-  playerState: {fileID: 4850011421239420769}
 --- !u!114 &4850011419808336527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -911,7 +870,6 @@ GameObject:
   - component: {fileID: 4850011421239420780}
   - component: {fileID: 4850011421239420779}
   - component: {fileID: 4850011421239420778}
-  - component: {fileID: 4850011421239420783}
   - component: {fileID: 4850011421239420769}
   - component: {fileID: 4850011421239420777}
   - component: {fileID: 2805770286619948167}
@@ -1004,25 +962,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0
   m_Center: {x: 0, y: 0, z: 0}
---- !u!95 &4850011421239420783
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4850011421239420776}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f64c4e5142bbe0440a400e4df2ffe879, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &4850011421239420769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1047,6 +986,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca6feef5a4820bf43bfa8db6271dfc27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rightHand: {fileID: 4850011420331751545}
   playerState: {fileID: 4850011421239420769}
   speed: 3
   speedWeight: 1
@@ -1154,7 +1094,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6804615237853458962}
-  - component: {fileID: 6135320157310380202}
   m_Layer: 0
   m_Name: Nozzle_0
   m_TagString: Untagged
@@ -1179,25 +1118,6 @@ Transform:
   m_Father: {fileID: 4850011419956703423}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &6135320157310380202
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6135320157310380200}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 98e62156e343d254e94ee8c29c09540f, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6228509629337115841
 GameObject:
   m_ObjectHideFlags: 0
@@ -1207,7 +1127,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6718187769678349947}
-  - component: {fileID: 6228509629337115844}
   m_Layer: 0
   m_Name: Nozzle_25
   m_TagString: Untagged
@@ -1232,25 +1151,6 @@ Transform:
   m_Father: {fileID: 4850011419956703423}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &6228509629337115844
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6228509629337115841}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 98e62156e343d254e94ee8c29c09540f, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6421578358722219599
 GameObject:
   m_ObjectHideFlags: 0
@@ -1617,7 +1517,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8981981163547515164}
-  - component: {fileID: 8641766579497829273}
   m_Layer: 0
   m_Name: Nozzle_40
   m_TagString: Untagged
@@ -1642,25 +1541,6 @@ Transform:
   m_Father: {fileID: 4850011419956703423}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &8641766579497829273
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8641766579497829286}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 98e62156e343d254e94ee8c29c09540f, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &8996539734605702757
 GameObject:
   m_ObjectHideFlags: 0
