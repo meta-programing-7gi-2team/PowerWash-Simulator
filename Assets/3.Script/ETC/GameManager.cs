@@ -95,15 +95,15 @@ public class GameManager : MonoBehaviour
     }
     public void AddAmount(MoneyData moneyData)
     {
-        this.amount += moneyData.Amount;
-        amountData = new AmountData(this.amount);
         if(UIManager.instance.Mapname.Equals("Map001"))
         {
             for (int i = 0; i < AmountManager.instance.Map001_AmountData.Count; i++)
             {
                 if (AmountManager.instance.Map001_AmountData[i].Name.Equals(EnumObject.GetName(moneyData.Spongebob, moneyData.Pineapple, moneyData.Patrick, moneyData.Squidward, moneyData.KrustyKrab, moneyData.ChumBucket)))
                 {
-                    AmountManager.instance.Map001_AmountData[i].GetAmount += moneyData.Amount;
+                    this.amount += moneyData.Amount / AmountManager.instance.Map001_AmountData[i].Cnt;
+                    amountData = new AmountData(this.amount);
+                    AmountManager.instance.Map001_AmountData[i].GetAmount += moneyData.Amount / AmountManager.instance.Map001_AmountData[i].Cnt;
                     break;
                 }
             }
@@ -114,7 +114,9 @@ public class GameManager : MonoBehaviour
             {
                 if (AmountManager.instance.Map002_AmountData[i].Name.Equals(EnumObject.GetName(moneyData.Spongebob, moneyData.Pineapple, moneyData.Patrick, moneyData.Squidward, moneyData.KrustyKrab, moneyData.ChumBucket)))
                 {
-                    AmountManager.instance.Map002_AmountData[i].GetAmount += moneyData.Amount;
+                    this.amount += moneyData.Amount / AmountManager.instance.Map002_AmountData[i].Cnt;
+                    amountData = new AmountData(this.amount);
+                    AmountManager.instance.Map002_AmountData[i].GetAmount += moneyData.Amount / AmountManager.instance.Map002_AmountData[i].Cnt;
                     break;
                 }
             }

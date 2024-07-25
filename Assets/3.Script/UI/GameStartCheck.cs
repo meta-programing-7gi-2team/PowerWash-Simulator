@@ -18,8 +18,8 @@ public class GameStartCheck : MonoBehaviour
         AmountManager.instance.GetMap001();
         AmountManager.instance.GetMap002();
 
-        process_map1 = AmountManager.instance.Map001_ProcessData.process;
-        process_map2 = AmountManager.instance.Map002_ProcessData.process;
+        process_map1 = AmountManager.instance.Map001_Process;
+        process_map2 = AmountManager.instance.Map002_Process;
 
         if (Toggle_New.isOn)
         {
