@@ -301,13 +301,14 @@ public class CleanDraw : MonoBehaviour, IDustObserver, ISaveObserver
         // 물 텍스처 흐리게
         ApplyFadeEffect(renderWaterTexture, fadeAmount);
     }
+
     private void ApplyCalculateRatio()
     {
         if (ColorRatio < cleanRatio)
         {
             float colorRatio = CalculateColorRatio(renderMaskTexture) - initColorRatio;
             ColorRatio = (colorRatio * 100.0f) / (1.0f - initColorRatio);
-            UIManager.instance.AllObjcetList();
+            UIManager.instance.CleanObject();
         }
         else if(!isCleanCheck)
         {

@@ -1,9 +1,10 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using DG.Tweening;
+
 public class UIManager : MonoBehaviour
 {
     public static UIManager instance = null;
@@ -11,20 +12,23 @@ public class UIManager : MonoBehaviour
     private CleanPercent percent;
 
     [SerializeField] private GameObject LoadAll;
-    [SerializeField] private Slider loadingSlider; // ·Îµù¹Ù
-    [SerializeField] private Slider AllObjectSlider; // ¸ğµç¿ÀºêÁ§Æ®°ÔÀÌÁö
-    [SerializeField] private Text AllObjectText; // ¸ğµç¿ÀºêÁ§Æ®ÅØ½ºÆ®
-    [SerializeField] private Text text; // Ã³À½ ÅØ½ºÆ®
-    [SerializeField] private GameObject Button; // ¹öÆ°
+    [SerializeField] private Slider loadingSlider; // ë¡œë”©ë°”
+    [SerializeField] private Slider AllObjectSlider; // ëª¨ë“ ì˜¤ë¸Œì íŠ¸ê²Œì´ì§€
+    [SerializeField] private Text AllObjectText; // ëª¨ë“ ì˜¤ë¸Œì íŠ¸í…ìŠ¤íŠ¸
+    [SerializeField] private Text text; // ì²˜ìŒ í…ìŠ¤íŠ¸
+    [SerializeField] private GameObject Button; // ë²„íŠ¼
     [SerializeField] private GameObject Tablet;
     [SerializeField] private GameObject Save_Btu;
     private CanvasGroup InGame;
 
     public static string[] targetSceneName = { "Map001", "Map002" };
 
-    private float ObjectAll;
+    [SerializeField] private float ObjectAll;
+    [SerializeField] private float averageRatio;
 
     public List<CleanDraw> objectsWith = new List<CleanDraw>();
+    //public List<GameObject> objectsWith = new List<GameObject>();
+
 
     private bool Pineapple;
     private bool Squidward;
@@ -90,7 +94,7 @@ public class UIManager : MonoBehaviour
     private void Start()
     {
         LoadAll.SetActive(false);
-        text.gameObject.SetActive(false); // ÅØ½ºÆ® ºñÈ°¼ºÈ­
+        text.gameObject.SetActive(false); // í…ìŠ¤íŠ¸ ë¹„í™œì„±í™”
     }
 
     public void LoadStart()
@@ -172,10 +176,10 @@ public class UIManager : MonoBehaviour
     private IEnumerator LoadYourAsyncScene(string Scene)
     {
 
-        loadingSlider.maxValue = 1f; // ¸í½ÃÀûÀ¸·Î ÃÖ´ë°ª ¼³Á¤
-        loadingSlider.value = 0f; // ÃÊ±â°ª ¼³Á¤
+        loadingSlider.maxValue = 1f; // ëª…ì‹œì ìœ¼ë¡œ ìµœëŒ€ê°’ ì„¤ì •
+        loadingSlider.value = 0f; // ì´ˆê¸°ê°’ ì„¤ì •
 
-        // ÅØ½ºÆ® ÃÊ±âÈ­
+        // í…ìŠ¤íŠ¸ ì´ˆê¸°í™”
         text.gameObject.SetActive(true);
 
         asyncLoad = SceneManager.LoadSceneAsync(Scene);
@@ -184,7 +188,7 @@ public class UIManager : MonoBehaviour
         while (loadingSlider.value < 0.3f)
         {
             loadingSlider.value = Mathf.MoveTowards(loadingSlider.value, targetProgress, Time.deltaTime * 0.3f);
-            text.text = "Á¤¸® ÇÏ´Â Áß";
+            text.text = "ì •ë¦¬ í•˜ëŠ” ì¤‘";
             yield return null;
         }
 
@@ -192,7 +196,7 @@ public class UIManager : MonoBehaviour
         while (loadingSlider.value < 0.6f)
         {
             loadingSlider.value = Mathf.MoveTowards(loadingSlider.value, targetProgress, Time.deltaTime * 0.3f);
-            text.text = "·¹º§ ·Îµå Áß";
+            text.text = "ë ˆë²¨ ë¡œë“œ ì¤‘";
             yield return null;
 
         }
@@ -208,7 +212,7 @@ public class UIManager : MonoBehaviour
                     while (!resourceRequest.isDone)
                     {
                         loadingSlider.value = Mathf.MoveTowards(loadingSlider.value, targetProgress, Time.deltaTime * 0.5f);
-                        text.text = "¿À¿° ·Îµå Áß";
+                        text.text = "ì˜¤ì—¼ ë¡œë“œ ì¤‘";
                         yield return null;
                     }
                     Instantiate(resourceRequest.asset);
@@ -217,7 +221,7 @@ public class UIManager : MonoBehaviour
                 else
                 {
                     loadingSlider.value = Mathf.MoveTowards(loadingSlider.value, targetProgress, Time.deltaTime * 0.5f);
-                    text.text = "¿À¿° ·Îµå Áß";
+                    text.text = "ì˜¤ì—¼ ë¡œë“œ ì¤‘";
                     yield return null;
                 }
             }
@@ -231,7 +235,7 @@ public class UIManager : MonoBehaviour
                     while (!resourceRequest.isDone)
                     {
                         loadingSlider.value = Mathf.MoveTowards(loadingSlider.value, targetProgress, Time.deltaTime * 0.5f);
-                        text.text = "¿À¿° ·Îµå Áß";
+                        text.text = "ì˜¤ì—¼ ë¡œë“œ ì¤‘";
                         yield return null;
                     }
                     Instantiate(resourceRequest.asset);
@@ -240,7 +244,7 @@ public class UIManager : MonoBehaviour
                 else
                 {
                     loadingSlider.value = Mathf.MoveTowards(loadingSlider.value, targetProgress, Time.deltaTime * 0.5f);
-                    text.text = "¿À¿° ·Îµå Áß";
+                    text.text = "ì˜¤ì—¼ ë¡œë“œ ì¤‘";
                     yield return null;
                 }
             }
@@ -254,7 +258,7 @@ public class UIManager : MonoBehaviour
                     while (!resourceRequest.isDone)
                     {
                         loadingSlider.value = Mathf.MoveTowards(loadingSlider.value, targetProgress, Time.deltaTime * 0.5f);
-                        text.text = "¿À¿° ·Îµå Áß";
+                        text.text = "ì˜¤ì—¼ ë¡œë“œ ì¤‘";
                         yield return null;
                     }
                     Instantiate(resourceRequest.asset);
@@ -263,7 +267,7 @@ public class UIManager : MonoBehaviour
                 else
                 {
                     loadingSlider.value = Mathf.MoveTowards(loadingSlider.value, targetProgress, Time.deltaTime * 0.5f);
-                    text.text = "¿À¿° ·Îµå Áß";
+                    text.text = "ì˜¤ì—¼ ë¡œë“œ ì¤‘";
                     yield return null;
                 }
             }
@@ -277,7 +281,7 @@ public class UIManager : MonoBehaviour
                     while (!resourceRequest.isDone)
                     {
                         loadingSlider.value = Mathf.MoveTowards(loadingSlider.value, targetProgress, Time.deltaTime * 0.5f);
-                        text.text = "¿À¿° ·Îµå Áß";
+                        text.text = "ì˜¤ì—¼ ë¡œë“œ ì¤‘";
                         yield return null;
                     }
                     Instantiate(resourceRequest.asset);
@@ -286,7 +290,7 @@ public class UIManager : MonoBehaviour
                 else
                 {
                     loadingSlider.value = Mathf.MoveTowards(loadingSlider.value, targetProgress, Time.deltaTime * 0.5f);
-                    text.text = "¿À¿° ·Îµå Áß";
+                    text.text = "ì˜¤ì—¼ ë¡œë“œ ì¤‘";
                     yield return null;
                 }
             }
@@ -303,7 +307,7 @@ public class UIManager : MonoBehaviour
                     while (!resourceRequest.isDone)
                     {
                         loadingSlider.value = Mathf.MoveTowards(loadingSlider.value, targetProgress, Time.deltaTime * 0.5f);
-                        text.text = "¿À¿° ·Îµå Áß";
+                        text.text = "ì˜¤ì—¼ ë¡œë“œ ì¤‘";
                         yield return null;
                     }
                     Instantiate(resourceRequest.asset);
@@ -312,7 +316,7 @@ public class UIManager : MonoBehaviour
                 else
                 {
                     loadingSlider.value = Mathf.MoveTowards(loadingSlider.value, targetProgress, Time.deltaTime * 0.5f);
-                    text.text = "¿À¿° ·Îµå Áß";
+                    text.text = "ì˜¤ì—¼ ë¡œë“œ ì¤‘";
                     yield return null;
                 }
             }
@@ -326,7 +330,7 @@ public class UIManager : MonoBehaviour
                     while (!resourceRequest.isDone)
                     {
                         loadingSlider.value = Mathf.MoveTowards(loadingSlider.value, targetProgress, Time.deltaTime * 0.5f);
-                        text.text = "¿À¿° ·Îµå Áß";
+                        text.text = "ì˜¤ì—¼ ë¡œë“œ ì¤‘";
                         yield return null;
                     }
                     Instantiate(resourceRequest.asset);
@@ -335,7 +339,7 @@ public class UIManager : MonoBehaviour
                 else
                 {
                     loadingSlider.value = Mathf.MoveTowards(loadingSlider.value, targetProgress, Time.deltaTime * 0.5f);
-                    text.text = "¿À¿° ·Îµå Áß";
+                    text.text = "ì˜¤ì—¼ ë¡œë“œ ì¤‘";
                     yield return null;
                 }
             }
@@ -343,11 +347,11 @@ public class UIManager : MonoBehaviour
 
         text.gameObject.SetActive(false);
         loadingSlider.gameObject.SetActive(false);
-        Button.gameObject.SetActive(true); // ·ÎµùÀÌ ¿Ï·áµÇ¸é ¹öÆ°À» È°¼ºÈ­
-        Slidersetting();
-        AllObjcetList();
+        Button.gameObject.SetActive(true); // ë¡œë”©ì´ ì™„ë£Œë˜ë©´ ë²„íŠ¼ì„ í™œì„±í™”
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
+        Slidersetting();
+        Allobject();
     }
 
     private void Slidersetting()
@@ -370,13 +374,16 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    public void AllObjcetList()
+    public void Allobject()
     {
         if (objectsWith == null || objectsWith.Count == 0)
         {
             objectsWith.AddRange(FindObjectsOfType<CleanDraw>());
         }
+    }
 
+    public void CleanObject()
+    {
         ObjectAll = 0;
 
         foreach (CleanDraw obj in objectsWith)
@@ -386,7 +393,7 @@ public class UIManager : MonoBehaviour
 
         if (AllObjectSlider != null && AllObjectText != null)
         {
-            float averageRatio = ObjectAll / objectsWith.Count;
+            averageRatio = ObjectAll / objectsWith.Count;
             AllObjectSlider.value = Mathf.Clamp(averageRatio, 0, 100);
             AllObjectText.text = $"{Mathf.RoundToInt(AllObjectSlider.value)}%";
         }
