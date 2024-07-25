@@ -345,7 +345,6 @@ public class UIManager : MonoBehaviour
         Button.gameObject.SetActive(false);
         LoadAll.SetActive(false);
         text.gameObject.SetActive(false);
-        asyncLoad.allowSceneActivation = true;
         Loding = false;
         Save_Btu.SetActive(true);
         Cursor.visible = false;
@@ -371,16 +370,28 @@ public class UIManager : MonoBehaviour
             yield return null;
         }
 
+        string ActiveScene = SceneManager.GetActiveScene().name;
+
+        if(ActiveScene.Equals("Map001"))
+        {
+            AmountManager.instance.SaveMap001();
+        }
+        else if (ActiveScene.Equals("Map002"))
+        {
+            AmountManager.instance.SaveMap002();
+        }
+
         targetProgress = 0.6f;
         while (loadingSlider.value < 0.6f)
         {
             loadingSlider.value = Mathf.MoveTowards(loadingSlider.value, targetProgress, Time.deltaTime * 0.3f);
             text.text = "레벨 로드 중";
             yield return null;
-
         }
 
-        if(Scene.Equals("Map001"))
+        asyncLoad.allowSceneActivation = true;
+
+        if (Scene.Equals("Map001"))
         {
             targetProgress = 0.7f;
             while (loadingSlider.value < 0.7f)
