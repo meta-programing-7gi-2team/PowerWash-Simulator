@@ -2029,7 +2029,7 @@ MonoBehaviour:
   Pineapple: 0
   Patrick: 0
   Squidward: 0
-  KrustyKrab: 28
+  KrustyKrab: 31
   ChumBucket: 0
   FileName: KK-Window_0_0
 --- !u!1 &1701710353185218819
@@ -2143,7 +2143,7 @@ GameObject:
   - component: {fileID: 2714473071516097146}
   m_Layer: 13
   m_Name: KK-SignPole
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
