@@ -26,13 +26,6 @@ public class UIManager : MonoBehaviour
 
     public static string[] targetSceneName = { "Map001", "Map002" };
 
-    private float ObjectAll;
-    [SerializeField] private float averageRatio;
-
-    public List<CleanDraw> objectsWith = new List<CleanDraw>();
-    //public List<GameObject> objectsWith = new List<GameObject>();
-
-
     private bool Pineapple;
     private bool Squidward;
     private bool Patrick;
@@ -41,7 +34,6 @@ public class UIManager : MonoBehaviour
     private bool ChumBucket;
 
     private AsyncOperation asyncLoad;
-    private Information_Control information;
 
     public string Mapname;
 
@@ -55,7 +47,6 @@ public class UIManager : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            information = FindObjectOfType<Information_Control>();
             DontDestroyOnLoad(gameObject);
         }
         else
@@ -66,6 +57,11 @@ public class UIManager : MonoBehaviour
     private void Update()
     {
         if (Loding) return;
+
+        if (Time.frameCount % 120 == 0) // 120 프레임(2초)마다 페이드 적용
+        {
+            LoadDetailData();
+        }
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
@@ -166,8 +162,8 @@ public class UIManager : MonoBehaviour
     {
         Pineapple_Slider.value = AmountManager.instance.Map001_AverageRatio;
         KrustyKrab_Slider.value = AmountManager.instance.Map002_AverageRatio;
-        Pineapple_Slider.GetComponentInChildren<Text>().text = AmountManager.instance.Map001_AverageRatio.ToString();
-        KrustyKrab_Slider.GetComponentInChildren<Text>().text = AmountManager.instance.Map002_AverageRatio.ToString();
+        Pineapple_Slider.GetComponentInChildren<Text>().text = string.Format("{0}%", AmountManager.instance.Map001_AverageRatio.ToString());
+        KrustyKrab_Slider.GetComponentInChildren<Text>().text = string.Format("{0}%", AmountManager.instance.Map002_AverageRatio.ToString());
     }
     private void LoadDetailData()
     {
@@ -555,7 +551,6 @@ public class UIManager : MonoBehaviour
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
         Slidersetting();
-        Allobject();
     }
 
     private void Slidersetting()
@@ -578,26 +573,18 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    public void Allobject()
-    {
-        if (objectsWith == null || objectsWith.Count == 0)
-        {
-            objectsWith.AddRange(FindObjectsOfType<CleanDraw>());
-        }
-    }
     public void CleanObject()
     {
-        ObjectAll = 0;
-
-        foreach (CleanDraw obj in objectsWith)
-        {
-            ObjectAll += obj.ColorRatio;
-        }
-
         if (AllObjectSlider != null && AllObjectText != null)
         {
-            averageRatio = ObjectAll / objectsWith.Count;
-            AllObjectSlider.value = Mathf.Clamp(averageRatio, 0, 100);
+            if(Mapname.Equals("Map001"))
+            {
+                AllObjectSlider.value = AmountManager.instance.Map001_AverageRatio;
+            }
+            else
+            {
+                AllObjectSlider.value = AmountManager.instance.Map002_AverageRatio;
+            }
             AllObjectText.text = $"{Mathf.RoundToInt(AllObjectSlider.value)}%";
         }
     }
