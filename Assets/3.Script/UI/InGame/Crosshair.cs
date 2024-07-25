@@ -11,6 +11,8 @@ public class Crosshair : MonoBehaviour
 
     [SerializeField]
     private float fadeSpeed;
+    [SerializeField]
+    private Sprite[] sprite;
 
     private void Start()
     {
@@ -21,7 +23,7 @@ public class Crosshair : MonoBehaviour
 
     private void Update()
     {
-        if (washGun.isFire)
+        if (Input.GetMouseButton(0) || washGun.isAuto)
         {
             FadeOut();
         }
@@ -47,5 +49,10 @@ public class Crosshair : MonoBehaviour
             color.a = Mathf.Clamp(color.a, 0f, 1f);
             image.color = color;
         }
+    }
+    public void ChangeImage(int index)
+    {
+        image.sprite = sprite[index];
+        image.SetNativeSize();
     }
 }

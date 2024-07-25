@@ -2,18 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ExtensionControl : MonoBehaviour, IObserver
+public class ExtensionControl : MonoBehaviour
 {
-    [SerializeField] private GameObject[] Extension;
+    [SerializeField] private MeshFilter extension;
+    [SerializeField] private Mesh[] mesh;
     [SerializeField] Transform nozzlePivot;
-    [SerializeField] private PlayerState playerState;
-    private State state;
     private WashGunControl washGun;
     public int Index { get; private set; }
-    private void OnEnable()
-    {
-        playerState.Register(this);
-    }
+
     private void Start()
     {
         washGun = GetComponent<WashGunControl>();
@@ -21,63 +17,36 @@ public class ExtensionControl : MonoBehaviour, IObserver
     }
     private void Update()
     {
-        if (UIManager.instance.isCursor) return;
+        if (UIManager.instance.isCursor || !washGun.isReady) return;
 
-        if (state.Equals(State.Hand) ||
-            state.Equals(State.Run))
-            return;
-
-        SetNozzlePivot();
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            Extension[Index].SetActive(false);
             Index = 0;
-            Extension[Index].SetActive(true);
+            extension.mesh = mesh[Index];
             washGun.SetBlockRange(0.6f);
+            nozzlePivot.localPosition = new Vector3(0, 0.04f, 0.2f);
         }
         else if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            Extension[Index].SetActive(false);
             Index = 1;
-            Extension[Index].SetActive(true);
+            extension.mesh = mesh[Index];
             washGun.SetBlockRange(0.8f);
+            nozzlePivot.localPosition = new Vector3(0, 0.04f, 0.4f);
         }
         else if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            Extension[Index].SetActive(false);
             Index = 2;
-            Extension[Index].SetActive(true);
+            extension.mesh = mesh[Index];
             washGun.SetBlockRange(1f);
+            nozzlePivot.localPosition = new Vector3(0, 0.04f, 0.65f);
         }
         else if (Input.GetKeyDown(KeyCode.Alpha4))
         {
-            Extension[Index].SetActive(false);
             Index = 3;
-            Extension[Index].SetActive(true);
+            extension.mesh = mesh[Index];
             washGun.SetBlockRange(1.4f);
+            nozzlePivot.localPosition = new Vector3(0, 0.04f, 1f);
         }
     }
-    public void SetNozzlePivot()
-    {
-        switch (Index)
-        {
-            case 0:
-                nozzlePivot.localPosition = new Vector3(0, 0.04f, 0.2f);
-                break;
-            case 1:
-                nozzlePivot.localPosition = new Vector3(0, 0.04f, 0.4f);
-                break;
-            case 2:
-                nozzlePivot.localPosition = new Vector3(0, 0.04f, 0.65f);
-                break;
-            case 3:
-                nozzlePivot.localPosition = new Vector3(0, 0.04f, 1f);
-                break;
-        }
-    }
-
-    public void UpdateState(State state)
-    {
-        this.state = state;
-    }
+ 
 }

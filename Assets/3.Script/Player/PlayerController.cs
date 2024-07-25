@@ -139,7 +139,7 @@ public class PlayerController : MonoBehaviour,IObserver
         if (state.Equals(State.Run) ||
            state.Equals(State.Hand))
         {
-            rightHand.DOLocalRotate(new Vector3(15, 0, 0), 0.2f);
+            rightHand.DOLocalRotate(new Vector3(18, 0, 0), 0.2f);
         }
         else
         {
