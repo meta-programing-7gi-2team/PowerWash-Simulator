@@ -3,22 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using DG.Tweening;
 
 public class Shortcut_Key_Control : MonoBehaviour
 {
-    [SerializeField] private GameObject Ob_Back;
+    [SerializeField] private RectTransform shortcutE;
+    [SerializeField] private RectTransform shortcutN;
 
-    [SerializeField] private ToggleGroup toggleGroup;
     [SerializeField] private Toggle[] toggles;
+    [SerializeField] private Toggle[] togglesE;
+    [SerializeField] private Toggle[] togglesN;
     [SerializeField] private GameObject[] toggleSprites;
 
-    [SerializeField] private Image menuicon;
-    [SerializeField] private Text menuname;
     [SerializeField] private Text togglename;
-
-    [SerializeField] private Sprite[] icon_Img;
-    [SerializeField] private GameObject[] E_toggleImg;
-    [SerializeField] private GameObject[] N_toggleImg;
 
     [SerializeField] private bool key1 = false;
     [SerializeField] private bool key2 = false;
@@ -26,16 +23,8 @@ public class Shortcut_Key_Control : MonoBehaviour
     [SerializeField] private int E_toggleSelect;
     [SerializeField] private int N_toggleSelect;
 
-    [SerializeField] private Color NomalColor;
-    [SerializeField] private Color SelectedColor;
-
     private string[] togglenames_1 = { "æ¯¿Ω (Ω∫≈Õ∫Ò ∞«)", "µˆ ≈¨∏Æ≥  4000 ºÙ »Æ¿Â±‚", "µˆ ≈¨∏Æ≥  4000 ∑’ »Æ¿Â±‚", "µˆ ≈¨∏Æ≥  ø¢Ω∫∆Æ∂Û ∑’ »Æ¿Â±‚" };
     private string[] togglenames_2 = { "0µµ ≥Î¡Ò", "15µµ ≥Î¡Ò", "25µµ ≥Î¡Ò", "40µµ ≥Î¡Ò" };
-
-    private void Awake()    //∞‘¿” æ¿ø° ø≈∞‹≥÷¿ª Ω√ ªË¡¶ øπ¡§
-    {
-        Cursor.lockState = CursorLockMode.Locked;
-    }
 
     private void Start()
     {
@@ -45,44 +34,44 @@ public class Shortcut_Key_Control : MonoBehaviour
         }
 
         HideAllSprites();
-        SetInitialText();
+        SetTextToSelectedToggle();
     }
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.Alpha1) && Input.GetKey(KeyCode.Alpha2))
+        if(Input.GetKey(KeyCode.Alpha1) && !key2)
         {
-            Ob_Back.SetActive(false);
-
-            key1 = false;
-            key2 = false;
-
-            Cursor.lockState = CursorLockMode.Locked;
+            key1 = true;
+            shortcutE.DOScale(Vector3.one, 0.2f);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
+        else if(Input.GetKey(KeyCode.Alpha2) && !key1)
+        {
+            key2 = true;
+            shortcutN.DOScale(Vector3.one, 0.2f);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
+        else if (Input.GetKeyUp(KeyCode.Alpha1))
+        {
+            key1 = false;
+            shortcutE.DOScale(new Vector3(0, 0, 1), 0.2f);
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
+        else if (Input.GetKey(KeyCode.Alpha2))
+        {
+            key2 = false;
+            shortcutN.DOScale(new Vector3(0, 0, 1), 0.2f);
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
+
         else if (Input.GetKey(KeyCode.Alpha1) || Input.GetKey(KeyCode.Alpha2))
         {
-            Ob_Back.SetActive(true);
-
-            if (Input.GetKey(KeyCode.Alpha1))
-                key1 = true;
-            else if (Input.GetKey(KeyCode.Alpha2))
-                key2 = true;
-             
-            Cursor.lockState = CursorLockMode.None;
 
             ActiveShortcut();
-        }
-        else if(Input.GetKeyUp(KeyCode.Alpha1) || Input.GetKeyUp(KeyCode.Alpha2))
-        {
-
-           Ob_Back.SetActive(false);
-
-           key1 = false;
-           key2 = false;
-
-           Cursor.lockState = CursorLockMode.Locked;
-           
-           DisabledShortcut();
         }
     }
 
@@ -93,57 +82,13 @@ public class Shortcut_Key_Control : MonoBehaviour
             toggles[E_toggleSelect].isOn = true;
             key1 = false;
         }
-        else if (Input.GetKey(KeyCode.Alpha1))
-        {
-            menuicon.sprite = icon_Img[0];
-            menuname.text = "»Æ¿Â±‚";
-
-            for (int i = 0; i < E_toggleImg.Length; i++)
-            {
-                if (E_toggleImg[i] != null)
-                {
-                    E_toggleImg[i].SetActive(true);
-                }
-            }
-        }
 
         if (Input.GetKeyDown(KeyCode.Alpha2) && key2)
         {
             toggles[N_toggleSelect].isOn = true;
             key2 = false;
         }
-        else if (Input.GetKey(KeyCode.Alpha2))
-        {
-            menuicon.sprite = icon_Img[1];
-            menuname.text = "≥Î¡Ò";
-
-            for (int i = 0; i < N_toggleImg.Length; i++)
-            {
-                if (N_toggleImg[i] != null)
-                {
-                    N_toggleImg[i].SetActive(true);
-                }
-            }
-        }
-    }
-
-    private void DisabledShortcut()
-    {
-        for (int i = 0; i < E_toggleImg.Length; i++)
-        {
-            if (E_toggleImg[i] != null)
-            {
-                E_toggleImg[i].SetActive(false);
-            }
-        }
-
-        for (int i = 0; i < N_toggleImg.Length; i++)
-        {
-            if (N_toggleImg[i] != null)
-            {
-                N_toggleImg[i].SetActive(false);
-            }
-        }
+     
     }
 
     public void OnPointerEnter(int index)
@@ -219,10 +164,5 @@ public class Shortcut_Key_Control : MonoBehaviour
                 break;
             }
         }
-    }
-
-    private void SetInitialText()
-    {
-        SetTextToSelectedToggle();
     }
 }
