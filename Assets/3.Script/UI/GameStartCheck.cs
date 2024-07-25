@@ -10,19 +10,16 @@ public class GameStartCheck : MonoBehaviour
     [SerializeField] private GameObject KrustyKrab_Btn;
     [SerializeField] private Toggle Toggle_New;
     [SerializeField] private Toggle Toggle_Continue;
-    private AmountManager amountManager;
     Process process_map1;
     Process process_map2;
 
     private void OnEnable()
     {
-        amountManager = FindObjectOfType<AmountManager>();
+        AmountManager.instance.GetMap001();
+        AmountManager.instance.GetMap002();
 
-        amountManager.GetMap001();
-        amountManager.GetMap002();
-
-        process_map1 = amountManager.Map001_ProcessData.process;
-        process_map2 = amountManager.Map002_ProcessData.process;
+        process_map1 = AmountManager.instance.Map001_ProcessData.process;
+        process_map2 = AmountManager.instance.Map002_ProcessData.process;
 
         if (Toggle_New.isOn)
         {

@@ -7,6 +7,7 @@ using UnityEngine.EventSystems;
 
 public class AmountManager : MonoBehaviour
 {
+    public static AmountManager instance = null;
     // ---------------------------------------------------------
     #region 맵1
     public List<MapAmountData> Map001_AmountData { get; private set; } = new List<MapAmountData>();
@@ -35,9 +36,16 @@ public class AmountManager : MonoBehaviour
     // 데이터 초기화
     private void Awake()
     {
-        state = EnumObject.Map.None;
-        gameObjects = new Queue<GameObject>();
-        //Init();
+        if (instance == null)
+        {
+            instance = this;
+            state = EnumObject.Map.None;
+            gameObjects = new Queue<GameObject>();
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
     public void State(EnumObject.Map state)
     {
@@ -101,10 +109,10 @@ public class AmountManager : MonoBehaviour
                     buttonComponent.onClick.AddListener(() => OnButtonClick(buttonTextComponent[0].text));
                 }
             }
-            amountText.text = amount_Sum.ToString("$0.00");
-            getAmountText.text = getAmount_Sum.ToString("$0.00");
-            stateText.text = string.Format("{0}%", (int)(state_Sum / AmountData.Count));
         }
+        amountText.text = amount_Sum.ToString("$0.00");
+        getAmountText.text = getAmount_Sum.ToString("$0.00");
+        stateText.text = string.Format("{0}%", (int)(state_Sum / AmountData.Count));
     }
 
     public void InitializeMap001()
@@ -133,7 +141,7 @@ public class AmountManager : MonoBehaviour
     // 데이터 저장
 
     #region Save
-    private void SaveMap001()
+    public void SaveMap001()
     {
         try
         {
@@ -151,7 +159,7 @@ public class AmountManager : MonoBehaviour
             Debug.LogError("Failed to save data: " + e.Message);
         }
     }
-    private void SaveMap002()
+    public void SaveMap002()
     {
         try
         {
@@ -316,15 +324,15 @@ public class AmountManager : MonoBehaviour
         {
             if (Map001_MoneyData[i].Spongebob.Equals(spongebob))
             {
-                if (Map001_MoneyData[i].Pineapple.Equals(pineapple))
+                if (Map001_MoneyData[i].Pineapple.Equals(pineapple) && !Map001_MoneyData[i].Pineapple.Equals(EnumObject.Pineapple.None))
                 {
                     return Map001_MoneyData[i];
                 }
-                else if (Map001_MoneyData[i].Patrick.Equals(patrick))
+                else if (Map001_MoneyData[i].Patrick.Equals(patrick) && !Map001_MoneyData[i].Patrick.Equals(EnumObject.Patrick.None))
                 {
                     return Map001_MoneyData[i];
                 }
-                else if (Map001_MoneyData[i].Squidward.Equals(squidward))
+                else if (Map001_MoneyData[i].Squidward.Equals(squidward) && !Map001_MoneyData[i].Squidward.Equals(EnumObject.Squidward.None))
                 {
                     return Map001_MoneyData[i];
                 }
@@ -334,11 +342,11 @@ public class AmountManager : MonoBehaviour
         {
             if (Map002_MoneyData[i].Spongebob.Equals(spongebob))
             {
-                if (Map002_MoneyData[i].KrustyKrab.Equals(krustyKrab))
+                if (Map002_MoneyData[i].KrustyKrab.Equals(krustyKrab) && !Map001_MoneyData[i].KrustyKrab.Equals(EnumObject.KrustyKrab.None))
                 {
                     return Map002_MoneyData[i];
                 }
-                else if (Map002_MoneyData[i].ChumBucket.Equals(chumBucket))
+                else if (Map002_MoneyData[i].ChumBucket.Equals(chumBucket) && !Map001_MoneyData[i].ChumBucket.Equals(EnumObject.ChumBucket.None))
                 {
                     return Map002_MoneyData[i];
                 }

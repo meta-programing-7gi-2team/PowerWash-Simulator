@@ -71,7 +71,6 @@ public class CleanDraw : MonoBehaviour, IDustObserver, ISaveObserver
     [SerializeField] private string FileName;
     private string DirName = DefaultName.DirName;
     private MapManager mapManager;
-    private AmountManager amountManager;
     private SaveObserver saveObserver;
 
     private void Start()
@@ -137,8 +136,6 @@ public class CleanDraw : MonoBehaviour, IDustObserver, ISaveObserver
         mapManager = new MapManager();
         mapManager.FileName = FileName;
         mapManager.LoadMap();
-
-        amountManager = FindObjectOfType<AmountManager>();
     }
     private void InitBrushTexture()
     {
@@ -318,7 +315,7 @@ public class CleanDraw : MonoBehaviour, IDustObserver, ISaveObserver
             CleanSparkle();
             isCleanCheckComplete = true;
 
-            MoneyData amount = amountManager.GetAmount(Spongebob, Pineapple, Patrick, Squidward, KrustyKrab, ChumBucket);
+            MoneyData amount = AmountManager.instance.GetAmount(Spongebob, Pineapple, Patrick, Squidward, KrustyKrab, ChumBucket);
             GameManager.instance.AddAmount(amount);
         }
     }
