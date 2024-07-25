@@ -54,11 +54,11 @@ public class AmountManager : MonoBehaviour
             switch(state)
             {
                 case EnumObject.Map.Map001:
-                    GetMap001();
+                    //GetMap001();
                     LoadMapListData(Map001_AmountData);
                     break;
                 case EnumObject.Map.Map002:
-                    GetMap002();
+                    //GetMap002();
                     LoadMapListData(Map002_AmountData);
                     break;
             }

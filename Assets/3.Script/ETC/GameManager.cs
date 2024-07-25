@@ -99,8 +99,6 @@ public class GameManager : MonoBehaviour
         amountData = new AmountData(this.amount);
         if(UIManager.instance.Mapname.Equals("Map001"))
         {
-            AmountManager.instance.GetMap001();
-
             for (int i = 0; i < AmountManager.instance.Map001_AmountData.Count; i++)
             {
                 if (AmountManager.instance.Map001_AmountData[i].Name.Equals(EnumObject.GetName(moneyData.Spongebob, moneyData.Pineapple, moneyData.Patrick, moneyData.Squidward, moneyData.KrustyKrab, moneyData.ChumBucket)))
@@ -112,8 +110,6 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            AmountManager.instance.GetMap002();
-
             for (int i = 0; i < AmountManager.instance.Map002_AmountData.Count; i++)
             {
                 if (AmountManager.instance.Map002_AmountData[i].Name.Equals(EnumObject.GetName(moneyData.Spongebob, moneyData.Pineapple, moneyData.Patrick, moneyData.Squidward, moneyData.KrustyKrab, moneyData.ChumBucket)))

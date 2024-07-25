@@ -264,12 +264,10 @@ public class UIManager : MonoBehaviour
             if (ChumBucket[i] != 0 && ChumBucket_cnt[i] != 0)
                 ChumBucket[i] = ChumBucket[i] / ChumBucket_cnt[i];
         }
-        AmountManager.instance.GetMap001();
-        AmountManager.instance.GetMap002();
 
         for (int i = 0; i < AmountManager.instance.Map001_AmountData.Count; i++)
         {
-            if (AmountManager.instance.Map001_AmountData[i].Name.Contains("���������� ��"))
+            if (AmountManager.instance.Map001_AmountData[i].Name.Contains("스폰지밥의 집"))
             {
                 for (int j = 0; j < Pineapple_name.Length; j++)
                 {
@@ -280,7 +278,7 @@ public class UIManager : MonoBehaviour
                     }
                 }
             }
-            else if (AmountManager.instance.Map001_AmountData[i].Name.Contains("������ ��"))
+            else if (AmountManager.instance.Map001_AmountData[i].Name.Contains("뚱이의 집"))
             {
                 for (int j = 0; j < Patrick_name.Length; j++)
                 {
@@ -306,7 +304,7 @@ public class UIManager : MonoBehaviour
 
         for (int i = 0; i < AmountManager.instance.Map002_AmountData.Count; i++)
         {
-            if (AmountManager.instance.Map002_AmountData[i].Name.Contains("���Ը���"))
+            if (AmountManager.instance.Map002_AmountData[i].Name.Contains("집게리아"))
             {
                 for (int j = 0; j < KrustyKrab_name.Length; j++)
                 {
