@@ -179,7 +179,7 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &2493319539041081246
+--- !u!1 &1759899319245263670
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -187,25 +187,25 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 553828791479412723}
-  - component: {fileID: 2199612347361170380}
-  - component: {fileID: 8329895305560122546}
-  - component: {fileID: 4851414335290445427}
-  - component: {fileID: 4851414335290445436}
-  m_Layer: 10
-  m_Name: PH-Lamp_0
-  m_TagString: Object
+  - component: {fileID: 7411311337941155853}
+  - component: {fileID: 5624269404275276103}
+  - component: {fileID: 9162803344711867859}
+  - component: {fileID: 8369449738896017652}
+  - component: {fileID: 630503928538792185}
+  m_Layer: 0
+  m_Name: PH-Lamp
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &553828791479412723
+--- !u!4 &7411311337941155853
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2493319539041081246}
+  m_GameObject: {fileID: 1759899319245263670}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -213,21 +213,21 @@ Transform:
   m_Father: {fileID: 4851414334913596655}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &2199612347361170380
+--- !u!33 &5624269404275276103
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2493319539041081246}
-  m_Mesh: {fileID: 8268570045879718265, guid: f5739267c17c62148aec61e6c859fc3d, type: 3}
---- !u!23 &8329895305560122546
+  m_GameObject: {fileID: 1759899319245263670}
+  m_Mesh: {fileID: -2432090755550338912, guid: 09cae4d27e2912a4b82a055a7b0f9dbb, type: 3}
+--- !u!23 &9162803344711867859
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2493319539041081246}
+  m_GameObject: {fileID: 1759899319245263670}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -262,27 +262,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4851414335290445427
+--- !u!64 &8369449738896017652
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2493319539041081246}
+  m_GameObject: {fileID: 1759899319245263670}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 8268570045879718265, guid: f5739267c17c62148aec61e6c859fc3d, type: 3}
---- !u!114 &4851414335290445436
+  m_Mesh: {fileID: -2432090755550338912, guid: 09cae4d27e2912a4b82a055a7b0f9dbb, type: 3}
+--- !u!114 &630503928538792185
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2493319539041081246}
+  m_GameObject: {fileID: 1759899319245263670}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
@@ -299,128 +299,7 @@ MonoBehaviour:
   Squidward: 0
   KrustyKrab: 0
   ChumBucket: 0
-  FileName: PH-Lamp_0
---- !u!1 &3344670711533562528
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8620339016052497043}
-  - component: {fileID: 1342004221054075281}
-  - component: {fileID: 619490437446237243}
-  - component: {fileID: 4851414335546144432}
-  - component: {fileID: 4851414335546144445}
-  m_Layer: 10
-  m_Name: PH-Television_0
-  m_TagString: Object
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8620339016052497043
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3344670711533562528}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4851414334913596655}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &1342004221054075281
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3344670711533562528}
-  m_Mesh: {fileID: 1924975056008823741, guid: 67e7f42255a932246a2aad0dfe31340d, type: 3}
---- !u!23 &619490437446237243
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3344670711533562528}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 10e5a68af2141bf4cb1ed4c4ea7b5075, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4851414335546144432
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3344670711533562528}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 1924975056008823741, guid: 67e7f42255a932246a2aad0dfe31340d, type: 3}
---- !u!114 &4851414335546144445
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3344670711533562528}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  resolution: 128
-  renderMaskTexture: {fileID: 0}
-  renderWaterTexture: {fileID: 0}
-  maskTexture: {fileID: 2800000, guid: c0d5102b557d8db4487decb63ec64f57, type: 3}
-  cleanRatio: 95
-  Spongebob: 1
-  Pineapple: 0
-  Patrick: 5
-  Squidward: 0
-  KrustyKrab: 0
-  ChumBucket: 0
-  FileName: PH-Television_0
+  FileName: PH-Lamp
 --- !u!1 &3541986732741907218
 GameObject:
   m_ObjectHideFlags: 0
@@ -570,10 +449,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children:
   - {fileID: 5881160658344946326}
-  - {fileID: 553828791479412723}
-  - {fileID: 4119890658505450287}
-  - {fileID: 8620339016052497043}
-  - {fileID: 3729913556886774050}
+  - {fileID: 7411311337941155853}
+  - {fileID: 2053372881377016362}
   m_Father: {fileID: 4851414334942652757}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -972,7 +849,7 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: PH-Bin_0_0
---- !u!1 &6800557472129936898
+--- !u!1 &7118261092085377297
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -980,47 +857,47 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3729913556886774050}
-  - component: {fileID: 4986775495291593090}
-  - component: {fileID: 7459502284594380014}
-  - component: {fileID: 4851414334637667329}
-  - component: {fileID: 4851414334637667330}
-  m_Layer: 10
-  m_Name: PH-Television_1
-  m_TagString: Object
+  - component: {fileID: 2053372881377016362}
+  - component: {fileID: 3794322946995487584}
+  - component: {fileID: 400150476162902004}
+  - component: {fileID: 1526218191461444430}
+  - component: {fileID: 2633105337400521758}
+  m_Layer: 0
+  m_Name: PH-Television
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3729913556886774050
+--- !u!4 &2053372881377016362
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6800557472129936898}
+  m_GameObject: {fileID: 7118261092085377297}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4851414334913596655}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &4986775495291593090
+--- !u!33 &3794322946995487584
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6800557472129936898}
-  m_Mesh: {fileID: -5242484123724565973, guid: 67e7f42255a932246a2aad0dfe31340d, type: 3}
---- !u!23 &7459502284594380014
+  m_GameObject: {fileID: 7118261092085377297}
+  m_Mesh: {fileID: -2432090755550338912, guid: 67e7f42255a932246a2aad0dfe31340d, type: 3}
+--- !u!23 &400150476162902004
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6800557472129936898}
+  m_GameObject: {fileID: 7118261092085377297}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -1055,27 +932,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4851414334637667329
+--- !u!64 &1526218191461444430
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6800557472129936898}
+  m_GameObject: {fileID: 7118261092085377297}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: -5242484123724565973, guid: 67e7f42255a932246a2aad0dfe31340d, type: 3}
---- !u!114 &4851414334637667330
+  m_Mesh: {fileID: -2432090755550338912, guid: 67e7f42255a932246a2aad0dfe31340d, type: 3}
+--- !u!114 &2633105337400521758
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6800557472129936898}
+  m_GameObject: {fileID: 7118261092085377297}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
@@ -1092,7 +969,7 @@ MonoBehaviour:
   Squidward: 0
   KrustyKrab: 0
   ChumBucket: 0
-  FileName: PH-Television_1
+  FileName: PH-Television
 --- !u!1 &7399295871856512797
 GameObject:
   m_ObjectHideFlags: 0
@@ -1335,127 +1212,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: PH-Path_0
---- !u!1 &8284873036429604689
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4119890658505450287}
-  - component: {fileID: 4073844251492695543}
-  - component: {fileID: 4433332268542256914}
-  - component: {fileID: 4851414334633263770}
-  - component: {fileID: 4851414334633263751}
-  m_Layer: 10
-  m_Name: PH-Lamp_1
-  m_TagString: Object
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4119890658505450287
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8284873036429604689}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4851414334913596655}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &4073844251492695543
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8284873036429604689}
-  m_Mesh: {fileID: -8538460895199569201, guid: f5739267c17c62148aec61e6c859fc3d, type: 3}
---- !u!23 &4433332268542256914
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8284873036429604689}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 008eb66c94e1dc449aace7f45ae3a5a7, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4851414334633263770
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8284873036429604689}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -8538460895199569201, guid: f5739267c17c62148aec61e6c859fc3d, type: 3}
---- !u!114 &4851414334633263751
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8284873036429604689}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  resolution: 128
-  renderMaskTexture: {fileID: 0}
-  renderWaterTexture: {fileID: 0}
-  maskTexture: {fileID: 2800000, guid: 7e51b41c72d94f64494c8854f727b660, type: 3}
-  cleanRatio: 95
-  Spongebob: 1
-  Pineapple: 0
-  Patrick: 4
-  Squidward: 0
-  KrustyKrab: 0
-  ChumBucket: 0
-  FileName: PH-Lamp_1
 --- !u!1 &8516161003416308773
 GameObject:
   m_ObjectHideFlags: 0

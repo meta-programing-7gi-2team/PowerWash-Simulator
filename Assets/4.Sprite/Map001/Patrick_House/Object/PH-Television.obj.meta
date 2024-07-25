@@ -3,17 +3,7 @@ guid: 67e7f42255a932246a2aad0dfe31340d
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: PH-Television_0Mat
-    second: {fileID: 2100000, guid: 8aea203c2a2196d45aca7d0617f46264, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: PH-Television_1Mat
-    second: {fileID: 2100000, guid: 8aea203c2a2196d45aca7d0617f46264, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -41,7 +31,7 @@ ModelImporter:
     extraExposedTransformPaths: []
     extraUserProperties: []
     clipAnimations: []
-    isReadable: 1
+    isReadable: 0
   meshes:
     lODScreenPercentages: []
     globalScale: 1

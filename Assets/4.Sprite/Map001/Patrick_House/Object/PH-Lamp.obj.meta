@@ -1,19 +1,9 @@
 fileFormatVersion: 2
-guid: f5739267c17c62148aec61e6c859fc3d
+guid: 09cae4d27e2912a4b82a055a7b0f9dbb
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: PH-Lamp_0Mat
-    second: {fileID: 2100000, guid: 85b7ae2152e425542bbcb5a9f8fa11e4, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: PH-Lamp_1Mat
-    second: {fileID: 2100000, guid: 8aea203c2a2196d45aca7d0617f46264, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -41,7 +31,7 @@ ModelImporter:
     extraExposedTransformPaths: []
     extraUserProperties: []
     clipAnimations: []
-    isReadable: 1
+    isReadable: 0
   meshes:
     lODScreenPercentages: []
     globalScale: 1
