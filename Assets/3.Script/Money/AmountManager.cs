@@ -5,20 +5,28 @@ using System;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
+public enum Process
+{
+    New,
+    Proceeding,
+    Complete
+}
 public class AmountManager : MonoBehaviour
 {
     public static AmountManager instance = null;
     // ---------------------------------------------------------
     #region ¸Ê1
     public List<MapAmountData> Map001_AmountData { get; private set; } = new List<MapAmountData>();
-    public MapProcessData Map001_ProcessData { get; private set; }
+    public Process Map001_Process { get; private set; }
     public List<MoneyData> Map001_MoneyData;
+    public int Map001_AverageRatio { get; private set; }
     #endregion
     // ---------------------------------------------------------
     #region ¸Ê2
     public List<MapAmountData> Map002_AmountData { get; private set; } = new List<MapAmountData>();
-    public MapProcessData Map002_ProcessData { get; private set; }
+    public Process Map002_Process { get; private set; }
     public List<MoneyData> Map002_MoneyData;
+    public int Map002_AverageRatio { get; private set; }
     #endregion
     // ---------------------------------------------------------
 
@@ -117,23 +125,23 @@ public class AmountManager : MonoBehaviour
 
     public void InitializeMap001()
     {
-        Map001_ProcessData = new MapProcessData(Process.New);
+        Map001_Process = Process.New;
         Map001_AmountData.Clear();
         for (int i = 0; i < Map001_MoneyData.Count; i++)
         {
             string name = EnumObject.GetName(Map001_MoneyData[i].Spongebob, Map001_MoneyData[i].Pineapple, Map001_MoneyData[i].Patrick, Map001_MoneyData[i].Squidward, Map001_MoneyData[i].KrustyKrab, Map001_MoneyData[i].ChumBucket);
-            Map001_AmountData.Add(new MapAmountData(name, Map001_MoneyData[i].Amount, 0, 0));
+            Map001_AmountData.Add(new MapAmountData(name, Map001_MoneyData[i].Amount, 0, 0, Map001_MoneyData[i].Cnt));
         }
         SaveMap001();
     }
     public void InitializeMap002()
     {
-        Map002_ProcessData = new MapProcessData(Process.New);
+        Map002_Process = Process.New;
         Map002_AmountData.Clear();
         for (int i = 0; i < Map002_MoneyData.Count; i++)
         {
             string name = EnumObject.GetName(Map002_MoneyData[i].Spongebob, Map002_MoneyData[i].Pineapple, Map002_MoneyData[i].Patrick, Map002_MoneyData[i].Squidward, Map002_MoneyData[i].KrustyKrab, Map002_MoneyData[i].ChumBucket);
-            Map002_AmountData.Add(new MapAmountData(name, Map002_MoneyData[i].Amount, 0, 0));
+            Map002_AmountData.Add(new MapAmountData(name, Map002_MoneyData[i].Amount, 0, 0, Map002_MoneyData[i].Cnt));
         }
         SaveMap002();
     }
@@ -145,7 +153,7 @@ public class AmountManager : MonoBehaviour
     {
         try
         {
-            string jsonData = JsonUtility.ToJson(new SerializableList<MapAmountData>(Map001_ProcessData, Map001_AmountData), true);
+            string jsonData = JsonUtility.ToJson(new SerializableList<MapAmountData>(Map001_AverageRatio, Map001_Process, Map001_AmountData), true);
 
             string dirName = Path.Combine(Application.dataPath, DirName);
             if (!Directory.Exists(dirName))
@@ -163,7 +171,7 @@ public class AmountManager : MonoBehaviour
     {
         try
         {
-            string jsonData = JsonUtility.ToJson(new SerializableList<MapAmountData>(Map002_ProcessData, Map002_AmountData), true);
+            string jsonData = JsonUtility.ToJson(new SerializableList<MapAmountData>(Map002_AverageRatio, Map002_Process, Map002_AmountData), true);
 
             string dirName = Path.Combine(Application.dataPath, DirName);
             if (!Directory.Exists(dirName))
@@ -192,7 +200,8 @@ public class AmountManager : MonoBehaviour
             {
                 string jsonData = File.ReadAllText(filePath);
                 SerializableList<MapAmountData> loadedData = JsonUtility.FromJson<SerializableList<MapAmountData>>(jsonData);
-                Map001_ProcessData = loadedData.process;
+                Map001_AverageRatio = loadedData.averageRatio;
+                Map001_Process = loadedData.process;
                 Map001_AmountData = loadedData.list;
             }
             catch (Exception e)
@@ -218,7 +227,8 @@ public class AmountManager : MonoBehaviour
             {
                 string jsonData = File.ReadAllText(filePath);
                 SerializableList<MapAmountData> loadedData = JsonUtility.FromJson<SerializableList<MapAmountData>>(jsonData);
-                Map002_ProcessData = loadedData.process;
+                Map002_AverageRatio = loadedData.averageRatio;
+                Map002_Process = loadedData.process;
                 Map002_AmountData = loadedData.list;
             }
             catch (Exception e)
@@ -236,9 +246,14 @@ public class AmountManager : MonoBehaviour
     }
     #endregion
 
+    public void SetMap001_Data(int averageRatio)
+    {
+        Map001_AverageRatio = averageRatio;
+        SaveMap001();
+    }
     public void SetMap001_Data(Process process)
     {
-        Map001_ProcessData.process = process;
+        Map001_Process = process;
         SaveMap001();
     }
     public void SetMap001_Data(MapAmountData mapAmountData)
@@ -258,9 +273,14 @@ public class AmountManager : MonoBehaviour
         Map001_AmountData = mapAmountData;
         SaveMap001();
     }
+    public void SetMap002_Data(int averageRatio)
+    {
+        Map002_AverageRatio = averageRatio;
+        SaveMap002();
+    }
     public void SetMap002_Data(Process process)
     {
-        Map002_ProcessData.process = process;
+        Map002_Process = process;
         SaveMap002();
     }
     public void SetMap002_Data(MapAmountData mapAmountData)
@@ -295,7 +315,7 @@ public class AmountManager : MonoBehaviour
                 return Map001_AmountData[i];
             }
         }
-        return new MapAmountData("-", 0, 0, 0);
+        return new MapAmountData("-", 0, 0, 0, 1);
     }
     public List<MapAmountData> GetMap002()
     {
@@ -312,7 +332,7 @@ public class AmountManager : MonoBehaviour
                 return Map002_AmountData[i];
             }
         }
-        return new MapAmountData("-", 0, 0, 0);
+        return new MapAmountData("-", 0, 0, 0, 1);
     }
 
     /// <summary>
@@ -363,11 +383,13 @@ public class AmountManager : MonoBehaviour
     [System.Serializable]
     private class SerializableList<T>
     {
-        public MapProcessData process;
+        public int averageRatio;
+        public Process process;
         public List<T> list;
 
-        public SerializableList(MapProcessData p, List<T> l)
+        public SerializableList(int a, Process p, List<T> l)
         {
+            averageRatio = a;
             process = p;
             list = l;
         }

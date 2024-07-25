@@ -12,4 +12,5 @@ public class MoneyData : ScriptableObject
     public EnumObject.KrustyKrab KrustyKrab;
     public EnumObject.ChumBucket ChumBucket;
     public float Amount;
+    public int Cnt;
 }
