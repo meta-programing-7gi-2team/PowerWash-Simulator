@@ -357,6 +357,12 @@ public class UIManager : MonoBehaviour
         text.gameObject.SetActive(false);
         Loding = false;
         Save_Btu.SetActive(true);
+        Pineapple = false;
+        Squidward = false;
+        Patrick = false;
+        Stand = false;
+        KrustyKrab = false;
+        ChumBucket = false;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
     }
@@ -607,10 +613,20 @@ public class UIManager : MonoBehaviour
         if (ActiveScene.Equals("Map001"))
         {
             AmountManager.instance.SaveMap001();
+
+            if (AmountManager.instance.Map001_AverageRatio.Equals(100))
+            {
+                AmountManager.instance.SetMap001_Data(Process.Complete);
+            }
         }
         else if(ActiveScene.Equals("Map002"))
         {
             AmountManager.instance.SaveMap002();
+
+            if (AmountManager.instance.Map001_AverageRatio.Equals(100))
+            {
+                AmountManager.instance.SetMap002_Data(Process.Complete);
+            }
         }
 
         while (loadingSlider.value < 1f)

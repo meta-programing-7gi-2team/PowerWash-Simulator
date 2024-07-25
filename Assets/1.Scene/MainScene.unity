@@ -1349,8 +1349,6 @@ MonoBehaviour:
   Pineapple_Slider: {fileID: 247485537}
   KrustyKrab_Slider: {fileID: 399329042}
   amount_txt: {fileID: 2059872516}
-  averageRatio: 0
-  objectsWith: []
   Mapname: 
 --- !u!114 &87534277
 MonoBehaviour:
