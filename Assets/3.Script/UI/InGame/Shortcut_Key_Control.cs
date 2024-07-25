@@ -25,23 +25,16 @@ public class Shortcut_Key_Control : MonoBehaviour
     private string[] togglenames_1 = { "없음 (스터비 건)", "딥 클리너 4000 숏 확장기", "딥 클리너 4000 롱 확장기", "딥 클리너 엑스트라 롱 확장기" };
     private string[] togglenames_2 = { "0도 노즐", "15도 노즐", "25도 노즐", "40도 노즐" };
 
+    private void Awake()    //게임 씬에 옮겨넣을 시 삭제 예정
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+
     private void Start()
     {
         foreach (var toggle in toggles)
         {
             toggle.onValueChanged.AddListener(delegate { ToggleValueChanged(toggle); });
-
-            EventTrigger trigger = toggle.gameObject.AddComponent<EventTrigger>();
-
-            EventTrigger.Entry entryEnter = new EventTrigger.Entry();
-            entryEnter.eventID = EventTriggerType.PointerEnter;
-            entryEnter.callback.AddListener((data) => { OnPointerEnter(System.Array.IndexOf(toggles, toggle)); });
-            trigger.triggers.Add(entryEnter);
-
-            EventTrigger.Entry entryExit = new EventTrigger.Entry();
-            entryExit.eventID = EventTriggerType.PointerExit;
-            entryExit.callback.AddListener((data) => { OnPointerExit(System.Array.IndexOf(toggles, toggle)); });
-            trigger.triggers.Add(entryExit);
         }
 
         HideAllSprites();
@@ -50,33 +43,29 @@ public class Shortcut_Key_Control : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.Alpha1) || Input.GetKey(KeyCode.Alpha2))
-        {
-            Ob_Back.SetActive(true);
-
-            ActiveShortcut();
-        }
-        
-        
-        if(Input.GetKeyUp(KeyCode.Alpha1) || Input.GetKeyUp(KeyCode.Alpha2))
+        if (Input.GetKey(KeyCode.Alpha1) && Input.GetKey(KeyCode.Alpha2))
         {
             Ob_Back.SetActive(false);
 
-            for (int i = 0; i < E_toggleImg.Length; i++)
-            {
-                if (E_toggleImg[i] != null)
-                {
-                    E_toggleImg[i].SetActive(false);
-                }
-            }
+            Cursor.lockState = CursorLockMode.Locked;
 
-            for (int i = 0; i < N_toggleImg.Length; i++)
-            {
-                if (N_toggleImg[i] != null)
-                {
-                    N_toggleImg[i].SetActive(false);
-                }
-            }
+            DisabledShortcut();
+        }
+        else if (Input.GetKey(KeyCode.Alpha1) || Input.GetKey(KeyCode.Alpha2))
+        {
+            Ob_Back.SetActive(true);
+
+            Cursor.lockState = CursorLockMode.None;
+
+            ActiveShortcut();
+        }
+        else if(Input.GetKeyUp(KeyCode.Alpha1) || Input.GetKeyUp(KeyCode.Alpha2))
+        {
+            Ob_Back.SetActive(false);
+
+            Cursor.lockState = CursorLockMode.Locked;
+
+            DisabledShortcut();
         }
     }
 
@@ -107,6 +96,25 @@ public class Shortcut_Key_Control : MonoBehaviour
                 {
                     N_toggleImg[i].SetActive(true);
                 }
+            }
+        }
+    }
+
+    private void DisabledShortcut()
+    {
+        for (int i = 0; i < E_toggleImg.Length; i++)
+        {
+            if (E_toggleImg[i] != null)
+            {
+                E_toggleImg[i].SetActive(false);
+            }
+        }
+
+        for (int i = 0; i < N_toggleImg.Length; i++)
+        {
+            if (N_toggleImg[i] != null)
+            {
+                N_toggleImg[i].SetActive(false);
             }
         }
     }
@@ -182,12 +190,6 @@ public class Shortcut_Key_Control : MonoBehaviour
                 break;
             }
         }
-    }
-
-    private void ToggleSetFunction()
-    {
-        Vector2 cursorPosition = Input.mousePosition;
-
     }
 
     private void SetInitialText()
