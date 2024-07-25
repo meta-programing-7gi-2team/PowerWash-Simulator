@@ -20,7 +20,14 @@ public class Shortcut_Key_Control : MonoBehaviour
     [SerializeField] private GameObject[] E_toggleImg;
     [SerializeField] private GameObject[] N_toggleImg;
 
-    [SerializeField] private Color SelectedColor = new Color(1, 1, 1, 1);
+    [SerializeField] private bool key1 = false;
+    [SerializeField] private bool key2 = false;
+
+    [SerializeField] private int E_toggleSelect;
+    [SerializeField] private int N_toggleSelect;
+
+    [SerializeField] private Color NomalColor;
+    [SerializeField] private Color SelectedColor;
 
     private string[] togglenames_1 = { "æ¯¿Ω (Ω∫≈Õ∫Ò ∞«)", "µˆ ≈¨∏Æ≥  4000 ºÙ »Æ¿Â±‚", "µˆ ≈¨∏Æ≥  4000 ∑’ »Æ¿Â±‚", "µˆ ≈¨∏Æ≥  ø¢Ω∫∆Æ∂Û ∑’ »Æ¿Â±‚" };
     private string[] togglenames_2 = { "0µµ ≥Î¡Ò", "15µµ ≥Î¡Ò", "25µµ ≥Î¡Ò", "40µµ ≥Î¡Ò" };
@@ -47,13 +54,19 @@ public class Shortcut_Key_Control : MonoBehaviour
         {
             Ob_Back.SetActive(false);
 
-            Cursor.lockState = CursorLockMode.Locked;
+            key1 = false;
+            key2 = false;
 
-            DisabledShortcut();
+            Cursor.lockState = CursorLockMode.Locked;
         }
         else if (Input.GetKey(KeyCode.Alpha1) || Input.GetKey(KeyCode.Alpha2))
         {
             Ob_Back.SetActive(true);
+
+            if (Input.GetKey(KeyCode.Alpha1))
+                key1 = true;
+            else if (Input.GetKey(KeyCode.Alpha2))
+                key2 = true;
 
             Cursor.lockState = CursorLockMode.None;
 
@@ -63,6 +76,9 @@ public class Shortcut_Key_Control : MonoBehaviour
         {
             Ob_Back.SetActive(false);
 
+            key1 = false;
+            key2 = false;
+
             Cursor.lockState = CursorLockMode.Locked;
 
             DisabledShortcut();
@@ -71,8 +87,10 @@ public class Shortcut_Key_Control : MonoBehaviour
 
     private void ActiveShortcut()
     {
-        if (Input.GetKey(KeyCode.Alpha1))
+        if (Input.GetKey(KeyCode.Alpha1) && key1)
         {
+            toggles[E_toggleSelect].isOn = true;
+
             menuicon.sprite = icon_Img[0];
             menuname.text = "»Æ¿Â±‚";
 
@@ -85,8 +103,10 @@ public class Shortcut_Key_Control : MonoBehaviour
             }
         }
 
-        if (Input.GetKey(KeyCode.Alpha2))
+        if (Input.GetKey(KeyCode.Alpha2) && key2)
         {
+            toggles[N_toggleSelect].isOn = true;
+
             menuicon.sprite = icon_Img[1];
             menuname.text = "≥Î¡Ò";
 
@@ -180,11 +200,13 @@ public class Shortcut_Key_Control : MonoBehaviour
             {
                 if (Input.GetKey(KeyCode.Alpha1))
                 {
+                    E_toggleSelect = i;
                     togglename.text = togglenames_1[i];
                 }
 
                 if (Input.GetKey(KeyCode.Alpha2))
                 {
+                    N_toggleSelect = i;
                     togglename.text = togglenames_2[i];
                 }
                 break;

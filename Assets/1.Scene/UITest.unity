@@ -13379,6 +13379,11 @@ MonoBehaviour:
   - {fileID: 176440975}
   - {fileID: 204403525}
   - {fileID: 1058837910}
+  key1: 0
+  key2: 0
+  E_toggleSelect: 0
+  N_toggleSelect: 0
+  NomalColor: {r: 0.050980393, g: 0.26666668, b: 0.48235294, a: 0.5882353}
   SelectedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
 --- !u!1 &698990063
 GameObject:
@@ -34852,7 +34857,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1934338852
 RectTransform:
   m_ObjectHideFlags: 0
