@@ -23,7 +23,7 @@ public class UIManager : MonoBehaviour
 
     public static string[] targetSceneName = { "Map001", "Map002" };
 
-    [SerializeField] private float ObjectAll;
+    private float ObjectAll;
     [SerializeField] private float averageRatio;
 
     public List<CleanDraw> objectsWith = new List<CleanDraw>();
