@@ -269,7 +269,7 @@ public class UIManager : MonoBehaviour
 
         for (int i = 0; i < AmountManager.instance.Map001_AmountData.Count; i++)
         {
-            if (AmountManager.instance.Map001_AmountData[i].Name.Contains("½ºÆùÁö¹äÀÇ Áý"))
+            if (AmountManager.instance.Map001_AmountData[i].Name.Contains("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½"))
             {
                 for (int j = 0; j < Pineapple_name.Length; j++)
                 {
@@ -280,7 +280,7 @@ public class UIManager : MonoBehaviour
                     }
                 }
             }
-            else if (AmountManager.instance.Map001_AmountData[i].Name.Contains("¶×ÀÌÀÇ Áý"))
+            else if (AmountManager.instance.Map001_AmountData[i].Name.Contains("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½"))
             {
                 for (int j = 0; j < Patrick_name.Length; j++)
                 {
@@ -306,7 +306,7 @@ public class UIManager : MonoBehaviour
 
         for (int i = 0; i < AmountManager.instance.Map002_AmountData.Count; i++)
         {
-            if (AmountManager.instance.Map002_AmountData[i].Name.Contains("Áý°Ô¸®¾Æ"))
+            if (AmountManager.instance.Map002_AmountData[i].Name.Contains("ï¿½ï¿½ï¿½Ô¸ï¿½ï¿½ï¿½"))
             {
                 for (int j = 0; j < KrustyKrab_name.Length; j++)
                 {
