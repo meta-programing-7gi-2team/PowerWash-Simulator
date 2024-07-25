@@ -1,15 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using DG.Tweening;
 
 public class PlayerController : MonoBehaviour,IObserver
 {
     private CharacterController cc;
-    private Animator player_anim;
     private State state;
     private Vector3 moveDir = Vector3.zero;
     private Transform playerCamera;
+    [SerializeField] private Transform rightHand;
     [SerializeField] private PlayerState playerState;
     [SerializeField] private float speed = 3f;
     [SerializeField] private float speedWeight = 1f;
@@ -24,7 +24,6 @@ public class PlayerController : MonoBehaviour,IObserver
     {
         playerCamera = Camera.main.transform;
         cc = GetComponent<CharacterController>();
-        player_anim = GetComponent<Animator>();
         playerState = GetComponent<PlayerState>();
     }
     private void Update()
@@ -72,7 +71,6 @@ public class PlayerController : MonoBehaviour,IObserver
     }
     private void SetSpeedWeight()
     {
-        
         switch (state)
         {
             case State.Idle:
@@ -141,11 +139,11 @@ public class PlayerController : MonoBehaviour,IObserver
         if (state.Equals(State.Run) ||
            state.Equals(State.Hand))
         {
-            player_anim.SetBool("HandUp", false);
+            rightHand.DOLocalRotate(new Vector3(15, 0, 0), 0.2f);
         }
         else
         {
-            player_anim.SetBool("HandUp", true);
+            rightHand.DOLocalRotate(new Vector3(0, 0, 0), 0.2f);
         }
     }
     public void UpdateState(State state)

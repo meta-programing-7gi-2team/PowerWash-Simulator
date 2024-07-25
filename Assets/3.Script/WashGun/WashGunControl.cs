@@ -6,7 +6,6 @@ public class WashGunControl : MonoBehaviour,IObserver
 {
     private GameObject water;
     private GameObject stream;
-    private Animator anim;
     [SerializeField] private LayerMask layer;
     [SerializeField] private PlayerState playerState;
     private State state;
@@ -24,7 +23,6 @@ public class WashGunControl : MonoBehaviour,IObserver
     private void Start()
     {
         playerCamera = Camera.main.transform;
-        anim = GetComponent<Animator>();
         blockRange = 0.6f;
     }
     private void Update()
@@ -81,13 +79,15 @@ public class WashGunControl : MonoBehaviour,IObserver
     {
         if (Physics.Raycast(playerCamera.position, playerCamera.forward, blockRange, layer))
         {
-            Stop();
-            anim.SetBool("Await", true);
+            isFire = false;
+            water.SetActive(false);
+            stream.SetActive(false);
+            transform.DOLocalRotate(new Vector3(15, -45, 20), 0.1f);
             return true;
         }
         else
         {
-            anim.SetBool("Await", false);
+            transform.DOLocalRotate(Vector3.zero, 0.1f);
             return false;
         }
     }

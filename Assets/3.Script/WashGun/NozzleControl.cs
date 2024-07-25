@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using DG.Tweening;
 public class NozzleControl : MonoBehaviour,IObserver
 {
 
@@ -74,16 +74,14 @@ public class NozzleControl : MonoBehaviour,IObserver
         if (isVertical)
         {
             isVertical = false;
-            nozzle[Index].GetComponent<Animator>().SetTrigger("Right");
-            crosshair.GetComponent<Animator>().SetTrigger("Right");
-            crosshair.transform.localRotation = Quaternion.Euler(Vector3.zero);
+            nozzle[Index].transform.DOLocalRotate(Vector3.zero, 0.15f);
+            crosshair.transform.DOLocalRotate(Vector3.zero, 0.15f);
         }
         else
         {
             isVertical = true;
-            nozzle[Index].GetComponent<Animator>().SetTrigger("Left");
-            crosshair.GetComponent<Animator>().SetTrigger("Left");
-            crosshair.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, 90f));
+            nozzle[Index].transform.DOLocalRotate(new Vector3(0, 0, 90), 0.15f);
+            crosshair.transform.DOLocalRotate(new Vector3(0, 0, 90), 0.15f);
         }
         for (int i = 0; i < 4; i++)
         {
