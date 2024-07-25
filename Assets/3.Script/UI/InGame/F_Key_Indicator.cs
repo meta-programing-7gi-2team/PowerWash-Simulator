@@ -21,7 +21,8 @@ public class F_Key_Indicator : MonoBehaviour
     }
     private void Update()
     {
-        if(Physics.Raycast(playerCamera.position, playerCamera.forward, out hit, Mathf.Infinity, layer))
+        Physics.Raycast(playerCamera.position, playerCamera.forward, out hit, Mathf.Infinity);
+        if (hit.transform.gameObject.layer.Equals(LayerMask.NameToLayer("Pack")))
         {
             if (hit.transform.CompareTag("Patrick"))
             {
