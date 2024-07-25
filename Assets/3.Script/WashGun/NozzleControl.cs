@@ -3,102 +3,69 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
-public class NozzleControl : MonoBehaviour,IObserver
+public class NozzleControl : MonoBehaviour
 {
 
-    [SerializeField] private GameObject[] nozzle;
-    [SerializeField] private Sprite[] crosshairImage;
-    [SerializeField] private PlayerState playerState;
+    [SerializeField] private MeshFilter nozzle;
+    [SerializeField] private Mesh[] mesh;
+    [SerializeField] private GameObject[] water;
+
     private WashGunControl washGun;
-    private Image crosshair;
-    private State state;
-    private float scroll;
+    private Crosshair crosshair;
     public static bool isVertical { get; private set; }
-    public int Index { get; private set; }
-    private void OnEnable()
-    {
-        playerState.Register(this);
-    }
+    public int index { get; private set; }
+  
     private void Start()
     {
-        Index = 0;
-        washGun = FindObjectOfType<WashGunControl>();
-        crosshair = FindObjectOfType<Crosshair>().GetComponent<Image>();
-        washGun.SetNozzleInfo(nozzle[Index].transform.GetChild(1).gameObject, nozzle[Index].transform.GetChild(2).gameObject);
+        index = 0;
+        washGun = GetComponent<WashGunControl>();
+        crosshair = FindObjectOfType<Crosshair>();
+        washGun.SetWater(water[index]);
     }
 
     private void Update()
     {
-        if (UIManager.instance.isCursor) return;
+        if (UIManager.instance.isCursor || !washGun.isReady) return;
 
-        if (state.Equals(State.Hand) ||
-            state.Equals(State.Run))
-            return;
-
-        scroll = Input.GetAxis("Mouse ScrollWheel");
+        float scroll = Input.GetAxis("Mouse ScrollWheel");
         if (scroll > 0)
         {
-            ScrollUp();
+            water[index].SetActive(false);
+            index++;
+            index = index >= mesh.Length ? 0 : index;
+            Change();
         }
         else if (scroll < 0)
         {
-            ScrollDown();
+            water[index].SetActive(false);
+            index--;
+            index = index < 0 ? mesh.Length - 1 : index;
+            Change();
         }
         if (Input.GetKeyDown(KeyCode.R))
         {
             Rotate();
         }
     }
-    private void ScrollUp()
+    private void Change()
     {
-        nozzle[Index].SetActive(false);
-        Index++;
-        Index = Index >= nozzle.Length ? 0 : Index;
-        nozzle[Index].SetActive(true);
-        crosshair.sprite = crosshairImage[Index];
-        crosshair.SetNativeSize();
-        washGun.SetNozzleInfo(nozzle[Index].transform.GetChild(1).gameObject, nozzle[Index].transform.GetChild(2).gameObject);
-    }
-    private void ScrollDown()
-    {
-        nozzle[Index].SetActive(false);
-        Index--;
-        Index = Index < 0 ? nozzle.Length - 1 : Index;
-        nozzle[Index].SetActive(true);
-        crosshair.sprite = crosshairImage[Index];
-        crosshair.SetNativeSize();
-        washGun.SetNozzleInfo(nozzle[Index].transform.GetChild(1).gameObject, nozzle[Index].transform.GetChild(2).gameObject);
+        nozzle.mesh = mesh[index];
+        crosshair.ChangeImage(index);
+        washGun.SetWater(water[index]);
     }
     private void Rotate()
     {
         if (isVertical)
         {
             isVertical = false;
-            nozzle[Index].transform.DOLocalRotate(Vector3.zero, 0.15f);
+            nozzle.transform.DOLocalRotate(Vector3.zero, 0.15f);
             crosshair.transform.DOLocalRotate(Vector3.zero, 0.15f);
         }
         else
         {
             isVertical = true;
-            nozzle[Index].transform.DOLocalRotate(new Vector3(0, 0, 90), 0.15f);
+            nozzle.transform.DOLocalRotate(new Vector3(0, 0, 90), 0.15f);
             crosshair.transform.DOLocalRotate(new Vector3(0, 0, 90), 0.15f);
         }
-        for (int i = 0; i < 4; i++)
-        {
-            if (Index.Equals(i)) continue;
-            if(nozzle[i].transform.localRotation.z > 0f)
-            {
-                nozzle[i].transform.localRotation = Quaternion.Euler(Vector3.zero);
-            }
-            else
-            {
-                nozzle[i].transform.localRotation = Quaternion.Euler(new Vector3(0, 0, 90f));
-            }
-        }
-    }
-
-    public void UpdateState(State state)
-    {
-        this.state = state;
     }
 }

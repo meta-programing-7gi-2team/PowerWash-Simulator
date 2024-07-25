@@ -1850,6 +1850,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeSpeed: 1.5
+  sprite:
+  - {fileID: 21300000, guid: f2ef171024121084085df8052e6d2145, type: 3}
+  - {fileID: 21300000, guid: 2cbefdd8db4609042b0991cab55a264c, type: 3}
+  - {fileID: 21300000, guid: 3e4e85b798241134f9f8706ba7a42487, type: 3}
+  - {fileID: 21300000, guid: 01ceac78ceeddd3468da023122b0a7b2, type: 3}
 --- !u!1 &4653825810082526589
 GameObject:
   m_ObjectHideFlags: 0
