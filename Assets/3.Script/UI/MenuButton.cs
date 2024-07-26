@@ -305,6 +305,8 @@ public class MenuButton : MonoBehaviour
         Special_Btn.SetActive(false);
         Career_Btn.SetActive(false);
         Option_Btn.SetActive(false);
+        Pineapple_Btn.SetActive(false);
+        KrustyKrab_Btn.SetActive(false);
 
         Option_Menu.SetActive(true);
         MenuBack_Btn.SetActive(true);
