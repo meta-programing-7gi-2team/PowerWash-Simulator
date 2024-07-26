@@ -15,6 +15,7 @@ public class ActableObject : InteractionObject
         if (!isOpen)
         {
             isOpen = true;
+            AudioManager.instance.PlaySFX_UI("Open_Door");
             anim.SetTrigger("Open");
         }
         else
@@ -22,6 +23,7 @@ public class ActableObject : InteractionObject
             if (!dangerZone.isDanger)
             {
                 isOpen = false;
+                AudioManager.instance.PlaySFX_UI("Close_Door");
                 anim.SetTrigger("Close");
             }
         }
