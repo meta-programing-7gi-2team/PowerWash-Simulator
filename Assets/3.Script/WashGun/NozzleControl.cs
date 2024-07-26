@@ -10,6 +10,7 @@ public class NozzleControl : MonoBehaviour
     [SerializeField] private Mesh[] mesh;
     [SerializeField] private GameObject[] water;
 
+    private Shortcut_Key_Control shortcut;
     private WashGunControl washGun;
     private Crosshair crosshair;
     public static bool isVertical { get; private set; }
@@ -20,6 +21,7 @@ public class NozzleControl : MonoBehaviour
         index = 0;
         washGun = GetComponent<WashGunControl>();
         crosshair = FindObjectOfType<Crosshair>();
+        shortcut = FindObjectOfType<Shortcut_Key_Control>();
         washGun.SetWater(water[index]);
     }
 
@@ -34,6 +36,7 @@ public class NozzleControl : MonoBehaviour
             index++;
             index = index >= mesh.Length ? 0 : index;
             ChangeNozzle();
+            shortcut.SetNozzleToggle(index);
         }
         else if (scroll < 0)
         {
@@ -41,6 +44,7 @@ public class NozzleControl : MonoBehaviour
             index--;
             index = index < 0 ? mesh.Length - 1 : index;
             ChangeNozzle();
+            shortcut.SetNozzleToggle(index);
         }
         if (Input.GetKeyDown(KeyCode.R))
         {
