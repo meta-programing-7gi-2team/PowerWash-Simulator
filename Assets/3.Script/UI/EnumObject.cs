@@ -93,7 +93,6 @@ public class EnumObject
         DumpsterWheel,
         EntranceSignPost,
         FlagRope,
-        Mayo,
         Nail,
         holeFrame,
         holeWindow,
@@ -330,9 +329,6 @@ public class EnumObject
                         break;
                     case KrustyKrab.FlagRope:
                         name = "집게리아 - 깃발 밧줄";
-                        break;
-                    case KrustyKrab.Mayo:
-                        name = "집게리아 - 마요네즈";
                         break;
                     case KrustyKrab.Nail:
                         name = "집게리아 - 못";
