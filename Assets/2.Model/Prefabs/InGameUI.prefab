@@ -672,7 +672,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.050980393, g: 0.26666668, b: 0.48235294, a: 0.5882353}
     m_PressedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_SelectedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0.050980397, g: 0.26666668, b: 0.48235297, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -686,7 +686,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 8400717399788197599}
   toggleTransition: 1
   graphic: {fileID: 2332358253632477660}
@@ -973,7 +973,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.050980393, g: 0.26666668, b: 0.48235294, a: 0.5882353}
     m_PressedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_SelectedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0.050980397, g: 0.26666668, b: 0.48235297, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -987,7 +987,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 3253265258024475163}
   toggleTransition: 1
   graphic: {fileID: 2958088627555047584}
@@ -1631,7 +1631,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.050980393, g: 0.26666668, b: 0.48235294, a: 0.5882353}
     m_PressedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_SelectedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0.050980397, g: 0.26666668, b: 0.48235297, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -1645,7 +1645,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 2988905863356350395}
   toggleTransition: 1
   graphic: {fileID: 7710929804991995597}
@@ -2079,7 +2079,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.050980393, g: 0.26666668, b: 0.48235294, a: 0.5882353}
     m_PressedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_SelectedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0.050980397, g: 0.26666668, b: 0.48235297, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -2093,7 +2093,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 2364864215292344876}
   toggleTransition: 1
   graphic: {fileID: 5472094287569603123}
@@ -2302,7 +2302,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.050980393, g: 0.26666668, b: 0.48235294, a: 0.5882353}
     m_PressedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_SelectedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0.050980397, g: 0.26666668, b: 0.48235297, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -2316,7 +2316,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 673780629205083828}
   toggleTransition: 1
   graphic: {fileID: 5811407952776203341}
@@ -3051,7 +3051,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.050980393, g: 0.26666668, b: 0.48235294, a: 0.5882353}
     m_PressedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_SelectedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0.050980397, g: 0.26666668, b: 0.48235297, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -3065,7 +3065,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 2325886171044286946}
   toggleTransition: 1
   graphic: {fileID: 4887855724886306855}
@@ -5791,7 +5791,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.050980393, g: 0.26666668, b: 0.48235294, a: 0.5882353}
     m_PressedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_SelectedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0.050980397, g: 0.26666668, b: 0.48235297, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -5805,7 +5805,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 5437955366787751693}
   toggleTransition: 1
   graphic: {fileID: 5171452663995852789}
@@ -7100,7 +7100,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.050980393, g: 0.26666668, b: 0.48235294, a: 0.5882353}
     m_PressedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_SelectedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0.050980397, g: 0.26666668, b: 0.48235297, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -7114,7 +7114,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 2643458338073015654}
   toggleTransition: 1
   graphic: {fileID: 4474477735009447596}

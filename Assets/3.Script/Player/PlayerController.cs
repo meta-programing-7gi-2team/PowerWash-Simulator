@@ -107,17 +107,17 @@ public class PlayerController : MonoBehaviour,IObserver
         switch (state)
         {
             case State.Idle:
-                playerCamera.DOLocalMove(new Vector3(0, 1f, 0), 0.1f);
+                playerCamera.DOLocalMove(new Vector3(0, 1f, 0), 0.15f);
                 break;
             case State.Crouch:
-                playerCamera.DOLocalMove(new Vector3(0, 0.1f, 0), 0.1f);
+                playerCamera.DOLocalMove(new Vector3(0, 0.1f, 0), 0.15f);
                 break;
             case State.Lie:
-                playerCamera.DOLocalMove(new Vector3(0, -0.7f, 0), 0.1f);
+                playerCamera.DOLocalMove(new Vector3(0, -0.7f, 0), 0.15f);
                 break;
             case State.Run:
             case State.Hand:
-                playerCamera.DOLocalMove(new Vector3(0, 1f, 0), 0.1f);
+                playerCamera.DOLocalMove(new Vector3(0, 1f, 0), 0.15f);
                 break;
         }
     }
