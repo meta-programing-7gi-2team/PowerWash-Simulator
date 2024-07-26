@@ -100,6 +100,7 @@ public class UIManager : MonoBehaviour
     public void LoadStart()
     {
         string ActiveScene = SceneManager.GetActiveScene().name;
+        AudioManager.instance.PlaySFX_UI("Work_Start");
 
         if(ActiveScene.Equals("Map001"))
         {
@@ -617,6 +618,7 @@ public class UIManager : MonoBehaviour
             if (AmountManager.instance.Map001_AverageRatio.Equals(100))
             {
                 AmountManager.instance.SetMap001_Data(Process.Complete);
+                AudioManager.instance.PlaySFX_UI("WorkComplete");
             }
         }
         else if(ActiveScene.Equals("Map002"))
@@ -626,6 +628,7 @@ public class UIManager : MonoBehaviour
             if (AmountManager.instance.Map001_AverageRatio.Equals(100))
             {
                 AmountManager.instance.SetMap002_Data(Process.Complete);
+                AudioManager.instance.PlaySFX_UI("WorkComplete");
             }
         }
 
