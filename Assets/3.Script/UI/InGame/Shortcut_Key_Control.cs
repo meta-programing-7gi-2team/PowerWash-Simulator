@@ -37,22 +37,23 @@ public class Shortcut_Key_Control : MonoBehaviour
 
     private void Update()
     {
-
         if(Input.GetKey(KeyCode.Alpha1) && !key2)
         {
             key1 = true;
-            selectedToggleE[E_Select].SetActive(true);
             shortcutE.DOScale(Vector3.one, 0.2f);
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
+
+            selectedToggleE[E_Select].SetActive(true);
         }
         else if(Input.GetKey(KeyCode.Alpha2) && !key1)
         {
             key2 = true;
-            selectedToggleN[N_Select].SetActive(true);
             shortcutN.DOScale(Vector3.one, 0.2f);
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
+            
+            selectedToggleN[N_Select].SetActive(true);
         }
         else if (Input.GetKeyUp(KeyCode.Alpha1))
         {
@@ -60,6 +61,7 @@ public class Shortcut_Key_Control : MonoBehaviour
             shortcutE.DOScale(new Vector3(0, 0, 1), 0.2f);
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
+            
             selectedToggleE[E_Select].SetActive(false);
             E_Select = E_Temp;
             togglesE[E_Select].isOn = true;
@@ -70,6 +72,7 @@ public class Shortcut_Key_Control : MonoBehaviour
             shortcutN.DOScale(new Vector3(0, 0, 1), 0.2f);
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
+
             selectedToggleN[N_Select].SetActive(false);
             N_Select = N_Temp;
             togglesN[N_Select].isOn = true;
@@ -111,5 +114,12 @@ public class Shortcut_Key_Control : MonoBehaviour
         N_Temp = N_Select;
         E_Name.text = togglenames_E[E_Select];
         N_Name.text = togglenames_N[N_Select];
+    }
+    public void SetNozzleToggle(int index)
+    {
+        selectedToggleN[N_Select].SetActive(false);
+        N_Name.text = togglenames_N[index];
+        N_Select = index;
+        togglesN[N_Select].isOn = true;
     }
 }
