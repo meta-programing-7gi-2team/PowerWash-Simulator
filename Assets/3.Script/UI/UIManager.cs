@@ -11,6 +11,7 @@ public class UIManager : MonoBehaviour
     private AsyncOperation operation;
     private CleanPercent percent;
 
+    [SerializeField] private SaveObserver Save;
     [SerializeField] private GameObject LoadAll;
     [SerializeField] private Slider loadingSlider; // 로딩바
     [SerializeField] private Slider AllObjectSlider; // 모든오브젝트게이지
@@ -388,14 +389,31 @@ public class UIManager : MonoBehaviour
         }
 
         string ActiveScene = SceneManager.GetActiveScene().name;
+        Save = FindObjectOfType<SaveObserver>();
 
-        if(ActiveScene.Equals("Map001"))
+        if (ActiveScene.Equals("Map001"))
         {
+            Save.SaveObservers();
+            GameManager.instance.SaveAmount();
+
             AmountManager.instance.SaveMap001();
+
+            if (AmountManager.instance.Map001_AverageRatio.Equals(100))
+            {
+                AmountManager.instance.SetMap001_Data(Process.Complete);
+            }
         }
         else if (ActiveScene.Equals("Map002"))
         {
+            Save.SaveObservers();
+            GameManager.instance.SaveAmount();
+
             AmountManager.instance.SaveMap002();
+
+            if (AmountManager.instance.Map002_AverageRatio.Equals(100))
+            {
+                AmountManager.instance.SetMap001_Data(Process.Complete);
+            }
         }
 
         targetProgress = 0.6f;
