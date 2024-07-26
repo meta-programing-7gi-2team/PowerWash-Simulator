@@ -28,7 +28,11 @@ public class PlayerController : MonoBehaviour,IObserver
     }
     private void Update()
     {
-        if (UIManager.instance.isCursor) return;
+        if (Cursor.visible)
+        {
+            AudioManager.instance.PlaySFX_Walk("Walk");
+            return;
+        }
 
         if (!state.Equals(State.Hand))
         {
@@ -65,7 +69,15 @@ public class PlayerController : MonoBehaviour,IObserver
         }
 
         Vector3 dir = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-        AudioManager.instance.PlaySFX_Walk("Walk");
+
+        if(dir == Vector3.zero)
+        {
+            AudioManager.instance.PlaySFX_Walk_Stop();
+        }
+        else
+        {
+            AudioManager.instance.PlaySFX_Walk("Walk");
+        }
         dir *= (speed * speedWeight);
         dir = transform.TransformDirection(dir);
         moveDir.x = dir.x;
@@ -95,17 +107,17 @@ public class PlayerController : MonoBehaviour,IObserver
         switch (state)
         {
             case State.Idle:
-                playerCamera.localPosition = new Vector3(0, 1f, 0);
+                playerCamera.DOLocalMove(new Vector3(0, 1f, 0), 0.1f);
                 break;
             case State.Crouch:
-                playerCamera.localPosition = new Vector3(0, 0.1f, 0);
+                playerCamera.DOLocalMove(new Vector3(0, 0.1f, 0), 0.1f);
                 break;
             case State.Lie:
-                playerCamera.localPosition = new Vector3(0, -0.5f, 0);
+                playerCamera.DOLocalMove(new Vector3(0, -0.7f, 0), 0.1f);
                 break;
             case State.Run:
             case State.Hand:
-                playerCamera.localPosition = new Vector3(0, 1f, 0);
+                playerCamera.DOLocalMove(new Vector3(0, 1f, 0), 0.1f);
                 break;
         }
     }

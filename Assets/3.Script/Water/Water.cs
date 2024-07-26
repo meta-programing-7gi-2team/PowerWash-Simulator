@@ -21,6 +21,8 @@ public class Water : MonoBehaviour
     }
     void Update()
     {
+        if (Cursor.visible) return;
+
         if (Physics.Raycast(washGun.firePoint, playerCamera.forward, out hit, shotRange, layer))
         {
             transform.LookAt(hit.point);

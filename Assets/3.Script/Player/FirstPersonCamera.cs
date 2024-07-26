@@ -16,7 +16,7 @@ public class FirstPersonCamera : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        if (UIManager.instance.isCursor) return;
+        if (Cursor.visible) return;
 
         CameraMove();
     }

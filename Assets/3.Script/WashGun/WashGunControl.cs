@@ -26,7 +26,7 @@ public class WashGunControl : MonoBehaviour,IObserver
     }
     private void Update()
     {
-        if (UIManager.instance.isCursor || !isReady) return;
+        if (Cursor.visible || !isReady) return;
 
         if (!IsBlock())
         {
@@ -72,6 +72,7 @@ public class WashGunControl : MonoBehaviour,IObserver
         {
             water.SetActive(false);
             transform.DOLocalRotate(new Vector3(15, -45, 20), 0.1f);
+            AudioManager.instance.PlaySFX_Water_Stop();
             return true;
         }
         else

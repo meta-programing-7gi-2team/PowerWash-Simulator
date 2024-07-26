@@ -27,7 +27,7 @@ public class NozzleControl : MonoBehaviour
 
     private void Update()
     {
-        if (UIManager.instance.isCursor || !washGun.isReady) return;
+        if (Cursor.visible || !washGun.isReady) return;
 
         float scroll = Input.GetAxis("Mouse ScrollWheel");
         if (scroll > 0)
