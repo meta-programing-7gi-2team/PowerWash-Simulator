@@ -17,7 +17,7 @@ public class ExtensionControl : MonoBehaviour
     }
     public void ChangeExtension(int index)
     {
-        if (UIManager.instance.isCursor || !washGun.isReady) return;
+        if (Cursor.visible || !washGun.isReady) return;
 
         switch (index)
         {
