@@ -19424,7 +19424,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 87534281}
         m_TargetAssemblyTypeName: MenuButton, Assembly-CSharp
-        m_MethodName: Disabled
+        m_MethodName: Option_Button
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
