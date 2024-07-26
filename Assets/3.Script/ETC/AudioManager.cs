@@ -77,7 +77,7 @@ public class AudioManager : MonoBehaviour
         BGMPlayer.Stop();
     }
 
-    public void PlaySFX_Water(string name)
+    public void PlaySFX_Water(string name, bool loop = false)
     {
         foreach (Sound s in SFX)
         {
@@ -85,18 +85,34 @@ public class AudioManager : MonoBehaviour
             {
                 for (int i = 0; i < SFXPlayer_Water.Length; i++)
                 {
+                    if (SFXPlayer_Water[i].isPlaying && SFXPlayer_Water[i].clip == s.clip)
+                    {
+                        return;
+                    }
+                }
+
+                for (int i = 0; i < SFXPlayer_Water.Length; i++)
+                {
                     if (!SFXPlayer_Water[i].isPlaying)
                     {
                         SFXPlayer_Water[i].clip = s.clip;
+                        SFXPlayer_Water[i].loop = loop;
                         SFXPlayer_Water[i].Play();
                         return;
                     }
                 }
-                Debug.Log("모든 플레이어가 재생 중 입니다...");
                 return;
             }
         }
-        Debug.Log($"PlaySFX -> {name}이 없습니다.");
+        return;
+    }
+
+    public void PlaySFX_Water_Stop()
+    {
+        for (int i = 0; i < SFXPlayer_Water.Length; i++)
+        {
+            SFXPlayer_Water[i].Stop();
+        }
     }
 
     public void PlaySFX_UI(string name)
@@ -129,6 +145,14 @@ public class AudioManager : MonoBehaviour
             {
                 for (int i = 0; i < SFXPlayer_Walk.Length; i++)
                 {
+                    if (SFXPlayer_Walk[i].isPlaying && SFXPlayer_Walk[i].clip == s.clip)
+                    {
+                        return;
+                    }
+                }
+
+                for (int i = 0; i < SFXPlayer_Walk.Length; i++)
+                {
                     if (!SFXPlayer_Walk[i].isPlaying)
                     {
                         SFXPlayer_Walk[i].clip = s.clip;
@@ -136,11 +160,21 @@ public class AudioManager : MonoBehaviour
                         return;
                     }
                 }
-                Debug.Log("모든 플레이어가 재생 중 입니다...");
                 return;
             }
         }
         Debug.Log($"PlaySFX -> {name}이 없습니다.");
+    }
+
+    public void PlaySFX_Walk_Stop()
+    {
+        for (int i = 0; i < SFXPlayer_Walk.Length; i++)
+        {
+            if(SFXPlayer_Walk[i].isPlaying)
+            {
+                SFXPlayer_Walk[i].Stop();
+            }
+        }
     }
 
     public void SetMasterVolume(float volume)

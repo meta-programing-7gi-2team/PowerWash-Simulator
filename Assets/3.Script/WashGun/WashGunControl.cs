@@ -53,11 +53,13 @@ public class WashGunControl : MonoBehaviour,IObserver
     private void Fire()
     {
         water.SetActive(true);
+        AudioManager.instance.PlaySFX_Water("Water", true);
         transform.DOLocalMove(new Vector3(Random.Range(-0.012f, -0.008f), Random.Range(-0.003f, 0.003f), 0.27f), 0.1f);
     }
     private void Stop()
     {
         water.SetActive(false);
+        AudioManager.instance.PlaySFX_Water_Stop();
         transform.DOLocalMove(new Vector3(-0.01f, 0, 0.32f), 0.15f).OnComplete(Rebound);
     }
     private void Rebound()

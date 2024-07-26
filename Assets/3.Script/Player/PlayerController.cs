@@ -30,8 +30,10 @@ public class PlayerController : MonoBehaviour,IObserver
     {
         if (UIManager.instance.isCursor) return;
 
-        if(!state.Equals(State.Hand))
+        if (!state.Equals(State.Hand))
+        {
             Run();
+        }
 
         Move();
 
@@ -61,7 +63,9 @@ public class PlayerController : MonoBehaviour,IObserver
                 moveDir.y = 0f;
             }
         }
+
         Vector3 dir = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+        AudioManager.instance.PlaySFX_Walk("Walk");
         dir *= (speed * speedWeight);
         dir = transform.TransformDirection(dir);
         moveDir.x = dir.x;

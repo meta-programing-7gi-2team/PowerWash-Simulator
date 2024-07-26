@@ -73,6 +73,7 @@ public class UIManager : MonoBehaviour
             if (isCursor)
             {
                 isCursor = false;
+                AudioManager.instance.PlaySFX_UI("Tablet");
                 Tablet.GetComponent<RectTransform>().DOAnchorPosY(-540, 0.3f);
                 InGame.DOFade(1, 0.3f);
                 Cursor.visible = false;
@@ -81,6 +82,7 @@ public class UIManager : MonoBehaviour
             else
             {
                 isCursor = true;
+                AudioManager.instance.PlaySFX_UI("Tablet");
                 Tablet.GetComponent<RectTransform>().DOAnchorPosY(540, 0.3f);
                 InGame.DOFade(0, 0.3f);
                 Cursor.visible = true;
