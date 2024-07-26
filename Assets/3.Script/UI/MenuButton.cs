@@ -311,6 +311,10 @@ public class MenuButton : MonoBehaviour
         Info.SetActive(false);
         D_Info.SetActive(false);
         Start_Btn.SetActive(false);
+        GameBack_Btn.SetActive(false);
+        Back_Btn.SetActive(false);
+        GameBack_Btn_Pine.SetActive(false);
+        GameBack_Btn_Krusty.SetActive(false);
 
         Option_Menu.SetActive(true);
         MenuBack_Btn.SetActive(true);
