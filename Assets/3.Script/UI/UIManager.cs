@@ -41,7 +41,7 @@ public class UIManager : MonoBehaviour
     public bool isCursor { get; private set; }
     private float targetProgress = 0f;
 
-    private bool Loding;
+    private bool Loading;
 
     private void Awake()
     {
@@ -55,9 +55,10 @@ public class UIManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    
     private void Update()
     {
-        if (Loding) return;
+        if (Loading) return;
 
         if (Time.frameCount % 120 == 0) // 120 프레임(2초)마다 페이드 적용
         {
@@ -101,6 +102,7 @@ public class UIManager : MonoBehaviour
     {
         LoadAll.SetActive(false);
         text.gameObject.SetActive(false); // 텍스트 비활성화
+        Loading = true;
         LoadSliderRatio();
     }
 
@@ -149,7 +151,7 @@ public class UIManager : MonoBehaviour
     {
         LoadAll.SetActive(true);
         Save_Btu.SetActive(false);
-        Loding = true;
+        Loading = true;
         StartCoroutine(LoadYourAsyncScene(Mapname));
         Tablet.transform.position = new Vector3(960, -540, 0);
 
@@ -363,7 +365,7 @@ public class UIManager : MonoBehaviour
         Button.gameObject.SetActive(false);
         LoadAll.SetActive(false);
         text.gameObject.SetActive(false);
-        Loding = false;
+        Loading = false;
         Save_Btu.SetActive(true);
         Pineapple = false;
         Squidward = false;
