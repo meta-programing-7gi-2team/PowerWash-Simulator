@@ -9,6 +9,7 @@ public class ShortcutToggle : MonoBehaviour, IPointerEnterHandler, IPointerExitH
     public void OnPointerEnter(PointerEventData eventData)
     {
         highlight.SetActive(true);
+        AudioManager.instance.PlaySFX_UI("Shortcut_Change");
     }
 
     public void OnPointerExit(PointerEventData eventData)

@@ -53,6 +53,7 @@ public class MovableObject : InteractionObject
         isOnAct = true;
         transform.parent = playerCamera;
         gameObject.layer = LayerMask.NameToLayer("Movable");
+        AudioManager.instance.PlaySFX_Walk("Stairs_Hold");
     }
     public override void NotAct(InteractionController interactionController)
     {
@@ -66,6 +67,7 @@ public class MovableObject : InteractionObject
             isOnAct = false;
             transform.parent = parent;
             gameObject.layer = LayerMask.NameToLayer("Pack");
+            AudioManager.instance.PlaySFX_Walk("Stairs_PutDown");
             interactionController.Init();
         }
     }

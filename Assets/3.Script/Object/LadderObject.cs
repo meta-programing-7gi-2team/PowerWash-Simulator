@@ -43,6 +43,7 @@ public class LadderObject : InteractionObject
         extension.localPosition = Vector3.zero;
         part[0].enabled = false;
         part[1].enabled = false;
+        AudioManager.instance.PlaySFX_Walk("Ladder_Hold");
     }
     public override void NotAct(InteractionController interactionController)
     {
@@ -64,6 +65,7 @@ public class LadderObject : InteractionObject
         transform.parent = parent;
         part[0].enabled = true;
         part[1].enabled = true;
+        AudioManager.instance.PlaySFX_Walk("Ladder_PutDown");
         interactionController.Init();
     }
     public override void OnMove(RaycastHit hit)
