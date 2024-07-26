@@ -10,38 +10,38 @@ public class Shortcut_Key_Control : MonoBehaviour
     [SerializeField] private RectTransform shortcutE;
     [SerializeField] private RectTransform shortcutN;
 
-    [SerializeField] private Toggle[] toggles;
     [SerializeField] private Toggle[] togglesE;
     [SerializeField] private Toggle[] togglesN;
-    [SerializeField] private GameObject[] toggleSprites;
 
-    [SerializeField] private Text togglename;
+    [SerializeField] private Text E_Name;
+    [SerializeField] private Text N_Name;
 
-    [SerializeField] private bool key1 = false;
-    [SerializeField] private bool key2 = false;
+    private bool key1 = false;
+    private bool key2 = false;
 
-    [SerializeField] private int E_toggleSelect;
-    [SerializeField] private int N_toggleSelect;
+    private int E_Select;
+    private int N_Select;
+    private int E_Temp;
+    private int N_Temp;
 
-    private string[] togglenames_1 = { "æ¯¿Ω (Ω∫≈Õ∫Ò ∞«)", "µˆ ≈¨∏Æ≥  4000 ºÙ »Æ¿Â±‚", "µˆ ≈¨∏Æ≥  4000 ∑’ »Æ¿Â±‚", "µˆ ≈¨∏Æ≥  ø¢Ω∫∆Æ∂Û ∑’ »Æ¿Â±‚" };
-    private string[] togglenames_2 = { "0µµ ≥Î¡Ò", "15µµ ≥Î¡Ò", "25µµ ≥Î¡Ò", "40µµ ≥Î¡Ò" };
+    private string[] togglenames_E = { "æ¯¿Ω (Ω∫≈Õ∫Ò ∞«)", "µˆ ≈¨∏Æ≥  4000 ºÙ »Æ¿Â±‚", "µˆ ≈¨∏Æ≥  4000 ∑’ »Æ¿Â±‚", "µˆ ≈¨∏Æ≥  ø¢Ω∫∆Æ∂Û ∑’ »Æ¿Â±‚" };
+    private string[] togglenames_N = { "0µµ ≥Î¡Ò", "15µµ ≥Î¡Ò", "25µµ ≥Î¡Ò", "40µµ ≥Î¡Ò" };
+
+    [SerializeField] private GameObject[] selectedToggleE;
+    [SerializeField] private GameObject[] selectedToggleN;
 
     private void Start()
     {
-        foreach (var toggle in toggles)
-        {
-            toggle.onValueChanged.AddListener(delegate { ToggleValueChanged(toggle); });
-        }
-
-        HideAllSprites();
-        SetTextToSelectedToggle();
+        Init();
     }
 
     private void Update()
     {
+
         if(Input.GetKey(KeyCode.Alpha1) && !key2)
         {
             key1 = true;
+            selectedToggleE[E_Select].SetActive(true);
             shortcutE.DOScale(Vector3.one, 0.2f);
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
@@ -49,6 +49,7 @@ public class Shortcut_Key_Control : MonoBehaviour
         else if(Input.GetKey(KeyCode.Alpha2) && !key1)
         {
             key2 = true;
+            selectedToggleN[N_Select].SetActive(true);
             shortcutN.DOScale(Vector3.one, 0.2f);
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
@@ -59,110 +60,56 @@ public class Shortcut_Key_Control : MonoBehaviour
             shortcutE.DOScale(new Vector3(0, 0, 1), 0.2f);
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
+            selectedToggleE[E_Select].SetActive(false);
+            E_Select = E_Temp;
+            togglesE[E_Select].isOn = true;
         }
-        else if (Input.GetKey(KeyCode.Alpha2))
+        else if (Input.GetKeyUp(KeyCode.Alpha2))
         {
             key2 = false;
             shortcutN.DOScale(new Vector3(0, 0, 1), 0.2f);
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
+            selectedToggleN[N_Select].SetActive(false);
+            N_Select = N_Temp;
+            togglesN[N_Select].isOn = true;
         }
-
-        else if (Input.GetKey(KeyCode.Alpha1) || Input.GetKey(KeyCode.Alpha2))
-        {
-
-            ActiveShortcut();
-        }
-    }
-
-    private void ActiveShortcut()
-    {
-        if(Input.GetKeyDown(KeyCode.Alpha1) && key1)
-        {
-            toggles[E_toggleSelect].isOn = true;
-            key1 = false;
-        }
-
-        if (Input.GetKeyDown(KeyCode.Alpha2) && key2)
-        {
-            toggles[N_toggleSelect].isOn = true;
-            key2 = false;
-        }
-     
     }
 
     public void OnPointerEnter(int index)
     {
-        if (toggles[index].isOn) return;
-
-        ShowSprite(index);
-
-        if (Input.GetKey(KeyCode.Alpha1))
+        if (key1)
         {
-            E_toggleSelect = index;
-            togglename.text = togglenames_1[index];
+            E_Temp = index;
+            E_Name.text = togglenames_E[index];
         }
-
-        if (Input.GetKey(KeyCode.Alpha2))
+        else if (key2)
         {
-            N_toggleSelect = index;
-            togglename.text = togglenames_2[index];
+            N_Temp = index;
+            N_Name.text = togglenames_N[index];
         }
-
     }
-
-    public void OnPointerExit(int index)
+    public void OnPointerExit()
     {
-        if (toggles[index].isOn) return;
-
-        HideSprite(index);
-        SetTextToSelectedToggle();
-    }
-
-    private void ToggleValueChanged(Toggle changedToggle)
-    {
-        if (changedToggle.isOn)
+        if (key1)
         {
-            SetTextToSelectedToggle();
+            E_Temp = E_Select;
+            E_Name.text = togglenames_E[E_Select];
+        }
+        else if (key2)
+        {
+            N_Temp = N_Select;
+            N_Name.text = togglenames_N[N_Select];
         }
     }
 
-    private void ShowSprite(int index)
+    private void Init()
     {
-        HideAllSprites();
-        toggleSprites[index].SetActive(true);
-    }
-
-    private void HideSprite(int index)
-    {
-        toggleSprites[index].SetActive(false);
-    }
-
-    private void HideAllSprites()
-    {
-        foreach (var sprite in toggleSprites)
-        {
-            sprite.SetActive(false);
-        }
-    }
-
-    private void SetTextToSelectedToggle()
-    {
-        for (int i = 0; i < toggles.Length; i++)
-        {
-            if (toggles[i].isOn)
-            {
-                if (Input.GetKey(KeyCode.Alpha1))
-                {
-                    togglename.text = togglenames_1[E_toggleSelect];
-                }
-
-                if (Input.GetKey(KeyCode.Alpha2))
-                {
-                    togglename.text = togglenames_2[N_toggleSelect];
-                }
-                break;
-            }
-        }
+        E_Select = 0;
+        N_Select = 0;
+        E_Temp = E_Select;
+        N_Temp = N_Select;
+        E_Name.text = togglenames_E[E_Select];
+        N_Name.text = togglenames_N[N_Select];
     }
 }

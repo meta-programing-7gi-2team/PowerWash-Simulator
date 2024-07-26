@@ -33,26 +33,34 @@ public class NozzleControl : MonoBehaviour
             water[index].SetActive(false);
             index++;
             index = index >= mesh.Length ? 0 : index;
-            Change();
+            ChangeNozzle();
         }
         else if (scroll < 0)
         {
             water[index].SetActive(false);
             index--;
             index = index < 0 ? mesh.Length - 1 : index;
-            Change();
+            ChangeNozzle();
         }
         if (Input.GetKeyDown(KeyCode.R))
         {
             Rotate();
         }
     }
-    private void Change()
+    private void ChangeNozzle()
     {
         nozzle.mesh = mesh[index];
         crosshair.ChangeImage(index);
         washGun.SetWater(water[index]);
     }
+    public void ChageNozzle(int index)
+    {
+        water[this.index].SetActive(false);
+        this.index = index;
+        nozzle.mesh = mesh[index];
+        crosshair.ChangeImage(index);
+        washGun.SetWater(water[index]);
+    } 
     private void Rotate()
     {
         if (isVertical)

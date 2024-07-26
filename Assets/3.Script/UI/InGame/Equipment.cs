@@ -25,8 +25,8 @@ public class Equipment : MonoBehaviour
     }
     private void Update()
     {
-        extensionImage.sprite = extensionSprite[extension.Index];
-        extensionRect.sizeDelta = new Vector2(100 + 50 * extension.Index, 61); 
+        extensionImage.sprite = extensionSprite[extension.index];
+        extensionRect.sizeDelta = new Vector2(100 + 50 * extension.index, 61); 
         nozzleImage.sprite = nozzleSprite[nozzle.index];
     }
 }
