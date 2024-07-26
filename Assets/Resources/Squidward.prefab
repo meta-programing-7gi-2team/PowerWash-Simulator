@@ -270,7 +270,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1312935174661984941}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6762576455338149248}
@@ -355,7 +355,7 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 1fdf45dc3bbc10942af23af92843f94c, type: 3}
-  cleanRatio: 90
+  cleanRatio: 70
   Spongebob: 2
   Pineapple: 0
   Patrick: 0
@@ -597,7 +597,7 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 131857f309564ec4f8c6d0057f5b7b20, type: 3}
-  cleanRatio: 80
+  cleanRatio: 1
   Spongebob: 2
   Pineapple: 0
   Patrick: 0
@@ -1979,7 +1979,7 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 781f5dfd3334e45459ce72c088017963, type: 3}
-  cleanRatio: 95
+  cleanRatio: 90
   Spongebob: 2
   Pineapple: 0
   Patrick: 0
@@ -2100,7 +2100,7 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: a240a4bc6fc587f428205a620c825618, type: 3}
-  cleanRatio: 80
+  cleanRatio: 70
   Spongebob: 2
   Pineapple: 0
   Patrick: 0

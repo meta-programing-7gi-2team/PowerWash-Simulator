@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 288244722054558716}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -1.5024185, y: -1.1634759, z: -6.457077}
+  m_LocalPosition: {x: -1.35, y: -1.1634759, z: -6.457077}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2108180617290238485}
@@ -113,7 +113,7 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 66766cf2bb5d6d641a61cf0b0d476bf0, type: 3}
-  cleanRatio: 95
+  cleanRatio: 92
   Spongebob: 0
   Pineapple: 21
   Patrick: 0
@@ -121,7 +121,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-BubbleStandPlaque_0
-  DirName: Save
 --- !u!1 &2108180617290238484
 GameObject:
   m_ObjectHideFlags: 0
@@ -278,7 +277,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-BubbleStand_1
-  DirName: Save
 --- !u!1 &6309839621671828908
 GameObject:
   m_ObjectHideFlags: 0
@@ -400,7 +398,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-BubbleStandSign_0
-  DirName: Save
 --- !u!1 &7501482501529657753
 GameObject:
   m_ObjectHideFlags: 0
@@ -429,7 +426,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7501482501529657753}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -1.5024185, y: -1.1634759, z: -6.457077}
+  m_LocalPosition: {x: -1.42, y: -1.1634759, z: -6.457077}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2108180617290238485}
@@ -514,7 +511,7 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 56960448a4c7b4843bfd0406310a4b6a, type: 3}
-  cleanRatio: 95
+  cleanRatio: 90
   Spongebob: 0
   Pineapple: 20
   Patrick: 0
@@ -522,7 +519,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-BubbleStandContainer_0
-  DirName: Save
 --- !u!1 &8338599275618595844
 GameObject:
   m_ObjectHideFlags: 0
@@ -644,4 +640,3 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-BubbleStand_0
-  DirName: Save

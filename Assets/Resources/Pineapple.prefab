@@ -121,7 +121,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-FrontDoor_0
-  DirName: Save
 --- !u!1 &208357307911507504
 GameObject:
   m_ObjectHideFlags: 0
@@ -243,7 +242,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineapplePanelBottom_6_0
-  DirName: Save
 --- !u!1 &250177672417756808
 GameObject:
   m_ObjectHideFlags: 0
@@ -272,7 +270,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 250177672417756808}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7054646367142351022}
@@ -365,7 +363,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PathSteppingStone_1_0
-  DirName: Save
 --- !u!1 &566268599520635873
 GameObject:
   m_ObjectHideFlags: 0
@@ -487,7 +484,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineappleCrown_0
-  DirName: Save
 --- !u!1 &631857779120960362
 GameObject:
   m_ObjectHideFlags: 0
@@ -609,7 +605,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineapplePanel_33_0
-  DirName: Save
 --- !u!1 &661024018252588834
 GameObject:
   m_ObjectHideFlags: 0
@@ -638,7 +633,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 661024018252588834}
   m_LocalRotation: {x: -0, y: -0, z: -1, w: 0}
-  m_LocalPosition: {x: -2.6599998, y: -2.9000006, z: 0}
+  m_LocalPosition: {x: -2.6599998, y: -2.870001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7054646367142351022}
@@ -723,7 +718,7 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: d65af32c7df0d5841b5d8e8d2cdb1244, type: 3}
-  cleanRatio: 95
+  cleanRatio: 80
   Spongebob: 0
   Pineapple: 18
   Patrick: 0
@@ -731,7 +726,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-ReefBlowerNozzle_0
-  DirName: Save
 --- !u!1 &705207038385750947
 GameObject:
   m_ObjectHideFlags: 0
@@ -845,7 +839,7 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 84ccca1cae1df6149b3987fa095188a3, type: 3}
-  cleanRatio: 95
+  cleanRatio: 90
   Spongebob: 0
   Pineapple: 4
   Patrick: 0
@@ -853,7 +847,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineapplePanelTop_7_0
-  DirName: Save
 --- !u!1 &1008676515073644215
 GameObject:
   m_ObjectHideFlags: 0
@@ -975,7 +968,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineapplePanel_1_0
-  DirName: Save
 --- !u!1 &1149463317379055032
 GameObject:
   m_ObjectHideFlags: 0
@@ -1097,7 +1089,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineapplePanel_32_0
-  DirName: Save
 --- !u!1 &1525540171856482200
 GameObject:
   m_ObjectHideFlags: 0
@@ -1219,7 +1210,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineapplePanel_21_0
-  DirName: Save
 --- !u!1 &1538819121524264984
 GameObject:
   m_ObjectHideFlags: 0
@@ -1341,7 +1331,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineapplePanel_12_0
-  DirName: Save
 --- !u!1 &1565549482221590964
 GameObject:
   m_ObjectHideFlags: 0
@@ -1463,7 +1452,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineapplePanel_5_0
-  DirName: Save
 --- !u!1 &1631484336402604406
 GameObject:
   m_ObjectHideFlags: 0
@@ -1585,7 +1573,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineapplePanel_29_0
-  DirName: Save
 --- !u!1 &1749395129786262554
 GameObject:
   m_ObjectHideFlags: 0
@@ -1614,7 +1601,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1749395129786262554}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7054646367142351022}
@@ -1707,7 +1694,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PathSteppingStone_13_0
-  DirName: Save
 --- !u!1 &1754444055159697049
 GameObject:
   m_ObjectHideFlags: 0
@@ -1829,7 +1815,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PortholeWindow_2_0
-  DirName: Save
 --- !u!1 &1755906530636008161
 GameObject:
   m_ObjectHideFlags: 0
@@ -1858,7 +1843,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1755906530636008161}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7054646367142351022}
@@ -1951,7 +1936,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PathSteppingStone_9_0
-  DirName: Save
 --- !u!1 &1797752057002329489
 GameObject:
   m_ObjectHideFlags: 0
@@ -2073,7 +2057,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineapplePanel_34_0
-  DirName: Save
 --- !u!1 &1818137628098947412
 GameObject:
   m_ObjectHideFlags: 0
@@ -2195,7 +2178,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineapplePanelTop_3_0
-  DirName: Save
 --- !u!1 &1919159974618599200
 GameObject:
   m_ObjectHideFlags: 0
@@ -2317,7 +2299,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineapplePanelTop_5_0
-  DirName: Save
 --- !u!1 &2113385332089519036
 GameObject:
   m_ObjectHideFlags: 0
@@ -2346,7 +2327,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2113385332089519036}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7054646367142351022}
@@ -2439,7 +2420,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PathSteppingStone_16_0
-  DirName: Save
 --- !u!1 &2208421297610506532
 GameObject:
   m_ObjectHideFlags: 0
@@ -2561,7 +2541,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineapplePanel_8_0
-  DirName: Save
 --- !u!1 &2222817971441157368
 GameObject:
   m_ObjectHideFlags: 0
@@ -2683,7 +2662,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineapplePanel_35_0
-  DirName: Save
 --- !u!1 &2254226909306518774
 GameObject:
   m_ObjectHideFlags: 0
@@ -2805,7 +2783,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineapplePanel_36_0
-  DirName: Save
 --- !u!1 &2316439779762465074
 GameObject:
   m_ObjectHideFlags: 0
@@ -2927,7 +2904,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineapplePanel_39_0
-  DirName: Save
 --- !u!1 &2504801098404514301
 GameObject:
   m_ObjectHideFlags: 0
@@ -3049,7 +3025,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PortholeWindow_1_0
-  DirName: Save
 --- !u!1 &2552418244642805894
 GameObject:
   m_ObjectHideFlags: 0
@@ -3171,7 +3146,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineapplePanel_13_0
-  DirName: Save
 --- !u!1 &2777239497927552292
 GameObject:
   m_ObjectHideFlags: 0
@@ -3293,7 +3267,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineapplePanel_25_0
-  DirName: Save
 --- !u!1 &2990882947406356077
 GameObject:
   m_ObjectHideFlags: 0
@@ -3415,7 +3388,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineapplePanel_24_0
-  DirName: Save
 --- !u!1 &3119093668039019826
 GameObject:
   m_ObjectHideFlags: 0
@@ -3444,7 +3416,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3119093668039019826}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7054646367142351022}
@@ -3537,7 +3509,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PathSteppingStone_0_0
-  DirName: Save
 --- !u!1 &3294755372916365366
 GameObject:
   m_ObjectHideFlags: 0
@@ -3659,7 +3630,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineappleLeaf_5_0
-  DirName: Save
 --- !u!1 &3397460138841245766
 GameObject:
   m_ObjectHideFlags: 0
@@ -3781,7 +3751,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-ImaginationBox_0
-  DirName: Save
 --- !u!1 &3474200399689621750
 GameObject:
   m_ObjectHideFlags: 0
@@ -3903,7 +3872,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-FrontDoorHandle_0
-  DirName: Save
 --- !u!1 &3585072674262959689
 GameObject:
   m_ObjectHideFlags: 0
@@ -4025,7 +3993,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineappleLeaf_6_0
-  DirName: Save
 --- !u!1 &3652403144881525188
 GameObject:
   m_ObjectHideFlags: 0
@@ -4147,7 +4114,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineapplePanel_26_0
-  DirName: Save
 --- !u!1 &3652873565508404172
 GameObject:
   m_ObjectHideFlags: 0
@@ -4269,7 +4235,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-FrontDoorFrame_0
-  DirName: Save
 --- !u!1 &3689816646360764077
 GameObject:
   m_ObjectHideFlags: 0
@@ -4298,7 +4263,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3689816646360764077}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7054646367142351022}
@@ -4391,7 +4356,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PathSteppingStone_10_0
-  DirName: Save
 --- !u!1 &4011582947828464537
 GameObject:
   m_ObjectHideFlags: 0
@@ -4513,7 +4477,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PortholeFrame_2_0
-  DirName: Save
 --- !u!1 &4050944984351074560
 GameObject:
   m_ObjectHideFlags: 0
@@ -4542,7 +4505,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4050944984351074560}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7054646367142351022}
@@ -4635,7 +4598,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PathSteppingStone_12_0
-  DirName: Save
 --- !u!1 &4135679913149352874
 GameObject:
   m_ObjectHideFlags: 0
@@ -4757,7 +4719,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineapplePanel_0_0
-  DirName: Save
 --- !u!1 &4316678184182873750
 GameObject:
   m_ObjectHideFlags: 0
@@ -4879,7 +4840,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineapplePanel_19_0
-  DirName: Save
 --- !u!1 &4382278602225155618
 GameObject:
   m_ObjectHideFlags: 0
@@ -5001,7 +4961,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineappleLeaf_0_0
-  DirName: Save
 --- !u!1 &4472685715208556815
 GameObject:
   m_ObjectHideFlags: 0
@@ -5123,7 +5082,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineapplePanel_14_0
-  DirName: Save
 --- !u!1 &4475744875897400373
 GameObject:
   m_ObjectHideFlags: 0
@@ -5245,7 +5203,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineapplePanel_18_0
-  DirName: Save
 --- !u!1 &4501904047895608916
 GameObject:
   m_ObjectHideFlags: 0
@@ -5367,7 +5324,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineapplePanel_6_0
-  DirName: Save
 --- !u!1 &4508322981256476251
 GameObject:
   m_ObjectHideFlags: 0
@@ -5489,7 +5445,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineapplePanel_11_0
-  DirName: Save
 --- !u!1 &4582543979986609171
 GameObject:
   m_ObjectHideFlags: 0
@@ -5611,7 +5566,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineapplePanelTop_1_0
-  DirName: Save
 --- !u!1 &4738768349409897756
 GameObject:
   m_ObjectHideFlags: 0
@@ -5733,7 +5687,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineapplePanel_31_0
-  DirName: Save
 --- !u!1 &4799051913963706837
 GameObject:
   m_ObjectHideFlags: 0
@@ -5762,7 +5715,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4799051913963706837}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7054646367142351022}
@@ -5855,7 +5808,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PathSteppingStone_8_0
-  DirName: Save
 --- !u!1 &4912809304074073227
 GameObject:
   m_ObjectHideFlags: 0
@@ -5884,7 +5836,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4912809304074073227}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7054646367142351022}
@@ -5977,7 +5929,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PathSteppingStone_11_0
-  DirName: Save
 --- !u!1 &4958331559997300580
 GameObject:
   m_ObjectHideFlags: 0
@@ -6099,7 +6050,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineapplePanelBottom_2_0
-  DirName: Save
 --- !u!1 &5051034819123459213
 GameObject:
   m_ObjectHideFlags: 0
@@ -6221,7 +6171,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineappleLeaf_7_0
-  DirName: Save
 --- !u!1 &5248330659726204396
 GameObject:
   m_ObjectHideFlags: 0
@@ -6335,7 +6284,7 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 792e945afe64a5847864e496917a71c2, type: 3}
-  cleanRatio: 95
+  cleanRatio: 90
   Spongebob: 0
   Pineapple: 4
   Patrick: 0
@@ -6343,7 +6292,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineapplePanelTop_0_0
-  DirName: Save
 --- !u!1 &5327188231535738353
 GameObject:
   m_ObjectHideFlags: 0
@@ -6465,7 +6413,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineapplePanelBottom_5_0
-  DirName: Save
 --- !u!1 &5423686587065241807
 GameObject:
   m_ObjectHideFlags: 0
@@ -6587,7 +6534,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineapplePanel_23_0
-  DirName: Save
 --- !u!1 &5435394096769592577
 GameObject:
   m_ObjectHideFlags: 0
@@ -6709,7 +6655,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineappleLeaf_2_0
-  DirName: Save
 --- !u!1 &5563967159497021348
 GameObject:
   m_ObjectHideFlags: 0
@@ -6831,7 +6776,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PortholeWindow_0_0
-  DirName: Save
 --- !u!1 &5690235619610439088
 GameObject:
   m_ObjectHideFlags: 0
@@ -6860,7 +6804,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5690235619610439088}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7054646367142351022}
@@ -6953,7 +6897,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PathSteppingStone_3_0
-  DirName: Save
 --- !u!1 &5730248330281851498
 GameObject:
   m_ObjectHideFlags: 0
@@ -7075,7 +7018,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineapplePanel_16_0
-  DirName: Save
 --- !u!1 &5861662940220245426
 GameObject:
   m_ObjectHideFlags: 0
@@ -7197,7 +7139,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-GarageDoor_0
-  DirName: Save
 --- !u!1 &5928206307398089773
 GameObject:
   m_ObjectHideFlags: 0
@@ -7319,7 +7260,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineapplePanelBottom_7_0
-  DirName: Save
 --- !u!1 &5993429177072208898
 GameObject:
   m_ObjectHideFlags: 0
@@ -7441,7 +7381,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineappleLeaf_1_0
-  DirName: Save
 --- !u!1 &6085596782552901414
 GameObject:
   m_ObjectHideFlags: 0
@@ -7563,7 +7502,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-ReefBlower_0
-  DirName: Save
 --- !u!1 &6184970597568664456
 GameObject:
   m_ObjectHideFlags: 0
@@ -7592,7 +7530,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6184970597568664456}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7054646367142351022}
@@ -7685,7 +7623,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PathSteppingStone_14_0
-  DirName: Save
 --- !u!1 &6197229366962958085
 GameObject:
   m_ObjectHideFlags: 0
@@ -7807,7 +7744,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineapplePanel_28_0
-  DirName: Save
 --- !u!1 &6424267644112663466
 GameObject:
   m_ObjectHideFlags: 0
@@ -7929,7 +7865,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineapplePanelBottom_0_0
-  DirName: Save
 --- !u!1 &6592111152003430461
 GameObject:
   m_ObjectHideFlags: 0
@@ -8051,7 +7986,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PortholeFrame_0_0
-  DirName: Save
 --- !u!1 &6760570679716816401
 GameObject:
   m_ObjectHideFlags: 0
@@ -8173,7 +8107,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineapplePanelBottom_1_0
-  DirName: Save
 --- !u!1 &6772973346390870314
 GameObject:
   m_ObjectHideFlags: 0
@@ -8295,7 +8228,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineappleLeaf_4_0
-  DirName: Save
 --- !u!1 &6837743658109701852
 GameObject:
   m_ObjectHideFlags: 0
@@ -8324,7 +8256,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6837743658109701852}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7054646367142351022}
@@ -8417,7 +8349,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PathSteppingStone_15_0
-  DirName: Save
 --- !u!1 &6845490944150773154
 GameObject:
   m_ObjectHideFlags: 0
@@ -8539,7 +8470,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineapplePanel_9_0
-  DirName: Save
 --- !u!1 &7054646367142351023
 GameObject:
   m_ObjectHideFlags: 0
@@ -8791,7 +8721,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineapplePanel_2_0
-  DirName: Save
 --- !u!1 &7297604551368975315
 GameObject:
   m_ObjectHideFlags: 0
@@ -8913,7 +8842,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineapplePanel_10_0
-  DirName: Save
 --- !u!1 &7429098320393878892
 GameObject:
   m_ObjectHideFlags: 0
@@ -8942,7 +8870,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7429098320393878892}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7054646367142351022}
@@ -9035,7 +8963,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PathSteppingStone_7_0
-  DirName: Save
 --- !u!1 &7618319126439225062
 GameObject:
   m_ObjectHideFlags: 0
@@ -9157,7 +9084,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-Path_0
-  DirName: Save
 --- !u!1 &7841957794590947977
 GameObject:
   m_ObjectHideFlags: 0
@@ -9271,7 +9197,7 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: da44fe56b0e568342aa6dbefb7c2ac25, type: 3}
-  cleanRatio: 95
+  cleanRatio: 90
   Spongebob: 0
   Pineapple: 4
   Patrick: 0
@@ -9279,7 +9205,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineapplePanelTop_6_0
-  DirName: Save
 --- !u!1 &7853855651627769145
 GameObject:
   m_ObjectHideFlags: 0
@@ -9401,7 +9326,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineapplePanel_38_0
-  DirName: Save
 --- !u!1 &7895970184342516459
 GameObject:
   m_ObjectHideFlags: 0
@@ -9523,7 +9447,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineapplePanel_15_0
-  DirName: Save
 --- !u!1 &7924692574841403307
 GameObject:
   m_ObjectHideFlags: 0
@@ -9645,7 +9568,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineapplePanel_22_0
-  DirName: Save
 --- !u!1 &7932340440546286802
 GameObject:
   m_ObjectHideFlags: 0
@@ -9767,7 +9689,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineappleLeaf_8_0
-  DirName: Save
 --- !u!1 &8034588982498434800
 GameObject:
   m_ObjectHideFlags: 0
@@ -9889,7 +9810,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineappleLeaf_9_0
-  DirName: Save
 --- !u!1 &8043939182048749754
 GameObject:
   m_ObjectHideFlags: 0
@@ -10011,7 +9931,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineapplePanel_27_0
-  DirName: Save
 --- !u!1 &8093105611273588347
 GameObject:
   m_ObjectHideFlags: 0
@@ -10133,7 +10052,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineapplePanelTop_2_0
-  DirName: Save
 --- !u!1 &8112373773914423087
 GameObject:
   m_ObjectHideFlags: 0
@@ -10255,7 +10173,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-Chimney_0
-  DirName: Save
 --- !u!1 &8180079373007197559
 GameObject:
   m_ObjectHideFlags: 0
@@ -10377,7 +10294,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineapplePanel_17_0
-  DirName: Save
 --- !u!1 &8248044340610800891
 GameObject:
   m_ObjectHideFlags: 0
@@ -10499,7 +10415,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineapplePanel_20_0
-  DirName: Save
 --- !u!1 &8264438505214466358
 GameObject:
   m_ObjectHideFlags: 0
@@ -10621,7 +10536,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineapplePanel_3_0
-  DirName: Save
 --- !u!1 &8280763208670327122
 GameObject:
   m_ObjectHideFlags: 0
@@ -10650,7 +10564,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8280763208670327122}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0, z: 0.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7054646367142351022}
@@ -10743,7 +10657,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PathSteppingStone_2_0
-  DirName: Save
 --- !u!1 &8324662190619792672
 GameObject:
   m_ObjectHideFlags: 0
@@ -10865,7 +10778,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PortholeFrame_1_0
-  DirName: Save
 --- !u!1 &8360464770291446616
 GameObject:
   m_ObjectHideFlags: 0
@@ -10987,7 +10899,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineapplePanel_4_0
-  DirName: Save
 --- !u!1 &8380900266188504301
 GameObject:
   m_ObjectHideFlags: 0
@@ -11109,7 +11020,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineapplePanel_37_0
-  DirName: Save
 --- !u!1 &8555271957002019332
 GameObject:
   m_ObjectHideFlags: 0
@@ -11138,7 +11048,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8555271957002019332}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7054646367142351022}
@@ -11231,7 +11141,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PathSteppingStone_4_0
-  DirName: Save
 --- !u!1 &8579205996585514301
 GameObject:
   m_ObjectHideFlags: 0
@@ -11353,7 +11262,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineapplePanel_7_0
-  DirName: Save
 --- !u!1 &8737652229393662690
 GameObject:
   m_ObjectHideFlags: 0
@@ -11382,7 +11290,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8737652229393662690}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7054646367142351022}
@@ -11475,7 +11383,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PathSteppingStone_5_0
-  DirName: Save
 --- !u!1 &8765380451738907200
 GameObject:
   m_ObjectHideFlags: 0
@@ -11597,7 +11504,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineapplePanelBottom_4_0
-  DirName: Save
 --- !u!1 &8782932155768503824
 GameObject:
   m_ObjectHideFlags: 0
@@ -11719,7 +11625,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-GarageDoorAlcove_0
-  DirName: Save
 --- !u!1 &8835229092094302489
 GameObject:
   m_ObjectHideFlags: 0
@@ -11841,7 +11746,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineapplePanelTop_4_0
-  DirName: Save
 --- !u!1 &8841770713291093496
 GameObject:
   m_ObjectHideFlags: 0
@@ -11963,7 +11867,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineapplePanel_30_0
-  DirName: Save
 --- !u!1 &8874207367715223762
 GameObject:
   m_ObjectHideFlags: 0
@@ -12085,7 +11988,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineappleLeaf_3_0
-  DirName: Save
 --- !u!1 &8924271323214905837
 GameObject:
   m_ObjectHideFlags: 0
@@ -12207,7 +12109,6 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PineapplePanelBottom_3_0
-  DirName: Save
 --- !u!1 &9066506733554875566
 GameObject:
   m_ObjectHideFlags: 0
@@ -12236,7 +12137,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9066506733554875566}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7054646367142351022}
@@ -12329,4 +12230,3 @@ MonoBehaviour:
   KrustyKrab: 0
   ChumBucket: 0
   FileName: SB-PathSteppingStone_6_0
-  DirName: Save
