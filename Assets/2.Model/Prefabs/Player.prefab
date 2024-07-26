@@ -515,7 +515,7 @@ MonoBehaviour:
   ObjectSlider: {fileID: 0}
   layer:
     serializedVersion: 2
-    m_Bits: 1024
+    m_Bits: 9216
 --- !u!1 &4850011420331751544
 GameObject:
   m_ObjectHideFlags: 0

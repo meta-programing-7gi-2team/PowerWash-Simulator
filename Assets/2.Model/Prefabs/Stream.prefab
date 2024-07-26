@@ -45,6 +45,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layer:
     serializedVersion: 2
-    m_Bits: 1024
+    m_Bits: 9216
   shotRange: 5
   offsetY: 0
