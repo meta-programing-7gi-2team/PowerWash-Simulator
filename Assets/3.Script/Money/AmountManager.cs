@@ -187,6 +187,7 @@ public class AmountManager : MonoBehaviour
 
     public void InitializeMap001()
     {
+        Map001_AverageRatio = 0;
         Map001_Process = Process.New;
         Map001_AmountData.Clear();
         for (int i = 0; i < Map001_MoneyData.Count; i++)
@@ -198,6 +199,7 @@ public class AmountManager : MonoBehaviour
     }
     public void InitializeMap002()
     {
+        Map002_AverageRatio = 0;
         Map002_Process = Process.New;
         Map002_AmountData.Clear();
         for (int i = 0; i < Map002_MoneyData.Count; i++)

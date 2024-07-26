@@ -162,7 +162,7 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    private void LoadSliderRatio()
+    public void LoadSliderRatio()
     {
         Pineapple_Slider.value = AmountManager.instance.Map001_AverageRatio;
         KrustyKrab_Slider.value = AmountManager.instance.Map002_AverageRatio;
@@ -578,6 +578,7 @@ public class UIManager : MonoBehaviour
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
         Slidersetting();
+        CleanObject();
     }
 
     private void Slidersetting()

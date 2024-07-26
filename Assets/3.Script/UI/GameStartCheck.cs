@@ -20,6 +20,7 @@ public class GameStartCheck : MonoBehaviour
 
         process_map1 = AmountManager.instance.Map001_Process;
         process_map2 = AmountManager.instance.Map002_Process;
+        UIManager.instance.LoadSliderRatio();
 
         if (Toggle_New.isOn)
         {
