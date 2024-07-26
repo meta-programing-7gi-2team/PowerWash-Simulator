@@ -167,8 +167,6 @@ GameObject:
   - component: {fileID: 3015639459981397355}
   - component: {fileID: 6510692132190801901}
   - component: {fileID: 7620812739208664619}
-  - component: {fileID: 2108180618999959392}
-  - component: {fileID: 2108180618999959397}
   m_Layer: 10
   m_Name: SB-BubbleStand_1
   m_TagString: Object
@@ -217,7 +215,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 55e7a0f928a54784aa617608b157dc9d, type: 2}
+  - {fileID: 2100000, guid: a8d6c7ff4be0e4749a15994722c289c3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -239,44 +237,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2108180618999959392
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4496631559097386759}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -6952050620355290024, guid: 789662f0db5d84848ba0d9473b7da736, type: 3}
---- !u!114 &2108180618999959397
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4496631559097386759}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 782d421b47662014d981df16ae6e8375, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  resolution: 128
-  renderMaskTexture: {fileID: 0}
-  renderWaterTexture: {fileID: 0}
-  maskTexture: {fileID: 2800000, guid: 48d25ed39cfad94489f5083310cfe5cc, type: 3}
-  cleanRatio: 95
-  Spongebob: 0
-  Pineapple: 19
-  Patrick: 0
-  Squidward: 0
-  KrustyKrab: 0
-  ChumBucket: 0
-  FileName: SB-BubbleStand_1
 --- !u!1 &6309839621671828908
 GameObject:
   m_ObjectHideFlags: 0
