@@ -88,44 +88,84 @@ public class AmountManager : MonoBehaviour
         float getAmount_Sum = 0;
         float state_Sum = 0;
 
-        for(int i = gameObjects.Count - 1; i >=  0; i--)
+        if(!gameObjects.Count.Equals(AmountData.Count))
         {
-            GameObject beforeButton = gameObjects.Dequeue();
-            Destroy(beforeButton);
-        }
-
-        for (int i = 0; i < AmountData.Count; i++)
-        {
-            GameObject newButton = Instantiate(buttonPrefab, buttonParent);
-            gameObjects.Enqueue(newButton);
-            Text[] buttonTextComponent = newButton.GetComponentsInChildren<Text>();
-            if (buttonTextComponent != null)
+            for (int i = gameObjects.Count - 1; i >= 0; i--)
             {
-                buttonTextComponent[0].text = AmountData[i].Name;
-                buttonTextComponent[1].text = AmountData[i].Amount.ToString("$0.00");
-                buttonTextComponent[2].text = AmountData[i].GetAmount.ToString("$0.00");
-                if (AmountData[i].State.Equals(0))
-                {
-                    buttonTextComponent[3].text = "-";
-                }
-                else if (AmountData[i].State.Equals(100))
-                {
-                    buttonTextComponent[3].text = "청소 완료!";
-                }
-                else
-                {
-                    buttonTextComponent[3].text = string.Format("{0}%", (int)AmountData[i].State);
-                }
-                // 버튼의 클릭 이벤트 설정
-                Button buttonComponent = newButton.GetComponent<Button>();
-                if (buttonComponent != null)
-                {
-                    buttonComponent.onClick.AddListener(() => OnButtonClick(buttonTextComponent[0].text));
-                }
+                GameObject beforeButton = gameObjects.Dequeue();
+                Destroy(beforeButton);
             }
-            amount_Sum += AmountData[i].Amount;
-            getAmount_Sum += AmountData[i].GetAmount;
-            state_Sum += AmountData[i].State;
+
+            for (int i = 0; i < AmountData.Count; i++)
+            {
+                GameObject newButton = Instantiate(buttonPrefab, buttonParent);
+                gameObjects.Enqueue(newButton);
+                Text[] buttonTextComponent = newButton.GetComponentsInChildren<Text>();
+                if (buttonTextComponent != null)
+                {
+                    buttonTextComponent[0].text = AmountData[i].Name;
+                    buttonTextComponent[1].text = AmountData[i].Amount.ToString("$0.00");
+                    buttonTextComponent[2].text = AmountData[i].GetAmount.ToString("$0.00");
+                    if (AmountData[i].State.Equals(0))
+                    {
+                        buttonTextComponent[3].text = "-";
+                    }
+                    else if (AmountData[i].State.Equals(100))
+                    {
+                        buttonTextComponent[3].text = "청소 완료!";
+                    }
+                    else
+                    {
+                        buttonTextComponent[3].text = string.Format("{0}%", (int)AmountData[i].State);
+                    }
+                    // 버튼의 클릭 이벤트 설정
+                    Button buttonComponent = newButton.GetComponent<Button>();
+                    if (buttonComponent != null)
+                    {
+                        buttonComponent.onClick.AddListener(() => OnButtonClick(buttonTextComponent[0].text));
+                    }
+                }
+                amount_Sum += AmountData[i].Amount;
+                getAmount_Sum += AmountData[i].GetAmount;
+                state_Sum += AmountData[i].State;
+            }
+        }
+        else
+        {
+            for (int i = 0; i < AmountData.Count; i++)
+            {
+                GameObject newButton = gameObjects.Dequeue();
+                gameObjects.Enqueue(newButton);
+                Text[] buttonTextComponent = newButton.GetComponentsInChildren<Text>();
+                if (buttonTextComponent != null)
+                {
+                    buttonTextComponent[0].text = AmountData[i].Name;
+                    buttonTextComponent[1].text = AmountData[i].Amount.ToString("$0.00");
+                    buttonTextComponent[2].text = AmountData[i].GetAmount.ToString("$0.00");
+                    if (AmountData[i].State.Equals(0))
+                    {
+                        buttonTextComponent[3].text = "-";
+                    }
+                    else if (AmountData[i].State.Equals(100))
+                    {
+                        buttonTextComponent[3].text = "청소 완료!";
+                    }
+                    else
+                    {
+                        buttonTextComponent[3].text = string.Format("{0}%", (int)AmountData[i].State);
+                    }
+                    // 버튼의 클릭 이벤트 설정
+                    Button buttonComponent = newButton.GetComponent<Button>();
+                    if (buttonComponent != null)
+                    {
+                        buttonComponent.onClick.AddListener(() => OnButtonClick(buttonTextComponent[0].text));
+                    }
+                }
+                amount_Sum += AmountData[i].Amount;
+                getAmount_Sum += AmountData[i].GetAmount;
+                state_Sum += AmountData[i].State;
+            }
+
         }
         if(UIManager.instance.Mapname.Equals("Map001"))
         {
