@@ -66,6 +66,10 @@ public class UIManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            string ActiveScene = SceneManager.GetActiveScene().name;
+
+            if (ActiveScene.Equals("MainScene")) return;
+
             if (!InGame)
             {
                 InGame = GameObject.FindWithTag("InGame").GetComponent<CanvasGroup>();
@@ -639,7 +643,6 @@ public class UIManager : MonoBehaviour
             if (AmountManager.instance.Map001_AverageRatio.Equals(100))
             {
                 AmountManager.instance.SetMap001_Data(Process.Complete);
-                AudioManager.instance.PlaySFX_UI("WorkComplete");
             }
         }
         else if(ActiveScene.Equals("Map002"))
@@ -649,7 +652,6 @@ public class UIManager : MonoBehaviour
             if (AmountManager.instance.Map001_AverageRatio.Equals(100))
             {
                 AmountManager.instance.SetMap002_Data(Process.Complete);
-                AudioManager.instance.PlaySFX_UI("WorkComplete");
             }
         }
 

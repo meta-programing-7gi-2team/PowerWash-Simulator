@@ -125,6 +125,7 @@ public class CleanDraw : MonoBehaviour, IDustObserver, ISaveObserver
     {
         // ¿Ï·á ¹ÝÂ¦ÀÌ
         _mr.material = cleanMaterial;
+        AudioManager.instance.PlaySFX_UI("WorkComplete");
     }
     private void Init()
     {
