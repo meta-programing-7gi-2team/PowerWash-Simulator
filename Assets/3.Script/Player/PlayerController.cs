@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour,IObserver
     {
         if (Cursor.visible)
         {
-            AudioManager.instance.PlaySFX_Walk("Walk");
+            AudioManager.instance.PlaySFX_Walk_Stop();
             return;
         }
 
@@ -61,6 +61,7 @@ public class PlayerController : MonoBehaviour,IObserver
                     cc.height = 2.0f;
                 }
                 moveDir.y = jumpForce;
+                AudioManager.instance.PlaySFX_Walk("Jump");
             }
             else
             {
@@ -70,14 +71,14 @@ public class PlayerController : MonoBehaviour,IObserver
 
         Vector3 dir = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
 
-        if(dir == Vector3.zero)
+        if(!dir.Equals(Vector3.zero))
         {
-            AudioManager.instance.PlaySFX_Walk_Stop();
+            if (state.Equals(State.Run))
+                AudioManager.instance.PlaySFX_Walk("Run");
+            else
+                AudioManager.instance.PlaySFX_Walk("Walk");
         }
-        else
-        {
-            AudioManager.instance.PlaySFX_Walk("Walk");
-        }
+ 
         dir *= (speed * speedWeight);
         dir = transform.TransformDirection(dir);
         moveDir.x = dir.x;
@@ -144,10 +145,12 @@ public class PlayerController : MonoBehaviour,IObserver
         if (Input.GetKey(KeyCode.LeftShift))
         {
             playerState.SetState(State.Run);
+          
         }
         else if (Input.GetKeyUp(KeyCode.LeftShift))
         {
             playerState.SetState(State.Idle);
+        
         }
     }
     private void SetAnimation()

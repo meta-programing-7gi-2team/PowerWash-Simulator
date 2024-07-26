@@ -37,23 +37,23 @@ public class Shortcut_Key_Control : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKey(KeyCode.Alpha1) && !key2)
+        if(Input.GetKeyDown(KeyCode.Alpha1) && !key2)
         {
             key1 = true;
             shortcutE.DOScale(Vector3.one, 0.2f);
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
-
             selectedToggleE[E_Select].SetActive(true);
+            AudioManager.instance.PlaySFX_UI("FastMenu_Open");
         }
-        else if(Input.GetKey(KeyCode.Alpha2) && !key1)
+        else if(Input.GetKeyDown(KeyCode.Alpha2) && !key1)
         {
             key2 = true;
             shortcutN.DOScale(Vector3.one, 0.2f);
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
-            
             selectedToggleN[N_Select].SetActive(true);
+            AudioManager.instance.PlaySFX_UI("FastMenu_Open");
         }
         else if (Input.GetKeyUp(KeyCode.Alpha1))
         {
@@ -61,7 +61,7 @@ public class Shortcut_Key_Control : MonoBehaviour
             shortcutE.DOScale(new Vector3(0, 0, 1), 0.2f);
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
-            
+            AudioManager.instance.PlaySFX_UI("FastMenu_Close");
             selectedToggleE[E_Select].SetActive(false);
             E_Select = E_Temp;
             togglesE[E_Select].isOn = true;
@@ -72,7 +72,7 @@ public class Shortcut_Key_Control : MonoBehaviour
             shortcutN.DOScale(new Vector3(0, 0, 1), 0.2f);
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
-
+            AudioManager.instance.PlaySFX_UI("FastMenu_Close");
             selectedToggleN[N_Select].SetActive(false);
             N_Select = N_Temp;
             togglesN[N_Select].isOn = true;
