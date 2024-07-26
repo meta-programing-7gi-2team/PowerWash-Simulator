@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   layer:
     serializedVersion: 2
-    m_Bits: 1847
+    m_Bits: 10039
   shotRange: 8
 --- !u!1 &1087662651242780635
 GameObject:
