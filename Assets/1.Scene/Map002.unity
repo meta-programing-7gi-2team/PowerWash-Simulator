@@ -1775,7 +1775,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   brushSizeX: 0.2
-  brushSizeY: 0.2
+  brushSizeY: 0.15
   waterBrushIntensity: 0.1
   eraserBrushIntensity: 0.1
   colorRatioComputeShader: {fileID: 7200000, guid: 814305ab60ec2834b86ac66c5bacf94a, type: 3}
