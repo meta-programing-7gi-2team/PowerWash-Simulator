@@ -13,7 +13,7 @@ public class InteractionController : MonoBehaviour
     }
     private void Update()
     {
-        if (UIManager.instance.isCursor) return;
+        if (Cursor.visible) return;
 
         if (target)
         {

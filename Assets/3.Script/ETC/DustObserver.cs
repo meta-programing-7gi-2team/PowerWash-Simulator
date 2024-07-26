@@ -7,7 +7,7 @@ public class DustObserver : MonoBehaviour, IDustSubject
     private List<IDustObserver> observers = new List<IDustObserver>();
     [SerializeField] private Material dustMaterial;
     [SerializeField] private Material cleanMaterial;
-    private bool isChange;
+    private bool isChange = true;
 
     public void RegisterObserver(IDustObserver observer)
     {
@@ -29,12 +29,7 @@ public class DustObserver : MonoBehaviour, IDustSubject
     {
         if (Input.GetKeyDown(KeyCode.Tab))
         {
-            isChange = false;
-            TabNotifyObservers();
-        }
-        if (Input.GetKeyUp(KeyCode.Tab))
-        {
-            isChange = true;
+            isChange = !isChange;
             TabNotifyObservers();
         }
     }
