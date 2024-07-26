@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.13388306, g: 0.614559, b: 0.8760026, a: 1}
+  m_IndirectSpecularColor: {r: 0.13395005, g: 0.614611, b: 0.8760026, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1774,8 +1774,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1982f2ab4393ccd45a05e5a4691b3397, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  brushSizeX: 0.2
-  brushSizeY: 0.15
+  brushSizeX: 0.3
+  brushSizeY: 0.2
   waterBrushIntensity: 0.1
   eraserBrushIntensity: 0.1
   colorRatioComputeShader: {fileID: 7200000, guid: 814305ab60ec2834b86ac66c5bacf94a, type: 3}
