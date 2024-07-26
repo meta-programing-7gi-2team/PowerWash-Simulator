@@ -374,11 +374,11 @@ public class AmountManager : MonoBehaviour
         {
             if (Map002_MoneyData[i].Spongebob.Equals(spongebob))
             {
-                if (Map002_MoneyData[i].KrustyKrab.Equals(krustyKrab) && !Map001_MoneyData[i].KrustyKrab.Equals(EnumObject.KrustyKrab.None))
+                if (Map002_MoneyData[i].KrustyKrab.Equals(krustyKrab) && !Map002_MoneyData[i].KrustyKrab.Equals(EnumObject.KrustyKrab.None))
                 {
                     return Map002_MoneyData[i];
                 }
-                else if (Map002_MoneyData[i].ChumBucket.Equals(chumBucket) && !Map001_MoneyData[i].ChumBucket.Equals(EnumObject.ChumBucket.None))
+                else if (Map002_MoneyData[i].ChumBucket.Equals(chumBucket) && !Map002_MoneyData[i].ChumBucket.Equals(EnumObject.ChumBucket.None))
                 {
                     return Map002_MoneyData[i];
                 }
