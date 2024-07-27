@@ -166,13 +166,31 @@ public class AudioManager : MonoBehaviour
         Debug.Log($"PlaySFX -> {name}이 없습니다.");
     }
 
-    public void PlaySFX_Walk_Stop()
+    public void PlaySFX_Walk_AllStop()
     {
         for (int i = 0; i < SFXPlayer_Walk.Length; i++)
         {
             if(SFXPlayer_Walk[i].isPlaying)
             {
                 SFXPlayer_Walk[i].Stop();
+            }
+        }
+    }
+    public void PlaySFX_Walk_Stop(string name)
+    {
+        foreach (Sound s in SFX)
+        {
+            if (s.name.Equals(name))
+            {
+                for (int i = 0; i < SFXPlayer_Walk.Length; i++)
+                {
+                    if (SFXPlayer_Walk[i].isPlaying && SFXPlayer_Walk[i].clip == s.clip)
+                    {
+                        SFXPlayer_Walk[i].Stop();
+                        return;
+                    }
+                }
+                return;
             }
         }
     }

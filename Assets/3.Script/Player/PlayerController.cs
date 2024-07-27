@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour,IObserver
     {
         if (Cursor.visible)
         {
-            AudioManager.instance.PlaySFX_Walk_Stop();
+            AudioManager.instance.PlaySFX_Walk_AllStop();
             return;
         }
 
@@ -61,7 +61,7 @@ public class PlayerController : MonoBehaviour,IObserver
                     cc.height = 2.0f;
                 }
                 moveDir.y = jumpForce;
-                AudioManager.instance.PlaySFX_Walk("Jump");
+                Debug.Log("as");
             }
             else
             {
@@ -70,21 +70,33 @@ public class PlayerController : MonoBehaviour,IObserver
         }
 
         Vector3 dir = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-
-        if(!dir.Equals(Vector3.zero))
-        {
-            if (state.Equals(State.Run))
-                AudioManager.instance.PlaySFX_Walk("Run");
-            else
-                AudioManager.instance.PlaySFX_Walk("Walk");
-        }
- 
         dir *= (speed * speedWeight);
         dir = transform.TransformDirection(dir);
         moveDir.x = dir.x;
         moveDir.z = dir.z;
         moveDir.y -= gravity * Time.deltaTime;
         cc.Move(moveDir * Time.deltaTime);
+
+        if (!dir.Equals(Vector3.zero))
+        {
+            if (moveDir.y > 0)
+            {
+                AudioManager.instance.PlaySFX_Walk_Stop("Run");
+                AudioManager.instance.PlaySFX_Walk_Stop("Walk");
+            }
+            else
+            {
+                if (state.Equals(State.Run))
+                    AudioManager.instance.PlaySFX_Walk("Run");
+                else
+                    AudioManager.instance.PlaySFX_Walk("Walk");
+            }
+        }
+        else
+        {
+            AudioManager.instance.PlaySFX_Walk_Stop("Run");
+            AudioManager.instance.PlaySFX_Walk_Stop("Walk");
+        }
     }
     private void SetSpeedWeight()
     {
