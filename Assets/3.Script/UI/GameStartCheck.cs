@@ -15,6 +15,12 @@ public class GameStartCheck : MonoBehaviour
 
     private void OnEnable()
     {
+        AmountManager.instance.GetMap001();
+        AmountManager.instance.GetMap002();
+
+        process_map1 = AmountManager.instance.Map001_Process;
+        process_map2 = AmountManager.instance.Map002_Process;
+
         if (Toggle_New.isOn)
         {
             New();
@@ -28,11 +34,6 @@ public class GameStartCheck : MonoBehaviour
             Completion();
         }
 
-        AmountManager.instance.GetMap001();
-        AmountManager.instance.GetMap002();
-
-        process_map1 = AmountManager.instance.Map001_Process;
-        process_map2 = AmountManager.instance.Map002_Process;
         UIManager.instance.LoadSliderRatio();
     }
 
