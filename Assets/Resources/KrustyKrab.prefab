@@ -2483,7 +2483,7 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 0476ac781676c954989ade7562334546, type: 3}
-  cleanRatio: 95
+  cleanRatio: 92
   Spongebob: 3
   Pineapple: 0
   Patrick: 0
@@ -4732,7 +4732,7 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 0237c9145637b0d41aafd0491c85af71, type: 3}
-  cleanRatio: 95
+  cleanRatio: 10
   Spongebob: 3
   Pineapple: 0
   Patrick: 0
@@ -9426,7 +9426,7 @@ MonoBehaviour:
   renderMaskTexture: {fileID: 0}
   renderWaterTexture: {fileID: 0}
   maskTexture: {fileID: 2800000, guid: 400ae10ee3ed840419259a7a2114f82c, type: 3}
-  cleanRatio: 95
+  cleanRatio: 90
   Spongebob: 3
   Pineapple: 0
   Patrick: 0
