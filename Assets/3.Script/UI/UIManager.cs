@@ -83,6 +83,8 @@ public class UIManager : MonoBehaviour
                 InGame.DOFade(1, 0.3f);
                 Cursor.visible = false;
                 Cursor.lockState = CursorLockMode.Locked;
+                LoadDetailData();
+                LoadSliderRatio();
             }
             else
             {
