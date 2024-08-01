@@ -15,9 +15,6 @@ public class GameStartCheck : MonoBehaviour
 
     private void OnEnable()
     {
-        AmountManager.instance.GetMap001();
-        AmountManager.instance.GetMap002();
-
         process_map1 = AmountManager.instance.Map001_Process;
         process_map2 = AmountManager.instance.Map002_Process;
 
@@ -33,8 +30,6 @@ public class GameStartCheck : MonoBehaviour
         {
             Completion();
         }
-
-        UIManager.instance.LoadSliderRatio();
     }
 
     public void New()
@@ -65,6 +60,8 @@ public class GameStartCheck : MonoBehaviour
         {
             KrustyKrab_Btn.SetActive(false);
         }
+
+        UIManager.instance.LoadSliderRatio();
     }
 
     public void Continue()
@@ -95,6 +92,8 @@ public class GameStartCheck : MonoBehaviour
         {
             KrustyKrab_Btn.SetActive(false);
         }
+
+        UIManager.instance.LoadSliderRatio();
     }
 
     public void Completion()
@@ -125,5 +124,7 @@ public class GameStartCheck : MonoBehaviour
         {
             KrustyKrab_Btn.SetActive(false);
         }
+
+        UIManager.instance.LoadSliderRatio();
     }
 }
