@@ -53,12 +53,12 @@ public class AmountManager : MonoBehaviour
             instance = this;
             state = EnumObject.Map.None;
             gameObjects = new Queue<GameObject>();
-            Map001_AverageRatio = 0;
             Map001_GetAmount = 0;
             Map001_Amount = 0;
-            Map002_AverageRatio = 0;
             Map002_GetAmount = 0;
             Map002_Amount = 0;
+            LoadMap001();
+            LoadMap002();
         }
         else
         {
@@ -359,36 +359,11 @@ public class AmountManager : MonoBehaviour
         LoadMap001();
         return Map001_AmountData;
     }
-    public MapAmountData GetMap001(string name)
-    {
-        LoadMap001();
-        for (int i = 0; i < Map001_AmountData.Count; i++)
-        { 
-            if(Map001_AmountData[i].Equals(name))
-            {
-                return Map001_AmountData[i];
-            }
-        }
-        return new MapAmountData("-", 0, 0, 0, 1);
-    }
     public List<MapAmountData> GetMap002()
     {
         LoadMap002();
         return Map002_AmountData;
     }
-    public MapAmountData GetMap002(string name)
-    {
-        LoadMap001();
-        for (int i = 0; i < Map002_AmountData.Count; i++)
-        {
-            if (Map002_AmountData[i].Equals(name))
-            {
-                return Map002_AmountData[i];
-            }
-        }
-        return new MapAmountData("-", 0, 0, 0, 1);
-    }
-
     /// <summary>
     /// 책정할 가격 데이터를 리턴해주는 메소드
     /// </summary>
